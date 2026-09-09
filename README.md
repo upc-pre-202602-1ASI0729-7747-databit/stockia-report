@@ -272,8 +272,6 @@ del ABET – EAC - Student Outcome 3.
 
 ---
 
-# Student Outcome
-
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
@@ -281,6 +279,93 @@ del ABET – EAC - Student Outcome 3.
 ### 1.1.1. Descripción de la Startup
 
 ### 1.1.2. Perfiles de integrantes del equipo
+<table>
+  <tr>
+    <td rowspan="3" align="center">
+      <img src="" alt="Foto de Carla Gallardo" width="500"/>
+    </td>
+    <td><b>Nombre:</b> Arturo Valentino Contreras Torres</td>
+  </tr>
+  <tr>
+    <td><b>Código:</b> u202414970</td>
+  </tr>
+  <tr>
+    <td>
+      <b>Descripción:</b><br/>
+      Soy <b>
+      <br/>
+    </td>
+  </tr>
+
+  <tr>
+    <td rowspan="3" align="center">
+      <img src="" alt="Foto de Aldo Huaman" width="500"/>
+    </td>
+    <td><b>Nombre:</b> Huaman Oscco, Aldo Jesus</td>
+  </tr>
+  <tr>
+    <td><b>Código:</b> u20231H</td>
+  </tr>
+  <tr>
+    <td>
+      <b>Descripción:</b><br/>
+      Soy <b>
+      <br/>
+    </td>
+  </tr>
+
+  <tr>
+    <td rowspan="3" align="center">
+      <img src="" alt="Foto de  Jesus Miranda" width="500"/>
+    </td>
+    <td><b>Nombre:</b> Miranda Cordova, Jesus Angel Yvan</td>
+  </tr>
+  <tr>
+    <td><b>Código:</b> u20241</td>
+  </tr>
+  <tr>
+    <td>
+      <b>Descripción:</b><br/>
+      Soy <b></b>
+      <br/>
+    </td>
+  </tr>
+
+  <tr>
+    <td rowspan="3" align="center">
+      <img src="" alt="Foto de Leyla Ortiz" width="500"/>
+    </td>
+    <td><b>Nombre:</b> Ortiz Laura, Leyla Alisson</td>
+  </tr>
+  <tr>
+    <td><b>Código:</b> u202415088</td>
+  </tr>
+  <tr>
+    <td>
+      <b>Descripción:</b><br/>
+      Soy <b></b>
+      <br/>
+    </td>
+  </tr>
+
+  <tr>
+    <td rowspan="3" align="center">
+      <img src="" alt="Foto de Ronal Toro" width="500"/>
+    </td>
+    <td><b>Nombre:</b> Toro Turpo, Ronal</td>
+  </tr>
+  <tr>
+    <td><b>Código:</b> u20241E367</td>
+  </tr>
+  <tr>
+    <td>
+      <b>Descripción:</b><br/>
+      Soy <b></b>
+      <br/>
+    </td>
+  </tr>
+
+</table>
 
 ## 1.2. Solution Profile
 
