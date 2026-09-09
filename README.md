@@ -6,16 +6,29 @@ Universidad Peruana de Ciencias Aplicadas
 Carrera de Ingeniería de Software
 
 **1ASI0729** 
+
 **Desarrollo de Aplicaciones Open Source**
+
 NRC 
+
 **7747**
+
 **Informe del AV1**
+
 Docente:
 **Robles Fernández, Ivan**
+
+<br>
+
 Equipo:
+
 **DataBit**
+
 Proyecto:
+
 **StockIA**
+
+<br>
 
 **Integrantes:**
 
@@ -27,6 +40,14 @@ Proyecto:
 | U202415088 | Ortiz Laura, Leyla Alisson |
 | U20241E367 | Toro Turpo, Ronal |
 
+<br>
+
 **Periodo 202620**
+
 **Septiembre, 2026**
 
+</div>
+
+---
+
+# Registro de Versiones del Informe
