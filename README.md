@@ -97,3 +97,10 @@ Proyecto:
     </td>
   </tr>
   </table>
+
+ ---
+ # Project Report Collaboration Insights
+
+URL del repositorio (report): https://github.com/upc-pre-202602-1ASI0729-7747-databit<br>
+
+**Primera Entrega (AV1)**
