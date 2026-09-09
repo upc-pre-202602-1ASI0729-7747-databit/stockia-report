@@ -5,28 +5,28 @@ Universidad Peruana de Ciencias Aplicadas
 
 Carrera de Ingeniería de Software
 
-**1ASI0730** 
-**Aplicaciones Web**
+**1ASI0729** 
+**Desarrollo de Aplicaciones Open Source**
 NRC 
-**12144**
-**Informe del Trabajo Final**
+**7747**
+**Informe del AV1**
 Docente:
-**Bautista Ubillús, Efrain Ricardo**
+**Robles Fernández, Ivan**
 Equipo:
-**ByteSquad**
+**DataBit**
 Proyecto:
-**SpotTrack**
+**StockIA**
 
 **Integrantes:**
 
 | Código | Apellidos y Nombres |
 |---|---|
-| U20241A860 | Ayllon Pauccar, Juan David |
-| U202410344 | Espinoza Orrego, Valentino Andre |
-| U202414928 | Fernandez Linares, Alvaro Sebastian |
-| U202414970 | Gallardo Morales, Carla Alejandra |
-| U202410382 | Limache Coronel, Imanol Fabrizio |
+| U202414970 | Gallardo Morales, Carla Alejandra|
+| U20231H067 | Huaman Oscco, Aldo Jesus |
+| U202411261 | Miranda Cordova, Jesus Angel Yvan |
+| U202415088 | Ortiz Laura, Leyla Alisson |
+| U20241E367 | Toro Turpo, Ronal |
 
-**Periodo 202610**
-**Julio, 2026**
+**Periodo 202620**
+**Septiembre, 2026**
 
