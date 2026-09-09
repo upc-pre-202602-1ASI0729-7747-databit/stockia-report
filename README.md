@@ -51,3 +51,49 @@ Proyecto:
 ---
 
 # Registro de Versiones del Informe
+
+<table>
+  <tr>
+    <th>Versión</th>
+    <th>Fecha</th>
+    <th>Autor</th>
+    <th>Descripción de modificación</th>
+  </tr>
+
+  <tr>
+    <td><b>Primera Entrega (AV1)</b></td>
+    <td>XX/09/2026</td>
+    <td>
+      Gallardo Morales,Carla Alejandra <br>
+      <br>
+      <p></p>
+      Huaman Oscco, Aldo Jesus <br>
+      <br>
+      <p></p>
+      Miranda Cordova, Jesus Angel Yvan <br>
+      <br>
+      <p></p>
+      Ortiz Laura, Leyla Alisson <br>
+      <br>
+      <p></p>
+      Toro Turpo, Ronal <br>
+    </td>
+    <td>
+      Capítulo I: 
+      Introducción
+    <br>
+      Capítulo II:
+      Requirements Elicitation & Analysis
+    <br> 
+      Capítulo III: 
+      Requirements Specification
+    <br>
+      Capítulo IV:
+        Product Design
+    <br>
+      Capítulo V:
+      Product Implementation, Validation & Deployment
+    <br>
+    </td>
+  </tr>
+  </table>
