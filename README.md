@@ -284,7 +284,7 @@ del ABET – EAC - Student Outcome 3.
     <td rowspan="3" align="center">
       <img src="assets/img/members-profile/carla-gallardo.png" alt="Foto de Carla Gallardo" width="500"/>
     </td>
-    <td><b>Nombre:</b> Arturo Valentino Contreras Torres</td>
+    <td><b>Nombre:</b> Gallardo Morales, Carla Alejandra</td>
   </tr>
   <tr>
     <td><b>Código:</b> u202414970</td>
