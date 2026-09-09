@@ -106,6 +106,74 @@ URL del repositorio (report): https://github.com/upc-pre-202602-1ASI0729-7747-da
 **Primera Entrega (AV1)**
 
 ---
+# Student Outcome
+
+El curso contribuye al cumplimiento del Student Outcome ABET:
+
+**ABET – EAC - Student Outcome 3**
+
+**Criterio:** 
+*Capacidad de comunicarse efectivamente con un rango de audiencias.*
+
+En el siguiente cuadro se describe las acciones realizadas y enunciados de
+conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro
+del ABET – EAC - Student Outcome 3.
+
+<table>
+  <tr>
+    <th>Criterio específico</th>
+    <th>Acciones realizadas</th>
+    <th>Conclusiones</th>
+  </tr>
+  <tr>
+      <td><b>Comunica oralmente con efectividad a diferentes rangos de audiencia.</b></td>
+      <td>
+            <b>Gallardo Morales, Carla Alejandra</b><br>
+            <u>AV1</u><br>
+            <br><br>
+            <b>Huaman Oscco, Aldo Jesus</b><br>
+            <u>AV1</u><br>
+            <br><br>
+            <b>Miranda Cordova, Jesus Angel Yvan</b><br>
+            <u>AV1</u><br>
+            <br><br>
+            <b>Ortiz Laura, Leyla Alisson</b><br>
+            <u>AV1</u><br>
+            <br><br>
+            <b>Toro Turpo, Ronal</b><br>
+            <u>AV1</u><br>
+            <br><br>
+        </td>
+        <td>
+            <u>AV1</u><br>
+        </td>
+    </tr>
+      <tr>
+      <td><b>Comunica por escrito con efectividad a diferentes rangos de audiencia</b></td>
+      <td>
+            <b>Gallardo Morales, Carla Alejandra</b><br>
+            <u>AV1</u><br>
+            <br><br>
+            <b>Huaman Oscco, Aldo Jesus</b><br>
+            <u>AV1</u><br>
+            <br><br>
+            <b>Miranda Cordova, Jesus Angel Yvan</b><br>
+            <u>AV1</u><br>
+            <br><br>
+            <b>Ortiz Laura, Leyla Alisson</b><br>
+            <u>AV1</u><br>
+            <br><br>
+            <b>Toro Turpo, Ronal</b><br>
+            <u>AV1</u><br>
+            <br><br>
+        </td>
+        <td>
+            <u>AV1</u><br>
+        </td>
+    </tr>
+</table>
+
+---
 # Contenido
 
 # Tabla de Contenidos
