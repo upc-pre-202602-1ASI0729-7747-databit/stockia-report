@@ -300,17 +300,19 @@ del ABET – EAC - Student Outcome 3.
 
   <tr>
     <td rowspan="3" align="center">
-      <img src="" alt="Foto de Aldo Huaman" width="500"/>
+      <img src="assets/img/members-profile/aldo-huaman.jpeg" alt="Foto de Aldo Huaman" width="500"/>
     </td>
     <td><b>Nombre:</b> Huaman Oscco, Aldo Jesus</td>
   </tr>
   <tr>
-    <td><b>Código:</b> u20231H</td>
+    <td><b>Código:</b> u20231H067</td>
   </tr>
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy <b>
+      Soy <b>Aldo Jesus Huaman Oscco</b>, tengo 20 años. Actualmente estoy cursando el sexto ciclo de la carrera de Ing. de Software, he adquirido y desarrollado diversas habilidades como conocimientos sobre distintos paradigmas de la programacion en diversos lenguajes. Me apasiona el analisis de informacion, la arquitectura y el desarrollo de sistemas para la aplicacion en trabajos de equipo con insercion de metodologias agiles.
+      <br/><br/>
+      Dentro del equipo, mi contribucion sera en la organizacion de actividades asi como el desarrollo de funcionalidades para el entregable, ademas de supervisar la aplicacion correcta de metodologias agiles.
       <br/>
     </td>
   </tr>
@@ -375,6 +377,19 @@ del ABET – EAC - Student Outcome 3.
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
+
+**The current state of**  la gestión de restaurantes y la administración de servicios de alimentación multiunidad has focused mainly on los gerentes generales de restaurantes, supervisores de sucursales y personal administrativo, abordando puntos problemáticos como los registros manuales de inventario, las operaciones de punto de venta no integradas y la comunicación fragmentada entre sucursales mediante software de escritorio aislado o registros de cocina basados en papel.
+
+**What existing products/services fail to address is** un mecanismo integrado y en tiempo real para regular la automatización de múltiples cadenas con trazabilidad centralizada del inventario, deducción automatizada de ingredientes de recetas por cada venta e inteligencia predictiva basada en la demanda histórica para prevenir quiebres de stock y desperdicio de alimentos entre distintas ubicaciones.
+
+**Our product/service will address this gap by** ofreciendo un ecosistema web unificado de gestión multi-cadena que vincula el inventario de las sucursales con las recetas de los platos (deduciendo automáticamente los ingredientes al momento de crear una orden), aplica seguridad basada en roles de acceso, proporciona dashboards de monitoreo operativo y utiliza modelos de Machine Learning para pronosticar la demanda de los clientes y generar recomendaciones automatizadas de reposición de inventario.
+
+**Our initial focus will be** los CEOs y gerentes generales de operaciones de cadenas de servicios de alimentación en crecimiento (2 o más ubicaciones) que buscan estandarización operativa, reducción de desperdicios y supervisión en tiempo real.
+
+**We’ll know we are successful when we see** los siguientes comportamientos medibles en nuestro público objetivo:
+1. Una reducción del 40% en los reportes semanales de discrepancias de inventario en todas las sucursales conectadas durante los primeros 60 días posteriores a la incorporación.
+2. Al menos el 75% de las órdenes de compra de suministros programadas están siendo generadas directamente a partir de las recomendaciones automatizadas de reposición mediante ML.
+3. Interacción semanal activa con los dashboards por parte de más del 85% de los CEOs/gerentes de operaciones de restaurantes inscritos.
 
 #### 1.2.2.2. Lean UX Assumptions
 
