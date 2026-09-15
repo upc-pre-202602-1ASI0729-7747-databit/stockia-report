@@ -418,6 +418,9 @@ del ABET – EAC - Student Outcome 3.
 3. Creemos que lograremos una disminución del **35%** en las discrepancias de las auditorías manuales de inventario **si** los gerentes de tienda y operadores de inventario **obtienen** un seguimiento rápido y sin errores de las entradas, transferencias y modificaciones de materias primas **con** un módulo centralizado de gestión de inventario en tiempo real.
 
 #### 1.2.2.4. Lean UX Canvas
+<td rowspan="3" align="center">
+      <img src="assets/img/chapter-01/lean-ux-canva.png" alt="Foto del Canva" width="800"/>
+    </td>
 
 ## 1.3. Segmentos objetivo
 
