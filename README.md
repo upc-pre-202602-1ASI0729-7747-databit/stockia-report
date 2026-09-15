@@ -1200,7 +1200,179 @@ Entonces la precisión aumenta.
 </td>
 <td>EP10 — Predicción de Demanda con IA</td>
 </tr>
+<tr>
+<td><strong>RNF01</strong></td>
+<td>Experiencia responsiva en dispositivos móviles y tablets</td>
+<td>Como visitante que navega desde el celular o una tablet, quiero que el sitio se adapte a mi pantalla, para poder leer y usar el sitio sin hacer zoom.</td>
+<td>
+<strong>Escenario 1: Colapso de columnas en pantallas medianas</strong><br>
+Cuando el visitante carga cualquier página<br>
+Entonces el sistema reorganiza cuadrículas en menos columnas.<br>
+<p></p>
+<strong>Escenario 2: Diseño de una sola columna en móviles</strong><br>
+Cuando el visitante carga cualquier página<br>
+Entonces el sistema apila en una sola columna.
+</td>
+<td>EP06 — Usabilidad</td>
+</tr>
 
+<tr>
+<td><strong>RNF02</strong></td>
+<td>Contraste y legibilidad accesible</td>
+<td>Como visitante, incluyendo personas con baja visión, quiero que los textos tengan suficiente contraste con el fondo, para leer sin esfuerzo adicional.</td>
+<td>
+<strong>Escenario 1: Contraste en fondos claros</strong><br>
+Dado un texto sobre fondo claro<br>
+Cuando el sistema aplica los estilos<br>
+Entonces usa un color con contraste adecuado.<br>
+<p></p>
+<strong>Escenario 2: Contraste en fondos oscuros</strong><br>
+Dado un texto sobre fondo oscuro<br>
+Cuando el sistema aplica los estilos<br>
+Entonces el texto se muestra en blanco.
+</td>
+<td>EP06 — Usabilidad</td>
+</tr>
+
+<tr>
+<td><strong>RNF03</strong></td>
+<td>Navegación consistente y predecible entre páginas</td>
+<td>Como visitante que recorre varias páginas, quiero encontrar siempre el mismo menú, pie de página y estilo visual, para no perder la orientación.</td>
+<td>
+<strong>Escenario 1: Mismo navbar y footer</strong><br>
+Dado que el visitante navega entre las cuatro páginas<br>
+Cuando cada página carga<br>
+Entonces el sistema muestra el mismo navbar y footer.
+</td>
+<td>EP06 — Usabilidad</td>
+</tr>
+
+<tr>
+<td><strong>RNF04</strong></td>
+<td>Carga rápida al ser un sitio estático sin dependencias pesadas</td>
+<td>Como visitante con una conexión limitada, quiero que el sitio cargue rápido, para no abandonar la página mientras espera.</td>
+<td>
+<strong>Escenario 1: Sin frameworks pesados</strong><br>
+Dado que el sitio usa HTML/CSS/JS nativo<br>
+Cuando cualquier página carga<br>
+Entonces el sistema solo descarga sus propios archivos.
+</td>
+<td>EP07 — Rendimiento y compatibilidad</td>
+</tr>
+
+<tr>
+<td><strong>RNF05</strong></td>
+<td>Buen posicionamiento en buscadores</td>
+<td>Como equipo de DataBite Corp, quiero que cada página tenga metadatos descriptivos, para mejorar la indexación de StockIA.</td>
+<td>
+<strong>Escenario 1: Metadatos presentes en cada página</strong><br>
+Dado que se inspecciona cualquier página<br>
+Cuando se revisa su head<br>
+Entonces el sistema incluye title y meta description.
+</td>
+<td>EP07 — Rendimiento y compatibilidad</td>
+</tr>
+
+<tr>
+<td><strong>RNF06</strong></td>
+<td>Compatibilidad con navegadores modernos de escritorio y móvil</td>
+<td>Como visitante, quiero que el sitio se vea y funcione igual sin importar el navegador que use, para tener una experiencia confiable.</td>
+<td>
+<strong>Escenario 1: Uso de CSS estándar</strong><br>
+Dado que los estilos usan Flexbox y Grid<br>
+Cuando el sitio se abre en un navegador moderno<br>
+Entonces el sistema renderiza el layout correctamente.
+</td>
+<td>EP07 — Rendimiento y compatibilidad</td>
+</tr>
+
+<tr>
+<td><strong>RNF07</strong></td>
+<td>Animaciones de entrada que no bloquean la interacción</td>
+<td>Como visitante, quiero que las animaciones de aparición sean sutiles y fluidas, para una experiencia moderna sin sentir la página lenta.</td>
+<td>
+<strong>Escenario 1: Aparición progresiva al hacer scroll</strong><br>
+Dado que el visitante se desplaza<br>
+Cuando una tarjeta entra en el viewport<br>
+Entonces el sistema aplica una transición de 0.5s.
+</td>
+<td>EP07 — Rendimiento y compatibilidad</td>
+</tr>
+
+<tr>
+<td><strong>RNF08</strong></td>
+<td>Identificación clara de contenido pendiente de completar</td>
+<td>Como equipo de DataBite Corp, quiero que el contenido de ejemplo esté claramente señalizado, para no publicar por error información ficticia.</td>
+<td>
+<strong>Escenario 1: Señalización visible para el visitante</strong><br>
+Dado que existen datos de ejemplo<br>
+Cuando el visitante revisa esas secciones<br>
+Entonces el sistema muestra notas explícitas.
+</td>
+<td>EP02 — Navegación</td>
+</tr>
+
+<tr>
+<td><strong>RNF09</strong></td>
+<td>Sistema de diseño reutilizable y centralizado</td>
+<td>Como equipo de desarrollo, quiero que colores, tipografías y espaciados estén centralizados en variables CSS, para actualizar la identidad visual desde un solo lugar.</td>
+<td>
+<strong>Escenario 1: Variables centralizadas en :root</strong><br>
+Dado que styles.css define variables en :root<br>
+Cuando se necesita cambiar un color<br>
+Entonces basta modificarlo una sola vez.
+</td>
+<td>EP02 — Navegación</td>
+</tr>
+
+<tr>
+<td><strong>RNF10</strong></td>
+<td>Textos traducibles centralizados en un solo archivo</td>
+<td>Como equipo de desarrollo, quiero que todos los textos traducibles vivan en un único archivo, para actualizar el contenido sin editar cada página.</td>
+<td>
+<strong>Escenario 1: Único diccionario de traducciones</strong><br>
+Dado que i18n.js concentra los textos<br>
+Cuando se necesita corregir un texto<br>
+Entonces basta editar la llave correspondiente.
+</td>
+<td>EP03 — Internacionalización</td>
+</tr>
+
+<tr>
+<td><strong>RNF11</strong></td>
+<td>Protección de credenciales y datos de pago</td>
+<td>Como usuario registrado, quiero que mis credenciales y datos de pago se manejen de forma segura, para confiar en la plataforma al usar mi tarjeta o PayPal.</td>
+<td>
+<strong>Escenario 1: Cifrado de contraseñas</strong><br>
+Dado que un usuario se registra o inicia sesión<br>
+Cuando el sistema almacena su contraseña<br>
+Entonces la guarda cifrada, nunca en texto plano.<br>
+<p></p>
+<strong>Escenario 2: Datos de pago gestionados por el proveedor externo</strong><br>
+Dado que un usuario realiza un pago<br>
+Cuando ingresa los datos de su tarjeta<br>
+Entonces son procesados directamente por Stripe o PayPal.
+</td>
+<td>EP14 — Seguridad y Confiabilidad</td>
+</tr>
+
+<tr>
+<td><strong>RNF12</strong></td>
+<td>Confiabilidad y trazabilidad de las notificaciones multicanal</td>
+<td>Como administrador que depende de alertas por WhatsApp, correo y SMS, quiero que las notificaciones se envíen de forma confiable y quede registro de ellas.</td>
+<td>
+<strong>Escenario 1: Reintento ante falla de envío</strong><br>
+Dado que un envío falla por un problema de conexión<br>
+Cuando el sistema detecta el error<br>
+Entonces reintenta el envío o registra la falla.<br>
+<p></p>
+<strong>Escenario 2: Registro histórico de notificaciones</strong><br>
+Dado que el sistema envía cualquier alerta<br>
+Cuando la notificación se entrega<br>
+Entonces guarda un registro con fecha, canal y contenido.
+</td>
+<td>EP14 — Seguridad y Confiabilidad</td>
+</tr>
 </table>
 
 ## 3.2. Impact Mapping
