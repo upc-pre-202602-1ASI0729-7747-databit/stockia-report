@@ -300,17 +300,19 @@ del ABET – EAC - Student Outcome 3.
 
   <tr>
     <td rowspan="3" align="center">
-      <img src="" alt="Foto de Aldo Huaman" width="500"/>
+      <img src="assets/img/members-profile/aldo-huaman.jpeg" alt="Foto de Aldo Huaman" width="500"/>
     </td>
     <td><b>Nombre:</b> Huaman Oscco, Aldo Jesus</td>
   </tr>
   <tr>
-    <td><b>Código:</b> u20231H</td>
+    <td><b>Código:</b> u20231H067</td>
   </tr>
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy <b>
+      Soy <b>Aldo Jesus Huaman Oscco</b>, tengo 20 años. Actualmente estoy cursando el sexto ciclo de la carrera de Ing. de Software, he adquirido y desarrollado diversas habilidades como conocimientos sobre distintos paradigmas de la programacion en diversos lenguajes. Me apasiona el analisis de informacion, la arquitectura y el desarrollo de sistemas para la aplicacion en trabajos de equipo con insercion de metodologias agiles.
+      <br/><br/>
+      Dentro del equipo, mi contribucion sera en la organizacion de actividades asi como el desarrollo de funcionalidades para el entregable, ademas de supervisar la aplicacion correcta de metodologias agiles.
       <br/>
     </td>
   </tr>
@@ -376,11 +378,49 @@ del ABET – EAC - Student Outcome 3.
 
 #### 1.2.2.1. Lean UX Problem Statements
 
+**The current state of**  la gestión de restaurantes y la administración de servicios de alimentación multiunidad has focused mainly on los gerentes generales de restaurantes, supervisores de sucursales y personal administrativo, abordando puntos problemáticos como los registros manuales de inventario, las operaciones de punto de venta no integradas y la comunicación fragmentada entre sucursales mediante software de escritorio aislado o registros de cocina basados en papel.
+
+**What existing products/services fail to address is** un mecanismo integrado y en tiempo real para regular la automatización de múltiples cadenas con trazabilidad centralizada del inventario, deducción automatizada de ingredientes de recetas por cada venta e inteligencia predictiva basada en la demanda histórica para prevenir quiebres de stock y desperdicio de alimentos entre distintas ubicaciones.
+
+**Our product/service will address this gap by** ofreciendo un ecosistema web unificado de gestión multi-cadena que vincula el inventario de las sucursales con las recetas de los platos (deduciendo automáticamente los ingredientes al momento de crear una orden), aplica seguridad basada en roles de acceso, proporciona dashboards de monitoreo operativo y utiliza modelos de Machine Learning para pronosticar la demanda de los clientes y generar recomendaciones automatizadas de reposición de inventario.
+
+**Our initial focus will be** los CEOs y gerentes generales de operaciones de cadenas de servicios de alimentación en crecimiento (2 o más ubicaciones) que buscan estandarización operativa, reducción de desperdicios y supervisión en tiempo real.
+
+**We’ll know we are successful when we see** los siguientes comportamientos medibles en nuestro público objetivo:
+1. Una reducción del 40% en los reportes semanales de discrepancias de inventario en todas las sucursales conectadas durante los primeros 60 días posteriores a la incorporación.
+2. Al menos el 75% de las órdenes de compra de suministros programadas están siendo generadas directamente a partir de las recomendaciones automatizadas de reposición mediante ML.
+3. Interacción semanal activa con los dashboards por parte de más del 85% de los CEOs/gerentes de operaciones de restaurantes inscritos.
+
 #### 1.2.2.2. Lean UX Assumptions
+1. Creemos que existe una demanda creciente por parte de pequeñas y medianas cadenas de restaurantes que buscan transformar digitalmente sus operaciones para evitar mermas financieras causadas por el descontrol de inventario.
+
+2. Creemos que nuestro modelo de negocio basado en suscripción mensual (**SaaS B2B por sucursal conectada**) es económicamente viable y atractivo para los directores y dueños de cadenas de comida.
+
+3. Creemos que la ventaja competitiva clave frente a soluciones tradicionales radica en la incorporación de analítica predictiva asistida por Machine Learning sin requerir configuraciones complejas de software empresarial costoso.
+
+4. Creemos que las cadenas de restaurantes están dispuestas a migrar sus recetas e inventarios a un entorno web seguro en la nube para obtener visibilidad centralizada.
+
+**User outcomes:**
+
+1. Creemos que los CEOs lograrán visibilidad integral e inmediata del estado de inventario, consumo de ingredientes y actividad del personal en todas las sucursales sin depender de llamadas o reportes manuales en hojas de cálculo.
+
+2. Creemos que los restaurantes reducirán el desperdicio de alimentos perecibles hasta en un **25%** al ajustar sus compras y producción a las proyecciones de demanda de comensales.
+
+3. Creemos que los administradores eliminarán el margen de error humano en el control de mermas gracias a la deducción automática de ingredientes por receta vendida.
+
+4. Creemos que los líderes del negocio mitigarán pérdidas financieras no autorizadas mediante la restricción de privilegios por roles de trabajo.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
+1. Creemos que lograremos un aumento del **20%** en la retención semanal de la plataforma por parte de los ejecutivos de restaurantes **si** los CEOs y gerentes de operaciones de restaurantes **obtienen** visibilidad instantánea y consolidada de los niveles de inventario y el rendimiento de las ventas en todas las sucursales **con** un dashboard operativo interactivo para múltiples cadenas.
+
+2. Creemos que lograremos una reducción del **30%** en los incidentes de seguridad y los reportes de pérdidas internas **si** los CEOs de restaurantes y gerentes de tienda **obtienen** delegación segura de tareas y control detallado sobre las operaciones críticas de inventario **con** un sistema de gestión de configuración de roles y permisos.
+
+3. Creemos que lograremos una disminución del **35%** en las discrepancias de las auditorías manuales de inventario **si** los gerentes de tienda y operadores de inventario **obtienen** un seguimiento rápido y sin errores de las entradas, transferencias y modificaciones de materias primas **con** un módulo centralizado de gestión de inventario en tiempo real.
 
 #### 1.2.2.4. Lean UX Canvas
+<td rowspan="3" align="center">
+      <img src="assets/img/chapter-01/lean-ux-canva.png" alt="Foto del Canva" width="800"/>
+    </td>
 
 ## 1.3. Segmentos objetivo
 
