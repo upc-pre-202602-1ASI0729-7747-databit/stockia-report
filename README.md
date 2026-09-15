@@ -392,6 +392,23 @@ del ABET – EAC - Student Outcome 3.
 3. Interacción semanal activa con los dashboards por parte de más del 85% de los CEOs/gerentes de operaciones de restaurantes inscritos.
 
 #### 1.2.2.2. Lean UX Assumptions
+1. Creemos que existe una demanda creciente por parte de pequeñas y medianas cadenas de restaurantes que buscan transformar digitalmente sus operaciones para evitar mermas financieras causadas por el descontrol de inventario.
+
+2. Creemos que nuestro modelo de negocio basado en suscripción mensual (**SaaS B2B por sucursal conectada**) es económicamente viable y atractivo para los directores y dueños de cadenas de comida.
+
+3. Creemos que la ventaja competitiva clave frente a soluciones tradicionales radica en la incorporación de analítica predictiva asistida por Machine Learning sin requerir configuraciones complejas de software empresarial costoso.
+
+4. Creemos que las cadenas de restaurantes están dispuestas a migrar sus recetas e inventarios a un entorno web seguro en la nube para obtener visibilidad centralizada.
+
+**User outcomes:**
+
+1. Creemos que los CEOs lograrán visibilidad integral e inmediata del estado de inventario, consumo de ingredientes y actividad del personal en todas las sucursales sin depender de llamadas o reportes manuales en hojas de cálculo.
+
+2. Creemos que los restaurantes reducirán el desperdicio de alimentos perecibles hasta en un **25%** al ajustar sus compras y producción a las proyecciones de demanda de comensales.
+
+3. Creemos que los administradores eliminarán el margen de error humano en el control de mermas gracias a la deducción automática de ingredientes por receta vendida.
+
+4. Creemos que los líderes del negocio mitigarán pérdidas financieras no autorizadas mediante la restricción de privilegios por roles de trabajo.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
