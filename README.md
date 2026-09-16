@@ -1676,6 +1676,32 @@ La organización de líderes y colaboradores está directamente relacionada con 
 
 
 #### 5.2.1.4. Development Evidence for Sprint Review
+En esta sección se explica y presenta los avances en implementación con relación a los productos de la solución según el alcance del Sprint: Landing Page.
+
+Primero, se mostrarán los commits más importantes para el Reporte, los cuales muestran el ciclo de vida del proyecto, y toda la información que se usó, usa y usará para el desarrollo del proyecto:
+
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| stockia-report | develop | _(completar)_ | _(completar)_ | _(completar — commits del repositorio de Reporte)_ | _(completar)_ |
+| stockia-report | develop | _(completar)_ | _(completar)_ | _(completar)_ | _(completar)_ |
+| stockia-report | develop | _(completar)_ | _(completar)_ | _(completar)_ | _(completar)_ |
+| stockia-report | develop | _(completar)_ | _(completar)_ | _(completar)_ | _(completar)_ |
+| stockia-report | develop | _(completar)_ | _(completar)_ | _(completar)_ | _(completar)_ |
+
+
+<br/>
+
+A continuación se presentan los commits más importantes para la Landing Page, los cuales muestran todo el contenido visual y las funcionalidades implementadas en el Sprint 1:
+
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| stockia-website | develop | _(completar)_ | _(completar)_ | _(completar — commits del repositorio de la Landing Page ) | _(completar)_ |
+| stockia-website | develop | _(completar)_ | _(completar)_ | _(completar — commits del repositorio de la Landing Page ) | _(completar)_ |
+| stockia-website | develop | _(completar)_ | _(completar)_ | _(completar — commits del repositorio de la Landing Page ) | _(completar)_ |
+| stockia-website | develop | _(completar)_ | _(completar)_ | _(completar)_ | _(completar)_ |
+| stockia-website | develop | _(completar)_ | _(completar)_ | _(completar)_ | _(completar)_ |
+<br/>
+
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
