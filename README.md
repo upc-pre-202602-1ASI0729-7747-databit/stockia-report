@@ -1474,8 +1474,7 @@ Entonces guarda un registro con fecha, canal y contenido.
 ## 4.3. Landing Page UI Design
 
 ### 4.3.1. Landing Page Wireframe
-<p align="center"><img src="assets/img/chapter-04/W-Inicio.png" width="500" alt="Inicio"/>
-<br/><i>Artefacto: Figma</i></p>
+<p align="center"><img src="assets/img/chapter-04/W-Inicio.png" width="500" alt="Inicio"/></p>
 
 <p align="center"><img src="assets/img/chapter-04/W-Inicio-Continuacion.png" width="500" alt="Inicio-Continuacion"/>
 <br/><i>Artefacto: Figma</i></p>
@@ -1490,6 +1489,22 @@ Entonces guarda un registro con fecha, canal y contenido.
 <br/><i>Artefacto: Figma</i></p>
 
 ### 4.3.2. Landing Page Mock-up
+<p align="center"><img src="assets/img/chapter-04/M-Inicio.png" width="500" alt="Inicio"/></p>
+
+<p align="center"><img src="assets/img/chapter-04/M-Inicio-Continuacion.png" width="500" alt="Inicio-Continuacion"/>
+<br/><i>Artefacto: Figma</i></p>
+
+<p align="center"><img src="assets/img/chapter-04/M-Caracteristicas.png" width="500" alt="Caracteristicas"/>
+<br/><i>Artefacto: Figma</i></p>
+
+<p align="center"><img src="assets/img/chapter-04/M-Precios.png" width="500" alt="Precios"/>
+<br/><i>Artefacto: Figma</i></p>
+
+<p align="center"><img src="assets/img/chapter-04/M-Nosotros.png" width="500" alt="Nosotros"/>
+<br/><i>Artefacto: Figma</i></p>
+
+<p align="center"><img src="assets/img/chapter-04/M-Contacto.png" width="500" alt="Contacto"/>
+<br/><i>Artefacto: Figma</i></p>
 
 ## 4.4. Web Applications UX/UI Design
 
