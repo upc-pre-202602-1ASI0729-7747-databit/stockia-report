@@ -1573,6 +1573,23 @@ El Sprint Planning Meeting marcó el inicio formal del desarrollo del código de
 | **Sum of Story Points** | 88 Story Points |
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
+* En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)**. Esta matriz detalla los líderes (L) y colaboradores (C) para cada aspecto clave del Sprint, asegurando una comunicación clara y una distribución de responsabilidades eficiente para el proyecto **StockIA**.
+
+La organización de líderes y colaboradores está directamente relacionada con la selección de tareas (tasks) que se desarrollarán durante el Sprint. Dado que este Sprint se concentra únicamente en la Landing Page, se proponen los siguientes aspectos:
+
+| Team Member | GitHub Username | Maquetación & UI/UX (L/C) | Contenido & Traducción (i18n) (L/C) | Responsive & Accesibilidad (L/C) | Despliegue & QA (L/C) |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | L | C | C | C |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | C | C | C | L |
+| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | C | C | L | C |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | L | C | C | C |
+| Toro Turpo, Ronal | Ronal345 | C | L | C | C |
+---
+
+> **Leyenda:**  </br>
+> **L:** Líder (Líder del aspecto)  
+> **C:** Colaborador (Colaborador y desarrollo)
+
 
 #### 5.2.1.3. Sprint Backlog N
 
