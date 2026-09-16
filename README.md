@@ -615,12 +615,60 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
+## Segmento: 
+
+Administradores y dueños de restaurantes que sufren por las pérdidas financieras generadas por el descontrol de sus inventarios y el desperdicio de insumos perecibles.
+<img src="" alt="STOCKIA user persona" width="80">
 
 ### 2.3.2. User Task Matrix
+<table>
+  <tr>
+    <th rowspan="2">User task</th>
+    <th colspan="2">Carlos Gomez</th>
+  </tr>
+  <tr>
+    <th>Frecuencia</th>
+    <th>Importancia</th>
+  </tr>
+  <tr>
+    <td>Revisar inventario</td>
+    <td>Diaria</td>
+    <td>Alta</td>
+  </tr>
+  <tr>
+    <td>Registrar nuevos insumos</td>
+    <td>Según necesidad</td>
+    <td>media</td>
+  </tr>
+  <tr>
+    <td>Revisar productos por vencer y stock bajo</td>
+    <td>Diaria</td>
+    <td>Alta</td>
+  </tr>
+  <tr>
+    <td>Planificación de compras de suministros</td>
+    <td>Varias veces por semana</td>
+    <td>Alta</td>
+  </tr>
+  <tr>
+    <td>Analizar demanda</td>
+    <td>No tan frecuente</td>
+    <td>Media</td>
+  </tr>
+  <tr>
+    <td>Controlar mermas</td>
+    <td>Diaria/semanal</td>
+    <td>Alta</td>
+  </tr>
+</table>
 
 ### 2.3.3. User Journey Mapping
 
+<img src="" alt="STOCKIA user journey mapping" width="80">
+
 ### 2.3.4. Empathy Mapping
+
+<img src="" alt="STOCKIA empathy mapping" width="80">
 
 ## 2.4. Big Picture Event Storming
 
