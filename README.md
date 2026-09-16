@@ -1431,6 +1431,26 @@ Entonces guarda un registro con fecha, canal y contenido.
 | 49 | **RNF09** | Sistema de diseño reutilizable y centralizado | Como equipo de desarrollo, quiero que colores, tipografías y espaciados estén centralizados en variables CSS, para actualizar la identidad visual desde un solo lugar. | 1 |
 | 50 | **RNF10** | Textos traducibles centralizados en un solo archivo | Como equipo de desarrollo, quiero que todos los textos traducibles vivan en un único archivo, para actualizar el contenido sin editar cada página. | 1 |
 
+</br>
+<p align="center">
+  <img src="assets/img/chapter-03/Jira-Epics.png" width="500" alt="Epicas"/>
+  <br/><i>Artefacto: Jira para Epics</i>
+</p>
+
+<p align="center">
+  <img src="assets/img/chapter-03/Jira-HU.png" width="500" alt="Historias de Usuario"/>
+  <br/><i>Artefacto: Jira para User Storys</i>
+</p>
+
+<p align="center">
+  <img src="assets/img/chapter-03//Jira-Backlog.png" width="500" alt="Product Backlog"/>
+  <br/><i>Artefacto: Jira para Backlog Priorizado</i>
+</p>
+
+>Acceso a artefacto Jira para el desarrollo de Backlog
+<https://laplaceho-22.atlassian.net/jira/software/projects/SCRUM/boards/1?filter=&groupBy=none&atlOrigin=eyJpIjoiOGVhOTM0YjRkNzZkNGEzZWExMmY0ZmQ4MTU1NTcyYmQiLCJwIjoiaiJ9>
+
+
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
@@ -1454,6 +1474,20 @@ Entonces guarda un registro con fecha, canal y contenido.
 ## 4.3. Landing Page UI Design
 
 ### 4.3.1. Landing Page Wireframe
+<p align="center"><img src="assets/img/chapter-04/W-Inicio.png" width="500" alt="Inicio"/>
+<br/><i>Artefacto: Figma</i></p>
+
+<p align="center"><img src="assets/img/chapter-04/W-Inicio-Continuacion.png" width="500" alt="Inicio-Continuacion"/>
+<br/><i>Artefacto: Figma</i></p>
+
+<p align="center"><img src="assets/img/chapter-04/W-Caracteristicas.png" width="500" alt="Caracteristicas"/>
+<br/><i>Artefacto: Figma</i></p>
+
+<p align="center"><img src="assets/img/chapter-04/W-Precios.png" width="500" alt="Precios"/>
+<br/><i>Artefacto: Figma</i></p>
+
+<p align="center"><img src="assets/img/chapter-04/W-Nosotros.png" width="500" alt="Nosotros"/>
+<br/><i>Artefacto: Figma</i></p>
 
 ### 4.3.2. Landing Page Mock-up
 
