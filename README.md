@@ -1551,23 +1551,24 @@ Entonces guarda un registro con fecha, canal y contenido.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
-### 5.2.X. Sprint N
+### 5.2.1. Sprint 1
+Este primer ciclo de desarrollo se centró en establecer los pilares de la identidad digital de **StockIA**, integrando el esfuerzo colaborativo del equipo para entregar un sitio de marketing funcional inicial. Durante este Sprint, el equipo priorizó la captación de visitantes mediante una Landing Page de 4 páginas (`index.html`, `features.html`, `pricing.html`, `about.html`), completamente bilingüe (ES/EN) y responsiva, documentando cada fase desde la planificación hasta el despliegue final para validar la propuesta de valor frente al segmento elegido.
 
-#### 5.2.X.1. Sprint Planning N
+#### 5.2.1.1. Sprint Planning 1
 
-#### 5.2.X.2. Aspect Leaders and Collaborators
+#### 5.2.1.2. Aspect Leaders and Collaborators
 
-#### 5.2.X.3. Sprint Backlog N
+#### 5.2.1.3. Sprint Backlog N
 
-#### 5.2.X.4. Development Evidence for Sprint Review
+#### 5.2.1.4. Development Evidence for Sprint Review
 
-#### 5.2.X.5. Execution Evidence for Sprint Review
+#### 5.2.1.5. Execution Evidence for Sprint Review
 
-#### 5.2.X.6. Services Documentation Evidence for Sprint Review
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-#### 5.2.X.7. Software Deployment Evidence for Sprint Review
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
-#### 5.2.X.8. Team Collaboration Insights during Sprint
+#### 5.2.1.8. Team Collaboration Insights during Sprint
 
 ## 5.3. Validation Interviews
 
