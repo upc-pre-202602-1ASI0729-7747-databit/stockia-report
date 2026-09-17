@@ -1785,6 +1785,7 @@ usuario con los productos digitales.
 **User Story relacionada:** US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
 
 ![wireframe 1](assets/img/chapter-04/wireframes/mobile/mobile-wireframe1.png)
+
 ![wireframe 1](assets/img/chapter-04/wireframes/web/web-wireframe1.png)
 
 2) **Wireframe 2:** 
