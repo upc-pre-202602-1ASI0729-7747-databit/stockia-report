@@ -1784,30 +1784,45 @@ usuario con los productos digitales.
 1) **Wireframe 1:** 
 **User Story relacionada:** US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
 
+![wireframe 1](assets/img/chapter-04/wireframes/mobile/mobile-wireframe1.png)
+
 2) **Wireframe 2:** 
 **User Story relacionada:** US22 - Como administrador, quiero guardar recetas con ingredientes vinculados al inventario, para que al venderse un plato se descuenten automáticamente los insumos.
 
 3) **Wireframe 3:** 
 **User Story relacionada:** US23 - Como administrador, quiero ver un dashboard con métricas de stock y alertas, para tomar decisiones rápidas sobre insumos críticos.
+
+![wireframe 3](assets/img/chapter-04/wireframes/mobile/mobile-wireframe2.png)
+
 4) **Wireframe 4:** 
 **User Story relacionada:** US24 - Como administrador, quiero asignar roles a empleados, para que cada uno tenga recomendaciones personalizadas y permisos adecuados dentro del sistema.
+
+![wireframe 4](assets/img/chapter-04/wireframes/mobile/mobile-wireframe3.png)
 
 5) **Wireframe 5:** 
 **User Story relacionada:** US25 - Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima, para poder preparar insumos con anticipación.
 
+![wireframe 5](assets/img/chapter-04/wireframes/mobile/mobile-wireframe4.png)
+
 6) **Wireframe 6:** 
 **User Story relacionada:** US26 - Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad, para ajustar la oferta de mi restaurante.
+
+
 
 7) **Wireframe 7:** 
 **User Story relacionada:** US27 - Como administrador, quiero recibir alertas antes de que falten insumos, para poder comprar con tiempo y evitar quiebres de stock.
 
+![wireframe 7](assets/img/chapter-04/wireframes/mobile/mobile-wireframe5.png)
+
 8) **Wireframe 8:** 
 **User Story relacionada:** US28 - Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp, para poder actuar rápido sin necesidad de entrar al sistema.
+
+![wireframe 8](assets/img/chapter-04/wireframes/mobile/mobile-wireframe6.png)
 
 9) **Wireframe 9:** 
 **User Story relacionada:** US29 - Como nuevo usuario, quiero registrarme en StockIA con mis datos, para poder acceder al sistema y configurar mi restaurante.
 
-![wireframe 1](assets/img/wireframes/)
+![wireframe 9](assets/img/chapter-04/wireframes/mobile/mobile-wireframe7.png)
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
