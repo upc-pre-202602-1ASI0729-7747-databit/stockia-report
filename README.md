@@ -277,6 +277,9 @@ del ABET – EAC - Student Outcome 3.
 ## 1.1. Startup Profile
 
 ### 1.1.1. Descripción de la Startup
+DataBite Corp es una startup tecnológica innovadora que aunque su creacion es reciente su enfoque está en liderar la transformación digital del sector gastronómico en el país y Latinoamérica. Nuestro enfoque principal radica en el desarrollo de soluciones de software as a Service (SaaS) que integran analítica predictiva asistida por Machine Learning (ML) y tecnologías de Internet de las Cosas (IoT).
+
+Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas avanzadas para pequeñas y medianas cadenas de restaurantes, permitiendo optimizar sus operaciones y tomar decisiones basadas en datos en tiempo real. A través de nuestro producto estrella, "StockIA", buscamos resolver problemas críticos de la industria como el descontrol de inventarios, los quiebres de stock y las mermas financieras. Nos motiva generar un impacto directo tanto económico como ambiental, ayudando a las empresas a reducir el desperdicio de alimentos y a maximizar sus márgenes de rentabilidad, todo centralizado en un ecosistema web unificado, accesible y altamente escalable.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 <table>
@@ -353,7 +356,7 @@ del ABET – EAC - Student Outcome 3.
 
   <tr>
     <td rowspan="3" align="center">
-      <img src="" alt="Foto de Ronal Toro" width="500"/>
+      <img src="/assets/img/members-profile/ronal-toro.png" alt="Foto de Ronal Toro" width="500"/>
     </td>
     <td><b>Nombre:</b> Toro Turpo, Ronal</td>
   </tr>
@@ -363,7 +366,7 @@ del ABET – EAC - Student Outcome 3.
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy <b></b>
+      Soy Ronal Toro Turpo, tengo 20 años estudio la carrera de ingenieria de software, desde el comienzo de mi vida universitaria e ido adquiriendo y desarrollando diversas habilidades como el desarrollo en leguajes de programacion como C++, java script, y en la parte web lenguajes como HTML y CSS si bien el trabajo en equipo no es uno de mis fuertes trato de hacer lo mejor que puedo, espero aprender muchas cosas a lo largo del semestre para este curso ya que lo considero muy interezante e importante para el desarrollo de mi carrera.<b></b>
       <br/>
     </td>
   </tr>
@@ -373,12 +376,33 @@ del ABET – EAC - Student Outcome 3.
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
+En el día a día, la gestión de restaurantes especialmente cuando el negocio crece y suma nuevas sucursales se ha convertido en un verdadero dolor de cabeza logístico. Hoy en día, la mayoría de los locales intentan resolver su operatividad usando sistemas de punto de venta que, si bien cumplen su función transaccional al momento de cobrar, operan de forma aislada y no se comunican con la gestión real del almacén. Es crucial destacar que la solución a este problema no pasa por reemplazar el POS actual ni crear un nuevo sistema de ventas, sino por aprovechar la información que estos ya generan.  
+
+El desperdicio alimentario y la ineficiencia detrás de esta desconexión son problemas estadísticamente comprobados. Según el Programa de las Naciones Unidas para el Medio Ambiente (PNUMA, 2024), en América Latina se desperdician millones de toneladas de alimentos al año. En la industria restaurantera, diversos estudios revelan que los locales tiran a la basura entre el 4% y el 10% de todos los alimentos que compran (Gunders et al., 2017). A pesar de estas enormes pérdidas, los restaurantes se ven obligados a llevar el control en cuadernos o excels aislados porque no existe una "capa de inteligencia" accesible que reciba los datos de ventas de sus sistemas actuales, los procese mediante Machine Learning y les diga exactamente qué y cuándo comprar para evitar que falten ingredientes o se echen a perder.
+
+**5Ws & 2Hs**
+
+| Elemento | Preguntas | Definición |
+|---|---|---|
+| **(“Who?”) ¿Quién?** | ¿Quién sufre este problema? | Los administradores de los restaurantes y sucursales, quienes están en la "primera línea" administrando y lidiando con las compras, el inventario y el personal. |
+| **(“What?”) ¿Qué?** | ¿Cuál es el problema exacto? | Sufren de pérdidas económicas porque las herramientas de ventas actuales no les dan una visión operativa real. Al depender de un control de stock manual, se enfrentan a mermas invisibles ya que no existe un ecosistema que reciba el dato de la venta y descuente automáticamente los ingredientes usados. |
+| **(“Where?”) ¿Dónde?** | ¿Dónde ocurre el problema? | Nace en los almacenes y en el ajetreo de las cocinas de las sucursales, pero termina impactando directamente en la caja registradora y en la oficina de administración. |
+| **(“When?”) ¿Cuándo?** | ¿Cuándo sucede el problema? | Ocurre todos los días cada vez que el sistema de ventas emite un ticket sin que el inventario se entere, y explota en los momentos de crisis cuando descubren que falta un insumo clave y tienen que salir a comprarlo de urgencia. |
+| **(“Why?”) ¿Por qué?** | ¿Por qué ocurre este problema? | Porque las soluciones actuales se quedan solo en la transacción de la venta y mantienen el resto de los procesos logísticos desconectados. Los administradores no cuentan con una herramienta predictiva que se alimente de ese historial de ventas para recomendarles automáticamente su próxima compra. |
+| **(“How?”) ¿Cómo?** | ¿Cómo se evidencia el problema? | Se nota rápidamente en el descontrol de los almacenes, en los errores humanos al llenar los reportes semanales y en la frustración del administrador al detectar pérdidas de insumos por la falta de roles y permisos digitales en la cocina. |
+| **(“How Much?”) ¿Cuánto?** | ¿Cuánto impacto económico o de tiempo representa? | El impacto es enorme. Puede representar hasta un 25% en costos evitables solo por el desperdicio de comida perecible y las compras no planificadas. Además, un administrador llega a perder hasta el 15% de su jornada laboral tratando de cuadrar inventarios manualmente (Cullen, 2021). |
+
+#### Objetivo del proyecto:
+Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application) respaldada por un API RESTful propio, diseñada para actuar como el "cerebro" operativo de los restaurantes. Nuestra plataforma está diseñada para recibir los datos de ventas, vincularlos con las recetas y descontar los ingredientes por sí sola. Adicionalmente, el sistema usará esa información histórica y modelos de Machine Learning para predecir la demanda futura.
+
 
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
 
 **The current state of**  la gestión de restaurantes y la administración de servicios de alimentación multiunidad has focused mainly on los gerentes generales de restaurantes, supervisores de sucursales y personal administrativo, abordando puntos problemáticos como los registros manuales de inventario, las operaciones de punto de venta no integradas y la comunicación fragmentada entre sucursales mediante software de escritorio aislado o registros de cocina basados en papel.
+
+
 
 **What existing products/services fail to address is** un mecanismo integrado y en tiempo real para regular la automatización de múltiples cadenas con trazabilidad centralizada del inventario, deducción automatizada de ingredientes de recetas por cada venta e inteligencia predictiva basada en la demanda histórica para prevenir quiebres de stock y desperdicio de alimentos entre distintas ubicaciones.
 
@@ -423,6 +447,24 @@ del ABET – EAC - Student Outcome 3.
     </td>
 
 ## 1.3. Segmentos objetivo
+Luego de aplicar el proceso de validación y empatizar con los dolores operativos del rubro gastronómico, StockIA ha delimitado su alcance para enfocarse en un único segmento objetivo. Hemos identificado que la verdadera transformación digital debe ocurrir en la "primera línea" operativa, es decir, en manos de quienes gestionan el negocio día a día. 
+
+
+**Segmento Único: Administradores de Restaurante y Jefes de Sucursal** 
+
+StockIA se enfoca exclusivamente en los administradores de restaurante y jefes de sucursal, profesionales dinámicos de 25 a 45 años que dependen de sus dispositivos para gestionar la operación diaria. Estos usuarios sufren un alto estrés operativo al invertir entre 8 y 10 horas semanales en conteos manuales de inventario y lidiar con un sector que desperdicia entre el 4% y el 10% de sus insumos (Lopez, 2025). Al no contar con una herramienta que deduzca automáticamente los ingredientes vendidos, se ven obligados a realizar compras basadas en la intuición (Lopez, 2025), lo que genera constantes quiebres de stock o mermas por excesos que impactan negativamente la rentabilidad financiera del negocio.  Para resolver estos dolores, estos administradores buscan en StockIA una plataforma que actúe como un asistente ágil y proactivo. Su expectativa principal es que el sistema reciba los datos de ventas y descuente automáticamente los insumos sin requerir intervención manual. Además, necesitan aprovechar la tecnología de Machine Learning para recibir alertas predictivas de reposición directamente en canales rápidos como WhatsApp, todo esto operando bajo un entorno digital seguro que les permita delegar responsabilidades en la cocina mediante una estricta configuración de roles y permisos.
+
+| Característica | Descripción |
+|---|---|
+| **Edad** | Predominantemente entre los 25 y 45 años |
+| **Ubicación** | Zonas urbanas del Perú |
+| **Género** | Masculino y Femenino |
+| **Nivel socioeconómico** | medio - alto |
+| **Perfil tecnológico** | Intermedio - alto |
+| **Dispositivos Utilizados** | Teléfonos inteligentes, ordenadores y dispositivos IOT |
+| **Objetivo principal** | Monitorear y optimizar los procesos en los restaurantes o sitios de comida. |
+
+
 
 
 # Capítulo II: Requirements Elicitation & Analysis
@@ -653,7 +695,28 @@ Datos del entrevistado:
 La entrevista con la señora Albertina, dueña del restaurante Misty Mercury, muestra que gestiona sus insumos de manera muy básica y manual: compra lo justo para cada día según los platos que decide preparar, evitando desperdicios pero sin llevar un registro formal ni contar con un sistema que le anticipe necesidades. Aunque rara vez enfrenta problemas de stock, depende de su memoria y observación de ventas pasadas para decidir qué ofrecer, lo que limita la eficiencia y la capacidad de respuesta ante cambios en la demanda. Reconoce que le sería útil contar con un sistema automático que le sugiera menús, alerte sobre insumos próximos a agotarse y le indique cuáles productos se consumen más, lo que evidencia que aún necesita apoyo adicional en la gestión de inventario y planificación.
 
 **Enlace del video:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202415088_upc_edu_pe/IQAjp5LL9kziQ5tAfau1fWAwAREdq4iAj5-jAVWYz0m7xKA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=EQEVAQ) 
+<br>
+<br>
+Entrevista 2:
+Entrevistador(a): Jesus Miranda Cordova
+Datos del entrevistado:
+  * Nombre: Claudia
+  * Apellido: -
+  * Edad: 39 años
+  * Distrito: Trujillo
+  * Timing: 0:20 - 6.28
+<p align="center"><img alt="Entrevista-jesus" src="assets/img/chapter-02/interview-Jesus-miranda.png" /></p>
+<p align="center"><i>Evidencia de entrevista: Claudia </i></p>
+
+**Resumen descriptivo:**
+La entrevista con la señora Claudia, Administradora de restaurante , señala que gestiona sus insumos de manera básica y manual .Tiende a tener problemas de falta de productos por incertidumbre en cuantos clientes van a ser atendidos en la jornada.Usa un sistema básico con predicciones según ventas por años , apoyada del control manual del inventario ,pero reconoce que no es suficiente dado a las pérdidas por falta de stock y bajo control de calidad.Reconoce que le sería útil contar con un sistema automático con el que controlar mejor el almacén , controlar la calidad de los insumos y que sea posible ver que platillos son los más demandados.
+
+**Enlace del video:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411261_upc_edu_pe/IQBOAWHHqB0LQ6_dtOd2MsrnAS15zan2LlE_KeG0zOOhtJ4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=sksBll) 
 ### 2.2.3. Análisis de entrevistas
+
+Entrevista 2:
+
+Basándonos en la  entrevista de Claudia , el usuario expresa su disconformidad ante su situación actual con respecto a la falta de stock en momentos clave .Ya ha usado software de gestión básicos antes pero su problema se mantiene. El usuario expresó interés en herramientas que permitan el monitoreo preciso del inventario y que le generen recomendaciones o alertas según sea necesario .
 
 ## 2.3. Needfinding
 
@@ -2027,6 +2090,14 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 ## 4.6. Domain-Driven Software Architecture
 
 ### 4.6.1. Design-Level Event Storming
+Para una mejor visualización, se adjunta aquí el [enlace a nuestro tablero de Miro](https://miro.com/app/board/uXjVHl6cdl0=/?share_link_id=720842621161) donde fue realizado el Design-Level Event Storming.
+
+<img src="assets/img/chapter-04/Design-Level-Recipes-management.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/Design-Level-stoc-management.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/Design-Level-Subscription.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+
+
+
 
 ### 4.6.2. Software Architecture Context Diagram
 
