@@ -1775,9 +1775,96 @@ En la siguiente sección se presenta el Impact Mapping elaborado a partir del us
 
 ## 4.4. Web Applications UX/UI Design
 
+Esta sección incluye secciones internas donde se presenta y explica la propuesta
+visual y de interacción para las aplicaciones que constituyen la experiencia de
+usuario con los productos digitales.
+
 ### 4.4.1. Web Applications Wireframes
 
+1) **Wireframe 1:** 
+**User Story relacionada:** US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
+
+2) **Wireframe 2:** 
+**User Story relacionada:** US22 - Como administrador, quiero guardar recetas con ingredientes vinculados al inventario, para que al venderse un plato se descuenten automáticamente los insumos.
+
+3) **Wireframe 3:** 
+**User Story relacionada:** US23 - Como administrador, quiero ver un dashboard con métricas de stock y alertas, para tomar decisiones rápidas sobre insumos críticos.
+4) **Wireframe 4:** 
+**User Story relacionada:** US24 - Como administrador, quiero asignar roles a empleados, para que cada uno tenga recomendaciones personalizadas y permisos adecuados dentro del sistema.
+
+5) **Wireframe 5:** 
+**User Story relacionada:** US25 - Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima, para poder preparar insumos con anticipación.
+
+6) **Wireframe 6:** 
+**User Story relacionada:** US26 - Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad, para ajustar la oferta de mi restaurante.
+
+7) **Wireframe 7:** 
+**User Story relacionada:** US27 - Como administrador, quiero recibir alertas antes de que falten insumos, para poder comprar con tiempo y evitar quiebres de stock.
+
+8) **Wireframe 8:** 
+**User Story relacionada:** US28 - Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp, para poder actuar rápido sin necesidad de entrar al sistema.
+
+9) **Wireframe 9:** 
+**User Story relacionada:** US29 - Como nuevo usuario, quiero registrarme en StockIA con mis datos, para poder acceder al sistema y configurar mi restaurante.
+
+![wireframe 1](assets/img/wireframes/)
+
 ### 4.4.2. Web Applications Wireflow Diagrams
+
+1) **Wireflow 1:** 
+
+- User goal: Como administrador, quiero agregar, eliminar y modificar insumos en el inventario
+
+**User Story relacionada:** 
+US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
+
+2) **Wireflow 2:** 
+
+- User goal: omo administrador, quiero guardar recetas con ingredientes vinculados al inventario
+
+**User Story relacionada:** US22 - Como administrador, quiero guardar recetas con ingredientes vinculados al inventario, para que al venderse un plato se descuenten automáticamente los insumos.
+
+3) **Wireflow 3:** 
+
+- User goal: Como administrador, quiero ver un dashboard con métricas de stock y alertas.
+
+**User Story relacionada:** US23 - Como administrador, quiero ver un dashboard con métricas de stock y alertas, para tomar decisiones rápidas sobre insumos críticos.
+
+4) **Wireflow 4:** 
+
+- User goal: Como administrador, quiero asignar roles a empleados.
+
+**User Story relacionada:** US24 - Como administrador, quiero asignar roles a empleados, para que cada uno tenga recomendaciones personalizadas y permisos adecuados dentro del sistema.
+
+5) **Wireflow 5:** 
+
+- User goal: Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima.
+
+**User Story relacionada:** US25 - Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima, para poder preparar insumos con anticipación.
+
+6) **Wireflow 6:** 
+
+- User goal: Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad.
+
+**User Story relacionada:** US26 - Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad, para ajustar la oferta de mi restaurante.
+
+7) **Wireflow 7:**
+
+- User goal: Como administrador, quiero recibir alertas antes de que falten insumos
+
+**User Story relacionada:** US27 - Como administrador, quiero recibir alertas antes de que falten insumos, para poder comprar con tiempo y evitar quiebres de stock.
+
+8) **Wireflow 8:** 
+
+- User goal: Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp
+
+**User Story relacionada:** US28 - Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp, para poder actuar rápido sin necesidad de entrar al sistema.
+
+9) **Wireflow 9:**
+
+- User goal: Como nuevo usuario, quiero registrarme en StockIA con mis datos.
+
+**User Story relacionada:** US29 - Como nuevo usuario, quiero registrarme en StockIA con mis datos, para poder acceder al sistema y configurar mi restaurante.
 
 ### 4.4.3. Web Applications Mock-ups
 
