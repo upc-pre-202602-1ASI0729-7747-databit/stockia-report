@@ -1848,6 +1848,7 @@ usuario con los productos digitales.
 **User Story relacionada:** US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
 
 ![wireframe 1](assets/img/chapter-04/wireframes/mobile/mobile-wireframe1.png)
+
 ![wireframe 1](assets/img/chapter-04/wireframes/web/web-wireframe1.png)
 
 2) **Wireframe 2:** 
@@ -1903,6 +1904,11 @@ usuario con los productos digitales.
 **User Story relacionada:** 
 US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
 
+- mobile:
+![wireflow 1](assets/img/chapter-04/wireflow/mobile/wireflow-mobile1.png)
+
+- web:
+
 2) **Wireflow 2:** 
 
 - User goal: omo administrador, quiero guardar recetas con ingredientes vinculados al inventario
@@ -1915,11 +1921,17 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 **User Story relacionada:** US23 - Como administrador, quiero ver un dashboard con métricas de stock y alertas, para tomar decisiones rápidas sobre insumos críticos.
 
+- mobile: 
+![wireflow 3](assets/img/chapter-04/wireflow/mobile/wireflow-mobile2.png)
+
 4) **Wireflow 4:** 
 
 - User goal: Como administrador, quiero asignar roles a empleados.
 
 **User Story relacionada:** US24 - Como administrador, quiero asignar roles a empleados, para que cada uno tenga recomendaciones personalizadas y permisos adecuados dentro del sistema.
+
+- mobile: 
+![wireflow 4](assets/img/chapter-04/wireflow/mobile/wireflow-mobile3.png)
 
 5) **Wireflow 5:** 
 
@@ -1927,11 +1939,16 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 **User Story relacionada:** US25 - Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima, para poder preparar insumos con anticipación.
 
+- mobile: 
+![wireflow 5](assets/img/chapter-04/wireflow/mobile/wireflow-mobile4.png)
+
 6) **Wireflow 6:** 
 
 - User goal: Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad.
 
 **User Story relacionada:** US26 - Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad, para ajustar la oferta de mi restaurante.
+
+
 
 7) **Wireflow 7:**
 
@@ -1939,17 +1956,26 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 **User Story relacionada:** US27 - Como administrador, quiero recibir alertas antes de que falten insumos, para poder comprar con tiempo y evitar quiebres de stock.
 
+- mobile: 
+![wireflow 7](assets/img/chapter-04/wireflow/mobile/wireflow-mobile5.png)
+
 8) **Wireflow 8:** 
 
 - User goal: Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp
 
 **User Story relacionada:** US28 - Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp, para poder actuar rápido sin necesidad de entrar al sistema.
 
+- mobile: 
+![wireflow 8](assets/img/chapter-04/wireflow/mobile/wireflow-mobile6.png)
+
 9) **Wireflow 9:**
 
 - User goal: Como nuevo usuario, quiero registrarme en StockIA con mis datos.
 
 **User Story relacionada:** US29 - Como nuevo usuario, quiero registrarme en StockIA con mis datos, para poder acceder al sistema y configurar mi restaurante.
+
+- mobile: 
+![wireflow 9](assets/img/chapter-04/wireflow/mobile/wireflow-mobile7.png)
 
 ### 4.4.3. Web Applications Mock-ups
 
