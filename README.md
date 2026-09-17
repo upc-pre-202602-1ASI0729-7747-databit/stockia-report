@@ -695,7 +695,28 @@ Datos del entrevistado:
 La entrevista con la señora Albertina, dueña del restaurante Misty Mercury, muestra que gestiona sus insumos de manera muy básica y manual: compra lo justo para cada día según los platos que decide preparar, evitando desperdicios pero sin llevar un registro formal ni contar con un sistema que le anticipe necesidades. Aunque rara vez enfrenta problemas de stock, depende de su memoria y observación de ventas pasadas para decidir qué ofrecer, lo que limita la eficiencia y la capacidad de respuesta ante cambios en la demanda. Reconoce que le sería útil contar con un sistema automático que le sugiera menús, alerte sobre insumos próximos a agotarse y le indique cuáles productos se consumen más, lo que evidencia que aún necesita apoyo adicional en la gestión de inventario y planificación.
 
 **Enlace del video:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202415088_upc_edu_pe/IQAjp5LL9kziQ5tAfau1fWAwAREdq4iAj5-jAVWYz0m7xKA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=EQEVAQ) 
+<br>
+<br>
+Entrevista 2:
+Entrevistador(a): Jesus Miranda Cordova
+Datos del entrevistado:
+  * Nombre: Claudia
+  * Apellido: -
+  * Edad: 39 años
+  * Distrito: Trujillo
+  * Timing: 0:20 - 6.28
+<p align="center"><img alt="Entrevista-jesus" src="assets/img/chapter-02/interview-Jesus-miranda.png" /></p>
+<p align="center"><i>Evidencia de entrevista: Claudia </i></p>
+
+**Resumen descriptivo:**
+La entrevista con la señora Claudia, Administradora de restaurante , señala que gestiona sus insumos de manera básica y manual .Tiende a tener problemas de falta de productos por incertidumbre en cuantos clientes van a ser atendidos en la jornada.Usa un sistema básico con predicciones según ventas por años , apoyada del control manual del inventario ,pero reconoce que no es suficiente dado a las pérdidas por falta de stock y bajo control de calidad.Reconoce que le sería útil contar con un sistema automático con el que controlar mejor el almacén , controlar la calidad de los insumos y que sea posible ver que platillos son los más demandados.
+
+**Enlace del video:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411261_upc_edu_pe/IQBOAWHHqB0LQ6_dtOd2MsrnAS15zan2LlE_KeG0zOOhtJ4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=sksBll) 
 ### 2.2.3. Análisis de entrevistas
+
+Entrevista 2:
+
+Basándonos en la  entrevista de Claudia , el usuario expresa su disconformidad ante su situación actual con respecto a la falta de stock en momentos clave .Ya ha usado software de gestión básicos antes pero su problema se mantiene. El usuario expresó interés en herramientas que permitan el monitoreo preciso del inventario y que le generen recomendaciones o alertas según sea necesario .
 
 ## 2.3. Needfinding
 
