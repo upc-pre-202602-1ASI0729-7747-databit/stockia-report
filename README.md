@@ -2064,6 +2064,14 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 ## 4.6. Domain-Driven Software Architecture
 
 ### 4.6.1. Design-Level Event Storming
+Para una mejor visualización, se adjunta aquí el [enlace a nuestro tablero de Miro](https://miro.com/app/board/uXjVHl6cdl0=/?share_link_id=720842621161) donde fue realizado el Design-Level Event Storming.
+
+<img src="assets/img/chapter-04/Design-Level-Recipes-management.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/Design-Level-stoc-management.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/Design-Level-Subscription.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+
+
+
 
 ### 4.6.2. Software Architecture Context Diagram
 
