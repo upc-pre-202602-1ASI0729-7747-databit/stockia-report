@@ -353,7 +353,7 @@ del ABET – EAC - Student Outcome 3.
 
   <tr>
     <td rowspan="3" align="center">
-      <img src="" alt="Foto de Ronal Toro" width="500"/>
+      <img src="/assets/img/members-profile/ronal-toro.png" alt="Foto de Ronal Toro" width="500"/>
     </td>
     <td><b>Nombre:</b> Toro Turpo, Ronal</td>
   </tr>
@@ -363,7 +363,7 @@ del ABET – EAC - Student Outcome 3.
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy <b></b>
+      Soy Ronal Toro Turpo, tengo 20 años estudio la carrera de ingenieria de software, desde el comienzo de mi vida universitaria e ido adquiriendo y desarrollando diversas habilidades como el desarrollo en leguajes de programacion como C++, java script, y en la parte web lenguajes como HTML y CSS si bien el trabajo en equipo no es uno de mis fuertes trato de hacer lo mejor que puedo, espero aprender muchas cosas a lo largo del semestre para este curso ya que lo considero muy interezante e importante para el desarrollo de mi carrera.<b></b>
       <br/>
     </td>
   </tr>
