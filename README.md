@@ -1911,7 +1911,7 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 2) **Wireflow 2:** 
 
-- User goal: omo administrador, quiero guardar recetas con ingredientes vinculados al inventario
+- User goal: Como administrador, quiero guardar recetas con ingredientes vinculados al inventario
 
 **User Story relacionada:** US22 - Como administrador, quiero guardar recetas con ingredientes vinculados al inventario, para que al venderse un plato se descuenten automáticamente los insumos.
 
@@ -2037,53 +2037,16 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 **User Story relacionada:** 
 US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
 
-2) **User flow 2:** 
+![user flow 1](assets/img/chapter-04/user%20flow/mobile/userflow-mobile1.png)
 
-- User goal: omo administrador, quiero guardar recetas con ingredientes vinculados al inventario
-
-**User Story relacionada:** US22 - Como administrador, quiero guardar recetas con ingredientes vinculados al inventario, para que al venderse un plato se descuenten automáticamente los insumos.
-
-3) **User flow 3:** 
-
-- User goal: Como administrador, quiero ver un dashboard con métricas de stock y alertas.
-
-**User Story relacionada:** US23 - Como administrador, quiero ver un dashboard con métricas de stock y alertas, para tomar decisiones rápidas sobre insumos críticos.
-
-4) **User flow 4:** 
-
-- User goal: Como administrador, quiero asignar roles a empleados.
-
-**User Story relacionada:** US24 - Como administrador, quiero asignar roles a empleados, para que cada uno tenga recomendaciones personalizadas y permisos adecuados dentro del sistema.
-
-5) **User flow 5:** 
-
-- User goal: Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima.
-
-**User Story relacionada:** US25 - Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima, para poder preparar insumos con anticipación.
-
-6) **User flow 6:** 
-
-- User goal: Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad.
-
-**User Story relacionada:** US26 - Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad, para ajustar la oferta de mi restaurante.
-
-7) **User flow 7:**
-
-- User goal: Como administrador, quiero recibir alertas antes de que falten insumos
-
-**User Story relacionada:** US27 - Como administrador, quiero recibir alertas antes de que falten insumos, para poder comprar con tiempo y evitar quiebres de stock.
-
-8) **User flow 8:** 
-
-- User goal: Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp
-
-**User Story relacionada:** US28 - Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp, para poder actuar rápido sin necesidad de entrar al sistema.
-
-9) **User flow 9:**
+2) **User flow 2:**
 
 - User goal: Como nuevo usuario, quiero registrarme en StockIA con mis datos.
 
 **User Story relacionada:** US29 - Como nuevo usuario, quiero registrarme en StockIA con mis datos, para poder acceder al sistema y configurar mi restaurante.
+
+![user flow 2](assets/img/chapter-04/user%20flow/mobile/userflow-mobile2.png)
+![user flow 2](assets/img/chapter-04/user%20flow/mobile/userflow-mobile3.png)
 
 ## 4.5. Web Applications Prototyping
 
