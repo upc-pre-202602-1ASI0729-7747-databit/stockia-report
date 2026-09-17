@@ -458,15 +458,15 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
       </th>
       <th align="center">
         Toteat<br>
-        <img src="../assets/chapter-2/toteat-logo.png" alt="Toteat logo" width="80">
+        <img src="/assets/img/chapter-2/toteat-logo.png" alt="Toteat logo" width="80">
       </th>
       <th align="center">
         Panca Software<br>
-        <img src="../assets/chapter-2/panca-software-logo.jpg" alt="Panca Software logo" width="80">
+        <img src="/assets/img/chapter-2/panca-software-logo.jfif" alt="Panca Software logo" width="80">
       </th>
       <th align="center">
         RestoIQ<br>
-        <img src="../assets/chapter-2/restoIQ-logo.png" alt="RestoIQ logo" width="80">
+        <img src="/assets/img/chapter-2/restoIQ-logo.png" alt="RestoIQ logo" width="80">
       </th>
     </tr>
   </thead>
@@ -618,7 +618,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
 ## Segmento: 
 
 Administradores y dueños de restaurantes que sufren por las pérdidas financieras generadas por el descontrol de sus inventarios y el desperdicio de insumos perecibles.
-<img src="" alt="STOCKIA user persona" width="80">
+<p align="center"><img src="assets/img/chapter-2/user-persona.png" alt="STOCKIA user persona" width="500">
 
 ### 2.3.2. User Task Matrix
 <table>
@@ -664,11 +664,11 @@ Administradores y dueños de restaurantes que sufren por las pérdidas financier
 
 ### 2.3.3. User Journey Mapping
 
-<img src="" alt="STOCKIA user journey mapping" width="80">
+<p align="center"><img src="assets/img/chapter-2/Customer-journey-map-1.png" alt="STOCKIA user journey mapping" width="500">
 
 ### 2.3.4. Empathy Mapping
 
-<img src="" alt="STOCKIA empathy mapping" width="80">
+<p align="center"><img src="assets/img/chapter-2/emphaty-mapping.png" alt="STOCKIA empathy mapping" width="500">
 
 ## 2.4. Big Picture Event Storming
 
