@@ -436,9 +436,52 @@ del ABET – EAC - Student Outcome 3.
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
+En esta sección se expone el diseño de las entrevistas orientadas a nuestro segmentos objetivo, con el objetivo de recopilar información valiosa que ayude a identificar sus necesidades, conductas y dificultades. Para ello, se han definido preguntas principales y complementarias que estructuran la conversación, garantizando la obtención de datos tanto generales como específicos.
+
+#### Preguntas complementarias
+
+* ¿Cuál es su edad?
+* ¿De dónde son originalmente y dónde está ubicado su restaurante?
+* ¿Cuántos años tiene funcionando el restaurante?
+* ¿Cuánto tiempo llevan trabajando en el rubro gastronómico?
+* ¿Cuántos empleados trabajan actualmente en el restaurante?
+* ¿Qué tipo de cocina ofrecen principalmente (ejemplo: italiana, peruana, fusión)?
+
+#### Preguntas principales
+
+**Segmento Objetivo:** Dueño de restaurante
+
+* ¿Cómo controlan actualmente la cantidad de insumos disponibles en el restaurante y cómo saben cuándo necesitan reponerlos?
+* ¿Qué problemas suelen tener con el inventario, como falta de insumos, exceso de productos, desperdicios o vencimientos?
+* ¿Con qué frecuencia necesitan agregar, modificar o retirar productos e insumos del inventario?
+* ¿Qué información sobre el inventario considera más importante tener disponible para tomar decisiones rápidamente?
+* ¿Cómo registran actualmente las recetas de los platos y las cantidades de cada ingrediente que utiliza cada uno?
+* Cuando se vende un plato, ¿cómo se registra actualmente el consumo de los ingredientes utilizados para prepararlo?
+* Cuando cambia una receta o la cantidad de alguno de sus ingredientes, ¿cómo gestionan actualmente ese cambio?
+* ¿Cómo determinan actualmente cuánto preparar de cada plato antes de comenzar una jornada de trabajo?
+* ¿Existen días, horarios, temporadas o eventos en los que la demanda de determinados platos aumente o disminuya? ¿Cómo lo identifican?
+* ¿Han tenido situaciones en las que prepararon demasiado o muy poco de algún plato? ¿Qué consecuencias tuvo para el restaurante?
+* ¿Qué información de las ventas anteriores utilizan actualmente para planificar la cantidad de alimentos e insumos que necesitarán en los próximos días?
+* ¿Cómo deciden qué insumos comprar y en qué cantidad para los próximos días o semanas?
+* ¿Qué decisiones relacionadas con el menú o el inventario le gustaría que un sistema pudiera recomendarle automáticamente?
+* Si tuviera un sistema que analizara el historial de ventas, el inventario y los patrones de demanda, ¿qué tipo de información o alertas le gustaría recibir para ayudarle a tomar decisiones?
 
 ### 2.2.2. Registro de entrevistas
+Entrevista 1:
+Entrevistador(a): Leyla A. Ortiz Laura
+Datos del entrevistado:
+  * Nombre: Albertina
+  * Apellido: -
+  * Edad: 45 años
+  * Distrito: Ate
+  * Timing: 0:13 - 7:37
+<p align="center"><img alt="Entrevista-Leyla" src="assets/img/chapter-02/interview-leyla.png" /></p>
+<p align="center"><i>Evidencia de entrevista: Albertina </i></p>
 
+**Resumen descriptivo:**
+La entrevista con la señora Albertina, dueña del restaurante Misty Mercury, muestra que gestiona sus insumos de manera muy básica y manual: compra lo justo para cada día según los platos que decide preparar, evitando desperdicios pero sin llevar un registro formal ni contar con un sistema que le anticipe necesidades. Aunque rara vez enfrenta problemas de stock, depende de su memoria y observación de ventas pasadas para decidir qué ofrecer, lo que limita la eficiencia y la capacidad de respuesta ante cambios en la demanda. Reconoce que le sería útil contar con un sistema automático que le sugiera menús, alerte sobre insumos próximos a agotarse y le indique cuáles productos se consumen más, lo que evidencia que aún necesita apoyo adicional en la gestión de inventario y planificación.
+
+**Enlace del video:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202415088_upc_edu_pe/IQAjp5LL9kziQ5tAfau1fWAwAREdq4iAj5-jAVWYz0m7xKA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=EQEVAQ) 
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
