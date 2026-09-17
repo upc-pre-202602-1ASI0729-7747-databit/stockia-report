@@ -392,6 +392,10 @@ El desperdicio alimentario y la ineficiencia detrás de esta desconexión son pr
 | **(“How?”) ¿Cómo?** | ¿Cómo se evidencia el problema? | Se nota rápidamente en el descontrol de los almacenes, en los errores humanos al llenar los reportes semanales y en la frustración del administrador al detectar pérdidas de insumos por la falta de roles y permisos digitales en la cocina. |
 | **(“How Much?”) ¿Cuánto?** | ¿Cuánto impacto económico o de tiempo representa? | El impacto es enorme. Puede representar hasta un 25% en costos evitables solo por el desperdicio de comida perecible y las compras no planificadas. Además, un administrador llega a perder hasta el 15% de su jornada laboral tratando de cuadrar inventarios manualmente (Cullen, 2021). |
 
+#### Objetivo del proyecto:
+Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application) respaldada por un API RESTful propio, diseñada para actuar como el "cerebro" operativo de los restaurantes. Nuestra plataforma está diseñada para recibir los datos de ventas, vincularlos con las recetas y descontar los ingredientes por sí sola. Adicionalmente, el sistema usará esa información histórica y modelos de Machine Learning para predecir la demanda futura.
+
+
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
@@ -443,6 +447,24 @@ El desperdicio alimentario y la ineficiencia detrás de esta desconexión son pr
     </td>
 
 ## 1.3. Segmentos objetivo
+Luego de aplicar el proceso de validación y empatizar con los dolores operativos del rubro gastronómico, StockIA ha delimitado su alcance para enfocarse en un único segmento objetivo. Hemos identificado que la verdadera transformación digital debe ocurrir en la "primera línea" operativa, es decir, en manos de quienes gestionan el negocio día a día. 
+
+
+**Segmento Único: Administradores de Restaurante y Jefes de Sucursal** 
+
+StockIA se enfoca exclusivamente en los administradores de restaurante y jefes de sucursal, profesionales dinámicos de 25 a 45 años que dependen de sus dispositivos para gestionar la operación diaria. Estos usuarios sufren un alto estrés operativo al invertir entre 8 y 10 horas semanales en conteos manuales de inventario y lidiar con un sector que desperdicia entre el 4% y el 10% de sus insumos (Lopez, 2025). Al no contar con una herramienta que deduzca automáticamente los ingredientes vendidos, se ven obligados a realizar compras basadas en la intuición (Lopez, 2025), lo que genera constantes quiebres de stock o mermas por excesos que impactan negativamente la rentabilidad financiera del negocio.  Para resolver estos dolores, estos administradores buscan en StockIA una plataforma que actúe como un asistente ágil y proactivo. Su expectativa principal es que el sistema reciba los datos de ventas y descuente automáticamente los insumos sin requerir intervención manual. Además, necesitan aprovechar la tecnología de Machine Learning para recibir alertas predictivas de reposición directamente en canales rápidos como WhatsApp, todo esto operando bajo un entorno digital seguro que les permita delegar responsabilidades en la cocina mediante una estricta configuración de roles y permisos.
+
+| Característica | Descripción |
+|---|---|
+| **Edad** | Predominantemente entre los 25 y 45 años |
+| **Ubicación** | Zonas urbanas del Perú |
+| **Género** | Masculino y Femenino |
+| **Nivel socioeconómico** | medio - alto |
+| **Perfil tecnológico** | Intermedio - alto |
+| **Dispositivos Utilizados** | Teléfonos inteligentes, ordenadores y dispositivos IOT |
+| **Objetivo principal** | Monitorear y optimizar los procesos en los restaurantes o sitios de comida. |
+
+
 
 
 # Capítulo II: Requirements Elicitation & Analysis
