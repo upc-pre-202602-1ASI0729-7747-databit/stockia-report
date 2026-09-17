@@ -319,7 +319,7 @@ del ABET – EAC - Student Outcome 3.
 
   <tr>
     <td rowspan="3" align="center">
-      <img src="" alt="Foto de  Jesus Miranda" width="500"/>
+      <img src="assets/img/members-profile/Jesus-miranda.jpeg" alt="Foto de  Jesus Miranda" width="500"/>
     </td>
     <td><b>Nombre:</b> Miranda Cordova, Jesus Angel Yvan</td>
   </tr>
@@ -329,7 +329,7 @@ del ABET – EAC - Student Outcome 3.
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy <b></b>
+      Soy <b>Miranda Cordova Jesus</b>b>, tengo 19 años y actualmente estudio la carrera de Ingeniería de Software en la Universidad Privada de Ciencias Aplicadas (UPC). Me gusta aprender nuevos lenguajes de programación  y desarrollar juegos en mi tiempo libre. Soy una persona de naturaleza tranquila, siempre dispuesto a ayudar y colaborar cuando sea necesario <b></b>
       <br/>
     </td>
   </tr>
