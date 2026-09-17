@@ -336,7 +336,7 @@ del ABET – EAC - Student Outcome 3.
 
   <tr>
     <td rowspan="3" align="center">
-      <img src="" alt="Foto de Leyla Ortiz" width="500"/>
+      <img src="assets/img/members-profile/leyla-ortiz.JPG" alt="Foto de Leyla Ortiz" width="500"/>
     </td>
     <td><b>Nombre:</b> Ortiz Laura, Leyla Alisson</td>
   </tr>
@@ -346,7 +346,7 @@ del ABET – EAC - Student Outcome 3.
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy <b></b>
+      Soy <b>Leyla Alisson Ortiz Laura</b>. Estoy cursando el sexto ciclo de la carrera de Ingeniería de Software y cuento con los conocimientos en programación en C++, python y JavaScript. Poseo un pensamiento analítico y crítico ante cualquier situación. En un equipo aporto organización, comunicación clara, capacidad de análisis y creatividad en el diseño de soluciones, fomentando la colaboración y asegurando resultados de calidad. Soy responsable y disciplinada en cuanto a trabajos. Me gusta la convivencia en grupo y colaboro siempre que puedo. 
       <br/>
     </td>
   </tr>
