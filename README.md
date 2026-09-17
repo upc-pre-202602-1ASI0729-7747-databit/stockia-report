@@ -1868,6 +1868,32 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 ### 4.4.3. Web Applications Mock-ups
 
+1) **Mock-up 1:** 
+**User Story relacionada:** US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
+
+2) **Mock-up 2:** 
+**User Story relacionada:** US22 - Como administrador, quiero guardar recetas con ingredientes vinculados al inventario, para que al venderse un plato se descuenten automáticamente los insumos.
+
+3) **Mock-up 3:** 
+**User Story relacionada:** US23 - Como administrador, quiero ver un dashboard con métricas de stock y alertas, para tomar decisiones rápidas sobre insumos críticos.
+4) **Mock-up 4:** 
+**User Story relacionada:** US24 - Como administrador, quiero asignar roles a empleados, para que cada uno tenga recomendaciones personalizadas y permisos adecuados dentro del sistema.
+
+5) **Mock-up 5:** 
+**User Story relacionada:** US25 - Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima, para poder preparar insumos con anticipación.
+
+6) **Mock-up 6:** 
+**User Story relacionada:** US26 - Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad, para ajustar la oferta de mi restaurante.
+
+7) **Mock-up 7:** 
+**User Story relacionada:** US27 - Como administrador, quiero recibir alertas antes de que falten insumos, para poder comprar con tiempo y evitar quiebres de stock.
+
+8) **Mock-up 8:** 
+**User Story relacionada:** US28 - Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp, para poder actuar rápido sin necesidad de entrar al sistema.
+
+9) **Mock-up 9:** 
+**User Story relacionada:** US29 - Como nuevo usuario, quiero registrarme en StockIA con mis datos, para poder acceder al sistema y configurar mi restaurante.
+
 ### 4.4.4. Web Applications User Flow Diagrams
 
 1) **User flow 1:** 
