@@ -695,7 +695,7 @@ En esta sección se expone el diseño de las entrevistas orientadas a nuestro se
 **Entrevistador(a):** Leyla A. Ortiz Laura
 Datos del entrevistado:
   * **Nombre:** Albertina
-  * **Apellido:** Apumayta
+  * **Apellido:** -
   * **Edad:** 45 años
   * **Distrito:** Ate
   * **Timing:** 00:03
@@ -703,7 +703,7 @@ Datos del entrevistado:
 <p align="center"><i>Evidencia de entrevista: Albertina </i></p>
 
 **Resumen descriptivo:**
-La entrevista con la señora Albertina, dueña del restaurante Misky Mikuy, muestra que gestiona sus insumos de manera muy básica y manual: compra lo justo para cada día según los platos que decide preparar, evitando desperdicios pero sin llevar un registro formal ni contar con un sistema que le anticipe necesidades. Aunque rara vez enfrenta problemas de stock, depende de su memoria y observación de ventas pasadas para decidir qué ofrecer, lo que limita la eficiencia y la capacidad de respuesta ante cambios en la demanda. Reconoce que le sería útil contar con un sistema automático que le sugiera menús, alerte sobre insumos próximos a agotarse y le indique cuáles productos se consumen más, lo que evidencia que aún necesita apoyo adicional en la gestión de inventario y planificación.
+La entrevista con la señora Albertina, dueña del restaurante Misty Mercury, muestra que gestiona sus insumos de manera muy básica y manual: compra lo justo para cada día según los platos que decide preparar, evitando desperdicios pero sin llevar un registro formal ni contar con un sistema que le anticipe necesidades. Aunque rara vez enfrenta problemas de stock, depende de su memoria y observación de ventas pasadas para decidir qué ofrecer, lo que limita la eficiencia y la capacidad de respuesta ante cambios en la demanda. Reconoce que le sería útil contar con un sistema automático que le sugiera menús, alerte sobre insumos próximos a agotarse y le indique cuáles productos se consumen más, lo que evidencia que aún necesita apoyo adicional en la gestión de inventario y planificación.
  
 <br>
 
@@ -763,10 +763,9 @@ Asimismo, David señala que le gustaría contar con un sistema que integre el in
 **Enlace del video:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQCgtdb_9fA9T7XB-BJNcAKNAd0Um3w55VhcCg1SePkzKFs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hZLVpm) 
 
 ### 2.2.3. Análisis de entrevistas
-Entrevista 1: 
-La entrevista con la señora Albertina gestiona su restaurante de manera práctica y eficiente en lo básico, pero carece de herramientas que le permitan anticiparse y tomar decisiones basadas en datos. No utiliza herramientas formales para controlar inventario ni recetas, lo que genera dependencia de su conocimiento y observación directa. Aunque reconoce patrones de consumo, carece de un sistema que le permita proyectar tendencias o automatizar decisiones.
 
 Entrevista 2:
+
 Basándonos en la  entrevista de Claudia , el usuario expresa su disconformidad ante su situación actual con respecto a la falta de stock en momentos clave .Ya ha usado software de gestión básicos antes pero su problema se mantiene. El usuario expresó interés en herramientas que permitan el monitoreo preciso del inventario y que le generen recomendaciones o alertas según sea necesario .
 
 ## 2.3. Needfinding
@@ -828,6 +827,18 @@ Administradores y dueños de restaurantes que sufren por las pérdidas financier
 <p align="center"><img src="assets/img/chapter-02/emphaty-mapping.png" alt="STOCKIA empathy mapping" width="500">
 
 ## 2.4. Big Picture Event Storming
+
+En esta sección se presenta el resultado del Big Picture Event Storming realizado con el objetivo de explorar y comprender el dominio de negocio de TechWatch a alto nivel. La sesión permitió identificar los principales Domain Events del sistema y organizarlos según los Bounded Contexts definidos dentro de la arquitectura del dominio.
+
+A partir del análisis colaborativo se identificaron ocho Bounded Contexts principales. Cada contexto agrupa eventos relacionados con una responsabilidad específica del sistema, permitiendo separar el dominio siguiendo los principios de Domain-Driven Design.
+
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming.png" alt="STOCKIA big picture event sotorming" width="500">
+
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-2.png" alt="STOCKIA big picture event sotorming" width="500">
+
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-3.png" alt="STOCKIA big picture event sotorming" width="500">
+
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-4.png" alt="STOCKIA big picture event sotorming" width="500">
 
 ## 2.5. Ubiquitous Language
 
@@ -2647,21 +2658,127 @@ Para una mejor visualización, se adjunta aquí el [enlace a nuestro tablero de 
 <img src="assets/img/chapter-04/Design-Level-stoc-management.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
 <img src="assets/img/chapter-04/Design-Level-Subscription.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
 
+<img src="assets/img/chapter-04/Analitics-dashboard-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/IAM-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/ML-recomendations-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+
+<img src="assets/img/chapter-04/notification-messaging-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/restaurant-registration-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+
+
 
 ### 4.6.2. Software Architecture Context Diagram
-
+<img src="assets/img/chapter-04/SystemContext.png" alt="" alingn ="center"  ><br><br>
 ### 4.6.3. Software Architecture Container Diagrams
-
+<img src="assets/img/chapter-04/Containers.png" alt="" alingn ="center"  ><br><br>
 ### 4.6.4. Software Architecture Components Diagrams
-
+**Stock management**
+<img src="assets/img/chapter-04/StockComponents.png" alt="" alingn ="center"  ><br><br>
+**Recipes management**
+<img src="assets/img/chapter-04/RecipesComponents.png" alt="" alingn ="center"  ><br><br>
+**Restaurant Registration**
+<img src="assets/img/chapter-04/RegistrationComponents.png" alt="" alingn ="center"  ><br><br>
+**Subscription and Payment Management**
+<img src="assets/img/chapter-04/SubscriptionComponents.png" alt="" alingn ="center"  ><br><br>
+**Notifications**
+<img src="assets/img/chapter-04/NotificationsComponents.png" alt="" alingn ="center"  ><br><br>
+**ML and recomendations**
+<img src="assets/img/chapter-04/MLComponents.png" alt="" alingn ="center"  ><br><br>
+**Analitics - Dashboard**
+<img src="assets/img/chapter-04/AnalyticsComponents.png" alt="" alingn ="center"   ><br><br>
+**Identity and Access Management**
+<img src="assets/img/chapter-04/IAMComponents.png" alt="" alingn ="center"   ><br><br>
 ## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
 
+Los diagramas de clases presentados a continuación detallan la estructura interna de los componentes del Front-End para contextos clave de StockIA. Se ilustra la separación de responsabilidades entre la capa de Presentación (UI Components), la lógica de Aplicación y Estado (Controllers y Stores), los Modelos de Vista (View Models) y la Infraestructura (API Clients).
+
+#### Notifications & Messaging (Front-End)
+Este diagrama modela la estructura de componentes encargados de mostrar y gestionar las notificaciones y alertas críticas para el usuario (como stock bajo o vencimientos). Incluye componentes como `NotificationCenterView` y `NotificationBadgeComponent`, los cuales interactúan con `NotificationController` y `NotificationStore`.
+
+**Consideraciones y restricciones de diseño:**
+- **Seguridad e Integración:** El Front-End se comunica de forma exclusiva con el backend de StockIA. Las integraciones con servicios de mensajería (SendGrid, WhatsApp y SMS) deben mantenerse ocultas detrás de la API. Bajo ninguna circunstancia se deben exponer credenciales de estos proveedores en el navegador.
+- **Sincronización de Contratos:** El enumerador `AlertType` refleja exactamente el contrato actual definido en la base de datos (`schema.sql`). Actualmente, el estado de entrega por destinatario no está disponible en la vista, funcionalidad que estará restringida hasta que el backend exponga los registros correspondientes de entrega y destinatario.
+
+<img src="assets/img/chapter-04/class-notifications-messaging.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+#### Subscriptions & Payments (Front-End)
+Este diagrama describe la arquitectura de clases del lado del cliente para la gestión de planes y pagos. Se compone de vistas como `SubscriptionStatusView` y `AvailablePlansView`, respaldadas por `SubscriptionController`, `PaymentController` y `SubscriptionStore`.
+
+**Consideraciones y restricciones de diseño:**
+- **Procesamiento de Pagos Seguros:** El navegador (Front-End) utiliza `Stripe.js` única y exclusivamente para *tokenizar* la información de pago. Todas las operaciones sensibles de cobro, renovación de suscripción y autorización de reembolsos están delegadas y aseguradas en el backend.
+- **Limitaciones de Planes:** La vista `PlanLimitsView` requiere información sobre los límites de los planes. Dado que el esquema actual aún no cuenta con persistencia para los límites de planes, el contrato de la API deberá proveer estos datos provisionales antes de que el componente sea completamente funcional.
+
+<img src="assets/img/chapter-04/class-subscriptions-payments.png" alt="Class Diagram - Subscriptions and Payments" width="1000"/> <br>
+
+#### Identity & Access Management (Front-End)
+
+Este diagrama modela la estructura de componentes encargados de la autenticación, gestión de sesión y administración de usuarios de StockIA, que ahora soporta dos roles por restaurante: Administrador (CEO/dueño) y Trabajador. Incluye componentes como `LoginFormComponent`, `AccountProfileView` y `UserManagementView`, los cuales interactúan con `AuthController` y `AuthStore`.
+
+**Consideraciones y restricciones de diseño:**
+
+- **Seguridad e Integración:** El Front-End se comunica de forma exclusiva con el backend de StockIA. El backend es la única fuente autoritativa de autorización: la verificación de rol en el front-end es solo una conveniencia de experiencia de usuario, no un mecanismo de seguridad.
+- **Sincronización de Contratos:** El enumerador UserRole refleja exactamente el contrato de la tabla roles definida en la base de datos, con los valores `ADMINISTRATOR` y `WORKER`.
+
+<img src="assets/img/chapter-04/class-identity-management.png" alt="Class Diagram - Identity Management" width="1000"/> <br>
+
+#### Restaurant Registration (Front-End)
+
+Este diagrama modela la estructura de componentes encargados del registro y la gestión del perfil del restaurante asociado al único administrador de StockIA. Incluye componentes como `RestaurantRegistrationFormComponent` y `RestaurantProfileView`, los cuales interactúan con `RestaurantController` y `RestaurantStore`.
+
+**Consideraciones y restricciones de diseño:**
+
+- **Seguridad e Integración:** El Front-End se comunica de forma exclusiva con el backend de StockIA. Todos los endpoints de restaurante están protegidos: cada llamada requiere el JWT emitido por la sesión de Identity & Access, y el administratorId se deriva de ese token, nunca de un dato ingresado por el usuario.
+- **Sincronización de Contratos:** Los enumeradores BusinessType y RestaurantStatus reflejan exactamente el contrato actual definido en la base de datos. Actualmente no se modelan campos de sucursal en la vista, ya que StockIA registra un único restaurante por administrador, sin soporte multi-sucursal.
+
+<img src="assets/img/chapter-04/class-registration-restaurant.png" alt="Class Diagram - Registration Restaurant" width="1000"/> <br>
 ## 4.8. Database Design
-
+En esta sección se presentan los diagramas de base de datos diseñados para asegurar la persistencia de la información en StockIA. La base de datos sigue un enfoque relacional, y el diseño se ha estructurado dividiéndolo por cada Bounded Context identificado, de manera que cada módulo gestiona sus propias tablas, columnas y relaciones (llaves primarias y foráneas). Esto facilita el mantenimiento, la escalabilidad y mantiene la coherencia con la arquitectura orientada a dominios (Domain-Driven Design).
 ### 4.8.1. Database Diagrams
+Este diagrama presenta una vista global de todas las tablas de la base de datos de StockIA y cómo se relacionan los diferentes contextos entre sí, mostrando la estructura completa del sistema relacional.
 
+<img src="assets/img/chapter-04/bd-general.png" alt="General Database Diagram" width="1000"/> <br>
+
+#### Identity & Access Management
+Este diagrama modela la persistencia de los usuarios, credenciales, roles y permisos. Permite controlar quién tiene acceso al sistema y qué acciones puede realizar, garantizando la seguridad en el acceso de administradores y empleados.
+
+<img src="assets/img/chapter-04/bd-identity-access-management.png" alt="Identity Access Management DB Diagram" width="1000"/> <br>
+
+#### Restaurant Registration
+Este diagrama se enfoca en la información fundamental de los restaurantes o negocios registrados en la plataforma. Guarda los detalles de configuración, ubicaciones y datos principales que identifican a cada cliente.
+
+<img src="assets/img/chapter-04/bd-restaurant-registration.png" alt="Restaurant Registration DB Diagram" width="1000"/> <br>
+
+#### Subscriptions & Payments
+Aquí se detallan las tablas responsables de gestionar los planes de pago, suscripciones (Esencial, Profesional, IoT Completo) y el historial de transacciones o pagos de los restaurantes, permitiendo el control de la facturación.
+
+<img src="assets/img/chapter-04/bd-subscriptions-payments.png" alt="Subscriptions Payments DB Diagram" width="1000"/><br>
+
+#### Stock Management & Sales Intake
+Es uno de los diagramas centrales, responsable de gestionar el inventario en tiempo real. Modela los insumos, lotes, movimientos de entrada y salida, así como el registro de las ventas que impactan directamente en la reducción de stock.
+
+<img src="assets/img/chapter-04/bd-stock-management-sales-intake.png" alt="Stock Management DB Diagram" width="1000"/> <br>
+
+#### Recipes Management
+Este contexto gestiona la composición de los platos. El diagrama de base de datos muestra cómo se relacionan los platos del menú con los insumos del inventario (recetas), permitiendo el descuento automático de stock cuando se registra una venta.
+
+<img src="assets/img/chapter-04/bd-recipes-management.png" alt="Recipes Management DB Diagram" width="1000"/> <br>
+
+#### ML & Recommendations
+Este diagrama estructura la información necesaria para los algoritmos de predicción de demanda e inteligencia artificial. Almacena el historial de predicciones, los patrones identificados y las recomendaciones de compras generadas para el restaurante.
+
+<img src="assets/img/chapter-04/bd-ml-recommendations.png" alt="ML Recommendations DB Diagram" width="1000"/> <br>
+
+#### Notifications & Messaging
+Diseñado para almacenar el historial de notificaciones y alertas críticas (stock bajo, productos por vencer, alertas IoT). Maneja el estado de entrega y los canales por los que fueron enviados (WhatsApp, Email, SMS).
+
+<img src="../assets/img/chapter-04/bd-notifications-messaging.png" alt="Notifications Messaging DB Diagram" width="1000"/> <br>
+
+#### Analytics & Dashboard
+Este diagrama soporta las consultas y métricas agregadas que se visualizan en el Dashboard principal. Almacena resúmenes estadísticos, reportes de mermas y ahorro, optimizando las consultas de lectura para una carga rápida de los gráficos.
+
+<img src="assets/img/chapter-04/bd-analytics-dashboard.png" alt="Analytics Dashboard DB Diagram" width="1000"/> <br>
 
 # Capítulo V: Product Implementation, Validation & Deployment
 
