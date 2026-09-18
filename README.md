@@ -2423,8 +2423,6 @@ Para una mejor visualización, se adjunta aquí el [enlace a nuestro tablero de 
 <img src="assets/img/chapter-04/Design-Level-Subscription.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
 
 
-
-
 ### 4.6.2. Software Architecture Context Diagram
 
 ### 4.6.3. Software Architecture Container Diagrams
@@ -2445,12 +2443,214 @@ Para una mejor visualización, se adjunta aquí el [enlace a nuestro tablero de 
 ## 5.1. Software Configuration Management
 
 ### 5.1.1. Software Development Environment Configuration
+A continuación se detallan los productos de software utilizados en el proyecto **StockIA**, organizados según las principales actividades del ciclo de vida del producto digital.
+
+### Project Management  
+- **WhatsApp**  
+  Aplicación de mensajería instantánea que facilita la comunicación rápida y asíncrona entre los miembros del equipo para coordinar tareas operativas.  
+  Referencia: [https://web.whatsapp.com/](https://web.whatsapp.com/)  
+
+- **Google Meet**  
+  Plataforma de videoconferencias utilizada para ceremonias Scrum, reuniones de sincronización técnica y sesiones de compartición de pantalla en tiempo real.  
+  Referencia: [https://meet.google.com/](https://meet.google.com/)  
+
+---
+
+### Product UX/UI Design  
+- **UXPressia**  
+  Plataforma especializada en mapeo de experiencia de usuario y diseño de servicios. Se usó para elaborar user personas, journey mapping, empathy mapping e impact mapping.  
+  Referencia: [https://uxpressia.com/](https://uxpressia.com/)  
+
+- **Miro**  
+  Pizarra colaborativa digital para crear diagramas y esquemas en tiempo real. Se utilizó en sesiones de Event Storming para identificar procesos de negocio y definir Bounded Contexts.  
+  Referencia: [https://miro.com/](https://miro.com/)  
+
+- **Figma**  
+  Editor de gráficos vectoriales y herramienta de prototipado de interfaces. Se empleó para wireframes, mockups y prototipos interactivos del proyecto.  
+  Referencia: [https://www.figma.com/](https://www.figma.com/)  
+
+- **Jira**  
+  Software de gestión de proyectos ágil (Scrum/Kanban). Se usó para administrar el Product Backlog, priorizar requerimientos y documentar User Stories con criterios de aceptación.  
+  Referencia: [https://www.atlassian.com/es/software/jira](https://www.atlassian.com/es/software/jira)  
+
+---
+
+### Software Development  
+- **Visual Studio Code**  
+  Editor de código fuente ligero y extensible. Se utilizó para el desarrollo de componentes frontend, refactorización de scripts y edición rápida de código.  
+  Descargar: [https://code.visualstudio.com/](https://code.visualstudio.com/)  
+
+- **Extensión .rd para Visual Studio Code**  
+  Herramienta integrada en VS Code para diseño y modelado de bases de datos. Se usó para crear y gestionar el esquema relacional de StockIA directamente desde el entorno de desarrollo.  
+  Referencia: Marketplace de Visual Studio Code (extensión .rd).  
+
+---
+
+### Software Deployment  
+- **GitHub**  
+  Plataforma de desarrollo colaborativo basada en Git. Se empleó para alojar el código fuente y gestionar el despliegue continuo de la aplicación.  
+  Referencia: [https://github.com/](https://github.com/)  
+
+---
+
+### Software Documentation  
+- **GitHub**  
+  Además de control de versiones, se utilizó para redactar, organizar y dar seguimiento al informe completo del proyecto.  
+  Referencia: [https://github.com/](https://github.com/)  
+
+- **Structurizr**  
+  Herramienta para modelado de arquitectura de software mediante el enfoque C4. Se usó para construir los diagramas de arquitectura del proyecto.  
+  Referencia: [https://structurizr.com/](https://structurizr.com/)  
+
+---
+
+El equipo adopta un enfoque basado en herramientas que permiten la colaboración en tiempo real y el acceso remoto a los recursos del proyecto. **GitHub** actúa como eje central para la gestión del código fuente y la documentación, mientras que las reuniones por **Google Meet** y **WhatsApp** aseguran una comunicación fluida y constante entre los miembros del equipo.  
+
+Por otro lado, herramientas como **Figma**, **UXPressia** y **Miro** facilitan la construcción de artefactos de diseño centrados en el usuario, mientras que **Jira** permite organizar el trabajo en Sprints siguiendo principios ágiles. En el ámbito del desarrollo, **Visual Studio Code** junto con la extensión **.rd** proporcionan un entorno flexible para programar y modelar la base de datos de StockIA.  
+
+Finalmente, **Structurizr** contribuye al modelado arquitectónico y la documentación técnica, garantizando que diseño, desarrollo, pruebas y despliegue se mantengan alineados. Esta configuración asegura una entrega continua de valor en cada iteración del proyecto **StockIA**.  
 
 ### 5.1.2. Source Code Management
+El equipo DataBite Corp utiliza GitHub como plataforma y sistema de control de versiones para todos los productos digitales de StockIA, lo que permite mantener un registro histórico de cambios, colaborar de forma estructurada y garantizar la trazabilidad durante todo el ciclo de desarrollo. Para ello se creó una organización pública que contiene los siguientes repositorios independientes:
+ 
+| Solución | Nombre del repositorio | Enlace |
+| :---- | :---- | :---- |
+| Report (documentación en Markdown) | stockia-report |https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-report.git|
+| Website (Landing Page - sitio web estático) | stockia-website |https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-website|
+| WebApp (Frontend Web Application) | stockia-webapp |https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-webapp|
+ 
+**Implementación de GitFlow**  
+El equipo adopta GitFlow como workflow de control de versiones, siguiendo el modelo propuesto por Vincent Driessen en “A successful Git branching model”. Las ramas que se manejan en todos los repositorios son:
+ 
+- main: rama principal de producción. Solo recibe merges desde release o hotfix, y representa siempre el código estable y desplegado.  
+- develop: rama de integración continua. Todas las features completadas se integran aquí antes de pasar a un release, y es la rama base para crear nuevos feature branches.  
+- feature/\<módulo\>-\<descripción-corta\>: una rama por cada funcionalidad nueva. Se crea desde develop y se integra de vuelta a develop mediante Pull Request con revisión de al menos un miembro del equipo. Ejemplos: feature/inventory-stock-management, feature/recipe-ingredient-linking, feature/demand-prediction.  
+- release/v\<MAJOR\>.\<MINOR\>.\<PATCH\>: rama para preparar una nueva versión de producción. Se crea desde develop cuando las features del Sprint están completas, permitiendo únicamente correcciones menores y actualización de versión. Se integra tanto a main como a develop. Ejemplo: release/v1.2.0.  
+- hotfix/\<descripción-corta\>: rama para correcciones urgentes sobre producción. Se crea desde main y se integra tanto a main como a develop. Ejemplo: hotfix/stock-discount-error.
+	Todas las ramas se nombran en inglés y aplicando kebab-case.  
+	**Semantic Versioning**
+El equipo aplica Semantic Versioning 2.0.0 para el nombrado de releases, bajo el esquema MAJOR.MINOR.PATCH, donde MAJOR corresponde a cambios incompatibles con versiones anteriores del API, MINOR a nuevas funcionalidades compatibles con versiones anteriores, y PATCH a correcciones de errores compatibles. La primera versión funcional del producto será v1.0.0, correspondiente al entregable del Sprint 1\.
+ 
+**Conventional Commits**  
+El equipo aplica la especificación Conventional Commits para todos los mensajes de commit, bajo la estructura \<tipo\>(\<alcance\>): \<descripción corta en inglés\>. Los tipos permitidos son:
+ 
+| Tipo | Uso |
+| :---- | :---- |
+| feat | Nueva funcionalidad |
+| fix | Corrección de error |
+| docs | Cambios en documentación |
+| style | Cambios de formato que no afectan la lógica |
+| refactor | Refactorización sin nueva funcionalidad ni corrección |
+| test | Adición o modificación de pruebas |
+| chore | Tareas de mantenimiento, dependencias o configuración |
+ 
+Ejemplos aplicados al proyecto:
+ 
+feat(inventory): add automatic ingredient deduction by recipe 
+ 
+fix(auth): correct expired token validation 
+ 
+docs(chapter-iv): add information architecture section
+ 
+Este enfoque facilita la generación de historiales de cambios y mantiene un registro organizado y semántico del desarrollo. 
+
 
 ### 5.1.3. Source Code Style Guide & Conventions
+Como norma general, todo el código desarrollado en StockIA se redacta completamente en inglés, incluyendo nombres de variables, funciones, clases, archivos y comentarios, garantizando consistencia, mantenibilidad y alineación con estándares internacionales. Los nombres deben ser descriptivos y alineados al Ubiquitous Language del dominio (por ejemplo: ingredient, recipe, stockLevel, demandForecast, expirationDate), evitando ambigüedad.
+ 
+**HTML**
+ 
+Se siguen el HTML Style Guide and Coding Conventions (W3Schools) y el Google HTML/CSS Style Guide:
+ 
+* Etiquetas y atributos en minúsculas, con comillas dobles: \<section id="inventory-summary"\>\</section\>  
+* Cierre correcto de todos los elementos.  
+* Inclusión de atributos de accesibilidad: \<img src="ingredient.png" alt="ingredient-icon" width="64" height="64" /\>  
+* Sangría de 2 espacios.
+**CSS**
+ 
+Se sigue el Google HTML/CSS Style Guide:
+ 
+* Clases e IDs en kebab-case: .inventory-card, .alert-banner  
+* Omitir unidades en valores cero: margin: 0;  
+* Uso de custom properties para colores y espaciado, evitando valores hardcodeados: color: var(--primary);  
+* Uso de unidades relativas (rem, %, vh) para responsive design.  
+* Evitar estilos inline; mantener la presentación en archivos .css separados.
+**JavaScript (Landing Page)**
+ 
+Para el Landing Page (sitio web estático), se siguen el Google HTML/CSS Style Guide y el HTML Style Guide and Coding Conventions en su parte aplicable a scripting:
+ 
+* camelCase para variables y funciones: function calculateStockLevel() {}  
+* Declaración con const y let, evitando var: const stockThreshold \= 10;  
+* Uso de ES6+ (arrow functions, destructuring, template literals).  
+* Manejo de errores con try/catch.  
+* Evitar funciones excesivamente largas (máximo 20–30 líneas).
+**TypeScript / Angular (Frontend Web Application)**
+ 
+Se siguen el Angular coding style guide y el Google TypeScript Style Guide:
+ 
+* Nombres de componentes, directivas y servicios en PascalCase, con sufijo según su tipo: InventoryDashboardComponent, RecipeFormComponent, InventoryService.  
+* Nombres de archivos en kebab-case con sufijo del tipo de artefacto: inventory-dashboard.component.ts, recipe.service.ts, inventory.model.ts.  
+* Selectores de componentes en kebab-case con prefijo del proyecto: \<app-inventory-dashboard\>\</app-inventory-dashboard\>.  
+* Organización por módulos funcionales (feature modules) según el dominio: inventory, recipes, alerts, auth.  
+* Un componente, servicio o interfaz por archivo.  
+* Tipado explícito en propiedades, parámetros y valores de retorno, evitando el uso de any.  
+* Uso de interfaces para modelar entidades del dominio (por ejemplo, Ingredient, Recipe, StockAlert).  
+* Inyección de dependencias mediante el constructor, siguiendo el patrón de Angular DI.  
+* Uso de RxJS (Observables) para el manejo de llamadas HTTP y flujos de datos asíncronos.  
+* Orden recomendado dentro de cada componente: propiedades, constructor, lifecycle hooks, métodos públicos, métodos privados.
+**Java (RESTful API con Spring Boot)**
+ 
+Se siguen el Google Java Style Guide y las convenciones descritas en Spring Boot Features:
+ 
+* PascalCase para clases, interfaces y enumeraciones: public class InventoryService { public void deductIngredients() { } }  
+* camelCase para métodos, variables locales, atributos y parámetros: int stockQuantity;  
+* UPPER\_SNAKE\_CASE para constantes: static final int MAX\_INGREDIENTS \= 500;  
+* Sangría de 2 espacios (conforme al Google Java Style Guide), sin tabulaciones.  
+* Organización por capas y por bounded context: controller, service, repository, model/entity, dto, siguiendo los principios de responsabilidad única y código modular.  
+* Uso de anotaciones de Spring Boot y Spring Data JPA (@RestController, @Service, @Repository, @Entity) para reducir código repetitivo y mantener una arquitectura RESTful clara.  
+* Manejo centralizado de excepciones mediante @ControllerAdvice y @ExceptionHandler.  
+* Documentación de endpoints con OpenAPI mediante Swagger (springdoc-openapi).
+**Gherkin (criterios de aceptación y pruebas de aceptación)**
+ 
+Se siguen las Gherkin Conventions for Readable Specifications:
+ 
+* Estructura obligatoria Given – When – Then.  
+* Escenarios en inglés, descriptivos, cortos y sin ambigüedad.  
+* Un escenario por comportamiento específico.  
+* Uso de Scenario Outline cuando corresponda.  
+* Archivos .feature nombrados por módulo: inventory\_management.feature, demand\_prediction.feature
+	Ejemplo
+Feature: US21 - Gestionar el inventario de insumos (alta, baja y modificación)
+ 
+Scenario 1: Registro de nuevo insumo
+ 
+    	Given que el administrador está en el módulo de inventario
+ 
+    	When agrega un nuevo insumo
+ 
+    	Then el sistema lo registra en la base de datos.
 
 ### 5.1.4. Software Deployment Configuration
+A continuación se describe la configuración de despliegue de cada producto digital de StockIA, partiendo desde los repositorios de código fuente hasta su publicación.
+ 
+**Landing Page (sitio web estático) → Vercel**
+ 
+1. El código fuente del Landing Page (HTML, CSS y JavaScript estático) reside en el repositorio stockia-website, rama main.  
+2. Crear una cuenta en Vercel e iniciar sesión con la cuenta de GitHub de la organización del equipo, autorizando el acceso a los repositorios.  
+3. Importar el repositorio desde el panel de Vercel mediante "Add New Project" → "Import Git Repository".  
+4. Configurar el proyecto con Framework Preset "Other", al tratarse de un sitio estático sin proceso de build.  
+5. Establecer main como rama de producción. Cada push a main desencadena un redespliegue automático, y cada Pull Request hacia develop genera un preview deployment para revisión previa a la integración.  
+6. Verificar el despliegue accediendo a la URL pública asignada por Vercel y registrarla en la documentación del proyecto.
+**Frontend Web Application (Angular) → Vercel**
+ 
+1. El código fuente de la Web Application reside en el repositorio stockia-webapp, rama main.  
+2. Configurar el proyecto en Vercel con Framework Preset "Angular", especificando el comando de build (ng build) y el directorio de salida (dist/\<nombre-proyecto\>).  
+3. Registrar las variables de entorno necesarias para el consumo del RESTful API (por ejemplo, la URL base del backend) mediante los archivos de entorno de Angular (environment.ts, environment.prod.ts), evitando valores hardcodeados en el código fuente.  
+4. Establecer main como rama de producción, con el mismo esquema de preview deployments para Pull Requests hacia develop descrito para el Landing Page.  
+5. Verificar el despliegue accediendo a la URL pública asignada por Vercel y registrarla en la documentación del proyecto.
+**RESTful Web Services (Spring Boot \+ MySQL)**
+ 
+El RESTful API requiere un entorno de ejecución de servidor compatible con aplicaciones Java (JVM), por lo que se despliega en una plataforma compatible junto con su base de datos relacional. La configuración prevista contempla: generar el artefacto ejecutable del proyecto (archivo .jar) mediante Maven o Gradle, crear el servicio de base de datos MySQL en la plataforma cloud seleccionada, registrar las variables de entorno de conexión (host, puerto, nombre de base de datos, usuario y contraseña) en la plataforma de despliegue, y referenciar dichas variables desde el archivo de configuración application.properties (o application.yml) del proyecto Spring Boot en lugar de escribir las credenciales directamente en el código. La documentación de los endpoints quedará disponible públicamente vía Swagger UI. La configuración detallada y las URLs finales se documentarán en el Sprint correspondiente, una vez implementado el servicio.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
