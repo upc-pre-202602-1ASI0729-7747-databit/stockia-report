@@ -822,13 +822,13 @@ En esta sección se presenta el resultado del Big Picture Event Storming realiza
 
 A partir del análisis colaborativo se identificaron ocho Bounded Contexts principales. Cada contexto agrupa eventos relacionados con una responsabilidad específica del sistema, permitiendo separar el dominio siguiendo los principios de Domain-Driven Design.
 
-<img src="\assets\img\chapter-02\big-picture-event-storming.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming.png" alt="STOCKIA big picture event sotorming" width="500">
 
-<img src="\assets\img\chapter-02\big-picture-event-storming-2.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-2.png" alt="STOCKIA big picture event sotorming" width="500">
 
-<img src="\assets\img\chapter-02\big-picture-event-storming-3.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-3.png" alt="STOCKIA big picture event sotorming" width="500">
 
-<img src="\assets\img\chapter-02\big-picture-event-storming-4.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-4.png" alt="STOCKIA big picture event sotorming" width="500">
 
 ## 2.5. Ubiquitous Language
 
@@ -2432,6 +2432,14 @@ Para una mejor visualización, se adjunta aquí el [enlace a nuestro tablero de 
 <img src="assets/img/chapter-04/Design-Level-Recipes-management.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
 <img src="assets/img/chapter-04/Design-Level-stoc-management.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
 <img src="assets/img/chapter-04/Design-Level-Subscription.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+
+<img src="assets/img/chapter-04/Analitics-dashboard-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/IAM-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/ML-recomendations-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+
+<img src="assets/img/chapter-04/notification-messaging-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/restaurant-registration-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+
 
 
 
