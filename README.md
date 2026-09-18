@@ -1682,26 +1682,13 @@ Primero, se mostrarán los commits más importantes para el Reporte, los cuales 
 
 | **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| stockia-report | develop | _(completar)_ | _(completar)_ | _(completar — commits del repositorio de Reporte)_ | _(completar)_ |
-| stockia-report | develop | _(completar)_ | _(completar)_ | _(completar)_ | _(completar)_ |
-| stockia-report | develop | _(completar)_ | _(completar)_ | _(completar)_ | _(completar)_ |
-| stockia-report | develop | _(completar)_ | _(completar)_ | _(completar)_ | _(completar)_ |
-| stockia-report | develop | _(completar)_ | _(completar)_ | _(completar)_ | _(completar)_ |
-
+| stockia-report | develop | `ce02e2f` | Initial commit | Creación del repositorio del informe con el README inicial. | 01/09/2026 |
+| stockia-report | develop | `5023ace` | feat(cover): add initial cover | Actualiza la portada con los datos del curso (1ASI0729), el equipo (DataBit) y el proyecto (StockIA). | 09/09/2026 |
+| stockia-report | develop | `07dc284` | feat(index): add index. | Agrega la Tabla de Contenidos completa (Capítulos I al V) para estructurar la navegación del documento. | 09/09/2026 |
+| stockia-report | develop | `cce981e` | docs(chapter-3): add Non-Functional User Stories section | Incorpora los Requisitos No Funcionales (RNF01–RNF10) al capítulo de Requirements Specification. | 15/09/2026 |
+| stockia-report | develop | `b146464` | docs(chapter-4): add Landing Page Mock-up section | Añade los mock-ups (Figma) de la Landing Page en la sección 4.3.2 del capítulo de Product Design. | 16/09/2026 |
 
 <br/>
-
-A continuación se presentan los commits más importantes para la Landing Page, los cuales muestran todo el contenido visual y las funcionalidades implementadas en el Sprint 1:
-
-| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
-| :--- | :--- | :--- | :--- | :--- | :---: |
-| stockia-website | develop | _(completar)_ | _(completar)_ | _(completar — commits del repositorio de la Landing Page ) | _(completar)_ |
-| stockia-website | develop | _(completar)_ | _(completar)_ | _(completar — commits del repositorio de la Landing Page ) | _(completar)_ |
-| stockia-website | develop | _(completar)_ | _(completar)_ | _(completar — commits del repositorio de la Landing Page ) | _(completar)_ |
-| stockia-website | develop | _(completar)_ | _(completar)_ | _(completar)_ | _(completar)_ |
-| stockia-website | develop | _(completar)_ | _(completar)_ | _(completar)_ | _(completar)_ |
-<br/>
-
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la Landing Page de StockIA. A continuación, se explorarán los avances a través de imágenes que muestren el resultado obtenido (capturas pendientes de reemplazo):
