@@ -1839,23 +1839,23 @@ Para este Sprint, se han implementado y documentado los puntos de interacción d
 
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
-El proceso de despliegue para el Sprint 1 se ejecutará priorizando una infraestructura de hosting estático (Vercel o Azure Static Web Apps, según la decisión final del equipo — ver Historia Técnica TS-01), aprovechando su infraestructura global para garantizar tiempos de carga óptimos para la Landing Page. Se priorizará la automatización para permitir iteraciones rápidas sobre el diseño y el contenido informativo orientado a los segmentos objetivo.
+El proceso de despliegue para el Sprint 1 priorizó una infraestructura de hosting estático en **Vercel**, aprovechando su infraestructura global (CDN) para garantizar tiempos de carga óptimos para la Landing Page. Se priorizó la automatización para permitir iteraciones rápidas sobre el diseño y el contenido informativo orientado a los segmentos objetivo.
 
-**Actividades de Despliegue Planificadas**
-* Configuración del proyecto en el proveedor de hosting elegido (Vercel / Azure Static Web Apps), vinculando el repositorio de GitHub para despliegues automáticos.
-* Configuración de Continuous Deployment (CD) mediante GitHub Actions o la integración nativa del proveedor, activando el despliegue en cada merge a la rama `main`.
-* Asignación de un dominio temporal de pruebas (subdominio tipo `*.vercel.app` o `*.azurestaticapps.net`) para validar el sitio en QA antes de definir un dominio propio para StockIA.
+**Actividades de Despliegue Realizadas**
+* Configuración del proyecto en Vercel, vinculado al repositorio `Jesusho22/Stockia-landing` para despliegues automáticos.
+* Despliegue continuo activado en cada push a la rama `develop`, publicado en: **https://stockia-landing-giag.vercel.app**
+* Verificación de las 4 páginas del sitio (`index.html`, `features.html`, `pricing.html`, `about.html`) en el dominio de Vercel.
 
 **Evidencia Deploy: Landing Page - Responsive**
 <p align="center">
-  <img src="assets/img/[COMPLETAR-DeployLanding].png" width="500" alt="Landing Page Desplegada"/>
-  <br/><i>Landing Page Desplegada — captura de la URL pública una vez desplegada</i>
+  <img src="assets/img/chapter-05/deploy-desktop-index.png" width="500" alt="Landing Page Desplegada"/>
+  <br/><i>Landing Page Desplegada — stockia-landing-giag.vercel.app</i>
 </p>
 
 **Evidencia Deploy: Landing Page Mobile - Responsive**
 <p align="center">
-  <img src="assets/img/[COMPLETAR-Landing-Mobile].jpeg" width="200" alt="Landing Page Desplegada - Mobile"/>
-  <br/><i>Landing Page Desplegada (vista móvil) — captura desde DevTools (375px) o un celular real</i>
+  <img src="assets/img//chapter-05/deploy-mobile-index.png" width="200" alt="Landing Page Desplegada - Mobile"/>
+  <br/><i>Landing Page Desplegada (vista móvil, 390px) — stockia-landing-giag.vercel.app</i>
 </p>
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
@@ -1877,20 +1877,20 @@ La carga de trabajo se distribuyó para asegurar que todos los integrantes parti
 
 **Evidencia GitFlow: Graph**
 <p align="center">
-  <img src="assets/img/[COMPLETAR-Graph].png" width="200" alt="Graph"/>
-  <br/><i>Grafo de versiones para el gitflow — stockia-website, una vez tenga commits (Insights → Network)</i>
+  <img src="assets/img/chapter-05/Network-Gitflow.png" width="200" alt="Graph"/>
+  <br/><i>Grafo de versiones para el gitflow</i>
 </p>
 
 **Evidencia GitFlow: Commits**
 <p align="center">
-  <img src="assets/img/[COMPLETAR-Commits].png" width="500" alt="Commits"/>
+  <img src="assets/img/chapter-05/Contributors.png" width="500" alt="Commits"/>
   <br/><i>Gráfico estadístico de commits por usuario — stockia-website (Insights → Contributors)</i>
 </p>
 
 **Evidencia GitFlow: Network**
 <p align="center">
-  <img src="assets/img/[COMPLETAR-Network].png" width="500" alt="Network"/>
-  <br/><i>Grafo de trabajo — stockia-website (Insights → Network)</i>
+  <img src="assets/img/chapter-05//Network.png" width="500" alt="Network"/>
+  <br/><i>Grafo de trabajo</i>
 </p>
 
 
