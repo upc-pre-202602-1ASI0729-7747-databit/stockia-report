@@ -2445,9 +2445,9 @@ Para una mejor visualización, se adjunta aquí el [enlace a nuestro tablero de 
 
 
 ### 4.6.2. Software Architecture Context Diagram
-
+<img src="assets/img/chapter-04/SystemContext.png" alt="" alingn ="center"  ><br><br>
 ### 4.6.3. Software Architecture Container Diagrams
-
+<img src="assets/img/chapter-04/Containers.png" alt="" alingn ="center"  ><br><br>
 ### 4.6.4. Software Architecture Components Diagrams
 
 ## 4.7. Software Object-Oriented Design
