@@ -680,38 +680,70 @@ En esta sección se expone el diseño de las entrevistas orientadas a nuestro se
 * Si tuviera un sistema que analizara el historial de ventas, el inventario y los patrones de demanda, ¿qué tipo de información o alertas le gustaría recibir para ayudarle a tomar decisiones?
 
 ### 2.2.2. Registro de entrevistas
-Entrevista 1:
-Entrevistador(a): Leyla A. Ortiz Laura
+
+**Entrevista 1:**
+**Entrevistador(a):** Leyla A. Ortiz Laura
 Datos del entrevistado:
-  * Nombre: Albertina
-  * Apellido: -
-  * Edad: 45 años
-  * Distrito: Ate
-  * Timing: 0:13 - 7:37
+  * **Nombre:** Albertina
+  * **Apellido:** -
+  * **Edad:** 45 años
+  * **Distrito:** Ate
+  * **Timing:** 00:03
 <p align="center"><img alt="Entrevista-Leyla" src="assets/img/chapter-02/interview-leyla.png" /></p>
 <p align="center"><i>Evidencia de entrevista: Albertina </i></p>
 
 **Resumen descriptivo:**
 La entrevista con la señora Albertina, dueña del restaurante Misty Mercury, muestra que gestiona sus insumos de manera muy básica y manual: compra lo justo para cada día según los platos que decide preparar, evitando desperdicios pero sin llevar un registro formal ni contar con un sistema que le anticipe necesidades. Aunque rara vez enfrenta problemas de stock, depende de su memoria y observación de ventas pasadas para decidir qué ofrecer, lo que limita la eficiencia y la capacidad de respuesta ante cambios en la demanda. Reconoce que le sería útil contar con un sistema automático que le sugiera menús, alerte sobre insumos próximos a agotarse y le indique cuáles productos se consumen más, lo que evidencia que aún necesita apoyo adicional en la gestión de inventario y planificación.
+ 
+<br>
 
-**Enlace del video:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202415088_upc_edu_pe/IQAjp5LL9kziQ5tAfau1fWAwAREdq4iAj5-jAVWYz0m7xKA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=EQEVAQ) 
-<br>
-<br>
-Entrevista 2:
-Entrevistador(a): Jesus Miranda Cordova
+
+**Entrevista 2:**
+**Entrevistador(a):** Jesus Miranda Cordova
 Datos del entrevistado:
-  * Nombre: Claudia
-  * Apellido: -
-  * Edad: 39 años
-  * Distrito: Trujillo
-  * Timing: 0:20 - 6.28
+  * **Nombre:** Claudia
+  * **Apellido:** -
+  * **Edad:** 39 años
+  * **Distrito:** Trujillo
+  * **Timing:** 18:27
+
 <p align="center"><img alt="Entrevista-jesus" src="assets/img/chapter-02/interview-Jesus-miranda.png" /></p>
 <p align="center"><i>Evidencia de entrevista: Claudia </i></p>
 
 **Resumen descriptivo:**
 La entrevista con la señora Claudia, Administradora de restaurante , señala que gestiona sus insumos de manera básica y manual .Tiende a tener problemas de falta de productos por incertidumbre en cuantos clientes van a ser atendidos en la jornada.Usa un sistema básico con predicciones según ventas por años , apoyada del control manual del inventario ,pero reconoce que no es suficiente dado a las pérdidas por falta de stock y bajo control de calidad.Reconoce que le sería útil contar con un sistema automático con el que controlar mejor el almacén , controlar la calidad de los insumos y que sea posible ver que platillos son los más demandados.
 
-**Enlace del video:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411261_upc_edu_pe/IQBOAWHHqB0LQ6_dtOd2MsrnAS15zan2LlE_KeG0zOOhtJ4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=sksBll) 
+**Entrevista 3:**
+**Entrevistador(a):** Carla Gallardo Morales
+Datos del entrevistado:
+  * **Nombre:** Miguel
+  * **Apellido:** Philco
+  * **Edad:** 42 años
+  * **Distrito:** Villa Maria 
+  * **Timing:** 07:44 
+
+  <p align="center"><img alt="Entrevista-jesus" src="assets/img/chapter-02/interview-carla-gallardo.png" /></p>
+<p align="center"><i>Evidencia de entrevista: Miguel </i></p>
+
+**Resumen Descriptivo:** 
+Miguel, de 42 años, es dueño de un restaurante de comida rápida y parrilla ubicado en Villa El Salvador, que lleva aproximadamente tres años funcionando y cuenta con cinco empleados. Nos comenta que actualmente controla el inventario de manera manual y utiliza Excel para gestionar las recetas y el food cost, mientras que las ventas se registran en un sistema independiente. Esta forma de trabajo le ha generado problemas debido a errores en los inventarios, mermas y cambios inesperados en la demanda, ocasionando en algunas situaciones en las que se quede sin determinados platos.
+
+Asimismo, Miguel señala que le gustaría contar con un sistema que integre el inventario, las recetas y el historial de ventas, además de registrar las anulaciones realizadas por los encargados. Considera especialmente útil poder consultar de manera rápida información histórica sobre productos más vendidos, horas de mayor demanda y patrones de consumo, ya que actualmente debe realizar este análisis de forma manual para tomar decisiones sobre sus compras y abastecimiento.
+
+
+**Entrevista 4:**
+**Entrevistador(a):** 
+Datos del entrevistado:
+  * **Nombre:** 
+  * **Apellido:** 
+  * **Edad:** 
+  * **Distrito:** 
+  * **Timing:** 18:27
+
+  
+
+**Enlace del video:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQCgtdb_9fA9T7XB-BJNcAKNAd0Um3w55VhcCg1SePkzKFs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hZLVpm) 
+
 ### 2.2.3. Análisis de entrevistas
 
 Entrevista 2:
