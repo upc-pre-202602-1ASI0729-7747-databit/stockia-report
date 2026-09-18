@@ -1875,21 +1875,163 @@ En la siguiente sección se presenta el Impact Mapping elaborado a partir del us
 
 ## 4.1. Style Guidelines
 
+En esta sección se documentan las decisiones de diseño visual e interacción adoptadas por el equipo para StockIA, con el objetivo de mantener una experiencia consistente entre el Landing Page y la futura Web Application. Estas decisiones se traducen en un conjunto de variables y componentes reutilizables implementados directamente en el proyecto. 
+
 ### 4.1.1. General Style Guidelines
+
+El equipo estableció un repositorio central de assets (logos, tipografías, paleta de colores, iconografía) mediante variable CSS (custom properties) definidas en styles.css, con el fin de mantener consistencia visual entre el Landing Page y la futura Web Application de StockIA. La arquitectura de estilos reutiliza la estructura de un sistema de diseño previo del equipo (mismo patrón de variables y componentes), retomada con una paleta propia para StockIA.
+
+- **Branding:**
+El branding de StockIA (producto de la startup DataBite Corp) se centra en transmitir tecnología aplicada en transmitir tecnología aplicada a la sostenibilidad y precisión operativa: el naming combina “Stock” (inventario) e “IA” (inteligencia artificial), reforzado por los valores de marca declarados en el sitio Innovación, Precisión, Sostenibilidad, Confiabilidad y Cercanía.
+
+- **Typography:**
+Se definieron dos familias tipográficas (Google Fonts):
+Inter: tipografía base para todo el cuerpo de texto (body), por su alta legibilidad en interfaces de datos.
+
+1. **Orbitron:** tipografía de acento (clase .brand-font), usada exclusivamente para el logotipo/nombre de marca y elementos que refuerzan la identidad tecnológica del producto (ej. numeración de pasos en “Cómo funciona”).
+
+2. **Jerarquías:** Heading 1/2/3/4 en Inter peso 700 (bold), color var(--primary); Body en Inter peso 400, tamaño base 15px, color var(--text-muted) para texto secundario; Caption/labels en tamaños reducidos (11 - 13px) con mayúsculas y letter-spacing para etiquetas de formulario y badges.
+
+- **Colors:**
+1. **Color primario:** Verde bosque profundo #16332B (identidad tecnológica + sostenibilidad), con variantes –primary-dark #0E211B y –primary-hover #1F4438.
+
+2. **Color de acento (CTAs):** Terracota cálido #E2673B (evoca gastronomía / apetito), con variante –acent-dark #C6522A.
+
+3. **Colores neutros:** gris verdoso  –gray #5B6B66, fondos –gray-50 #F6F8F6/–GRAY-100 #F1F4F2, bordes –gray-border #E4E8E6.
+
+4. **Colores semánticos (usados en alertas de inventario e IoT):** éxito/verde #22C55E, advertencia /amarillo #FACC15, peligro/rojo #EF4444 cada uno con su variante “light” para fondos de badges de alerta.
+
+<p align="center">
+<img src="assets/img/chapter-04/style-guidelines/unnamed.png" width="200" alt="style"/>
+<img src="assets/img/chapter-04/style-guidelines/colors.png" width="200" alt="style"/>
+<img src="assets/img/chapter-04/style-guidelines/logo.png" width="200" alt="style"/>
+
+- **Spacing:**
+Sistema de espaciado y radios definidos como variables CSS reutilizables: radios de borde escalonados de 4px a 38pc ( –r-xs a –r-xl) y espaciado vertical de sección estándar de 5rem ( –section-y), reducido a 3.5rem en mobile.
+
+- **Tono de comunicación:**
+Formal/Casual: con tendencia a Formal, dado que el público objetivo son dueños y administradores de restaurantes tomando decisiones operativas. Serio/Divertido:Serio, priorizando datos concretos (ej. “-35% desperdicio”, “+18% margen operativo”) sobre humor. Respetuoso/Irreverente: Respetuoso. Entusiasta/Sereno: Entusiasta al comunicar impacto y beneficios, manteniendo un tono profesional en el resto del contenido.
 
 ### 4.1.2. Web Style Guidelines
 
+A partir de los principios generales definidos en la sección anterior, se establecieron los estándares visuales y de interacción específicos para las interfaces web responsivas de StockIA, aplicables tanto al Landing Page como a la futura Web Application. 
+
+- **Componentes UI:** botones (.btn-primary, .btn-accent, .btn-outline, .btn-ghost), cards (.feat-card, .price-card, .seg-card), badges/tags (.section-tag), formularios (.form-input, .form-textarea) y toggles (.toggle-switch) siguen un sistema de componentes propio construido directamente en CSS.
+
+- **Breakpoints responsive:** Desktop (>1024px, layout completo en grid), Tablet (768px – 1024px, grids reducidos a 2 columnas), Mobile (<768px, navegación colapsada a menú hamburguesa y grids a 1 columna; el mockup del dashboard del hero se oculta en mobile).
+
+- **Estados de interacción:** hover con elevación sutil (transform: translateY(-1px/-2px) + sombra), focus con anillo de color usando --primary-alpha, active mediante cambio de fondo a --primary-hover/--accent-dark.
+
+- **Consistencia visual Landing–Dashboard:** según la User Story 1 (Conocer la propuesta de valor de StockIA), al hacer clic en "Optimiza tu inventario" el usuario debe reconocer la misma paleta y estilo visual entre el landing y la demo del dashboard pues existe una coherencia visual con el flujo; esto se sustenta en que el mockup del dashboard embebido en el hero ya reutiliza las mismas variables de color (var(--primary), var(--danger), var(--success)) que el resto del sitio.
+
+- **Accesibilidad visual:** fondo --white (#FFFFFF) sobre texto --text (#16211D) y --text-muted (#5B6B66) ofrece contraste alto para lectura; los estados críticos (alertas) usan color + texto + ícono en simultáneo, no solo color.
+
+<p align="center">
+<img src="assets/img/chapter-04/style-guidelines/toolbar.png" width="500" alt="style"/>
+
 ## 4.2. Information Architecture
+
+Esta sección establece las decisiones que dirigen la organización del contenido en el Landing Page y en la futura Web Application de StockIA, buscando que visitantes (dueños/CEOs, administradores, jefes de cocina) y usuarios internos (Administrador, Empleado — cocinero/mesero) encuentren la información que necesitan sin esfuerzo. 
 
 ### 4.2.1. Organization Systems
 
+Esta sección explica en qué partes del producto se aplica cada esquema de organización de contenido (jerárquico, secuencial o matricial), así como los criterios de categorización utilizados para que la información resulte fácil de encontrar y de entender. 
+
+- **Organización jerárquica (visual hierarchy):** aplicada en el Dashboard (US02), donde se priorizan visualmente los insumos críticos y próximos a vencer sobre métricas secundarias de rendimiento — reflejado en el mockup del hero, que destaca primero las alertas en rojo/amarillo antes que el gráfico de demanda.
+
+- **Organización secuencial (step-by-step):** aplicada en la sección "Cómo funciona" del landing (4 pasos: Registra tu restaurante → Carga tu inventario y recetas → La IA empieza a aprender → Recibe alertas y decide) y en flujos como Solicitar demo (US20) y Registrarme como nuevo usuario en StockIA (US29).
+
+- **Organización matricial:** aplicada en el módulo de Inventario (US08), cruzando insumo × estado de stock, y en el Product Portfolio del landing, organizado por pestañas (Todas las vistas / Inventario / IA & IoT).
+
+- **Categorización por tópicos:** en la sección "Características" (US05 / features.html), agrupada en 6 módulos — Inventario Inteligente, Predicción de Demanda con IA, Recomendaciones Automáticas, Monitoreo IoT de Cocina, Roles y Permisos, Sostenibilidad y Gamificación.
+
+- **Categorización según audiencia (rol):** el landing distingue dos segmentos (Dueños/CEOs vs. Administradores/jefes de cocina) y la Web Application organizará el contenido según el rol asignado en US24 — Administrador (acceso completo) vs Empleado (acceso limitado).
+
+- **Categorización cronológica:** en las predicciones de demanda por día de la semana (US25) y en las alertas ordenadas por urgencia/proximidad de vencimiento (US22 y US23).
+
+<p align="center">
+<img src="assets/img/chapter-04/style-guidelines/landing.png" width="500" alt="style"/>
+
 ### 4.2.2. Labeling Systems
+
+Se definieron las etiquetas que representan cada conjunto de información dentro del producto, priorizando simplicidad y el mínimo número de palabras necesario para que el usuario asocie correctamente cada etiqueta con su contenido, sin ambigüedad. 
+
+| Elemento | Etiqueta propuesta | Asociación esperada |
+|---|---|---|
+| Módulo de gestión de insumos | “Inventario” | Agregar, eliminar, modificar stock (US21) |
+| Vínculo receta-insumos | “Recetas” | Composición de platos que descuenta stock automáticamente (US22) |
+| Panel principal | “Dashboard” | Métricas de stock, alertas y ahorro semanal (US02) |
+| Predicciones del sistema | “Predicción de Demanda con IA” | Proyección de ventas por plato (US25) |
+| Sugerencias de compra/menú | “Recomendaciones Automáticas” | Alertas de compra y sugerencias de menú (US26) |
+| Notificaciones críticas | “Alertas” | Recibir alertas de insumos críticos (US27), Notificaciones multicanal (US28) |
+| Sensores de cocina | “Monitoreo IoT de cocina” | Puertas abiertas, fallas de equipo, flujo de clientes (US29) |
+| Gestión de accesos | “Roles y Permisos” | Asignación Administrador / Empleado (US24) |
+| Planes de pago | “Planes” / “Precios” | Esencial, Profesional, IoT Completo (US16) |
+| Impacto ambiental | “Sostenibilidad y Gamificación” | Métricas de reducción de desperdicio y logros de equipo (US23) |
+
+<p align="center">
+<img src="assets/img/chapter-04/style-guidelines/seo.png" width="500" alt="style"/>
 
 ### 4.2.3. SEO Tags and Meta Tags
 
+A continuación se presentan los meta tags implementados en cada página principal del Landing Page, incluyendo Title, Description, Keywords y Author, con el fin de mejorar el posicionamiento en buscadores y la presentación del sitio al compartirse en otros medios. 
+
+### Landing Page — Inicio (`index.html`)
+
+```html
+<title>StockIA — Inventario Inteligente para Restaurantes</title>
+<meta name="description" content="StockIA predice la demanda de tu restaurante con Inteligencia Artificial, controla tu inventario en tiempo real y monitorea tu cocina con sensores IoT."> 
+<meta name="keywords" content="gestión de inventario, restaurantes, inteligencia artificial, machine learning, IoT, predicción de demanda, DataBite, StockIA, Perú">
+<meta name="author" content="DataBite Corp">
+<meta name="copyright" content="Copyright DataBite Corp 2026"> 
+```
+
+### Landing Page — Características (features.html)
+```html
+<title>Características — StockIA</title>
+<meta name="description" content="Descubre todas las funcionalidades de StockIA: inventario inteligente, predicción de demanda con IA, IoT, roles y más para tu restaurante.">
+``` 
+### Landing Page — Precios (pricing.html)
+```html
+<title>Precios — StockIA</title>
+<meta name="description" content="Planes de StockIA para un restaurante. Desde funciones básicas hasta predicción con IA y monitoreo IoT completo.">
+```
+### Landing Page — Nosotros (about.html)
+```html
+<title>Nosotros — StockIA</title>
+<meta name="description" content="Somos DataBite Corp, el equipo detrás de StockIA, inventario inteligente para restaurantes.">
+```
+
+
 ### 4.2.4. Searching Systems
 
+Esta sección describe los medios de ayuda que se brindarán al usuario para localizar información dentro del producto, evitando que se sienta perdido frente al volumen de datos manejados en el módulo de inventario. 
+
+- **Buscador de texto libre:** previsto para el módulo de Inventario (US21), permitirá buscar insumo por nombre.
+
+- **Filtros combinables:** por estado de stock (disponible / bajo / próximo a vencer, según US27), por rol en la vista de Roles y Permisos (US24), y por tipo de vista en el Portfolio del landing (pestañas "Todas las vistas" / "Inventario" / "IA & IoT").
+
+- **Ordenamiento de resultados:** por cantidad de stock, por fecha de vencimiento, y por relevancia/urgencia de alerta (crítica antes que media, según se ve en las alertas del mockup del dashboard).
+
+- **Presentación de resultados:** tabla en Desktop, tarjetas en Mobile, con color semántico por nivel de criticidad (rojo --danger, amarillo --warning, verde --success) consistente con los badges usados en el landing ("crítica", "IA", "media").
+
+
 ### 4.2.5. Navigation Systems
+
+En esta sección se explican las acciones y técnicas que guían al usuario a través del Landing Page y que guiarán su recorrido en la futura Web Application, buscando que pueda cumplir sus objetivos sin perder el contexto de dónde se encuentra. 
+
+- **Landing Page:** navbar superior fijo (sticky) con acceso a Inicio, Características, Precios y Nosotros (US10); selector de idioma ES/EN (US14) y botón "Solicitar demo" siempre visible en la esquina superior derecha. El CTA principal del hero ("Optimiza tu inventario →") ancla a la sección de demo del dashboard (US01), y el CTA del banner final ("Solicitar demo") redirige a la sección de contacto en Nosotros.
+
+- **Web Application:** se plantea navegación adaptada según el rol autenticado (Administrador ve todo; Empleado ve una vista reducida), dando acceso a los módulos equivalentes a las Características del landing: Dashboard, Inventario, Recetas, Predicción de Demanda, Recomendaciones, Alertas/IoT, Roles y Permisos, Planes (US24). 
+
+- **Footer como navegación secundaria:** estructurado en columnas Producto (Características, Precios), Empresa (Nosotros) y Legal (Términos, Privacidad), presente en todas las páginas del landing, con enlace directo a Términos y Condiciones según lo exige el enunciado del curso (US18).
+
+- **Navegación mobile:** colapso de los links del navbar (.navbar-links se oculta bajo 768px), priorizando accesos rápidos a Dashboard y Alertas, dado que las notificaciones críticas también llegan por WhatsApp (US27/28).
+
+<p align="center">
+<img src="assets/img/chapter-04/style-guidelines/toolbar.png" width="500" alt="style"/>
+<img src="assets/img/chapter-04/style-guidelines/footer.png" width="500" alt="style"/>
+
 
 ## 4.3. Landing Page UI Design
 
