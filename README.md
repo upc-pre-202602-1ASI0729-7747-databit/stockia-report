@@ -685,7 +685,7 @@ En esta sección se expone el diseño de las entrevistas orientadas a nuestro se
 **Entrevistador(a):** Leyla A. Ortiz Laura
 Datos del entrevistado:
   * **Nombre:** Albertina
-  * **Apellido:** Apumayta
+  * **Apellido:** -
   * **Edad:** 45 años
   * **Distrito:** Ate
   * **Timing:** 00:03
@@ -693,7 +693,7 @@ Datos del entrevistado:
 <p align="center"><i>Evidencia de entrevista: Albertina </i></p>
 
 **Resumen descriptivo:**
-La entrevista con la señora Albertina, dueña del restaurante Misky Mikuy, muestra que gestiona sus insumos de manera muy básica y manual: compra lo justo para cada día según los platos que decide preparar, evitando desperdicios pero sin llevar un registro formal ni contar con un sistema que le anticipe necesidades. Aunque rara vez enfrenta problemas de stock, depende de su memoria y observación de ventas pasadas para decidir qué ofrecer, lo que limita la eficiencia y la capacidad de respuesta ante cambios en la demanda. Reconoce que le sería útil contar con un sistema automático que le sugiera menús, alerte sobre insumos próximos a agotarse y le indique cuáles productos se consumen más, lo que evidencia que aún necesita apoyo adicional en la gestión de inventario y planificación.
+La entrevista con la señora Albertina, dueña del restaurante Misty Mercury, muestra que gestiona sus insumos de manera muy básica y manual: compra lo justo para cada día según los platos que decide preparar, evitando desperdicios pero sin llevar un registro formal ni contar con un sistema que le anticipe necesidades. Aunque rara vez enfrenta problemas de stock, depende de su memoria y observación de ventas pasadas para decidir qué ofrecer, lo que limita la eficiencia y la capacidad de respuesta ante cambios en la demanda. Reconoce que le sería útil contar con un sistema automático que le sugiera menús, alerte sobre insumos próximos a agotarse y le indique cuáles productos se consumen más, lo que evidencia que aún necesita apoyo adicional en la gestión de inventario y planificación.
  
 <br>
 
@@ -753,10 +753,9 @@ Asimismo, David señala que le gustaría contar con un sistema que integre el in
 **Enlace del video:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQCgtdb_9fA9T7XB-BJNcAKNAd0Um3w55VhcCg1SePkzKFs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hZLVpm) 
 
 ### 2.2.3. Análisis de entrevistas
-Entrevista 1: 
-La entrevista con la señora Albertina gestiona su restaurante de manera práctica y eficiente en lo básico, pero carece de herramientas que le permitan anticiparse y tomar decisiones basadas en datos. No utiliza herramientas formales para controlar inventario ni recetas, lo que genera dependencia de su conocimiento y observación directa. Aunque reconoce patrones de consumo, carece de un sistema que le permita proyectar tendencias o automatizar decisiones.
 
 Entrevista 2:
+
 Basándonos en la  entrevista de Claudia , el usuario expresa su disconformidad ante su situación actual con respecto a la falta de stock en momentos clave .Ya ha usado software de gestión básicos antes pero su problema se mantiene. El usuario expresó interés en herramientas que permitan el monitoreo preciso del inventario y que le generen recomendaciones o alertas según sea necesario .
 
 ## 2.3. Needfinding
@@ -818,6 +817,17 @@ Administradores y dueños de restaurantes que sufren por las pérdidas financier
 <p align="center"><img src="assets/img/chapter-02/emphaty-mapping.png" alt="STOCKIA empathy mapping" width="500">
 
 ## 2.4. Big Picture Event Storming
+En esta sección se presenta el resultado del Big Picture Event Storming realizado con el objetivo de explorar y comprender el dominio de negocio de TechWatch a alto nivel. La sesión permitió identificar los principales Domain Events del sistema y organizarlos según los Bounded Contexts definidos dentro de la arquitectura del dominio.
+
+A partir del análisis colaborativo se identificaron ocho Bounded Contexts principales. Cada contexto agrupa eventos relacionados con una responsabilidad específica del sistema, permitiendo separar el dominio siguiendo los principios de Domain-Driven Design.
+
+<img src="D:\Universidad\Desarrollo de apps open source\TB-\stockia-report\assets\img\chapter-02\big-picture-event-storming.png" alt="STOCKIA big picture event sotorming" width="500">
+
+<img src="D:\Universidad\Desarrollo de apps open source\TB-\stockia-report\assets\img\chapter-02\big-picture-event-storming-2.png" alt="STOCKIA big picture event sotorming" width="500">
+
+<img src="D:\Universidad\Desarrollo de apps open source\TB-\stockia-report\assets\img\chapter-02\big-picture-event-storming-3.png" alt="STOCKIA big picture event sotorming" width="500">
+
+<img src="D:\Universidad\Desarrollo de apps open source\TB-\stockia-report\assets\img\chapter-02\big-picture-event-storming-4.png" alt="STOCKIA big picture event sotorming" width="500">
 
 ## 2.5. Ubiquitous Language
 
