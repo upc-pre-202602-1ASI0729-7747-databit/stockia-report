@@ -1824,6 +1824,40 @@ Para finalizar, se mostrará una demostración del avance sobre la Landing Page 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
+**Dinámica de Implementación**
+<p align="center">
+Durante este ciclo, el equipo concentró sus esfuerzos en el desarrollo Frontend y la Documentación Técnica de la Landing Page. El equipo trabajó de forma remota, distribuyendo tareas mediante un tablero Kanban en Jira (ver evidencia en 5.2.1.3) y centralizando el control de versiones en GitHub. _(completar — nombra la herramienta real de comunicación diaria del equipo: Discord, WhatsApp, Slack, etc., y la frecuencia de las reuniones de sincronización)_.
+</p>
+
+**Analíticos de Colaboración**
+<p align="center">
+La carga de trabajo se distribuyó para asegurar que todos los integrantes participaran en la construcción de los artefactos visuales y técnicos:
+
+* Desarrollo Frontend: Implementación de componentes responsivos de la Landing Page, secciones de propuesta de valor, internacionalización (i18n) y formulario de captura de datos.
+
+* Documentación y Calidad: Redacción de Historias de Usuario, diseño de artefactos de planificación y elaboración del informe de Sprint Review conforme a la rúbrica.
+
+* Control de Versiones: El equipo aplica **GitFlow** en el repositorio `stockia-report`, con `main` y `develop` como ramas estables y una rama `feature/chapter-0X` por cada capítulo (`feature/chapter-01` a `feature/chapter-05`), integradas mediante Pull Requests revisados antes de cada merge (a la fecha, PR #1 al #29). Se aplicará la misma convención (`main` / `develop` / `feature/*`) en `stockia-website` en cuanto se suba el código de la Landing Page.
+</p>
+
+**Evidencia GitFlow: Graph**
+<p align="center">
+  <img src="assets/img/[COMPLETAR-Graph].png" width="200" alt="Graph"/>
+  <br/><i>Grafo de versiones para el gitflow — stockia-website, una vez tenga commits (Insights → Network)</i>
+</p>
+
+**Evidencia GitFlow: Commits**
+<p align="center">
+  <img src="assets/img/[COMPLETAR-Commits].png" width="500" alt="Commits"/>
+  <br/><i>Gráfico estadístico de commits por usuario — stockia-website (Insights → Contributors)</i>
+</p>
+
+**Evidencia GitFlow: Network**
+<p align="center">
+  <img src="assets/img/[COMPLETAR-Network].png" width="500" alt="Network"/>
+  <br/><i>Grafo de trabajo — stockia-website (Insights → Network)</i>
+</p>
+
 
 ## 5.3. Validation Interviews
 
