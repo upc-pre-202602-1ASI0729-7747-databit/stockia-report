@@ -2449,7 +2449,22 @@ Para una mejor visualización, se adjunta aquí el [enlace a nuestro tablero de 
 ### 4.6.3. Software Architecture Container Diagrams
 <img src="assets/img/chapter-04/Containers.png" alt="" alingn ="center"  ><br><br>
 ### 4.6.4. Software Architecture Components Diagrams
-
+**Stock management**
+<img src="assets/img/chapter-04/StockComponents.png" alt="" alingn ="center"  ><br><br>
+**Recipes management**
+<img src="assets/img/chapter-04/RecipesComponents.png" alt="" alingn ="center"  ><br><br>
+**Restaurant Registration**
+<img src="assets/img/chapter-04/RegistrationComponents.png" alt="" alingn ="center"  ><br><br>
+**Subscription and Payment Management**
+<img src="assets/img/chapter-04/SubscriptionComponents.png" alt="" alingn ="center"  ><br><br>
+**Notifications**
+<img src="assets/img/chapter-04/NotificationsComponents.png" alt="" alingn ="center"  ><br><br>
+**ML and recomendations**
+<img src="assets/img/chapter-04/MLComponents.png" alt="" alingn ="center"  ><br><br>
+**Analitics - Dashboard**
+<img src="assets/img/chapter-04/AnalyticsComponents.png" alt="" alingn ="center"   ><br><br>
+**Identity and Access Management**
+<img src="assets/img/chapter-04/IAMComponents.png" alt="" alingn ="center"   ><br><br>
 ## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
