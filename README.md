@@ -1820,6 +1820,14 @@ Para finalizar, se mostrará una demostración del avance sobre la Landing Page 
 
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
+Para este Sprint, se han implementado y documentado los puntos de interacción de la Landing Page. Aunque el almacenamiento persistente será parte de un Sprint posterior, se ha programado la lógica de captura, validación y respuesta visual en el frontend para el siguiente servicio simulado:
+
+| Endpoint / Interacción | Acción (HTTP) | Parámetros (Input IDs) | Descripción del Response |
+| :--- | :---: | :--- | :--- |
+| `about.html#contactForm` | **POST (Mock)** | `name`, `email`, `message` | **202 Accepted**: Cambio de estado del botón a "✓ Enviado" y reseteo del formulario. |
+
+* **URL del Repositorio de Landing Page:** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-website _(repositorio creado, pendiente de subir el código — ver nota en 5.2.1.4)_
+
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 El proceso de despliegue para el Sprint 1 se ejecutará priorizando una infraestructura de hosting estático (Vercel o Azure Static Web Apps, según la decisión final del equipo — ver Historia Técnica TS-01), aprovechando su infraestructura global para garantizar tiempos de carga óptimos para la Landing Page. Se priorizará la automatización para permitir iteraciones rápidas sobre el diseño y el contenido informativo orientado a los segmentos objetivo.
