@@ -817,17 +817,18 @@ Administradores y dueños de restaurantes que sufren por las pérdidas financier
 <p align="center"><img src="assets/img/chapter-02/emphaty-mapping.png" alt="STOCKIA empathy mapping" width="500">
 
 ## 2.4. Big Picture Event Storming
+
 En esta sección se presenta el resultado del Big Picture Event Storming realizado con el objetivo de explorar y comprender el dominio de negocio de TechWatch a alto nivel. La sesión permitió identificar los principales Domain Events del sistema y organizarlos según los Bounded Contexts definidos dentro de la arquitectura del dominio.
 
 A partir del análisis colaborativo se identificaron ocho Bounded Contexts principales. Cada contexto agrupa eventos relacionados con una responsabilidad específica del sistema, permitiendo separar el dominio siguiendo los principios de Domain-Driven Design.
 
-<img src="D:\Universidad\Desarrollo de apps open source\TB-\stockia-report\assets\img\chapter-02\big-picture-event-storming.png" alt="STOCKIA big picture event sotorming" width="500">
+<img src="\assets\img\chapter-02\big-picture-event-storming.png" alt="STOCKIA big picture event sotorming" width="500">
 
-<img src="D:\Universidad\Desarrollo de apps open source\TB-\stockia-report\assets\img\chapter-02\big-picture-event-storming-2.png" alt="STOCKIA big picture event sotorming" width="500">
+<img src="\assets\img\chapter-02\big-picture-event-storming-2.png" alt="STOCKIA big picture event sotorming" width="500">
 
-<img src="D:\Universidad\Desarrollo de apps open source\TB-\stockia-report\assets\img\chapter-02\big-picture-event-storming-3.png" alt="STOCKIA big picture event sotorming" width="500">
+<img src="\assets\img\chapter-02\big-picture-event-storming-3.png" alt="STOCKIA big picture event sotorming" width="500">
 
-<img src="D:\Universidad\Desarrollo de apps open source\TB-\stockia-report\assets\img\chapter-02\big-picture-event-storming-4.png" alt="STOCKIA big picture event sotorming" width="500">
+<img src="\assets\img\chapter-02\big-picture-event-storming-4.png" alt="STOCKIA big picture event sotorming" width="500">
 
 ## 2.5. Ubiquitous Language
 
