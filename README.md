@@ -1822,6 +1822,24 @@ Para finalizar, se mostrará una demostración del avance sobre la Landing Page 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
+El proceso de despliegue para el Sprint 1 se ejecutará priorizando una infraestructura de hosting estático (Vercel o Azure Static Web Apps, según la decisión final del equipo — ver Historia Técnica TS-01), aprovechando su infraestructura global para garantizar tiempos de carga óptimos para la Landing Page. Se priorizará la automatización para permitir iteraciones rápidas sobre el diseño y el contenido informativo orientado a los segmentos objetivo.
+
+**Actividades de Despliegue Planificadas**
+* Configuración del proyecto en el proveedor de hosting elegido (Vercel / Azure Static Web Apps), vinculando el repositorio de GitHub para despliegues automáticos.
+* Configuración de Continuous Deployment (CD) mediante GitHub Actions o la integración nativa del proveedor, activando el despliegue en cada merge a la rama `main`.
+* Asignación de un dominio temporal de pruebas (subdominio tipo `*.vercel.app` o `*.azurestaticapps.net`) para validar el sitio en QA antes de definir un dominio propio para StockIA.
+
+**Evidencia Deploy: Landing Page - Responsive**
+<p align="center">
+  <img src="assets/img/[COMPLETAR-DeployLanding].png" width="500" alt="Landing Page Desplegada"/>
+  <br/><i>Landing Page Desplegada — captura de la URL pública una vez desplegada</i>
+</p>
+
+**Evidencia Deploy: Landing Page Mobile - Responsive**
+<p align="center">
+  <img src="assets/img/[COMPLETAR-Landing-Mobile].jpeg" width="200" alt="Landing Page Desplegada - Mobile"/>
+  <br/><i>Landing Page Desplegada (vista móvil) — captura desde DevTools (375px) o un celular real</i>
+</p>
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 **Dinámica de Implementación**
