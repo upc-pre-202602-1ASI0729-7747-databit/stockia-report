@@ -732,8 +732,8 @@ Asimismo, Miguel señala que le gustaría contar con un sistema que integre el i
 
 
 **Entrevista 4:**
-**Entrevistador(a): Aldo Jesus Huaman Oscco** 
-Datos del entrevistado:
+**Entrevistador(a): Aldo Jesus Huaman Oscco** </br>
+**Datos del entrevistado:**
   * **Nombre: David** 
   * **Apellido: Ayllon** 
   * **Edad: 35** 
@@ -747,6 +747,8 @@ Datos del entrevistado:
 David, de 35 años, es jefe de cocina de un restaurante de comida italiana ubicada en Surco, que lleva aproximadamente 5 años funcionando y cuenta con 3 cocineros y 5 mosos mas personal de cajas y otros. Nos comenta que actualmente controla el inventario de manera manual y utiliza Excel para gestionar las recetas, las ventas se registran en un sistema independiente y hacen uso de la gestion y experiencia del jefe de cocinar para la compra de insumos en alta demanda. Esta forma de trabajo le ha generado sobrecarga y fallos en el inventario por margenes de error al manejarlo, mermas y cambios inesperados en la demanda, ocasionando en algunas situaciones en las que se quede sin determinados platos.
 
 Asimismo, David señala que le gustaría contar con un sistema que integre el inventario, genere reportes de oferta y demanda, poder visualizar el stock del producto en tiempo real y poder acceder a notificaciones que le indiquen de manera no intrusiva que mandar a comprar los fines de semana o los feriados por venir.
+</br>
+
 
 **Enlace del video:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQCgtdb_9fA9T7XB-BJNcAKNAd0Um3w55VhcCg1SePkzKFs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hZLVpm) 
 
