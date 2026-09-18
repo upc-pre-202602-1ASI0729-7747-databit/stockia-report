@@ -3386,3 +3386,5 @@ URL del repositorio (stockia-report): https://github.com/upc-pre-202602-1ASI0729
 URL del repositorio (stockia-website) https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-website
 
 URL de landing page (vercel): https://stockia-landing-giag.vercel.app/
+
+Exposicion : https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQDEOleKp0hNTLzONouiVj-wARDzRNQtkhIAFRriY9p5BvY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XhsNyB
