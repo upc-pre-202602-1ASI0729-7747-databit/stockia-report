@@ -1690,6 +1690,14 @@ Primero, se mostrarán los commits más importantes para el Reporte, los cuales 
 
 <br/>
 
+A continuación se presentan los commits más importantes para la Landing Page, los cuales muestran todo el contenido visual y las funcionalidades implementadas en el Sprint 1:
+
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| Stockia-landing | develop | `5128a01` | Version de prueba | Commit único que sube la estructura completa de la Landing Page: `index.html`, `features.html`, `pricing.html`, `about.html`, hojas de estilo (`css/styles.css`) y lógica de i18n/interacciones (`js/`). | 06/09/2026 |
+
+<br/>
+
 #### 5.2.1.5. Execution Evidence for Sprint Review
 En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la Landing Page de StockIA. A continuación, se explorarán los avances a través de imágenes que muestren el resultado obtenido (capturas pendientes de reemplazo):
 <br/>
@@ -1698,7 +1706,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-Sección-header-/-navbar].png" width="800" alt="Sección header / navbar"/>
+  <img src="assets/img/chapter-05/01-header-navbar.png" width="800" alt="Sección header / navbar"/>
   <br/><i>Sección header / navbar — StockIA</i>
 </p>
 <br/>
@@ -1707,7 +1715,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-Sección-hero-+-mockup-de-dashboard].png" width="800" alt="Sección hero + mockup de dashboard"/>
+  <img src="assets/img/chapter-05/02-hero-mockup-dashboard.png" width="800" alt="Sección hero + mockup de dashboard"/>
   <br/><i>Sección hero + mockup de dashboard — StockIA</i>
 </p>
 <br/>
@@ -1716,7 +1724,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-Barra-de-estadísticas].png" width="800" alt="Barra de estadísticas"/>
+  <img src="assets/img/chapter-05/03-barra-estadisticas.png" width="800" alt="Barra de estadísticas"/>
   <br/><i>Barra de estadísticas — StockIA</i>
 </p>
 <br/>
@@ -1725,7 +1733,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-Sección-Para-quién-es-StockIA.png" width="800" alt="Sección ¿Para quién es StockIA?"/>
+  <img src="assets/img/chapter-05/04-para-quien-es-stockia.png" width="800" alt="Sección ¿Para quién es StockIA?"/>
   <br/><i>Sección "¿Para quién es StockIA?" — StockIA</i>
 </p>
 <br/>
@@ -1734,7 +1742,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-Grid-de-funcionalidades].png" width="800" alt="Grid de funcionalidades"/>
+  <img src="assets/img/chapter-05/05-grid-funcionalidades.png" width="800" alt="Grid de funcionalidades"/>
   <br/><i>Grid de funcionalidades — StockIA</i>
 </p>
 <br/>
@@ -1743,7 +1751,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-Sección-Más-que-un-inventario-(diferenciadores)].png" width="800" alt="Sección Más que un inventario (diferenciadores)"/>
+  <img src="assets/img/chapter-05/06-mas-que-un-inventario.png" width="800" alt="Sección Más que un inventario (diferenciadores)"/>
   <br/><i>Sección "Más que un inventario" (diferenciadores) — StockIA</i>
 </p>
 <br/>
@@ -1752,7 +1760,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-Sección-de-integraciones-externas].png" width="800" alt="Sección de integraciones externas"/>
+  <img src="assets/img/chapter-05/07-integraciones-externas.png" width="800" alt="Sección de integraciones externas"/>
   <br/><i>Sección de integraciones externas — StockIA</i>
 </p>
 <br/>
@@ -1761,7 +1769,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-Sección-de-portafolio].png" width="800" alt="Sección de portafolio"/>
+  <img src="assets/img/chapter-05/08-seccion-portafolio.png" width="800" alt="Sección de portafolio"/>
   <br/><i>Sección de portafolio — StockIA</i>
 </p>
 <br/>
@@ -1770,7 +1778,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-Placeholder-de-video-demostrativo].png" width="800" alt="Placeholder de video demostrativo"/>
+  <img src="assets/img/chapter-05/09-placeholder-video.png" width="800" alt="Placeholder de video demostrativo"/>
   <br/><i>Placeholder de video demostrativo — StockIA</i>
 </p>
 <br/>
@@ -1779,7 +1787,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-features.html-—-grid-completo].png" width="800" alt="features.html — grid completo"/>
+  <img src="assets/img/chapter-05/10-features-grid-completo.png" width="800" alt="features.html — grid completo"/>
   <br/><i>features.html — grid completo — StockIA</i>
 </p>
 <br/>
@@ -1788,7 +1796,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-pricing.html-—-planes-y-FAQ].png" width="800" alt="pricing.html — planes y FAQ"/>
+  <img src="assets/img/chapter-05/11-pricing-planes-y-faq.png" width="800" alt="pricing.html — planes y FAQ"/>
   <br/><i>pricing.html — planes y FAQ — StockIA</i>
 </p>
 <br/>
@@ -1797,7 +1805,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-about.html-—-misión,-visión,-equipo-y-formulario].png" width="800" alt="about.html — misión, visión, equipo y formulario"/>
+  <img src="assets/img/chapter-05/12-about-mision-vision-equipo-formulario.png" width="800" alt="about.html — misión, visión, equipo y formulario"/>
   <br/><i>about.html — misión, visión, equipo y formulario — StockIA</i>
 </p>
 <br/>
@@ -1806,7 +1814,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-Sección-footer].png" width="800" alt="Sección footer"/>
+  <img src="assets/img/chapter-05/13-seccion-footer.png" width="800" alt="Sección footer"/>
   <br/><i>Sección footer — StockIA</i>
 </p>
 <br/>
@@ -1814,7 +1822,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 Para finalizar, se mostrará una demostración del avance sobre la Landing Page dentro de GitHub, para la publicación de la página web:
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-RepositorioGithub].png" width="800" alt="Repositorio de GitHub"/>
+  <img src="assets/img/chapter-05/14-repositorio-github.png" width="800" alt="Repositorio de GitHub"/>
   <br/><i>Repositorio de GitHub sobre la Landing Page de StockIA — _(completar)_</i>
 </p>
 
@@ -1822,11 +1830,12 @@ Para finalizar, se mostrará una demostración del avance sobre la Landing Page 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 Para este Sprint, se han implementado y documentado los puntos de interacción de la Landing Page. Aunque el almacenamiento persistente será parte de un Sprint posterior, se ha programado la lógica de captura, validación y respuesta visual en el frontend para el siguiente servicio simulado:
 
-| Endpoint / Interacción | Acción (HTTP) | Parámetros (Input IDs) | Descripción del Response |
+| Endpoint / Interacción | Acción (HTTP) | Campos del formulario | Descripción del Response |
 | :--- | :---: | :--- | :--- |
-| `about.html#contactForm` | **POST (Mock)** | `name`, `email`, `message` | **202 Accepted**: Cambio de estado del botón a "✓ Enviado" y reseteo del formulario. |
+| `about.html#contactForm` | **POST (Mock)** | Nombre*, Restaurante, Correo*, Mensaje (`*` obligatorios vía `required`) | **202 Accepted (simulado)**: `preventDefault()` bloquea el envío real, el botón cambia a " Enviado" (fondo de éxito) y se deshabilita 3 segundos; luego el formulario se resetea (`form.reset()`) automáticamente. |
 
-* **URL del Repositorio de Landing Page:** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-website _(repositorio creado, pendiente de subir el código — ver nota en 5.2.1.4)_
+* **URL del Repositorio de Landing Page:** https://github.com/Jesusho22/Stockia-landing
+* **URL de la Landing Page desplegada:** https://stockia-landing-giag.vercel.app/about.html#contacto
 
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
