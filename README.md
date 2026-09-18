@@ -1599,71 +1599,71 @@ La organización de líderes y colaboradores está directamente relacionada con 
 
 | **User Story Id** | **Título de la Historia** | **Task Id** | **Título de la Tarea** | **Descripción de la Tarea** | **Est. (Hrs)** | **Asignado** | **Status** |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
-| **US01** | Conocer la propuesta de valor | T-01-1 | Maquetado del Hero | Construir el layout del hero con título, descripción y botones CTA. | 5 | _(completar)_ | _(completar)_ |
-|  |  | T-01-2 | Redacción y traducción del mensaje principal | Escribir el copy de la propuesta de valor en español e inglés. | 3 | _(completar)_ | _(completar)_ |
-| **US02** | Ver una vista previa del dashboard | T-02-1 | Mockup ilustrativo del dashboard | Maquetar las tarjetas y el gráfico ilustrativos con CSS. | 6 | _(completar)_ | _(completar)_ |
-|  |  | T-02-2 | Responsive del mockup | Ocultar el mockup en pantallas menores a 768px. | 2 | _(completar)_ | _(completar)_ |
-| **US03** | Conocer estadísticas e indicadores | T-03-1 | Barra de estadísticas | Maquetar los cuatro indicadores de impacto del Home. | 4 | _(completar)_ | _(completar)_ |
-|  |  | T-03-2 | Nota de transparencia | Redactar y traducir la nota de cifras de ejemplo. | 2 | _(completar)_ | _(completar)_ |
-| **US04** | Identificar si StockIA es para mi rol | T-04-1 | Sección "¿Para quién es StockIA?" | Maquetar las tarjetas por segmento (dueños/CEOs y administradores). | 4 | _(completar)_ | _(completar)_ |
-|  |  | T-04-2 | Redacción por segmento | Escribir el contenido diferenciado para cada rol. | 3 | _(completar)_ | _(completar)_ |
-| **US05** | Conocer las funcionalidades principales | T-05-1 | Grid de seis funcionalidades | Maquetar las tarjetas de funcionalidades en el Home. | 5 | _(completar)_ | _(completar)_ |
-|  |  | T-05-2 | Enlace a features.html | Implementar el botón "Ver todas las características". | 2 | _(completar)_ | _(completar)_ |
-| **US06** | Conocer los diferenciadores | T-06-1 | Sección "Más que un inventario" | Maquetar las tres tarjetas de diferenciadores. | 3 | _(completar)_ | _(completar)_ |
-|  |  | T-06-2 | Redacción y traducción | Escribir el contenido de cada diferenciador. | 2 | _(completar)_ | _(completar)_ |
-| **US07** | Conocer las integraciones externas | T-07-1 | Sección de integraciones | Maquetar las cuatro tarjetas con la etiqueta "En evaluación". | 3 | _(completar)_ | _(completar)_ |
-|  |  | T-07-2 | Nota de transparencia | Redactar el texto que aclara que la decisión está pendiente. | 2 | _(completar)_ | _(completar)_ |
-| **US08** | Explorar vistas ilustrativas | T-08-1 | Sección de portafolio | Maquetar las cuatro vistas ilustrativas. | 5 | _(completar)_ | _(completar)_ |
-|  |  | T-08-2 | Tabs de portafolio (JS) | Implementar el cambio de pestaña Inventario / IA & IoT. | 3 | _(completar)_ | _(completar)_ |
-| **US09** | Ver el video de presentación | T-09-1 | Placeholder de video | Maquetar el bloque "Video demostrativo próximamente". | 2 | _(completar)_ | _(completar)_ |
-|  |  | T-09-2 | Estructura para reemplazo futuro | Dejar preparado el iframe de YouTube comentado en el código. | 2 | _(completar)_ | _(completar)_ |
-| **US10** | Navegar entre las páginas del sitio | T-10-1 | Navbar compartido | Implementar el menú superior en las 4 páginas. | 4 | _(completar)_ | _(completar)_ |
-|  |  | T-10-2 | Estado activo del enlace | Resaltar visualmente la página actual en el navbar. | 2 | _(completar)_ | _(completar)_ |
-| **US11** | Ver el detalle completo de funcionalidades | T-11-1 | Grid completo en features.html | Maquetar las seis funcionalidades con descripción extendida. | 5 | _(completar)_ | _(completar)_ |
-| **US12** | Entender cómo empezar a usar StockIA | T-12-1 | Sección "Cómo funciona" | Maquetar los cuatro pasos numerados. | 4 | _(completar)_ | _(completar)_ |
-| **US13** | Cambiar el idioma del sitio | T-13-1 | Selector de idioma (ES/EN) | Implementar los botones de idioma en el navbar. | 3 | _(completar)_ | _(completar)_ |
-|  |  | T-13-2 | Motor de traducción (i18n.js) | Programar el reemplazo de textos mediante data-i18n. | 6 | _(completar)_ | _(completar)_ |
-| **US14** | Mantener mi idioma preferido | T-14-1 | Persistencia en localStorage | Guardar y leer el idioma seleccionado entre páginas. | 3 | _(completar)_ | _(completar)_ |
-| **US15** | Consultar los planes disponibles | T-15-1 | Maquetado de los 3 planes | Construir las tarjetas de Esencial, Profesional e IoT Completo. | 5 | _(completar)_ | _(completar)_ |
-|  |  | T-15-2 | Nota de precios de ejemplo | Redactar la nota de transparencia sobre precios ilustrativos. | 2 | _(completar)_ | _(completar)_ |
-| **US16** | Comparar precios mensuales y anuales | T-16-1 | Toggle mensual/anual (JS) | Implementar el interruptor y el recálculo de montos. | 4 | _(completar)_ | _(completar)_ |
-| **US17** | Resolver dudas frecuentes | T-17-1 | Acordeón de preguntas frecuentes | Implementar la apertura/cierre exclusivo de preguntas. | 4 | _(completar)_ | _(completar)_ |
-|  |  | T-17-2 | Redacción de preguntas y respuestas | Escribir el contenido del FAQ en español e inglés. | 3 | _(completar)_ | _(completar)_ |
-| **US18** | Conocer misión, visión y valores | T-18-1 | Sección misión/visión/valores | Maquetar el bloque correspondiente en about.html. | 3 | _(completar)_ | _(completar)_ |
-|  |  | T-18-2 | Redacción de contenido | Escribir la misión, visión y los cinco valores. | 2 | _(completar)_ | _(completar)_ |
-| **US19** | Conocer al equipo detrás de StockIA | T-19-1 | Fichas de equipo | Maquetar las cuatro fichas placeholder con nombre, rol y código. | 3 | _(completar)_ | _(completar)_ |
-|  |  | T-19-2 | Nota de datos pendientes | Redactar la nota de "fichas de ejemplo". | 1 | _(completar)_ | _(completar)_ |
-| **US20** | Solicitar una demo mediante formulario | T-20-1 | Formulario de contacto | Maquetar el formulario con validación nativa de campos obligatorios. | 4 | _(completar)_ | _(completar)_ |
-|  |  | T-20-2 | Confirmación visual de envío | Implementar el mensaje "✓ Enviado" y el reseteo del formulario. | 3 | _(completar)_ | _(completar)_ |
-|  |  | T-20-3 | Accesos al formulario | Enlazar los botones "Solicitar demo" del navbar, banner y footer. | 2 | _(completar)_ | _(completar)_ |
-| **RNF01** | Experiencia responsiva | T-R1-1 | Breakpoints de 1024px y 768px | Definir media queries para tablets y móviles. | 4 | _(completar)_ | _(completar)_ |
-|  |  | T-R1-2 | Ajuste de cuadrículas | Reorganizar columnas y ocultar elementos no esenciales en móvil. | 4 | _(completar)_ | _(completar)_ |
-| **RNF02** | Contraste y legibilidad accesible | T-R2-1 | Paleta de contraste | Definir colores de texto con contraste adecuado sobre fondos claros y oscuros. | 3 | _(completar)_ | _(completar)_ |
-| **RNF03** | Navegación consistente | T-R3-1 | Navbar y footer compartidos | Reutilizar los mismos componentes en las 4 páginas. | 3 | _(completar)_ | _(completar)_ |
-| **RNF04** | Carga rápida | T-R4-1 | Optimización de assets | Evitar frameworks y librerías pesadas innecesarias. | 3 | _(completar)_ | _(completar)_ |
-| **RNF05** | Buen posicionamiento en buscadores | T-R5-1 | Metadatos por página | Agregar title y meta description a cada página. | 2 | _(completar)_ | _(completar)_ |
-|  |  | T-R5-2 | Metadatos adicionales del Home | Agregar meta keywords, author y copyright en index.html. | 2 | _(completar)_ | _(completar)_ |
-| **RNF06** | Compatibilidad con navegadores | T-R6-1 | CSS estándar (Flexbox/Grid) | Verificar compatibilidad en navegadores modernos. | 3 | _(completar)_ | _(completar)_ |
-|  |  | T-R6-2 | Degradación de animaciones | Manejar el caso sin soporte de IntersectionObserver. | 2 | _(completar)_ | _(completar)_ |
-| **RNF07** | Animaciones de entrada | T-R7-1 | Scroll reveal (JS) | Implementar la animación de aparición progresiva de tarjetas. | 4 | _(completar)_ | _(completar)_ |
-| **RNF08** | Contenido pendiente señalizado | T-R8-1 | Notas visibles de contenido de ejemplo | Agregar notas junto a las secciones con datos ilustrativos. | 2 | _(completar)_ | _(completar)_ |
-|  |  | T-R8-2 | Comentarios en el código | Documentar en HTML qué elementos deben reemplazarse. | 1 | _(completar)_ | _(completar)_ |
-| **RNF09** | Sistema de diseño centralizado | T-R9-1 | Variables CSS en :root | Centralizar colores, tipografías y espaciados. | 4 | _(completar)_ | _(completar)_ |
-| **RNF10** | Textos centralizados (i18n) | T-R10-1 | Diccionario único de traducciones | Concentrar todos los textos ES/EN en i18n.js. | 4 | _(completar)_ | _(completar)_ |
+| **US01** | Conocer la propuesta de valor | T-01-1 | Maquetado del Hero | Construir el layout del hero con título, descripción y botones CTA. | 5 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-01-2 | Redacción y traducción del mensaje principal | Escribir el copy de la propuesta de valor en español e inglés. | 3 | Huaman Oscco, Aldo Jesus | Done |
+| **US02** | Ver una vista previa del dashboard | T-02-1 | Mockup ilustrativo del dashboard | Maquetar las tarjetas y el gráfico ilustrativos con CSS. | 6 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-02-2 | Responsive del mockup | Ocultar el mockup en pantallas menores a 768px. | 2 | Ortiz Laura, Leyla Alisson | Done |
+| **US03** | Conocer estadísticas e indicadores | T-03-1 | Barra de estadísticas | Maquetar los cuatro indicadores de impacto del Home. | 4 | Toro Turpo, Ronal | Done |
+|  |  | T-03-2 | Nota de transparencia | Redactar y traducir la nota de cifras de ejemplo. | 2 | Gallardo Morales, Carla Alejandra | Done |
+| **US04** | Identificar si StockIA es para mi rol | T-04-1 | Sección "¿Para quién es StockIA?" | Maquetar las tarjetas por segmento (dueños/CEOs y administradores). | 4 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-04-2 | Redacción por segmento | Escribir el contenido diferenciado para cada rol. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **US05** | Conocer las funcionalidades principales | T-05-1 | Grid de seis funcionalidades | Maquetar las tarjetas de funcionalidades en el Home. | 5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-05-2 | Enlace a features.html | Implementar el botón "Ver todas las características". | 2 | Toro Turpo, Ronal | Done |
+| **US06** | Conocer los diferenciadores | T-06-1 | Sección "Más que un inventario" | Maquetar las tres tarjetas de diferenciadores. | 3 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-06-2 | Redacción y traducción | Escribir el contenido de cada diferenciador. | 2 | Huaman Oscco, Aldo Jesus | Done |
+| **US07** | Conocer las integraciones externas | T-07-1 | Sección de integraciones | Maquetar las cuatro tarjetas con la etiqueta "En evaluación". | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-07-2 | Nota de transparencia | Redactar el texto que aclara que la decisión está pendiente. | 2 | Ortiz Laura, Leyla Alisson | Done |
+| **US08** | Explorar vistas ilustrativas | T-08-1 | Sección de portafolio | Maquetar las cuatro vistas ilustrativas. | 5 | Toro Turpo, Ronal | Done |
+|  |  | T-08-2 | Tabs de portafolio (JS) | Implementar el cambio de pestaña Inventario / IA & IoT. | 3 | Gallardo Morales, Carla Alejandra | Done |
+| **US09** | Ver el video de presentación | T-09-1 | Placeholder de video | Maquetar el bloque "Video demostrativo próximamente". | 2 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-09-2 | Estructura para reemplazo futuro | Dejar preparado el iframe de YouTube comentado en el código. | 2 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **US10** | Navegar entre las páginas del sitio | T-10-1 | Navbar compartido | Implementar el menú superior en las 4 páginas. | 4 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-10-2 | Estado activo del enlace | Resaltar visualmente la página actual en el navbar. | 2 | Toro Turpo, Ronal | Done |
+| **US11** | Ver el detalle completo de funcionalidades | T-11-1 | Grid completo en features.html | Maquetar las seis funcionalidades con descripción extendida. | 5 | Gallardo Morales, Carla Alejandra | Done |
+| **US12** | Entender cómo empezar a usar StockIA | T-12-1 | Sección "Cómo funciona" | Maquetar los cuatro pasos numerados. | 4 | Huaman Oscco, Aldo Jesus | Done |
+| **US13** | Cambiar el idioma del sitio | T-13-1 | Selector de idioma (ES/EN) | Implementar los botones de idioma en el navbar. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-13-2 | Motor de traducción (i18n.js) | Programar el reemplazo de textos mediante data-i18n. | 6 | Ortiz Laura, Leyla Alisson | Done |
+| **US14** | Mantener mi idioma preferido | T-14-1 | Persistencia en localStorage | Guardar y leer el idioma seleccionado entre páginas. | 3 | Toro Turpo, Ronal | Done |
+| **US15** | Consultar los planes disponibles | T-15-1 | Maquetado de los 3 planes | Construir las tarjetas de Esencial, Profesional e IoT Completo. | 5 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-15-2 | Nota de precios de ejemplo | Redactar la nota de transparencia sobre precios ilustrativos. | 2 | Huaman Oscco, Aldo Jesus | Done |
+| **US16** | Comparar precios mensuales y anuales | T-16-1 | Toggle mensual/anual (JS) | Implementar el interruptor y el recálculo de montos. | 4 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **US17** | Resolver dudas frecuentes | T-17-1 | Acordeón de preguntas frecuentes | Implementar la apertura/cierre exclusivo de preguntas. | 4 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-17-2 | Redacción de preguntas y respuestas | Escribir el contenido del FAQ en español e inglés. | 3 | Toro Turpo, Ronal | Done |
+| **US18** | Conocer misión, visión y valores | T-18-1 | Sección misión/visión/valores | Maquetar el bloque correspondiente en about.html. | 3 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-18-2 | Redacción de contenido | Escribir la misión, visión y los cinco valores. | 2 | Huaman Oscco, Aldo Jesus | Done |
+| **US19** | Conocer al equipo detrás de StockIA | T-19-1 | Fichas de equipo | Maquetar las cuatro fichas placeholder con nombre, rol y código. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-19-2 | Nota de datos pendientes | Redactar la nota de "fichas de ejemplo". | 1 | Ortiz Laura, Leyla Alisson | Done |
+| **US20** | Solicitar una demo mediante formulario | T-20-1 | Formulario de contacto | Maquetar el formulario con validación nativa de campos obligatorios. | 4 | Toro Turpo, Ronal | Done |
+|  |  | T-20-2 | Confirmación visual de envío | Implementar el mensaje "✓ Enviado" y el reseteo del formulario. | 3 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-20-3 | Accesos al formulario | Enlazar los botones "Solicitar demo" del navbar, banner y footer. | 2 | Huaman Oscco, Aldo Jesus | Done |
+| **RNF01** | Experiencia responsiva | T-R1-1 | Breakpoints de 1024px y 768px | Definir media queries para tablets y móviles. | 4 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-R1-2 | Ajuste de cuadrículas | Reorganizar columnas y ocultar elementos no esenciales en móvil. | 4 | Ortiz Laura, Leyla Alisson | Done |
+| **RNF02** | Contraste y legibilidad accesible | T-R2-1 | Paleta de contraste | Definir colores de texto con contraste adecuado sobre fondos claros y oscuros. | 3 | Toro Turpo, Ronal | Done |
+| **RNF03** | Navegación consistente | T-R3-1 | Navbar y footer compartidos | Reutilizar los mismos componentes en las 4 páginas. | 3 | Gallardo Morales, Carla Alejandra | Done |
+| **RNF04** | Carga rápida | T-R4-1 | Optimización de assets | Evitar frameworks y librerías pesadas innecesarias. | 3 | Huaman Oscco, Aldo Jesus | Done |
+| **RNF05** | Buen posicionamiento en buscadores | T-R5-1 | Metadatos por página | Agregar title y meta description a cada página. | 2 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-R5-2 | Metadatos adicionales del Home | Agregar meta keywords, author y copyright en index.html. | 2 | Ortiz Laura, Leyla Alisson | Done |
+| **RNF06** | Compatibilidad con navegadores | T-R6-1 | CSS estándar (Flexbox/Grid) | Verificar compatibilidad en navegadores modernos. | 3 | Toro Turpo, Ronal | Done |
+|  |  | T-R6-2 | Degradación de animaciones | Manejar el caso sin soporte de IntersectionObserver. | 2 | Gallardo Morales, Carla Alejandra | Done |
+| **RNF07** | Animaciones de entrada | T-R7-1 | Scroll reveal (JS) | Implementar la animación de aparición progresiva de tarjetas. | 4 | Huaman Oscco, Aldo Jesus | Done |
+| **RNF08** | Contenido pendiente señalizado | T-R8-1 | Notas visibles de contenido de ejemplo | Agregar notas junto a las secciones con datos ilustrativos. | 2 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-R8-2 | Comentarios en el código | Documentar en HTML qué elementos deben reemplazarse. | 1 | Ortiz Laura, Leyla Alisson | Done |
+| **RNF09** | Sistema de diseño centralizado | T-R9-1 | Variables CSS en :root | Centralizar colores, tipografías y espaciados. | 4 | Toro Turpo, Ronal | Done |
+| **RNF10** | Textos centralizados (i18n) | T-R10-1 | Diccionario único de traducciones | Concentrar todos los textos ES/EN en i18n.js. | 4 | Gallardo Morales, Carla Alejandra | Done |
 | **TOTAL** | | | | **Esfuerzo total estimado para el Sprint** | **162** | | |
 
 ---
 
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-sprint1-jira-backlog].png" width="800" alt="Product Backlog Sprint 1"/>
+  <img src="assets/img/chapter-05/Sprint.png" width="800" alt="Product Backlog Sprint 1"/>
   <br/><i>Artefacto: Jira para Sprint 1 Priorizado</i>
 </p>
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-sprint1-kanban-proceso].png" width="800" alt="Tablero Kanban en proceso"/>
+  <img src="assets/img/chapter-05/Jira-KP.png" width="800" alt="Tablero Kanban en proceso"/>
   <br/><i>Artefacto: Jira para demostrar el tablero Kanban - Proceso -</i>
 </p>
 <p align="center">
-  <img src="assets/img/artefacts/[COMPLETAR-sprint1-kanban-finalizado].png" width="800" alt="Tablero Kanban finalizado"/>
+  <img src="assets/img/chapter-05/Jira-KF.png" width="800" alt="Tablero Kanban finalizado"/>
   <br/><i>Artefacto: Jira para demostrar el tablero Kanban - Finalizado —</i>
 </p>
 
@@ -1704,6 +1704,133 @@ A continuación se presentan los commits más importantes para la Landing Page, 
 
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
+En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la Landing Page de StockIA. A continuación, se explorarán los avances a través de imágenes que muestren el resultado obtenido (capturas pendientes de reemplazo):
+<br/>
+
+1. **Sección header / navbar:** Barra de navegación compartida entre las 4 páginas del sitio, con selector de idioma (ES/EN).
+
+<br/>
+<p align="center">
+  <img src="assets/img/artefacts/[COMPLETAR-Sección-header-/-navbar].png" width="800" alt="Sección header / navbar"/>
+  <br/><i>Sección header / navbar — StockIA</i>
+</p>
+<br/>
+
+2. **Sección hero + mockup de dashboard:** Título con la propuesta de valor, descripción, botones CTA y un mockup ilustrativo del dashboard de StockIA.
+
+<br/>
+<p align="center">
+  <img src="assets/img/artefacts/[COMPLETAR-Sección-hero-+-mockup-de-dashboard].png" width="800" alt="Sección hero + mockup de dashboard"/>
+  <br/><i>Sección hero + mockup de dashboard — StockIA</i>
+</p>
+<br/>
+
+3. **Barra de estadísticas:** Los cuatro indicadores de impacto mostrados en el Home, con nota de transparencia sobre cifras de ejemplo.
+
+<br/>
+<p align="center">
+  <img src="assets/img/artefacts/[COMPLETAR-Barra-de-estadísticas].png" width="800" alt="Barra de estadísticas"/>
+  <br/><i>Barra de estadísticas — StockIA</i>
+</p>
+<br/>
+
+4. **Sección "¿Para quién es StockIA?":** Tarjetas diferenciadas para los segmentos dueños/CEOs de restaurantes y administradores/jefes de cocina.
+
+<br/>
+<p align="center">
+  <img src="assets/img/artefacts/[COMPLETAR-Sección-Para-quién-es-StockIA.png" width="800" alt="Sección ¿Para quién es StockIA?"/>
+  <br/><i>Sección "¿Para quién es StockIA?" — StockIA</i>
+</p>
+<br/>
+
+5. **Grid de funcionalidades:** Seis tarjetas de funcionalidades principales en el Home, con enlace al detalle completo en features.html.
+
+<br/>
+<p align="center">
+  <img src="assets/img/artefacts/[COMPLETAR-Grid-de-funcionalidades].png" width="800" alt="Grid de funcionalidades"/>
+  <br/><i>Grid de funcionalidades — StockIA</i>
+</p>
+<br/>
+
+6. **Sección "Más que un inventario" (diferenciadores):** Las tres tarjetas de diferenciadores de StockIA frente a otras soluciones.
+
+<br/>
+<p align="center">
+  <img src="assets/img/artefacts/[COMPLETAR-Sección-Más-que-un-inventario-(diferenciadores)].png" width="800" alt="Sección Más que un inventario (diferenciadores)"/>
+  <br/><i>Sección "Más que un inventario" (diferenciadores) — StockIA</i>
+</p>
+<br/>
+
+7. **Sección de integraciones externas:** Las cuatro tarjetas de integraciones en evaluación (Google Maps, OpenWeather, Stripe/PayPal, Twilio/SendGrid), con nota de decisión pendiente.
+
+<br/>
+<p align="center">
+  <img src="assets/img/artefacts/[COMPLETAR-Sección-de-integraciones-externas].png" width="800" alt="Sección de integraciones externas"/>
+  <br/><i>Sección de integraciones externas — StockIA</i>
+</p>
+<br/>
+
+8. **Sección de portafolio:** Vistas ilustrativas con tabs para alternar entre Inventario e IA & IoT.
+
+<br/>
+<p align="center">
+  <img src="assets/img/artefacts/[COMPLETAR-Sección-de-portafolio].png" width="800" alt="Sección de portafolio"/>
+  <br/><i>Sección de portafolio — StockIA</i>
+</p>
+<br/>
+
+9. **Placeholder de video demostrativo:** Bloque "Video demostrativo próximamente", con el iframe de YouTube ya preparado en el código para su reemplazo futuro.
+
+<br/>
+<p align="center">
+  <img src="assets/img/artefacts/[COMPLETAR-Placeholder-de-video-demostrativo].png" width="800" alt="Placeholder de video demostrativo"/>
+  <br/><i>Placeholder de video demostrativo — StockIA</i>
+</p>
+<br/>
+
+10. **features.html — grid completo:** Detalle extendido de las seis funcionalidades y la sección "Cómo funciona" (4 pasos).
+
+<br/>
+<p align="center">
+  <img src="assets/img/artefacts/[COMPLETAR-features.html-—-grid-completo].png" width="800" alt="features.html — grid completo"/>
+  <br/><i>features.html — grid completo — StockIA</i>
+</p>
+<br/>
+
+11. **pricing.html — planes y FAQ:** Las tarjetas de los planes Esencial, Profesional e IoT Completo, el toggle mensual/anual y el acordeón de preguntas frecuentes.
+
+<br/>
+<p align="center">
+  <img src="assets/img/artefacts/[COMPLETAR-pricing.html-—-planes-y-FAQ].png" width="800" alt="pricing.html — planes y FAQ"/>
+  <br/><i>pricing.html — planes y FAQ — StockIA</i>
+</p>
+<br/>
+
+12. **about.html — misión, visión, equipo y formulario:** Sección de misión/visión/valores, las fichas de equipo (placeholder) y el formulario de solicitud de demo.
+
+<br/>
+<p align="center">
+  <img src="assets/img/artefacts/[COMPLETAR-about.html-—-misión,-visión,-equipo-y-formulario].png" width="800" alt="about.html — misión, visión, equipo y formulario"/>
+  <br/><i>about.html — misión, visión, equipo y formulario — StockIA</i>
+</p>
+<br/>
+
+13. **Sección footer:** Parte final del sitio, compartida entre las 4 páginas.
+
+<br/>
+<p align="center">
+  <img src="assets/img/artefacts/[COMPLETAR-Sección-footer].png" width="800" alt="Sección footer"/>
+  <br/><i>Sección footer — StockIA</i>
+</p>
+<br/>
+
+
+Para finalizar, se mostrará una demostración del avance sobre la Landing Page dentro de GitHub, para la publicación de la página web:
+<p align="center">
+  <img src="assets/img/artefacts/[COMPLETAR-RepositorioGithub].png" width="800" alt="Repositorio de GitHub"/>
+  <br/><i>Repositorio de GitHub sobre la Landing Page de StockIA — _(completar)_</i>
+</p>
+
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
