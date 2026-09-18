@@ -496,7 +496,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
       <th align="left"></th>
       <th align="center">
         STOCKIA<br>
-        <img src="" alt="STOCKIA logo" width="80">
+        <img src="/assets/img/chapter-04/style-guidelines/logo.png" alt="STOCKIA logo" width="80">
       </th>
       <th align="center">
         Toteat<br>
@@ -2436,7 +2436,49 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 ![user flow 1](assets/img/chapter-04/user%20flow/mobile/userflow-mobile1.png)
 
-2) **User flow 2:**
+- **Happy Path** — Registro Exitoso de Nuevo Producto
+
+1) El usuario ingresa a la sección "Inventario" de StockIA.
+2) Hace clic en el botón "+ Nuevo".
+3) El sistema muestra el formulario "Nuevo producto".
+4) El usuario completa correctamente la información del producto:
+   - Nombre del producto.
+   - Categoría.
+   - Cantidad.
+   - Unidad.
+   - Stock mínimo.
+   - Almacenamiento.
+   - Fecha de ingreso.
+   - Fecha de vencimiento.
+   - Proveedor.
+5) Hace clic en el botón "Guardar".
+6) El sistema valida la información ingresada.
+7) ¿La información de la tarjeta está vacía? → No.
+8) El sistema registra correctamente el nuevo producto.
+9) El sistema redirige al usuario a la sección "Inventario".
+10) El nuevo producto aparece correctamente en la lista de inventario.
+
+- **Unhappy Path** — Información incompleta o inválida
+
+1) El usuario ingresa a la sección "Inventario" de StockIA.
+2) Hace clic en el botón "+ Nuevo".
+3) El sistema muestra el formulario "Nuevo producto".
+4) El usuario deja uno o más campos obligatorios vacíos o introduce información inválida.
+5) Hace clic en el botón "Guardar".
+6) El sistema valida la información ingresada.
+7) ¿La información de la tarjeta está vacía? → Sí.
+8) El sistema no permite guardar el producto.
+9) El sistema muestra los campos que presentan errores en color rojo.
+10) El sistema muestra mensajes de validación, por ejemplo:
+   - "Campo requerido".
+   - "Cantidad inválida".
+11) El usuario debe completar o corregir la información solicitada.
+12) El usuario hace clic nuevamente en "Guardar".
+13) El sistema vuelve a validar la información.
+14) Si todos los campos son válidos, el sistema registra el nuevo producto y lo muestra en la sección "Inventario".
+
+
+2. **User flow 2:**
 
 - User goal: Como nuevo usuario, quiero registrarme en StockIA con mis datos.
 
@@ -2445,7 +2487,38 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 ![user flow 2](assets/img/chapter-04/user%20flow/mobile/userflow-mobile2.png)
 ![user flow 2](assets/img/chapter-04/user%20flow/mobile/userflow-mobile3.png)
 
-3) **User flow 3:** 
+- **Happy Path** — Camino Feliz del Inicio de Sesión y Recuperación
+
+1) El usuario abre la pantalla de inicio de sesión de StockIA.
+2) Introduce su correo electrónico correcto y su contraseña correcta.
+3) Hace clic en el botón "Iniciar sesión".
+4) El sistema valida las credenciales correctamente.
+5) El sistema redirige al usuario al Panel de Administrador (Dashboard) de StockIA.
+
+
+- **Unhappy Path 1** — Credenciales erróneas en el Login
+
+1) El usuario introduce un correo electrónico o una contraseña incorrectos.
+2) Hace clic en el botón "Iniciar sesión".
+3) El sistema valida las credenciales.
+4) ¿La información ingresada es incorrecta? → Sí.
+5) El sistema bloquea el acceso.
+6) El sistema muestra una alerta en color rojo:
+7) El usuario debe corregir sus datos e intentar iniciar sesión nuevamente.
+
+- **Unhappy Path 2** — Fallo en la recuperación por correo no registrado o inválido
+
+1) El usuario intenta iniciar sesión, pero no recuerda su contraseña.
+2) Hace clic en "¿Olvidaste tu contraseña?".
+3) El sistema muestra la pantalla de recuperación de contraseña.
+4) El usuario introduce un correo electrónico que está registrado en el sistema.
+5) Hace clic en "Enviar instrucciones".
+6) El sistema valida el correo ingresado.
+7) ¿El correo es válido y está registrado? → Sí.
+8) El sistema acepta la solicitud.
+
+
+3. **User flow 3:** 
 
 - User goal: Como usuario registrado, quiero iniciar sesión con mis datos.
 
