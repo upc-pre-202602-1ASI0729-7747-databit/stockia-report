@@ -3448,40 +3448,38 @@ La Landing Page se publicó en **Vercel** como sitio estático, servido desde su
 </p>
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
-**Dinámica de Implementación**
+**Dinámica de trabajo**
+ 
+Durante el Sprint 1 el equipo trabajó en dos frentes: la Landing Page y la documentación del informe. Las tareas se organizaron en Jira, en el proyecto STOCKIA-OS, con un responsable por tarea (ver 5.2.1.3). El código y el informe se versionaron en GitHub siguiendo GitFlow: `main` para versiones entregables, `develop` para integración y una rama `feature/*` por tarea o sección, integrada por Pull Request revisado por otro integrante.
+ 
+**Aporte por integrante**
+ 
+| **Integrante** | **GitHub** | **Aporte principal en el Sprint 1** | **Commits en `stockia-report` (develop, al 22/09/2026)** | **Commits en `stockia-website`** |
+| :--- | :--- | :--- | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | `features.html` (US02), navegación (US07), contraste y compatibilidad (RNF02, RNF05); índice, portada y guía de estilos del informe | 44 | 2 |
+| Huaman Oscco, Aldo Jesus | Jesusho22 (Jesus / Aldo_Jesus) | `index.html` (US01–US03), despliegue en Vercel (TS04), reglas de ramas (TS01); capítulos III y V del informe | 34 | 2 |
+| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | `pricing.html` (US04), responsive, rendimiento y SEO (RNF01, RNF03, RNF04); capítulo II y diagramas C4 del informe | 41 | 0 |
+| Ortiz Laura, Leyla Alisson | Leylaa-O (Leylaa-O / Leyla Ortiz) | Estructura del repositorio (TS01), sistema de diseño (TS02), i18n (TS03), interacciones en `main.js`; Impact Map, mock-ups y sección 5.1 del informe | 18 | 5 |
+| Toro Turpo, Ronal | Ronal345 (ronaltt-345) | `about.html` (US05, US06), contenido y traducción (US08, RNF07); capítulo I y EventStorming del informe | 8 | 1 |
+ 
+**Evidencia: contribuciones por integrante en `stockia-report`**
+ 
 <p align="center">
-Durante este ciclo, el equipo concentró sus esfuerzos en el desarrollo Frontend y la Documentación Técnica de la Landing Page. El equipo trabajó de forma remota, distribuyendo tareas mediante un tablero Kanban en Jira (ver evidencia en 5.2.1.3) y centralizando el control de versiones en GitHub. _(completar — nombra la herramienta real de comunicación diaria del equipo: Discord, WhatsApp, Slack, etc., y la frecuencia de las reuniones de sincronización)_.
+  <img src="assets/img/chapter-05/Contributors.png" width="700" alt="Contribuciones por integrante en stockia-report"/>
+  <br/><i>Contributors del repositorio stockia-report</i>
 </p>
-
-**Analíticos de Colaboración**
+**Evidencia: contribuciones por integrante en `stockia-website`**
+ 
 <p align="center">
-La carga de trabajo se distribuyó para asegurar que todos los integrantes participaran en la construcción de los artefactos visuales y técnicos:
-
-* Desarrollo Frontend: Implementación de componentes responsivos de la Landing Page, secciones de propuesta de valor, internacionalización (i18n) y formulario de captura de datos.
-
-* Documentación y Calidad: Redacción de Historias de Usuario, diseño de artefactos de planificación y elaboración del informe de Sprint Review conforme a la rúbrica.
-
-* Control de Versiones: El equipo aplica **GitFlow** en el repositorio `stockia-report`, con `main` y `develop` como ramas estables y una rama `feature/chapter-0X` por cada capítulo (`feature/chapter-01` a `feature/chapter-05`), integradas mediante Pull Requests revisados antes de cada merge (a la fecha, PR #1 al #29). Se aplicará la misma convención (`main` / `develop` / `feature/*`) en `stockia-website` en cuanto se suba el código de la Landing Page.
+  <img src="assets/img/chapter-05/Contributors-website.png" width="700" alt="Contribuciones por integrante en stockia-website"/>
+  <br/><i>Contributors del repositorio stockia-website</i>
 </p>
-
-**Evidencia GitFlow: Graph**
+**Evidencia: grafo de GitFlow**
+ 
 <p align="center">
-  <img src="assets/img/chapter-05/Network-Gitflow.png" width="200" alt="Graph"/>
-  <br/><i>Grafo de versiones para el gitflow</i>
+  <img src="assets/img/chapter-05/Network-Gitflow.png" width="700" alt="Grafo de ramas"/>
+  <br/><i>Network: ramas feature integradas en develop mediante Pull Request</i>
 </p>
-
-**Evidencia GitFlow: Commits**
-<p align="center">
-  <img src="assets/img/chapter-05/Contributors.png" width="500" alt="Commits"/>
-  <br/><i>Gráfico estadístico de commits por usuario — stockia-website (Insights → Contributors)</i>
-</p>
-
-**Evidencia GitFlow: Network**
-<p align="center">
-  <img src="assets/img/chapter-05//Network.png" width="500" alt="Network"/>
-  <br/><i>Grafo de trabajo</i>
-</p>
-
 
 #### 5.2.2.3. Sprint Backlog 2
  
