@@ -2016,7 +2016,7 @@ En la siguiente sección se presenta el Impact Mapping elaborado a partir del us
 </p>
 
 >Acceso a artefacto Jira para el desarrollo de Backlog
-<https://laplaceho-22.atlassian.net/jira/software/projects/SCRUM/boards/1?filter=&groupBy=none&atlOrigin=eyJpIjoiOGVhOTM0YjRkNzZkNGEzZWExMmY0ZmQ4MTU1NTcyYmQiLCJwIjoiaiJ9>
+<https://laplaceho-22.atlassian.net/jira/software/projects/SO/list?jql=project+%3D+SO+AND+type+%3D+Story+ORDER+BY+cf%5B10019%5D+ASC&atlOrigin=eyJpIjoiZTg4MDU2YjQwYjZlNDJlMjg3NTU1MDk1Y2Q5MjYzNGEiLCJwIjoiaiJ9>
 
 
 # Capítulo IV: Product Design
