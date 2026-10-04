@@ -3504,6 +3504,20 @@ El Sprint 2 se dedicó al frontend de la Web Application de StockIA en Angular, 
  
 El compromiso del Sprint 2 (52 SP) se calculó a partir de la velocidad del Sprint 1 ajustada a la nueva disponibilidad: en el Sprint 1 el equipo completó 40 SP con 28 horas por integrante; para el Sprint 2 cada integrante declaró 36 horas, por lo que la capacidad proyectada es 40 × 36 / 28 ≈ 51 SP. Las 136 horas planificadas equivalen al 76 % de la capacidad disponible (180 horas) y ningún integrante supera las 30 horas asignadas; el margen restante cubre revisiones de Pull Request y ceremonias. Al cierre del Sprint se completaron los 52 SP comprometidos.
 
+#### 5.2.2.2. Aspect Leaders and Collaborators
+ 
+En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** del Sprint 2. Cada aspecto agrupa las tareas del Sprint Backlog; el líder (L) responde por la integración y la revisión de ese aspecto, y los colaboradores (C) desarrollan o revisan sus tareas.
+ 
+| Team Member | GitHub Username | Arquitectura, IAM y despliegue (L/C) | Inventario, historial de ventas y roles (L/C) | Recetas, ventas y perfil (L/C) | Alertas, recomendaciones y equipo (L/C) | Dashboard, predicción, planes y Landing (L/C) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | C | L | C | C | C |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | L | C | C | C | C |
+| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | C | C | C | C | L |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | C | C | C | L | C |
+| Toro Turpo, Ronal | Ronal345 | C | C | L | C | C |
+ 
+> **Leyenda:** **L:** Líder del aspecto · **C:** Colaborador
+
 #### 5.2.2.3. Sprint Backlog 2
  
 **Periodo:** 23/09/2026 – 06/10/2026 (2 semanas)  
