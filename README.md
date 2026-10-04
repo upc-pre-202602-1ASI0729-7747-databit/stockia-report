@@ -3250,26 +3250,49 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** d
 
 
 #### 5.2.1.4. Development Evidence for Sprint Review
-En esta sección se explica y presenta los avances en implementación con relación a los productos de la solución según el alcance del Sprint: Landing Page.
-
-Primero, se mostrarán los commits más importantes para el Reporte, los cuales muestran el ciclo de vida del proyecto, y toda la información que se usó, usa y usará para el desarrollo del proyecto:
-
+ 
+En esta sección se presentan los avances de implementación del Sprint 1 (Landing Page) mediante los commits que los respaldan. Cada commit se relaciona con el ítem del Sprint Backlog 1 que implementa, de modo que puede rastrearse el trabajo de cada integrante desde la historia hasta el código.
+ 
+**Repositorio del informe (`stockia-report`)**
+ 
+El informe se trabajó con GitFlow: una rama `feature/*` por sección y su integración en `develop` mediante Pull Request (PR #1 al #37 durante el Sprint 1). Se presentan los commits más representativos de cada integrante:
+ 
 | **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| stockia-report | develop | `ce02e2f` | Initial commit | Creación del repositorio del informe con el README inicial. | 01/09/2026 |
-| stockia-report | develop | `5023ace` | feat(cover): add initial cover | Actualiza la portada con los datos del curso (1ASI0729), el equipo (DataBit) y el proyecto (StockIA). | 09/09/2026 |
-| stockia-report | develop | `07dc284` | feat(index): add index. | Agrega la Tabla de Contenidos completa (Capítulos I al V) para estructurar la navegación del documento. | 09/09/2026 |
-| stockia-report | develop | `cce981e` | docs(chapter-3): add Non-Functional User Stories section | Incorpora los Requisitos No Funcionales (RNF01–RNF10) al capítulo de Requirements Specification. | 15/09/2026 |
-| stockia-report | develop | `b146464` | docs(chapter-4): add Landing Page Mock-up section | Añade los mock-ups (Figma) de la Landing Page en la sección 4.3.2 del capítulo de Product Design. | 16/09/2026 |
-
+| stockia-report | develop | `ce02e2f` | Initial commit | Creación del repositorio del informe en la organización (Aldo_Jesus). | 01/09/2026 |
+| stockia-report | develop | `07dc284` | feat(index): add index. | Tabla de contenidos de los capítulos I al V (Carlsss28). | 08/09/2026 |
+| stockia-report | develop | `435ff41` | feat(members-profile):Carla Gallardo Profile | Perfil de integrante en la sección de presentación del equipo (Carlsss28). | 09/09/2026 |
+| stockia-report | develop | `5106ee4` | docs(chapter-3): add Functional User Stories section | User Stories de la Landing Page y la Web Application (Jesus). | 15/09/2026 |
+| stockia-report | develop | `afa3775` | docs(chapter-3): add Product Backlog section | Product Backlog priorizado con Story Points (Jesus). | 15/09/2026 |
+| stockia-report | develop | `15307e7` | doc(chapter-3): add Impact Map | Impact Map del segmento objetivo (Leylaa-O). | 16/09/2026 |
+| stockia-report | develop | `14ca7d7` | doc(chapter-02)add :User persona | User Persona del segmento de restaurantes (Jesus-Miranda-678). | 16/09/2026 |
+| stockia-report | develop | `3f05246` | doc(chapter-02)add customer journey mapping | Customer Journey Map del segmento objetivo (Jesus-Miranda-678). | 16/09/2026 |
+| stockia-report | develop | `578a83d` | docs(chapter-5): add Sprint Planning 1 section | Sprint Planning 1 del capítulo V (Jesus). | 16/09/2026 |
+| stockia-report | develop | `96ed715` | doc(chapter-01): add startup description | Descripción de DataBite Corp en el capítulo I (ronaltt-345). | 17/09/2026 |
+| stockia-report | develop | `cdb072c` | feat(chapter-02): add big picture event storming part | Big Picture EventStorming del dominio (ronaltt-345). | 17/09/2026 |
+| stockia-report | develop | `c34c5d7` | feat(style-guidelines):all setion style guidelines | Guía de estilos de la Landing Page y la Web Application (Carlsss28). | 17/09/2026 |
+| stockia-report | develop | `48a3fa8` | feat(web mockups): add mockups's photos | Mock-ups de la Web Application en el capítulo IV (Leylaa-O). | 17/09/2026 |
+| stockia-report | develop | `e1245e8` | doc(chapter-2)add Components Diagrams | Diagramas de componentes C4 (Jesus-Miranda-678). | 17/09/2026 |
+| stockia-report | develop | `2667a63` | doc(chapter-5): add section 1 to chapter 5 | Software Configuration Management del capítulo V (Leylaa-O). | 17/09/2026 |
+| stockia-report | develop | `b3bb84b` | docs(chapter-5): add Sprint Backlog 1 evidences | Evidencia de Jira del Sprint Backlog 1 (Jesus). | 17/09/2026 |
+ 
 <br/>
-
-A continuación se presentan los commits más importantes para la Landing Page, los cuales muestran todo el contenido visual y las funcionalidades implementadas en el Sprint 1:
-
+**Repositorio de la Landing Page (`stockia-website`)**
+ 
+La Landing Page se integró en el repositorio de la organización siguiendo GitFlow: Leyla configuró la estructura, el sistema de diseño (TS02) y el motor de internacionalización (TS03), y cada integrante integró su página mediante una rama `feature/*` y su Pull Request.
+ 
 | **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| Stockia-landing | develop | `5128a01` | Version de prueba | Commit único que sube la estructura completa de la Landing Page: `index.html`, `features.html`, `pricing.html`, `about.html`, hojas de estilo (`css/styles.css`) y lógica de i18n/interacciones (`js/`). | 06/09/2026 |
-
+| stockia-website | main | `fd69fb8` | chore: set up project structure | TS01: estructura base con las cuatro páginas y las carpetas `css`, `js` y `assets` (Leylaa-O). | 17/09/2026 |
+| stockia-website | develop | `dd266c5` | feat: add styles.css | TS02: tokens de diseño en `:root` y componentes reutilizables; base de RNF01, RNF02 y RNF06 (Leylaa-O). | 17/09/2026 |
+| stockia-website | develop | `b5320f2` | feat(i18n): add i18n.js | TS03 y US08: diccionario ES/EN, aplicación por `data-i18n` y persistencia del idioma en `localStorage` (Leylaa-O). | 17/09/2026 |
+| stockia-website | develop | `b75dec0` | feat: add main.js | US03, US04, US06, US07 y RNF06: pestañas del portafolio, interruptor mensual/anual, acordeón del FAQ, envío simulado del formulario, enlace activo y scroll reveal (Leylaa-O). | 17/09/2026 |
+| stockia-website | feature/index | `ad06861` | feat(landing): agrega página principal (index.html) de StockIA | US01, US02 y US03: hero, mockup del dashboard, barra de estadísticas, segmentos, funcionalidades, diferenciadores, integraciones y portafolio (Jesus). | 17/09/2026 |
+| stockia-website | develop | `05676c1` | Merge pull request #1 from .../feature/index | Integración revisada de `index.html` en `develop` (Aldo_Jesus). | 17/09/2026 |
+| stockia-website | feature/features | `76d0470` | feat(features):add features section | US02: detalle de los seis módulos y la sección "Cómo funciona" en `features.html` (Carlsss28). | 18/09/2026 |
+| stockia-website | develop | `f669552` | Merge pull request #3 from .../feature/features | Integración revisada de `features.html` en `develop` (Carlsss28). | 18/09/2026 |
+| stockia-website | develop | `cd0dda4` | feat: add about.html | US05 y US06: misión, visión, valores, equipo y formulario de solicitud de demo en `about.html` (ronaltt-345). | 18/09/2026 |
+ 
 <br/>
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
