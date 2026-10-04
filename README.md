@@ -3419,23 +3419,32 @@ La Landing Page es un sitio estático y en este Sprint no consume servicios de b
 
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
-El proceso de despliegue para el Sprint 1 priorizó una infraestructura de hosting estático en **Vercel**, aprovechando su infraestructura global (CDN) para garantizar tiempos de carga óptimos para la Landing Page. Se priorizó la automatización para permitir iteraciones rápidas sobre el diseño y el contenido informativo orientado a los segmentos objetivo.
-
-**Actividades de Despliegue Realizadas**
-* Configuración del proyecto en Vercel, vinculado al repositorio `Jesusho22/Stockia-landing` para despliegues automáticos.
-* Despliegue continuo activado en cada push a la rama `develop`, publicado en: **https://stockia-landing-giag.vercel.app**
-* Verificación de las 4 páginas del sitio (`index.html`, `features.html`, `pricing.html`, `about.html`) en el dominio de Vercel.
-
-**Evidencia Deploy: Landing Page - Responsive**
+La Landing Page se publicó en **Vercel** como sitio estático, servido desde su CDN global, con despliegue continuo desde el repositorio (TS04).
+ 
+**Actividades de despliegue realizadas**
+ 
+1. Se creó el proyecto en Vercel y se vinculó al repositorio de la Landing Page, con `develop` como rama de producción.
+2. Se activó el despliegue automático: cada cambio integrado en `develop` se publica sin pasos manuales, y cada Pull Request genera una URL de vista previa.
+3. Se verificaron las cuatro páginas (`index.html`, `features.html`, `pricing.html` y `about.html`) en el dominio público, incluidos los enlaces entre páginas y el cambio de idioma (T-TS04-2).
+4. Se verificó la visualización en escritorio y en móvil (RNF01).
+* **URL de la Landing Page desplegada:** https://stockia-landing-giag.vercel.app
+**Evidencia: proyecto y despliegues en Vercel**
+ 
 <p align="center">
-  <img src="assets/img/chapter-05/deploy-desktop-index.png" width="500" alt="Landing Page Desplegada"/>
-  <br/><i>Landing Page Desplegada — stockia-landing-giag.vercel.app</i>
+  <img src="assets/img/chapter-05/02-hero-mockup-dashboard.png" width="800" alt="Proyecto de la Landing Page en Vercel"/>
+  <br/><i>Proyecto de la Landing Page en Vercel con el historial de despliegues</i>
 </p>
-
-**Evidencia Deploy: Landing Page Mobile - Responsive**
+**Evidencia: Landing Page desplegada en escritorio**
+ 
 <p align="center">
-  <img src="assets/img//chapter-05/deploy-mobile-index.png" width="500" alt="Landing Page Desplegada - Mobile"/>
-  <br/><i>Landing Page Desplegada (vista móvil, 390px) — stockia-landing-giag.vercel.app</i>
+  <img src="assets/img/chapter-05/deploy-desktop-index.png" width="500" alt="Landing Page desplegada en escritorio"/>
+  <br/><i>Landing Page desplegada — stockia-landing-giag.vercel.app</i>
+</p>
+**Evidencia: Landing Page desplegada en móvil**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/deploy-mobile-index.png" width="200" alt="Landing Page desplegada en móvil"/>
+  <br/><i>Landing Page desplegada en móvil (390 px) — stockia-landing-giag.vercel.app</i>
 </p>
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
