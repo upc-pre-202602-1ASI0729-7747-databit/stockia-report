@@ -3481,6 +3481,29 @@ Durante el Sprint 1 el equipo trabajó en dos frentes: la Landing Page y la docu
   <br/><i>Network: ramas feature integradas en develop mediante Pull Request</i>
 </p>
 
+### 5.2.2. Sprint 2
+ 
+El Sprint 2 se dedicó al frontend de la Web Application de StockIA en Angular, organizado por Bounded Context y conectado a una API REST simulada y desplegada. Incluye además la corrección de los hallazgos de la revisión del AV1 en la Landing Page (TS08). El backend real (RESTful API) no forma parte de este Sprint y se mantiene en el Product Backlog (TS09 y TS10).
+
+#### 5.2.2.1. Sprint Planning 2
+ 
+| **Sprint #** | Sprint 2 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| **Date** | 23/09/2026 |
+| **Time** | 10:00 am |
+| **Location** | Lima/Lima/Santiago de Surco/UPC (presencial) y Google Meet |
+| **Prepared By** | Huaman Oscco, Aldo Jesus (Jesusho22) |
+| **Attendees (to planning meeting)** | Gallardo Morales, Carla Alejandra / Huaman Oscco, Aldo Jesus / Miranda Cordova, Jesus Angel Yvan / Ortiz Laura, Leyla Alisson / Toro Turpo, Ronal |
+| **Sprint 1 Review Summary** | Se presentó la Landing Page publicada en Vercel con las cuatro páginas bilingües, el formulario de demo simulado y los criterios de RNF01 a RNF07. Se identificaron como pendientes: el menú de navegación en móvil, el botón "Solicitar demo" del menú sin destino, las fichas de equipo de ejemplo, el enlace de términos sin página y la integración de pricing.html en el repositorio de la organización. Estos pendientes se planifican en TS08. |
+| **Sprint 1 Retrospective Summary** | Funcionó: la división de páginas por integrante y la integración por Pull Request en el repositorio de la organización. A mejorar: (1) una rama feature/ por tarea con su ID en el mensaje de commit, para que cada tarea tenga su evidencia; (2) integrar cada página en el repositorio de la organización antes del cierre del Sprint; (3) estimar las tareas por esfuerzo real y registrar la disponibilidad de cada integrante. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 2 Goal** | **Contexto:** Con la Landing Page publicada, el equipo construye el núcleo del producto: que cada venta descuente insumos por receta y que el administrador vea a tiempo lo que debe reponer.<br><br>**Sprint Goal:**<br>*"Our focus is on delivering the first working version of the StockIA web application, organised by bounded context and connected to a deployed mock REST API. We believe it delivers to restaurant administrators the ability to keep their inventory in sync with every sale, manage their team and act on stock alerts from a single dashboard. This will be confirmed when, in the deployed application, an administrator can register, load ingredients and recipes, record a sale that automatically deducts stock, and see the resulting critical items and alerts on the dashboard."* |
+| **Sprint 2 Velocity** | 40 Story Points (completados en el Sprint 1; es la única referencia histórica disponible). |
+| **Sum of Story Points** | 52 Story Points comprometidos en 17 ítems (11 US, 4 TS y 2 RNF) |
+ 
+El compromiso del Sprint 2 (52 SP) se calculó a partir de la velocidad del Sprint 1 ajustada a la nueva disponibilidad: en el Sprint 1 el equipo completó 40 SP con 28 horas por integrante; para el Sprint 2 cada integrante declaró 36 horas, por lo que la capacidad proyectada es 40 × 36 / 28 ≈ 51 SP. Las 136 horas planificadas equivalen al 76 % de la capacidad disponible (180 horas) y ningún integrante supera las 30 horas asignadas; el margen restante cubre revisiones de Pull Request y ceremonias. Al cierre del Sprint se completaron los 52 SP comprometidos.
+
 #### 5.2.2.3. Sprint Backlog 2
  
 **Periodo:** 23/09/2026 – 06/10/2026 (2 semanas)  
