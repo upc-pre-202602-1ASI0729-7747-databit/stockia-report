@@ -3145,23 +3145,17 @@ El Sprint 1 se dedicó a la Landing Page de StockIA: cuatro páginas estáticas,
 El Sprint 1 compromete 19 ítems porque su granularidad es fina: se descomponen en 46 tareas de 1 a 5 horas, en su mayoría maquetación estática y redacción bilingüe sin dependencias de backend.
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
-* En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)**. Esta matriz detalla los líderes (L) y colaboradores (C) para cada aspecto clave del Sprint, asegurando una comunicación clara y una distribución de responsabilidades eficiente para el proyecto **StockIA**.
-
-La organización de líderes y colaboradores está directamente relacionada con la selección de tareas (tasks) que se desarrollarán durante el Sprint. Dado que este Sprint se concentra únicamente en la Landing Page, se proponen los siguientes aspectos:
-
-| Team Member | GitHub Username | Maquetación & UI/UX (L/C) | Contenido & Traducción (i18n) (L/C) | Responsive & Accesibilidad (L/C) | Despliegue & QA (L/C) |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| Gallardo Morales, Carla Alejandra | Carlsss28 | L | C | C | C |
-| Huaman Oscco, Aldo Jesus | Jesusho22 | C | C | C | L |
-| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | C | C | L | C |
-| Ortiz Laura, Leyla Alisson | Leylaa-O | L | C | C | C |
-| Toro Turpo, Ronal | Ronal345 | C | L | C | C |
----
-
-> **Leyenda:**  </br>
-> **L:** Líder (Líder del aspecto)  
-> **C:** Colaborador (Colaborador y desarrollo)
-
+En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** del Sprint 1. Cada aspecto agrupa las tareas del Sprint Backlog; el líder (L) responde por la integración y la revisión de ese aspecto, y los colaboradores (C) desarrollan o revisan sus tareas.
+ 
+| Team Member | GitHub Username | Estructura, estilos e interacciones (CSS/JS) (L/C) | Maquetación del Home y despliegue (L/C) | Páginas internas (features, pricing, about) (L/C) | Contenido y traducción (i18n) (L/C) | Responsive, SEO y QA (L/C) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | C | C | L | C | C |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | C | L | C | C | C |
+| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | C | C | C | C | L |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | L | C | C | C | C |
+| Toro Turpo, Ronal | Ronal345 | C | C | C | L | C |
+ 
+> **Leyenda:** **L:** Líder del aspecto · **C:** Colaborador
 
 #### 5.2.1.3. Sprint Backlog 1
 **Periodo:** Semana 1 – Semana 2  
