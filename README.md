@@ -3389,6 +3389,8 @@ Los requisitos no funcionales del Sprint 1 se verificaron con el criterio medibl
 | RNF04 | `title` ≤ 60 y `description` ≤ 160 caracteres, únicos por página; Lighthouse SEO ≥ 90 | Inspección del `<head>` y Lighthouse SEO | `rnf04-lighthouse-seo.png` |
 | RNF05 | Funcionamiento igual en Chrome, Edge, Firefox, Safari, Chrome Android y Safari iOS; 0 errores de consola | Matriz de pruebas manual | `rnf05-navegadores.png` |
  
+ <https://pagespeed.web.dev/analysis/https-stockia-landing-giag-vercel-app-about-html/va1ajk3prc?form_factor=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=agentic-browsing&hl=es&utm_source=lh-chrome-ext>
+
 <p align="center">
   <img src="assets/img/chapter-05/Lighthouse.png" width="500" alt="Reporte de Lighthouse"/>
   <br/><i>Reporte de Lighthouse en modo móvil — RNF02, RNF03 y RNF04</i>
@@ -3403,14 +3405,17 @@ Para finalizar, se muestra el repositorio de la Landing Page en la organización
 
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
-Para este Sprint, se han implementado y documentado los puntos de interacción de la Landing Page. Aunque el almacenamiento persistente será parte de un Sprint posterior, se ha programado la lógica de captura, validación y respuesta visual en el frontend para el siguiente servicio simulado:
-
-| Endpoint / Interacción | Acción (HTTP) | Campos del formulario | Descripción del Response |
-| :--- | :---: | :--- | :--- |
-| `about.html#contactForm` | **POST (Mock)** | Nombre*, Restaurante, Correo*, Mensaje (`*` obligatorios vía `required`) | **202 Accepted (simulado)**: `preventDefault()` bloquea el envío real, el botón cambia a " Enviado" (fondo de éxito) y se deshabilita 3 segundos; luego el formulario se resetea (`form.reset()`) automáticamente. |
-
-* **URL del Repositorio de Landing Page:** https://github.com/Jesusho22/Stockia-landing
-* **URL de la Landing Page desplegada:** https://stockia-landing-giag.vercel.app/about.html#contacto
+La Landing Page es un sitio estático y en este Sprint no consume servicios de backend. Las interacciones que sí ejecutan lógica se resuelven en el navegador y se documentan a continuación, junto con la User Story que cubren. La recepción real de solicitudes de demo se implementará cuando exista el RESTful API (TS09).
+ 
+| **Endpoint / Interacción** | **Acción** | **Parámetros** | **Descripción del Response** | **User Story** |
+| :--- | :---: | :--- | :--- | :---: |
+| `about.html#contactForm` | **POST (simulado)** | `nombre`* , `restaurante`, `correo`* , `mensaje` (`*` obligatorios con `required` y `type="email"`) | El navegador bloquea el envío si falta un campo obligatorio o el correo no es válido. Con datos válidos, `preventDefault()` evita el envío real, el botón muestra "✓ Enviado" y se deshabilita durante 3 segundos; luego el formulario se limpia con `form.reset()`. No se transmiten datos a un servidor. | US06 |
+| Selector de idioma (`ES` / `EN`) | Lectura y escritura en `localStorage` | Clave `stockia-lang` con valor `es` o `en` | Aplica las traducciones a todos los elementos con `data-i18n` sin recargar la página y conserva el idioma al navegar entre páginas o volver al sitio. | US08 |
+| Interruptor mensual / anual (`pricing.html`) | Cálculo en el cliente | Estado del interruptor | Cambia los precios de S/ 0, 39 y 79 a S/ 0, 27 y 55 y viceversa, sin recargar la página. | US04 |
+| Preguntas frecuentes (`pricing.html`) | Interacción en el cliente | Pregunta seleccionada | Despliega la respuesta elegida y cierra la que estaba abierta. | US04 |
+ 
+* **Repositorio de la Landing Page/WebSite :** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-website
+* **Landing Page desplegada:** https://stockia-landing-giag.vercel.app/index.html
 
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
