@@ -528,14 +528,14 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Overview</b></td>
-      <td>Es una startup en etapa de desarrollo que ofrece una plataforma web de gestión inteligente de inventario para restaurantes, con predicción de demanda basada en Machine Learning, integración con clima, monitoreo IoT de equipos de cocina y ocupación, y alertas automáticas vía WhatsApp.</td>
+      <td>Es una startup en etapa de desarrollo que ofrece una plataforma web de gestión inteligente de inventario para restaurantes que conecta recetas, ventas e inventario para descontar insumos automáticamente y alertar sobre stock bajo y vencimientos. Predicción, clima e IoT.</td>
       <td>Software SaaS todo-en-uno para restaurantes, de origen chileno, con fuerte presencia en Chile, México y LATAM. Cubre POS, KDS, delivery, reservas, inventario y facturación electrónica.</td>
       <td>Software de gestión para restaurantes de origen peruano, enfocado en pedidos, cocina, inventario y facturación electrónica SUNAT, pensado específicamente para la realidad tributaria y operativa local.</td>
       <td>Plataforma de gestión de inventario y reducción de desperdicio de alimentos con IA, dirigida a restaurantes, hoteles, bares y cafés, con fuerte enfoque en predicción de demanda y automatización de compras.</td>
     </tr>
     <tr>
       <td><b>Ventaja Competitiva<br>¿Qué valor ofrece a los clientes?</b></td>
-      <td>Único que combina ML predictivo + variable climática + IoT físico (sensores de ocupación y de electrodomésticos) + notificaciones directas a WhatsApp del personal en una sola plataforma.</td>
+      <td>Descuento automático por receta y alertas por lote sin reemplazar el sistema de ventas. En la revisión de sitios de Toteat, Panca y RestoIQ no encontramos esta combinación orientada a restaurantes de un solo local en Perú; requiere validación con usuarios..</td>
       <td>Ecosistema todo-en-uno con alta adopción y reconocimiento de marca en LATAM.</td>
       <td>Adaptación total a la normativa peruana (SUNAT, IGV) y facilidad de implementación (5 minutos), con soporte 100% en español y precios muy accesibles.</td>
       <td>Pionero regional en IA aplicada específicamente a inventario y desperdicio, con modelo de forecasting propio (7-day forecast) y transparencia total de precios.</td>
@@ -586,7 +586,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Fortalezas</b></td>
-      <td>Único competidor que combina ML predictivo, variable climática (OpenWeather) e IoT físico en un solo producto.</td>
+      <td>Foco en un problema concreto (receta → inventario → alerta) y en el segmento de un solo local.</td>
       <td>Alta adopción y reconocimiento de marca en LATAM (+5,000 restaurantes).</td>
       <td>Fuerte adaptación a la normativa peruana (SUNAT, IGV), un factor crítico de decisión de compra en el mercado local.</td>
       <td>Uso real y ya validado de IA (modelo propio de forecast a 7 días) para predicción de demanda y reducción de desperdicio.</td>
@@ -600,7 +600,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Oportunidades</b></td>
-      <td>Ningún competidor identificado integra simultáneamente clima + IoT + ML + WhatsApp; existe un vacío claro de mercado.</td>
+      <td>Los competidores revisados priorizan POS y facturación; el control de insumos por receta para locales pequeños parece menos atendido.</td>
       <td>Podría integrar módulos de IA en el futuro apalancándose en su gran volumen de datos históricos de +5,000 restaurantes.</td>
       <td>Podría expandir su módulo de inventario hacia analítica predictiva, dado que ya tiene base de datos de ventas e inventario de sus +150 clientes.</td>
       <td>Podría integrar IoT y clima en próximas versiones dado que ya cuenta con un modelo de ML funcionando en producción.</td>
