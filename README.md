@@ -3468,6 +3468,93 @@ La carga de trabajo se distribuyó para asegurar que todos los integrantes parti
 </p>
 
 
+#### 5.2.2.3. Sprint Backlog 2
+ 
+**Periodo:** 23/09/2026 – 06/10/2026 (2 semanas)  
+**Objetivo del Sprint:** Entregar el frontend de la Web Application con autenticación, equipo y roles, inventario, recetas, ventas con descuento automático, dashboard, alertas, proyección de demanda, recomendaciones y planes, conectado a la API simulada desplegada, y corregir los hallazgos del AV1 en la Landing Page.
+ 
+| **User Story Id** | **Título de la Historia** | **Task Id** | **Título de la Tarea** | **Descripción de la Tarea** | **Est. (Hrs)** | **Asignado** | **Status** |
+| :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
+| **US12** | Registrar y monitorear los insumos del inventario | T-US12-1 | Modelar InventoryItem y su servicio de API | Crear la entidad del dominio e InventoryApiService en infrastructure. | 2.5 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US12-2 | Construir la tabla de inventario | Listar insumos con estados de carga y de inventario vacío. | 3 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US12-3 | Construir el formulario de alta y edición | Validar campos y calcular la fecha de vencimiento a partir de la vida útil. | 4 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US12-4 | Implementar la eliminación con confirmación | Pedir confirmación antes de eliminar un insumo. | 1 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US12-5 | Implementar la regla de estado en el dominio | Calcular Vencido, Crítico, Stock bajo o Disponible en InventoryItem. | 2 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US12-6 | Mostrar el distintivo de estado | Pintar el badge de color correspondiente en la tabla de inventario. | 1.5 | Gallardo Morales, Carla Alejandra | Done |
+| **US10** | Iniciar sesión y mantener actualizada mi cuenta | T-US10-1 | Construir el formulario de inicio de sesión | Crear sign-in con validaciones y mensaje de error. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US10-2 | Implementar sesión persistente y cierre de sesión | Guardar y restaurar la sesión en localStorage y limpiarla al salir. | 2 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US10-3 | Implementar los guards de autenticación y rol | Proteger /app con authGuard y las rutas administrativas con adminGuard. | 2 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US10-4 | Construir la pantalla de perfil | Crear el formulario precargado con validaciones por campo. | 3 | Toro Turpo, Ronal | Done |
+|  |  | T-US10-5 | Implementar la actualización del perfil | Guardar los cambios, actualizar la sesión y mostrar la confirmación o el error. | 2 | Toro Turpo, Ronal | Done |
+| **US17** | Gestionar y entregar las alertas operativas | T-US17-1 | Modelar Alert y su servicio de API | Crear la entidad con tipo, severidad y canal, y AlertsApiService. | 2 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US17-2 | Construir la lista de alertas con contador | Mostrar alertas, pendientes y estado vacío. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US17-3 | Construir el formulario de creación y edición | Validar tipo, severidad, canal y mensaje. | 3 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US17-4 | Implementar atender y eliminar | Marcar atendida con su regla y eliminar con confirmación. | 2 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US17-5 | Implementar la regla de canales requeridos | Calcular requiredChannels, pendingChannel y delivered en Alert. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US17-6 | Mostrar entrega y reintento por canal | Indicar el estado de entrega y permitir reintentar el canal pendiente. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
+| **US18** | Anticipar la demanda y aplicar recomendaciones | T-US18-1 | Modelar DemandForecast y su servicio | Crear la entidad con puntos por día y el servicio de carga y generación. | 2 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US18-2 | Implementar la generación de siete días | Generar la proyección simulada y manejar el estado de generación. | 2.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US18-3 | Construir la visualización por día | Mostrar barras por día, plato, confianza, clima y fecha. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US18-4 | Etiquetar la proyección como simulada | Agregar el aviso de valores simulados en la pantalla. | 0.5 | Miranda Cordova, Jesus Angel Yvan | In Progress |
+|  |  | T-US18-5 | Modelar Recommendation y su lista | Crear la entidad y mostrar tipo, mensaje e impacto esperado. | 2 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US18-6 | Implementar "Aplicar" | Marcar la recomendación como aplicada y actualizar la lista. | 1.5 | Ortiz Laura, Leyla Alisson | Done |
+| **TS05** | Estructurar la Web Application en Angular por Bounded Context | T-TS05-1 | Crear el proyecto y la estructura por contexto | Inicializar Angular 18 standalone y crear las capas de cada contexto. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-TS05-2 | Implementar el shell y el enrutamiento | Crear el layout con menú por rol y las rutas diferidas con redirecciones. | 4 | Huaman Oscco, Aldo Jesus | Done |
+| **TS06** | Implementar y desplegar la API simulada de la Web Application | T-TS06-1 | Modelar db.json con las colecciones del dominio | Definir users, inventoryItems, recipes, sales, alerts, recommendations, demandForecasts, plans y subscriptions. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-TS06-2 | Configurar json-server y desplegarlo en Render | Servir bajo /api/v1 con CORS y health check y publicarlo en Render. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-TS06-3 | Implementar BaseApiService y environments | Centralizar la URL base, el modo useFakeApi y la API en memoria. | 2 | Ortiz Laura, Leyla Alisson | Done |
+| **US13** | Vincular recetas a los insumos del inventario | T-US13-1 | Modelar Recipe y sus operaciones | Crear la entidad con líneas de ingredientes y las operaciones CRUD del servicio. | 2.5 | Toro Turpo, Ronal | Done |
+|  |  | T-US13-2 | Construir el formulario de receta | Seleccionar insumos, agregar y quitar líneas y validar la receta. | 4 | Toro Turpo, Ronal | Done |
+|  |  | T-US13-3 | Construir la lista de recetas | Mostrar recetas con ingredientes y opciones de editar y eliminar. | 2.5 | Toro Turpo, Ronal | Done |
+| **US14** | Registrar una venta con descuento automático de insumos | T-US14-1 | Modelar Sale y su servicio de API | Crear la entidad con líneas, canal, estado y total, y SalesApiService. | 2 | Toro Turpo, Ronal | Done |
+|  |  | T-US14-2 | Validar stock antes de registrar la venta | Rechazar la venta y listar los insumos faltantes cuando no alcanzan. | 3 | Toro Turpo, Ronal | Done |
+|  |  | T-US14-3 | Descontar insumos al confirmar la venta | Aplicar el descuento por receta después de persistir la venta. | 3 | Toro Turpo, Ronal | Done |
+|  |  | T-US14-4 | Agregar la acción "Simular venta" con confirmación visual | Disparar el registro desde Recetas y resaltar el plato vendido. | 1.5 | Toro Turpo, Ronal | Done |
+| **US09** | Registrar mi restaurante y crear mi cuenta de administrador | T-US09-1 | Construir el formulario de registro | Crear sign-up con validaciones reactivas y mensajes por campo. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US09-2 | Implementar el registro en AuthService | Crear el usuario con rol ADMIN, iniciar la sesión y redirigir al dashboard. | 2 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US09-3 | Validar correo duplicado | Consultar el correo antes de crear la cuenta y mostrar el mensaje de duplicado. | 2 | Huaman Oscco, Aldo Jesus | In Progress |
+| **US16** | Visualizar el resumen operativo en el dashboard | T-US16-1 | Calcular los indicadores del inventario | Exponer conteos y valor del inventario como computed signals. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US16-2 | Construir las tablas de críticos y alertas recientes | Mostrar insumos críticos y las cinco alertas más recientes con sus estados vacíos. | 2.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US16-3 | Agregar el resumen de la última proyección | Mostrar la proyección más reciente cuando exista. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **TS08** | Corregir los hallazgos de la revisión del AV1 en la Landing Page | T-TS08-1 | Enlazar "Solicitar demo" del menú | Apuntar el botón del navbar de las cuatro páginas a about.html#contacto. | 0.5 | Miranda Cordova, Jesus Angel Yvan | In Progress |
+|  |  | T-TS08-2 | Agregar el menú desplegable en móvil | Mostrar un botón de menú bajo 768 px que despliegue los enlaces. | 2.5 | Miranda Cordova, Jesus Angel Yvan | In Progress |
+|  |  | T-TS08-3 | Publicar las fichas reales del equipo | Reemplazar las fichas de ejemplo y retirar las notas internas de cifras y equipo. | 1.5 | Toro Turpo, Ronal | In Progress |
+|  |  | T-TS08-4 | Filtrar el portafolio por pestaña | Mostrar solo las vistas de la categoría elegida. | 1.5 | Ortiz Laura, Leyla Alisson | In Progress |
+|  |  | T-TS08-5 | Crear la página de términos y enlazarla | Publicar términos y condiciones y enlazarlos desde el footer. | 2 | Gallardo Morales, Carla Alejandra | In Progress |
+|  |  | T-TS08-6 | Subir pricing.html al repositorio de la organización | Integrar por Pull Request la página de precios que falta en develop. | 0.5 | Miranda Cordova, Jesus Angel Yvan | In Progress |
+| **US11** | Gestionar el equipo y sus roles | T-US11-1 | Construir el formulario de invitación | Crear el formulario con nombre, correo y rol y registrar al integrante. | 3 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US11-2 | Implementar la baja con reglas de negocio | Confirmar la baja e impedir eliminar la propia cuenta o al último administrador. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US11-3 | Construir la lista del equipo con selector de rol | Mostrar integrantes, marcar la propia cuenta y guardar el cambio de rol con la regla del último administrador. | 3 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US11-4 | Restringir menú y ruta por rol | Ocultar "Roles y permisos" al Empleado y aplicar adminGuard a /app/roles. | 1.5 | Gallardo Morales, Carla Alejandra | Done |
+| **US19** | Elegir o cambiar el plan de suscripción | T-US19-1 | Modelar Plan y Subscription y su servicio | Crear las entidades y cargar planes y suscripción actual. | 2 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US19-2 | Construir las tarjetas de planes | Mostrar precio, características, plan popular y plan activo. | 2.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US19-3 | Implementar el checkout simulado | Activar o cambiar la suscripción con Stripe o PayPal simulados. | 2.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **US15** | Consultar el historial de ventas y anular ventas erróneas | T-US15-1 | Construir el historial de ventas | Listar ventas con totales en S/, estado y resumen de ingresos confirmados. | 3 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US15-2 | Implementar la anulación de ventas | Confirmar y cambiar el estado de la venta a Anulada. | 2 | Gallardo Morales, Carla Alejandra | Done |
+| **RNF08** | Control de acceso por sesión y por rol en la Web Application | T-RNF08-1 | Probar el acceso a todas las rutas | Recorrer cada ruta sin sesión, como Empleado y como Administrador. | 1.5 | Huaman Oscco, Aldo Jesus | Done |
+| **TS07** | Desplegar la Web Application en Vercel | T-TS07-1 | Configurar Vercel para la Web Application | Definir build, carpeta de salida y reescritura SPA en vercel.json. | 1.5 | Huaman Oscco, Aldo Jesus | In Progress |
+|  |  | T-TS07-2 | Probar rutas protegidas en producción | Verificar inicio de sesión, recarga de rutas internas y redirecciones. | 1 | Miranda Cordova, Jesus Angel Yvan | In Progress |
+| **RNF09** | Retroalimentación de estado y confirmaciones en la Web Application | T-RNF09-1 | Revisar estados y confirmaciones por pantalla | Verificar estados de carga, vacío, éxito, error y confirmación en cada vista. | 2 | Gallardo Morales, Carla Alejandra | In Progress |
+| | **TOTAL** | | | **Esfuerzo total estimado para el Sprint** | **136** | | |
+ 
+**Capacidad del Sprint 2**
+ 
+| Integrante | Disponibilidad declarada (h) | Horas asignadas | N.° de tareas | Uso de la capacidad |
+| :--- | :---: | :---: | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | 36 | 27.5 | 12 | 76 % |
+| Huaman Oscco, Aldo Jesus | 36 | 30 | 12 | 83 % |
+| Miranda Cordova, Jesus Angel Yvan | 36 | 26.5 | 14 | 74 % |
+| Ortiz Laura, Leyla Alisson | 36 | 27 | 12 | 75 % |
+| Toro Turpo, Ronal | 36 | 25 | 10 | 69 % |
+| **Total** | **180** | **136** | **60** | **76 %** |
+ 
+##### Resumen Técnico
+- **Total de horas:** 136 horas en 60 tareas.
+- **Distribución:** dos semanas (23/09/2026 – 06/10/2026), con una disponibilidad declarada de 36 horas por integrante (18 h por semana); la capacidad libre cubre revisiones de Pull Request y ceremonias.
+- **Story Points:** 52 comprometidos; 39 completados al cierre registrado en este informe.
+- **Ítems en curso:** US18, US09, TS08, TS07, RNF09 (tareas marcadas *In Progress*).
+- **Entregable principal:** Web Application de StockIA en Angular conectada a la API simulada desplegada en Render, y Landing Page sin los hallazgos de la revisión del AV1.
+
 ## 5.3. Validation Interviews
 
 ### 5.3.1. Diseño de Entrevistas
