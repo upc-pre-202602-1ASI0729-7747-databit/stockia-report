@@ -3241,13 +3241,6 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** d
   <br/><i>Artefacto: Jira para demostrar el tablero Kanban - Finalizado —</i>
 </p>
 
-##### Resumen Técnico
-- **Total de Horas:** 162 horas.
-- **Distribución:** 2 semanas de desarrollo (considerando jornada laboral estándar).
-- **Entregable Principal:** Landing Page de StockIA (4 páginas), bilingüe ES/EN, responsiva, con formulario de solicitud de demo funcional.
-
----
-
 
 #### 5.2.1.4. Development Evidence for Sprint Review
  
@@ -3604,6 +3597,133 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** d
 - **Story Points:** 52 comprometidos; 39 completados al cierre registrado en este informe.
 - **Ítems en curso:** US18, US09, TS08, TS07, RNF09 (tareas marcadas *In Progress*).
 - **Entregable principal:** Web Application de StockIA en Angular conectada a la API simulada desplegada en Render, y Landing Page sin los hallazgos de la revisión del AV1.
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+ 
+En esta sección se presentan los avances de implementación del Sprint 2 (Web Application y correcciones de la Landing Page) mediante los commits que los respaldan, relacionados con el ítem del Sprint Backlog 2 que implementan.
+ 
+**Repositorio de la Web Application (`stockia-webapp`)**
+ 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| stockia-webapp | main | `a53ca88` | Initial commit | Creación del repositorio de la Web Application en la organización (Aldo_Jesus). | 15/09/2026 |
+| stockia-webapp | main | `5f5e55d` | chore: apuntar el frontend a stockia-mock-api en Render | TS06: `apiBaseUrl` del entorno de desarrollo apunta a la API simulada desplegada (Aldo_Jesus). | 01/10/2026 |
+| stockia-webapp | main | `da25a26` | chore: apuntar el frontend a stockia-mock-api en Render | TS06 y TS07: `apiBaseUrl` del entorno de producción apunta a la API simulada desplegada (Aldo_Jesus). | 01/10/2026 |
+ 
+<!-- ACTUALIZAR: agregar una fila por cada commit que cada integrante integre por Pull Request en stockia-webapp
+     (rama feature/<contexto>), por ejemplo:
+     | stockia-webapp | feature/product-inventory | `xxxxxxx` | feat(inventory): add inventory list and item form | US12: ... (Carlsss28). | dd/mm/2026 |
+-->
+ 
+**Repositorio de integración del prototipo (`Jesusho22/stockia-platform`)**
+ 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| stockia-platform | main | `4f712ae` | feat: StockIA Web Application (Angular DDD) + mock API (json-server) | TS05 y TS06: Web Application en Angular 18 organizada por Bounded Context (iam, product-inventory, sales-order, alerts, demand-forecasting, subscription, dashboard) y API simulada con json-server; incluye las pantallas de US09 a US19, los guards de RNF08 y la configuración de Vercel de TS07 (Jesus). | 01/10/2026 |
+| stockia-platform | main | `084801e` | feat: apuntar el frontend a la mock API desplegada en Render | TS06: conexión de los entornos de desarrollo y producción a la API simulada en Render (Jesus). | 01/10/2026 |
+ 
+> **Nota:** la versión integrada de la Web Application se encuentra hoy en el repositorio de integración `Jesusho22/stockia-platform`. Siguiendo la mejora acordada en la retrospectiva del Sprint 1, cada integrante sube al repositorio de la organización el Bounded Context a su cargo mediante una rama `feature/*` y su Pull Request, de modo que la autoría de cada tarea quede registrada.
+ 
+**Repositorio de la Landing Page (`stockia-website`) — TS08**
+ 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+ 
+<!-- ACTUALIZAR: commits de TS08 (menú móvil, botón "Solicitar demo", fichas reales del equipo, filtro del portafolio,
+     términos y condiciones, integración de pricing.html por Miranda). -->
+ 
+**Repositorio del informe (`stockia-report`)**
+ 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| stockia-report | develop | `6e426b8` | Update README.md | Actualización del capítulo III (Ronal345). | 27/09/2026 |
+| stockia-report | develop | `5b9f418` | docs(chapter-03): validation of epics and addition of metrics. | Épicas alineadas a los objetivos estratégicos y a su KPI (Jesus). | 04/10/2026 |
+| stockia-report | develop | `8b09138` | docs(chapter-03): user story validation and metric correction. | User Stories con el «para» alineado a métricas y escenarios Gherkin (Jesus). | 04/10/2026 |
+| stockia-report | develop | `e81f46e` | docs(chapter-03): correction of non-functional requirements | RNF con atributo de calidad, actor afectado y criterio medible (Jesus). | 04/10/2026 |
+| stockia-report | develop | `3392142` | docs(chapter-03): product backlog update | Product Backlog ordenado por Story Points con los mismos IDs y títulos (Jesus). | 04/10/2026 |
+| stockia-report | develop | `13515bc` | docs(chapter-05): added sprint 2 backlog with task breakdown and capacity | Sprint Backlog 2 con tareas, responsables, horas y capacidad (Jesus). | 04/10/2026 |
+ 
+<!-- ACTUALIZAR: agregar los commits de los demás integrantes en el informe durante el Sprint 2. -->
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+ 
+En el Sprint 2 se implementó la primera versión de la Web Application de StockIA. A continuación se presenta cada pantalla junto con la User Story o el requisito que la respalda:
+ 
+<br/>
+1. **Registro de restaurante (US09):** formulario de creación de cuenta con validaciones por campo; la cuenta se crea con el rol Administrador.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-01-sign-up.png" width="800" alt="Registro de restaurante"/>
+  <br/><i>Registro de restaurante — US09</i>
+</p>
+<br/>
+2. **Inicio de sesión y perfil (US10, RNF08):** inicio de sesión con mensaje de credenciales incorrectas, sesión conservada al recargar y edición del perfil.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-02-sign-in-profile.png" width="800" alt="Inicio de sesión y perfil"/>
+  <br/><i>Inicio de sesión y perfil — US10 y RNF08</i>
+</p>
+<br/>
+3. **Dashboard operativo (US16):** indicadores del inventario, insumos críticos, alertas recientes y resumen de la última proyección.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-03-dashboard.png" width="800" alt="Dashboard operativo"/>
+  <br/><i>Dashboard operativo — US16</i>
+</p>
+<br/>
+4. **Inventario de insumos (US12):** tabla con los estados Vencido, Crítico, Stock bajo y Disponible, y formulario de alta y edición.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-04-inventory.png" width="800" alt="Inventario de insumos"/>
+  <br/><i>Inventario de insumos — US12</i>
+</p>
+<br/>
+5. **Recetas y venta con descuento automático (US13, US14):** recetas vinculadas a los insumos y acción "Simular venta" que valida y descuenta el stock.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-05-recipes-sale.png" width="800" alt="Recetas y venta"/>
+  <br/><i>Recetas y venta con descuento automático — US13 y US14</i>
+</p>
+<br/>
+6. **Historial de ventas (US15):** ventas con total en S/, estado e ingresos del período, con anulación confirmada.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-06-sales-history.png" width="800" alt="Historial de ventas"/>
+  <br/><i>Historial de ventas — US15</i>
+</p>
+<br/>
+7. **Alertas operativas (US17):** registro, atención y eliminación de alertas, con el estado de entrega por canal y el reintento del canal pendiente.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-07-alerts.png" width="800" alt="Alertas operativas"/>
+  <br/><i>Alertas operativas — US17</i>
+</p>
+<br/>
+8. **Proyección de demanda y recomendaciones (US18):** proyección de siete días identificada como simulada y recomendaciones con la acción "Aplicar".
+<p align="center">
+  <img src="assets/img/chapter-05/s2-08-forecast-recommendations.png" width="800" alt="Proyección y recomendaciones"/>
+  <br/><i>Proyección de demanda y recomendaciones — US18</i>
+</p>
+<br/>
+9. **Equipo y roles (US11, RNF08):** invitación de integrantes, cambio de rol y baja, con la regla del último administrador.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-09-team-roles.png" width="800" alt="Equipo y roles"/>
+  <br/><i>Equipo y roles — US11 y RNF08</i>
+</p>
+<br/>
+10. **Planes de suscripción (US19):** planes con su precio y el pago simulado con Stripe o PayPal.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-10-plans.png" width="800" alt="Planes de suscripción"/>
+  <br/><i>Planes de suscripción — US19</i>
+</p>
+<br/>
+11. **Correcciones de la Landing Page (TS08):** menú desplegable en móvil, botón "Solicitar demo" enlazado al formulario y fichas reales del equipo.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-11-landing-fixes.png" width="800" alt="Correcciones de la Landing Page"/>
+  <br/><i>Correcciones de la Landing Page — TS08</i>
+</p>
+<br/>
+**Verificación de los requisitos no funcionales**
+ 
+| **RNF** | **Criterio medible** | **Verificación** | **Resultado** |
+| :--- | :--- | :--- | :--- |
+| RNF08 | 100 % de las rutas bajo `/app` protegidas por `authGuard`; 100 % de las rutas administrativas protegidas por `adminGuard`; 0 accesos sin sesión | Prueba de cada ruta sin sesión, con rol Empleado y con rol Administrador | Las 10 pantallas bajo `/app` están protegidas por `authGuard` y `/app/roles` usa `adminGuard`; sin sesión se redirige a `/auth/sign-in` y el Empleado es redirigido a `/app/dashboard`. |
+| RNF09 | 100 % de las listas con estado vacío; 100 % de las eliminaciones y anulaciones con confirmación; mensaje de éxito o error en cada formulario | Lista de verificación por pantalla | Las eliminaciones de insumos, recetas, alertas e integrantes y la anulación de ventas piden confirmación. <!-- ACTUALIZAR: resultado de estados vacíos y de carga al cerrar RNF09. --> |
+
+
 
 ## 5.3. Validation Interviews
 
