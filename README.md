@@ -3780,6 +3780,42 @@ En el Sprint 2 se desplegaron dos componentes: la API simulada en **Render** (TS
   <br/><i>Web Application desplegada</i>
 </p>
 
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+ 
+**Dinámica de trabajo**
+ 
+En el Sprint 2 el equipo trabajó por Bounded Context: cada líder de aspecto (ver 5.2.2.2) respondió por la integración de su contexto en la Web Application. Las tareas se gestionaron en Jira, en el proyecto STOCKIA-OS, con un responsable por subtarea y su estado actualizado. Aplicando la mejora de la retrospectiva del Sprint 1, el trabajo se integra con una rama `feature/*` por contexto o tarea, con el ID de la tarea en el mensaje de commit y con revisión por Pull Request antes de llegar a `develop`.
+ 
+**Aporte por integrante**
+ 
+| **Integrante** | **GitHub** | **Aporte principal en el Sprint 2** | **Horas asignadas** | **Commits en el Sprint 2** |
+| :--- | :--- | :--- | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | Inventario (US12), historial de ventas (US15), lista del equipo y roles (US11), términos y condiciones (TS08), verificación de RNF09 | 27.5 | <!-- ACTUALIZAR --> |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | Estructura Angular por Bounded Context (TS05), API simulada (TS06), autenticación y registro (US09, US10), guards (RNF08), despliegue (TS07) | 30 | <!-- ACTUALIZAR --> |
+| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | Dashboard (US16), proyección de demanda (US18), planes (US19), menú móvil y `pricing.html` (TS08), pruebas en producción (TS07) | 26.5 | <!-- ACTUALIZAR --> |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | Alertas (US17), recomendaciones (US18), invitación y baja del equipo (US11), `BaseApiService` (TS06), filtro del portafolio (TS08) | 27 | <!-- ACTUALIZAR --> |
+| Toro Turpo, Ronal | Ronal345 | Recetas (US13), ventas con descuento automático (US14), perfil (US10), fichas reales del equipo (TS08) | 25 | <!-- ACTUALIZAR --> |
+ 
+**Evidencia: tablero del Sprint 2 en Jira**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/s2-jira-board.png" width="800" alt="Tablero del Sprint 2 en Jira"/>
+  <br/><i>Tablero del Sprint 2 en Jira (STOCKIA-OS)</i>
+</p>
+**Evidencia: contribuciones por integrante en `stockia-webapp`**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/s2-contributors-webapp.png" width="700" alt="Contribuciones por integrante en stockia-webapp"/>
+  <br/><i>Insights → Contributors del repositorio stockia-webapp</i>
+</p>
+**Evidencia: grafo de GitFlow**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/s2-network-webapp.png" width="700" alt="Grafo de ramas de stockia-webapp"/>
+  <br/><i>Insights → Network: ramas feature integradas mediante Pull Request</i>
+</p>
+ 
+ 
 ## 5.3. Validation Interviews
 
 ### 5.3.1. Diseño de Entrevistas
