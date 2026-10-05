@@ -3124,107 +3124,109 @@ El RESTful API requiere un entorno de ejecución de servidor compatible con apli
 ## 5.2. Landing Page, Services & Applications Implementation
 
 ### 5.2.1. Sprint 1
-Este primer ciclo de desarrollo se centró en establecer los pilares de la identidad digital de **StockIA**, integrando el esfuerzo colaborativo del equipo para entregar un sitio de marketing funcional inicial. Durante este Sprint, el equipo priorizó la captación de visitantes mediante una Landing Page de 4 páginas (`index.html`, `features.html`, `pricing.html`, `about.html`), completamente bilingüe (ES/EN) y responsiva, documentando cada fase desde la planificación hasta el despliegue final para validar la propuesta de valor frente al segmento elegido.
+El Sprint 1 se dedicó a la Landing Page de StockIA: cuatro páginas estáticas, bilingües y responsivas, publicadas en Vercel, con el formulario de solicitud de demo como punto de conversión. Los ítems seleccionados son los del Product Backlog que pertenecen a EP01, EP02, EP03 y los habilitadores TS01 a TS04 de EP12.
 
 #### 5.2.1.1. Sprint Planning 1
-El Sprint Planning Meeting marcó el inicio formal del desarrollo del código de StockIA. Durante esta sesión, el equipo de desarrollo junto al Product Owner seleccionaron las Historias de Usuario más prioritarias del Product Backlog (correspondientes a los Epics EP01–EP08) para definir el objetivo central de la iteración. A continuación, se presenta el cuadro resumen con los detalles y acuerdos de esta reunión:
-
 | **Sprint #** | Sprint 1 |
 | :--- | :--- |
 | **Sprint Planning Background** | |
 | **Date** | 09/09/2026 |
 | **Time** | 10:00 am |
-| **Location** | Lima/Lima/Santiago de Surco/UPC |
+| **Location** | Lima/Lima/Santiago de Surco/UPC (presencial) y Google Meet |
 | **Prepared By** | Huaman Oscco, Aldo Jesus (Jesusho22) |
-| **Attendees (to planning meeting)** | Gallardo Morales, Carla Alejandra/ Huaman Oscco, Aldo Jesus/ Miranda Cordova, Jesus Angel Yvan/ Ortiz Laura, Leyla Alisson/ Toro Turpo, Ronal |
-| **Sprint Review Summary** | Al ser el primer Sprint, la revisión anterior corresponde a la fase de ideación: segmentos objetivo y propuesta de valor. Resultados alcanzados: Arquitectura C4 finalizada, modelado de base de datos diseñada y repositorios GitHub configurados para el uso de gitflow. El Product Owner brindó el feedback necesario para iniciar la codificación orientada al dominio y siguiendo como base las User Storys. |
-| **Sprint Retrospective Summary** | Como retrospectiva inicial de la forma de trabajo, el equipo identificó como acierto el uso de programas de trabajo remoto, el uso de herramientas colaborativos como GitHub y Jira, pero reconoció como oportunidad de mejora establecer reglas más estrictas de GitFlow para evitar colisiones en los Pull Requests futuros. |
+| **Attendees (to planning meeting)** | Gallardo Morales, Carla Alejandra / Huaman Oscco, Aldo Jesus / Miranda Cordova, Jesus Angel Yvan / Ortiz Laura, Leyla Alisson / Toro Turpo, Ronal |
+| **Sprint Review Summary** | No aplica: es el primer Sprint. Antes de él, el equipo cerró la fase de ideación (segmento, propuesta de valor y entrevistas) y configuró la organización y los repositorios en GitHub. |
+| **Sprint Retrospective Summary** | No aplica al ser el primer Sprint. |
 | **Sprint Goal & User Stories** | |
-| **Sprint 1 Goal** | **Contexto:** El equipo prioriza establecer la identidad digital de StockIA y comunicar la propuesta de valor a el segmento objetivo, publicando un sitio de marketing de 4 páginas totalmente bilingüe (ES/EN), antes de invertir esfuerzo en la Web Application. <br><br> **Sprint Goal:**<br>*"Our focus is on building a trustworthy digital presence that clearly communicates StockIA's value proposition. We believe this will let visitors understand the product's benefits within seconds and request a demo with confidence. This will be confirmed when the four-page site is live, fully bilingual, responsive, and generating demo requests."* |
-| **Sprint 1 Velocity** | 40 Story Points |
-| **Sum of Story Points** | 88 Story Points |
+| **Sprint 1 Goal** | **Contexto:** El equipo prioriza comunicar la propuesta de valor al segmento objetivo y habilitar el primer canal de captación de restaurantes antes de construir la Web Application.<br><br>**Sprint Goal:**<br>*"Our focus is on publishing StockIA's bilingual four-page landing page. We believe it delivers a clear understanding of how StockIA connects sales, recipes and inventory to restaurant owners and managers. This will be confirmed when the site is live on Vercel, meets the responsive, accessibility, performance and SEO criteria of RNF01–RNF07, and a visitor can reach the demo request form in no more than two clicks from any page."* |
+| **Sprint 1 Velocity** | No aplica: es el primer Sprint y no existe una velocidad histórica. |
+| **Sum of Story Points** | 40 Story Points comprometidos en 19 ítems (8 US, 4 TS y 7 RNF) |
+ 
+El Sprint 1 compromete 19 ítems porque su granularidad es fina: se descomponen en 46 tareas de 1 a 5 horas, en su mayoría maquetación estática y redacción bilingüe sin dependencias de backend.
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
-* En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)**. Esta matriz detalla los líderes (L) y colaboradores (C) para cada aspecto clave del Sprint, asegurando una comunicación clara y una distribución de responsabilidades eficiente para el proyecto **StockIA**.
-
-La organización de líderes y colaboradores está directamente relacionada con la selección de tareas (tasks) que se desarrollarán durante el Sprint. Dado que este Sprint se concentra únicamente en la Landing Page, se proponen los siguientes aspectos:
-
-| Team Member | GitHub Username | Maquetación & UI/UX (L/C) | Contenido & Traducción (i18n) (L/C) | Responsive & Accesibilidad (L/C) | Despliegue & QA (L/C) |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| Gallardo Morales, Carla Alejandra | Carlsss28 | L | C | C | C |
-| Huaman Oscco, Aldo Jesus | Jesusho22 | C | C | C | L |
-| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | C | C | L | C |
-| Ortiz Laura, Leyla Alisson | Leylaa-O | L | C | C | C |
-| Toro Turpo, Ronal | Ronal345 | C | L | C | C |
----
-
-> **Leyenda:**  </br>
-> **L:** Líder (Líder del aspecto)  
-> **C:** Colaborador (Colaborador y desarrollo)
-
+En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** del Sprint 1. Cada aspecto agrupa las tareas del Sprint Backlog; el líder (L) responde por la integración y la revisión de ese aspecto, y los colaboradores (C) desarrollan o revisan sus tareas.
+ 
+| Team Member | GitHub Username | Estructura, estilos e interacciones (CSS/JS) (L/C) | Maquetación del Home y despliegue (L/C) | Páginas internas (features, pricing, about) (L/C) | Contenido y traducción (i18n) (L/C) | Responsive, SEO y QA (L/C) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | C | C | L | C | C |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | C | L | C | C | C |
+| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | C | C | C | C | L |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | L | C | C | C | C |
+| Toro Turpo, Ronal | Ronal345 | C | C | C | L | C |
+ 
+> **Leyenda:** **L:** Líder del aspecto · **C:** Colaborador
 
 #### 5.2.1.3. Sprint Backlog 1
-**Periodo:** Semana 1 – Semana 2  
-**Objetivo del Sprint:** Tener la Landing Page de StockIA (4 páginas) completamente maquetada, traducida ES/EN, responsiva y con el formulario de demo funcional, lista para publicarse.
-
----
-
+**Periodo:** 09/09/2026 – 22/09/2026 (2 semanas)  
+**Objetivo del Sprint:** Publicar en Vercel la Landing Page de StockIA (index, features, pricing y about), bilingüe ES/EN, responsiva y con el formulario de solicitud de demo operativo en modo simulado.
+ 
 | **User Story Id** | **Título de la Historia** | **Task Id** | **Título de la Tarea** | **Descripción de la Tarea** | **Est. (Hrs)** | **Asignado** | **Status** |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
-| **US01** | Conocer la propuesta de valor | T-01-1 | Maquetado del Hero | Construir el layout del hero con título, descripción y botones CTA. | 5 | Gallardo Morales, Carla Alejandra | Done |
-|  |  | T-01-2 | Redacción y traducción del mensaje principal | Escribir el copy de la propuesta de valor en español e inglés. | 3 | Huaman Oscco, Aldo Jesus | Done |
-| **US02** | Ver una vista previa del dashboard | T-02-1 | Mockup ilustrativo del dashboard | Maquetar las tarjetas y el gráfico ilustrativos con CSS. | 6 | Miranda Cordova, Jesus Angel Yvan | Done |
-|  |  | T-02-2 | Responsive del mockup | Ocultar el mockup en pantallas menores a 768px. | 2 | Ortiz Laura, Leyla Alisson | Done |
-| **US03** | Conocer estadísticas e indicadores | T-03-1 | Barra de estadísticas | Maquetar los cuatro indicadores de impacto del Home. | 4 | Toro Turpo, Ronal | Done |
-|  |  | T-03-2 | Nota de transparencia | Redactar y traducir la nota de cifras de ejemplo. | 2 | Gallardo Morales, Carla Alejandra | Done |
-| **US04** | Identificar si StockIA es para mi rol | T-04-1 | Sección "¿Para quién es StockIA?" | Maquetar las tarjetas por segmento (dueños/CEOs y administradores). | 4 | Huaman Oscco, Aldo Jesus | Done |
-|  |  | T-04-2 | Redacción por segmento | Escribir el contenido diferenciado para cada rol. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
-| **US05** | Conocer las funcionalidades principales | T-05-1 | Grid de seis funcionalidades | Maquetar las tarjetas de funcionalidades en el Home. | 5 | Ortiz Laura, Leyla Alisson | Done |
-|  |  | T-05-2 | Enlace a features.html | Implementar el botón "Ver todas las características". | 2 | Toro Turpo, Ronal | Done |
-| **US06** | Conocer los diferenciadores | T-06-1 | Sección "Más que un inventario" | Maquetar las tres tarjetas de diferenciadores. | 3 | Gallardo Morales, Carla Alejandra | Done |
-|  |  | T-06-2 | Redacción y traducción | Escribir el contenido de cada diferenciador. | 2 | Huaman Oscco, Aldo Jesus | Done |
-| **US07** | Conocer las integraciones externas | T-07-1 | Sección de integraciones | Maquetar las cuatro tarjetas con la etiqueta "En evaluación". | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
-|  |  | T-07-2 | Nota de transparencia | Redactar el texto que aclara que la decisión está pendiente. | 2 | Ortiz Laura, Leyla Alisson | Done |
-| **US08** | Explorar vistas ilustrativas | T-08-1 | Sección de portafolio | Maquetar las cuatro vistas ilustrativas. | 5 | Toro Turpo, Ronal | Done |
-|  |  | T-08-2 | Tabs de portafolio (JS) | Implementar el cambio de pestaña Inventario / IA & IoT. | 3 | Gallardo Morales, Carla Alejandra | Done |
-| **US09** | Ver el video de presentación | T-09-1 | Placeholder de video | Maquetar el bloque "Video demostrativo próximamente". | 2 | Huaman Oscco, Aldo Jesus | Done |
-|  |  | T-09-2 | Estructura para reemplazo futuro | Dejar preparado el iframe de YouTube comentado en el código. | 2 | Miranda Cordova, Jesus Angel Yvan | Done |
-| **US10** | Navegar entre las páginas del sitio | T-10-1 | Navbar compartido | Implementar el menú superior en las 4 páginas. | 4 | Ortiz Laura, Leyla Alisson | Done |
-|  |  | T-10-2 | Estado activo del enlace | Resaltar visualmente la página actual en el navbar. | 2 | Toro Turpo, Ronal | Done |
-| **US11** | Ver el detalle completo de funcionalidades | T-11-1 | Grid completo en features.html | Maquetar las seis funcionalidades con descripción extendida. | 5 | Gallardo Morales, Carla Alejandra | Done |
-| **US12** | Entender cómo empezar a usar StockIA | T-12-1 | Sección "Cómo funciona" | Maquetar los cuatro pasos numerados. | 4 | Huaman Oscco, Aldo Jesus | Done |
-| **US13** | Cambiar el idioma del sitio | T-13-1 | Selector de idioma (ES/EN) | Implementar los botones de idioma en el navbar. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
-|  |  | T-13-2 | Motor de traducción (i18n.js) | Programar el reemplazo de textos mediante data-i18n. | 6 | Ortiz Laura, Leyla Alisson | Done |
-| **US14** | Mantener mi idioma preferido | T-14-1 | Persistencia en localStorage | Guardar y leer el idioma seleccionado entre páginas. | 3 | Toro Turpo, Ronal | Done |
-| **US15** | Consultar los planes disponibles | T-15-1 | Maquetado de los 3 planes | Construir las tarjetas de Esencial, Profesional e IoT Completo. | 5 | Gallardo Morales, Carla Alejandra | Done |
-|  |  | T-15-2 | Nota de precios de ejemplo | Redactar la nota de transparencia sobre precios ilustrativos. | 2 | Huaman Oscco, Aldo Jesus | Done |
-| **US16** | Comparar precios mensuales y anuales | T-16-1 | Toggle mensual/anual (JS) | Implementar el interruptor y el recálculo de montos. | 4 | Miranda Cordova, Jesus Angel Yvan | Done |
-| **US17** | Resolver dudas frecuentes | T-17-1 | Acordeón de preguntas frecuentes | Implementar la apertura/cierre exclusivo de preguntas. | 4 | Ortiz Laura, Leyla Alisson | Done |
-|  |  | T-17-2 | Redacción de preguntas y respuestas | Escribir el contenido del FAQ en español e inglés. | 3 | Toro Turpo, Ronal | Done |
-| **US18** | Conocer misión, visión y valores | T-18-1 | Sección misión/visión/valores | Maquetar el bloque correspondiente en about.html. | 3 | Gallardo Morales, Carla Alejandra | Done |
-|  |  | T-18-2 | Redacción de contenido | Escribir la misión, visión y los cinco valores. | 2 | Huaman Oscco, Aldo Jesus | Done |
-| **US19** | Conocer al equipo detrás de StockIA | T-19-1 | Fichas de equipo | Maquetar las cuatro fichas placeholder con nombre, rol y código. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
-|  |  | T-19-2 | Nota de datos pendientes | Redactar la nota de "fichas de ejemplo". | 1 | Ortiz Laura, Leyla Alisson | Done |
-| **US20** | Solicitar una demo mediante formulario | T-20-1 | Formulario de contacto | Maquetar el formulario con validación nativa de campos obligatorios. | 4 | Toro Turpo, Ronal | Done |
-|  |  | T-20-2 | Confirmación visual de envío | Implementar el mensaje "✓ Enviado" y el reseteo del formulario. | 3 | Gallardo Morales, Carla Alejandra | Done |
-|  |  | T-20-3 | Accesos al formulario | Enlazar los botones "Solicitar demo" del navbar, banner y footer. | 2 | Huaman Oscco, Aldo Jesus | Done |
-| **RNF01** | Experiencia responsiva | T-R1-1 | Breakpoints de 1024px y 768px | Definir media queries para tablets y móviles. | 4 | Miranda Cordova, Jesus Angel Yvan | Done |
-|  |  | T-R1-2 | Ajuste de cuadrículas | Reorganizar columnas y ocultar elementos no esenciales en móvil. | 4 | Ortiz Laura, Leyla Alisson | Done |
-| **RNF02** | Contraste y legibilidad accesible | T-R2-1 | Paleta de contraste | Definir colores de texto con contraste adecuado sobre fondos claros y oscuros. | 3 | Toro Turpo, Ronal | Done |
-| **RNF03** | Navegación consistente | T-R3-1 | Navbar y footer compartidos | Reutilizar los mismos componentes en las 4 páginas. | 3 | Gallardo Morales, Carla Alejandra | Done |
-| **RNF04** | Carga rápida | T-R4-1 | Optimización de assets | Evitar frameworks y librerías pesadas innecesarias. | 3 | Huaman Oscco, Aldo Jesus | Done |
-| **RNF05** | Buen posicionamiento en buscadores | T-R5-1 | Metadatos por página | Agregar title y meta description a cada página. | 2 | Miranda Cordova, Jesus Angel Yvan | Done |
-|  |  | T-R5-2 | Metadatos adicionales del Home | Agregar meta keywords, author y copyright en index.html. | 2 | Ortiz Laura, Leyla Alisson | Done |
-| **RNF06** | Compatibilidad con navegadores | T-R6-1 | CSS estándar (Flexbox/Grid) | Verificar compatibilidad en navegadores modernos. | 3 | Toro Turpo, Ronal | Done |
-|  |  | T-R6-2 | Degradación de animaciones | Manejar el caso sin soporte de IntersectionObserver. | 2 | Gallardo Morales, Carla Alejandra | Done |
-| **RNF07** | Animaciones de entrada | T-R7-1 | Scroll reveal (JS) | Implementar la animación de aparición progresiva de tarjetas. | 4 | Huaman Oscco, Aldo Jesus | Done |
-| **RNF08** | Contenido pendiente señalizado | T-R8-1 | Notas visibles de contenido de ejemplo | Agregar notas junto a las secciones con datos ilustrativos. | 2 | Miranda Cordova, Jesus Angel Yvan | Done |
-|  |  | T-R8-2 | Comentarios en el código | Documentar en HTML qué elementos deben reemplazarse. | 1 | Ortiz Laura, Leyla Alisson | Done |
-| **RNF09** | Sistema de diseño centralizado | T-R9-1 | Variables CSS en :root | Centralizar colores, tipografías y espaciados. | 4 | Toro Turpo, Ronal | Done |
-| **RNF10** | Textos centralizados (i18n) | T-R10-1 | Diccionario único de traducciones | Concentrar todos los textos ES/EN en i18n.js. | 4 | Gallardo Morales, Carla Alejandra | Done |
-| **TOTAL** | | | | **Esfuerzo total estimado para el Sprint** | **162** | | |
-
----
+| **US01** | Comprender la propuesta de valor y el impacto de StockIA desde el Home | T-US01-1 | Maquetar el hero | Estructurar título, descripción y los dos CTA del hero en index.html. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US01-2 | Maquetar el mockup ilustrativo del dashboard | Construir con HTML/CSS las tarjetas y el gráfico del mockup del hero. | 4 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US01-3 | Redactar y traducir el copy del hero | Escribir la propuesta de valor e indicadores en ES/EN y registrar sus claves en i18n.js. | 2.5 | Toro Turpo, Ronal | Done |
+|  |  | T-US01-4 | Maquetar la barra de estadísticas | Construir la barra de cuatro indicadores y su versión responsive. | 2 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US01-5 | Redactar la nota de cifras referenciales | Escribir y traducir la nota que identifica las cifras como referenciales. | 1 | Toro Turpo, Ronal | Done |
+| **US02** | Identificar si StockIA es para mi rol y explorar sus funcionalidades | T-US02-1 | Maquetar el grid de funcionalidades del Home | Construir las seis tarjetas y el enlace a features.html. | 2.5 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US02-2 | Maquetar features.html | Construir el hero y el grid detallado de los seis módulos. | 4 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US02-3 | Maquetar la sección "Cómo funciona" | Construir los cuatro pasos numerados en features.html. | 2 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US02-4 | Traducir el contenido de features.html | Registrar en i18n.js las claves ES/EN de la página. | 2 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US02-5 | Maquetar la sección de segmentos | Construir las dos tarjetas de "¿Para quién es StockIA?" en index.html. | 2 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US02-6 | Redactar el contenido por segmento | Escribir y traducir el mensaje de cada tarjeta según el rol. | 1.5 | Toro Turpo, Ronal | Done |
+| **TS02** | Implementar el sistema de diseño centralizado en CSS | T-TS02-1 | Definir los tokens de diseño | Declarar colores, tipografías, espaciados y radios en :root. | 3 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-TS02-2 | Construir los componentes CSS | Crear botones, tarjetas, badges, formularios, toggle y grids responsive. | 5 | Ortiz Laura, Leyla Alisson | Done |
+| **US04** | Comparar planes y resolver dudas antes de contratar | T-US04-1 | Maquetar pricing.html | Construir el hero y las tres tarjetas de plan con la etiqueta de plan popular. | 4 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US04-2 | Programar el interruptor mensual/anual | Recalcular los precios en main.js al cambiar el interruptor. | 2 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US04-3 | Maquetar las preguntas frecuentes | Construir el bloque FAQ con sus tres preguntas. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US04-4 | Programar el acordeón del FAQ | Abrir una pregunta y cerrar la anterior en main.js. | 1 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US04-5 | Traducir el contenido de pricing.html | Registrar en i18n.js las claves ES/EN de planes y preguntas. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **US03** | Evaluar diferenciadores, integraciones y vistas del producto | T-US03-1 | Maquetar diferenciadores e integraciones | Construir las tres tarjetas de diferenciadores y las cuatro de integraciones con su etiqueta. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US03-2 | Maquetar portafolio y bloque de video | Construir las vistas ilustrativas con pestañas y el placeholder de video. | 2.5 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US03-3 | Programar el cambio de pestaña del portafolio | Resaltar la pestaña activa con JavaScript en main.js. | 1 | Ortiz Laura, Leyla Alisson | Done |
+| **US05** | Conocer a DataBite Corp y a su equipo | T-US05-1 | Maquetar el hero, misión y visión | Construir el encabezado de about.html y las tarjetas de misión y visión. | 2.5 | Toro Turpo, Ronal | Done |
+|  |  | T-US05-2 | Maquetar la sección "Sobre DataBite Corp" | Construir la descripción de la startup y sus valores. | 1.5 | Toro Turpo, Ronal | Done |
+|  |  | T-US05-3 | Maquetar las fichas del equipo y el bloque de video | Construir las fichas de los integrantes y el placeholder del video del equipo. | 2 | Toro Turpo, Ronal | Done |
+|  |  | T-US05-4 | Traducir el contenido de about.html | Registrar en i18n.js las claves ES/EN de la página. | 1.5 | Toro Turpo, Ronal | Done |
+| **TS03** | Implementar el motor de internacionalización de la Landing Page | T-TS03-1 | Implementar i18n.js | Programar el diccionario ES/EN, la función t() y la aplicación por data-i18n. | 4 | Ortiz Laura, Leyla Alisson | Done |
+| **US06** | Solicitar una demo desde el formulario de contacto | T-US06-1 | Maquetar la sección de contacto y el formulario | Construir datos de contacto y formulario con validación nativa (required y type=email). | 2.5 | Toro Turpo, Ronal | Done |
+|  |  | T-US06-2 | Programar la confirmación simulada del envío | Mostrar "✓ Enviado", deshabilitar el botón y limpiar el formulario en main.js. | 1.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US06-3 | Enlazar el banner CTA de las cuatro páginas | Apuntar el botón del banner final a about.html#contacto. | 1 | Gallardo Morales, Carla Alejandra | Done |
+| **RNF01** | Adaptabilidad de la Landing Page a móvil, tablet y escritorio | T-RNF01-1 | Definir media queries de 1024, 768 y 480 px | Reorganizar grids y ocultar elementos no esenciales por breakpoint. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-RNF01-2 | Probar la Landing Page por breakpoint | Verificar las cuatro páginas a 360, 768, 1024 y 1440 px y registrar capturas. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **US07** | Navegar entre las páginas del sitio | T-US07-1 | Maquetar la barra de navegación y el pie de página | Construir el navbar y el footer y replicarlos en las cuatro páginas. | 3 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US07-2 | Programar el resaltado del enlace activo | Marcar en main.js el enlace de la página actual. | 1 | Ortiz Laura, Leyla Alisson | Done |
+| **US08** | Leer el sitio en español o en inglés | T-US08-1 | Implementar el selector ES/EN con persistencia | Guardar y leer el idioma en localStorage y marcar el botón activo. | 1.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US08-2 | Revisar claves de traducción faltantes | Recorrer las cuatro páginas en EN y completar las claves sin traducir. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US08-3 | Revisión editorial ES/EN | Unificar terminología y corregir el estilo de los textos en ambos idiomas. | 2 | Toro Turpo, Ronal | Done |
+| **TS01** | Configurar el repositorio de la Landing Page con GitFlow | T-TS01-1 | Crear la estructura base del proyecto | Crear carpetas y archivos vacíos de las cuatro páginas, css, js y assets. | 1 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-TS01-2 | Configurar ramas y reglas de Pull Request | Crear develop y exigir revisión antes de integrar en develop y main. | 1 | Huaman Oscco, Aldo Jesus | Done |
+| **TS04** | Desplegar la Landing Page en Vercel con despliegue continuo | T-TS04-1 | Configurar el proyecto en Vercel | Vincular el repositorio y definir la rama de producción. | 1.5 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-TS04-2 | Verificar el sitio publicado | Probar las cuatro páginas, enlaces e idioma en el dominio público. | 1 | Gallardo Morales, Carla Alejandra | Done |
+| **RNF02** | Contraste legible según WCAG 2.1 AA | T-RNF02-1 | Validar y ajustar el contraste de la paleta | Medir cada par texto/fondo y ajustar los que no cumplen AA. | 1.5 | Gallardo Morales, Carla Alejandra | Done |
+| **RNF03** | Carga rápida de la Landing Page | T-RNF03-1 | Medir y optimizar el rendimiento | Ejecutar Lighthouse móvil y optimizar fuentes y recursos que bloquean la carga. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **RNF04** | Metadatos para posicionamiento en buscadores | T-RNF04-1 | Agregar metadatos por página | Definir title y description en las cuatro páginas, y keywords, author y copyright en index.html. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **RNF05** | Compatibilidad con navegadores modernos | T-RNF05-1 | Probar la matriz de navegadores | Verificar las interacciones del sitio en cada navegador y registrar resultados. | 1.5 | Gallardo Morales, Carla Alejandra | Done |
+| **RNF06** | Animaciones de aparición que no bloquean el contenido | T-RNF06-1 | Implementar el scroll reveal con respaldo | Animar tarjetas con IntersectionObserver y omitirlo cuando no hay soporte. | 1.5 | Ortiz Laura, Leyla Alisson | Done |
+| **RNF07** | Identificación del contenido ilustrativo | T-RNF07-1 | Agregar notas de contenido ilustrativo | Señalar cifras, precios y fichas de ejemplo en ES/EN. | 1 | Toro Turpo, Ronal | Done |
+| | **TOTAL** | | | **Esfuerzo total estimado para el Sprint** | **94** | | |
+ 
+**Capacidad del Sprint 1**
+ 
+| Integrante | Disponibilidad declarada (h) | Horas asignadas | N.° de tareas | Uso de la capacidad |
+| :--- | :---: | :---: | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | 28 | 16 | 8 | 57 % |
+| Huaman Oscco, Aldo Jesus | 28 | 21.5 | 9 | 77 % |
+| Miranda Cordova, Jesus Angel Yvan | 28 | 16 | 8 | 57 % |
+| Ortiz Laura, Leyla Alisson | 28 | 22.5 | 11 | 80 % |
+| Toro Turpo, Ronal | 28 | 18 | 10 | 64 % |
+| **Total** | **140** | **94** | **46** | **67 %** |
+ 
+##### Resumen Técnico
+- **Total de horas:** 94 horas en 46 tareas.
+- **Distribución:** dos semanas (09/09/2026 – 22/09/2026), con una disponibilidad declarada de 28 horas por integrante (14 h por semana); la capacidad libre cubre revisiones de Pull Request y ceremonias.
+- **Story Points:** 40 comprometidos; 40 completados al cierre registrado en este informe.
+- **Entregable principal:** Landing Page de StockIA (4 páginas) publicada en Vercel, bilingüe ES/EN, responsiva y con el formulario de solicitud de demo en modo simulado.
 
 <p align="center">
   <img src="assets/img/chapter-05/Sprint.png" width="800" alt="Product Backlog Sprint 1"/>
@@ -3239,233 +3241,599 @@ La organización de líderes y colaboradores está directamente relacionada con 
   <br/><i>Artefacto: Jira para demostrar el tablero Kanban - Finalizado —</i>
 </p>
 
-##### Resumen Técnico
-- **Total de Horas:** 162 horas.
-- **Distribución:** 2 semanas de desarrollo (considerando jornada laboral estándar).
-- **Entregable Principal:** Landing Page de StockIA (4 páginas), bilingüe ES/EN, responsiva, con formulario de solicitud de demo funcional.
-
----
-
 
 #### 5.2.1.4. Development Evidence for Sprint Review
-En esta sección se explica y presenta los avances en implementación con relación a los productos de la solución según el alcance del Sprint: Landing Page.
-
-Primero, se mostrarán los commits más importantes para el Reporte, los cuales muestran el ciclo de vida del proyecto, y toda la información que se usó, usa y usará para el desarrollo del proyecto:
-
+ 
+En esta sección se presentan los avances de implementación del Sprint 1 (Landing Page) mediante los commits que los respaldan. Cada commit se relaciona con el ítem del Sprint Backlog 1 que implementa, de modo que puede rastrearse el trabajo de cada integrante desde la historia hasta el código.
+ 
+**Repositorio del informe (`stockia-report`)**
+ 
+El informe se trabajó con GitFlow: una rama `feature/*` por sección y su integración en `develop` mediante Pull Request (PR #1 al #37 durante el Sprint 1). Se presentan los commits más representativos de cada integrante:
+ 
 | **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| stockia-report | develop | `ce02e2f` | Initial commit | Creación del repositorio del informe con el README inicial. | 01/09/2026 |
-| stockia-report | develop | `5023ace` | feat(cover): add initial cover | Actualiza la portada con los datos del curso (1ASI0729), el equipo (DataBit) y el proyecto (StockIA). | 09/09/2026 |
-| stockia-report | develop | `07dc284` | feat(index): add index. | Agrega la Tabla de Contenidos completa (Capítulos I al V) para estructurar la navegación del documento. | 09/09/2026 |
-| stockia-report | develop | `cce981e` | docs(chapter-3): add Non-Functional User Stories section | Incorpora los Requisitos No Funcionales (RNF01–RNF10) al capítulo de Requirements Specification. | 15/09/2026 |
-| stockia-report | develop | `b146464` | docs(chapter-4): add Landing Page Mock-up section | Añade los mock-ups (Figma) de la Landing Page en la sección 4.3.2 del capítulo de Product Design. | 16/09/2026 |
-
+| stockia-report | develop | `ce02e2f` | Initial commit | Creación del repositorio del informe en la organización (Aldo_Jesus). | 01/09/2026 |
+| stockia-report | develop | `07dc284` | feat(index): add index. | Tabla de contenidos de los capítulos I al V (Carlsss28). | 08/09/2026 |
+| stockia-report | develop | `435ff41` | feat(members-profile):Carla Gallardo Profile | Perfil de integrante en la sección de presentación del equipo (Carlsss28). | 09/09/2026 |
+| stockia-report | develop | `5106ee4` | docs(chapter-3): add Functional User Stories section | User Stories de la Landing Page y la Web Application (Jesus). | 15/09/2026 |
+| stockia-report | develop | `afa3775` | docs(chapter-3): add Product Backlog section | Product Backlog priorizado con Story Points (Jesus). | 15/09/2026 |
+| stockia-report | develop | `15307e7` | doc(chapter-3): add Impact Map | Impact Map del segmento objetivo (Leylaa-O). | 16/09/2026 |
+| stockia-report | develop | `14ca7d7` | doc(chapter-02)add :User persona | User Persona del segmento de restaurantes (Jesus-Miranda-678). | 16/09/2026 |
+| stockia-report | develop | `3f05246` | doc(chapter-02)add customer journey mapping | Customer Journey Map del segmento objetivo (Jesus-Miranda-678). | 16/09/2026 |
+| stockia-report | develop | `578a83d` | docs(chapter-5): add Sprint Planning 1 section | Sprint Planning 1 del capítulo V (Jesus). | 16/09/2026 |
+| stockia-report | develop | `96ed715` | doc(chapter-01): add startup description | Descripción de DataBite Corp en el capítulo I (ronaltt-345). | 17/09/2026 |
+| stockia-report | develop | `cdb072c` | feat(chapter-02): add big picture event storming part | Big Picture EventStorming del dominio (ronaltt-345). | 17/09/2026 |
+| stockia-report | develop | `c34c5d7` | feat(style-guidelines):all setion style guidelines | Guía de estilos de la Landing Page y la Web Application (Carlsss28). | 17/09/2026 |
+| stockia-report | develop | `48a3fa8` | feat(web mockups): add mockups's photos | Mock-ups de la Web Application en el capítulo IV (Leylaa-O). | 17/09/2026 |
+| stockia-report | develop | `e1245e8` | doc(chapter-2)add Components Diagrams | Diagramas de componentes C4 (Jesus-Miranda-678). | 17/09/2026 |
+| stockia-report | develop | `2667a63` | doc(chapter-5): add section 1 to chapter 5 | Software Configuration Management del capítulo V (Leylaa-O). | 17/09/2026 |
+| stockia-report | develop | `b3bb84b` | docs(chapter-5): add Sprint Backlog 1 evidences | Evidencia de Jira del Sprint Backlog 1 (Jesus). | 17/09/2026 |
+ 
 <br/>
-
-A continuación se presentan los commits más importantes para la Landing Page, los cuales muestran todo el contenido visual y las funcionalidades implementadas en el Sprint 1:
-
+**Repositorio de la Landing Page (`stockia-website`)**
+ 
+La Landing Page se integró en el repositorio de la organización siguiendo GitFlow: Leyla configuró la estructura, el sistema de diseño (TS02) y el motor de internacionalización (TS03), y cada integrante integró su página mediante una rama `feature/*` y su Pull Request.
+ 
 | **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| Stockia-landing | develop | `5128a01` | Version de prueba | Commit único que sube la estructura completa de la Landing Page: `index.html`, `features.html`, `pricing.html`, `about.html`, hojas de estilo (`css/styles.css`) y lógica de i18n/interacciones (`js/`). | 06/09/2026 |
-
+| stockia-website | main | `fd69fb8` | chore: set up project structure | TS01: estructura base con las cuatro páginas y las carpetas `css`, `js` y `assets` (Leylaa-O). | 17/09/2026 |
+| stockia-website | develop | `dd266c5` | feat: add styles.css | TS02: tokens de diseño en `:root` y componentes reutilizables; base de RNF01, RNF02 y RNF06 (Leylaa-O). | 17/09/2026 |
+| stockia-website | develop | `b5320f2` | feat(i18n): add i18n.js | TS03 y US08: diccionario ES/EN, aplicación por `data-i18n` y persistencia del idioma en `localStorage` (Leylaa-O). | 17/09/2026 |
+| stockia-website | develop | `b75dec0` | feat: add main.js | US03, US04, US06, US07 y RNF06: pestañas del portafolio, interruptor mensual/anual, acordeón del FAQ, envío simulado del formulario, enlace activo y scroll reveal (Leylaa-O). | 17/09/2026 |
+| stockia-website | feature/index | `ad06861` | feat(landing): agrega página principal (index.html) de StockIA | US01, US02 y US03: hero, mockup del dashboard, barra de estadísticas, segmentos, funcionalidades, diferenciadores, integraciones y portafolio (Jesus). | 17/09/2026 |
+| stockia-website | develop | `05676c1` | Merge pull request #1 from .../feature/index | Integración revisada de `index.html` en `develop` (Aldo_Jesus). | 17/09/2026 |
+| stockia-website | feature/features | `76d0470` | feat(features):add features section | US02: detalle de los seis módulos y la sección "Cómo funciona" en `features.html` (Carlsss28). | 18/09/2026 |
+| stockia-website | develop | `f669552` | Merge pull request #3 from .../feature/features | Integración revisada de `features.html` en `develop` (Carlsss28). | 18/09/2026 |
+| stockia-website | develop | `cd0dda4` | feat: add about.html | US05 y US06: misión, visión, valores, equipo y formulario de solicitud de demo en `about.html` (ronaltt-345). | 18/09/2026 |
+ 
 <br/>
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
-En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la Landing Page de StockIA. A continuación, se explorarán los avances a través de imágenes que muestren el resultado obtenido (capturas pendientes de reemplazo):
+En el Sprint 1 se implementaron las cuatro páginas de la Landing Page de StockIA. A continuación se presenta cada sección publicada junto con la User Story o el requisito que la respalda:
+ 
 <br/>
-
-1. **Sección header / navbar:** Barra de navegación compartida entre las 4 páginas del sitio, con selector de idioma (ES/EN).
-
-<br/>
+1. **Barra de navegación (US07, US08):** menú común a las cuatro páginas con los enlaces Inicio, Características, Precios y Nosotros, el selector de idioma ES/EN y el botón "Solicitar demo".
 <p align="center">
-  <img src="assets/img/chapter-05/01-header-navbar.png" width="800" alt="Sección header / navbar"/>
-  <br/><i>Sección header / navbar — StockIA</i>
+  <img src="assets/img/chapter-05/01-header-navbar.png" width="800" alt="Barra de navegación"/>
+  <br/><i>Barra de navegación — US07 y US08</i>
 </p>
 <br/>
-
-2. **Sección hero + mockup de dashboard:** Título con la propuesta de valor, descripción, botones CTA y un mockup ilustrativo del dashboard de StockIA.
-
-<br/>
+2. **Hero con mockup del dashboard (US01):** propuesta de valor, CTA principal y secundario, tres indicadores clave y la vista previa ilustrativa del dashboard.
 <p align="center">
-  <img src="assets/img/chapter-05/02-hero-mockup-dashboard.png" width="800" alt="Sección hero + mockup de dashboard"/>
-  <br/><i>Sección hero + mockup de dashboard — StockIA</i>
+  <img src="assets/img/chapter-05/02-hero-mockup-dashboard.png" width="800" alt="Hero con mockup del dashboard"/>
+  <br/><i>Hero con mockup del dashboard — US01</i>
 </p>
 <br/>
-
-3. **Barra de estadísticas:** Los cuatro indicadores de impacto mostrados en el Home, con nota de transparencia sobre cifras de ejemplo.
-
-<br/>
+3. **Barra de estadísticas (US01, RNF07):** los cuatro indicadores de impacto y la nota que identifica las cifras referenciales.
 <p align="center">
   <img src="assets/img/chapter-05/03-barra-estadisticas.png" width="800" alt="Barra de estadísticas"/>
-  <br/><i>Barra de estadísticas — StockIA</i>
+  <br/><i>Barra de estadísticas — US01 y RNF07</i>
 </p>
 <br/>
-
-4. **Sección "¿Para quién es StockIA?":** Tarjetas diferenciadas para los segmentos dueños/CEOs de restaurantes y administradores/jefes de cocina.
-
-<br/>
+4. **"¿Para quién es StockIA?" (US02):** una tarjeta para dueños y CEOs y otra para administradores y jefes de cocina.
 <p align="center">
   <img src="assets/img/chapter-05/04-para-quien-es-stockia.png" width="800" alt="Sección ¿Para quién es StockIA?"/>
-  <br/><i>Sección "¿Para quién es StockIA?" — StockIA</i>
+  <br/><i>Sección "¿Para quién es StockIA?" — US02</i>
 </p>
 <br/>
-
-5. **Grid de funcionalidades:** Seis tarjetas de funcionalidades principales en el Home, con enlace al detalle completo en features.html.
-
-<br/>
+5. **Funcionalidades del Home (US02):** seis tarjetas de funcionalidades y el botón "Ver todas las características →".
 <p align="center">
-  <img src="assets/img/chapter-05/05-grid-funcionalidades.png" width="800" alt="Grid de funcionalidades"/>
-  <br/><i>Grid de funcionalidades — StockIA</i>
+  <img src="assets/img/chapter-05/05-grid-funcionalidades.png" width="800" alt="Funcionalidades del Home"/>
+  <br/><i>Funcionalidades del Home — US02</i>
 </p>
 <br/>
-
-6. **Sección "Más que un inventario" (diferenciadores):** Las tres tarjetas de diferenciadores de StockIA frente a otras soluciones.
-
-<br/>
+6. **"Más que un inventario" (US03):** las tres tarjetas de diferenciadores de StockIA.
 <p align="center">
-  <img src="assets/img/chapter-05/06-mas-que-un-inventario.png" width="800" alt="Sección Más que un inventario (diferenciadores)"/>
-  <br/><i>Sección "Más que un inventario" (diferenciadores) — StockIA</i>
+  <img src="assets/img/chapter-05/06-mas-que-un-inventario.png" width="800" alt="Diferenciadores"/>
+  <br/><i>Diferenciadores — US03</i>
 </p>
 <br/>
-
-7. **Sección de integraciones externas:** Las cuatro tarjetas de integraciones en evaluación (Google Maps, OpenWeather, Stripe/PayPal, Twilio/SendGrid), con nota de decisión pendiente.
-
-<br/>
+7. **Integraciones en evaluación (US03, RNF07):** cuatro tarjetas con la etiqueta "En evaluación" y la nota de que la integración definitiva aún no se ha elegido.
 <p align="center">
-  <img src="assets/img/chapter-05/07-integraciones-externas.png" width="800" alt="Sección de integraciones externas"/>
-  <br/><i>Sección de integraciones externas — StockIA</i>
+  <img src="assets/img/chapter-05/07-integraciones-externas.png" width="800" alt="Integraciones en evaluación"/>
+  <br/><i>Integraciones en evaluación — US03 y RNF07</i>
 </p>
 <br/>
-
-8. **Sección de portafolio:** Vistas ilustrativas con tabs para alternar entre Inventario e IA & IoT.
-
-<br/>
+8. **Portafolio (US03):** vistas ilustrativas de la plataforma con pestañas que resaltan la categoría activa.
 <p align="center">
-  <img src="assets/img/chapter-05/08-seccion-portafolio.png" width="800" alt="Sección de portafolio"/>
-  <br/><i>Sección de portafolio — StockIA</i>
+  <img src="assets/img/chapter-05/08-seccion-portafolio.png" width="800" alt="Portafolio"/>
+  <br/><i>Portafolio — US03</i>
 </p>
 <br/>
-
-9. **Placeholder de video demostrativo:** Bloque "Video demostrativo próximamente", con el iframe de YouTube ya preparado en el código para su reemplazo futuro.
-
-<br/>
+9. **Video del producto (US03):** bloque "Video demostrativo próximamente" sin enlaces rotos.
 <p align="center">
-  <img src="assets/img/chapter-05/09-placeholder-video.png" width="800" alt="Placeholder de video demostrativo"/>
-  <br/><i>Placeholder de video demostrativo — StockIA</i>
+  <img src="assets/img/chapter-05/09-placeholder-video.png" width="800" alt="Bloque del video del producto"/>
+  <br/><i>Bloque del video del producto — US03</i>
 </p>
 <br/>
-
-10. **features.html — grid completo:** Detalle extendido de las seis funcionalidades y la sección "Cómo funciona" (4 pasos).
-
-<br/>
+10. **features.html (US02):** detalle de los seis módulos y la sección "Cómo funciona" con cuatro pasos.
 <p align="center">
-  <img src="assets/img/chapter-05/10-features-grid-completo.png" width="800" alt="features.html — grid completo"/>
-  <br/><i>features.html — grid completo — StockIA</i>
+  <img src="assets/img/chapter-05/10-features-grid-completo.png" width="800" alt="features.html"/>
+  <br/><i>features.html — US02</i>
 </p>
 <br/>
-
-11. **pricing.html — planes y FAQ:** Las tarjetas de los planes Esencial, Profesional e IoT Completo, el toggle mensual/anual y el acordeón de preguntas frecuentes.
-
-<br/>
+11. **pricing.html (US04, RNF07):** planes Esencial, Profesional e IoT Completo con el interruptor mensual/anual, la nota de precios de ejemplo y el acordeón de preguntas frecuentes.
 <p align="center">
-  <img src="assets/img/chapter-05/11-pricing-planes-y-faq.png" width="800" alt="pricing.html — planes y FAQ"/>
-  <br/><i>pricing.html — planes y FAQ — StockIA</i>
+  <img src="assets/img/chapter-05/11-pricing-planes-y-faq.png" width="800" alt="pricing.html"/>
+  <br/><i>pricing.html — US04 y RNF07</i>
 </p>
 <br/>
-
-12. **about.html — misión, visión, equipo y formulario:** Sección de misión/visión/valores, las fichas de equipo (placeholder) y el formulario de solicitud de demo.
-
-<br/>
+12. **about.html (US05, US06):** misión, visión, valores, fichas del equipo y formulario de solicitud de demo.
 <p align="center">
-  <img src="assets/img/chapter-05/12-about-mision-vision-equipo-formulario.png" width="800" alt="about.html — misión, visión, equipo y formulario"/>
-  <br/><i>about.html — misión, visión, equipo y formulario — StockIA</i>
+  <img src="assets/img/chapter-05/12-about-mision-vision-equipo-formulario.png" width="800" alt="about.html"/>
+  <br/><i>about.html — US05 y US06</i>
 </p>
 <br/>
-
-13. **Sección footer:** Parte final del sitio, compartida entre las 4 páginas.
-
-<br/>
+13. **Pie de página (US07):** columnas Producto, Empresa y Legal, comunes a las cuatro páginas.
 <p align="center">
-  <img src="assets/img/chapter-05/13-seccion-footer.png" width="800" alt="Sección footer"/>
-  <br/><i>Sección footer — StockIA</i>
+  <img src="assets/img/chapter-05/13-seccion-footer.png" width="800" alt="Pie de página"/>
+  <br/><i>Pie de página — US07</i>
 </p>
 <br/>
+**Verificación de los requisitos no funcionales**
+ 
+Los requisitos no funcionales del Sprint 1 se verificaron con el criterio medible definido en el capítulo III:
+ 
+| **RNF** | **Criterio medible** | **Herramienta de verificación** | **Evidencia** |
+| :--- | :--- | :--- | :--- |
+| RNF01 | Sin scroll horizontal a 360 px; breakpoints en 1024, 768 y 480 px | DevTools a 360, 768, 1024 y 1440 px | `rnf01-responsive.png` |
+| RNF02 | Contraste ≥ 4.5:1 en texto normal y ≥ 3:1 en texto grande | WebAIM Contrast Checker y Lighthouse Accessibility | `rnf02-lighthouse-accessibility.png` |
+| RNF03 | Lighthouse Performance móvil ≥ 90; LCP ≤ 2.5 s; CLS ≤ 0.1 | Lighthouse en modo móvil | `rnf03-lighthouse-performance.png` |
+| RNF04 | `title` ≤ 60 y `description` ≤ 160 caracteres, únicos por página; Lighthouse SEO ≥ 90 | Inspección del `<head>` y Lighthouse SEO | `rnf04-lighthouse-seo.png` |
+| RNF05 | Funcionamiento igual en Chrome, Edge, Firefox, Safari, Chrome Android y Safari iOS; 0 errores de consola | Matriz de pruebas manual | `rnf05-navegadores.png` |
+ 
+ <https://pagespeed.web.dev/analysis/https-stockia-landing-giag-vercel-app-about-html/va1ajk3prc?form_factor=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=agentic-browsing&hl=es&utm_source=lh-chrome-ext>
 
-
-Para finalizar, se mostrará una demostración del avance sobre la Landing Page dentro de GitHub, para la publicación de la página web:
 <p align="center">
-  <img src="assets/img/chapter-05/14-repositorio-github.png" width="800" alt="Repositorio de GitHub"/>
-  <br/><i>Repositorio de GitHub sobre la Landing Page de StockIA — _(completar)_</i>
+  <img src="assets/img/chapter-05/Lighthouse.png" width="500" alt="Reporte de Lighthouse"/>
+  <br/><i>Reporte de Lighthouse en modo móvil — RNF02, RNF03 y RNF04</i>
+</p>
+<br/>
+Para finalizar, se muestra el repositorio de la Landing Page en la organización de GitHub:
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/14-repositorio-github.png" width="800" alt="Repositorio de la Landing Page"/>
+  <br/><i>Repositorio <code>stockia-website</code> en la organización upc-pre-202602-1ASI0729-7747-databit</i>
 </p>
 
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
-Para este Sprint, se han implementado y documentado los puntos de interacción de la Landing Page. Aunque el almacenamiento persistente será parte de un Sprint posterior, se ha programado la lógica de captura, validación y respuesta visual en el frontend para el siguiente servicio simulado:
-
-| Endpoint / Interacción | Acción (HTTP) | Campos del formulario | Descripción del Response |
-| :--- | :---: | :--- | :--- |
-| `about.html#contactForm` | **POST (Mock)** | Nombre*, Restaurante, Correo*, Mensaje (`*` obligatorios vía `required`) | **202 Accepted (simulado)**: `preventDefault()` bloquea el envío real, el botón cambia a " Enviado" (fondo de éxito) y se deshabilita 3 segundos; luego el formulario se resetea (`form.reset()`) automáticamente. |
-
-* **URL del Repositorio de Landing Page:** https://github.com/Jesusho22/Stockia-landing
-* **URL de la Landing Page desplegada:** https://stockia-landing-giag.vercel.app/about.html#contacto
+La Landing Page es un sitio estático y en este Sprint no consume servicios de backend. Las interacciones que sí ejecutan lógica se resuelven en el navegador y se documentan a continuación, junto con la User Story que cubren. La recepción real de solicitudes de demo se implementará cuando exista el RESTful API (TS09).
+ 
+| **Endpoint / Interacción** | **Acción** | **Parámetros** | **Descripción del Response** | **User Story** |
+| :--- | :---: | :--- | :--- | :---: |
+| `about.html#contactForm` | **POST (simulado)** | `nombre`* , `restaurante`, `correo`* , `mensaje` (`*` obligatorios con `required` y `type="email"`) | El navegador bloquea el envío si falta un campo obligatorio o el correo no es válido. Con datos válidos, `preventDefault()` evita el envío real, el botón muestra "✓ Enviado" y se deshabilita durante 3 segundos; luego el formulario se limpia con `form.reset()`. No se transmiten datos a un servidor. | US06 |
+| Selector de idioma (`ES` / `EN`) | Lectura y escritura en `localStorage` | Clave `stockia-lang` con valor `es` o `en` | Aplica las traducciones a todos los elementos con `data-i18n` sin recargar la página y conserva el idioma al navegar entre páginas o volver al sitio. | US08 |
+| Interruptor mensual / anual (`pricing.html`) | Cálculo en el cliente | Estado del interruptor | Cambia los precios de S/ 0, 39 y 79 a S/ 0, 27 y 55 y viceversa, sin recargar la página. | US04 |
+| Preguntas frecuentes (`pricing.html`) | Interacción en el cliente | Pregunta seleccionada | Despliega la respuesta elegida y cierra la que estaba abierta. | US04 |
+ 
+* **Repositorio de la Landing Page/WebSite :** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-website
+* **Landing Page desplegada:** https://stockia-landing-giag.vercel.app/index.html
 
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
-El proceso de despliegue para el Sprint 1 priorizó una infraestructura de hosting estático en **Vercel**, aprovechando su infraestructura global (CDN) para garantizar tiempos de carga óptimos para la Landing Page. Se priorizó la automatización para permitir iteraciones rápidas sobre el diseño y el contenido informativo orientado a los segmentos objetivo.
-
-**Actividades de Despliegue Realizadas**
-* Configuración del proyecto en Vercel, vinculado al repositorio `Jesusho22/Stockia-landing` para despliegues automáticos.
-* Despliegue continuo activado en cada push a la rama `develop`, publicado en: **https://stockia-landing-giag.vercel.app**
-* Verificación de las 4 páginas del sitio (`index.html`, `features.html`, `pricing.html`, `about.html`) en el dominio de Vercel.
-
-**Evidencia Deploy: Landing Page - Responsive**
+La Landing Page se publicó en **Vercel** como sitio estático, servido desde su CDN global, con despliegue continuo desde el repositorio (TS04).
+ 
+**Actividades de despliegue realizadas**
+ 
+1. Se creó el proyecto en Vercel y se vinculó al repositorio de la Landing Page, con `develop` como rama de producción.
+2. Se activó el despliegue automático: cada cambio integrado en `develop` se publica sin pasos manuales, y cada Pull Request genera una URL de vista previa.
+3. Se verificaron las cuatro páginas (`index.html`, `features.html`, `pricing.html` y `about.html`) en el dominio público, incluidos los enlaces entre páginas y el cambio de idioma (T-TS04-2).
+4. Se verificó la visualización en escritorio y en móvil (RNF01).
+* **URL de la Landing Page desplegada:** https://stockia-landing-giag.vercel.app
+**Evidencia: proyecto y despliegues en Vercel**
+ 
 <p align="center">
-  <img src="assets/img/chapter-05/deploy-desktop-index.png" width="500" alt="Landing Page Desplegada"/>
-  <br/><i>Landing Page Desplegada — stockia-landing-giag.vercel.app</i>
+  <img src="assets/img/chapter-05/02-hero-mockup-dashboard.png" width="800" alt="Proyecto de la Landing Page en Vercel"/>
+  <br/><i>Proyecto de la Landing Page en Vercel con el historial de despliegues</i>
 </p>
-
-**Evidencia Deploy: Landing Page Mobile - Responsive**
+**Evidencia: Landing Page desplegada en escritorio**
+ 
 <p align="center">
-  <img src="assets/img//chapter-05/deploy-mobile-index.png" width="200" alt="Landing Page Desplegada - Mobile"/>
-  <br/><i>Landing Page Desplegada (vista móvil, 390px) — stockia-landing-giag.vercel.app</i>
+  <img src="assets/img/chapter-05/deploy-desktop-index.png" width="500" alt="Landing Page desplegada en escritorio"/>
+  <br/><i>Landing Page desplegada — stockia-landing-giag.vercel.app</i>
+</p>
+**Evidencia: Landing Page desplegada en móvil**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/deploy-mobile-index.png" width="200" alt="Landing Page desplegada en móvil"/>
+  <br/><i>Landing Page desplegada en móvil (390 px) — stockia-landing-giag.vercel.app</i>
 </p>
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
-**Dinámica de Implementación**
+**Dinámica de trabajo**
+ 
+Durante el Sprint 1 el equipo trabajó en dos frentes: la Landing Page y la documentación del informe. Las tareas se organizaron en Jira, en el proyecto STOCKIA-OS, con un responsable por tarea (ver 5.2.1.3). El código y el informe se versionaron en GitHub siguiendo GitFlow: `main` para versiones entregables, `develop` para integración y una rama `feature/*` por tarea o sección, integrada por Pull Request revisado por otro integrante.
+ 
+**Aporte por integrante**
+ 
+| **Integrante** | **GitHub** | **Aporte principal en el Sprint 1** | **Commits en `stockia-report` (develop, al 22/09/2026)** | **Commits en `stockia-website`** |
+| :--- | :--- | :--- | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | `features.html` (US02), navegación (US07), contraste y compatibilidad (RNF02, RNF05); índice, portada y guía de estilos del informe | 44 | 2 |
+| Huaman Oscco, Aldo Jesus | Jesusho22 (Jesus / Aldo_Jesus) | `index.html` (US01–US03), despliegue en Vercel (TS04), reglas de ramas (TS01); capítulos III y V del informe | 34 | 2 |
+| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | `pricing.html` (US04), responsive, rendimiento y SEO (RNF01, RNF03, RNF04); capítulo II y diagramas C4 del informe | 41 | 0 |
+| Ortiz Laura, Leyla Alisson | Leylaa-O (Leylaa-O / Leyla Ortiz) | Estructura del repositorio (TS01), sistema de diseño (TS02), i18n (TS03), interacciones en `main.js`; Impact Map, mock-ups y sección 5.1 del informe | 18 | 5 |
+| Toro Turpo, Ronal | Ronal345 (ronaltt-345) | `about.html` (US05, US06), contenido y traducción (US08, RNF07); capítulo I y EventStorming del informe | 8 | 1 |
+ 
+**Evidencia: contribuciones por integrante en `stockia-report`**
+ 
 <p align="center">
-Durante este ciclo, el equipo concentró sus esfuerzos en el desarrollo Frontend y la Documentación Técnica de la Landing Page. El equipo trabajó de forma remota, distribuyendo tareas mediante un tablero Kanban en Jira (ver evidencia en 5.2.1.3) y centralizando el control de versiones en GitHub. _(completar — nombra la herramienta real de comunicación diaria del equipo: Discord, WhatsApp, Slack, etc., y la frecuencia de las reuniones de sincronización)_.
+  <img src="assets/img/chapter-05/Contributors.png" width="700" alt="Contribuciones por integrante en stockia-report"/>
+  <br/><i>Contributors del repositorio stockia-report</i>
+</p>
+**Evidencia: contribuciones por integrante en `stockia-website`**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/Contributors-website.png" width="700" alt="Contribuciones por integrante en stockia-website"/>
+  <br/><i>Contributors del repositorio stockia-website</i>
+</p>
+**Evidencia: grafo de GitFlow**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/Network-Gitflow.png" width="700" alt="Grafo de ramas"/>
+  <br/><i>Network: ramas feature integradas en develop mediante Pull Request</i>
 </p>
 
-**Analíticos de Colaboración**
+### 5.2.2. Sprint 2
+ 
+El Sprint 2 se dedicó al frontend de la Web Application de StockIA en Angular, organizado por Bounded Context y conectado a una API REST simulada y desplegada. Incluye además la corrección de los hallazgos de la revisión del AV1 en la Landing Page (TS08). El backend real (RESTful API) no forma parte de este Sprint y se mantiene en el Product Backlog (TS09 y TS10).
+
+#### 5.2.2.1. Sprint Planning 2
+ 
+| **Sprint #** | Sprint 2 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| **Date** | 23/09/2026 |
+| **Time** | 10:00 am |
+| **Location** | Lima/Lima/Santiago de Surco/UPC (presencial) y Google Meet |
+| **Prepared By** | Huaman Oscco, Aldo Jesus (Jesusho22) |
+| **Attendees (to planning meeting)** | Gallardo Morales, Carla Alejandra / Huaman Oscco, Aldo Jesus / Miranda Cordova, Jesus Angel Yvan / Ortiz Laura, Leyla Alisson / Toro Turpo, Ronal |
+| **Sprint 1 Review Summary** | Se presentó la Landing Page publicada en Vercel con las cuatro páginas bilingües, el formulario de demo simulado y los criterios de RNF01 a RNF07. Se identificaron como pendientes: el menú de navegación en móvil, el botón "Solicitar demo" del menú sin destino, las fichas de equipo de ejemplo, el enlace de términos sin página y la integración de pricing.html en el repositorio de la organización. Estos pendientes se planifican en TS08. |
+| **Sprint 1 Retrospective Summary** | Funcionó: la división de páginas por integrante y la integración por Pull Request en el repositorio de la organización. A mejorar: (1) una rama feature/ por tarea con su ID en el mensaje de commit, para que cada tarea tenga su evidencia; (2) integrar cada página en el repositorio de la organización antes del cierre del Sprint; (3) estimar las tareas por esfuerzo real y registrar la disponibilidad de cada integrante. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 2 Goal** | **Contexto:** Con la Landing Page publicada, el equipo construye el núcleo del producto: que cada venta descuente insumos por receta y que el administrador vea a tiempo lo que debe reponer.<br><br>**Sprint Goal:**<br>*"Our focus is on delivering the first working version of the StockIA web application, organised by bounded context and connected to a deployed mock REST API. We believe it delivers to restaurant administrators the ability to keep their inventory in sync with every sale, manage their team and act on stock alerts from a single dashboard. This will be confirmed when, in the deployed application, an administrator can register, load ingredients and recipes, record a sale that automatically deducts stock, and see the resulting critical items and alerts on the dashboard."* |
+| **Sprint 2 Velocity** | 40 Story Points (completados en el Sprint 1; es la única referencia histórica disponible). |
+| **Sum of Story Points** | 52 Story Points comprometidos en 17 ítems (11 US, 4 TS y 2 RNF) |
+ 
+El compromiso del Sprint 2 (52 SP) se calculó a partir de la velocidad del Sprint 1 ajustada a la nueva disponibilidad: en el Sprint 1 el equipo completó 40 SP con 28 horas por integrante; para el Sprint 2 cada integrante declaró 36 horas, por lo que la capacidad proyectada es 40 × 36 / 28 ≈ 51 SP. Las 137.5 horas planificadas equivalen al 76 % de la capacidad disponible (180 horas) y ningún integrante supera las 33 horas de sus 36 disponibles; el margen restante cubre revisiones de Pull Request y ceremonias. Al cierre del Sprint se completaron los 52 SP comprometidos.
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+ 
+En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** del Sprint 2. Los aspectos corresponden a los Bounded Contexts definidos en el capítulo IV, más la arquitectura transversal y la Landing Page; cada integrante lidera un Bounded Context y lo implementa en sus cuatro capas (domain, infrastructure, application y presentation). El líder (L) responde por la integración y la revisión de ese aspecto, y los colaboradores (C) desarrollan o revisan sus tareas.
+ 
+| Team Member | GitHub Username | Restaurant Registration (IAM y equipo) (L/C) | Stock Management & Recipes Management (L/C) | ML and Recommendations (L/C) | Subscription and Payment Management (L/C) | Analytics and Dashboard (alertas e historial de ventas) (L/C) | Arquitectura, API simulada y despliegue (L/C) | Landing Page (nueva versión y enlace con la Web App) (L/C) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | C | C | C | L | C | C | L |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | C | C | L | C | C | L | C |
+| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | C | L | C | C | C | C | C |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | C | C | C | C | L | C | C |
+| Toro Turpo, Ronal | Ronal345 | L | C | C | C | C | C | C |
+ 
+> **Leyenda:** **L:** Líder del aspecto · **C:** Colaborador
+
+#### 5.2.2.3. Sprint Backlog 2
+ 
+**Periodo:** 23/09/2026 – 06/10/2026 (2 semanas)  
+**Objetivo del Sprint:** Entregar el frontend de la Web Application con autenticación, equipo y roles, inventario, recetas, ventas con descuento automático, dashboard, alertas, proyección de demanda, recomendaciones y planes, conectado a la API simulada desplegada, y corregir los hallazgos del AV1 en la Landing Page.
+ 
+| **User Story Id** | **Título de la Historia** | **Task Id** | **Título de la Tarea** | **Descripción de la Tarea** | **Est. (Hrs)** | **Asignado** | **Status** |
+| :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
+| **US12** | Registrar y monitorear los insumos del inventario | T-US12-1 | Modelar InventoryItem y su servicio de API | Crear la entidad del dominio e InventoryApiService en infrastructure. | 2.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US12-2 | Construir la tabla de inventario | Listar insumos con estados de carga y de inventario vacío. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US12-3 | Construir el formulario de alta y edición | Validar campos y calcular la fecha de vencimiento a partir de la vida útil. | 4 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US12-4 | Implementar la eliminación con confirmación | Pedir confirmación antes de eliminar un insumo. | 1 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US12-5 | Implementar la regla de estado en el dominio | Calcular Vencido, Crítico, Stock bajo o Disponible en InventoryItem. | 2 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US12-6 | Mostrar el distintivo de estado | Pintar el badge de color correspondiente en la tabla de inventario. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **US10** | Iniciar sesión y mantener actualizada mi cuenta | T-US10-1 | Construir el formulario de inicio de sesión | Crear sign-in con validaciones y mensaje de error. | 3 | Toro Turpo, Ronal | Done |
+|  |  | T-US10-2 | Implementar sesión persistente y cierre de sesión | Guardar y restaurar la sesión en localStorage y limpiarla al salir. | 2 | Toro Turpo, Ronal | Done |
+|  |  | T-US10-3 | Implementar los guards de autenticación y rol | Proteger /app con authGuard y las rutas administrativas con adminGuard. | 2 | Toro Turpo, Ronal | Done |
+|  |  | T-US10-4 | Construir la pantalla de perfil | Crear el formulario precargado con validaciones por campo. | 3 | Toro Turpo, Ronal | Done |
+|  |  | T-US10-5 | Implementar la actualización del perfil | Guardar los cambios, actualizar la sesión y mostrar la confirmación o el error. | 2 | Toro Turpo, Ronal | Done |
+| **US17** | Gestionar y entregar las alertas operativas | T-US17-1 | Modelar Alert y su servicio de API | Crear la entidad con tipo, severidad y canal, y AlertsApiService. | 2 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US17-2 | Construir la lista de alertas con contador | Mostrar alertas, pendientes y estado vacío. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US17-3 | Construir el formulario de creación y edición | Validar tipo, severidad, canal y mensaje. | 3 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US17-4 | Implementar atender y eliminar | Marcar atendida con su regla y eliminar con confirmación. | 2 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US17-5 | Implementar la regla de canales requeridos | Calcular requiredChannels, pendingChannel y delivered en Alert. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US17-6 | Mostrar entrega y reintento por canal | Indicar el estado de entrega y permitir reintentar el canal pendiente. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
+| **US18** | Anticipar la demanda y aplicar recomendaciones | T-US18-1 | Modelar DemandForecast y su servicio | Crear la entidad con puntos por día y el servicio de carga y generación. | 2 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US18-2 | Implementar la generación de siete días | Generar la proyección simulada y manejar el estado de generación. | 2.5 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US18-3 | Construir la visualización por día | Mostrar barras por día, plato, confianza, clima y fecha. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US18-4 | Etiquetar la proyección como simulada | Agregar el aviso de valores simulados en la pantalla. | 0.5 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US18-5 | Modelar Recommendation y su lista | Crear la entidad y mostrar tipo, mensaje e impacto esperado. | 2 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US18-6 | Implementar "Aplicar" | Marcar la recomendación como aplicada y actualizar la lista. | 1.5 | Huaman Oscco, Aldo Jesus | Done |
+| **TS05** | Estructurar la Web Application en Angular por Bounded Context | T-TS05-1 | Crear el proyecto y la estructura por contexto | Inicializar Angular 18 standalone y crear las capas de cada contexto. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-TS05-2 | Implementar el shell y el enrutamiento | Crear el layout con menú por rol y las rutas diferidas con redirecciones. | 4 | Huaman Oscco, Aldo Jesus | Done |
+| **TS06** | Implementar y desplegar la API simulada de la Web Application | T-TS06-1 | Modelar db.json con las colecciones del dominio | Definir users, inventoryItems, recipes, sales, alerts, recommendations, demandForecasts, plans y subscriptions. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-TS06-2 | Configurar json-server y desplegarlo en Render | Servir bajo /api/v1 con CORS y health check y publicarlo en Render. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-TS06-3 | Implementar BaseApiService y environments | Centralizar la URL base, el modo useFakeApi y la API en memoria. | 2 | Huaman Oscco, Aldo Jesus | Done |
+| **US13** | Vincular recetas a los insumos del inventario | T-US13-1 | Modelar Recipe y sus operaciones | Crear la entidad con líneas de ingredientes y las operaciones CRUD del servicio. | 2.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US13-2 | Construir el formulario de receta | Seleccionar insumos, agregar y quitar líneas y validar la receta. | 4 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US13-3 | Construir la lista de recetas | Mostrar recetas con ingredientes y opciones de editar y eliminar. | 2.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **US14** | Registrar una venta con descuento automático de insumos | T-US14-1 | Modelar Sale y su servicio de API | Crear la entidad con líneas, canal, estado y total, y SalesApiService. | 2 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US14-2 | Validar stock antes de registrar la venta | Rechazar la venta y listar los insumos faltantes cuando no alcanzan. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US14-3 | Descontar insumos al confirmar la venta | Aplicar el descuento por receta después de persistir la venta. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US14-4 | Agregar la acción "Simular venta" con confirmación visual | Disparar el registro desde Recetas y resaltar el plato vendido. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **US09** | Registrar mi restaurante y crear mi cuenta de administrador | T-US09-1 | Construir el formulario de registro | Crear sign-up con validaciones reactivas y mensajes por campo. | 3 | Toro Turpo, Ronal | Done |
+|  |  | T-US09-2 | Implementar el registro en AuthService | Crear el usuario con rol ADMIN, iniciar la sesión y redirigir al dashboard. | 2 | Toro Turpo, Ronal | Done |
+|  |  | T-US09-3 | Validar correo duplicado | Consultar el correo antes de crear la cuenta y mostrar el mensaje de duplicado. | 2 | Toro Turpo, Ronal | Done |
+| **US16** | Visualizar el resumen operativo en el dashboard | T-US16-1 | Calcular los indicadores del inventario | Exponer conteos y valor del inventario como computed signals. | 3 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US16-2 | Construir las tablas de críticos y alertas recientes | Mostrar insumos críticos y las cinco alertas más recientes con sus estados vacíos. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US16-3 | Agregar el resumen de la última proyección | Mostrar la proyección más reciente cuando exista. | 1.5 | Ortiz Laura, Leyla Alisson | Done |
+| **TS08** | Corregir los hallazgos de la revisión del AV1 en la Landing Page | T-TS08-1 | Enlazar "Solicitar demo" del menú | Apuntar el botón del navbar de las cuatro páginas a about.html#contacto. | 0.5 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-TS08-2 | Agregar el menú desplegable en móvil | Mostrar un botón de menú bajo 768 px que despliegue los enlaces. | 2.5 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-TS08-3 | Publicar las fichas reales del equipo | Reemplazar las fichas de ejemplo y retirar las notas internas de cifras y equipo. | 1.5 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-TS08-4 | Filtrar el portafolio por pestaña | Mostrar solo las vistas de la categoría elegida. | 1.5 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-TS08-5 | Crear la página de términos y enlazarla | Publicar términos y condiciones y enlazarlos desde el footer. | 2 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-TS08-6 | Subir pricing.html al repositorio de la organización | Integrar por Pull Request la página de precios que falta en develop. | 0.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-TS08-7 | Enlazar la Landing Page con la Web Application | Agregar en la Landing los accesos "Iniciar sesión" y "Crear cuenta" hacia la Web Application, y en la Web Application el enlace de regreso a la Landing. | 1.5 | Gallardo Morales, Carla Alejandra | Done |
+| **US11** | Gestionar el equipo y sus roles | T-US11-1 | Construir el formulario de invitación | Crear el formulario con nombre, correo y rol y registrar al integrante. | 3 | Toro Turpo, Ronal | Done |
+|  |  | T-US11-2 | Implementar la baja con reglas de negocio | Confirmar la baja e impedir eliminar la propia cuenta o al último administrador. | 2.5 | Toro Turpo, Ronal | Done |
+|  |  | T-US11-3 | Construir la lista del equipo con selector de rol | Mostrar integrantes, marcar la propia cuenta y guardar el cambio de rol con la regla del último administrador. | 3 | Toro Turpo, Ronal | Done |
+|  |  | T-US11-4 | Restringir menú y ruta por rol | Ocultar "Roles y permisos" al Empleado y aplicar adminGuard a /app/roles. | 1.5 | Toro Turpo, Ronal | Done |
+| **US19** | Elegir o cambiar el plan de suscripción | T-US19-1 | Modelar Plan y Subscription y su servicio | Crear las entidades y cargar planes y suscripción actual. | 2 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US19-2 | Construir las tarjetas de planes | Mostrar precio, características, plan popular y plan activo. | 2.5 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US19-3 | Implementar el checkout simulado | Activar o cambiar la suscripción con Stripe o PayPal simulados. | 2.5 | Gallardo Morales, Carla Alejandra | Done |
+| **US15** | Consultar el historial de ventas y anular ventas erróneas | T-US15-1 | Construir el historial de ventas | Listar ventas con totales en S/, estado y resumen de ingresos confirmados. | 3 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US15-2 | Implementar la anulación de ventas | Confirmar y cambiar el estado de la venta a Anulada. | 2 | Ortiz Laura, Leyla Alisson | Done |
+| **RNF08** | Control de acceso por sesión y por rol en la Web Application | T-RNF08-1 | Probar el acceso a todas las rutas | Recorrer cada ruta sin sesión, como Empleado y como Administrador. | 1.5 | Toro Turpo, Ronal | Done |
+| **TS07** | Desplegar la Web Application en Vercel | T-TS07-1 | Configurar Vercel para la Web Application | Definir build, carpeta de salida y reescritura SPA en vercel.json. | 1.5 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-TS07-2 | Probar rutas protegidas en producción | Verificar inicio de sesión, recarga de rutas internas y redirecciones. | 1 | Gallardo Morales, Carla Alejandra | Done |
+| **RNF09** | Retroalimentación de estado y confirmaciones en la Web Application | T-RNF09-1 | Revisar estados y confirmaciones por pantalla | Verificar estados de carga, vacío, éxito, error y confirmación en cada vista. | 2 | Gallardo Morales, Carla Alejandra | Done |
+| | **TOTAL** | | | **Esfuerzo total estimado para el Sprint** | **137.5** | | |
+ 
+**Capacidad del Sprint 2**
+ 
+| Integrante | Disponibilidad declarada (h) | Horas asignadas | N.° de tareas | Uso de la capacidad |
+| :--- | :---: | :---: | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | 36 | 19.5 | 11 | 54 % |
+| Huaman Oscco, Aldo Jesus | 36 | 28 | 12 | 78 % |
+| Miranda Cordova, Jesus Angel Yvan | 36 | 33 | 14 | 92 % |
+| Ortiz Laura, Leyla Alisson | 36 | 26.5 | 11 | 74 % |
+| Toro Turpo, Ronal | 36 | 30.5 | 13 | 85 % |
+| **Total** | **180** | **137.5** | **61** | **76 %** |
+ 
+##### Resumen Técnico
+- **Total de horas:** 137.5 horas en 61 tareas.
+- **Distribución:** dos semanas (23/09/2026 – 06/10/2026), con una disponibilidad declarada de 36 horas por integrante (18 h por semana); la capacidad libre cubre revisiones de Pull Request y ceremonias.
+- **Story Points:** 52 comprometidos; 52 completados al cierre registrado en este informe.
+- **Entregable principal:** Web Application de StockIA en Angular conectada a la API simulada desplegada en Render, y Landing Page sin los hallazgos de la revisión del AV1.
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+ 
+En esta sección se presentan los avances de implementación del Sprint 2 (Web Application y correcciones de la Landing Page) mediante los commits que los respaldan, relacionados con el ítem del Sprint Backlog 2 que implementan.
+ 
+**Distribución del código por Bounded Context**
+ 
+Cada integrante implementa y sube al repositorio de la organización un Bounded Context completo, en sus cuatro capas, mediante su rama `feature/*` y su Pull Request:
+ 
+| **Bounded Context (cap. IV)** | **Responsable** | **Carpetas en la Web Application** | **Ítems del Sprint Backlog 2** |
+| :--- | :--- | :--- | :--- |
+| Restaurant Registration (IAM y equipo) | Toro Turpo, Ronal | `iam` | US09, US10, US11, RNF08 |
+| Stock Management & Recipes Management | Miranda Cordova, Jesus Angel Yvan | `product-inventory`, `sales-order` (registro de venta) | US12, US13, US14 |
+| ML and Recommendations | Huaman Oscco, Aldo Jesus | `demand-forecasting` | US18 |
+| Subscription and Payment Management | Gallardo Morales, Carla Alejandra | `subscription` | US19 |
+| Analytics and Dashboard | Ortiz Laura, Leyla Alisson | `dashboard`, `alerts`, `sales-order` (historial de ventas) | US15, US16, US17 |
+| Arquitectura transversal | Huaman Oscco, Aldo Jesus | `shared`, `app.routes.ts`, `environments`, `mock-api` | TS05, TS06, TS07 |
+| Landing Page | Gallardo Morales, Carla Alejandra | repositorio `stockia-website` | TS08 |
+ 
+**Repositorio de la Web Application (`stockia-webapp`)**
+ 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| stockia-webapp | main | `a53ca88` | Initial commit | Creación del repositorio de la Web Application en la organización (Aldo_Jesus). | 15/09/2026 |
+| stockia-webapp | main | `5f5e55d` | chore: apuntar el frontend a stockia-mock-api en Render | TS06: `apiBaseUrl` del entorno de desarrollo apunta a la API simulada desplegada (Aldo_Jesus). | 01/10/2026 |
+| stockia-webapp | main | `da25a26` | chore: apuntar el frontend a stockia-mock-api en Render | TS06 y TS07: `apiBaseUrl` del entorno de producción apunta a la API simulada desplegada (Aldo_Jesus). | 01/10/2026 |
+ 
+<!-- ACTUALIZAR: una fila por cada commit de cada Bounded Context, por ejemplo:
+| stockia-webapp | feature/restaurant-registration | `xxxxxxx` | feat(iam): add sign-up, sign-in, profile and team management | US09, US10, US11 y RNF08 (Ronal345). | dd/10/2026 |
+| stockia-webapp | feature/stock-recipes-management | `xxxxxxx` | feat(inventory): add inventory, recipes and sale registration | US12, US13 y US14 (Jesus-Miranda-678). | dd/10/2026 |
+| stockia-webapp | feature/ml-recommendations | `xxxxxxx` | feat(demand-forecasting): add forecast and recommendations | US18 (Jesusho22). | dd/10/2026 |
+| stockia-webapp | feature/subscription-payment | `xxxxxxx` | feat(subscription): add plans and simulated checkout | US19 (Carlsss28). | dd/10/2026 |
+| stockia-webapp | feature/analytics-dashboard | `xxxxxxx` | feat(dashboard): add dashboard, alerts and sales history | US15, US16 y US17 (Leylaa-O). | dd/10/2026 |
+-->
+ 
+**Repositorio de integración del prototipo (`Jesusho22/stockia-platform`)**
+ 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| stockia-platform | main | `4f712ae` | feat: StockIA Web Application (Angular DDD) + mock API (json-server) | TS05 y TS06: Web Application en Angular 18 organizada por Bounded Context (iam, product-inventory, sales-order, alerts, demand-forecasting, subscription, dashboard) y API simulada con json-server; incluye las pantallas de US09 a US19, los guards de RNF08 y la configuración de Vercel de TS07 (Jesus). | 01/10/2026 |
+| stockia-platform | main | `084801e` | feat: apuntar el frontend a la mock API desplegada en Render | TS06: conexión de los entornos de desarrollo y producción a la API simulada en Render (Jesus). | 01/10/2026 |
+ 
+> **Nota:** la versión integrada de la Web Application se encuentra hoy en el repositorio de integración `Jesusho22/stockia-platform`. Siguiendo la mejora acordada en la retrospectiva del Sprint 1, cada integrante sube al repositorio de la organización el Bounded Context a su cargo (ver la tabla de distribución) mediante una rama `feature/*` y su Pull Request, de modo que la autoría de cada tarea quede registrada.
+ 
+**Repositorio de la Landing Page (`stockia-website`) — TS08**
+ 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+ 
+<!-- ACTUALIZAR: commits de TS08 (Carla: menú móvil, botón "Solicitar demo", fichas reales del equipo, filtro del portafolio,
+     términos y condiciones y enlace con la Web Application; Miranda: integración de pricing.html). -->
+ 
+**Repositorio del informe (`stockia-report`)**
+ 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| stockia-report | develop | `6e426b8` | Update README.md | Actualización del capítulo III (Ronal345). | 27/09/2026 |
+| stockia-report | develop | `5b9f418` | docs(chapter-03): validation of epics and addition of metrics. | Épicas alineadas a los objetivos estratégicos y a su KPI (Jesus). | 04/10/2026 |
+| stockia-report | develop | `8b09138` | docs(chapter-03): user story validation and metric correction. | User Stories con el «para» alineado a métricas y escenarios Gherkin (Jesus). | 04/10/2026 |
+| stockia-report | develop | `e81f46e` | docs(chapter-03): correction of non-functional requirements | RNF con atributo de calidad, actor afectado y criterio medible (Jesus). | 04/10/2026 |
+| stockia-report | develop | `3392142` | docs(chapter-03): product backlog update | Product Backlog ordenado por Story Points con los mismos IDs y títulos (Jesus). | 04/10/2026 |
+| stockia-report | develop | `13515bc` | docs(chapter-05): added sprint 2 backlog with task breakdown and capacity | Sprint Backlog 2 con tareas, responsables, horas y capacidad (Jesus). | 04/10/2026 |
+ 
+<!-- ACTUALIZAR: agregar los commits de los demás integrantes en el informe durante el Sprint 2. -->
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+ 
+En el Sprint 2 se implementó la primera versión de la Web Application de StockIA. A continuación se presenta cada pantalla junto con la User Story o el requisito que la respalda:
+ 
+<br/>
+1. **Registro de restaurante (US09):** formulario de creación de cuenta con validaciones por campo; la cuenta se crea con el rol Administrador.
 <p align="center">
-La carga de trabajo se distribuyó para asegurar que todos los integrantes participaran en la construcción de los artefactos visuales y técnicos:
+  <img src="assets/img/chapter-05/s2-01-sign-up.png" width="800" alt="Registro de restaurante"/>
+  <br/><i>Registro de restaurante — US09</i>
+</p>
+<br/>
+2. **Inicio de sesión y perfil (US10, RNF08):** inicio de sesión con mensaje de credenciales incorrectas, sesión conservada al recargar y edición del perfil.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-02-sign-in-profile.png" width="800" alt="Inicio de sesión y perfil"/>
+  <br/><i>Inicio de sesión y perfil — US10 y RNF08</i>
+</p>
+<br/>
+3. **Dashboard operativo (US16):** indicadores del inventario, insumos críticos, alertas recientes y resumen de la última proyección.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-03-dashboard.png" width="800" alt="Dashboard operativo"/>
+  <br/><i>Dashboard operativo — US16</i>
+</p>
+<br/>
+4. **Inventario de insumos (US12):** tabla con los estados Vencido, Crítico, Stock bajo y Disponible, y formulario de alta y edición.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-04-inventory.png" width="800" alt="Inventario de insumos"/>
+  <br/><i>Inventario de insumos — US12</i>
+</p>
+<br/>
+5. **Recetas y venta con descuento automático (US13, US14):** recetas vinculadas a los insumos y acción "Simular venta" que valida y descuenta el stock.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-05-recipes-sale.png" width="800" alt="Recetas y venta"/>
+  <br/><i>Recetas y venta con descuento automático — US13 y US14</i>
+</p>
+<br/>
+6. **Historial de ventas (US15):** ventas con total en S/, estado e ingresos del período, con anulación confirmada.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-06-sales-history.png" width="800" alt="Historial de ventas"/>
+  <br/><i>Historial de ventas — US15</i>
+</p>
+<br/>
+7. **Alertas operativas (US17):** registro, atención y eliminación de alertas, con el estado de entrega por canal y el reintento del canal pendiente.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-07-alerts.png" width="800" alt="Alertas operativas"/>
+  <br/><i>Alertas operativas — US17</i>
+</p>
+<br/>
+8. **Proyección de demanda y recomendaciones (US18):** proyección de siete días identificada como simulada y recomendaciones con la acción "Aplicar".
+<p align="center">
+  <img src="assets/img/chapter-05/s2-08-forecast-recommendations.png" width="800" alt="Proyección y recomendaciones"/>
+  <br/><i>Proyección de demanda y recomendaciones — US18</i>
+</p>
+<br/>
+9. **Equipo y roles (US11, RNF08):** invitación de integrantes, cambio de rol y baja, con la regla del último administrador.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-09-team-roles.png" width="800" alt="Equipo y roles"/>
+  <br/><i>Equipo y roles — US11 y RNF08</i>
+</p>
+<br/>
+10. **Planes de suscripción (US19):** planes con su precio y el pago simulado con Stripe o PayPal.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-10-plans.png" width="800" alt="Planes de suscripción"/>
+  <br/><i>Planes de suscripción — US19</i>
+</p>
+<br/>
+11. **Correcciones de la Landing Page (TS08):** menú desplegable en móvil, botón "Solicitar demo" enlazado al formulario y fichas reales del equipo.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-11-landing-fixes.png" width="800" alt="Correcciones de la Landing Page"/>
+  <br/><i>Correcciones de la Landing Page — TS08</i>
+</p>
+<br/>
+**Verificación de los requisitos no funcionales**
+ 
+| **RNF** | **Criterio medible** | **Verificación** | **Resultado** |
+| :--- | :--- | :--- | :--- |
+| RNF08 | 100 % de las rutas bajo `/app` protegidas por `authGuard`; 100 % de las rutas administrativas protegidas por `adminGuard`; 0 accesos sin sesión | Prueba de cada ruta sin sesión, con rol Empleado y con rol Administrador | Las 10 pantallas bajo `/app` están protegidas por `authGuard` y `/app/roles` usa `adminGuard`; sin sesión se redirige a `/auth/sign-in` y el Empleado es redirigido a `/app/dashboard`. |
+| RNF09 | 100 % de las listas con estado vacío; 100 % de las eliminaciones y anulaciones con confirmación; mensaje de éxito o error en cada formulario | Lista de verificación por pantalla | Las eliminaciones de insumos, recetas, alertas e integrantes y la anulación de ventas piden confirmación. <!-- ACTUALIZAR: resultado de estados vacíos y de carga al cerrar RNF09. --> |
 
-* Desarrollo Frontend: Implementación de componentes responsivos de la Landing Page, secciones de propuesta de valor, internacionalización (i18n) y formulario de captura de datos.
-
-* Documentación y Calidad: Redacción de Historias de Usuario, diseño de artefactos de planificación y elaboración del informe de Sprint Review conforme a la rúbrica.
-
-* Control de Versiones: El equipo aplica **GitFlow** en el repositorio `stockia-report`, con `main` y `develop` como ramas estables y una rama `feature/chapter-0X` por cada capítulo (`feature/chapter-01` a `feature/chapter-05`), integradas mediante Pull Requests revisados antes de cada merge (a la fecha, PR #1 al #29). Se aplicará la misma convención (`main` / `develop` / `feature/*`) en `stockia-website` en cuanto se suba el código de la Landing Page.
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+ 
+En el Sprint 2 la Web Application consume una API REST simulada con **json-server**, desplegada en Render bajo el prefijo `/api/v1`. Cada colección del dominio expone las operaciones REST estándar (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`), y el frontend accede a ellas desde la capa `infrastructure` de cada Bounded Context. Al reemplazar `apiBaseUrl` por la URL del RESTful API real (TS10), ningún componente de presentación cambia.
+ 
+| **Endpoint** | **Acción (HTTP)** | **Parámetros** | **Descripción del Response** | **User Story** |
+| :--- | :---: | :--- | :--- | :---: |
+| `/api/v1/health` | GET | — | `200 OK` con `{ "status": "ok", "time": ... }`; permite verificar que el servicio está activo. | TS06 |
+| `/api/v1/users` | POST | `fullName`, `restaurantName`, `email`, `password`, `role` | `201 Created` con el usuario creado; se usa al registrar el restaurante y al invitar integrantes. | US09, US11 |
+| `/api/v1/users?email={email}&password={password}` | GET | `email`, `password` | `200 OK` con la lista de usuarios que coinciden; una lista vacía equivale a credenciales incorrectas. | US10 |
+| `/api/v1/users/{id}` | PUT / DELETE | `id` y datos del usuario | `200 OK` con el usuario actualizado (perfil o rol) o eliminado (baja del equipo). | US10, US11 |
+| `/api/v1/inventoryItems` | GET / POST | Datos del insumo: nombre, unidad, cantidad, stock mínimo, costo y vida útil | `200 OK` con la lista de insumos o `201 Created` con el insumo registrado. | US12 |
+| `/api/v1/inventoryItems/{id}` | PUT / DELETE | `id` y datos del insumo | `200 OK` con el insumo actualizado (edición o descuento por venta) o eliminado. | US12, US14 |
+| `/api/v1/recipes` y `/api/v1/recipes/{id}` | GET / POST / PUT / DELETE | Nombre del plato y líneas de ingrediente (`inventoryItemId`, cantidad) | `200 OK` o `201 Created` con la receta y sus ingredientes. | US13 |
+| `/api/v1/sales` | GET / POST | Fecha, canal, líneas de venta y total | `201 Created` con la venta confirmada; el frontend descuenta los insumos solo después de esta respuesta. | US14, US15 |
+| `/api/v1/sales/{id}` | PUT | `status: VOIDED` | `200 OK` con la venta anulada. | US15 |
+| `/api/v1/alerts` y `/api/v1/alerts/{id}` | GET / POST / PUT / DELETE | Tipo, severidad, canal, mensaje, `acknowledged`, `deliveredChannels` | `200 OK` o `201 Created` con la alerta registrada, atendida o con su entrega actualizada. | US17 |
+| `/api/v1/demandForecasts` | GET / POST | Fecha de generación y puntos por día (plato, unidades, confianza, clima) | `201 Created` con la proyección simulada de siete días. | US18 |
+| `/api/v1/recommendations/{id}` | GET / PUT | `applied: true` | `200 OK` con la recomendación aplicada. | US18 |
+| `/api/v1/plans` | GET | — | `200 OK` con los planes, su precio y sus características. | US19 |
+| `/api/v1/subscriptions` y `/api/v1/subscriptions/{id}` | GET / POST / PUT | `planId`, método de pago, estado | `201 Created` o `200 OK` con la suscripción activada o cambiada. | US19 |
+ 
+* **Repositorio de la API simulada:** https://github.com/Jesusho22/stockia-platform/tree/main/mock-api
+* **URL de la API simulada desplegada:** https://stockia-mock-api.onrender.com/api/v1
+<p align="center">
+  <img src="assets/img/chapter-05/s2-api-health.png" width="700" alt="API simulada en Render"/>
+  <br/><i>Respuesta de /api/v1/health en la API simulada desplegada en Render — TS06</i>
 </p>
 
-**Evidencia GitFlow: Graph**
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+ 
+En el Sprint 2 se desplegaron dos componentes: la API simulada en **Render** (TS06) y la Web Application en **Vercel** (TS07).
+ 
+**Actividades de despliegue realizadas**
+ 
+1. Se publicó la API simulada en Render como servicio Node.js (`server.js` con json-server), con CORS habilitado, el prefijo `/api/v1` y el endpoint de salud `/api/v1/health`.
+2. Se configuraron los entornos de Angular (`environment.ts` y `environment.prod.ts`) para que `apiBaseUrl` apunte a la API desplegada.
+3. Se preparó `vercel.json` para la Web Application: `npm run build` como comando de build, `dist/stockia-webapp/browser` como carpeta de salida y una regla de reescritura a `index.html` para que las rutas internas de Angular no respondan con error 404.
+4. Se verificaron en producción el inicio de sesión, la recarga de rutas internas y las redirecciones de los guards (T-TS07-2).
+* **URL de la API simulada:** https://stockia-mock-api.onrender.com/api/v1
+* **URL de la Web Application desplegada:** <!-- ACTUALIZAR: URL de Vercel de la Web Application -->
+**Evidencia: API simulada en Render**
+ 
 <p align="center">
-  <img src="assets/img/chapter-05/Network-Gitflow.png" width="200" alt="Graph"/>
-  <br/><i>Grafo de versiones para el gitflow</i>
+  <img src="assets/img/chapter-05/s2-deploy-render.png" width="800" alt="API simulada en Render"/>
+  <br/><i>Servicio stockia-mock-api desplegado en Render</i>
+</p>
+**Evidencia: Web Application en Vercel**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/s2-deploy-vercel.png" width="800" alt="Web Application en Vercel"/>
+  <br/><i>Proyecto de la Web Application en Vercel con el historial de despliegues</i>
+</p>
+<p align="center">
+  <img src="assets/img/chapter-05/s2-deploy-webapp.png" width="800" alt="Web Application desplegada"/>
+  <br/><i>Web Application desplegada</i>
 </p>
 
-**Evidencia GitFlow: Commits**
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+ 
+**Dinámica de trabajo**
+ 
+En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante implementó un contexto completo del capítulo IV en sus cuatro capas (domain, infrastructure, application y presentation) y lo integró en la Web Application (ver 5.2.2.2 y la tabla de distribución de 5.2.2.4). Además, cada responsable revisa y actualiza el diagrama de clases y el diagrama C4 de su contexto para reflejar lo implementado. Las tareas se gestionaron en Jira, en el proyecto STOCKIA-OS, con un responsable por subtarea y su estado actualizado. Aplicando la mejora de la retrospectiva del Sprint 1, el trabajo se integra con una rama `feature/*` por contexto o tarea, con el ID de la tarea en el mensaje de commit y con revisión por Pull Request antes de llegar a `develop`.
+ 
+**Aporte por integrante**
+ 
+| **Integrante** | **GitHub** | **Aporte principal en el Sprint 2** | **Horas asignadas** | **Commits en el Sprint 2** |
+| :--- | :--- | :--- | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | Subscription and Payment Management (US19); nueva versión de la Landing Page y enlace con la Web Application (TS08); verificación de estados y confirmaciones (RNF09) y pruebas en producción (TS07) | 19.5 | <!-- ACTUALIZAR --> |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | ML and Recommendations (US18); arquitectura por Bounded Context (TS05), API simulada (TS06) y despliegue en Vercel (TS07) | 28 | <!-- ACTUALIZAR --> |
+| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | Stock Management & Recipes Management (US12, US13, US14); integración de `pricing.html` (TS08) | 33 | <!-- ACTUALIZAR --> |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | Analytics and Dashboard (US16), alertas operativas (US17) e historial de ventas (US15) | 26.5 | <!-- ACTUALIZAR --> |
+| Toro Turpo, Ronal | Ronal345 | Restaurant Registration: registro, inicio de sesión, perfil, equipo y roles (US09, US10, US11) y control de acceso (RNF08) | 30.5 | <!-- ACTUALIZAR --> |
+ 
+**Evidencia: tablero del Sprint 2 en Jira**
+ 
 <p align="center">
-  <img src="assets/img/chapter-05/Contributors.png" width="500" alt="Commits"/>
-  <br/><i>Gráfico estadístico de commits por usuario — stockia-website (Insights → Contributors)</i>
+  <img src="assets/img/chapter-05/s2-jira-board.png" width="800" alt="Tablero del Sprint 2 en Jira"/>
+  <br/><i>Tablero del Sprint 2 en Jira (STOCKIA-OS)</i>
+</p>
+**Evidencia: contribuciones por integrante en `stockia-webapp`**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/s2-contributors-webapp.png" width="700" alt="Contribuciones por integrante en stockia-webapp"/>
+  <br/><i>Insights → Contributors del repositorio stockia-webapp</i>
+</p>
+**Evidencia: grafo de GitFlow**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/s2-network-webapp.png" width="700" alt="Grafo de ramas de stockia-webapp"/>
+  <br/><i>Insights → Network: ramas feature integradas mediante Pull Request</i>
 </p>
 
-**Evidencia GitFlow: Network**
-<p align="center">
-  <img src="assets/img/chapter-05//Network.png" width="500" alt="Network"/>
-  <br/><i>Grafo de trabajo</i>
-</p>
-
-
+ 
+ 
 ## 5.3. Validation Interviews
 
 ### 5.3.1. Diseño de Entrevistas
