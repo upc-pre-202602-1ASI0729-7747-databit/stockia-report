@@ -705,8 +705,7 @@ Datos del entrevistado:
 
 **Resumen descriptivo:**
 La entrevista con la señora Albertina, dueña del restaurante Misty Mercury, muestra que gestiona sus insumos de manera muy básica y manual: compra lo justo para cada día según los platos que decide preparar, evitando desperdicios pero sin llevar un registro formal ni contar con un sistema que le anticipe necesidades. Aunque rara vez enfrenta problemas de stock, depende de su memoria y observación de ventas pasadas para decidir qué ofrecer, lo que limita la eficiencia y la capacidad de respuesta ante cambios en la demanda. Reconoce que le sería útil contar con un sistema automático que le sugiera menús, alerte sobre insumos próximos a agotarse y le indique cuáles productos se consumen más, lo que evidencia que aún necesita apoyo adicional en la gestión de inventario y planificación.
- 
-<br>
+
 
 
 **Entrevista 2:**
@@ -764,10 +763,17 @@ Asimismo, David señala que le gustaría contar con un sistema que integre el in
 **Enlace del video:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQCgtdb_9fA9T7XB-BJNcAKNAd0Um3w55VhcCg1SePkzKFs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hZLVpm) 
 
 ### 2.2.3. Análisis de entrevistas
+**Entrevista 1:**
+La señora Albertina gestiona su restaurante de manera práctica y eficiente en lo básico, pero carece de herramientas que le permitan anticiparse y tomar decisiones basadas en datos. Aunque reconoce patrones de consumo y ajusta la oferta según preferencias de clientes y horarios, carece de un sistema que le permita proyectar tendencias o automatizar decisiones. Su negocio funciona de manera práctica, pero tiene vulnerabilidades: falta de datos estructurados, poca previsión y ausencia de alertas sobre insumos críticos.
 
-Entrevista 2:
+**Entrevista 2:**
+Basándonos en la  entrevista de Claudia , el usuario expresa su disconformidad ante su situación actual con respecto a la falta de stock en momentos clave .Ya ha usado software de gestión básicos antes pero su problema se mantiene. El usuario expresó interés en herramientas que permitan el monitoreo preciso del inventario y que le generen recomendaciones o alertas según sea necesario.
 
-Basándonos en la  entrevista de Claudia , el usuario expresa su disconformidad ante su situación actual con respecto a la falta de stock en momentos clave .Ya ha usado software de gestión básicos antes pero su problema se mantiene. El usuario expresó interés en herramientas que permitan el monitoreo preciso del inventario y que le generen recomendaciones o alertas según sea necesario .
+**Entrevista 3:**
+Miguel enfrenta una gestión fragmentada y manual de su restaurante que, aunque le permite cierto control básico, genera errores de inventario, mermas y dificultades para anticipar la demanda, lo que impacta directamente en la disponibilidad de platos y la eficiencia operativa. Su interés en un sistema integrado que unifique inventario, recetas, ventas y anulaciones refleja una necesidad clara de digitalización y automatización, especialmente para acceder rápidamente a información histórica sobre consumo y patrones de demanda. Esto evidencia que la principal oportunidad de mejora está en implementar una solución tecnológica que reduzca la dependencia de procesos manuales, optimice la toma de decisiones y le brinde mayor capacidad de respuesta frente a cambios inesperados en el negocio
+
+**Entrevista 4:**
+David enfrenta una sobrecarga operativa al depender de procesos manuales y de su propia experiencia para gestionar inventarios y compras, lo que ha derivado en errores, mermas y dificultades para responder a variaciones en la demanda. Su interés en un sistema que integre inventario con reportes de oferta y demanda, stock en tiempo real y notificaciones preventivas revela una necesidad clara de digitalización que reduzca la carga individual y mejore la eficiencia del restaurante. La oportunidad de mejora radica en implementar una solución tecnológica que automatice el control de insumos, anticipe necesidades en fechas críticas y ofrezca información confiable para optimizar la toma de decisiones.
 
 ## 2.3. Needfinding
 
