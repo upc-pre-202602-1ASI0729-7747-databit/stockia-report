@@ -3723,7 +3723,33 @@ En el Sprint 2 se implementó la primera versión de la Web Application de Stock
 | RNF08 | 100 % de las rutas bajo `/app` protegidas por `authGuard`; 100 % de las rutas administrativas protegidas por `adminGuard`; 0 accesos sin sesión | Prueba de cada ruta sin sesión, con rol Empleado y con rol Administrador | Las 10 pantallas bajo `/app` están protegidas por `authGuard` y `/app/roles` usa `adminGuard`; sin sesión se redirige a `/auth/sign-in` y el Empleado es redirigido a `/app/dashboard`. |
 | RNF09 | 100 % de las listas con estado vacío; 100 % de las eliminaciones y anulaciones con confirmación; mensaje de éxito o error en cada formulario | Lista de verificación por pantalla | Las eliminaciones de insumos, recetas, alertas e integrantes y la anulación de ventas piden confirmación. <!-- ACTUALIZAR: resultado de estados vacíos y de carga al cerrar RNF09. --> |
 
-
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+ 
+En el Sprint 2 la Web Application consume una API REST simulada con **json-server**, desplegada en Render bajo el prefijo `/api/v1`. Cada colección del dominio expone las operaciones REST estándar (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`), y el frontend accede a ellas desde la capa `infrastructure` de cada Bounded Context. Al reemplazar `apiBaseUrl` por la URL del RESTful API real (TS10), ningún componente de presentación cambia.
+ 
+| **Endpoint** | **Acción (HTTP)** | **Parámetros** | **Descripción del Response** | **User Story** |
+| :--- | :---: | :--- | :--- | :---: |
+| `/api/v1/health` | GET | — | `200 OK` con `{ "status": "ok", "time": ... }`; permite verificar que el servicio está activo. | TS06 |
+| `/api/v1/users` | POST | `fullName`, `restaurantName`, `email`, `password`, `role` | `201 Created` con el usuario creado; se usa al registrar el restaurante y al invitar integrantes. | US09, US11 |
+| `/api/v1/users?email={email}&password={password}` | GET | `email`, `password` | `200 OK` con la lista de usuarios que coinciden; una lista vacía equivale a credenciales incorrectas. | US10 |
+| `/api/v1/users/{id}` | PUT / DELETE | `id` y datos del usuario | `200 OK` con el usuario actualizado (perfil o rol) o eliminado (baja del equipo). | US10, US11 |
+| `/api/v1/inventoryItems` | GET / POST | Datos del insumo: nombre, unidad, cantidad, stock mínimo, costo y vida útil | `200 OK` con la lista de insumos o `201 Created` con el insumo registrado. | US12 |
+| `/api/v1/inventoryItems/{id}` | PUT / DELETE | `id` y datos del insumo | `200 OK` con el insumo actualizado (edición o descuento por venta) o eliminado. | US12, US14 |
+| `/api/v1/recipes` y `/api/v1/recipes/{id}` | GET / POST / PUT / DELETE | Nombre del plato y líneas de ingrediente (`inventoryItemId`, cantidad) | `200 OK` o `201 Created` con la receta y sus ingredientes. | US13 |
+| `/api/v1/sales` | GET / POST | Fecha, canal, líneas de venta y total | `201 Created` con la venta confirmada; el frontend descuenta los insumos solo después de esta respuesta. | US14, US15 |
+| `/api/v1/sales/{id}` | PUT | `status: VOIDED` | `200 OK` con la venta anulada. | US15 |
+| `/api/v1/alerts` y `/api/v1/alerts/{id}` | GET / POST / PUT / DELETE | Tipo, severidad, canal, mensaje, `acknowledged`, `deliveredChannels` | `200 OK` o `201 Created` con la alerta registrada, atendida o con su entrega actualizada. | US17 |
+| `/api/v1/demandForecasts` | GET / POST | Fecha de generación y puntos por día (plato, unidades, confianza, clima) | `201 Created` con la proyección simulada de siete días. | US18 |
+| `/api/v1/recommendations/{id}` | GET / PUT | `applied: true` | `200 OK` con la recomendación aplicada. | US18 |
+| `/api/v1/plans` | GET | — | `200 OK` con los planes, su precio y sus características. | US19 |
+| `/api/v1/subscriptions` y `/api/v1/subscriptions/{id}` | GET / POST / PUT | `planId`, método de pago, estado | `201 Created` o `200 OK` con la suscripción activada o cambiada. | US19 |
+ 
+* **Repositorio de la API simulada:** https://github.com/Jesusho22/stockia-platform/tree/main/mock-api
+* **URL de la API simulada desplegada:** https://stockia-mock-api.onrender.com/api/v1
+<p align="center">
+  <img src="assets/img/chapter-05/s2-api-health.png" width="700" alt="API simulada en Render"/>
+  <br/><i>Respuesta de /api/v1/health en la API simulada desplegada en Render — TS06</i>
+</p>
 
 ## 5.3. Validation Interviews
 
