@@ -3889,9 +3889,14 @@ En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante implement
 # Video About-the-Team
 
 # Bibliografía
-United Nations Environment Programme. (2024). Food Waste Index Report 2024: Think Eat Save – Tracking progress to halve global food waste. https://wedocs.unep.org/bitstream/handle/20.500.11822/45230/food_waste_index_report_2024.pdf
+Cullen, J. (2021). Administración de inventarios: análisis y modelos. Editorial académica.
+
+Gunders, D., et al. (2017). *Wasted: How America is losing up to 40 percent of its food from farm to fork and landfill*. Natural Resources Defense Council 2017. https://www.nrdc.org/sites/default/files/wasted-2017-report.pdf
 
 López, J., & Martínez, A. (2025). Diseño de un sistema de control de inventarios para reducir el desperdicio de alimentos en restaurantes [Tesis de pregrado, Universidad Laica Eloy Alfaro de Manabí]. Repositorio ULEAM. https://repositorio.uleam.edu.ec/handle/123456789/8924
+
+United Nations Environment Programme. (2024). Food Waste Index Report 2024: Think Eat Save – Tracking progress to halve global food waste. https://wedocs.unep.org/bitstream/handle/20.500.11822/45230/food_waste_index_report_2024.pdf
+
 
 # Anexos
 URL del repositorio (stockia-report): https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-report.git|
