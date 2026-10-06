@@ -775,6 +775,8 @@ Miguel enfrenta una gestión fragmentada y manual de su restaurante que, aunque 
 **Entrevista 4:**
 David enfrenta una sobrecarga operativa al depender de procesos manuales y de su propia experiencia para gestionar inventarios y compras, lo que ha derivado en errores, mermas y dificultades para responder a variaciones en la demanda. Su interés en un sistema que integre inventario con reportes de oferta y demanda, stock en tiempo real y notificaciones preventivas revela una necesidad clara de digitalización que reduzca la carga individual y mejore la eficiencia del restaurante. La oportunidad de mejora radica en implementar una solución tecnológica que automatice el control de insumos, anticipe necesidades en fechas críticas y ofrezca información confiable para optimizar la toma de decisiones.
 
+**Conclusión de los análisis:** Las necesidades con mayor frecuencia y severidad (como control de inventario manual, ventas registradas aparte del inventario, quiebres de stock o platos agotados, mermas o errores de inventario) de nuestros entrevistados definen el núcleo del producto: registro de inventario, descuento por receta y alertas. La demanda variable que existe en los restaurnates que manejan, justifica la predicción con Machine Learning como valor diferenciador en el mercado. 
+
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
@@ -839,13 +841,13 @@ En esta sección se presenta el resultado del Big Picture Event Storming realiza
 
 A partir del análisis colaborativo se identificaron ocho Bounded Contexts principales. Cada contexto agrupa eventos relacionados con una responsabilidad específica del sistema, permitiendo separar el dominio siguiendo los principios de Domain-Driven Design.
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming.png" alt="STOCKIA big picture event storming" width="500">
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-2.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-2.png" alt="STOCKIA big picture event storming" width="500">
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-3.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-3.png" alt="STOCKIA big picture event storming" width="500">
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-4.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-4.png" alt="STOCKIA big picture event storming" width="500">
 
 ## 2.5. Ubiquitous Language
 
