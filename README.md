@@ -296,7 +296,7 @@ del ABET – EAC - Student Outcome 3.
 ## 1.1. Startup Profile
 
 ### 1.1.1. Descripción de la Startup
-DataBite Corp es una startup tecnológica innovadora que aunque su creacion es reciente su enfoque está en liderar la transformación digital del sector gastronómico en el país y Latinoamérica. Nuestro enfoque principal radica en el desarrollo de soluciones de software as a Service (SaaS) que integran analítica predictiva asistida por Machine Learning (ML) y tecnologías de Internet de las Cosas (IoT).
+DataBite Corp es una startup tecnológica innovadora que aunque su creacion es reciente su enfoque está en liderar la transformación digital del sector gastronómico en el país y Latinoamérica. Nuestro enfoque principal radica en el desarrollo de soluciones de software as a Service (SaaS) que integran analítica predictiva asistida por Machine Learning (ML) y, en un futuro, tecnologías de Internet de las Cosas (IoT).
 
 Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas avanzadas para pequeñas y medianas cadenas de restaurantes, permitiendo optimizar sus operaciones y tomar decisiones basadas en datos en tiempo real. A través de nuestro producto estrella, "StockIA", buscamos resolver problemas críticos de la industria como el descontrol de inventarios, los quiebres de stock y las mermas financieras. Nos motiva generar un impacto directo tanto económico como ambiental, ayudando a las empresas a reducir el desperdicio de alimentos y a maximizar sus márgenes de rentabilidad, todo centralizado en un ecosistema web unificado, accesible y altamente escalable.
 
@@ -3097,8 +3097,9 @@ Se siguen el Google Java Style Guide y las convenciones descritas en Spring Boot
 * Uso de anotaciones de Spring Boot y Spring Data JPA (@RestController, @Service, @Repository, @Entity) para reducir código repetitivo y mantener una arquitectura RESTful clara.  
 * Manejo centralizado de excepciones mediante @ControllerAdvice y @ExceptionHandler.  
 * Documentación de endpoints con OpenAPI mediante Swagger (springdoc-openapi).
+
 **Gherkin (criterios de aceptación y pruebas de aceptación)**
- 
+
 Se siguen las Gherkin Conventions for Readable Specifications:
  
 * Estructura obligatoria Given – When – Then.  
@@ -3894,6 +3895,13 @@ Cullen, J. (2021). Administración de inventarios: análisis y modelos. Editoria
 Gunders, D., et al. (2017). *Wasted: How America is losing up to 40 percent of its food from farm to fork and landfill*. Natural Resources Defense Council 2017. https://www.nrdc.org/sites/default/files/wasted-2017-report.pdf
 
 López, J., & Martínez, A. (2025). Diseño de un sistema de control de inventarios para reducir el desperdicio de alimentos en restaurantes [Tesis de pregrado, Universidad Laica Eloy Alfaro de Manabí]. Repositorio ULEAM. https://repositorio.uleam.edu.ec/handle/123456789/8924
+
+Panca. (s.f.). El software para restaurantes más completo de Perú. Recuperado el 14 de septiembre de 2026, de https://www.panca.pe/
+
+RestoIQ. (s.f.). Tu restaurante merece
+tecnología propia. Recuperado el 14 de septiembre de 2026, de https://restoiq.cl/
+
+Toteat. (s.f.) El software todo en uno para los restaurantes del Perú. Recuperado el 14 de septiembre de 2026, de https://toteat.com/es-pe/home
 
 United Nations Environment Programme. (2024). Food Waste Index Report 2024: Think Eat Save – Tracking progress to halve global food waste. https://wedocs.unep.org/bitstream/handle/20.500.11822/45230/food_waste_index_report_2024.pdf
 
