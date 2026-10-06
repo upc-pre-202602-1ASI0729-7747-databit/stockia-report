@@ -528,14 +528,14 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Overview</b></td>
-      <td>Es una startup en etapa de desarrollo que ofrece una plataforma web de gestión inteligente de inventario para restaurantes que conecta recetas, ventas e inventario para descontar insumos automáticamente y alertar sobre stock bajo y vencimientos. Predicción, clima e IoT.</td>
+      <td>Es una startup en etapa de desarrollo que ofrece una plataforma web de gestión inteligente de inventario para restaurantes que conecta recetas, ventas e inventario para descontar insumos automáticamente, alertar sobre stock bajo y vencimientos y realizar predicción de demanda (Ej. "Preparar más lentejas el lunes" debido a que el lunes pasado recibió gran demanda de platos con lentejas) usando Machine Learning. Clima e IoT están en su roadmap.</td>
       <td>Software SaaS todo-en-uno para restaurantes, de origen chileno, con fuerte presencia en Chile, México y LATAM. Cubre POS, KDS, delivery, reservas, inventario y facturación electrónica.</td>
       <td>Software de gestión para restaurantes de origen peruano, enfocado en pedidos, cocina, inventario y facturación electrónica SUNAT, pensado específicamente para la realidad tributaria y operativa local.</td>
       <td>Plataforma de gestión de inventario y reducción de desperdicio de alimentos con IA, dirigida a restaurantes, hoteles, bares y cafés, con fuerte enfoque en predicción de demanda y automatización de compras.</td>
     </tr>
     <tr>
       <td><b>Ventaja Competitiva<br>¿Qué valor ofrece a los clientes?</b></td>
-      <td>Descuento automático por receta y alertas por lote sin reemplazar el sistema de ventas. En la revisión de sitios de Toteat, Panca y RestoIQ no encontramos esta combinación orientada a restaurantes de un solo local en Perú; requiere validación con usuarios..</td>
+      <td>Descuento automático por receta, alertas por lote sin reemplazar el sistema de ventas integrado con Machine Learning para predicción de demanda. En un futuro se añadirá las funciones de Clima e IoT. En la revisión de sitios de Toteat, Panca y RestoIQ no encontramos esta combinación orientada a restaurantes de un solo local en Perú.</td>
       <td>Ecosistema todo-en-uno con alta adopción y reconocimiento de marca en LATAM.</td>
       <td>Adaptación total a la normativa peruana (SUNAT, IGV) y facilidad de implementación (5 minutos), con soporte 100% en español y precios muy accesibles.</td>
       <td>Pionero regional en IA aplicada específicamente a inventario y desperdicio, con modelo de forecasting propio (7-day forecast) y transparencia total de precios.</td>
@@ -562,7 +562,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Productos & Servicios</b></td>
-      <td>Dashboard, gestión de stock y recetas con descuento automático, predicción de demanda con ML, recomendaciones automáticas de compra, alertas por WhatsApp, integración con clima, sensores IoT de ocupación y de electrodomésticos, gestión de roles y planes de pago.</td>
+      <td>Dashboard, gestión de stock y recetas con descuento automático, predicción de demanda con ML, recomendaciones automáticas de compra, alertas por WhatsApp, gestión de roles y planes de pago. Las siguientes secciones forman parten del roadmap: integración con clima, sensores IoT de ocupación y de electrodomésticos.</td>
       <td>POS, KDS, Menú QR, gestión de mesas y reservas, integración con apps de delivery, control de inventario, facturación electrónica, reportes en tiempo real.</td>
       <td>POS/gestión de pedidos, carta digital, facturación electrónica SUNAT, control de inventario avanzado, food cost automático, reportes inteligentes.</td>
       <td>Predicción de demanda, automatización de órdenes de compra, registro de mermas, dashboards con 12+ gráficos, gestión multi-outlet para hoteles.</td>
@@ -586,7 +586,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Fortalezas</b></td>
-      <td>Foco en un problema concreto (receta → inventario → alerta) y en el segmento de un solo local.</td>
+      <td>Nos enfocamos en un problema concreto (receta → inventario → prediccion → alerta) y en el segmento de un solo local.</td>
       <td>Alta adopción y reconocimiento de marca en LATAM (+5,000 restaurantes).</td>
       <td>Fuerte adaptación a la normativa peruana (SUNAT, IGV), un factor crítico de decisión de compra en el mercado local.</td>
       <td>Uso real y ya validado de IA (modelo propio de forecast a 7 días) para predicción de demanda y reducción de desperdicio.</td>
@@ -600,7 +600,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Oportunidades</b></td>
-      <td>Los competidores revisados priorizan POS y facturación; el control de insumos por receta para locales pequeños parece menos atendido.</td>
+      <td>Los competidores en los que se basó este análisis priorizan POS y facturación; Stockia abre paso a que los locales pequeños, que parece menos atendidos, puedan tener un control de sus insumos.</td>
       <td>Podría integrar módulos de IA en el futuro apalancándose en su gran volumen de datos históricos de +5,000 restaurantes.</td>
       <td>Podría expandir su módulo de inventario hacia analítica predictiva, dado que ya tiene base de datos de ventas e inventario de sus +150 clientes.</td>
       <td>Podría integrar IoT y clima en próximas versiones dado que ya cuenta con un modelo de ML funcionando en producción.</td>
@@ -614,6 +614,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
   </tbody>
 </table>
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
 ## Fortalezas
@@ -704,8 +705,7 @@ Datos del entrevistado:
 
 **Resumen descriptivo:**
 La entrevista con la señora Albertina, dueña del restaurante Misty Mercury, muestra que gestiona sus insumos de manera muy básica y manual: compra lo justo para cada día según los platos que decide preparar, evitando desperdicios pero sin llevar un registro formal ni contar con un sistema que le anticipe necesidades. Aunque rara vez enfrenta problemas de stock, depende de su memoria y observación de ventas pasadas para decidir qué ofrecer, lo que limita la eficiencia y la capacidad de respuesta ante cambios en la demanda. Reconoce que le sería útil contar con un sistema automático que le sugiera menús, alerte sobre insumos próximos a agotarse y le indique cuáles productos se consumen más, lo que evidencia que aún necesita apoyo adicional en la gestión de inventario y planificación.
- 
-<br>
+
 
 
 **Entrevista 2:**
@@ -763,10 +763,19 @@ Asimismo, David señala que le gustaría contar con un sistema que integre el in
 **Enlace del video:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQCgtdb_9fA9T7XB-BJNcAKNAd0Um3w55VhcCg1SePkzKFs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hZLVpm) 
 
 ### 2.2.3. Análisis de entrevistas
+**Entrevista 1:**
+La señora Albertina gestiona su restaurante de manera práctica y eficiente en lo básico, pero carece de herramientas que le permitan anticiparse y tomar decisiones basadas en datos. Aunque reconoce patrones de consumo y ajusta la oferta según preferencias de clientes y horarios, carece de un sistema que le permita proyectar tendencias o automatizar decisiones. Su negocio funciona de manera práctica, pero tiene vulnerabilidades: falta de datos estructurados, poca previsión y ausencia de alertas sobre insumos críticos.
 
-Entrevista 2:
+**Entrevista 2:**
+Basándonos en la  entrevista de Claudia , el usuario expresa su disconformidad ante su situación actual con respecto a la falta de stock en momentos clave .Ya ha usado software de gestión básicos antes pero su problema se mantiene. El usuario expresó interés en herramientas que permitan el monitoreo preciso del inventario y que le generen recomendaciones o alertas según sea necesario.
 
-Basándonos en la  entrevista de Claudia , el usuario expresa su disconformidad ante su situación actual con respecto a la falta de stock en momentos clave .Ya ha usado software de gestión básicos antes pero su problema se mantiene. El usuario expresó interés en herramientas que permitan el monitoreo preciso del inventario y que le generen recomendaciones o alertas según sea necesario .
+**Entrevista 3:**
+Miguel enfrenta una gestión fragmentada y manual de su restaurante que, aunque le permite cierto control básico, genera errores de inventario, mermas y dificultades para anticipar la demanda, lo que impacta directamente en la disponibilidad de platos y la eficiencia operativa. Su interés en un sistema integrado que unifique inventario, recetas, ventas y anulaciones refleja una necesidad clara de digitalización y automatización, especialmente para acceder rápidamente a información histórica sobre consumo y patrones de demanda. Esto evidencia que la principal oportunidad de mejora está en implementar una solución tecnológica que reduzca la dependencia de procesos manuales, optimice la toma de decisiones y le brinde mayor capacidad de respuesta frente a cambios inesperados en el negocio
+
+**Entrevista 4:**
+David enfrenta una sobrecarga operativa al depender de procesos manuales y de su propia experiencia para gestionar inventarios y compras, lo que ha derivado en errores, mermas y dificultades para responder a variaciones en la demanda. Su interés en un sistema que integre inventario con reportes de oferta y demanda, stock en tiempo real y notificaciones preventivas revela una necesidad clara de digitalización que reduzca la carga individual y mejore la eficiencia del restaurante. La oportunidad de mejora radica en implementar una solución tecnológica que automatice el control de insumos, anticipe necesidades en fechas críticas y ofrezca información confiable para optimizar la toma de decisiones.
+
+**Conclusión de los análisis:** Las necesidades con mayor frecuencia y severidad (como control de inventario manual, ventas registradas aparte del inventario, quiebres de stock o platos agotados, mermas o errores de inventario) de nuestros entrevistados definen el núcleo del producto: registro de inventario, descuento por receta y alertas. La demanda variable que existe en los restaurnates que manejan, justifica la predicción con Machine Learning como valor diferenciador en el mercado. 
 
 ## 2.3. Needfinding
 
@@ -832,13 +841,13 @@ En esta sección se presenta el resultado del Big Picture Event Storming realiza
 
 A partir del análisis colaborativo se identificaron ocho Bounded Contexts principales. Cada contexto agrupa eventos relacionados con una responsabilidad específica del sistema, permitiendo separar el dominio siguiendo los principios de Domain-Driven Design.
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming.png" alt="STOCKIA big picture event storming" width="500">
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-2.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-2.png" alt="STOCKIA big picture event storming" width="500">
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-3.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-3.png" alt="STOCKIA big picture event storming" width="500">
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-4.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-4.png" alt="STOCKIA big picture event storming" width="500">
 
 ## 2.5. Ubiquitous Language
 
