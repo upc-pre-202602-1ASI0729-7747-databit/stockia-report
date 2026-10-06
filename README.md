@@ -2202,19 +2202,41 @@ En esta sección se explican las acciones y técnicas que guían al usuario a tr
 ## 4.3. Landing Page UI Design
 
 ### 4.3.1. Landing Page Wireframe
+
+En esta sección se presentan los wireframes del Landing Page de StockIA, elaborados en Figma en baja fidelidad (escala de grises, bloques de texto simulados y contenedores vacíos para imágenes e íconos). Su propósito es validar la estructura, la jerarquía del contenido y la navegación entre las cuatro páginas del sitio (Inicio, Características, Precios y Nosotros) antes de aplicar el estilo visual definido en la sección 4.1.
+
+**Desktop Web Browser**
+
 <p align="center"><img src="assets/img/chapter-04/W-Inicio.png" width="500" alt="Inicio"/></p>
+
+**Inicio.** El wireframe muestra, de arriba hacia abajo: el navbar con el logotipo, los enlaces Inicio, Características, Precios y Nosotros, el selector de idioma ES | EN y el botón "Solicitar demo"; el hero con el titular "Predicción de demanda e inventario inteligente para tu restaurante", los botones "Optimiza tu inventario →" y "Ver cómo funciona", tres indicadores (−25%, +18%, <5s) y, a la derecha, un contenedor que representa el dashboard con un gráfico de barras y una franja de "alerta IoT + alerta IA". Le siguen una banda oscura con cuatro cifras (30%, 1 de 3, −20%, 24/7), el bloque "¿Para quién es StockIA?" con dos tarjetas (Dueños y CEOs de restaurante / Administradores y jefes de cocina), la sección "Todo lo que necesita tu restaurante" con seis tarjetas de funcionalidades y el botón "Ver todas las características →", la sección "Más que un inventario" con tres diferenciadores (Gamificación, Sostenibilidad, Aprende de tu restaurante) y la sección "Se conecta con el ecosistema que ya usas" con cuatro tarjetas de integraciones (Google Maps API, OpenWeather API, Stripe / PayPal, Twilio / SendGrid).
 
 <p align="center"><img src="assets/img/chapter-04/W-Inicio-Continuacion.png" width="500" alt="Inicio-Continuacion"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Inicio (continuación).** La parte inferior de la página presenta el portafolio "La plataforma en acción", con tres pestañas de filtro (Todas las vistas, Inventario, IA & IoT) y cuatro tarjetas con mini pantallas (Dashboard principal, Predicción de Demanda, Recetas y Descuento, Alertas IoT); la sección "Mira StockIA en acción", con un contenedor reservado para el video demostrativo; la banda de cierre "Empieza a optimizar tu inventario hoy" con el botón "Solicitar demo"; y el footer organizado en las columnas Producto, Empresa y Legal.
+
 <p align="center"><img src="assets/img/chapter-04/W-Caracteristicas.png" width="500" alt="Caracteristicas"/>
 <br/><i>Artefacto: Figma</i></p>
+
+**Características.** Se compone de un encabezado oscuro con el titular "Todo lo que necesitas, en un solo lugar", una grilla de seis tarjetas (Inventario Inteligente, Predicción de Demanda con IA, Recomendaciones Automáticas, Monitoreo IoT de Cocina, Roles y Permisos, Sostenibilidad y Gamificación), cada una con ícono, título, descripción y etiqueta, y la sección "Empieza en minutos", que ordena cuatro pasos numerados: Registra tu restaurante, Carga tu inventario y recetas, La IA empieza a aprender y Recibe alertas y decide. La página cierra con la misma banda de llamada a la acción y el mismo footer.
 
 <p align="center"><img src="assets/img/chapter-04/W-Precios.png" width="500" alt="Precios"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Precios.** Bajo el titular "Elige el plan que se adapta a tu restaurante" se ubica un interruptor Mensual / Anual con una etiqueta de descuento y tres tarjetas de plan: Esencial (S/ 0), Profesional (S/ 39), resaltado con un borde más grueso y la etiqueta "Más popular", e IoT Completo (S/ 79). Cada plan lista sus prestaciones con marcas de incluido (✓) y no incluido (✕). Debajo se indica "Sin tarjeta de crédito · Cancela cuando quieras" y se presenta la sección "Preguntas frecuentes" como un acordeón de tres preguntas, seguida de la banda de llamada a la acción y el footer.
+
 <p align="center"><img src="assets/img/chapter-04/W-Nosotros.png" width="500" alt="Nosotros"/>
 <br/><i>Artefacto: Figma</i></p>
+
+**Nosotros.** Inicia con el titular "Ayudamos a los restaurantes a no dejar nada al azar", dos tarjetas (Nuestra Misión y Nuestra Visión) y cinco etiquetas con los valores de marca (Innovación, Precisión, Sostenibilidad, Confiabilidad, Cercanía). Continúa con "El equipo detrás de StockIA", que reserva cinco tarjetas para los integrantes; "Conoce al equipo de DataBite Corp", con el contenedor del video del equipo; "Sobre DataBite Corp", con cuatro datos de la startup (2026, IA + IoT, 1 restaurante piloto, Perú) y un botón hacia Características; y la sección de contacto "Conversemos sobre tu restaurante", con los datos de correo y ubicación y el formulario "Solicita una demo" (Nombre, Restaurante, Correo, Mensaje y botón "Enviar solicitud").
+
+**Aplicación de principios y elementos de diseño**
+
+- **Principios de diseño:** la *jerarquía* se establece por tamaño y peso, de modo que el titular del hero y los titulares de sección dominan sobre los bloques de texto simulado. El *contraste* entre bandas claras y oscuras separa las secciones y destaca las cifras y las llamadas a la acción. La *repetición* del patrón etiqueta de sección + titular + línea descriptiva + grilla de tarjetas, así como del navbar, la banda de cierre y el footer en las cuatro páginas, da consistencia al sitio. La *alineación* a una grilla común (dos, tres, cuatro o cinco columnas según el contenido) y la *proximidad* entre ícono, título, descripción y etiqueta dentro de cada tarjeta permiten reconocer cada grupo de información como una unidad.
+- **Elementos de diseño:** se emplean formas rectangulares con esquinas redondeadas para tarjetas, botones y campos; líneas grises de distinto largo para representar texto; contenedores vacíos para íconos, imágenes y videos; y el valor (escala de grises) como único recurso para diferenciar el botón primario (relleno oscuro) del secundario (relleno claro) y el plan recomendado del resto. El espacio en blanco entre secciones marca el ritmo de lectura vertical.
+- **Diseño inclusivo:** el selector de idioma ES | EN está previsto en el navbar de todas las páginas. Las etiquetas de navegación y de los botones son textuales y describen la acción ("Solicitar demo", "Ver cómo funciona", "Enviar solicitud"). En la tabla de planes, lo incluido y lo no incluido se distingue mediante símbolos (✓ / ✕) y no por color, y el plan recomendado se identifica además con el texto "Más popular". El formulario de contacto presenta pocos campos y rotulados. El comportamiento en pantallas pequeñas se rige por los breakpoints definidos en la sección 4.1.2.
+- **Arquitectura de información:** los wireframes materializan lo definido en la sección 4.2. La organización secuencial se observa en los cuatro pasos de "Empieza en minutos"; la categorización por tópicos, en los seis módulos de Características; la categorización por audiencia, en el bloque "¿Para quién es StockIA?"; y la organización matricial, en las pestañas del portafolio. El sistema de navegación se compone del navbar como navegación global, el footer como navegación secundaria (Producto, Empresa, Legal) y la llamada a la acción "Solicitar demo", que se repite en el navbar y en la banda de cierre de cada página y conduce al formulario de contacto de Nosotros.
 
 ### 4.3.2. Landing Page Mock-up
 <p align="center"><img src="assets/img/chapter-04/M-Inicio.png" width="500" alt="Inicio"/></p>
