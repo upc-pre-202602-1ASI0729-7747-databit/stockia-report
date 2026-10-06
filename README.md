@@ -142,7 +142,7 @@ del ABET – EAC - Student Outcome 3.
             <br><br>
             <b>Ortiz Laura, Leyla Alisson</b><br>
             <u>AV1</u><br>
-            Presente las User Stories y el Impact Mapping empleando un lenguaje accesible que articuló metas de negocio con funcionalidades técnicas. Al exponer el diseño de entrevistas y las interfaces de la aplicación web, utilizó prototipos y diagramas como apoyo audiovisual, validando con el equipo y evaluadores la experiencia de usuario. Además, explicó los lineamientos de Software Configuration Management enfocando la comunicación en la organización del trabajo colaborativo.
+            Presenté las User Stories y el Impact Mapping empleando un lenguaje accesible que articuló metas de negocio con funcionalidades técnicas. Al exponer el diseño de entrevistas y las interfaces de la aplicación web, utilizó prototipos y diagramas como apoyo audiovisual, validando con el equipo y evaluadores la experiencia de usuario. Además, explicó los lineamientos de Software Configuration Management enfocando la comunicación en la organización del trabajo colaborativo.
             <br><br>
             <b>Toro Turpo, Ronal</b><br>
             <u>AV1</u><br>
@@ -385,7 +385,7 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy Ronal Toro Turpo, tengo 20 años estudio la carrera de ingenieria de software, desde el comienzo de mi vida universitaria e ido adquiriendo y desarrollando diversas habilidades como el desarrollo en leguajes de programacion como C++, java script, y en la parte web lenguajes como HTML y CSS si bien el trabajo en equipo no es uno de mis fuertes trato de hacer lo mejor que puedo, espero aprender muchas cosas a lo largo del semestre para este curso ya que lo considero muy interezante e importante para el desarrollo de mi carrera.<b></b>
+      Soy Ronal Toro Turpo, tengo 20 años estudio la carrera de ingenieria de software, desde el comienzo de mi vida universitaria e ido adquiriendo y desarrollando diversas habilidades como el desarrollo en lenguajes de programacion como C++, java script, y en la parte web lenguajes como HTML y CSS si bien el trabajo en equipo no es uno de mis fuertes trato de hacer lo mejor que puedo, espero aprender muchas cosas a lo largo del semestre para este curso ya que lo considero muy interesante e importante para el desarrollo de mi carrera.<b></b>
       <br/>
     </td>
   </tr>
@@ -427,12 +427,12 @@ Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application
 
 **Our product/service will address this gap by** ofreciendo un ecosistema web unificado de gestión multi-cadena que vincula el inventario de las sucursales con las recetas de los platos (deduciendo automáticamente los ingredientes al momento de crear una orden), aplica seguridad basada en roles de acceso, proporciona dashboards de monitoreo operativo y utiliza modelos de Machine Learning para pronosticar la demanda de los clientes y generar recomendaciones automatizadas de reposición de inventario.
 
-**Our initial focus will be** los CEOs y gerentes generales de operaciones de cadenas de servicios de alimentación en crecimiento (2 o más ubicaciones) que buscan estandarización operativa, reducción de desperdicios y supervisión en tiempo real.
+**Our initial focus will be** los administradores y dueños de restaurantes de servicios de alimentación en crecimiento (2 o más ubicaciones) que buscan estandarización operativa, reducción de desperdicios y supervisión en tiempo real.
 
 **We’ll know we are successful when we see** los siguientes comportamientos medibles en nuestro público objetivo:
 1. Una reducción del 40% en los reportes semanales de discrepancias de inventario en todas las sucursales conectadas durante los primeros 60 días posteriores a la incorporación.
 2. Al menos el 75% de las órdenes de compra de suministros programadas están siendo generadas directamente a partir de las recomendaciones automatizadas de reposición mediante ML.
-3. Interacción semanal activa con los dashboards por parte de más del 85% de los CEOs/gerentes de operaciones de restaurantes inscritos.
+3. Interacción semanal activa con los dashboards por parte de más del 85% de los administradores de operaciones de restaurantes inscritos.
 
 #### 1.2.2.2. Lean UX Assumptions
 1. Creemos que existe una demanda creciente por parte de pequeñas y medianas cadenas de restaurantes que buscan transformar digitalmente sus operaciones para evitar mermas financieras causadas por el descontrol de inventario.
@@ -445,7 +445,7 @@ Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application
 
 **User outcomes:**
 
-1. Creemos que los CEOs lograrán visibilidad integral e inmediata del estado de inventario, consumo de ingredientes y actividad del personal en todas las sucursales sin depender de llamadas o reportes manuales en hojas de cálculo.
+1. Creemos que los dueños de restaurantes lograrán visibilidad integral e inmediata del estado de inventario, consumo de ingredientes y actividad del personal en todas las sucursales sin depender de llamadas o reportes manuales en hojas de cálculo.
 
 2. Creemos que los restaurantes reducirán el desperdicio de alimentos perecibles hasta en un **25%** al ajustar sus compras y producción a las proyecciones de demanda de comensales.
 
@@ -454,9 +454,9 @@ Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application
 4. Creemos que los líderes del negocio mitigarán pérdidas financieras no autorizadas mediante la restricción de privilegios por roles de trabajo.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
-1. Creemos que lograremos un aumento del **20%** en la retención semanal de la plataforma por parte de los ejecutivos de restaurantes **si** los CEOs y gerentes de operaciones de restaurantes **obtienen** visibilidad instantánea y consolidada de los niveles de inventario y el rendimiento de las ventas en todas las sucursales **con** un dashboard operativo interactivo para múltiples cadenas.
+1. Creemos que lograremos un aumento del **20%** en la retención semanal de la plataforma por parte de los ejecutivos de restaurantes **si** los administradores y dueños de restaurantes **obtienen** visibilidad instantánea y consolidada de los niveles de inventario y el rendimiento de las ventas en todas las sucursales **con** un dashboard operativo interactivo para múltiples cadenas.
 
-2. Creemos que lograremos una reducción del **30%** en los incidentes de seguridad y los reportes de pérdidas internas **si** los CEOs de restaurantes y gerentes de tienda **obtienen** delegación segura de tareas y control detallado sobre las operaciones críticas de inventario **con** un sistema de gestión de configuración de roles y permisos.
+2. Creemos que lograremos una reducción del **30%** en los incidentes de seguridad y los reportes de pérdidas internas **si** los dueños de restaurantes **obtienen** delegación segura de tareas y control detallado sobre las operaciones críticas de inventario **con** un sistema de gestión de configuración de roles y permisos.
 
 3. Creemos que lograremos una disminución del **35%** en las discrepancias de las auditorías manuales de inventario **si** los gerentes de tienda y operadores de inventario **obtienen** un seguimiento rápido y sin errores de las entradas, transferencias y modificaciones de materias primas **con** un módulo centralizado de gestión de inventario en tiempo real.
 
@@ -763,7 +763,7 @@ Asimismo, Miguel señala que le gustaría contar con un sistema que integre el i
 <p align="center"><i>Evidencia de entrevista: David </i></p>
   
   **Resumen Descriptivo:** 
-David, de 35 años, es jefe de cocina de un restaurante de comida italiana ubicada en Surco, que lleva aproximadamente 5 años funcionando y cuenta con 3 cocineros y 5 mosos mas personal de cajas y otros. Nos comenta que actualmente controla el inventario de manera manual y utiliza Excel para gestionar las recetas, las ventas se registran en un sistema independiente y hacen uso de la gestion y experiencia del jefe de cocinar para la compra de insumos en alta demanda. Esta forma de trabajo le ha generado sobrecarga y fallos en el inventario por margenes de error al manejarlo, mermas y cambios inesperados en la demanda, ocasionando en algunas situaciones en las que se quede sin determinados platos.
+David, de 35 años, es jefe de cocina de un restaurante de comida italiana ubicada en Surco, que lleva aproximadamente 5 años funcionando y cuenta con 3 cocineros y 5 mozos mas personal de cajas y otros. Nos comenta que actualmente controla el inventario de manera manual y utiliza Excel para gestionar las recetas, las ventas se registran en un sistema independiente y hacen uso de la gestion y experiencia del jefe de cocinar para la compra de insumos en alta demanda. Esta forma de trabajo le ha generado sobrecarga y fallos en el inventario por margenes de error al manejarlo, mermas y cambios inesperados en la demanda, ocasionando en algunas situaciones en las que se quede sin determinados platos.
 
 Asimismo, David señala que le gustaría contar con un sistema que integre el inventario, genere reportes de oferta y demanda, poder visualizar el stock del producto en tiempo real y poder acceder a notificaciones que le indiquen de manera no intrusiva que mandar a comprar los fines de semana o los feriados por venir.
 </br>
@@ -2443,7 +2443,7 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 12) **Wireflow 12:**
 
-- User goal: omo administrador, quiero recibir alertas críticas por correo.
+- User goal: Como administrador, quiero recibir alertas críticas por correo.
 
 **User Story relacionada:** US32 - Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de los eventos importantes.
 
@@ -2452,7 +2452,7 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 13) **Wireflow 13:**
 
-- User goal: omo administrador, quiero que el sistema consulte la vida útil de alimentos
+- User goal: Como administrador, quiero que el sistema consulte la vida útil de alimentos
 
 **User Story relacionada:** US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
 
