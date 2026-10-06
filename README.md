@@ -4255,8 +4255,11 @@ United Nations Environment Programme. (2024). Food Waste Index Report 2024: Thin
 
 # Anexos
 URL del repositorio (stockia-report): https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-report.git|
+
 URL del repositorio (stockia-website) https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-website
 
-URL de landing page (vercel): https://stockia-landing-giag.vercel.app/
+URL de landing page (vercel): https://stockia-website.vercel.app/index.html
+
+URL de webapp: https://stockia-webapp.vercel.app/
 
 Exposicion : https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQDEOleKp0hNTLzONouiVj-wARDzRNQtkhIAFRriY9p5BvY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XhsNyB
