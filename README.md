@@ -316,7 +316,7 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
        <b>Descripción:</b><br/>
       Soy <b>Carla Alejandra Gallardo Morales</b>, tengo 19 años. Desde que me incorporé en la Universidad Peruana de Ciencias Aplicadas en el periodo 2024-01, es decir que ahora mismo estoy cursando el sexto ciclo de la carrera de Ing. de Software, he adquirido y desarrollado distintos conocimientos a cerca de la programación, específicamente en el lenguaje C++, JavaScript y TypeScript, además, de forma autodidacta y extracurricular, he profundizado en el lenguaje Python, lo que ha ampliado mi perspectiva sobre la lógica y resolución de problemas.
       <br/><br/>
-      Dentro del equipo, mi contribución se basa en el apoyo continuo del desarrollo del backend y frontend de nuestro aplicativo mobile, asimismo ayudo en la implementación del informe de nuestro proyecto.
+      Dentro del equipo, mi contribución se basa en el apoyo continuo del desarrollo del backend y frontend de nuestro proyecto, asimismo ayudo en la implementación del informe del mismo.
       <br/>
   </tr>
 
@@ -346,12 +346,12 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
     <td><b>Nombre:</b> Miranda Cordova, Jesus Angel Yvan</td>
   </tr>
   <tr>
-    <td><b>Código:</b> u20241</td>
+    <td><b>Código:</b> U202411261</td>
   </tr>
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy <b>Miranda Cordova Jesus</b>b>, tengo 19 años y actualmente estudio la carrera de Ingeniería de Software en la Universidad Privada de Ciencias Aplicadas (UPC). Me gusta aprender nuevos lenguajes de programación  y desarrollar juegos en mi tiempo libre. Soy una persona de naturaleza tranquila, siempre dispuesto a ayudar y colaborar cuando sea necesario <b></b>
+      Soy <b>Miranda Cordova Jesus</b>, tengo 19 años y actualmente estudio la carrera de Ingeniería de Software en la Universidad Privada de Ciencias Aplicadas (UPC). Me gusta aprender nuevos lenguajes de programación  y desarrollar juegos en mi tiempo libre. Soy una persona de naturaleza tranquila, siempre dispuesto a ayudar y colaborar cuando sea necesario <b></b>
       <br/>
     </td>
   </tr>
