@@ -3215,7 +3215,7 @@ Este diagrama estructura la información necesaria para los algoritmos de predic
 #### Notifications & Messaging
 Diseñado para almacenar el historial de notificaciones y alertas críticas (stock bajo, productos por vencer, alertas IoT). Maneja el estado de entrega y los canales por los que fueron enviados (WhatsApp, Email, SMS).
 
-<img src="../assets/img/chapter-04/bd-notifications-messaging.png" alt="Notifications Messaging DB Diagram" width="1000"/> <br>
+<img src="../assets/img/chapter-04/class-notifications-messaging.png" alt="Notifications Messaging DB Diagram" width="1000"/> <br>
 
 #### Analytics & Dashboard
 Este diagrama soporta las consultas y métricas agregadas que se visualizan en el Dashboard principal. Almacena resúmenes estadísticos, reportes de mermas y ahorro, optimizando las consultas de lectura para una carga rápida de los gráficos.
