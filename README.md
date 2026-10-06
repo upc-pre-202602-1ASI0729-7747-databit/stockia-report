@@ -180,26 +180,45 @@ del ABET – EAC - Student Outcome 3.
             <b>Gallardo Morales, Carla Alejandra</b><br>
             <u>AV1</u><br>
             Sustenté el Ubiquitous Language y las Style Guidelines empleando un lenguaje centrado en la experiencia del usuario, comprensible tanto para audiencias técnicas como para evaluadores sin perfil de diseño. Al exponer la Information Architecture y los prototipos navegables, orientó su comunicación hacia la validación de la interfaz, utilizando wireframes y mockups como medios audiovisuales que facilitaron la comprensión de la propuesta de diseño.
-            <br><br>
+            <br>           
+            <u>TB1</u><br>
+            ...
+            <br><br>            
             <b>Huaman Oscco, Aldo Jesus</b><br>
             <u>AV1</u><br>
             Expuse las Lean UX Hypothesis y las User Stories empleando un lenguaje accesible que permitió a audiencias generales comprender los criterios de aceptación. Al presentar el Product Backlog y el diseño de la landing page, orientó la comunicación hacia la priorización de funcionalidades y la coherencia visual del sistema, utilizando diagramas y prototipos como apoyo audiovisual.
-            <br><br>
+            <br>           
+            <u>TB1</u><br>
+            ...
+            <br><br> 
             <b>Miranda Cordova, Jesus Angel Yvan</b><br>
             <u>AV1</u><br>
             Expuse el análisis de competidores y el Needfinding con un lenguaje claro y centrado en el usuario, diferenciando hallazgos de hipótesis. Durante la presentación del EventStorming y los diagramas C4 y UML, orientó la comunicación hacia la delimitación de bounded contexts, empleando tableros y diagramas como medios visuales que facilitaron la comprensión de la estructura técnica del sistema.
-            <br><br>
+            <br>           
+            <u>TB1</u><br>
+            ...
+            <br><br> 
             <b>Ortiz Laura, Leyla Alisson</b><br>
             <u>AV1</u><br>
             Presenté las User Stories y el Impact Mapping empleando un lenguaje accesible que articuló metas de negocio con funcionalidades técnicas. Al exponer el diseño de entrevistas y las interfaces de la aplicación web, utilizó prototipos y diagramas como apoyo audiovisual, validando con el equipo y evaluadores la experiencia de usuario. Además, explicó los lineamientos de Software Configuration Management enfocando la comunicación en la organización del trabajo colaborativo.
-            <br><br>
+            <br>           
+            <u>TB1</u><br>
+            Expuse las correcciones realizadas en Interviews & Needfinding, la propuesta de valor y en todo el reporte en general para mejorar la comunicación y su calidad, empleando un lenguaje claro y accesible que permitió a audiencias técnicas y no técnicas comprender los ajustes realizados. Al presentar la parte del dashboard y los alerts en el repositorio de la web app, orienté la comunicación hacia la validación del funcionamiento real de los componentes.
+            <br><br> 
             <b>Toro Turpo, Ronal</b><br>
             <u>AV1</u><br>
             Presenté la descripción de la startup, los antecedentes y segmentos empleando un lenguaje accesible para audiencias no técnicas. Al exponer el EventStorming y los diagramas C4 y UML, adaptó el nivel técnico del discurso a la audiencia evaluadora, utilizando diagramas como apoyo audiovisual para validar la comprensión de la arquitectura. También explicó el diseño de base de datos enfocando cada explicación hacia el objetivo específico del artefacto expuesto.
+            <br>           
+            <u>TB1</u><br>
+            ...
             <br><br>
         </td>
         <td>
             <u>AV1</u><br>Durante el AV1, el equipo demostró capacidad para adaptar su discurso a diferentes audiencias, combinando explicaciones técnicas con lenguaje accesible. El uso de diagramas, prototipos y tableros visuales permitió que tanto evaluadores con perfil de ingeniería como audiencias generales comprendieran los artefactos expuestos. La coordinación en las presentaciones evidenció escucha activa y claridad en la transmisión de ideas
+            <br>           
+            <u>TB1</u><br>
+            ...
+            <br><br>
         </td>
     </tr>
       <tr>
@@ -208,26 +227,45 @@ del ABET – EAC - Student Outcome 3.
             <b>Gallardo Morales, Carla Alejandra</b><br>
             <u>AV1</u><br>
             Redacté el Ubiquitous Language y las Style Guidelines con un lenguaje claro y centrado en la experiencia del usuario, verificando que la redacción fuera coherente con el público objetivo del informe. Documentó la Information Architecture y los prototipos con descripciones escritas que complementaban los diagramas visuales, permitiendo que lectores con diferentes perfiles comprendieran la lógica de navegación y diseño de la aplicación.
+            <br>           
+            <u>TB1</u><br>
+            ...
             <br><br>
             <b>Huaman Oscco, Aldo Jesus</b><br>
             <u>AV1</u><br>
             Redacté las Lean UX Hypothesis y las User Stories siguiendo el formato estándar del informe, utilizando un lenguaje orientado al usuario que permitió a lectores no técnicos comprender las hipótesis y criterios de aceptación. Documentó el Product Backlog y el diseño de la landing page con descripciones escritas estructuradas, asegurando que los objetivos técnicos fueran comprensibles para diferentes rangos de audiencia. Su redacción integró coherencia entre la planificación del sprint y la implementación de la aplicación y servicios.
+            <br>           
+            <u>TB1</u><br>
+            ...
             <br><br>
             <b>Miranda Cordova, Jesus Angel Yvan</b><br>
             <u>AV1</u><br>
             Redacté el análisis de competidores y el Needfinding con un lenguaje centrado en el usuario, permitiendo que lectores sin perfil técnico comprendieran las hipótesis planteadas. Documentó el EventStorming y los diagramas C4 y UML con descripciones escritas que acompañaban cada vista del sistema, utilizando un lenguaje técnico preciso para evaluadores de ingeniería, pero comprensible para audiencias generales. Su redacción aseguró trazabilidad y coherencia entre bounded contexts y artefactos técnicos.
+            <br>           
+            <u>TB1</u><br>
+            ...
             <br><br>
             <b>Ortiz Laura, Leyla Alisson</b><br>
             <u>AV1</u><br>
             Redacté las User Stories y el Impact Mapping con un lenguaje claro y estructurado, articulando metas de negocio con funcionalidades técnicas. Documentó el diseño de entrevistas y las interfaces de la aplicación web con descripciones escritas que acompañaban los prototipos, permitiendo que lectores sin experiencia en diseño comprendieran la propuesta. Además, elaboró los lineamientos de Software Configuration Management con un lenguaje técnico preciso, asegurando orden y trazabilidad en el trabajo colaborativo.
+            <br>           
+            <u>TB1</u><br>
+            Redacté las correcciones de Interviews & Needfinding, la propuesta de valor siguiendo un formato técnico estructurado, asegurando que los cambios fueran comprensibles para distintos rangos de audiencia. Documenté mediante commits la implementación del dashboard y los alerts en la web app con descripciones claras garantizando trazabilidad con los objetivos del sprint. Mi escritura permitió mantener coherencia entre la documentación técnica y el estado funcional del sistema.
             <br><br>
             <b>Toro Turpo, Ronal</b><br>
             <u>AV1</u><br>
             Redacté la descripción de la startup y el análisis de antecedentes y problemática siguiendo los estándares del informe técnico, sintetizando la propuesta de valor y el contexto del sistema en un lenguaje claro y accesible. Documentó los segmentos objetivo y el EventStorming con descripciones escritas estructuradas, y elaboró los diagramas C4, UML y de base de datos con notaciones estandarizadas, garantizando que fueran comprensibles tanto para perfiles técnicos como para revisores del proyecto.
+            <br>           
+            <u>TB1</u><br>
+            ...
             <br><br>
         </td>
         <td>
             <u>AV1</u><br>En la documentación del AV1, el equipo mostró consistencia en el uso de formatos estandarizados y lenguaje claro, asegurando que los entregables fueran comprensibles para distintos rangos de audiencia. La redacción de hipótesis, diagramas y artefactos técnicos se complementó con descripciones accesibles, lo que garantizó trazabilidad y coherencia en el informe. La escritura colectiva reflejó organización y capacidad de síntesis en la comunicación escrita.
+            <br>           
+            <u>TB1</u><br>
+            ...
+            <br><br>
         </td>
     </tr>
 </table>
