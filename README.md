@@ -142,7 +142,7 @@ del ABET – EAC - Student Outcome 3.
             <br><br>
             <b>Ortiz Laura, Leyla Alisson</b><br>
             <u>AV1</u><br>
-            Presente las User Stories y el Impact Mapping empleando un lenguaje accesible que articuló metas de negocio con funcionalidades técnicas. Al exponer el diseño de entrevistas y las interfaces de la aplicación web, utilizó prototipos y diagramas como apoyo audiovisual, validando con el equipo y evaluadores la experiencia de usuario. Además, explicó los lineamientos de Software Configuration Management enfocando la comunicación en la organización del trabajo colaborativo.
+            Presenté las User Stories y el Impact Mapping empleando un lenguaje accesible que articuló metas de negocio con funcionalidades técnicas. Al exponer el diseño de entrevistas y las interfaces de la aplicación web, utilizó prototipos y diagramas como apoyo audiovisual, validando con el equipo y evaluadores la experiencia de usuario. Además, explicó los lineamientos de Software Configuration Management enfocando la comunicación en la organización del trabajo colaborativo.
             <br><br>
             <b>Toro Turpo, Ronal</b><br>
             <u>AV1</u><br>
@@ -259,15 +259,24 @@ del ABET – EAC - Student Outcome 3.
     - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--conventions)
     - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
   - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
-    - [5.2.X. Sprint N](#52x-sprint-n)
-      - [5.2.X.1. Sprint Planning N](#52x1-sprint-planning-n)
-      - [5.2.X.2. Aspect Leaders and Collaborators](#52x2-aspect-leaders-and-collaborators)
-      - [5.2.X.3. Sprint Backlog N](#52x3-sprint-backlog-n)
-      - [5.2.X.4. Development Evidence for Sprint Review](#52x4-development-evidence-for-sprint-review)
-      - [5.2.X.5. Execution Evidence for Sprint Review](#52x5-execution-evidence-for-sprint-review)
-      - [5.2.X.6. Services Documentation Evidence for Sprint Review](#52x6-services-documentation-evidence-for-sprint-review)
-      - [5.2.X.7. Software Deployment Evidence for Sprint Review](#52x7-software-deployment-evidence-for-sprint-review)
-      - [5.2.X.8. Team Collaboration Insights during Sprint](#52x8-team-collaboration-insights-during-sprint)
+    - [5.2.1. Sprint 1](#521-sprint-1)
+      - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
+      - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
+      - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
+      - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
+      - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
+      - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
+      - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
+      - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+    - [5.2.2. Sprint 2](#522-sprint-2)
+      - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
+      - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
+      - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
+      - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
+      - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
+      - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
+      - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
+      - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
   - [5.3. Validation Interviews](#53-validation-interviews)
     - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
     - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
@@ -287,7 +296,7 @@ del ABET – EAC - Student Outcome 3.
 ## 1.1. Startup Profile
 
 ### 1.1.1. Descripción de la Startup
-DataBite Corp es una startup tecnológica innovadora que aunque su creacion es reciente su enfoque está en liderar la transformación digital del sector gastronómico en el país y Latinoamérica. Nuestro enfoque principal radica en el desarrollo de soluciones de software as a Service (SaaS) que integran analítica predictiva asistida por Machine Learning (ML) y tecnologías de Internet de las Cosas (IoT).
+DataBite Corp es una startup tecnológica innovadora que aunque su creacion es reciente su enfoque está en liderar la transformación digital del sector gastronómico en el país y Latinoamérica. Nuestro enfoque principal radica en el desarrollo de soluciones de software as a Service (SaaS) que integran analítica predictiva asistida por Machine Learning (ML) y, en un futuro, tecnologías de Internet de las Cosas (IoT).
 
 Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas avanzadas para pequeñas y medianas cadenas de restaurantes, permitiendo optimizar sus operaciones y tomar decisiones basadas en datos en tiempo real. A través de nuestro producto estrella, "StockIA", buscamos resolver problemas críticos de la industria como el descontrol de inventarios, los quiebres de stock y las mermas financieras. Nos motiva generar un impacto directo tanto económico como ambiental, ayudando a las empresas a reducir el desperdicio de alimentos y a maximizar sus márgenes de rentabilidad, todo centralizado en un ecosistema web unificado, accesible y altamente escalable.
 
@@ -307,7 +316,7 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
        <b>Descripción:</b><br/>
       Soy <b>Carla Alejandra Gallardo Morales</b>, tengo 19 años. Desde que me incorporé en la Universidad Peruana de Ciencias Aplicadas en el periodo 2024-01, es decir que ahora mismo estoy cursando el sexto ciclo de la carrera de Ing. de Software, he adquirido y desarrollado distintos conocimientos a cerca de la programación, específicamente en el lenguaje C++, JavaScript y TypeScript, además, de forma autodidacta y extracurricular, he profundizado en el lenguaje Python, lo que ha ampliado mi perspectiva sobre la lógica y resolución de problemas.
       <br/><br/>
-      Dentro del equipo, mi contribución se basa en el apoyo continuo del desarrollo del backend y frontend de nuestro aplicativo mobile, asimismo ayudo en la implementación del informe de nuestro proyecto.
+      Dentro del equipo, mi contribución se basa en el apoyo continuo del desarrollo del backend y frontend de nuestro proyecto, asimismo ayudo en la implementación del informe del mismo.
       <br/>
   </tr>
 
@@ -337,12 +346,12 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
     <td><b>Nombre:</b> Miranda Cordova, Jesus Angel Yvan</td>
   </tr>
   <tr>
-    <td><b>Código:</b> u20241</td>
+    <td><b>Código:</b> U202411261</td>
   </tr>
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy <b>Miranda Cordova Jesus</b>b>, tengo 19 años y actualmente estudio la carrera de Ingeniería de Software en la Universidad Privada de Ciencias Aplicadas (UPC). Me gusta aprender nuevos lenguajes de programación  y desarrollar juegos en mi tiempo libre. Soy una persona de naturaleza tranquila, siempre dispuesto a ayudar y colaborar cuando sea necesario <b></b>
+      Soy <b>Miranda Cordova Jesus</b>, tengo 19 años y actualmente estudio la carrera de Ingeniería de Software en la Universidad Privada de Ciencias Aplicadas (UPC). Me gusta aprender nuevos lenguajes de programación  y desarrollar juegos en mi tiempo libre. Soy una persona de naturaleza tranquila, siempre dispuesto a ayudar y colaborar cuando sea necesario <b></b>
       <br/>
     </td>
   </tr>
@@ -376,7 +385,7 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy Ronal Toro Turpo, tengo 20 años estudio la carrera de ingenieria de software, desde el comienzo de mi vida universitaria e ido adquiriendo y desarrollando diversas habilidades como el desarrollo en leguajes de programacion como C++, java script, y en la parte web lenguajes como HTML y CSS si bien el trabajo en equipo no es uno de mis fuertes trato de hacer lo mejor que puedo, espero aprender muchas cosas a lo largo del semestre para este curso ya que lo considero muy interezante e importante para el desarrollo de mi carrera.<b></b>
+      Soy Ronal Toro Turpo, tengo 20 años estudio la carrera de ingenieria de software, desde el comienzo de mi vida universitaria e ido adquiriendo y desarrollando diversas habilidades como el desarrollo en lenguajes de programacion como C++, java script, y en la parte web lenguajes como HTML y CSS si bien el trabajo en equipo no es uno de mis fuertes trato de hacer lo mejor que puedo, espero aprender muchas cosas a lo largo del semestre para este curso ya que lo considero muy interesante e importante para el desarrollo de mi carrera.<b></b>
       <br/>
     </td>
   </tr>
@@ -418,12 +427,12 @@ Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application
 
 **Our product/service will address this gap by** ofreciendo un ecosistema web unificado de gestión multi-cadena que vincula el inventario de las sucursales con las recetas de los platos (deduciendo automáticamente los ingredientes al momento de crear una orden), aplica seguridad basada en roles de acceso, proporciona dashboards de monitoreo operativo y utiliza modelos de Machine Learning para pronosticar la demanda de los clientes y generar recomendaciones automatizadas de reposición de inventario.
 
-**Our initial focus will be** los CEOs y gerentes generales de operaciones de cadenas de servicios de alimentación en crecimiento (2 o más ubicaciones) que buscan estandarización operativa, reducción de desperdicios y supervisión en tiempo real.
+**Our initial focus will be** los administradores y dueños de restaurantes de servicios de alimentación en crecimiento (2 o más ubicaciones) que buscan estandarización operativa, reducción de desperdicios y supervisión en tiempo real.
 
 **We’ll know we are successful when we see** los siguientes comportamientos medibles en nuestro público objetivo:
 1. Una reducción del 40% en los reportes semanales de discrepancias de inventario en todas las sucursales conectadas durante los primeros 60 días posteriores a la incorporación.
 2. Al menos el 75% de las órdenes de compra de suministros programadas están siendo generadas directamente a partir de las recomendaciones automatizadas de reposición mediante ML.
-3. Interacción semanal activa con los dashboards por parte de más del 85% de los CEOs/gerentes de operaciones de restaurantes inscritos.
+3. Interacción semanal activa con los dashboards por parte de más del 85% de los administradores de operaciones de restaurantes inscritos.
 
 #### 1.2.2.2. Lean UX Assumptions
 1. Creemos que existe una demanda creciente por parte de pequeñas y medianas cadenas de restaurantes que buscan transformar digitalmente sus operaciones para evitar mermas financieras causadas por el descontrol de inventario.
@@ -436,7 +445,7 @@ Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application
 
 **User outcomes:**
 
-1. Creemos que los CEOs lograrán visibilidad integral e inmediata del estado de inventario, consumo de ingredientes y actividad del personal en todas las sucursales sin depender de llamadas o reportes manuales en hojas de cálculo.
+1. Creemos que los dueños de restaurantes lograrán visibilidad integral e inmediata del estado de inventario, consumo de ingredientes y actividad del personal en todas las sucursales sin depender de llamadas o reportes manuales en hojas de cálculo.
 
 2. Creemos que los restaurantes reducirán el desperdicio de alimentos perecibles hasta en un **25%** al ajustar sus compras y producción a las proyecciones de demanda de comensales.
 
@@ -445,9 +454,9 @@ Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application
 4. Creemos que los líderes del negocio mitigarán pérdidas financieras no autorizadas mediante la restricción de privilegios por roles de trabajo.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
-1. Creemos que lograremos un aumento del **20%** en la retención semanal de la plataforma por parte de los ejecutivos de restaurantes **si** los CEOs y gerentes de operaciones de restaurantes **obtienen** visibilidad instantánea y consolidada de los niveles de inventario y el rendimiento de las ventas en todas las sucursales **con** un dashboard operativo interactivo para múltiples cadenas.
+1. Creemos que lograremos un aumento del **20%** en la retención semanal de la plataforma por parte de los ejecutivos de restaurantes **si** los administradores y dueños de restaurantes **obtienen** visibilidad instantánea y consolidada de los niveles de inventario y el rendimiento de las ventas en todas las sucursales **con** un dashboard operativo interactivo para múltiples cadenas.
 
-2. Creemos que lograremos una reducción del **30%** en los incidentes de seguridad y los reportes de pérdidas internas **si** los CEOs de restaurantes y gerentes de tienda **obtienen** delegación segura de tareas y control detallado sobre las operaciones críticas de inventario **con** un sistema de gestión de configuración de roles y permisos.
+2. Creemos que lograremos una reducción del **30%** en los incidentes de seguridad y los reportes de pérdidas internas **si** los dueños de restaurantes **obtienen** delegación segura de tareas y control detallado sobre las operaciones críticas de inventario **con** un sistema de gestión de configuración de roles y permisos.
 
 3. Creemos que lograremos una disminución del **35%** en las discrepancias de las auditorías manuales de inventario **si** los gerentes de tienda y operadores de inventario **obtienen** un seguimiento rápido y sin errores de las entradas, transferencias y modificaciones de materias primas **con** un módulo centralizado de gestión de inventario en tiempo real.
 
@@ -528,14 +537,14 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Overview</b></td>
-      <td>Es una startup en etapa de desarrollo que ofrece una plataforma web de gestión inteligente de inventario para restaurantes, con predicción de demanda basada en Machine Learning, integración con clima, monitoreo IoT de equipos de cocina y ocupación, y alertas automáticas vía WhatsApp.</td>
+      <td>Es una startup en etapa de desarrollo que ofrece una plataforma web de gestión inteligente de inventario para restaurantes que conecta recetas, ventas e inventario para descontar insumos automáticamente, alertar sobre stock bajo y vencimientos y realizar predicción de demanda (Ej. "Preparar más lentejas el lunes" debido a que el lunes pasado recibió gran demanda de platos con lentejas) usando Machine Learning. Clima e IoT están en su roadmap.</td>
       <td>Software SaaS todo-en-uno para restaurantes, de origen chileno, con fuerte presencia en Chile, México y LATAM. Cubre POS, KDS, delivery, reservas, inventario y facturación electrónica.</td>
       <td>Software de gestión para restaurantes de origen peruano, enfocado en pedidos, cocina, inventario y facturación electrónica SUNAT, pensado específicamente para la realidad tributaria y operativa local.</td>
       <td>Plataforma de gestión de inventario y reducción de desperdicio de alimentos con IA, dirigida a restaurantes, hoteles, bares y cafés, con fuerte enfoque en predicción de demanda y automatización de compras.</td>
     </tr>
     <tr>
       <td><b>Ventaja Competitiva<br>¿Qué valor ofrece a los clientes?</b></td>
-      <td>Único que combina ML predictivo + variable climática + IoT físico (sensores de ocupación y de electrodomésticos) + notificaciones directas a WhatsApp del personal en una sola plataforma.</td>
+      <td>Descuento automático por receta, alertas por lote sin reemplazar el sistema de ventas integrado con Machine Learning para predicción de demanda. En un futuro se añadirá las funciones de Clima e IoT. En la revisión de sitios de Toteat, Panca y RestoIQ no encontramos esta combinación orientada a restaurantes de un solo local en Perú.</td>
       <td>Ecosistema todo-en-uno con alta adopción y reconocimiento de marca en LATAM.</td>
       <td>Adaptación total a la normativa peruana (SUNAT, IGV) y facilidad de implementación (5 minutos), con soporte 100% en español y precios muy accesibles.</td>
       <td>Pionero regional en IA aplicada específicamente a inventario y desperdicio, con modelo de forecasting propio (7-day forecast) y transparencia total de precios.</td>
@@ -562,7 +571,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Productos & Servicios</b></td>
-      <td>Dashboard, gestión de stock y recetas con descuento automático, predicción de demanda con ML, recomendaciones automáticas de compra, alertas por WhatsApp, integración con clima, sensores IoT de ocupación y de electrodomésticos, gestión de roles y planes de pago.</td>
+      <td>Dashboard, gestión de stock y recetas con descuento automático, predicción de demanda con ML, recomendaciones automáticas de compra, alertas por WhatsApp, gestión de roles y planes de pago. Las siguientes secciones forman parten del roadmap: integración con clima, sensores IoT de ocupación y de electrodomésticos.</td>
       <td>POS, KDS, Menú QR, gestión de mesas y reservas, integración con apps de delivery, control de inventario, facturación electrónica, reportes en tiempo real.</td>
       <td>POS/gestión de pedidos, carta digital, facturación electrónica SUNAT, control de inventario avanzado, food cost automático, reportes inteligentes.</td>
       <td>Predicción de demanda, automatización de órdenes de compra, registro de mermas, dashboards con 12+ gráficos, gestión multi-outlet para hoteles.</td>
@@ -586,7 +595,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Fortalezas</b></td>
-      <td>Único competidor que combina ML predictivo, variable climática (OpenWeather) e IoT físico en un solo producto.</td>
+      <td>Nos enfocamos en un problema concreto (receta → inventario → prediccion → alerta) y en el segmento de un solo local.</td>
       <td>Alta adopción y reconocimiento de marca en LATAM (+5,000 restaurantes).</td>
       <td>Fuerte adaptación a la normativa peruana (SUNAT, IGV), un factor crítico de decisión de compra en el mercado local.</td>
       <td>Uso real y ya validado de IA (modelo propio de forecast a 7 días) para predicción de demanda y reducción de desperdicio.</td>
@@ -600,7 +609,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Oportunidades</b></td>
-      <td>Ningún competidor identificado integra simultáneamente clima + IoT + ML + WhatsApp; existe un vacío claro de mercado.</td>
+      <td>Los competidores en los que se basó este análisis priorizan POS y facturación; Stockia abre paso a que los locales pequeños, que parece menos atendidos, puedan tener un control de sus insumos.</td>
       <td>Podría integrar módulos de IA en el futuro apalancándose en su gran volumen de datos históricos de +5,000 restaurantes.</td>
       <td>Podría expandir su módulo de inventario hacia analítica predictiva, dado que ya tiene base de datos de ventas e inventario de sus +150 clientes.</td>
       <td>Podría integrar IoT y clima en próximas versiones dado que ya cuenta con un modelo de ML funcionando en producción.</td>
@@ -614,6 +623,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
   </tbody>
 </table>
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
 ## Fortalezas
@@ -704,8 +714,7 @@ Datos del entrevistado:
 
 **Resumen descriptivo:**
 La entrevista con la señora Albertina, dueña del restaurante Misty Mercury, muestra que gestiona sus insumos de manera muy básica y manual: compra lo justo para cada día según los platos que decide preparar, evitando desperdicios pero sin llevar un registro formal ni contar con un sistema que le anticipe necesidades. Aunque rara vez enfrenta problemas de stock, depende de su memoria y observación de ventas pasadas para decidir qué ofrecer, lo que limita la eficiencia y la capacidad de respuesta ante cambios en la demanda. Reconoce que le sería útil contar con un sistema automático que le sugiera menús, alerte sobre insumos próximos a agotarse y le indique cuáles productos se consumen más, lo que evidencia que aún necesita apoyo adicional en la gestión de inventario y planificación.
- 
-<br>
+
 
 
 **Entrevista 2:**
@@ -754,7 +763,7 @@ Asimismo, Miguel señala que le gustaría contar con un sistema que integre el i
 <p align="center"><i>Evidencia de entrevista: David </i></p>
   
   **Resumen Descriptivo:** 
-David, de 35 años, es jefe de cocina de un restaurante de comida italiana ubicada en Surco, que lleva aproximadamente 5 años funcionando y cuenta con 3 cocineros y 5 mosos mas personal de cajas y otros. Nos comenta que actualmente controla el inventario de manera manual y utiliza Excel para gestionar las recetas, las ventas se registran en un sistema independiente y hacen uso de la gestion y experiencia del jefe de cocinar para la compra de insumos en alta demanda. Esta forma de trabajo le ha generado sobrecarga y fallos en el inventario por margenes de error al manejarlo, mermas y cambios inesperados en la demanda, ocasionando en algunas situaciones en las que se quede sin determinados platos.
+David, de 35 años, es jefe de cocina de un restaurante de comida italiana ubicada en Surco, que lleva aproximadamente 5 años funcionando y cuenta con 3 cocineros y 5 mozos mas personal de cajas y otros. Nos comenta que actualmente controla el inventario de manera manual y utiliza Excel para gestionar las recetas, las ventas se registran en un sistema independiente y hacen uso de la gestion y experiencia del jefe de cocinar para la compra de insumos en alta demanda. Esta forma de trabajo le ha generado sobrecarga y fallos en el inventario por margenes de error al manejarlo, mermas y cambios inesperados en la demanda, ocasionando en algunas situaciones en las que se quede sin determinados platos.
 
 Asimismo, David señala que le gustaría contar con un sistema que integre el inventario, genere reportes de oferta y demanda, poder visualizar el stock del producto en tiempo real y poder acceder a notificaciones que le indiquen de manera no intrusiva que mandar a comprar los fines de semana o los feriados por venir.
 </br>
@@ -763,10 +772,19 @@ Asimismo, David señala que le gustaría contar con un sistema que integre el in
 **Enlace del video:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQCgtdb_9fA9T7XB-BJNcAKNAd0Um3w55VhcCg1SePkzKFs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hZLVpm) 
 
 ### 2.2.3. Análisis de entrevistas
+**Entrevista 1:**
+La señora Albertina gestiona su restaurante de manera práctica y eficiente en lo básico, pero carece de herramientas que le permitan anticiparse y tomar decisiones basadas en datos. Aunque reconoce patrones de consumo y ajusta la oferta según preferencias de clientes y horarios, carece de un sistema que le permita proyectar tendencias o automatizar decisiones. Su negocio funciona de manera práctica, pero tiene vulnerabilidades: falta de datos estructurados, poca previsión y ausencia de alertas sobre insumos críticos.
 
-Entrevista 2:
+**Entrevista 2:**
+Basándonos en la  entrevista de Claudia , el usuario expresa su disconformidad ante su situación actual con respecto a la falta de stock en momentos clave .Ya ha usado software de gestión básicos antes pero su problema se mantiene. El usuario expresó interés en herramientas que permitan el monitoreo preciso del inventario y que le generen recomendaciones o alertas según sea necesario.
 
-Basándonos en la  entrevista de Claudia , el usuario expresa su disconformidad ante su situación actual con respecto a la falta de stock en momentos clave .Ya ha usado software de gestión básicos antes pero su problema se mantiene. El usuario expresó interés en herramientas que permitan el monitoreo preciso del inventario y que le generen recomendaciones o alertas según sea necesario .
+**Entrevista 3:**
+Miguel enfrenta una gestión fragmentada y manual de su restaurante que, aunque le permite cierto control básico, genera errores de inventario, mermas y dificultades para anticipar la demanda, lo que impacta directamente en la disponibilidad de platos y la eficiencia operativa. Su interés en un sistema integrado que unifique inventario, recetas, ventas y anulaciones refleja una necesidad clara de digitalización y automatización, especialmente para acceder rápidamente a información histórica sobre consumo y patrones de demanda. Esto evidencia que la principal oportunidad de mejora está en implementar una solución tecnológica que reduzca la dependencia de procesos manuales, optimice la toma de decisiones y le brinde mayor capacidad de respuesta frente a cambios inesperados en el negocio
+
+**Entrevista 4:**
+David enfrenta una sobrecarga operativa al depender de procesos manuales y de su propia experiencia para gestionar inventarios y compras, lo que ha derivado en errores, mermas y dificultades para responder a variaciones en la demanda. Su interés en un sistema que integre inventario con reportes de oferta y demanda, stock en tiempo real y notificaciones preventivas revela una necesidad clara de digitalización que reduzca la carga individual y mejore la eficiencia del restaurante. La oportunidad de mejora radica en implementar una solución tecnológica que automatice el control de insumos, anticipe necesidades en fechas críticas y ofrezca información confiable para optimizar la toma de decisiones.
+
+**Conclusión de los análisis:** Las necesidades con mayor frecuencia y severidad (como control de inventario manual, ventas registradas aparte del inventario, quiebres de stock o platos agotados, mermas o errores de inventario) de nuestros entrevistados definen el núcleo del producto: registro de inventario, descuento por receta y alertas. La demanda variable que existe en los restaurnates que manejan, justifica la predicción con Machine Learning como valor diferenciador en el mercado. 
 
 ## 2.3. Needfinding
 
@@ -832,13 +850,13 @@ En esta sección se presenta el resultado del Big Picture Event Storming realiza
 
 A partir del análisis colaborativo se identificaron ocho Bounded Contexts principales. Cada contexto agrupa eventos relacionados con una responsabilidad específica del sistema, permitiendo separar el dominio siguiendo los principios de Domain-Driven Design.
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming.png" alt="STOCKIA big picture event storming" width="500">
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-2.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-2.png" alt="STOCKIA big picture event storming" width="500">
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-3.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-3.png" alt="STOCKIA big picture event storming" width="500">
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-4.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-4.png" alt="STOCKIA big picture event storming" width="500">
 
 ## 2.5. Ubiquitous Language
 
@@ -2184,37 +2202,84 @@ En esta sección se explican las acciones y técnicas que guían al usuario a tr
 ## 4.3. Landing Page UI Design
 
 ### 4.3.1. Landing Page Wireframe
+
+En esta sección se presentan los wireframes del Landing Page de StockIA, elaborados en Figma en baja fidelidad (escala de grises, bloques de texto simulados y contenedores vacíos para imágenes e íconos). Su propósito es validar la estructura, la jerarquía del contenido y la navegación entre las cuatro páginas del sitio (Inicio, Características, Precios y Nosotros) antes de aplicar el estilo visual definido en la sección 4.1.
+
+**Desktop Web Browser**
+
 <p align="center"><img src="assets/img/chapter-04/W-Inicio.png" width="500" alt="Inicio"/></p>
+
+**Inicio.** El wireframe muestra, de arriba hacia abajo: el navbar con el logotipo, los enlaces Inicio, Características, Precios y Nosotros, el selector de idioma ES | EN y el botón "Solicitar demo"; el hero con el titular "Predicción de demanda e inventario inteligente para tu restaurante", los botones "Optimiza tu inventario →" y "Ver cómo funciona", tres indicadores (−25%, +18%, <5s) y, a la derecha, un contenedor que representa el dashboard con un gráfico de barras y una franja de "alerta IoT + alerta IA". Le siguen una banda oscura con cuatro cifras (30%, 1 de 3, −20%, 24/7), el bloque "¿Para quién es StockIA?" con dos tarjetas (Dueños y CEOs de restaurante / Administradores y jefes de cocina), la sección "Todo lo que necesita tu restaurante" con seis tarjetas de funcionalidades y el botón "Ver todas las características →", la sección "Más que un inventario" con tres diferenciadores (Gamificación, Sostenibilidad, Aprende de tu restaurante) y la sección "Se conecta con el ecosistema que ya usas" con cuatro tarjetas de integraciones (Google Maps API, OpenWeather API, Stripe / PayPal, Twilio / SendGrid).
 
 <p align="center"><img src="assets/img/chapter-04/W-Inicio-Continuacion.png" width="500" alt="Inicio-Continuacion"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Inicio (continuación).** La parte inferior de la página presenta el portafolio "La plataforma en acción", con tres pestañas de filtro (Todas las vistas, Inventario, IA & IoT) y cuatro tarjetas con mini pantallas (Dashboard principal, Predicción de Demanda, Recetas y Descuento, Alertas IoT); la sección "Mira StockIA en acción", con un contenedor reservado para el video demostrativo; la banda de cierre "Empieza a optimizar tu inventario hoy" con el botón "Solicitar demo"; y el footer organizado en las columnas Producto, Empresa y Legal.
+
 <p align="center"><img src="assets/img/chapter-04/W-Caracteristicas.png" width="500" alt="Caracteristicas"/>
 <br/><i>Artefacto: Figma</i></p>
+
+**Características.** Se compone de un encabezado oscuro con el titular "Todo lo que necesitas, en un solo lugar", una grilla de seis tarjetas (Inventario Inteligente, Predicción de Demanda con IA, Recomendaciones Automáticas, Monitoreo IoT de Cocina, Roles y Permisos, Sostenibilidad y Gamificación), cada una con ícono, título, descripción y etiqueta, y la sección "Empieza en minutos", que ordena cuatro pasos numerados: Registra tu restaurante, Carga tu inventario y recetas, La IA empieza a aprender y Recibe alertas y decide. La página cierra con la misma banda de llamada a la acción y el mismo footer.
 
 <p align="center"><img src="assets/img/chapter-04/W-Precios.png" width="500" alt="Precios"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Precios.** Bajo el titular "Elige el plan que se adapta a tu restaurante" se ubica un interruptor Mensual / Anual con una etiqueta de descuento y tres tarjetas de plan: Esencial (S/ 0), Profesional (S/ 39), resaltado con un borde más grueso y la etiqueta "Más popular", e IoT Completo (S/ 79). Cada plan lista sus prestaciones con marcas de incluido (✓) y no incluido (✕). Debajo se indica "Sin tarjeta de crédito · Cancela cuando quieras" y se presenta la sección "Preguntas frecuentes" como un acordeón de tres preguntas, seguida de la banda de llamada a la acción y el footer.
+
 <p align="center"><img src="assets/img/chapter-04/W-Nosotros.png" width="500" alt="Nosotros"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Nosotros.** Inicia con el titular "Ayudamos a los restaurantes a no dejar nada al azar", dos tarjetas (Nuestra Misión y Nuestra Visión) y cinco etiquetas con los valores de marca (Innovación, Precisión, Sostenibilidad, Confiabilidad, Cercanía). Continúa con "El equipo detrás de StockIA", que reserva cinco tarjetas para los integrantes; "Conoce al equipo de DataBite Corp", con el contenedor del video del equipo; "Sobre DataBite Corp", con cuatro datos de la startup (2026, IA + IoT, 1 restaurante piloto, Perú) y un botón hacia Características; y la sección de contacto "Conversemos sobre tu restaurante", con los datos de correo y ubicación y el formulario "Solicita una demo" (Nombre, Restaurante, Correo, Mensaje y botón "Enviar solicitud").
+
+**Aplicación de principios y elementos de diseño**
+
+- **Principios de diseño:** la *jerarquía* se establece por tamaño y peso, de modo que el titular del hero y los titulares de sección dominan sobre los bloques de texto simulado. El *contraste* entre bandas claras y oscuras separa las secciones y destaca las cifras y las llamadas a la acción. La *repetición* del patrón etiqueta de sección + titular + línea descriptiva + grilla de tarjetas, así como del navbar, la banda de cierre y el footer en las cuatro páginas, da consistencia al sitio. La *alineación* a una grilla común (dos, tres, cuatro o cinco columnas según el contenido) y la *proximidad* entre ícono, título, descripción y etiqueta dentro de cada tarjeta permiten reconocer cada grupo de información como una unidad.
+- **Elementos de diseño:** se emplean formas rectangulares con esquinas redondeadas para tarjetas, botones y campos; líneas grises de distinto largo para representar texto; contenedores vacíos para íconos, imágenes y videos; y el valor (escala de grises) como único recurso para diferenciar el botón primario (relleno oscuro) del secundario (relleno claro) y el plan recomendado del resto. El espacio en blanco entre secciones marca el ritmo de lectura vertical.
+- **Diseño inclusivo:** el selector de idioma ES | EN está previsto en el navbar de todas las páginas. Las etiquetas de navegación y de los botones son textuales y describen la acción ("Solicitar demo", "Ver cómo funciona", "Enviar solicitud"). En la tabla de planes, lo incluido y lo no incluido se distingue mediante símbolos (✓ / ✕) y no por color, y el plan recomendado se identifica además con el texto "Más popular". El formulario de contacto presenta pocos campos y rotulados. El comportamiento en pantallas pequeñas se rige por los breakpoints definidos en la sección 4.1.2.
+- **Arquitectura de información:** los wireframes materializan lo definido en la sección 4.2. La organización secuencial se observa en los cuatro pasos de "Empieza en minutos"; la categorización por tópicos, en los seis módulos de Características; la categorización por audiencia, en el bloque "¿Para quién es StockIA?"; y la organización matricial, en las pestañas del portafolio. El sistema de navegación se compone del navbar como navegación global, el footer como navegación secundaria (Producto, Empresa, Legal) y la llamada a la acción "Solicitar demo", que se repite en el navbar y en la banda de cierre de cada página y conduce al formulario de contacto de Nosotros.
+
 ### 4.3.2. Landing Page Mock-up
+
+En esta sección se presentan los mock-ups del Landing Page de StockIA, elaborados en Figma en alta fidelidad a partir de los wireframes de la sección 4.3.1. Conservan la misma estructura y orden de secciones, e incorporan el contenido real, la paleta de colores, las tipografías y los componentes definidos en el Design System de la sección 4.1 (Style Guidelines).
+
+**Desktop Web Browser**
+
 <p align="center"><img src="assets/img/chapter-04/M-Inicio.png" width="500" alt="Inicio"/></p>
+
+**Inicio.** El navbar muestra el logotipo de StockIA, el enlace de la página activa resaltado, el selector ES / EN y el botón "Solicitar demo" en verde oscuro. En el hero, sobre un fondo verde muy claro, el titular destaca la palabra "restaurante" en color terracota y cursiva; el botón principal "Optimiza tu inventario →" usa el color de acento y "Ver cómo funciona" se presenta como botón de contorno. Debajo aparecen tres indicadores (−25% desperdicio de alimentos, +18% margen operativo estimado, <5s descuento de insumos por venta). A la derecha se ubica una vista del dashboard con cuatro métricas (Insumos 342, Stock Bajo 9, Por Vencer 4, Ahorro Sem. S/2.3k), el gráfico de demanda proyectada para los próximos siete días y dos alertas: una roja con la etiqueta "crítica" (refrigerador con la puerta abierta) y una amarilla con la etiqueta "IA" (preparar más masa de pizza). Siguen la banda verde oscuro con cuatro cifras y su nota aclaratoria de que son referenciales, las dos tarjetas de "¿Para quién es StockIA?" y la grilla "Todo lo que necesita tu restaurante", con seis tarjetas que incluyen ícono a color, descripción y etiqueta (Gestión de stock, Machine Learning, Compras inteligentes, Hardware conectado, Control de equipo, Impacto medible).
 
 <p align="center"><img src="assets/img/chapter-04/M-Inicio-Continuacion.png" width="500" alt="Inicio-Continuacion"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Inicio (continuación).** Tras el botón "Ver todas las características →" se observa la sección "Más que un inventario" sobre fondo verde oscuro, con tres tarjetas (Gamificación, Sostenibilidad, Aprende de tu restaurante); la sección "Se conecta con el ecosistema que ya usas", cuyas cuatro tarjetas de integraciones llevan borde punteado y la etiqueta "EN EVALUACIÓN"; y el portafolio "La plataforma en acción", con las pestañas Todas las vistas, Inventario e IA & IoT y cuatro mini pantallas (Dashboard principal, Predicción de Demanda, Recetas y Descuento Automático, Sistema de Alertas IoT).
+
 <p align="center"><img src="assets/img/chapter-04/M-Caracteristicas.png" width="500" alt="Caracteristicas"/>
 <br/><i>Artefacto: Figma</i></p>
+
+**Características.** El encabezado verde oscuro presenta el titular "Todo lo que necesitas, en un solo lugar". Las seis tarjetas de módulos se muestran en blanco sobre un fondo gris claro, cada una con un ícono sobre un recuadro de color distinto, su descripción y una etiqueta. La sección "Empieza en minutos" enumera los cuatro pasos en círculos verde oscuro con una breve explicación por paso, y la página cierra con la banda "Empieza a optimizar tu inventario hoy" y el botón "Solicitar demo".
 
 <p align="center"><img src="assets/img/chapter-04/M-Precios.png" width="500" alt="Precios"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Precios.** Bajo el titular "Elige el plan que se adapta a tu restaurante" se muestra el interruptor Mensual / Anual con la etiqueta verde "30% descuento" y los tres planes: Esencial (S/ 0), Profesional (S/ 39), resaltado con borde verde oscuro y la etiqueta "Más popular", e IoT Completo (S/ 79). Las prestaciones incluidas llevan un check verde y las no incluidas una equis gris con el texto atenuado. La sección "Preguntas frecuentes" presenta tres preguntas en formato acordeón, seguidas de la banda de llamada a la acción y el footer en verde oscuro.
+
 <p align="center"><img src="assets/img/chapter-04/M-Nosotros.png" width="500" alt="Nosotros"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Nosotros.** El encabezado verde oscuro contiene el titular "Ayudamos a los restaurantes a no dejar nada al azar", las tarjetas Nuestra Misión y Nuestra Visión con sus textos, y los cinco valores de marca en forma de etiquetas. Debajo se ubican "El equipo detrás de StockIA", con cinco fichas de integrantes de borde punteado; "Conoce al equipo de DataBite Corp", con el contenedor del video del equipo; y "Sobre DataBite Corp", con los datos de la startup (2026, IA + IoT, 1, Perú) en tarjetas.
+
 <p align="center"><img src="assets/img/chapter-04/M-Contacto.png" width="500" alt="Contacto"/>
 <br/><i>Artefacto: Figma</i></p>
+
+**Contacto.** Corresponde al tramo final de la página Nosotros. A la izquierda se presenta el titular "Conversemos sobre tu restaurante" con los datos de Correo y Ubicación (Lima, Perú); a la derecha, el formulario "Solicita una demo", con los campos rotulados Nombre, Restaurante, Correo y Mensaje, textos de ejemplo dentro de cada campo y el botón "Enviar solicitud" en color terracota. La página cierra con la banda de llamada a la acción y el footer, con las columnas Producto, Empresa y Legal.
+
+**Aplicación de principios, elementos de diseño y Design System**
+
+- **Principios de diseño:** la *jerarquía* se refuerza con el tamaño y el peso de los titulares y con el uso del color de acento únicamente en las acciones principales ("Optimiza tu inventario →", "Enviar solicitud"), de modo que cada vista tiene un único punto focal. El *contraste* entre las secciones verde oscuro y las secciones claras marca el cambio de tema, y el texto blanco sobre verde oscuro mantiene la legibilidad. La *repetición* de navbar, etiqueta de sección, titular, tarjetas, banda de cierre y footer da unidad a las cuatro páginas. La *alineación* a la grilla y el *espacio en blanco* entre secciones conservan la estructura validada en los wireframes.
+- **Elementos de diseño:** el color se usa con función y no solo con fin decorativo: verde oscuro para la identidad y la navegación, terracota para las llamadas a la acción y los colores semánticos (rojo, amarillo, verde) para los estados dentro de la vista del dashboard. La tipografía distingue el logotipo del resto del texto. Las formas son tarjetas y botones de esquinas redondeadas, con sombras sutiles que separan las tarjetas del fondo, y los íconos acompañan a cada título para facilitar el reconocimiento.
+- **Diseño inclusivo:** el contenido está disponible en español e inglés mediante el selector ES / EN. Los estados no dependen solo del color: las alertas combinan color, texto y etiqueta ("crítica", "IA"); las prestaciones de cada plan combinan símbolo (check / equis) y texto; y el plan recomendado lleva la etiqueta "Más popular". Los campos del formulario tienen rótulo visible además del texto de ejemplo. El texto oscuro sobre fondo blanco y el texto blanco sobre verde oscuro siguen el criterio de contraste alto señalado en la sección 4.1.2.
+- **Arquitectura de información:** se mantienen los sistemas definidos en la sección 4.2: navegación global en el navbar con indicación de la página activa, navegación secundaria en el footer, organización secuencial en "Empieza en minutos", categorización por tópicos en los seis módulos de Características, categorización por audiencia en "¿Para quién es StockIA?" y filtrado por pestañas en el portafolio. Las etiquetas empleadas (Inventario, Predicción de Demanda con IA, Recomendaciones Automáticas, Monitoreo IoT de Cocina, Roles y Permisos, Sostenibilidad y Gamificación) coinciden con el sistema de rotulado de la sección 4.2.2.
+- **Design System:** los mock-ups aplican las decisiones de la sección 4.1. En color, el primario verde bosque #16332B (navbar, bandas, footer, titulares), el acento terracota #E2673B (botones de acción principal y palabra destacada del hero), los neutros para fondos y bordes, y los semánticos de éxito, advertencia y peligro en métricas y alertas. En tipografía, Inter para titulares y cuerpo, y Orbitron para el logotipo. En componentes, los botones primario, de acento y de contorno, las tarjetas de funcionalidad, de precio y de segmento, las etiquetas de sección, los campos de formulario y el interruptor Mensual / Anual descritos en la sección 4.1.2. Esta misma paleta se reutiliza en la vista del dashboard incluida en el hero, lo que sustenta la consistencia visual entre el Landing Page y la Web Application.
 
 ## 4.4. Web Applications UX/UI Design
 
@@ -2222,7 +2287,13 @@ Esta sección incluye secciones internas donde se presenta y explica la propuest
 visual y de interacción para las aplicaciones que constituyen la experiencia de
 usuario con los productos digitales.
 
+La propuesta corresponde a la Web Application de StockIA, que se utiliza tanto desde Desktop Web Browser como desde Mobile Web Browser, y se documenta de menor a mayor fidelidad. Primero, los wireframes (4.4.1) definen la estructura de cada vista; luego, los wireflows (4.4.2) enlazan esos wireframes para mostrar cómo el usuario avanza hacia cada User goal; después, los mock-ups (4.4.3) aplican sobre esas mismas vistas el estilo visual de la sección 4.1; y, por último, los user flows (4.4.4) representan con los mock-ups el camino principal y los caminos alternativos de cada objetivo. Todas las vistas se organizan en función de las User Stories US21 a US37 de la sección 3.1 y toman como referencia a la User Persona del segmento objetivo (sección 2.3.1), el administrador de restaurante.
+
 ### 4.4.1. Web Applications Wireframes
+
+En esta sección se presentan los wireframes de la Web Application de StockIA, elaborados en Figma en baja fidelidad y en escala de grises. Cada wireframe se asocia a una User Story y se muestra en dos versiones: Mobile Web Browser (primera imagen) y Desktop Web Browser (segunda imagen). Cuando una vista cambia de estado, por ejemplo un formulario vacío y el mismo formulario con datos, cada estado se dibuja como una pantalla independiente.
+
+Todas las vistas autenticadas comparten una misma estructura. En desktop, un menú lateral oscuro contiene el logotipo, el nombre del restaurante, los módulos Dashboard, Inventario, Recetas, Predicción, Recomendaciones, Alertas (con un contador), IoT, Roles, Planes y Notificaciones, el selector de idioma ES / EN, el usuario en sesión con su rol y la opción "Cerrar sesión". En mobile, ese menú se sustituye por un encabezado con el logotipo, el ícono de notificaciones, el avatar y el selector de idioma, y por una barra de navegación inferior con cuatro accesos: Dashboard, Inventario, Alertas y Más.
 
 1) **Wireframe 1:** 
 **User Story relacionada:** US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
@@ -2230,6 +2301,8 @@ usuario con los productos digitales.
 ![wireframe 1](assets/img/chapter-04/wireframes/mobile/mobile-wireframe1.png)
 
 ![wireframe 1](assets/img/chapter-04/wireframes/web/web-wireframe1.png)
+
+El wireframe muestra cuatro pantallas: la lista de Inventario (20 productos) con el botón "+ Nuevo", el buscador "Buscar producto...", el ícono de filtro, las pestañas de orden Urgencia, Cantidad y Vencimiento, y una tarjeta por insumo con nombre, categoría y proveedor, etiqueta de estado (CRÍTICO, VENCIENDO), cantidad con barra de nivel, fecha de vencimiento y los botones "Editar" y "Eliminar"; el formulario "Nuevo producto" vacío, con los campos Nombre del producto, Categoría, Cantidad, Unidad, Stock mínimo, Almacenamiento, Fecha de ingreso, Fecha de vencimiento y Proveedor, y los botones "Cancelar" y "Guardar"; el mismo formulario con datos; y la lista de Inventario actualizada a 21 productos con el nuevo insumo incorporado.
 
 2) **Wireframe 2:** 
 **User Story relacionada:** US22 - Como administrador, quiero guardar recetas con ingredientes vinculados al inventario, para que al venderse un plato se descuenten automáticamente los insumos.
@@ -2240,17 +2313,23 @@ usuario con los productos digitales.
 ![wireframe 3](assets/img/chapter-04/wireframes/mobile/mobile-wireframe2.png)
 ![wireframe 3](assets/img/chapter-04/wireframes/web/web-wireframe2.png)
 
+La primera pantalla es el Panel de Administrador, con el saludo al usuario, cuatro tarjetas de métricas (Productos en inventario, Stock crítico, Alertas activas y Ahorro estimado), la lista "Alertas críticas" con el enlace "Ver todas" y la lista "Próximos a vencer" con el enlace "Ver inventario". La segunda pantalla es la vista Alertas (8 activas), en la que cada alerta presenta título, descripción, fecha y hora, y una etiqueta de severidad (CRÍTICA, ALTA, MEDIA).
+
 4) **Wireframe 4:** 
 **User Story relacionada:** US24 - Como administrador, quiero asignar roles a empleados, para que cada uno tenga recomendaciones personalizadas y permisos adecuados dentro del sistema.
 
 ![wireframe 4](assets/img/chapter-04/wireframes/mobile/mobile-wireframe3.png)
 ![wireframe 4](assets/img/chapter-04/wireframes/web/web-wireframe3.png)
 
+El wireframe presenta cinco pantallas de "Roles y Permisos": la tabla "Permisos por rol", que cruza cada módulo con los roles Admin y Empleado, y la lista "Usuarios del restaurante" con el botón "Cambiar a Empleado"; el cuadro de diálogo "Confirmar cambio de rol", con los botones "Cancelar" y "Confirmar" sobre el fondo oscurecido; la misma vista con el mensaje "Rol actualizado correctamente."; la vista con la etiqueta del usuario cambiada a EMPLEADO y el botón "Promover a Admin"; y el "Panel del Empleado", con menos métricas y un menú reducido.
+
 5) **Wireframe 5:** 
 **User Story relacionada:** US25 - Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima, para poder preparar insumos con anticipación.
 
 ![wireframe 5](assets/img/chapter-04/wireframes/mobile/mobile-wireframe4.png)
 ![wireframe 5](assets/img/chapter-04/wireframes/web/web-wireframe4.png)
+
+La vista "Predicción de Demanda" muestra tres indicadores en la parte superior (Precisión IA 94%, 4 productos, horizonte de 7 días) y una tarjeta por plato (Tacos de Camarón, Guacamole Fresco, Pollo en Mole) con el total de porciones estimadas para la semana, un gráfico de barras por día (L a D), la tendencia (Alza, Estable), el porcentaje de confianza y la cantidad sugerida a comprar.
 
 6) **Wireframe 6:** 
 **User Story relacionada:** US26 - Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad, para ajustar la oferta de mi restaurante.
@@ -2263,11 +2342,15 @@ usuario con los productos digitales.
 ![wireframe 7](assets/img/chapter-04/wireframes/mobile/mobile-wireframe5.png)
 ![wireframe 7](assets/img/chapter-04/wireframes/web/web-wireframe5.png)
 
+Se muestran dos pantallas: la lista de Inventario ordenada por Urgencia, donde los insumos con etiqueta CRÍTICO y VENCIENDO aparecen primero, y la vista Alertas (8 activas), ordenada de mayor a menor severidad (CRÍTICA, ALTA, MEDIA), con la descripción de cada caso, por ejemplo la cantidad disponible frente al mínimo requerido.
+
 8) **Wireframe 8:** 
 **User Story relacionada:** US28 - Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp, para poder actuar rápido sin necesidad de entrar al sistema.
 
 ![wireframe 8](assets/img/chapter-04/wireframes/mobile/mobile-wireframe6.png)
 ![wireframe 8](assets/img/chapter-04/wireframes/web/web-wireframe6.png)
+
+La vista "Historial de Notificaciones" presenta cuatro contadores por estado (Enviada, Leída, Pendiente, Fallida), las pestañas de filtro por canal (Todos, Email, WhatsApp, Push, En app) y la lista de notificaciones, cada una con título, mensaje, fecha, canal, destinatario y etiqueta de estado. La segunda pantalla muestra la misma vista con el filtro WhatsApp seleccionado, que reduce la lista a las notificaciones enviadas por ese canal.
 
 9) **Wireframe 9:** 
 **User Story relacionada:** US29 - Como nuevo usuario, quiero registrarme en StockIA con mis datos, para poder acceder al sistema y configurar mi restaurante.
@@ -2275,11 +2358,15 @@ usuario con los productos digitales.
 ![wireframe 9](assets/img/chapter-04/wireframes/mobile/mobile-wireframe7.png)
 ![wireframe 9](assets/img/chapter-04/wireframes/web/web-wireframe7.png)
 
+El wireframe muestra tres pantallas: el formulario "Iniciar sesión" vacío, con el selector ES / EN, los campos Correo electrónico y Contraseña (con ícono para mostrarla), la casilla "Recordarme", el enlace "¿Olvidaste tu contraseña?", el botón "Iniciar sesión", los accesos a cuentas de demostración (Admin, Employee) y el enlace "¿No tienes cuenta? Crear cuenta"; el mismo formulario con el correo ingresado; y el Panel de Administrador al que se accede. El punto de entrada al registro es el enlace "Crear cuenta".
+
 10) **Wireframe 10:** 
 **User Story relacionada:** US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, para poder acceder a mi dashboard personalizado.
 
 ![wireframe 10](assets/img/chapter-04/wireframes/mobile/US30%20mobile.png)
 ![wireframe 10](assets/img/chapter-04/wireframes/web/US30%20web.png)
+
+Se representan los estados del inicio de sesión: el formulario con credenciales ingresadas y el Dashboard completo al que conduce (métricas, alertas críticas, próximos a vencer, predicción de demanda, recomendaciones y acciones rápidas); el formulario con el mensaje "Credenciales incorrectas. Verifica tu email y contraseña."; la pantalla "¿Olvidaste tu contraseña?", con el campo de correo y el botón "Enviar instrucciones"; y la confirmación "¡Instrucciones enviadas!" con el botón "Volver al Login".
 
 11) **Wireframe 11:** 
 **User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
@@ -2287,11 +2374,15 @@ usuario con los productos digitales.
 ![wireframe 11](assets/img/chapter-04/wireframes/mobile/US31%20mobile.png)
 ![wireframe 11](assets/img/chapter-04/wireframes/web/US31%20web.png)
 
+El wireframe reúne cinco pantallas: "Planes de StockIA", con el interruptor Mensual / Anual y tres planes (Starter 49, Profesional 149 con la marca "Más popular" y fondo oscuro, Enterprise 399), cada uno con su lista de prestaciones y el botón "Seleccionar plan"; el "Checkout", con el resumen del pedido, los campos Nombre en la tarjeta, Número de tarjeta, Vencimiento y CVV, y el botón "Pagar $49/mes"; la confirmación "¡Suscripción activada!"; la confirmación "¡Suscripción renovada!"; y el Checkout con el mensaje "Pago rechazado. Intenta con otro método." y el botón "Reintentar".
+
 12) **Wireframe 12:** 
 **User Story relacionada:** US32 - Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de los eventos importantes.
 
 ![wireframe 12](assets/img/chapter-04/wireframes/mobile/US32%20mobile.png)
 ![wireframe 12](assets/img/chapter-04/wireframes/web/US32%20web.png)
+
+Se muestran tres pantallas: el detalle de una alerta de severidad CRÍTICA ("Cilantro agotándose"), con su descripción, producto, stock actual y mínimo, y los botones "Marcar como resuelta" y "Enviar por WhatsApp"; el detalle de una alerta de severidad BAJA ("Refrigerador principal OK"); y la lista de Alertas con el botón "Generar resumen" y el mensaje de confirmación "Resumen generado y enviado al correo electrónico".
 
 13) **Wireframe 13:** 
 **User Story relacionada:** US33 - Como administrador, quiero recibir SMS críticos vía Twilio, para poder reaccionar rápido ante emergencias en tiempo real.
@@ -2299,11 +2390,15 @@ usuario con los productos digitales.
 ![wireframe 13](assets/img/chapter-04/wireframes/mobile/US33%20mobile.png)
 ![wireframe 13](assets/img/chapter-04/wireframes/web/US33%20web.png)
 
+El wireframe presenta el detalle de dos alertas de severidad CRÍTICA: "Congelador — temperatura anormal", que indica la temperatura registrada, el rango requerido y el riesgo de descomposición, y "Aceite de oliva crítico", que indica la cantidad disponible y el mínimo requerido. Ambas ofrecen las acciones "Marcar como resuelta" y "Enviar por WhatsApp".
+
 14) **Wireframe 14:** 
 **User Story relacionada:** US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
 
 ![wireframe 14](assets/img/chapter-04/wireframes/mobile/US34%20mobile.png)
 ![wireframe 14](assets/img/chapter-04/wireframes/web/US34%20web.png)
+
+Se muestran dos estados del formulario "Nuevo producto". En el primero, bajo el campo Proveedor aparece el recuadro "Vida útil sugerida: 10 días" con la nota "Fecha de vencimiento calculada automáticamente". En el segundo, el recuadro indica "No se encontró información de vida útil." y ofrece la opción "Ingresar manualmente".
 
 15) **Wireframe 15:** 
 **User Story relacionada:** US35 - Como administrador, quiero poder modificar la vida útil sugerida por la API, para ajustarla a las condiciones reales de mi restaurante.
@@ -2311,17 +2406,30 @@ usuario con los productos digitales.
 ![wireframe 15](assets/img/chapter-04/wireframes/mobile/US35%20mobile.png)
 ![wireframe 15](assets/img/chapter-04/wireframes/web/US35%20web.png)
 
+El wireframe muestra dos estados del formulario "Editar producto" para el insumo Tomate cherry. En ambos, el recuadro de vida útil incluye el campo "Modificar vida útil". En el primero, con almacenamiento "ambient", la vida útil sugerida es de 10 días; en el segundo, con almacenamiento "frozen", la sugerencia cambia a 30 días y la fecha de vencimiento se actualiza.
+
 16) **Wireframe 16:** 
 **User Story relacionada:** US36 - Como administrador, quiero que el sistema calcule automáticamente la fecha límite de consumo según la vida útil registrada, para recibir alertas precisas de vencimiento.
 
 ![wireframe 16](assets/img/chapter-04/wireframes/mobile/US36%20mobile.png)
 ![wireframe 16](assets/img/chapter-04/wireframes/web/US36%20web.png)
 
+Se presenta el formulario de producto con las fechas de ingreso y de vencimiento completadas y el recuadro de vida útil sugerida con la nota "Fecha de vencimiento calculada automáticamente", que evidencia la relación entre la fecha de ingreso, la vida útil y la fecha límite de consumo.
+
 17) **Wireframe 17:** 
 **User Story relacionada:** US37 - Como administrador, quiero que el sistema recopile automáticamente los datos de ventas diarias, para que el modelo de Machine Learning pueda analizarlos y detectar patrones de consumo.
 
 ![wireframe 17](assets/img/chapter-04/wireframes/mobile/US37%20mobile.png)
 ![wireframe 17](assets/img/chapter-04/wireframes/web/US37%20web.png)
+
+La vista "Predicción de Demanda" muestra el resultado del análisis de las ventas: los indicadores de precisión, productos y horizonte, la demanda semanal estimada por plato con su tendencia y nivel de confianza, y el bloque "Demanda total por día", que suma todos los productos.
+
+**Aplicación de principios y elementos de diseño**
+
+- **Principios de diseño:** la *jerarquía* ubica primero lo urgente: las métricas y las alertas críticas encabezan el Dashboard, y el Inventario y las Alertas se ordenan por urgencia. La *consistencia* se logra al repetir la misma estructura (título de vista, acciones, lista de tarjetas) y la misma posición de los controles en todos los módulos. La *proximidad* agrupa en una misma tarjeta los datos y las acciones de cada insumo o alerta. La *retroalimentación* se prevé desde el wireframe con mensajes de confirmación y de error, y la *prevención de errores*, con el cuadro de diálogo que confirma el cambio de rol antes de aplicarlo.
+- **Elementos de diseño:** se usan tarjetas rectangulares de esquinas redondeadas, barras de nivel para la cantidad de stock, gráficos de barras para la demanda, etiquetas tipo píldora para estados y severidades, e íconos de línea junto a cada opción del menú. El valor (tonos de gris) distingue el módulo activo del menú, la acción principal de la secundaria ("Guardar" frente a "Cancelar", "Editar" frente a "Eliminar") y las alertas críticas del resto.
+- **Diseño inclusivo:** el selector ES / EN está presente en todas las vistas, incluida la de inicio de sesión. Los estados y severidades se expresan con texto (CRÍTICO, VENCIENDO, ALTA, MEDIA, ENVIADA, LEÍDA) y no solo con tono o color. Los campos de formulario llevan su rótulo encima, los menús combinan ícono y texto, y el campo de contraseña permite mostrar lo escrito. En mobile, los botones ocupan todo el ancho disponible y la navegación principal queda en la parte inferior de la pantalla, al alcance del pulgar.
+- **Arquitectura de información:** la navegación global agrupa el contenido por módulos, con las mismas etiquetas definidas en la sección 4.2.2 (Dashboard, Inventario, Recetas, Alertas, Roles y Permisos, Planes). La vista de Roles y Permisos aplica la categorización por audiencia y determina qué módulos ve cada rol, lo que se refleja en el menú reducido del Panel del Empleado. El módulo de Inventario aplica el sistema de búsqueda de la sección 4.2.4: buscador de texto, filtro y ordenamiento por Urgencia, Cantidad y Vencimiento. En mobile, los cuatro accesos de la barra inferior priorizan Dashboard, Inventario y Alertas, y el resto de módulos se agrupa en "Más".
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
@@ -2425,7 +2533,7 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 12) **Wireflow 12:**
 
-- User goal: omo administrador, quiero recibir alertas críticas por correo.
+- User goal: Como administrador, quiero recibir alertas críticas por correo.
 
 **User Story relacionada:** US32 - Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de los eventos importantes.
 
@@ -2434,7 +2542,7 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 13) **Wireflow 13:**
 
-- User goal: omo administrador, quiero que el sistema consulte la vida útil de alimentos
+- User goal: Como administrador, quiero que el sistema consulte la vida útil de alimentos
 
 **User Story relacionada:** US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
 
@@ -2575,6 +2683,8 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
+En esta sección se presentan los user flows de la Web Application de StockIA, elaborados en Figma. Cada diagrama se deriva del wireflow del mismo User goal (sección 4.4.2) y lo amplía en dos sentidos: reemplaza los wireframes por los mock-ups de la sección 4.4.3 e incorpora los puntos de decisión, representados con rombos, que separan el camino principal (happy path) de los caminos alternativos (unhappy paths). Los User goals corresponden a la User Persona Carlos Gómez, administrador de restaurante (sección 2.3.1), y los diagramas se presentan en su versión Mobile Web Browser. Para cada flujo se indica el User goal, se explica el diagrama y sus condiciones, y se detallan los pasos de cada camino.
+
 1) **User flow 1:** 
 
 - User goal: Como administrador, quiero agregar, eliminar y modificar insumos en el inventario.
@@ -2583,6 +2693,8 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
 
 ![user flow 1](assets/img/chapter-04/user%20flow/mobile/userflow-mobile1.png)
+
+**Explicación del flujo y sus condiciones:** el diagrama parte del mock-up de Inventario (20 productos) y, al pulsar "+ Nuevo", pasa al formulario "Nuevo producto". Al guardar, un punto de decisión evalúa si la información del formulario está vacía. Si no lo está, el flujo continúa hacia el formulario completo (Tomate cherry, con el recuadro verde "Vida útil sugerida: 10 días") y termina en el Inventario actualizado a 21 productos, con el nuevo insumo en la lista. Si lo está, el flujo conduce al mismo formulario en estado de error: los campos Nombre del producto, Categoría y Cantidad aparecen con borde rojo y los mensajes "Campo requerido" y "Cantidad inválida" debajo de cada uno, de modo que el usuario sabe exactamente qué corregir antes de volver a guardar. El diagrama es consistente con el Wireflow 1 y le añade el estado de validación.
 
 - **Happy Path** — Registro Exitoso de Nuevo Producto
 
@@ -2635,6 +2747,8 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 ![user flow 2](assets/img/chapter-04/user%20flow/mobile/userflow-mobile2.png)
 ![user flow 2](assets/img/chapter-04/user%20flow/mobile/userflow-mobile3.png)
 
+**Explicación del flujo y sus condiciones:** las dos imágenes representan el acceso a la aplicación desde la pantalla "Iniciar sesión", que contiene el enlace "Crear cuenta". La primera plantea un punto de decisión sobre si la información ingresada es incorrecta: si lo es, el flujo lleva al formulario con el mensaje en rojo "Credenciales incorrectas. Verifica tu email y contraseña."; si no lo es, lleva al formulario con credenciales válidas y de allí al Panel de Administrador. La segunda plantea el punto de decisión "¿El usuario olvidó su contraseña?": si la respuesta es sí, el flujo pasa por la pantalla "¿Olvidaste tu contraseña?", donde se ingresa el correo y se pulsa "Enviar instrucciones", y termina en la confirmación "¡Instrucciones enviadas!" con el botón "Volver al Login"; si la respuesta es no, sigue el inicio de sesión normal hasta el Panel de Administrador.
+
 - **Happy Path** — Camino Feliz del Inicio de Sesión y Recuperación
 
 1) El usuario abre la pantalla de inicio de sesión de StockIA.
@@ -2675,6 +2789,8 @@ US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, par
 
 ![user flow 3](assets/img/chapter-04/user%20flow/mobile/US30%20-%20UserFlow%20diagram.png)
 
+**Explicación del flujo y sus condiciones:** el diagrama inicia con el formulario "Iniciar sesión" vacío y continúa con el formulario completo. A partir de allí se encadenan dos puntos de decisión. El primero, "¿Olvidó su contraseña?", deriva en caso afirmativo a la pantalla de recuperación y a la confirmación "¡Instrucciones enviadas!". En caso negativo se evalúa el segundo, "¿Datos correctos?": si la respuesta es sí, el usuario accede al Dashboard; si es no, se muestra el formulario con el mensaje "Credenciales incorrectas" y una flecha de retorno lo devuelve al formulario inicial para reintentar. El diagrama es consistente con el Wireflow 10, que describe el camino principal, y le agrega las dos rutas alternativas.
+
 #### Happy path
 1. El usuario llega a la pantalla de **Iniciar sesión**.
 2. Ingresa correo y contraseña (ej. `admin@cantinaverde.mx`).
@@ -2692,6 +2808,8 @@ US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, par
 US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
 
 ![user flow 4](assets/img/chapter-04/user%20flow/mobile/US31%20-%20UserFlow%20diagram.png)
+
+**Explicación del flujo y sus condiciones:** el diagrama parte de "Planes de StockIA" y, con la acción "Selección de plan", llega al "Checkout". Desde el Checkout se abren tres resultados rotulados sobre las flechas: "Activar suscripción", que termina en la confirmación "¡Suscripción activada!"; "Renovar suscripción", que termina en "¡Suscripción renovada!"; y "Pago rechazado", que muestra el Checkout con la notificación roja "Pago rechazado. Intenta con otro método." y el botón "Reintentar", desde el cual una flecha de retorno regresa al Checkout. El diagrama es consistente con el Wireflow 11, que cubre la activación, y le agrega la renovación y el rechazo del pago.
 
 #### Happy path
 1. El usuario visualiza los **Planes de StockIA** y selecciona uno (ej. Starter).
@@ -2711,6 +2829,8 @@ US32 - Como administrador, quiero recibir alertas críticas por correo vía Send
 
 ![user flow 5](assets/img/chapter-04/user%20flow/mobile/US32%20-%20UserFlow%20diagram.png)
 
+**Explicación del flujo y sus condiciones:** el diagrama parte del Panel de Administrador y pasa por la acción "Recibe alertas", que se bifurca según la alerta consultada: el detalle de una alerta CRÍTICA ("Cilantro agotándose", con fondo rosado y el stock actual en rojo) o el detalle de una alerta BAJA ("Refrigerador principal OK", con fondo verde claro). En ambos casos el usuario puede marcar la alerta como resuelta o enviarla por WhatsApp. Las dos ramas convergen en la acción "Consolidar historial y generar resumen", que lleva a la lista de Alertas, donde el botón "Generar resumen" aparece resaltado y la notificación verde confirma "Resumen generado y enviado al correo electrónico". El diagrama es consistente con el Wireflow 12 y no incluye un punto de decisión con camino de error.
+
 #### Happy path
 1. Desde el Dashboard, el usuario **recibe alertas** (críticas, altas, medias).
 2. Puede entrar al detalle de una alerta (ej. *"Cilantro agotándose"*) y **marcarla como resuelta** o **enviarla por WhatsApp**.
@@ -2725,6 +2845,8 @@ US32 - Como administrador, quiero recibir alertas críticas por correo vía Send
 US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
 
 ![user flow 6](assets/img/chapter-04/user%20flow/mobile/US34%20-%20UserFlow%20diagram.png)
+
+**Explicación del flujo y sus condiciones:** el diagrama parte del Inventario, pasa al formulario "Nuevo producto" y llega al punto de decisión "¿Producto encontrado en la API?". Si la respuesta es sí, el formulario (Tomate) muestra el recuadro verde "Vida útil sugerida: 10 días" con la fecha de vencimiento calculada automáticamente. Si la respuesta es no, el formulario (Chile jalapeño) muestra el recuadro "No se encontró información de vida útil." con el enlace "Ingresar manualmente". En ambos casos el botón "Guardar" permanece disponible, por lo que el camino alternativo no bloquea el registro del insumo. El diagrama es consistente con el Wireflow 13, que describe la rama afirmativa.
 
 #### Happy path
 1. El usuario pulsa **"+ Nuevo"** en Inventario.
@@ -2745,6 +2867,8 @@ US34 - Como administrador, quiero que el sistema consulte una API externa de vid
 US35 - Como administrador, quiero poder modificar la vida útil sugerida por la API, para ajustarla a las condiciones reales de mi restaurante.
 
 ![user flow 7](assets/img/chapter-04/user%20flow/mobile/US35%20-%20UserFlow%20diagram.png)
+
+**Explicación del flujo y sus condiciones:** el diagrama es lineal y consta de tres mock-ups unidos por dos acciones rotuladas. Desde el Inventario, la acción "Editar producto" abre el formulario de Tomate cherry, con almacenamiento "ambient", vida útil sugerida de 10 días y el campo "Modificar vida útil". La acción "Cambio de condiciones de almacenamiento" lleva al mismo formulario con almacenamiento "frozen", vida útil sugerida de 30 días y la fecha de vencimiento actualizada. El diagrama es consistente con el Wireflow 14 y no incluye un punto de decisión con camino de error.
 
 #### Happy path
 1. El usuario pulsa **"Editar"** sobre un producto existente (ej. Tomate cherry).
@@ -2795,26 +2919,26 @@ Para una mejor visualización, se adjunta aquí el [enlace a nuestro tablero de 
 
 
 ### 4.6.2. Software Architecture Context Diagram
-<img src="assets/img/chapter-04/SystemContext.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-SystemContext.png" alt="" alingn ="center"  ><br><br>
 ### 4.6.3. Software Architecture Container Diagrams
-<img src="assets/img/chapter-04/Containers.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-Containers.png" alt="" alingn ="center"  ><br><br>
 ### 4.6.4. Software Architecture Components Diagrams
 **Stock management**
-<img src="assets/img/chapter-04/StockComponents.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-StockComponents.png" alt="" alingn ="center"  ><br><br>
 **Recipes management**
-<img src="assets/img/chapter-04/RecipesComponents.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-RecipesComponents.png" alt="" alingn ="center"  ><br><br>
 **Restaurant Registration**
-<img src="assets/img/chapter-04/RegistrationComponents.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-RegistrationComponents.png" alt="" alingn ="center"  ><br><br>
 **Subscription and Payment Management**
-<img src="assets/img/chapter-04/SubscriptionComponents.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-SubscriptionComponents.png" alt="" alingn ="center"  ><br><br>
 **Notifications**
-<img src="assets/img/chapter-04/NotificationsComponents.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-NotificationsComponents.png" alt="" alingn ="center"  ><br><br>
 **ML and recomendations**
-<img src="assets/img/chapter-04/MLComponents.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-MLComponents.png" alt="" alingn ="center"  ><br><br>
 **Analitics - Dashboard**
-<img src="assets/img/chapter-04/AnalyticsComponents.png" alt="" alingn ="center"   ><br><br>
+<img src="assets/img/chapter-04/C4-AnalyticsComponents.png" alt="" alingn ="center"   ><br><br>
 **Identity and Access Management**
-<img src="assets/img/chapter-04/IAMComponents.png" alt="" alingn ="center"   ><br><br>
+<img src="assets/img/chapter-04/C4-IAMComponents.png" alt="" alingn ="center"   ><br><br>
 ## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
@@ -3079,8 +3203,9 @@ Se siguen el Google Java Style Guide y las convenciones descritas en Spring Boot
 * Uso de anotaciones de Spring Boot y Spring Data JPA (@RestController, @Service, @Repository, @Entity) para reducir código repetitivo y mantener una arquitectura RESTful clara.  
 * Manejo centralizado de excepciones mediante @ControllerAdvice y @ExceptionHandler.  
 * Documentación de endpoints con OpenAPI mediante Swagger (springdoc-openapi).
+
 **Gherkin (criterios de aceptación y pruebas de aceptación)**
- 
+
 Se siguen las Gherkin Conventions for Readable Specifications:
  
 * Estructura obligatoria Given – When – Then.  
@@ -3883,9 +4008,21 @@ En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante implement
 # Video About-the-Team
 
 # Bibliografía
-United Nations Environment Programme. (2024). Food Waste Index Report 2024: Think Eat Save – Tracking progress to halve global food waste. https://wedocs.unep.org/bitstream/handle/20.500.11822/45230/food_waste_index_report_2024.pdf
+Cullen, J. (2021). Administración de inventarios: análisis y modelos. Editorial académica.
+
+Gunders, D., et al. (2017). *Wasted: How America is losing up to 40 percent of its food from farm to fork and landfill*. Natural Resources Defense Council 2017. https://www.nrdc.org/sites/default/files/wasted-2017-report.pdf
 
 López, J., & Martínez, A. (2025). Diseño de un sistema de control de inventarios para reducir el desperdicio de alimentos en restaurantes [Tesis de pregrado, Universidad Laica Eloy Alfaro de Manabí]. Repositorio ULEAM. https://repositorio.uleam.edu.ec/handle/123456789/8924
+
+Panca. (s.f.). El software para restaurantes más completo de Perú. Recuperado el 14 de septiembre de 2026, de https://www.panca.pe/
+
+RestoIQ. (s.f.). Tu restaurante merece
+tecnología propia. Recuperado el 14 de septiembre de 2026, de https://restoiq.cl/
+
+Toteat. (s.f.) El software todo en uno para los restaurantes del Perú. Recuperado el 14 de septiembre de 2026, de https://toteat.com/es-pe/home
+
+United Nations Environment Programme. (2024). Food Waste Index Report 2024: Think Eat Save – Tracking progress to halve global food waste. https://wedocs.unep.org/bitstream/handle/20.500.11822/45230/food_waste_index_report_2024.pdf
+
 
 # Anexos
 URL del repositorio (stockia-report): https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-report.git|
