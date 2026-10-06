@@ -2239,22 +2239,47 @@ En esta sección se presentan los wireframes del Landing Page de StockIA, elabor
 - **Arquitectura de información:** los wireframes materializan lo definido en la sección 4.2. La organización secuencial se observa en los cuatro pasos de "Empieza en minutos"; la categorización por tópicos, en los seis módulos de Características; la categorización por audiencia, en el bloque "¿Para quién es StockIA?"; y la organización matricial, en las pestañas del portafolio. El sistema de navegación se compone del navbar como navegación global, el footer como navegación secundaria (Producto, Empresa, Legal) y la llamada a la acción "Solicitar demo", que se repite en el navbar y en la banda de cierre de cada página y conduce al formulario de contacto de Nosotros.
 
 ### 4.3.2. Landing Page Mock-up
+
+En esta sección se presentan los mock-ups del Landing Page de StockIA, elaborados en Figma en alta fidelidad a partir de los wireframes de la sección 4.3.1. Conservan la misma estructura y orden de secciones, e incorporan el contenido real, la paleta de colores, las tipografías y los componentes definidos en el Design System de la sección 4.1 (Style Guidelines).
+
+**Desktop Web Browser**
+
 <p align="center"><img src="assets/img/chapter-04/M-Inicio.png" width="500" alt="Inicio"/></p>
+
+**Inicio.** El navbar muestra el logotipo de StockIA, el enlace de la página activa resaltado, el selector ES / EN y el botón "Solicitar demo" en verde oscuro. En el hero, sobre un fondo verde muy claro, el titular destaca la palabra "restaurante" en color terracota y cursiva; el botón principal "Optimiza tu inventario →" usa el color de acento y "Ver cómo funciona" se presenta como botón de contorno. Debajo aparecen tres indicadores (−25% desperdicio de alimentos, +18% margen operativo estimado, <5s descuento de insumos por venta). A la derecha se ubica una vista del dashboard con cuatro métricas (Insumos 342, Stock Bajo 9, Por Vencer 4, Ahorro Sem. S/2.3k), el gráfico de demanda proyectada para los próximos siete días y dos alertas: una roja con la etiqueta "crítica" (refrigerador con la puerta abierta) y una amarilla con la etiqueta "IA" (preparar más masa de pizza). Siguen la banda verde oscuro con cuatro cifras y su nota aclaratoria de que son referenciales, las dos tarjetas de "¿Para quién es StockIA?" y la grilla "Todo lo que necesita tu restaurante", con seis tarjetas que incluyen ícono a color, descripción y etiqueta (Gestión de stock, Machine Learning, Compras inteligentes, Hardware conectado, Control de equipo, Impacto medible).
 
 <p align="center"><img src="assets/img/chapter-04/M-Inicio-Continuacion.png" width="500" alt="Inicio-Continuacion"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Inicio (continuación).** Tras el botón "Ver todas las características →" se observa la sección "Más que un inventario" sobre fondo verde oscuro, con tres tarjetas (Gamificación, Sostenibilidad, Aprende de tu restaurante); la sección "Se conecta con el ecosistema que ya usas", cuyas cuatro tarjetas de integraciones llevan borde punteado y la etiqueta "EN EVALUACIÓN"; y el portafolio "La plataforma en acción", con las pestañas Todas las vistas, Inventario e IA & IoT y cuatro mini pantallas (Dashboard principal, Predicción de Demanda, Recetas y Descuento Automático, Sistema de Alertas IoT).
+
 <p align="center"><img src="assets/img/chapter-04/M-Caracteristicas.png" width="500" alt="Caracteristicas"/>
 <br/><i>Artefacto: Figma</i></p>
+
+**Características.** El encabezado verde oscuro presenta el titular "Todo lo que necesitas, en un solo lugar". Las seis tarjetas de módulos se muestran en blanco sobre un fondo gris claro, cada una con un ícono sobre un recuadro de color distinto, su descripción y una etiqueta. La sección "Empieza en minutos" enumera los cuatro pasos en círculos verde oscuro con una breve explicación por paso, y la página cierra con la banda "Empieza a optimizar tu inventario hoy" y el botón "Solicitar demo".
 
 <p align="center"><img src="assets/img/chapter-04/M-Precios.png" width="500" alt="Precios"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Precios.** Bajo el titular "Elige el plan que se adapta a tu restaurante" se muestra el interruptor Mensual / Anual con la etiqueta verde "30% descuento" y los tres planes: Esencial (S/ 0), Profesional (S/ 39), resaltado con borde verde oscuro y la etiqueta "Más popular", e IoT Completo (S/ 79). Las prestaciones incluidas llevan un check verde y las no incluidas una equis gris con el texto atenuado. La sección "Preguntas frecuentes" presenta tres preguntas en formato acordeón, seguidas de la banda de llamada a la acción y el footer en verde oscuro.
+
 <p align="center"><img src="assets/img/chapter-04/M-Nosotros.png" width="500" alt="Nosotros"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Nosotros.** El encabezado verde oscuro contiene el titular "Ayudamos a los restaurantes a no dejar nada al azar", las tarjetas Nuestra Misión y Nuestra Visión con sus textos, y los cinco valores de marca en forma de etiquetas. Debajo se ubican "El equipo detrás de StockIA", con cinco fichas de integrantes de borde punteado; "Conoce al equipo de DataBite Corp", con el contenedor del video del equipo; y "Sobre DataBite Corp", con los datos de la startup (2026, IA + IoT, 1, Perú) en tarjetas.
+
 <p align="center"><img src="assets/img/chapter-04/M-Contacto.png" width="500" alt="Contacto"/>
 <br/><i>Artefacto: Figma</i></p>
+
+**Contacto.** Corresponde al tramo final de la página Nosotros. A la izquierda se presenta el titular "Conversemos sobre tu restaurante" con los datos de Correo y Ubicación (Lima, Perú); a la derecha, el formulario "Solicita una demo", con los campos rotulados Nombre, Restaurante, Correo y Mensaje, textos de ejemplo dentro de cada campo y el botón "Enviar solicitud" en color terracota. La página cierra con la banda de llamada a la acción y el footer, con las columnas Producto, Empresa y Legal.
+
+**Aplicación de principios, elementos de diseño y Design System**
+
+- **Principios de diseño:** la *jerarquía* se refuerza con el tamaño y el peso de los titulares y con el uso del color de acento únicamente en las acciones principales ("Optimiza tu inventario →", "Enviar solicitud"), de modo que cada vista tiene un único punto focal. El *contraste* entre las secciones verde oscuro y las secciones claras marca el cambio de tema, y el texto blanco sobre verde oscuro mantiene la legibilidad. La *repetición* de navbar, etiqueta de sección, titular, tarjetas, banda de cierre y footer da unidad a las cuatro páginas. La *alineación* a la grilla y el *espacio en blanco* entre secciones conservan la estructura validada en los wireframes.
+- **Elementos de diseño:** el color se usa con función y no solo con fin decorativo: verde oscuro para la identidad y la navegación, terracota para las llamadas a la acción y los colores semánticos (rojo, amarillo, verde) para los estados dentro de la vista del dashboard. La tipografía distingue el logotipo del resto del texto. Las formas son tarjetas y botones de esquinas redondeadas, con sombras sutiles que separan las tarjetas del fondo, y los íconos acompañan a cada título para facilitar el reconocimiento.
+- **Diseño inclusivo:** el contenido está disponible en español e inglés mediante el selector ES / EN. Los estados no dependen solo del color: las alertas combinan color, texto y etiqueta ("crítica", "IA"); las prestaciones de cada plan combinan símbolo (check / equis) y texto; y el plan recomendado lleva la etiqueta "Más popular". Los campos del formulario tienen rótulo visible además del texto de ejemplo. El texto oscuro sobre fondo blanco y el texto blanco sobre verde oscuro siguen el criterio de contraste alto señalado en la sección 4.1.2.
+- **Arquitectura de información:** se mantienen los sistemas definidos en la sección 4.2: navegación global en el navbar con indicación de la página activa, navegación secundaria en el footer, organización secuencial en "Empieza en minutos", categorización por tópicos en los seis módulos de Características, categorización por audiencia en "¿Para quién es StockIA?" y filtrado por pestañas en el portafolio. Las etiquetas empleadas (Inventario, Predicción de Demanda con IA, Recomendaciones Automáticas, Monitoreo IoT de Cocina, Roles y Permisos, Sostenibilidad y Gamificación) coinciden con el sistema de rotulado de la sección 4.2.2.
+- **Design System:** los mock-ups aplican las decisiones de la sección 4.1. En color, el primario verde bosque #16332B (navbar, bandas, footer, titulares), el acento terracota #E2673B (botones de acción principal y palabra destacada del hero), los neutros para fondos y bordes, y los semánticos de éxito, advertencia y peligro en métricas y alertas. En tipografía, Inter para titulares y cuerpo, y Orbitron para el logotipo. En componentes, los botones primario, de acento y de contorno, las tarjetas de funcionalidad, de precio y de segmento, las etiquetas de sección, los campos de formulario y el interruptor Mensual / Anual descritos en la sección 4.1.2. Esta misma paleta se reutiliza en la vista del dashboard incluida en el hero, lo que sustenta la consistencia visual entre el Landing Page y la Web Application.
 
 ## 4.4. Web Applications UX/UI Design
 
