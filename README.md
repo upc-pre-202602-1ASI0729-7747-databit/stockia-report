@@ -13,7 +13,7 @@ NRC
 
 **7747**
 
-**Informe del AV1**
+**Informe del TB1**
 
 Docente:
 **Robles Fernández, Ivan**
@@ -64,19 +64,19 @@ Proyecto:
     <td><b>Primera Entrega (AV1)</b></td>
     <td>17/09/2026</td>
     <td>
-      Gallardo Morales,Carla Alejandra <br>
+      Gallardo Morales,Carla Alejandra
       <br>
       <p></p>
-      Huaman Oscco, Aldo Jesus <br>
+      Huaman Oscco, Aldo Jesus
       <br>
       <p></p>
-      Miranda Cordova, Jesus Angel Yvan <br>
+      Miranda Cordova, Jesus Angel Yvan
       <br>
       <p></p>
-      Ortiz Laura, Leyla Alisson <br>
+      Ortiz Laura, Leyla Alisson
       <br>
       <p></p>
-      Toro Turpo, Ronal <br>
+      Toro Turpo, Ronal
     </td>
     <td>
       Capítulo I: 
@@ -93,6 +93,36 @@ Proyecto:
     <br>
       Capítulo V:
       Product Implementation, Validation & Deployment
+    <br>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Segunda Entrega (TB1)</b></td>
+    <td>06/10/2026</td>
+    <td>
+      Gallardo Morales,Carla Alejandra
+      <br>
+      <p></p>
+      Huaman Oscco, Aldo Jesus
+      <br>
+      <p></p>
+      Miranda Cordova, Jesus Angel Yvan
+      <br>
+      <p></p>
+      Ortiz Laura, Leyla Alisson
+      <br>
+      <p></p>
+      Toro Turpo, Ronal
+    </td>
+    <td>
+      Corrección del reporte AV1
+    <br>
+      Nueva versión desplegada de Landing Page
+    <br> 
+      Primera versión desplegada de Frontend Web Applications
+    <br>
+      Capítulo V:
+      Product Implementation, Validation & Deployment (sprint 2)
     <br>
     </td>
   </tr>
