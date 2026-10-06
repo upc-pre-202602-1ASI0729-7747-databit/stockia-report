@@ -2327,7 +2327,7 @@ Se representan los estados del inicio de sesión: el formulario con credenciales
 ![wireframe 11](assets/img/chapter-04/wireframes/mobile/US31%20mobile.png)
 ![wireframe 11](assets/img/chapter-04/wireframes/web/US31%20web.png)
 
-El wireframe reúne cinco pantallas: "Planes de StockIA", con el interruptor Mensual / Anual y tres planes (Starter $49, Profesional $149 con la marca "Más popular" y fondo oscuro, Enterprise $399), cada uno con su lista de prestaciones y el botón "Seleccionar plan"; el "Checkout", con el resumen del pedido, los campos Nombre en la tarjeta, Número de tarjeta, Vencimiento y CVV, y el botón "Pagar $49/mes"; la confirmación "¡Suscripción activada!"; la confirmación "¡Suscripción renovada!"; y el Checkout con el mensaje "Pago rechazado. Intenta con otro método." y el botón "Reintentar".
+El wireframe reúne cinco pantallas: "Planes de StockIA", con el interruptor Mensual / Anual y tres planes (Starter 49, Profesional 149 con la marca "Más popular" y fondo oscuro, Enterprise 399), cada uno con su lista de prestaciones y el botón "Seleccionar plan"; el "Checkout", con el resumen del pedido, los campos Nombre en la tarjeta, Número de tarjeta, Vencimiento y CVV, y el botón "Pagar $49/mes"; la confirmación "¡Suscripción activada!"; la confirmación "¡Suscripción renovada!"; y el Checkout con el mensaje "Pago rechazado. Intenta con otro método." y el botón "Reintentar".
 
 12) **Wireframe 12:** 
 **User Story relacionada:** US32 - Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de los eventos importantes.
