@@ -3476,7 +3476,7 @@ Durante el Sprint 1 el equipo trabajó en dos frentes: la Landing Page y la docu
 
 ### 5.2.2. Sprint 2
  
-El Sprint 2 se dedicó al frontend de la Web Application de StockIA en Angular, organizado por Bounded Context y conectado a una API REST simulada y desplegada. Incluye además la corrección de los hallazgos de la revisión del AV1 en la Landing Page (TS08). El backend real (RESTful API) no forma parte de este Sprint y se mantiene en el Product Backlog (TS09 y TS10).
+El Sprint 2 se dedicó al frontend de la Web Application de StockIA en Angular 22, organizado por Bounded Context y conectado a una API REST simulada y desplegada. Cada integrante implementó su Bounded Context en el repositorio de la organización (`stockia-webapp`) con una rama `feature/*` y su Pull Request. El Sprint incluye además la corrección de los hallazgos de la revisión del AV1 en la Landing Page (TS08). El backend real (RESTful API) no forma parte de este Sprint y se mantiene en el Product Backlog (TS09 y TS10).
 
 #### 5.2.2.1. Sprint Planning 2
  
@@ -3620,51 +3620,56 @@ Cada integrante implementa y sube al repositorio de la organización un Bounded 
  
 | **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| stockia-webapp | main | `a53ca88` | Initial commit | Creación del repositorio de la Web Application en la organización (Aldo_Jesus). | 15/09/2026 |
-| stockia-webapp | main | `5f5e55d` | chore: apuntar el frontend a stockia-mock-api en Render | TS06: `apiBaseUrl` del entorno de desarrollo apunta a la API simulada desplegada (Aldo_Jesus). | 01/10/2026 |
-| stockia-webapp | main | `da25a26` | chore: apuntar el frontend a stockia-mock-api en Render | TS06 y TS07: `apiBaseUrl` del entorno de producción apunta a la API simulada desplegada (Aldo_Jesus). | 01/10/2026 |
- 
-<!-- ACTUALIZAR: una fila por cada commit de cada Bounded Context, por ejemplo:
-| stockia-webapp | feature/restaurant-registration | `xxxxxxx` | feat(iam): add sign-up, sign-in, profile and team management | US09, US10, US11 y RNF08 (Ronal345). | dd/10/2026 |
-| stockia-webapp | feature/stock-recipes-management | `xxxxxxx` | feat(inventory): add inventory, recipes and sale registration | US12, US13 y US14 (Jesus-Miranda-678). | dd/10/2026 |
-| stockia-webapp | feature/ml-recommendations | `xxxxxxx` | feat(demand-forecasting): add forecast and recommendations | US18 (Jesusho22). | dd/10/2026 |
-| stockia-webapp | feature/subscription-payment | `xxxxxxx` | feat(subscription): add plans and simulated checkout | US19 (Carlsss28). | dd/10/2026 |
-| stockia-webapp | feature/analytics-dashboard | `xxxxxxx` | feat(dashboard): add dashboard, alerts and sales history | US15, US16 y US17 (Leylaa-O). | dd/10/2026 |
--->
- 
-**Repositorio de integración del prototipo (`Jesusho22/stockia-platform`)**
- 
-| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
-| :--- | :--- | :--- | :--- | :--- | :---: |
-| stockia-platform | main | `4f712ae` | feat: StockIA Web Application (Angular DDD) + mock API (json-server) | TS05 y TS06: Web Application en Angular 18 organizada por Bounded Context (iam, product-inventory, sales-order, alerts, demand-forecasting, subscription, dashboard) y API simulada con json-server; incluye las pantallas de US09 a US19, los guards de RNF08 y la configuración de Vercel de TS07 (Jesus). | 01/10/2026 |
-| stockia-platform | main | `084801e` | feat: apuntar el frontend a la mock API desplegada en Render | TS06: conexión de los entornos de desarrollo y producción a la API simulada en Render (Jesus). | 01/10/2026 |
- 
-> **Nota:** la versión integrada de la Web Application se encuentra hoy en el repositorio de integración `Jesusho22/stockia-platform`. Siguiendo la mejora acordada en la retrospectiva del Sprint 1, cada integrante sube al repositorio de la organización el Bounded Context a su cargo (ver la tabla de distribución) mediante una rama `feature/*` y su Pull Request, de modo que la autoría de cada tarea quede registrada.
+| stockia-webapp | main | `21f1446` | Initial commit | Creación del repositorio de la Web Application en la organización (Aldo_Jesus). | 04/10/2026 |
+| stockia-webapp | feature/project-setup | `c0700b6` | Merge pull request #1 from upc-pre-202602-1ASI0729-7747-databit/feature/project-setup | TS05: proyecto Angular 22 con Angular Material, configuración de TypeScript, Prettier y Vitest, y componente raíz con su prueba. 24 commits de Carlsss28 (`b9958d0`…`70f05a9`). | 05/10/2026 |
+| stockia-webapp | feature/shared-base | `c5a3abd` | Merge pull request #2 from upc-pre-202602-1ASI0729-7747-databit/feature/shared-base | TS05: clases base `BaseEntity`, `BaseResource`, `BaseResponse`, `BaseAssembler`, `BaseApi` y `BaseApiEndpoint`; environments; layout con menú lateral y vistas Inicio y Página no encontrada. 26 commits de Carlsss28 (`6c71a58`…`6ee339b`). | 05/10/2026 |
+| stockia-webapp | feature/subscription-domain-model | `a71d272` | Merge pull request #3 from upc-pre-202602-1ASI0729-7747-databit/feature/subscription-domain-model | US19: tipos `SubscriptionStatus` y `PaymentMethod`, entidades `Plan` y `Subscription` y comando `SubscribeToPlanCommand`. 5 commits de Carlsss28 (`32a4234`…`d9acc59`). | 05/10/2026 |
+| stockia-webapp | feature/subscription-infrastructure | `52c493b` | Merge pull request #4 from upc-pre-202602-1ASI0729-7747-databit/feature/subscription-infrastructure | US19: rutas de endpoints en los environments, resources y responses, assemblers, endpoints de planes y suscripciones y fachada `SubscriptionService`. 9 commits de Carlsss28 (`37bbe46`…`4ed59e2`). | 05/10/2026 |
+| stockia-webapp | feature/payment-checkout | `91fc40b` | Merge pull request #8 from upc-pre-202602-1ASI0729-7747-databit/feature/payment-checkout | US19: vista de pago simulado con Stripe o PayPal y enlace desde `PlanCard`, con pruebas. 10 commits de Carlsss28 (`4e690ca`…`1cc35e4`). | 05/10/2026 |
+| stockia-webapp | feature/forecasting-domain-model | `222f9fe` | Merge pull request #10 from upc-pre-202602-1ASI0729-7747-databit/feature/forecasting-domain-model | US18: tipo `RecommendationType`, value object `ForecastDataPoint` y entidades `DemandForecast` y `Recommendation`. 4 commits de Jesus (`688ab0b`…`ca6691f`). | 05/10/2026 |
+| stockia-webapp | feature/forecasting-infrastructure | `ae35a92` | Merge pull request #11 from upc-pre-202602-1ASI0729-7747-databit/feature/forecasting-infrastructure | US18: rutas de endpoints en los environments, resources y responses, assemblers, endpoints de proyecciones y recomendaciones y fachada `DemandForecastingService`. 9 commits de Jesus (`6d80a32`…`a05c860`). | 05/10/2026 |
+| stockia-webapp | feature/forecasting-application-store | `d9dbd86` | Merge pull request #12 from upc-pre-202602-1ASI0729-7747-databit/feature/forecasting-application-store | US18: `DemandForecastingStore` (cargar, generar la proyección de 7 días y aplicar recomendaciones) con su prueba. 2 commits de Jesus (`40c547c`…`f5ecc11`). | 05/10/2026 |
+| stockia-webapp | feature/forecasting-routing | `788be60` | Merge pull request #15 from upc-pre-202602-1ASI0729-7747-databit/feature/forecasting-routing | US18: rutas del contexto (`demand-forecasting.routes.ts`). 1 commit de Jesus (`6501e44`). | 05/10/2026 |
+| stockia-webapp | feature/stok-management-recipes | `ca08144` | Merge pull request #16 from upc-pre-202602-1ASI0729-7747-databit/feature/stok-management-recipes | US12, US13, US14 y US15: entidades `InventoryItem`, `Recipe` y `Sale`; servicios de API y de aplicación; vistas de inventario, recetas e historial de ventas; rutas y opciones del menú. 21 commits de Jesus-Miranda-678 (`e8c8a41`…`2d21012`). | 05/10/2026 |
+| stockia-webapp | feature/alerts | `1c429f4` | Merge pull request #18 from upc-pre-202602-1ASI0729-7747-databit/feature/alerts | US17: entidad `Alert`, servicio de API y vista de alertas con entrega por canal y reintento. 1 commit de Leylaa-O (`0ede3ad`). | 05/10/2026 |
+| stockia-webapp | feature/fake-api | `1fb0064` | Merge pull request #19 from upc-pre-202602-1ASI0729-7747-databit/feature/fake-api | TS06: datos de la API en memoria (`in-memory-data.service.ts`) para trabajar sin conexión. 2 commits de Leylaa-O (`5fca0ab`…`f00edd8`). | 06/10/2026 |
+| stockia-webapp | develop | `51d6a1d` | feat(iam): add base api url | US09: URL base de la API para el contexto IAM (Ronal345). | 06/10/2026 |
+| stockia-webapp | feature/dashboard | `88fa97f` | Merge pull request #20 from upc-pre-202602-1ASI0729-7747-databit/feature/dashboard | US16: el dashboard consume `DemandForecastingStore` para mostrar la última proyección. 1 commit de Leylaa-O (`9db8404`). | 06/10/2026 |
  
 **Repositorio de la Landing Page (`stockia-website`) — TS08**
  
 | **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
- 
-<!-- ACTUALIZAR: commits de TS08 (Carla: menú móvil, botón "Solicitar demo", fichas reales del equipo, filtro del portafolio,
-     términos y condiciones y enlace con la Web Application; Miranda: integración de pricing.html). -->
+| stockia-website | develop | `f4b0754` | feat : add pricing.html | T-TS08-6: integración de la página de precios en el repositorio de la organización (Jesus-Miranda-678). | 04/10/2026 |
+| stockia-website | main | `d15606e` | Merge pull request #4 from upc-pre-202602-1ASI0729-7747-databit/develop | Publicación de `develop` en `main` con las cuatro páginas de la Landing Page (Aldo_Jesus). | 04/10/2026 |
  
 **Repositorio del informe (`stockia-report`)**
  
 | **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
 | stockia-report | develop | `6e426b8` | Update README.md | Actualización del capítulo III (Ronal345). | 27/09/2026 |
-| stockia-report | develop | `5b9f418` | docs(chapter-03): validation of epics and addition of metrics. | Épicas alineadas a los objetivos estratégicos y a su KPI (Jesus). | 04/10/2026 |
-| stockia-report | develop | `8b09138` | docs(chapter-03): user story validation and metric correction. | User Stories con el «para» alineado a métricas y escenarios Gherkin (Jesus). | 04/10/2026 |
-| stockia-report | develop | `e81f46e` | docs(chapter-03): correction of non-functional requirements | RNF con atributo de calidad, actor afectado y criterio medible (Jesus). | 04/10/2026 |
-| stockia-report | develop | `3392142` | docs(chapter-03): product backlog update | Product Backlog ordenado por Story Points con los mismos IDs y títulos (Jesus). | 04/10/2026 |
-| stockia-report | develop | `13515bc` | docs(chapter-05): added sprint 2 backlog with task breakdown and capacity | Sprint Backlog 2 con tareas, responsables, horas y capacidad (Jesus). | 04/10/2026 |
- 
-<!-- ACTUALIZAR: agregar los commits de los demás integrantes en el informe durante el Sprint 2. -->
+| stockia-report | feature/chapter-03 | `8b09138` | docs(chapter-03): user story validation and metric correction. | User Stories con el «para» alineado a métricas y escenarios Gherkin (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-03 | `e81f46e` | docs(chapter-03): correction of non-functional requirements | RNF con atributo de calidad, actor afectado y criterio medible (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-03 | `ae9d32c` | docs(chapter-03): updated backlog evidence | Evidencia del Product Backlog en Jira (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `13515bc` | docs(chapter-05): added sprint 2 backlog with task breakdown and capacity | Sprint Backlog 2 con tareas, responsables, horas y capacidad (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `6c9fa0f` | docs(chapter-05): updated sprint 1 execution evidence | Evidencia de ejecución del Sprint 1 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `6b4acac` | docs(chapter-05): updated sprint 1 services documentation evidence | Documentación de servicios del Sprint 1 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `783248a` | docs(chapter-05): updated sprint 1 deployment evidence | Evidencia de despliegue del Sprint 1 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `8d90971` | docs(chapter-05): updated sprint 1 team collaboration insights | Colaboración del equipo en el Sprint 1 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `f9c8055` | docs(chapter-05): added sprint 2 introduction and scope | Introducción y alcance del Sprint 2 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `d78e67c` | docs(chapter-05): added sprint 2 planning with sprint review, retrospective and sprint goal | Sprint Planning 2 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `3364c76` | docs(chapter-05): added sprint 2 aspect leaders and collaborators matrix | LACX del Sprint 2 (Jesus). | 04/10/2026 |
+| stockia-report | feature/R-05 | `d209edc` | Update Análisis competitivo.md | Actualización del análisis competitivo (Jesus-Miranda-678). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `e28b3af` | docs(chapter-05): added sprint 2 team collaboration insights | Colaboración del equipo en el Sprint 2 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `be87bc9` | docs(chapter-05): updated sprint 2 | Ajustes del Sprint 2 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-2 | `28c62e2` | doc(chapter-2): update competitive analysis | Análisis competitivo del capítulo II (Leylaa-O). | 05/10/2026 |
+| stockia-report | feature/chapter-2 | `12dbac7` | doc(chapter-2): update interviews analysis | Actualización del análisis de entrevistas (Leylaa-O). | 05/10/2026 |
+| stockia-report | feature/report-communication-quality | `454f094` | doc: update team member profiles | Perfiles de los integrantes (Leylaa-O). | 05/10/2026 |
+| stockia-report | feature/report-communication-quality | `d3f2836` | doc: update bibliography | Bibliografía (Leylaa-O). | 05/10/2026 |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
  
-En el Sprint 2 se implementó la primera versión de la Web Application de StockIA. A continuación se presenta cada pantalla junto con la User Story o el requisito que la respalda:
+En el Sprint 2 se implementó la primera versión de la Web Application de StockIA. Las capturas corresponden a la versión desplegada en [stockia-appweb.vercel.app](https://stockia-appweb.vercel.app) (TS07), que consume la API simulada en Render (TS06). A continuación se presenta cada pantalla junto con la User Story o el requisito que la respalda:
  
 <br/>
 1. **Registro de restaurante (US09):** formulario de creación de cuenta con validaciones por campo; la cuenta se crea con el rol Administrador.
@@ -3727,22 +3732,16 @@ En el Sprint 2 se implementó la primera versión de la Web Application de Stock
   <br/><i>Planes de suscripción — US19</i>
 </p>
 <br/>
-11. **Correcciones de la Landing Page (TS08):** menú desplegable en móvil, botón "Solicitar demo" enlazado al formulario y fichas reales del equipo.
-<p align="center">
-  <img src="assets/img/chapter-05/s2-11-landing-fixes.png" width="800" alt="Correcciones de la Landing Page"/>
-  <br/><i>Correcciones de la Landing Page — TS08</i>
-</p>
-<br/>
 **Verificación de los requisitos no funcionales**
  
 | **RNF** | **Criterio medible** | **Verificación** | **Resultado** |
 | :--- | :--- | :--- | :--- |
-| RNF08 | 100 % de las rutas bajo `/app` protegidas por `authGuard`; 100 % de las rutas administrativas protegidas por `adminGuard`; 0 accesos sin sesión | Prueba de cada ruta sin sesión, con rol Empleado y con rol Administrador | Las 10 pantallas bajo `/app` están protegidas por `authGuard` y `/app/roles` usa `adminGuard`; sin sesión se redirige a `/auth/sign-in` y el Empleado es redirigido a `/app/dashboard`. |
-| RNF09 | 100 % de las listas con estado vacío; 100 % de las eliminaciones y anulaciones con confirmación; mensaje de éxito o error en cada formulario | Lista de verificación por pantalla | Las eliminaciones de insumos, recetas, alertas e integrantes y la anulación de ventas piden confirmación. <!-- ACTUALIZAR: resultado de estados vacíos y de carga al cerrar RNF09. --> |
+| RNF08 | 100 % de las rutas bajo `/app` protegidas por `authGuard`; 100 % de las rutas administrativas protegidas por `adminGuard`; 0 accesos sin sesión | Revisión de las rutas y prueba de cada ruta sin sesión, con rol Empleado y con rol Administrador | En la versión desplegada se cumple: las 10 pantallas bajo `/app` usan `authGuard`, `/app/roles` usa `adminGuard`, sin sesión se redirige a `/auth/sign-in` y el Empleado es redirigido a `/app/dashboard`. En `stockia-webapp` los guards ya están en `develop`, pero aún no se aplican porque las rutas de IAM no están registradas (T-US10-3 y T-RNF08-1, In Progress). |
+| RNF09 | 100 % de las listas con estado vacío; 100 % de las eliminaciones y anulaciones con confirmación; mensaje de éxito o error en cada formulario | Lista de verificación por pantalla | Cumple parcialmente. Confirmaciones: 5 de 5 (insumos, recetas, alertas, integrantes y anulación de ventas). Estados vacíos: 9 de 10 listas (falta la de planes). Mensajes de resultado: inicio de sesión, registro, perfil y planes muestran el resultado de la acción; los formularios de inventario y de alertas validan sus campos, pero no confirman el guardado. Los ajustes pendientes quedan en T-RNF09-1. |
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
  
-En el Sprint 2 la Web Application consume una API REST simulada con **json-server**, desplegada en Render bajo el prefijo `/api/v1`. Cada colección del dominio expone las operaciones REST estándar (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`), y el frontend accede a ellas desde la capa `infrastructure` de cada Bounded Context. Al reemplazar `apiBaseUrl` por la URL del RESTful API real (TS10), ningún componente de presentación cambia.
+En el Sprint 2 la Web Application consume una API REST simulada con **json-server**, desplegada en Render. Cada colección del dominio expone las operaciones REST estándar (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`), y el frontend accede a ellas desde la capa `infrastructure` de cada Bounded Context. El servidor atiende cada recurso con el prefijo `/api/v1` (por ejemplo, `/api/v1/plans`) y también sin él (`/plans`), porque reescribe `/api/v1/*` hacia el recurso; los contextos de `stockia-webapp` usan cualquiera de las dos formas desde sus environments. Al reemplazar la URL base por la del RESTful API real (TS10), ningún componente de presentación cambia.
  
 | **Endpoint** | **Acción (HTTP)** | **Parámetros** | **Descripción del Response** | **User Story** |
 | :--- | :---: | :--- | :--- | :---: |
@@ -3761,11 +3760,11 @@ En el Sprint 2 la Web Application consume una API REST simulada con **json-serve
 | `/api/v1/plans` | GET | — | `200 OK` con los planes, su precio y sus características. | US19 |
 | `/api/v1/subscriptions` y `/api/v1/subscriptions/{id}` | GET / POST / PUT | `planId`, método de pago, estado | `201 Created` o `200 OK` con la suscripción activada o cambiada. | US19 |
  
-* **Repositorio de la API simulada:** https://github.com/Jesusho22/stockia-platform/tree/main/mock-api
+* **Repositorio de la API simulada:** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-mock-api.git
 * **URL de la API simulada desplegada:** https://stockia-mock-api.onrender.com/api/v1
 <p align="center">
-  <img src="assets/img/chapter-05/s2-api-health.png" width="700" alt="API simulada en Render"/>
-  <br/><i>Respuesta de /api/v1/health en la API simulada desplegada en Render — TS06</i>
+  <img src="assets/img/chapter-05/fake-api.png" width="700" alt="API simulada en Render"/>
+  <br/><i>API simulada desplegada en Render — TS06</i>
 </p>
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
@@ -3775,11 +3774,17 @@ En el Sprint 2 se desplegaron dos componentes: la API simulada en **Render** (TS
 **Actividades de despliegue realizadas**
  
 1. Se publicó la API simulada en Render como servicio Node.js (`server.js` con json-server), con CORS habilitado, el prefijo `/api/v1` y el endpoint de salud `/api/v1/health`.
-2. Se configuraron los entornos de Angular (`environment.ts` y `environment.prod.ts`) para que `apiBaseUrl` apunte a la API desplegada.
-3. Se preparó `vercel.json` para la Web Application: `npm run build` como comando de build, `dist/stockia-webapp/browser` como carpeta de salida y una regla de reescritura a `index.html` para que las rutas internas de Angular no respondan con error 404.
-4. Se verificaron en producción el inicio de sesión, la recarga de rutas internas y las redirecciones de los guards (T-TS07-2).
+2. Se configuraron los entornos de Angular (`environment.ts` y `environment.prod.ts`) para que la URL base apunte a la API desplegada.
+3. Se configuró en Vercel el proyecto `stockia-platform`, conectado a la rama `main` de `Jesusho22/stockia-platform`, con el framework Angular, Node.js 24.x y `vercel.json`: `npm run build` como comando de build, `dist/stockia-webapp/browser` como carpeta de salida y una regla de reescritura a `index.html` para que las rutas internas de Angular no respondan con error 404.
+4. Se actualizó la versión desplegada a Angular 22 para alinearla con `stockia-webapp` y se verificaron en producción el inicio de sesión, la recarga de rutas internas y las redirecciones de los guards (T-TS07-2).
+| **Fecha** | **Commit desplegado** | **Cambio** | **Entorno** | **Estado** |
+| :---: | :---: | :--- | :---: | :---: |
+| 01/10/2026 | `084801e` | Conexión a la API simulada en Render | Production | Ready |
+| 05/10/2026 | `4cb283d` | Actualización a Angular 22 | Production | Ready |
+ 
 * **URL de la API simulada:** https://stockia-mock-api.onrender.com/api/v1
-* **URL de la Web Application desplegada:** <!-- ACTUALIZAR: URL de Vercel de la Web Application -->
+* **URL de la Web Application desplegada:** https://stockia-webapp.vercel.app
+ 
 **Evidencia: API simulada en Render**
  
 <p align="center">
@@ -3790,48 +3795,54 @@ En el Sprint 2 se desplegaron dos componentes: la API simulada en **Render** (TS
  
 <p align="center">
   <img src="assets/img/chapter-05/s2-deploy-vercel.png" width="800" alt="Web Application en Vercel"/>
-  <br/><i>Proyecto de la Web Application en Vercel con el historial de despliegues</i>
+  <br/><i>Proyecto stockia-platform en Vercel con el historial de despliegues</i>
 </p>
 <p align="center">
   <img src="assets/img/chapter-05/s2-deploy-webapp.png" width="800" alt="Web Application desplegada"/>
-  <br/><i>Web Application desplegada</i>
+  <br/><i>Web Application desplegada en stockia-platform.vercel.app</i>
 </p>
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
  
 **Dinámica de trabajo**
  
-En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante implementó un contexto completo del capítulo IV en sus cuatro capas (domain, infrastructure, application y presentation) y lo integró en la Web Application (ver 5.2.2.2 y la tabla de distribución de 5.2.2.4). Además, cada responsable revisa y actualiza el diagrama de clases y el diagrama C4 de su contexto para reflejar lo implementado. Las tareas se gestionaron en Jira, en el proyecto STOCKIA-OS, con un responsable por subtarea y su estado actualizado. Aplicando la mejora de la retrospectiva del Sprint 1, el trabajo se integra con una rama `feature/*` por contexto o tarea, con el ID de la tarea en el mensaje de commit y con revisión por Pull Request antes de llegar a `develop`.
+En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante implementó un contexto del capítulo IV en sus capas y lo integró en `stockia-webapp` (ver 5.2.2.2 y la distribución de 5.2.2.4). Carla creó primero la base del proyecto (PR #1 y #2) con las clases base compartidas y el patrón de trabajo: una rama `feature/*` por capa, un commit por archivo y un Pull Request hacia `develop`. En total se integraron 20 Pull Requests en `develop` entre el 05/10 y el 06/10/2026. Aplicando la mejora de la retrospectiva del Sprint 1, cada rama corresponde a una capa o tarea y cada commit indica el contexto en su mensaje (`feat(subscription)`, `feat(forecasting)`, `feat(inventory)`, `feat(iam)`). Las tareas se gestionaron en Jira, en el proyecto STOCKIA-OS, con un responsable por subtarea.
  
 **Aporte por integrante**
  
-| **Integrante** | **GitHub** | **Aporte principal en el Sprint 2** | **Horas asignadas** | **Commits en el Sprint 2** |
-| :--- | :--- | :--- | :---: | :---: |
-| Gallardo Morales, Carla Alejandra | Carlsss28 | Subscription and Payment Management (US19); nueva versión de la Landing Page y enlace con la Web Application (TS08); verificación de estados y confirmaciones (RNF09) y pruebas en producción (TS07) | 19.5 | <!-- ACTUALIZAR --> |
-| Huaman Oscco, Aldo Jesus | Jesusho22 | ML and Recommendations (US18); arquitectura por Bounded Context (TS05), API simulada (TS06) y despliegue en Vercel (TS07) | 28 | <!-- ACTUALIZAR --> |
-| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | Stock Management & Recipes Management (US12, US13, US14); integración de `pricing.html` (TS08) | 33 | <!-- ACTUALIZAR --> |
-| Ortiz Laura, Leyla Alisson | Leylaa-O | Analytics and Dashboard (US16), alertas operativas (US17) e historial de ventas (US15) | 26.5 | <!-- ACTUALIZAR --> |
-| Toro Turpo, Ronal | Ronal345 | Restaurant Registration: registro, inicio de sesión, perfil, equipo y roles (US09, US10, US11) y control de acceso (RNF08) | 30.5 | <!-- ACTUALIZAR --> |
+| **Integrante** | **GitHub** | **Aporte principal en el Sprint 2** | **Horas asignadas** | **Commits (webapp / website / report)** | **Pull Requests integrados (webapp / website / report)** |
+| :--- | :--- | :--- | :---: | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | Base del proyecto y clases compartidas (TS05); Subscription and Payment Management (US19) con 15 pruebas unitarias | 26.5 | 94 / 0 / 0 | 9 / 0 / 0 |
+| Huaman Oscco, Aldo Jesus | Jesusho22 (en Git: Jesus / Aldo_Jesus) | ML and Recommendations (US18) con 13 pruebas unitarias; API simulada en Render (TS06); despliegue en Vercel (TS07); capítulos III y V del informe | 21 | 32 / 0 / 24 | 6 / 1 / 3 |
+| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | Stock Management & Recipes Management: inventario, recetas, registro e historial de ventas (US12, US13, US14, US15); `pricing.html` (TS08) | 38 | 21 / 1 / 1 | 1 / 0 / 1 |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | Analytics and Dashboard: dashboard (US16) y alertas (US17); API en memoria (TS06); capítulo II, índice y bibliografía del informe | 21.5 | 5 / 0 / 8 | 4 / 0 / 2 |
+| Toro Turpo, Ronal | Ronal345 | Restaurant Registration: registro, inicio de sesión, perfil, equipo y roles (US09, US10, US11) y guards (RNF08) | 30.5 | 10 / 0 / 1 | 0 / 0 / 0 |
  
-**Evidencia: tablero del Sprint 2 en Jira**
+**Lecciones para el Sprint 3**
  
-<p align="center">
-  <img src="assets/img/chapter-05/s2-jira-board.png" width="800" alt="Tablero del Sprint 2 en Jira"/>
-  <br/><i>Tablero del Sprint 2 en Jira (STOCKIA-OS)</i>
-</p>
+1. **Revisión cruzada:** cada Pull Request lo aprobará un integrante distinto de su autor antes del merge; en el Sprint 2 cada autor integró sus propios PR.
+2. **Nada directo en `develop`:** todo cambio entrará por Pull Request, incluidos los de IAM, que en este Sprint se subieron directamente.
+3. **Compilar antes de integrar:** cada PR debe pasar `npm run build` y `ng test`; se agregará una verificación automática con GitHub Actions para que un error como el del dashboard no llegue a `develop`.
+4. **Integración en el mismo Sprint:** registrar las rutas y la opción del menú en el PR de routing de cada contexto, para que toda pantalla integrada sea accesible.
+5. **Despliegue desde la organización:** publicar en Vercel la rama `main` de `stockia-webapp` y migrar la API simulada al repositorio `stockia-mock-api` de la organización.
 **Evidencia: contribuciones por integrante en `stockia-webapp`**
  
 <p align="center">
   <img src="assets/img/chapter-05/s2-contributors-webapp.png" width="700" alt="Contribuciones por integrante en stockia-webapp"/>
   <br/><i>Insights → Contributors del repositorio stockia-webapp</i>
 </p>
+**Evidencia: Pull Requests integrados en `stockia-webapp`**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/s2-pull-requests-webapp.png" width="700" alt="Pull Requests de stockia-webapp"/>
+  <br/><i>Pull Requests #1 a #20 integrados en develop</i>
+</p>
 **Evidencia: grafo de GitFlow**
  
 <p align="center">
   <img src="assets/img/chapter-05/s2-network-webapp.png" width="700" alt="Grafo de ramas de stockia-webapp"/>
-  <br/><i>Insights → Network: ramas feature integradas mediante Pull Request</i>
+  <br/><i>Insights → Network: ramas feature integradas en develop mediante Pull Request</i>
 </p>
-
  
  
 ## 5.3. Validation Interviews
