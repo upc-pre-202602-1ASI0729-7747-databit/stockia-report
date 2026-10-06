@@ -2470,11 +2470,17 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 ### 4.4.3. Web Applications Mock-ups
 
+En esta sección se presentan los mock-ups de la Web Application de StockIA, elaborados en Figma en alta fidelidad a partir de los wireframes de la sección 4.4.1. Mantienen la misma estructura, contenido y estados, y aplican el Design System de la sección 4.1. Cada mock-up se asocia a una User Story y se muestra en sus versiones Mobile Web Browser y Desktop Web Browser; en las User Stories US30 a US37, las imágenes se organizan por escenario.
+
+En todas las vistas autenticadas, el menú lateral de desktop usa el verde oscuro de la marca como fondo y resalta el módulo activo con el color terracota; el logotipo distingue las letras "IA" con ese mismo color; el contador de alertas es rojo; y el contenido se presenta en tarjetas blancas sobre un fondo gris verdoso muy claro. En mobile, el encabezado y la barra de navegación inferior son blancos y el acceso activo de la barra se marca en terracota.
+
 1) **Mock-up 1:** 
 **User Story relacionada:** US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
 
 ![mockup 1](assets/img/chapter-04/mockups/mockups-mobile/mockup-mobile1.png)
 ![mockup 1](assets/img/chapter-04/mockups/mockups-web/mockup-web1.png)
+
+Se muestran la lista de Inventario, el formulario "Nuevo producto" vacío y con datos, y la lista actualizada. El botón "+ Nuevo" y el botón "Guardar" usan el color de acento. En cada tarjeta de insumo, el estado se indica con un punto de color y una etiqueta (roja para CRÍTICO, amarilla para VENCIENDO, verde para OK), y la barra de nivel cambia de rojo a amarillo y a verde según la cantidad disponible. La acción "Eliminar" se diferencia de "Editar" con texto rojo sobre fondo rosado, para advertir que es destructiva.
 
 2) **Mock-up 2:** 
 **User Story relacionada:** US22 - Como administrador, quiero guardar recetas con ingredientes vinculados al inventario, para que al venderse un plato se descuenten automáticamente los insumos.
@@ -2486,17 +2492,23 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 ![mockup 3](assets/img/chapter-04/mockups/mockups-mobile/mockup-mobile2.png)
 ![mockup 3](assets/img/chapter-04/mockups/mockups-web/mockup-web2.png)
 
+En el Panel de Administrador, cada métrica toma el color de su significado: el stock crítico en rojo, las alertas activas en terracota y el ahorro estimado en verde. Las alertas críticas se presentan en tarjetas de fondo rosado con el título en rojo, y los insumos próximos a vencer llevan la etiqueta amarilla VENCIENDO. Los enlaces "Ver todas" y "Ver inventario" usan el color de acento. En la vista Alertas, la severidad se codifica con color y texto a la vez: rojo para CRÍTICA, naranja para ALTA y amarillo para MEDIA.
+
 4) **Mock-up 4:** 
 **User Story relacionada:** US24 - Como administrador, quiero asignar roles a empleados, para que cada uno tenga recomendaciones personalizadas y permisos adecuados dentro del sistema.
 
 ![mockup 4](assets/img/chapter-04/mockups/mockups-mobile/mockup-mobile4.png)
 ![mockup 4](assets/img/chapter-04/mockups/mockups-web/mockup-web3.png)
 
+La tabla "Permisos por rol" marca con una casilla verde los módulos habilitados y con un guion los no habilitados. En "Usuarios del restaurante", la etiqueta ADMIN se muestra en terracota y EMPLEADO en gris. El cuadro de diálogo "Confirmar cambio de rol" aparece sobre el fondo oscurecido, con "Confirmar" como botón de acento y "Cancelar" como botón de texto, y el mensaje "Rol actualizado correctamente." se presenta en una notificación verde oscuro. La última pantalla es el Panel del Empleado, con sus tres métricas y sus alertas activas.
+
 5) **Mock-up 5:** 
 **User Story relacionada:** US25 - Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima, para poder preparar insumos con anticipación.
 
 ![mockup 5](assets/img/chapter-04/mockups/mockups-mobile/mockup-mobile3.png)
 ![mockup 3](assets/img/chapter-04/mockups/mockups-web/mockup-web4.png)
+
+En "Predicción de Demanda", la precisión del modelo se muestra en verde y el horizonte en terracota. Los gráficos de barras usan un degradado verde que se intensifica en los días de mayor demanda (sábado y domingo), el total de porciones y la cantidad a comprar se destacan en terracota, y la tendencia "Alza" se indica con una etiqueta verde acompañada de una flecha.
 
 6) **Mock-up 6:** 
 **User Story relacionada:** US26 - Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad, para ajustar la oferta de mi restaurante.
@@ -2508,16 +2520,23 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 ![mockup 7](assets/img/chapter-04/mockups/mockups-mobile/mockup-mobile6.png)
 ![mockup 7](assets/img/chapter-04/mockups/mockups-web/mockup-web5.png)
 
+Se presentan el Inventario ordenado por Urgencia y la vista Alertas. El color de las barras de nivel y de las etiquetas permite reconocer de inmediato qué insumos están en estado crítico, y la lista de alertas mantiene la codificación rojo, naranja y amarillo según la severidad, siempre junto a la etiqueta de texto correspondiente.
+
 8) **Mock-up 8:** 
 **User Story relacionada:** US28 - Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp, para poder actuar rápido sin necesidad de entrar al sistema.
 
 ![mockup 8](assets/img/chapter-04/mockups/mockups-mobile/mockup-mobile7.png)
 ![mockup 3](assets/img/chapter-04/mockups/mockups-web/mockup-web6.png)
+
+En el "Historial de Notificaciones", el filtro de canal activo (Todos o WhatsApp) se muestra con fondo verde oscuro y texto blanco. La etiqueta ENVIADA es verde y LEÍDA es gris, y las notificaciones ya leídas se atenúan para dar prioridad visual a las pendientes de atención. Cada canal se identifica con un ícono además de su nombre.
+
 9) **Mock-up 9:** 
 **User Story relacionada:** US29 - Como nuevo usuario, quiero registrarme en StockIA con mis datos, para poder acceder al sistema y configurar mi restaurante.
 
 ![mockup 5](assets/img/chapter-04/mockups/mockups-mobile/mockup-mobile8.png)
 ![mockup 3](assets/img/chapter-04/mockups/mockups-web/mockup-web7.png)
+
+La pantalla "Iniciar sesión" se presenta en una tarjeta blanca centrada, con el logotipo en la parte superior. El botón "Iniciar sesión" y los enlaces "¿Olvidaste tu contraseña?" y "Crear cuenta" usan el color de acento, y el selector ES / EN marca el idioma activo en verde oscuro. La tercera pantalla muestra el Panel de Administrador al que se accede.
 
 10) **Mock-up 10:** 
 **User Story relacionada:** US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, para poder acceder a mi dashboard personalizado.
@@ -2529,6 +2548,8 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 | ![mockup 10](assets/img/chapter-04/mockups/mockups-web/US30%20-%20Escenario%201%20Web-1.png) | ![mockup 10](assets/img/chapter-04/mockups/mockups-web/US30%20-%20Escenario%201%20Web.png) |
 |---------------------------------------------|---------------------------------------------|
 | ![mockup 10](assets/img/chapter-04/mockups/mockups-web/US30%20-%20Escenario%202%20Web.png) | ![mockup 10](assets/img/chapter-04/mockups/mockups-web/US30%20-%20Escenario%203%20Web.png) |
+
+Los mock-ups cubren los escenarios del inicio de sesión: el formulario con credenciales válidas y el Dashboard resultante; el formulario con el mensaje "Credenciales incorrectas. Verifica tu email y contraseña." en un recuadro rosado con texto rojo, ubicado justo encima del botón; y la recuperación de contraseña, que termina en la confirmación "¡Instrucciones enviadas!" con un ícono de correo en verde y el botón "Volver al Login".
 
 11) **Mock-up 11:** 
 **User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
@@ -2547,6 +2568,8 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 ![mockup 10](assets/img/chapter-04/mockups/mockups-web/US31%20-%20Escenario%203%20Web.png)
 
+En "Planes de StockIA", el plan Profesional se distingue de los demás con fondo verde oscuro, borde terracota y la marca "Más popular" con una estrella; los precios y los botones "Seleccionar plan" usan el color de acento. El "Checkout" muestra el resumen del pedido, los campos de la tarjeta con texto de ejemplo y la nota "Pago simulado · Datos de ejemplo · No se realizarán cargos reales". La confirmación "¡Suscripción activada!" presenta el resumen del plan en un recuadro verde claro, y el escenario de error muestra la notificación roja "Pago rechazado. Intenta con otro método." junto al botón "Reintentar".
+
 12) **Mock-up 12:** 
 **User Story relacionada:** US32 - Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de los eventos importantes.
 
@@ -2558,12 +2581,16 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 ![mockup 12](assets/img/chapter-04/mockups/mockups-web/US32%20-%20Escenario%203%20Web.png)
 
+El detalle de alerta muestra la etiqueta de severidad, la descripción sobre un fondo del color de esa severidad, y las acciones "Marcar como resuelta" (botón de acento) y "Enviar por WhatsApp" (botón blanco con ícono). En la lista de Alertas, el botón "Generar resumen" es verde oscuro y la confirmación "Resumen generado y enviado al correo electrónico" aparece en una notificación verde.
+
 13) **Mock-up 13:** 
 **User Story relacionada:** US33 - Como administrador, quiero recibir SMS críticos vía Twilio, para poder reaccionar rápido ante emergencias en tiempo real.
 
 | ![mockup 13](assets/img/chapter-04/mockups/mockups-mobile/US33%20-%20Escenario%201%20Mobile.png) | ![mockup 13](assets/img/chapter-04/mockups/mockups-mobile/US33%20-%20Escenario%202%20Mobile.png) | 
 |---------------------------------------------|---------------------------------------------|
 | ![mockup 13](assets/img/chapter-04/mockups/mockups-web/US33%20-%20Escenario%201%20Web.png) | ![mockup 13](assets/img/chapter-04/mockups/mockups-web/US33%20-%20Escenario%202%20Web.png) | 
+
+Los dos escenarios muestran el detalle de alertas de severidad CRÍTICA (temperatura anormal del congelador y aceite de oliva en nivel crítico), con la etiqueta roja, la descripción en un recuadro rosado y las mismas dos acciones del mock-up anterior.
 
 14) **Mock-up 14:** 
 **User Story relacionada:** US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
@@ -2572,6 +2599,8 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 |---------------------------------------------|---------------------------------------------|
 | ![mockup 14](assets/img/chapter-04/mockups/mockups-web/US34%20-%20Escenario%201%20Web.png) | ![mockup 14](assets/img/chapter-04/mockups/mockups-web/US34%20-%20Escenario%202%20Web.png) |
 
+En el primer escenario, el formulario "Nuevo producto" muestra el recuadro de vida útil sugerida en verde. En el segundo, el recuadro es neutro, indica "No se encontró información de vida útil." y ofrece el enlace "Ingresar manualmente" en color de acento. El contraste entre ambos recuadros comunica el resultado de la consulta sin impedir que el usuario guarde el producto.
+
 15) **Mock-up 15:** 
 **User Story relacionada:** US35 - Como administrador, quiero poder modificar la vida útil sugerida por la API, para ajustarla a las condiciones reales de mi restaurante.
 
@@ -2579,17 +2608,31 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 |---------------------------------------------|---------------------------------------------|
 | ![mockup 15](assets/img/chapter-04/mockups/mockups-web/US35%20-%20Escenario%201%20Web.png) | ![mockup 15](assets/img/chapter-04/mockups/mockups-web/US35%20-%20Escenario%202%20Web.png) | 
 
+El formulario "Editar producto" muestra, en un recuadro verde, la vida útil sugerida y el campo "Modificar vida útil". Entre un escenario y otro cambia el almacenamiento, y con él la vida útil sugerida y la fecha de vencimiento.
+
 16) **Mock-up 16:** 
 **User Story relacionada:** US36 - Como administrador, quiero que el sistema calcule automáticamente la fecha límite de consumo según la vida útil registrada, para recibir alertas precisas de vencimiento.
 
 ![mockup 16](assets/img/chapter-04/mockups/mockups-mobile/US36%20-%20Escenario%201%20Mobile.png)
 ![mockup 16](assets/img/chapter-04/mockups/mockups-web/US36%20-%20Escenario%201%20Web.png)
 
+El mock-up presenta el formulario de producto con las fechas de ingreso y de vencimiento completadas y el recuadro verde de vida útil sugerida con la nota "Fecha de vencimiento calculada automáticamente".
+
 17) **Mock-up 17:** 
 **User Story relacionada:** US37 - Como administrador, quiero que el sistema recopile automáticamente los datos de ventas diarias, para que el modelo de Machine Learning pueda analizarlos y detectar patrones de consumo
 
 ![mockup 17](assets/img/chapter-04/mockups/mockups-mobile/US37%20-%20Escenario%201%20y%202%20Mobileh.png)
 ![mockup 17](assets/img/chapter-04/mockups/mockups-web/US37%20-%20Escenario%201%20y%202%20Web.png)
+
+La vista "Predicción de Demanda" muestra la demanda semanal por plato con barras verdes y agrega el bloque "Demanda total por día", cuyas barras usan un degradado naranja para diferenciar el total agregado de los gráficos por plato.
+
+**Aplicación de principios, elementos de diseño y Design System**
+
+- **Principios de diseño:** la *jerarquía* se apoya en el color: solo la acción principal de cada vista usa el color de acento ("+ Nuevo", "Guardar", "Iniciar sesión", "Pagar"), mientras que las acciones secundarias son neutras. El *contraste* entre el menú verde oscuro y el área de contenido clara separa la navegación del trabajo. La *consistencia* se mantiene al usar los mismos componentes y la misma codificación de color en todos los módulos y en ambas versiones, web y mobile. La *retroalimentación* es inmediata y diferenciada: notificaciones verdes para confirmar, rojas para errores y recuadros en contexto para los mensajes de formulario.
+- **Elementos de diseño:** el color cumple una función semántica (rojo, naranja, amarillo y verde para niveles de stock y severidad de alertas). La tipografía establece niveles claros entre título de vista, título de tarjeta, texto y etiquetas en mayúsculas. Las formas son tarjetas, campos y botones de esquinas redondeadas; los íconos de línea acompañan cada opción del menú; y las barras de nivel y los gráficos de barras representan las cantidades de forma visual.
+- **Diseño inclusivo:** ningún estado se comunica solo con color: cada nivel lleva además su etiqueta de texto (CRÍTICO, VENCIENDO, OK, CRÍTICA, ALTA, MEDIA, ENVIADA, LEÍDA) y los permisos se indican con casilla o guion. La interfaz está disponible en español e inglés desde cualquier vista. Los campos tienen rótulo visible, los mensajes de error explican qué ocurrió y cómo continuar ("Verifica tu email y contraseña", "Intenta con otro método"), y la acción destructiva "Eliminar" se distingue visualmente de "Editar". En mobile, los botones ocupan el ancho de la pantalla y la navegación se ubica en la parte inferior.
+- **Arquitectura de información:** se conserva la organización validada en los wireframes: navegación global por módulos con las etiquetas de la sección 4.2.2, contenido filtrado según el rol (Panel de Administrador y Panel del Empleado), jerarquía visual que prioriza alertas críticas e insumos por vencer, y los sistemas de búsqueda, filtro y ordenamiento de la sección 4.2.4 en Inventario y en el Historial de Notificaciones.
+- **Design System:** los mock-ups aplican la paleta de la sección 4.1.1: el verde bosque primario en el menú lateral, los títulos y los filtros activos; el terracota de acento en las acciones principales, los enlaces y el módulo activo; los neutros en fondos y bordes; y los colores semánticos de éxito, advertencia y peligro, con sus variantes claras como fondo de etiquetas, alertas y recuadros. También emplean la tipografía Inter para el contenido y la tipografía de marca en el logotipo, y los componentes de la sección 4.1.2 (botones, tarjetas, etiquetas, campos de formulario e interruptores), con lo que la Web Application mantiene la consistencia visual con el Landing Page.
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
