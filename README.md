@@ -2683,6 +2683,8 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
+En esta sección se presentan los user flows de la Web Application de StockIA, elaborados en Figma. Cada diagrama se deriva del wireflow del mismo User goal (sección 4.4.2) y lo amplía en dos sentidos: reemplaza los wireframes por los mock-ups de la sección 4.4.3 e incorpora los puntos de decisión, representados con rombos, que separan el camino principal (happy path) de los caminos alternativos (unhappy paths). Los User goals corresponden a la User Persona Carlos Gómez, administrador de restaurante (sección 2.3.1), y los diagramas se presentan en su versión Mobile Web Browser. Para cada flujo se indica el User goal, se explica el diagrama y sus condiciones, y se detallan los pasos de cada camino.
+
 1) **User flow 1:** 
 
 - User goal: Como administrador, quiero agregar, eliminar y modificar insumos en el inventario.
@@ -2691,6 +2693,8 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
 
 ![user flow 1](assets/img/chapter-04/user%20flow/mobile/userflow-mobile1.png)
+
+**Explicación del flujo y sus condiciones:** el diagrama parte del mock-up de Inventario (20 productos) y, al pulsar "+ Nuevo", pasa al formulario "Nuevo producto". Al guardar, un punto de decisión evalúa si la información del formulario está vacía. Si no lo está, el flujo continúa hacia el formulario completo (Tomate cherry, con el recuadro verde "Vida útil sugerida: 10 días") y termina en el Inventario actualizado a 21 productos, con el nuevo insumo en la lista. Si lo está, el flujo conduce al mismo formulario en estado de error: los campos Nombre del producto, Categoría y Cantidad aparecen con borde rojo y los mensajes "Campo requerido" y "Cantidad inválida" debajo de cada uno, de modo que el usuario sabe exactamente qué corregir antes de volver a guardar. El diagrama es consistente con el Wireflow 1 y le añade el estado de validación.
 
 - **Happy Path** — Registro Exitoso de Nuevo Producto
 
@@ -2743,6 +2747,8 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 ![user flow 2](assets/img/chapter-04/user%20flow/mobile/userflow-mobile2.png)
 ![user flow 2](assets/img/chapter-04/user%20flow/mobile/userflow-mobile3.png)
 
+**Explicación del flujo y sus condiciones:** las dos imágenes representan el acceso a la aplicación desde la pantalla "Iniciar sesión", que contiene el enlace "Crear cuenta". La primera plantea un punto de decisión sobre si la información ingresada es incorrecta: si lo es, el flujo lleva al formulario con el mensaje en rojo "Credenciales incorrectas. Verifica tu email y contraseña."; si no lo es, lleva al formulario con credenciales válidas y de allí al Panel de Administrador. La segunda plantea el punto de decisión "¿El usuario olvidó su contraseña?": si la respuesta es sí, el flujo pasa por la pantalla "¿Olvidaste tu contraseña?", donde se ingresa el correo y se pulsa "Enviar instrucciones", y termina en la confirmación "¡Instrucciones enviadas!" con el botón "Volver al Login"; si la respuesta es no, sigue el inicio de sesión normal hasta el Panel de Administrador.
+
 - **Happy Path** — Camino Feliz del Inicio de Sesión y Recuperación
 
 1) El usuario abre la pantalla de inicio de sesión de StockIA.
@@ -2783,6 +2789,8 @@ US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, par
 
 ![user flow 3](assets/img/chapter-04/user%20flow/mobile/US30%20-%20UserFlow%20diagram.png)
 
+**Explicación del flujo y sus condiciones:** el diagrama inicia con el formulario "Iniciar sesión" vacío y continúa con el formulario completo. A partir de allí se encadenan dos puntos de decisión. El primero, "¿Olvidó su contraseña?", deriva en caso afirmativo a la pantalla de recuperación y a la confirmación "¡Instrucciones enviadas!". En caso negativo se evalúa el segundo, "¿Datos correctos?": si la respuesta es sí, el usuario accede al Dashboard; si es no, se muestra el formulario con el mensaje "Credenciales incorrectas" y una flecha de retorno lo devuelve al formulario inicial para reintentar. El diagrama es consistente con el Wireflow 10, que describe el camino principal, y le agrega las dos rutas alternativas.
+
 #### Happy path
 1. El usuario llega a la pantalla de **Iniciar sesión**.
 2. Ingresa correo y contraseña (ej. `admin@cantinaverde.mx`).
@@ -2800,6 +2808,8 @@ US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, par
 US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
 
 ![user flow 4](assets/img/chapter-04/user%20flow/mobile/US31%20-%20UserFlow%20diagram.png)
+
+**Explicación del flujo y sus condiciones:** el diagrama parte de "Planes de StockIA" y, con la acción "Selección de plan", llega al "Checkout". Desde el Checkout se abren tres resultados rotulados sobre las flechas: "Activar suscripción", que termina en la confirmación "¡Suscripción activada!"; "Renovar suscripción", que termina en "¡Suscripción renovada!"; y "Pago rechazado", que muestra el Checkout con la notificación roja "Pago rechazado. Intenta con otro método." y el botón "Reintentar", desde el cual una flecha de retorno regresa al Checkout. El diagrama es consistente con el Wireflow 11, que cubre la activación, y le agrega la renovación y el rechazo del pago.
 
 #### Happy path
 1. El usuario visualiza los **Planes de StockIA** y selecciona uno (ej. Starter).
@@ -2819,6 +2829,8 @@ US32 - Como administrador, quiero recibir alertas críticas por correo vía Send
 
 ![user flow 5](assets/img/chapter-04/user%20flow/mobile/US32%20-%20UserFlow%20diagram.png)
 
+**Explicación del flujo y sus condiciones:** el diagrama parte del Panel de Administrador y pasa por la acción "Recibe alertas", que se bifurca según la alerta consultada: el detalle de una alerta CRÍTICA ("Cilantro agotándose", con fondo rosado y el stock actual en rojo) o el detalle de una alerta BAJA ("Refrigerador principal OK", con fondo verde claro). En ambos casos el usuario puede marcar la alerta como resuelta o enviarla por WhatsApp. Las dos ramas convergen en la acción "Consolidar historial y generar resumen", que lleva a la lista de Alertas, donde el botón "Generar resumen" aparece resaltado y la notificación verde confirma "Resumen generado y enviado al correo electrónico". El diagrama es consistente con el Wireflow 12 y no incluye un punto de decisión con camino de error.
+
 #### Happy path
 1. Desde el Dashboard, el usuario **recibe alertas** (críticas, altas, medias).
 2. Puede entrar al detalle de una alerta (ej. *"Cilantro agotándose"*) y **marcarla como resuelta** o **enviarla por WhatsApp**.
@@ -2833,6 +2845,8 @@ US32 - Como administrador, quiero recibir alertas críticas por correo vía Send
 US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
 
 ![user flow 6](assets/img/chapter-04/user%20flow/mobile/US34%20-%20UserFlow%20diagram.png)
+
+**Explicación del flujo y sus condiciones:** el diagrama parte del Inventario, pasa al formulario "Nuevo producto" y llega al punto de decisión "¿Producto encontrado en la API?". Si la respuesta es sí, el formulario (Tomate) muestra el recuadro verde "Vida útil sugerida: 10 días" con la fecha de vencimiento calculada automáticamente. Si la respuesta es no, el formulario (Chile jalapeño) muestra el recuadro "No se encontró información de vida útil." con el enlace "Ingresar manualmente". En ambos casos el botón "Guardar" permanece disponible, por lo que el camino alternativo no bloquea el registro del insumo. El diagrama es consistente con el Wireflow 13, que describe la rama afirmativa.
 
 #### Happy path
 1. El usuario pulsa **"+ Nuevo"** en Inventario.
@@ -2853,6 +2867,8 @@ US34 - Como administrador, quiero que el sistema consulte una API externa de vid
 US35 - Como administrador, quiero poder modificar la vida útil sugerida por la API, para ajustarla a las condiciones reales de mi restaurante.
 
 ![user flow 7](assets/img/chapter-04/user%20flow/mobile/US35%20-%20UserFlow%20diagram.png)
+
+**Explicación del flujo y sus condiciones:** el diagrama es lineal y consta de tres mock-ups unidos por dos acciones rotuladas. Desde el Inventario, la acción "Editar producto" abre el formulario de Tomate cherry, con almacenamiento "ambient", vida útil sugerida de 10 días y el campo "Modificar vida útil". La acción "Cambio de condiciones de almacenamiento" lleva al mismo formulario con almacenamiento "frozen", vida útil sugerida de 30 días y la fecha de vencimiento actualizada. El diagrama es consistente con el Wireflow 14 y no incluye un punto de decisión con camino de error.
 
 #### Happy path
 1. El usuario pulsa **"Editar"** sobre un producto existente (ej. Tomate cherry).
