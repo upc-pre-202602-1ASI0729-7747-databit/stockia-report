@@ -142,7 +142,7 @@ del ABET – EAC - Student Outcome 3.
             <br><br>
             <b>Ortiz Laura, Leyla Alisson</b><br>
             <u>AV1</u><br>
-            Presente las User Stories y el Impact Mapping empleando un lenguaje accesible que articuló metas de negocio con funcionalidades técnicas. Al exponer el diseño de entrevistas y las interfaces de la aplicación web, utilizó prototipos y diagramas como apoyo audiovisual, validando con el equipo y evaluadores la experiencia de usuario. Además, explicó los lineamientos de Software Configuration Management enfocando la comunicación en la organización del trabajo colaborativo.
+            Presenté las User Stories y el Impact Mapping empleando un lenguaje accesible que articuló metas de negocio con funcionalidades técnicas. Al exponer el diseño de entrevistas y las interfaces de la aplicación web, utilizó prototipos y diagramas como apoyo audiovisual, validando con el equipo y evaluadores la experiencia de usuario. Además, explicó los lineamientos de Software Configuration Management enfocando la comunicación en la organización del trabajo colaborativo.
             <br><br>
             <b>Toro Turpo, Ronal</b><br>
             <u>AV1</u><br>
@@ -259,15 +259,24 @@ del ABET – EAC - Student Outcome 3.
     - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--conventions)
     - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
   - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
-    - [5.2.X. Sprint N](#52x-sprint-n)
-      - [5.2.X.1. Sprint Planning N](#52x1-sprint-planning-n)
-      - [5.2.X.2. Aspect Leaders and Collaborators](#52x2-aspect-leaders-and-collaborators)
-      - [5.2.X.3. Sprint Backlog N](#52x3-sprint-backlog-n)
-      - [5.2.X.4. Development Evidence for Sprint Review](#52x4-development-evidence-for-sprint-review)
-      - [5.2.X.5. Execution Evidence for Sprint Review](#52x5-execution-evidence-for-sprint-review)
-      - [5.2.X.6. Services Documentation Evidence for Sprint Review](#52x6-services-documentation-evidence-for-sprint-review)
-      - [5.2.X.7. Software Deployment Evidence for Sprint Review](#52x7-software-deployment-evidence-for-sprint-review)
-      - [5.2.X.8. Team Collaboration Insights during Sprint](#52x8-team-collaboration-insights-during-sprint)
+    - [5.2.1. Sprint 1](#521-sprint-1)
+      - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
+      - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
+      - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
+      - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
+      - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
+      - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
+      - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
+      - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+    - [5.2.2. Sprint 2](#522-sprint-2)
+      - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
+      - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
+      - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
+      - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
+      - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
+      - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
+      - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
+      - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
   - [5.3. Validation Interviews](#53-validation-interviews)
     - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
     - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
@@ -287,7 +296,7 @@ del ABET – EAC - Student Outcome 3.
 ## 1.1. Startup Profile
 
 ### 1.1.1. Descripción de la Startup
-DataBite Corp es una startup tecnológica innovadora que aunque su creacion es reciente su enfoque está en liderar la transformación digital del sector gastronómico en el país y Latinoamérica. Nuestro enfoque principal radica en el desarrollo de soluciones de software as a Service (SaaS) que integran analítica predictiva asistida por Machine Learning (ML) y tecnologías de Internet de las Cosas (IoT).
+DataBite Corp es una startup tecnológica innovadora que aunque su creacion es reciente su enfoque está en liderar la transformación digital del sector gastronómico en el país y Latinoamérica. Nuestro enfoque principal radica en el desarrollo de soluciones de software as a Service (SaaS) que integran analítica predictiva asistida por Machine Learning (ML) y, en un futuro, tecnologías de Internet de las Cosas (IoT).
 
 Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas avanzadas para pequeñas y medianas cadenas de restaurantes, permitiendo optimizar sus operaciones y tomar decisiones basadas en datos en tiempo real. A través de nuestro producto estrella, "StockIA", buscamos resolver problemas críticos de la industria como el descontrol de inventarios, los quiebres de stock y las mermas financieras. Nos motiva generar un impacto directo tanto económico como ambiental, ayudando a las empresas a reducir el desperdicio de alimentos y a maximizar sus márgenes de rentabilidad, todo centralizado en un ecosistema web unificado, accesible y altamente escalable.
 
@@ -307,7 +316,7 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
        <b>Descripción:</b><br/>
       Soy <b>Carla Alejandra Gallardo Morales</b>, tengo 19 años. Desde que me incorporé en la Universidad Peruana de Ciencias Aplicadas en el periodo 2024-01, es decir que ahora mismo estoy cursando el sexto ciclo de la carrera de Ing. de Software, he adquirido y desarrollado distintos conocimientos a cerca de la programación, específicamente en el lenguaje C++, JavaScript y TypeScript, además, de forma autodidacta y extracurricular, he profundizado en el lenguaje Python, lo que ha ampliado mi perspectiva sobre la lógica y resolución de problemas.
       <br/><br/>
-      Dentro del equipo, mi contribución se basa en el apoyo continuo del desarrollo del backend y frontend de nuestro aplicativo mobile, asimismo ayudo en la implementación del informe de nuestro proyecto.
+      Dentro del equipo, mi contribución se basa en el apoyo continuo del desarrollo del backend y frontend de nuestro proyecto, asimismo ayudo en la implementación del informe del mismo.
       <br/>
   </tr>
 
@@ -337,12 +346,12 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
     <td><b>Nombre:</b> Miranda Cordova, Jesus Angel Yvan</td>
   </tr>
   <tr>
-    <td><b>Código:</b> u20241</td>
+    <td><b>Código:</b> U202411261</td>
   </tr>
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy <b>Miranda Cordova Jesus</b>b>, tengo 19 años y actualmente estudio la carrera de Ingeniería de Software en la Universidad Privada de Ciencias Aplicadas (UPC). Me gusta aprender nuevos lenguajes de programación  y desarrollar juegos en mi tiempo libre. Soy una persona de naturaleza tranquila, siempre dispuesto a ayudar y colaborar cuando sea necesario <b></b>
+      Soy <b>Miranda Cordova Jesus</b>, tengo 19 años y actualmente estudio la carrera de Ingeniería de Software en la Universidad Privada de Ciencias Aplicadas (UPC). Me gusta aprender nuevos lenguajes de programación  y desarrollar juegos en mi tiempo libre. Soy una persona de naturaleza tranquila, siempre dispuesto a ayudar y colaborar cuando sea necesario <b></b>
       <br/>
     </td>
   </tr>
@@ -376,7 +385,7 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy Ronal Toro Turpo, tengo 20 años estudio la carrera de ingenieria de software, desde el comienzo de mi vida universitaria e ido adquiriendo y desarrollando diversas habilidades como el desarrollo en leguajes de programacion como C++, java script, y en la parte web lenguajes como HTML y CSS si bien el trabajo en equipo no es uno de mis fuertes trato de hacer lo mejor que puedo, espero aprender muchas cosas a lo largo del semestre para este curso ya que lo considero muy interezante e importante para el desarrollo de mi carrera.<b></b>
+      Soy Ronal Toro Turpo, tengo 20 años estudio la carrera de ingenieria de software, desde el comienzo de mi vida universitaria e ido adquiriendo y desarrollando diversas habilidades como el desarrollo en lenguajes de programacion como C++, java script, y en la parte web lenguajes como HTML y CSS si bien el trabajo en equipo no es uno de mis fuertes trato de hacer lo mejor que puedo, espero aprender muchas cosas a lo largo del semestre para este curso ya que lo considero muy interesante e importante para el desarrollo de mi carrera.<b></b>
       <br/>
     </td>
   </tr>
@@ -418,12 +427,12 @@ Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application
 
 **Our product/service will address this gap by** ofreciendo un ecosistema web unificado de gestión multi-cadena que vincula el inventario de las sucursales con las recetas de los platos (deduciendo automáticamente los ingredientes al momento de crear una orden), aplica seguridad basada en roles de acceso, proporciona dashboards de monitoreo operativo y utiliza modelos de Machine Learning para pronosticar la demanda de los clientes y generar recomendaciones automatizadas de reposición de inventario.
 
-**Our initial focus will be** los CEOs y gerentes generales de operaciones de cadenas de servicios de alimentación en crecimiento (2 o más ubicaciones) que buscan estandarización operativa, reducción de desperdicios y supervisión en tiempo real.
+**Our initial focus will be** los administradores y dueños de restaurantes de servicios de alimentación en crecimiento (2 o más ubicaciones) que buscan estandarización operativa, reducción de desperdicios y supervisión en tiempo real.
 
 **We’ll know we are successful when we see** los siguientes comportamientos medibles en nuestro público objetivo:
 1. Una reducción del 40% en los reportes semanales de discrepancias de inventario en todas las sucursales conectadas durante los primeros 60 días posteriores a la incorporación.
 2. Al menos el 75% de las órdenes de compra de suministros programadas están siendo generadas directamente a partir de las recomendaciones automatizadas de reposición mediante ML.
-3. Interacción semanal activa con los dashboards por parte de más del 85% de los CEOs/gerentes de operaciones de restaurantes inscritos.
+3. Interacción semanal activa con los dashboards por parte de más del 85% de los administradores de operaciones de restaurantes inscritos.
 
 #### 1.2.2.2. Lean UX Assumptions
 1. Creemos que existe una demanda creciente por parte de pequeñas y medianas cadenas de restaurantes que buscan transformar digitalmente sus operaciones para evitar mermas financieras causadas por el descontrol de inventario.
@@ -436,7 +445,7 @@ Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application
 
 **User outcomes:**
 
-1. Creemos que los CEOs lograrán visibilidad integral e inmediata del estado de inventario, consumo de ingredientes y actividad del personal en todas las sucursales sin depender de llamadas o reportes manuales en hojas de cálculo.
+1. Creemos que los dueños de restaurantes lograrán visibilidad integral e inmediata del estado de inventario, consumo de ingredientes y actividad del personal en todas las sucursales sin depender de llamadas o reportes manuales en hojas de cálculo.
 
 2. Creemos que los restaurantes reducirán el desperdicio de alimentos perecibles hasta en un **25%** al ajustar sus compras y producción a las proyecciones de demanda de comensales.
 
@@ -445,9 +454,9 @@ Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application
 4. Creemos que los líderes del negocio mitigarán pérdidas financieras no autorizadas mediante la restricción de privilegios por roles de trabajo.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
-1. Creemos que lograremos un aumento del **20%** en la retención semanal de la plataforma por parte de los ejecutivos de restaurantes **si** los CEOs y gerentes de operaciones de restaurantes **obtienen** visibilidad instantánea y consolidada de los niveles de inventario y el rendimiento de las ventas en todas las sucursales **con** un dashboard operativo interactivo para múltiples cadenas.
+1. Creemos que lograremos un aumento del **20%** en la retención semanal de la plataforma por parte de los ejecutivos de restaurantes **si** los administradores y dueños de restaurantes **obtienen** visibilidad instantánea y consolidada de los niveles de inventario y el rendimiento de las ventas en todas las sucursales **con** un dashboard operativo interactivo para múltiples cadenas.
 
-2. Creemos que lograremos una reducción del **30%** en los incidentes de seguridad y los reportes de pérdidas internas **si** los CEOs de restaurantes y gerentes de tienda **obtienen** delegación segura de tareas y control detallado sobre las operaciones críticas de inventario **con** un sistema de gestión de configuración de roles y permisos.
+2. Creemos que lograremos una reducción del **30%** en los incidentes de seguridad y los reportes de pérdidas internas **si** los dueños de restaurantes **obtienen** delegación segura de tareas y control detallado sobre las operaciones críticas de inventario **con** un sistema de gestión de configuración de roles y permisos.
 
 3. Creemos que lograremos una disminución del **35%** en las discrepancias de las auditorías manuales de inventario **si** los gerentes de tienda y operadores de inventario **obtienen** un seguimiento rápido y sin errores de las entradas, transferencias y modificaciones de materias primas **con** un módulo centralizado de gestión de inventario en tiempo real.
 
@@ -754,7 +763,7 @@ Asimismo, Miguel señala que le gustaría contar con un sistema que integre el i
 <p align="center"><i>Evidencia de entrevista: David </i></p>
   
   **Resumen Descriptivo:** 
-David, de 35 años, es jefe de cocina de un restaurante de comida italiana ubicada en Surco, que lleva aproximadamente 5 años funcionando y cuenta con 3 cocineros y 5 mosos mas personal de cajas y otros. Nos comenta que actualmente controla el inventario de manera manual y utiliza Excel para gestionar las recetas, las ventas se registran en un sistema independiente y hacen uso de la gestion y experiencia del jefe de cocinar para la compra de insumos en alta demanda. Esta forma de trabajo le ha generado sobrecarga y fallos en el inventario por margenes de error al manejarlo, mermas y cambios inesperados en la demanda, ocasionando en algunas situaciones en las que se quede sin determinados platos.
+David, de 35 años, es jefe de cocina de un restaurante de comida italiana ubicada en Surco, que lleva aproximadamente 5 años funcionando y cuenta con 3 cocineros y 5 mozos mas personal de cajas y otros. Nos comenta que actualmente controla el inventario de manera manual y utiliza Excel para gestionar las recetas, las ventas se registran en un sistema independiente y hacen uso de la gestion y experiencia del jefe de cocinar para la compra de insumos en alta demanda. Esta forma de trabajo le ha generado sobrecarga y fallos en el inventario por margenes de error al manejarlo, mermas y cambios inesperados en la demanda, ocasionando en algunas situaciones en las que se quede sin determinados platos.
 
 Asimismo, David señala que le gustaría contar con un sistema que integre el inventario, genere reportes de oferta y demanda, poder visualizar el stock del producto en tiempo real y poder acceder a notificaciones que le indiquen de manera no intrusiva que mandar a comprar los fines de semana o los feriados por venir.
 </br>
@@ -2434,7 +2443,7 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 12) **Wireflow 12:**
 
-- User goal: omo administrador, quiero recibir alertas críticas por correo.
+- User goal: Como administrador, quiero recibir alertas críticas por correo.
 
 **User Story relacionada:** US32 - Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de los eventos importantes.
 
@@ -2443,7 +2452,7 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 13) **Wireflow 13:**
 
-- User goal: omo administrador, quiero que el sistema consulte la vida útil de alimentos
+- User goal: Como administrador, quiero que el sistema consulte la vida útil de alimentos
 
 **User Story relacionada:** US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
 
@@ -3088,8 +3097,9 @@ Se siguen el Google Java Style Guide y las convenciones descritas en Spring Boot
 * Uso de anotaciones de Spring Boot y Spring Data JPA (@RestController, @Service, @Repository, @Entity) para reducir código repetitivo y mantener una arquitectura RESTful clara.  
 * Manejo centralizado de excepciones mediante @ControllerAdvice y @ExceptionHandler.  
 * Documentación de endpoints con OpenAPI mediante Swagger (springdoc-openapi).
+
 **Gherkin (criterios de aceptación y pruebas de aceptación)**
- 
+
 Se siguen las Gherkin Conventions for Readable Specifications:
  
 * Estructura obligatoria Given – When – Then.  
@@ -3647,9 +3657,8 @@ Cada integrante implementa y sube al repositorio de la organización un Bounded 
 | :--- | :--- | :--- | :--- | :--- | :---: |
 | stockia-platform | main | `4f712ae` | feat: StockIA Web Application (Angular DDD) + mock API (json-server) | TS05 y TS06: Web Application en Angular 18 organizada por Bounded Context (iam, product-inventory, sales-order, alerts, demand-forecasting, subscription, dashboard) y API simulada con json-server; incluye las pantallas de US09 a US19, los guards de RNF08 y la configuración de Vercel de TS07 (Jesus). | 01/10/2026 |
 | stockia-platform | main | `084801e` | feat: apuntar el frontend a la mock API desplegada en Render | TS06: conexión de los entornos de desarrollo y producción a la API simulada en Render (Jesus). | 01/10/2026 |
- 
-> **Nota:** la versión integrada de la Web Application se encuentra hoy en el repositorio de integración `Jesusho22/stockia-platform`. Siguiendo la mejora acordada en la retrospectiva del Sprint 1, cada integrante sube al repositorio de la organización el Bounded Context a su cargo (ver la tabla de distribución) mediante una rama `feature/*` y su Pull Request, de modo que la autoría de cada tarea quede registrada.
- 
+
+
 **Repositorio de la Landing Page (`stockia-website`) — TS08**
  
 | **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
@@ -3881,9 +3890,21 @@ En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante implement
 # Video About-the-Team
 
 # Bibliografía
-United Nations Environment Programme. (2024). Food Waste Index Report 2024: Think Eat Save – Tracking progress to halve global food waste. https://wedocs.unep.org/bitstream/handle/20.500.11822/45230/food_waste_index_report_2024.pdf
+Cullen, J. (2021). Administración de inventarios: análisis y modelos. Editorial académica.
+
+Gunders, D., et al. (2017). *Wasted: How America is losing up to 40 percent of its food from farm to fork and landfill*. Natural Resources Defense Council 2017. https://www.nrdc.org/sites/default/files/wasted-2017-report.pdf
 
 López, J., & Martínez, A. (2025). Diseño de un sistema de control de inventarios para reducir el desperdicio de alimentos en restaurantes [Tesis de pregrado, Universidad Laica Eloy Alfaro de Manabí]. Repositorio ULEAM. https://repositorio.uleam.edu.ec/handle/123456789/8924
+
+Panca. (s.f.). El software para restaurantes más completo de Perú. Recuperado el 14 de septiembre de 2026, de https://www.panca.pe/
+
+RestoIQ. (s.f.). Tu restaurante merece
+tecnología propia. Recuperado el 14 de septiembre de 2026, de https://restoiq.cl/
+
+Toteat. (s.f.) El software todo en uno para los restaurantes del Perú. Recuperado el 14 de septiembre de 2026, de https://toteat.com/es-pe/home
+
+United Nations Environment Programme. (2024). Food Waste Index Report 2024: Think Eat Save – Tracking progress to halve global food waste. https://wedocs.unep.org/bitstream/handle/20.500.11822/45230/food_waste_index_report_2024.pdf
+
 
 # Anexos
 URL del repositorio (stockia-report): https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-report.git|
