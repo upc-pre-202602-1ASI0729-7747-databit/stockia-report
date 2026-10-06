@@ -2343,6 +2343,10 @@ usuario con los productos digitales.
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
+En esta sección se presentan los wireflows de la Web Application de StockIA, elaborados en Figma. Cada wireflow enlaza con flechas los wireframes de la sección 4.4.1 para mostrar la secuencia de pantallas que recorre el usuario hasta cumplir un User goal. Siguiendo la convención de este tipo de diagrama, cada cambio de estado de una pantalla (un formulario que pasa de vacío a completo, un cuadro de diálogo que se abre, un mensaje de confirmación que aparece) se representa como un paso adicional con el wireframe del nuevo estado.
+
+Los User goals se derivan de las User Stories de la sección 3.1 y se plantean desde la User Persona del segmento objetivo (sección 2.3.1): Carlos Gómez, administrador y jefe de operaciones de restaurante, cuyos objetivos son evitar quiebres de stock, reducir el desperdicio de insumos perecibles y tener visibilidad del stock en tiempo real. Las rutas se relacionan con las tareas de su User Task Matrix (sección 2.3.2): revisar inventario, registrar nuevos insumos, revisar productos por vencer y stock bajo, planificar compras y analizar la demanda. Los wireflows se presentan en su versión Mobile Web Browser.
+
 1) **Wireflow 1:** 
 
 - User goal: Como administrador, quiero agregar, eliminar y modificar insumos en el inventario
@@ -2352,6 +2356,15 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 - mobile:
 ![wireflow 1](assets/img/chapter-04/wireflow/mobile/wireflow-mobile1.png)
+
+**Flujo:**
+
+1. El administrador abre la vista Inventario, que lista 20 productos, y pulsa "+ Nuevo".
+2. El sistema muestra el formulario "Nuevo producto" vacío.
+3. El administrador completa los datos (Tomate cherry, Verduras, 3 kg, stock mínimo 6, almacenamiento "refrigerated", proveedor) y el formulario muestra el recuadro "Vida útil sugerida: 10 días".
+4. Pulsa "Guardar" y vuelve a Inventario, que ahora indica 21 productos e incluye el nuevo insumo con la etiqueta CRÍTICO.
+
+**Explicación:** el formulario vacío y el formulario con datos son dos estados de una misma pantalla, por lo que se dibujan como pasos separados. El insumo recién registrado aparece como CRÍTICO porque su cantidad (3 kg) es menor que su stock mínimo (6). El flujo corresponde a la tarea "Registrar nuevos insumos" de la User Task Matrix; desde la misma lista parten las acciones "Editar" y "Eliminar" de cada insumo.
 
 - web:
 
@@ -2370,6 +2383,13 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 - mobile: 
 ![wireflow 3](assets/img/chapter-04/wireflow/mobile/wireflow-mobile2.png)
 
+**Flujo:**
+
+1. El administrador ingresa al Panel de Administrador y revisa las cuatro métricas (productos en inventario, stock crítico, alertas activas, ahorro estimado), las alertas críticas y los insumos próximos a vencer.
+2. Pulsa "Ver todas" y pasa a la vista Alertas, que lista las 8 alertas activas ordenadas por severidad (CRÍTICA, ALTA, MEDIA).
+
+**Explicación:** el Dashboard resume el estado del restaurante y sirve de punto de partida hacia el detalle. El flujo corresponde a las tareas "Revisar inventario" y "Revisar productos por vencer y stock bajo", de frecuencia diaria e importancia alta en la User Task Matrix.
+
 4) **Wireflow 4:** 
 
 - User goal: Como administrador, quiero asignar roles a empleados.
@@ -2379,6 +2399,16 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 - mobile: 
 ![wireflow 4](assets/img/chapter-04/wireflow/mobile/wireflow-mobile3.png)
 
+**Flujo:**
+
+1. En "Roles y Permisos", el administrador revisa la tabla de permisos por rol y pulsa "Cambiar a Empleado" sobre la usuaria María López, que figura como ADMIN.
+2. El sistema abre el cuadro de diálogo "Confirmar cambio de rol" con la pregunta "¿Cambiar el rol de María López a Empleado?" y las opciones "Cancelar" y "Confirmar".
+3. El administrador confirma y la vista muestra el mensaje "Rol actualizado correctamente."
+4. La etiqueta de la usuaria pasa a EMPLEADO y el botón cambia a "Promover a Admin".
+5. La empleada ingresa con su cuenta y ve el "Panel del Empleado", con métricas y accesos limitados a lo que su rol permite.
+
+**Explicación:** el cuadro de diálogo, el mensaje de confirmación y el cambio de etiqueta son estados sucesivos de la misma pantalla y por ello ocupan pasos propios. El último paso evidencia el efecto del cambio de rol sobre lo que ve la persona afectada.
+
 5) **Wireflow 5:** 
 
 - User goal: Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima.
@@ -2387,6 +2417,13 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 - mobile: 
 ![wireflow 5](assets/img/chapter-04/wireflow/mobile/wireflow-mobile4.png)
+
+**Flujo:**
+
+1. El administrador parte del Panel de Administrador.
+2. Accede a "Predicción de Demanda" y consulta la precisión del modelo (94%), el horizonte de proyección (7 días) y, por cada plato, la demanda estimada por día, la tendencia, el nivel de confianza y la cantidad sugerida a comprar.
+
+**Explicación:** la vista de predicción reúne en una sola pantalla la información que el administrador necesita para preparar insumos con anticipación. El flujo corresponde a las tareas "Analizar demanda" y "Planificación de compras de suministros" de la User Task Matrix.
 
 6) **Wireflow 6:** 
 
@@ -2405,6 +2442,13 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 - mobile: 
 ![wireflow 7](assets/img/chapter-04/wireflow/mobile/wireflow-mobile5.png)
 
+**Flujo:**
+
+1. El administrador revisa el Inventario ordenado por Urgencia, donde los insumos con etiqueta CRÍTICO aparecen primero con su cantidad actual y su fecha de vencimiento.
+2. Desde la barra de navegación inferior pasa a Alertas, donde cada alerta indica el motivo (por ejemplo, "Quedan 0.5 kg de 1 kg requerido") y su severidad.
+
+**Explicación:** la combinación de ambas vistas permite al administrador identificar qué insumos están por agotarse y decidir qué comprar antes de que se produzca el quiebre de stock.
+
 8) **Wireflow 8:** 
 
 - User goal: Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp
@@ -2413,6 +2457,13 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 - mobile: 
 ![wireflow 8](assets/img/chapter-04/wireflow/mobile/wireflow-mobile6.png)
+
+**Flujo:**
+
+1. El usuario abre el "Historial de Notificaciones", que muestra los contadores por estado (Enviada, Leída, Pendiente, Fallida) y todas las notificaciones, con el filtro "Todos" activo.
+2. Selecciona el filtro "WhatsApp" y la lista se reduce a las notificaciones enviadas por ese canal, cada una con su fecha, destinatario y estado ENVIADA.
+
+**Explicación:** el cambio de filtro es un cambio de estado de la misma pantalla y se representa como un segundo paso. La vista permite verificar qué alertas y sugerencias se enviaron por WhatsApp.
 
 9) **Wireflow 9:**
 
@@ -2423,6 +2474,14 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 - mobile: 
 ![wireflow 9](assets/img/chapter-04/wireflow/mobile/wireflow-mobile7.png)
 
+**Flujo:**
+
+1. El usuario llega a la pantalla "Iniciar sesión", que incluye el enlace "¿No tienes cuenta? Crear cuenta".
+2. El formulario se muestra con el correo ingresado.
+3. Pulsa "Iniciar sesión" y accede al Panel de Administrador del restaurante.
+
+**Explicación:** el wireflow representa el acceso a la aplicación desde la pantalla de inicio de sesión, cuyo enlace "Crear cuenta" es el punto de entrada al registro.
+
 10) **Wireflow 10:**
 
 - User goal: Como usuario registrado, quiero iniciar sesión con mis datos.
@@ -2431,6 +2490,14 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 - mobile: 
 ![wireflow 10](assets/img/chapter-04/wireflow/mobile/US30%20-%20Wireflow%20diagram.png)
+
+**Flujo:**
+
+1. El usuario registrado abre la pantalla "Iniciar sesión" con los campos vacíos.
+2. Ingresa su correo y su contraseña.
+3. Pulsa "Iniciar sesión" y el sistema lo lleva al Panel de Administrador, con sus métricas, alertas críticas e insumos próximos a vencer.
+
+**Explicación:** el formulario completo se representa como un estado distinto del formulario vacío. El wireflow describe el camino principal; las rutas alternativas (credenciales incorrectas y recuperación de contraseña) se detallan en el user flow correspondiente de la sección 4.4.4.
 
 11) **Wireflow 11:**
 
@@ -2441,6 +2508,14 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 - mobile: 
 ![wireflow 11](assets/img/chapter-04/wireflow/mobile/US31%20-%20Wireflow%20diagram.png)
 
+**Flujo:**
+
+1. El administrador abre "Planes de StockIA", compara los planes con facturación mensual o anual y pulsa "Seleccionar plan" en el plan Starter.
+2. El sistema muestra el "Checkout" con el resumen del pedido (Starter, $49/mes, facturación mensual) y los campos de la tarjeta; el administrador pulsa "Pagar $49/mes".
+3. El sistema muestra la confirmación "¡Suscripción activada!", con el resumen del plan y el botón "Volver a Planes".
+
+**Explicación:** el flujo lleva de la comparación de planes al pago en tres pantallas, y el resumen del pedido se mantiene visible en el Checkout y en la confirmación. Los casos de renovación y de pago rechazado se detallan en el user flow correspondiente de la sección 4.4.4.
+
 12) **Wireflow 12:**
 
 - User goal: Como administrador, quiero recibir alertas críticas por correo.
@@ -2449,6 +2524,14 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 - mobile: 
 ![wireflow 12](assets/img/chapter-04/wireflow/mobile/US32%20-%20Wireflow%20diagram.png)
+
+**Flujo:**
+
+1. El administrador abre el detalle de una alerta CRÍTICA ("Cilantro agotándose"), con el producto, el stock actual y el mínimo, y las acciones "Marcar como resuelta" y "Enviar por WhatsApp".
+2. Revisa el detalle de otra alerta, de severidad BAJA ("Refrigerador principal OK").
+3. En la lista de Alertas pulsa "Generar resumen" y el sistema muestra el mensaje "Resumen generado y enviado al correo electrónico".
+
+**Explicación:** el diagrama resalta el botón "Generar resumen", que es la acción que cumple el objetivo: dejar el historial de eventos documentado en el correo del administrador.
 
 13) **Wireflow 13:**
 
@@ -2459,6 +2542,14 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 - mobile: 
 ![wireflow 13](assets/img/chapter-04/wireflow/mobile/US34%20-%20Wireflow%20diagram.png)
 
+**Flujo:**
+
+1. En Inventario, el administrador pulsa "+ Nuevo", acción rotulada sobre la flecha.
+2. El sistema muestra el formulario "Nuevo producto" vacío.
+3. El administrador completa los datos del insumo (Tomate, Frutas, 20 kg, almacenamiento "ambient") y el formulario muestra el recuadro "Vida útil sugerida: 10 días" con la nota "Fecha de vencimiento calculada automáticamente".
+
+**Explicación:** el recuadro de vida útil es el resultado de la consulta y aparece dentro del mismo formulario, sin pasos adicionales para el usuario. El caso en que no se encuentra información se detalla en el user flow correspondiente de la sección 4.4.4.
+
 14) **Wireflow 14:**
 
 - User goal: Como administrador, quiero poder modificar la vida útil sugerida.
@@ -2467,6 +2558,14 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 - mobile: 
 ![wireflow 14](assets/img/chapter-04/wireflow/mobile/US35%20-%20Wireflow%20diagram.png)
+
+**Flujo:**
+
+1. En Inventario, el administrador pulsa "Editar" sobre un insumo.
+2. El sistema abre "Editar producto" para Tomate cherry, con almacenamiento "ambient", una vida útil sugerida de 10 días y el campo "Modificar vida útil".
+3. El administrador cambia el almacenamiento a "frozen"; la vida útil sugerida pasa a 30 días y la fecha de vencimiento se actualiza.
+
+**Explicación:** el diagrama resalta en los dos últimos pasos el campo Almacenamiento y el valor de vida útil para evidenciar el cambio de estado entre ambos.
 
 ### 4.4.3. Web Applications Mock-ups
 
