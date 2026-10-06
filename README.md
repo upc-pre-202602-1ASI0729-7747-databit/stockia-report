@@ -2240,7 +2240,13 @@ Esta sección incluye secciones internas donde se presenta y explica la propuest
 visual y de interacción para las aplicaciones que constituyen la experiencia de
 usuario con los productos digitales.
 
+La propuesta corresponde a la Web Application de StockIA, que se utiliza tanto desde Desktop Web Browser como desde Mobile Web Browser, y se documenta de menor a mayor fidelidad. Primero, los wireframes (4.4.1) definen la estructura de cada vista; luego, los wireflows (4.4.2) enlazan esos wireframes para mostrar cómo el usuario avanza hacia cada User goal; después, los mock-ups (4.4.3) aplican sobre esas mismas vistas el estilo visual de la sección 4.1; y, por último, los user flows (4.4.4) representan con los mock-ups el camino principal y los caminos alternativos de cada objetivo. Todas las vistas se organizan en función de las User Stories US21 a US37 de la sección 3.1 y toman como referencia a la User Persona del segmento objetivo (sección 2.3.1), el administrador de restaurante.
+
 ### 4.4.1. Web Applications Wireframes
+
+En esta sección se presentan los wireframes de la Web Application de StockIA, elaborados en Figma en baja fidelidad y en escala de grises. Cada wireframe se asocia a una User Story y se muestra en dos versiones: Mobile Web Browser (primera imagen) y Desktop Web Browser (segunda imagen). Cuando una vista cambia de estado, por ejemplo un formulario vacío y el mismo formulario con datos, cada estado se dibuja como una pantalla independiente.
+
+Todas las vistas autenticadas comparten una misma estructura. En desktop, un menú lateral oscuro contiene el logotipo, el nombre del restaurante, los módulos Dashboard, Inventario, Recetas, Predicción, Recomendaciones, Alertas (con un contador), IoT, Roles, Planes y Notificaciones, el selector de idioma ES / EN, el usuario en sesión con su rol y la opción "Cerrar sesión". En mobile, ese menú se sustituye por un encabezado con el logotipo, el ícono de notificaciones, el avatar y el selector de idioma, y por una barra de navegación inferior con cuatro accesos: Dashboard, Inventario, Alertas y Más.
 
 1) **Wireframe 1:** 
 **User Story relacionada:** US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
@@ -2248,6 +2254,8 @@ usuario con los productos digitales.
 ![wireframe 1](assets/img/chapter-04/wireframes/mobile/mobile-wireframe1.png)
 
 ![wireframe 1](assets/img/chapter-04/wireframes/web/web-wireframe1.png)
+
+El wireframe muestra cuatro pantallas: la lista de Inventario (20 productos) con el botón "+ Nuevo", el buscador "Buscar producto...", el ícono de filtro, las pestañas de orden Urgencia, Cantidad y Vencimiento, y una tarjeta por insumo con nombre, categoría y proveedor, etiqueta de estado (CRÍTICO, VENCIENDO), cantidad con barra de nivel, fecha de vencimiento y los botones "Editar" y "Eliminar"; el formulario "Nuevo producto" vacío, con los campos Nombre del producto, Categoría, Cantidad, Unidad, Stock mínimo, Almacenamiento, Fecha de ingreso, Fecha de vencimiento y Proveedor, y los botones "Cancelar" y "Guardar"; el mismo formulario con datos; y la lista de Inventario actualizada a 21 productos con el nuevo insumo incorporado.
 
 2) **Wireframe 2:** 
 **User Story relacionada:** US22 - Como administrador, quiero guardar recetas con ingredientes vinculados al inventario, para que al venderse un plato se descuenten automáticamente los insumos.
@@ -2258,17 +2266,23 @@ usuario con los productos digitales.
 ![wireframe 3](assets/img/chapter-04/wireframes/mobile/mobile-wireframe2.png)
 ![wireframe 3](assets/img/chapter-04/wireframes/web/web-wireframe2.png)
 
+La primera pantalla es el Panel de Administrador, con el saludo al usuario, cuatro tarjetas de métricas (Productos en inventario, Stock crítico, Alertas activas y Ahorro estimado), la lista "Alertas críticas" con el enlace "Ver todas" y la lista "Próximos a vencer" con el enlace "Ver inventario". La segunda pantalla es la vista Alertas (8 activas), en la que cada alerta presenta título, descripción, fecha y hora, y una etiqueta de severidad (CRÍTICA, ALTA, MEDIA).
+
 4) **Wireframe 4:** 
 **User Story relacionada:** US24 - Como administrador, quiero asignar roles a empleados, para que cada uno tenga recomendaciones personalizadas y permisos adecuados dentro del sistema.
 
 ![wireframe 4](assets/img/chapter-04/wireframes/mobile/mobile-wireframe3.png)
 ![wireframe 4](assets/img/chapter-04/wireframes/web/web-wireframe3.png)
 
+El wireframe presenta cinco pantallas de "Roles y Permisos": la tabla "Permisos por rol", que cruza cada módulo con los roles Admin y Empleado, y la lista "Usuarios del restaurante" con el botón "Cambiar a Empleado"; el cuadro de diálogo "Confirmar cambio de rol", con los botones "Cancelar" y "Confirmar" sobre el fondo oscurecido; la misma vista con el mensaje "Rol actualizado correctamente."; la vista con la etiqueta del usuario cambiada a EMPLEADO y el botón "Promover a Admin"; y el "Panel del Empleado", con menos métricas y un menú reducido.
+
 5) **Wireframe 5:** 
 **User Story relacionada:** US25 - Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima, para poder preparar insumos con anticipación.
 
 ![wireframe 5](assets/img/chapter-04/wireframes/mobile/mobile-wireframe4.png)
 ![wireframe 5](assets/img/chapter-04/wireframes/web/web-wireframe4.png)
+
+La vista "Predicción de Demanda" muestra tres indicadores en la parte superior (Precisión IA 94%, 4 productos, horizonte de 7 días) y una tarjeta por plato (Tacos de Camarón, Guacamole Fresco, Pollo en Mole) con el total de porciones estimadas para la semana, un gráfico de barras por día (L a D), la tendencia (Alza, Estable), el porcentaje de confianza y la cantidad sugerida a comprar.
 
 6) **Wireframe 6:** 
 **User Story relacionada:** US26 - Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad, para ajustar la oferta de mi restaurante.
@@ -2281,11 +2295,15 @@ usuario con los productos digitales.
 ![wireframe 7](assets/img/chapter-04/wireframes/mobile/mobile-wireframe5.png)
 ![wireframe 7](assets/img/chapter-04/wireframes/web/web-wireframe5.png)
 
+Se muestran dos pantallas: la lista de Inventario ordenada por Urgencia, donde los insumos con etiqueta CRÍTICO y VENCIENDO aparecen primero, y la vista Alertas (8 activas), ordenada de mayor a menor severidad (CRÍTICA, ALTA, MEDIA), con la descripción de cada caso, por ejemplo la cantidad disponible frente al mínimo requerido.
+
 8) **Wireframe 8:** 
 **User Story relacionada:** US28 - Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp, para poder actuar rápido sin necesidad de entrar al sistema.
 
 ![wireframe 8](assets/img/chapter-04/wireframes/mobile/mobile-wireframe6.png)
 ![wireframe 8](assets/img/chapter-04/wireframes/web/web-wireframe6.png)
+
+La vista "Historial de Notificaciones" presenta cuatro contadores por estado (Enviada, Leída, Pendiente, Fallida), las pestañas de filtro por canal (Todos, Email, WhatsApp, Push, En app) y la lista de notificaciones, cada una con título, mensaje, fecha, canal, destinatario y etiqueta de estado. La segunda pantalla muestra la misma vista con el filtro WhatsApp seleccionado, que reduce la lista a las notificaciones enviadas por ese canal.
 
 9) **Wireframe 9:** 
 **User Story relacionada:** US29 - Como nuevo usuario, quiero registrarme en StockIA con mis datos, para poder acceder al sistema y configurar mi restaurante.
@@ -2293,11 +2311,15 @@ usuario con los productos digitales.
 ![wireframe 9](assets/img/chapter-04/wireframes/mobile/mobile-wireframe7.png)
 ![wireframe 9](assets/img/chapter-04/wireframes/web/web-wireframe7.png)
 
+El wireframe muestra tres pantallas: el formulario "Iniciar sesión" vacío, con el selector ES / EN, los campos Correo electrónico y Contraseña (con ícono para mostrarla), la casilla "Recordarme", el enlace "¿Olvidaste tu contraseña?", el botón "Iniciar sesión", los accesos a cuentas de demostración (Admin, Employee) y el enlace "¿No tienes cuenta? Crear cuenta"; el mismo formulario con el correo ingresado; y el Panel de Administrador al que se accede. El punto de entrada al registro es el enlace "Crear cuenta".
+
 10) **Wireframe 10:** 
 **User Story relacionada:** US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, para poder acceder a mi dashboard personalizado.
 
 ![wireframe 10](assets/img/chapter-04/wireframes/mobile/US30%20mobile.png)
 ![wireframe 10](assets/img/chapter-04/wireframes/web/US30%20web.png)
+
+Se representan los estados del inicio de sesión: el formulario con credenciales ingresadas y el Dashboard completo al que conduce (métricas, alertas críticas, próximos a vencer, predicción de demanda, recomendaciones y acciones rápidas); el formulario con el mensaje "Credenciales incorrectas. Verifica tu email y contraseña."; la pantalla "¿Olvidaste tu contraseña?", con el campo de correo y el botón "Enviar instrucciones"; y la confirmación "¡Instrucciones enviadas!" con el botón "Volver al Login".
 
 11) **Wireframe 11:** 
 **User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
@@ -2305,11 +2327,15 @@ usuario con los productos digitales.
 ![wireframe 11](assets/img/chapter-04/wireframes/mobile/US31%20mobile.png)
 ![wireframe 11](assets/img/chapter-04/wireframes/web/US31%20web.png)
 
+El wireframe reúne cinco pantallas: "Planes de StockIA", con el interruptor Mensual / Anual y tres planes (Starter $49, Profesional $149 con la marca "Más popular" y fondo oscuro, Enterprise $399), cada uno con su lista de prestaciones y el botón "Seleccionar plan"; el "Checkout", con el resumen del pedido, los campos Nombre en la tarjeta, Número de tarjeta, Vencimiento y CVV, y el botón "Pagar $49/mes"; la confirmación "¡Suscripción activada!"; la confirmación "¡Suscripción renovada!"; y el Checkout con el mensaje "Pago rechazado. Intenta con otro método." y el botón "Reintentar".
+
 12) **Wireframe 12:** 
 **User Story relacionada:** US32 - Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de los eventos importantes.
 
 ![wireframe 12](assets/img/chapter-04/wireframes/mobile/US32%20mobile.png)
 ![wireframe 12](assets/img/chapter-04/wireframes/web/US32%20web.png)
+
+Se muestran tres pantallas: el detalle de una alerta de severidad CRÍTICA ("Cilantro agotándose"), con su descripción, producto, stock actual y mínimo, y los botones "Marcar como resuelta" y "Enviar por WhatsApp"; el detalle de una alerta de severidad BAJA ("Refrigerador principal OK"); y la lista de Alertas con el botón "Generar resumen" y el mensaje de confirmación "Resumen generado y enviado al correo electrónico".
 
 13) **Wireframe 13:** 
 **User Story relacionada:** US33 - Como administrador, quiero recibir SMS críticos vía Twilio, para poder reaccionar rápido ante emergencias en tiempo real.
@@ -2317,11 +2343,15 @@ usuario con los productos digitales.
 ![wireframe 13](assets/img/chapter-04/wireframes/mobile/US33%20mobile.png)
 ![wireframe 13](assets/img/chapter-04/wireframes/web/US33%20web.png)
 
+El wireframe presenta el detalle de dos alertas de severidad CRÍTICA: "Congelador — temperatura anormal", que indica la temperatura registrada, el rango requerido y el riesgo de descomposición, y "Aceite de oliva crítico", que indica la cantidad disponible y el mínimo requerido. Ambas ofrecen las acciones "Marcar como resuelta" y "Enviar por WhatsApp".
+
 14) **Wireframe 14:** 
 **User Story relacionada:** US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
 
 ![wireframe 14](assets/img/chapter-04/wireframes/mobile/US34%20mobile.png)
 ![wireframe 14](assets/img/chapter-04/wireframes/web/US34%20web.png)
+
+Se muestran dos estados del formulario "Nuevo producto". En el primero, bajo el campo Proveedor aparece el recuadro "Vida útil sugerida: 10 días" con la nota "Fecha de vencimiento calculada automáticamente". En el segundo, el recuadro indica "No se encontró información de vida útil." y ofrece la opción "Ingresar manualmente".
 
 15) **Wireframe 15:** 
 **User Story relacionada:** US35 - Como administrador, quiero poder modificar la vida útil sugerida por la API, para ajustarla a las condiciones reales de mi restaurante.
@@ -2329,17 +2359,30 @@ usuario con los productos digitales.
 ![wireframe 15](assets/img/chapter-04/wireframes/mobile/US35%20mobile.png)
 ![wireframe 15](assets/img/chapter-04/wireframes/web/US35%20web.png)
 
+El wireframe muestra dos estados del formulario "Editar producto" para el insumo Tomate cherry. En ambos, el recuadro de vida útil incluye el campo "Modificar vida útil". En el primero, con almacenamiento "ambient", la vida útil sugerida es de 10 días; en el segundo, con almacenamiento "frozen", la sugerencia cambia a 30 días y la fecha de vencimiento se actualiza.
+
 16) **Wireframe 16:** 
 **User Story relacionada:** US36 - Como administrador, quiero que el sistema calcule automáticamente la fecha límite de consumo según la vida útil registrada, para recibir alertas precisas de vencimiento.
 
 ![wireframe 16](assets/img/chapter-04/wireframes/mobile/US36%20mobile.png)
 ![wireframe 16](assets/img/chapter-04/wireframes/web/US36%20web.png)
 
+Se presenta el formulario de producto con las fechas de ingreso y de vencimiento completadas y el recuadro de vida útil sugerida con la nota "Fecha de vencimiento calculada automáticamente", que evidencia la relación entre la fecha de ingreso, la vida útil y la fecha límite de consumo.
+
 17) **Wireframe 17:** 
 **User Story relacionada:** US37 - Como administrador, quiero que el sistema recopile automáticamente los datos de ventas diarias, para que el modelo de Machine Learning pueda analizarlos y detectar patrones de consumo.
 
 ![wireframe 17](assets/img/chapter-04/wireframes/mobile/US37%20mobile.png)
 ![wireframe 17](assets/img/chapter-04/wireframes/web/US37%20web.png)
+
+La vista "Predicción de Demanda" muestra el resultado del análisis de las ventas: los indicadores de precisión, productos y horizonte, la demanda semanal estimada por plato con su tendencia y nivel de confianza, y el bloque "Demanda total por día", que suma todos los productos.
+
+**Aplicación de principios y elementos de diseño**
+
+- **Principios de diseño:** la *jerarquía* ubica primero lo urgente: las métricas y las alertas críticas encabezan el Dashboard, y el Inventario y las Alertas se ordenan por urgencia. La *consistencia* se logra al repetir la misma estructura (título de vista, acciones, lista de tarjetas) y la misma posición de los controles en todos los módulos. La *proximidad* agrupa en una misma tarjeta los datos y las acciones de cada insumo o alerta. La *retroalimentación* se prevé desde el wireframe con mensajes de confirmación y de error, y la *prevención de errores*, con el cuadro de diálogo que confirma el cambio de rol antes de aplicarlo.
+- **Elementos de diseño:** se usan tarjetas rectangulares de esquinas redondeadas, barras de nivel para la cantidad de stock, gráficos de barras para la demanda, etiquetas tipo píldora para estados y severidades, e íconos de línea junto a cada opción del menú. El valor (tonos de gris) distingue el módulo activo del menú, la acción principal de la secundaria ("Guardar" frente a "Cancelar", "Editar" frente a "Eliminar") y las alertas críticas del resto.
+- **Diseño inclusivo:** el selector ES / EN está presente en todas las vistas, incluida la de inicio de sesión. Los estados y severidades se expresan con texto (CRÍTICO, VENCIENDO, ALTA, MEDIA, ENVIADA, LEÍDA) y no solo con tono o color. Los campos de formulario llevan su rótulo encima, los menús combinan ícono y texto, y el campo de contraseña permite mostrar lo escrito. En mobile, los botones ocupan todo el ancho disponible y la navegación principal queda en la parte inferior de la pantalla, al alcance del pulgar.
+- **Arquitectura de información:** la navegación global agrupa el contenido por módulos, con las mismas etiquetas definidas en la sección 4.2.2 (Dashboard, Inventario, Recetas, Alertas, Roles y Permisos, Planes). La vista de Roles y Permisos aplica la categorización por audiencia y determina qué módulos ve cada rol, lo que se refleja en el menú reducido del Panel del Empleado. El módulo de Inventario aplica el sistema de búsqueda de la sección 4.2.4: buscador de texto, filtro y ordenamiento por Urgencia, Cantidad y Vencimiento. En mobile, los cuatro accesos de la barra inferior priorizan Dashboard, Inventario y Alertas, y el resto de módulos se agrupa en "Más".
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
