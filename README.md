@@ -134,12 +134,25 @@ Proyecto:
 URL del repositorio (report): https://github.com/upc-pre-202602-1ASI0729-7747-databit<br>
 
 **Primera Entrega (AV1)**
+
 El equipo elaboró el Project Report mediante un trabajo coordinado, distribuyendo las distintas secciones entre los integrantes. Cada participante aportó activamente en la redacción de contenidos, el diseño y ajuste de diagramas, la recopilación de evidencias, el control de formato y la revisión integral del documento previo a la entrega.
 
 En paralelo, se avanzó con el diseño y construcción de la landing page de StockIA. Dicha labor quedó registrada en el informe y respaldada en su respectivo repositorio, incorporando pruebas de su implementación, despliegue técnico y alineación con la propuesta de valor de la solución.
 
 Para la gestión colaborativa se empleó GitHub, plataforma que facilitó el seguimiento de modificaciones mediante commits, la estructuración de las tareas y el respaldo cronológico del avance, tanto del reporte como de la página web. De igual forma, las métricas de colaboración y el historial de versiones sirven como constancia de la participación de cada integrante.
 ![insight-av1](assets/img/chapter-01/insight-av1.png)
+
+**Trabajo Parcial (TB1)**
+
+El equipo realizó la corrección del reporte AV1, afinando la redacción, ajustando el formato y reforzando la coherencia entre las secciones para garantizar un documento más sólido y alineado con los objetivos del curso. Esta nueva versión quedó registrada en el repositorio y constituye la base documental del avance del proyecto.
+
+En paralelo, se desplegó una nueva versión de la Landing Page, incorporando mejoras de diseño y funcionalidad que responden al feedback recibido. Asimismo, se logró la primera versión desplegada del Frontend Web Applications, lo que marca un hito en la transición del diseño conceptual hacia la implementación técnica de la solución.
+
+El progreso quedó documentado en el Capítulo V: Product Implementation, Validation & Deployment (sprint 2), donde se detallan las pruebas realizadas, la validación de funcionalidades y el proceso de despliegue técnico. Dicho capítulo evidencia la integración entre la propuesta de valor y su materialización en artefactos funcionales.
+
+Para la gestión colaborativa se continuó utilizando GitHub, que permitió coordinar commits, organizar tareas y mantener un historial cronológico del avance. Las métricas de colaboración y el registro de versiones respaldan la participación activa de cada integrante, asegurando transparencia y trazabilidad en el desarrollo del proyecto
+![insight-av1](assets/img/chapter-01/insight-tb1.png)
+
 
 ---
 # Student Outcome
