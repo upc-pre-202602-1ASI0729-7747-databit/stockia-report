@@ -13,7 +13,7 @@ NRC
 
 **7747**
 
-**Informe del AV1**
+**Informe del TB1**
 
 Docente:
 **Robles Fernández, Ivan**
@@ -64,19 +64,19 @@ Proyecto:
     <td><b>Primera Entrega (AV1)</b></td>
     <td>17/09/2026</td>
     <td>
-      Gallardo Morales,Carla Alejandra <br>
+      Gallardo Morales,Carla Alejandra
       <br>
       <p></p>
-      Huaman Oscco, Aldo Jesus <br>
+      Huaman Oscco, Aldo Jesus
       <br>
       <p></p>
-      Miranda Cordova, Jesus Angel Yvan <br>
+      Miranda Cordova, Jesus Angel Yvan
       <br>
       <p></p>
-      Ortiz Laura, Leyla Alisson <br>
+      Ortiz Laura, Leyla Alisson
       <br>
       <p></p>
-      Toro Turpo, Ronal <br>
+      Toro Turpo, Ronal
     </td>
     <td>
       Capítulo I: 
@@ -96,6 +96,36 @@ Proyecto:
     <br>
     </td>
   </tr>
+  <tr>
+    <td><b>Segunda Entrega (TB1)</b></td>
+    <td>06/10/2026</td>
+    <td>
+      Gallardo Morales,Carla Alejandra
+      <br>
+      <p></p>
+      Huaman Oscco, Aldo Jesus
+      <br>
+      <p></p>
+      Miranda Cordova, Jesus Angel Yvan
+      <br>
+      <p></p>
+      Ortiz Laura, Leyla Alisson
+      <br>
+      <p></p>
+      Toro Turpo, Ronal
+    </td>
+    <td>
+      Corrección del reporte AV1
+    <br>
+      Nueva versión desplegada de Landing Page
+    <br> 
+      Primera versión desplegada de Frontend Web Applications
+    <br>
+      Capítulo V:
+      Product Implementation, Validation & Deployment (sprint 2)
+    <br>
+    </td>
+  </tr>
   </table>
 
  ---
@@ -104,6 +134,25 @@ Proyecto:
 URL del repositorio (report): https://github.com/upc-pre-202602-1ASI0729-7747-databit<br>
 
 **Primera Entrega (AV1)**
+
+El equipo elaboró el Project Report mediante un trabajo coordinado, distribuyendo las distintas secciones entre los integrantes. Cada participante aportó activamente en la redacción de contenidos, el diseño y ajuste de diagramas, la recopilación de evidencias, el control de formato y la revisión integral del documento previo a la entrega.
+
+En paralelo, se avanzó con el diseño y construcción de la landing page de StockIA. Dicha labor quedó registrada en el informe y respaldada en su respectivo repositorio, incorporando pruebas de su implementación, despliegue técnico y alineación con la propuesta de valor de la solución.
+
+Para la gestión colaborativa se empleó GitHub, plataforma que facilitó el seguimiento de modificaciones mediante commits, la estructuración de las tareas y el respaldo cronológico del avance, tanto del reporte como de la página web. De igual forma, las métricas de colaboración y el historial de versiones sirven como constancia de la participación de cada integrante.
+![insight-av1](assets/img/chapter-01/insight-av1.png)
+
+**Trabajo Parcial (TB1)**
+
+El equipo realizó la corrección del reporte AV1, afinando la redacción, ajustando el formato y reforzando la coherencia entre las secciones para garantizar un documento más sólido y alineado con los objetivos del curso. Esta nueva versión quedó registrada en el repositorio y constituye la base documental del avance del proyecto.
+
+En paralelo, se desplegó una nueva versión de la Landing Page, incorporando mejoras de diseño y funcionalidad que responden al feedback recibido. Asimismo, se logró la primera versión desplegada del Frontend Web Applications, lo que marca un hito en la transición del diseño conceptual hacia la implementación técnica de la solución.
+
+El progreso quedó documentado en el Capítulo V: Product Implementation, Validation & Deployment (sprint 2), donde se detallan las pruebas realizadas, la validación de funcionalidades y el proceso de despliegue técnico. Dicho capítulo evidencia la integración entre la propuesta de valor y su materialización en artefactos funcionales.
+
+Para la gestión colaborativa se continuó utilizando GitHub, que permitió coordinar commits, organizar tareas y mantener un historial cronológico del avance. Las métricas de colaboración y el registro de versiones respaldan la participación activa de cada integrante, asegurando transparencia y trazabilidad en el desarrollo del proyecto
+![insight-av1](assets/img/chapter-01/insight-tb1.png)
+
 
 ---
 # Student Outcome
@@ -131,26 +180,45 @@ del ABET – EAC - Student Outcome 3.
             <b>Gallardo Morales, Carla Alejandra</b><br>
             <u>AV1</u><br>
             Sustenté el Ubiquitous Language y las Style Guidelines empleando un lenguaje centrado en la experiencia del usuario, comprensible tanto para audiencias técnicas como para evaluadores sin perfil de diseño. Al exponer la Information Architecture y los prototipos navegables, orientó su comunicación hacia la validación de la interfaz, utilizando wireframes y mockups como medios audiovisuales que facilitaron la comprensión de la propuesta de diseño.
-            <br><br>
+            <br>           
+            <u>TB1</u><br>
+            Expuse el frontend de la aplicación web desarrollado para esta entrega, empleando un lenguaje claro y accesible que permitió a audiencias técnicas y no técnicas comprender el funcionamiento de las vistas implementadas. Al presentar las correcciones del AV1, en especial las de los diseños UX/UI, orienté la comunicación hacia la justificación de los cambios realizados, utilizando la aplicación en ejecución y los mockups actualizados como apoyo audiovisual para validar la coherencia entre el diseño y la implementación.
+            <br><br>            
             <b>Huaman Oscco, Aldo Jesus</b><br>
             <u>AV1</u><br>
             Expuse las Lean UX Hypothesis y las User Stories empleando un lenguaje accesible que permitió a audiencias generales comprender los criterios de aceptación. Al presentar el Product Backlog y el diseño de la landing page, orientó la comunicación hacia la priorización de funcionalidades y la coherencia visual del sistema, utilizando diagramas y prototipos como apoyo audiovisual.
-            <br><br>
+            <br>           
+            <u>TB1</u><br>
+            Expuse a mis equipo el metodo de trabajo a emplear para el entregable siguiendo la metodologia Scrum para un trabajo colaborativo eficaz, empleando un lenguaje claro y accesible que permitió a audiencias técnicas y no técnicas comprender el funcionamiento de las vistas implementadas. Comunique eficazmente los puntos a corregir del informe anterior para seguir un trabajo escalable.
+            <br><br> 
             <b>Miranda Cordova, Jesus Angel Yvan</b><br>
             <u>AV1</u><br>
             Expuse el análisis de competidores y el Needfinding con un lenguaje claro y centrado en el usuario, diferenciando hallazgos de hipótesis. Durante la presentación del EventStorming y los diagramas C4 y UML, orientó la comunicación hacia la delimitación de bounded contexts, empleando tableros y diagramas como medios visuales que facilitaron la comprensión de la estructura técnica del sistema.
-            <br><br>
+            <br>           
+            <u>TB1</u><br>
+             Expuse las correcciones realizadas al AV1 en los diagramas de clases y en el análisis competitivo, empleando un lenguaje claro que permitió a audiencias técnicas y no técnicas comprender los cambios y su justificación. Al presentar el modelo de dominio, expliqué que los diagramas de clases pasaron de describir solo la estructura del Front-End a representar el dominio de cada Bounded Context, con sus Aggregate Roots, Entities, Value Objects, Domain Services, Domain Events, Repositories, invariantes y Enums, y que el material de Front-End se conservó como complemento
+            <br><br> 
             <b>Ortiz Laura, Leyla Alisson</b><br>
             <u>AV1</u><br>
-            Presente las User Stories y el Impact Mapping empleando un lenguaje accesible que articuló metas de negocio con funcionalidades técnicas. Al exponer el diseño de entrevistas y las interfaces de la aplicación web, utilizó prototipos y diagramas como apoyo audiovisual, validando con el equipo y evaluadores la experiencia de usuario. Además, explicó los lineamientos de Software Configuration Management enfocando la comunicación en la organización del trabajo colaborativo.
-            <br><br>
+            Presenté las User Stories y el Impact Mapping empleando un lenguaje accesible que articuló metas de negocio con funcionalidades técnicas. Al exponer el diseño de entrevistas y las interfaces de la aplicación web, utilizó prototipos y diagramas como apoyo audiovisual, validando con el equipo y evaluadores la experiencia de usuario. Además, explicó los lineamientos de Software Configuration Management enfocando la comunicación en la organización del trabajo colaborativo.
+            <br>           
+            <u>TB1</u><br>
+            Expuse las correcciones realizadas en Interviews & Needfinding, la propuesta de valor y en todo el reporte en general para mejorar la comunicación y su calidad, empleando un lenguaje claro y accesible que permitió a audiencias técnicas y no técnicas comprender los ajustes realizados. Al presentar la parte del dashboard y los alerts en el repositorio de la web app, orienté la comunicación hacia la validación del funcionamiento real de los componentes.
+            <br><br> 
             <b>Toro Turpo, Ronal</b><br>
             <u>AV1</u><br>
             Presenté la descripción de la startup, los antecedentes y segmentos empleando un lenguaje accesible para audiencias no técnicas. Al exponer el EventStorming y los diagramas C4 y UML, adaptó el nivel técnico del discurso a la audiencia evaluadora, utilizando diagramas como apoyo audiovisual para validar la comprensión de la arquitectura. También explicó el diseño de base de datos enfocando cada explicación hacia el objetivo específico del artefacto expuesto.
+            <br>           
+            <u>TB1</u><br>
+            Realize las correcciones realizadas en el proceso de lean ux, segmentos objetivos y arquitectura, segun a las observaciones. Esto ayuda a que el lector tenga una mejor idea de los usuarios ademas el lean ux canvas ayuda a validar el dominio del negocio.
             <br><br>
         </td>
         <td>
             <u>AV1</u><br>Durante el AV1, el equipo demostró capacidad para adaptar su discurso a diferentes audiencias, combinando explicaciones técnicas con lenguaje accesible. El uso de diagramas, prototipos y tableros visuales permitió que tanto evaluadores con perfil de ingeniería como audiencias generales comprendieran los artefactos expuestos. La coordinación en las presentaciones evidenció escucha activa y claridad en la transmisión de ideas
+            <br>           
+            <u>TB1</u><br>
+            Durante el TB1, el equipo demostró capacidad para adaptar y mejorar su discurso a diferentes audiencias, explicando y usando lenguaje tecnico hacia un lenguaje accesible. El uso de diagramas, prototipos y tableros visuales permitió que tanto evaluadores con perfil de ingeniería como audiencias generales comprendieran los artefactos expuestos. La coordinación en las presentaciones evidenció escucha activa y claridad en la transmision de ideas de negocio como core y la capacidad de convencer audiencias eficazmente.
+            <br><br>
         </td>
     </tr>
       <tr>
@@ -159,26 +227,45 @@ del ABET – EAC - Student Outcome 3.
             <b>Gallardo Morales, Carla Alejandra</b><br>
             <u>AV1</u><br>
             Redacté el Ubiquitous Language y las Style Guidelines con un lenguaje claro y centrado en la experiencia del usuario, verificando que la redacción fuera coherente con el público objetivo del informe. Documentó la Information Architecture y los prototipos con descripciones escritas que complementaban los diagramas visuales, permitiendo que lectores con diferentes perfiles comprendieran la lógica de navegación y diseño de la aplicación.
+            <br>           
+            <u>TB1</u><br>
+            Redacté las correcciones del AV1 en el informe, principalmente las referidas a los diseños UX/UI, con un lenguaje claro y estructurado, asegurando que los ajustes fueran comprensibles para lectores con distintos perfiles. Documenté mediante commits el desarrollo del frontend de la aplicación web con descripciones precisas, garantizando trazabilidad entre los diseños corregidos y las vistas implementadas. Mi redacción permitió mantener coherencia entre la documentación del informe y el estado funcional del producto.
             <br><br>
             <b>Huaman Oscco, Aldo Jesus</b><br>
             <u>AV1</u><br>
             Redacté las Lean UX Hypothesis y las User Stories siguiendo el formato estándar del informe, utilizando un lenguaje orientado al usuario que permitió a lectores no técnicos comprender las hipótesis y criterios de aceptación. Documentó el Product Backlog y el diseño de la landing page con descripciones escritas estructuradas, asegurando que los objetivos técnicos fueran comprensibles para diferentes rangos de audiencia. Su redacción integró coherencia entre la planificación del sprint y la implementación de la aplicación y servicios.
+            <br>           
+            <u>TB1</u><br>
+            Redacté las correcciones del AV1 en el informe, me enfoque en desarrollar y corregir lo relacionado a la parte documentaria de la metodologia agil scrum, desde las user storys hasta los sprint, dividiendo el trabajo de manera eficaz con la metodologia aplicada. Documenté mediante commits el desarrollo del scrum para el trabajo colaborativo eficaz.
             <br><br>
             <b>Miranda Cordova, Jesus Angel Yvan</b><br>
             <u>AV1</u><br>
             Redacté el análisis de competidores y el Needfinding con un lenguaje centrado en el usuario, permitiendo que lectores sin perfil técnico comprendieran las hipótesis planteadas. Documentó el EventStorming y los diagramas C4 y UML con descripciones escritas que acompañaban cada vista del sistema, utilizando un lenguaje técnico preciso para evaluadores de ingeniería, pero comprensible para audiencias generales. Su redacción aseguró trazabilidad y coherencia entre bounded contexts y artefactos técnicos.
+            <br>           
+            <u>TB1</u><br>
+             Redacté las correcciones del AV1 correspondientes a los diagramas de clases y al análisis competitivo.En el modelo de dominio, documenté para cada Bounded Context sus agregados, entidades, objetos de valor, servicios de dominio, eventos, repositorios, enumeraciones e invariantes, separando de forma explícita el modelo de dominio de los diagramas del Front-End y manteniendo la correspondencia con el Event Storming, el C4 y la base de datos. En el análisis competitivo, reescribí el enfoque y reemplacé la afirmación de ser el "único que combina" estas capacidades por una formulación sustentada en las fuentes del análisis. Esta redacción permitió mantener la trazabilidad y la coherencia entre los artefactos técnicos y la propuesta de valor del informe.
             <br><br>
             <b>Ortiz Laura, Leyla Alisson</b><br>
             <u>AV1</u><br>
             Redacté las User Stories y el Impact Mapping con un lenguaje claro y estructurado, articulando metas de negocio con funcionalidades técnicas. Documentó el diseño de entrevistas y las interfaces de la aplicación web con descripciones escritas que acompañaban los prototipos, permitiendo que lectores sin experiencia en diseño comprendieran la propuesta. Además, elaboró los lineamientos de Software Configuration Management con un lenguaje técnico preciso, asegurando orden y trazabilidad en el trabajo colaborativo.
+            <br>           
+            <u>TB1</u><br>
+            Redacté las correcciones de Interviews & Needfinding, la propuesta de valor siguiendo un formato técnico estructurado, asegurando que los cambios fueran comprensibles para distintos rangos de audiencia. Documenté mediante commits la implementación del dashboard y los alerts en la web app con descripciones claras garantizando trazabilidad con los objetivos del sprint. Mi escritura permitió mantener coherencia entre la documentación técnica y el estado funcional del sistema.
             <br><br>
             <b>Toro Turpo, Ronal</b><br>
             <u>AV1</u><br>
             Redacté la descripción de la startup y el análisis de antecedentes y problemática siguiendo los estándares del informe técnico, sintetizando la propuesta de valor y el contexto del sistema en un lenguaje claro y accesible. Documentó los segmentos objetivo y el EventStorming con descripciones escritas estructuradas, y elaboró los diagramas C4, UML y de base de datos con notaciones estandarizadas, garantizando que fueran comprensibles tanto para perfiles técnicos como para revisores del proyecto.
+            <br>           
+            <u>TB1</u><br>
+            Redacte las correcciones del Lean ux canvas de manera que los segmentos objetivos y los bussines outcomes tengan mas formas y evidenica de medición y no solo estadísticas, ademas que en la parte de arquitectura se realizaron las correciones con respecto a inconsistencias y mejoras en el modelo de clases y bases de datos.
             <br><br>
         </td>
         <td>
             <u>AV1</u><br>En la documentación del AV1, el equipo mostró consistencia en el uso de formatos estandarizados y lenguaje claro, asegurando que los entregables fueran comprensibles para distintos rangos de audiencia. La redacción de hipótesis, diagramas y artefactos técnicos se complementó con descripciones accesibles, lo que garantizó trazabilidad y coherencia en el informe. La escritura colectiva reflejó organización y capacidad de síntesis en la comunicación escrita.
+            <br>           
+            <u>TB1</u><br>
+            En la documentación del TB1, el equipo corrigió el informe a partir del feedback del AV1: unificó el segmento objetivo, alineó los "para" de las User Stories con los objetivos estratégicos de StockIA, expresó los requisitos no funcionales con criterios medibles y eliminó notas internas y contradicciones. La sección del Sprint 2 se redactó con evidencias que el lector puede comprobar en GitHub (commits, ramas y Pull Requests de la Web Application) y se distinguió con claridad lo implementado de lo que queda en el roadmap. Así, la comunicación escrita pasó de ser declarativa a ser verificable, comprensible tanto para evaluadores técnicos como para lectores no técnicos.
+            <br><br>
         </td>
     </tr>
 </table>
@@ -259,15 +346,24 @@ del ABET – EAC - Student Outcome 3.
     - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--conventions)
     - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
   - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
-    - [5.2.X. Sprint N](#52x-sprint-n)
-      - [5.2.X.1. Sprint Planning N](#52x1-sprint-planning-n)
-      - [5.2.X.2. Aspect Leaders and Collaborators](#52x2-aspect-leaders-and-collaborators)
-      - [5.2.X.3. Sprint Backlog N](#52x3-sprint-backlog-n)
-      - [5.2.X.4. Development Evidence for Sprint Review](#52x4-development-evidence-for-sprint-review)
-      - [5.2.X.5. Execution Evidence for Sprint Review](#52x5-execution-evidence-for-sprint-review)
-      - [5.2.X.6. Services Documentation Evidence for Sprint Review](#52x6-services-documentation-evidence-for-sprint-review)
-      - [5.2.X.7. Software Deployment Evidence for Sprint Review](#52x7-software-deployment-evidence-for-sprint-review)
-      - [5.2.X.8. Team Collaboration Insights during Sprint](#52x8-team-collaboration-insights-during-sprint)
+    - [5.2.1. Sprint 1](#521-sprint-1)
+      - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
+      - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
+      - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
+      - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
+      - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
+      - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
+      - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
+      - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+    - [5.2.2. Sprint 2](#522-sprint-2)
+      - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
+      - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
+      - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
+      - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
+      - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
+      - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
+      - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
+      - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
   - [5.3. Validation Interviews](#53-validation-interviews)
     - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
     - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
@@ -287,7 +383,7 @@ del ABET – EAC - Student Outcome 3.
 ## 1.1. Startup Profile
 
 ### 1.1.1. Descripción de la Startup
-DataBite Corp es una startup tecnológica innovadora que aunque su creacion es reciente su enfoque está en liderar la transformación digital del sector gastronómico en el país y Latinoamérica. Nuestro enfoque principal radica en el desarrollo de soluciones de software as a Service (SaaS) que integran analítica predictiva asistida por Machine Learning (ML) y tecnologías de Internet de las Cosas (IoT).
+DataBite Corp es una startup tecnológica innovadora que aunque su creacion es reciente su enfoque está en liderar la transformación digital del sector gastronómico en el país y Latinoamérica. Nuestro enfoque principal radica en el desarrollo de soluciones de software as a Service (SaaS) que integran analítica predictiva asistida por Machine Learning (ML) y, en un futuro, tecnologías de Internet de las Cosas (IoT).
 
 Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas avanzadas para pequeñas y medianas cadenas de restaurantes, permitiendo optimizar sus operaciones y tomar decisiones basadas en datos en tiempo real. A través de nuestro producto estrella, "StockIA", buscamos resolver problemas críticos de la industria como el descontrol de inventarios, los quiebres de stock y las mermas financieras. Nos motiva generar un impacto directo tanto económico como ambiental, ayudando a las empresas a reducir el desperdicio de alimentos y a maximizar sus márgenes de rentabilidad, todo centralizado en un ecosistema web unificado, accesible y altamente escalable.
 
@@ -307,7 +403,7 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
        <b>Descripción:</b><br/>
       Soy <b>Carla Alejandra Gallardo Morales</b>, tengo 19 años. Desde que me incorporé en la Universidad Peruana de Ciencias Aplicadas en el periodo 2024-01, es decir que ahora mismo estoy cursando el sexto ciclo de la carrera de Ing. de Software, he adquirido y desarrollado distintos conocimientos a cerca de la programación, específicamente en el lenguaje C++, JavaScript y TypeScript, además, de forma autodidacta y extracurricular, he profundizado en el lenguaje Python, lo que ha ampliado mi perspectiva sobre la lógica y resolución de problemas.
       <br/><br/>
-      Dentro del equipo, mi contribución se basa en el apoyo continuo del desarrollo del backend y frontend de nuestro aplicativo mobile, asimismo ayudo en la implementación del informe de nuestro proyecto.
+      Dentro del equipo, mi contribución se basa en el apoyo continuo del desarrollo del backend y frontend de nuestro proyecto, asimismo ayudo en la implementación del informe del mismo.
       <br/>
   </tr>
 
@@ -337,12 +433,12 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
     <td><b>Nombre:</b> Miranda Cordova, Jesus Angel Yvan</td>
   </tr>
   <tr>
-    <td><b>Código:</b> u20241</td>
+    <td><b>Código:</b> U202411261</td>
   </tr>
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy <b>Miranda Cordova Jesus</b>b>, tengo 19 años y actualmente estudio la carrera de Ingeniería de Software en la Universidad Privada de Ciencias Aplicadas (UPC). Me gusta aprender nuevos lenguajes de programación  y desarrollar juegos en mi tiempo libre. Soy una persona de naturaleza tranquila, siempre dispuesto a ayudar y colaborar cuando sea necesario <b></b>
+      Soy <b>Miranda Cordova Jesus</b>, tengo 19 años y actualmente estudio la carrera de Ingeniería de Software en la Universidad Privada de Ciencias Aplicadas (UPC). Me gusta aprender nuevos lenguajes de programación  y desarrollar juegos en mi tiempo libre. Soy una persona de naturaleza tranquila, siempre dispuesto a ayudar y colaborar cuando sea necesario <b></b>
       <br/>
     </td>
   </tr>
@@ -376,7 +472,7 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy Ronal Toro Turpo, tengo 20 años estudio la carrera de ingenieria de software, desde el comienzo de mi vida universitaria e ido adquiriendo y desarrollando diversas habilidades como el desarrollo en leguajes de programacion como C++, java script, y en la parte web lenguajes como HTML y CSS si bien el trabajo en equipo no es uno de mis fuertes trato de hacer lo mejor que puedo, espero aprender muchas cosas a lo largo del semestre para este curso ya que lo considero muy interezante e importante para el desarrollo de mi carrera.<b></b>
+      Soy Ronal Toro Turpo, tengo 20 años estudio la carrera de ingenieria de software, desde el comienzo de mi vida universitaria e ido adquiriendo y desarrollando diversas habilidades como el desarrollo en lenguajes de programacion como C++, java script, y en la parte web lenguajes como HTML y CSS si bien el trabajo en equipo no es uno de mis fuertes trato de hacer lo mejor que puedo, espero aprender muchas cosas a lo largo del semestre para este curso ya que lo considero muy interesante e importante para el desarrollo de mi carrera.<b></b>
       <br/>
     </td>
   </tr>
@@ -418,12 +514,12 @@ Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application
 
 **Our product/service will address this gap by** ofreciendo un ecosistema web unificado de gestión multi-cadena que vincula el inventario de las sucursales con las recetas de los platos (deduciendo automáticamente los ingredientes al momento de crear una orden), aplica seguridad basada en roles de acceso, proporciona dashboards de monitoreo operativo y utiliza modelos de Machine Learning para pronosticar la demanda de los clientes y generar recomendaciones automatizadas de reposición de inventario.
 
-**Our initial focus will be** los CEOs y gerentes generales de operaciones de cadenas de servicios de alimentación en crecimiento (2 o más ubicaciones) que buscan estandarización operativa, reducción de desperdicios y supervisión en tiempo real.
+**Our initial focus will be** los administradores y dueños de restaurantes de servicios de alimentación en crecimiento (2 o más ubicaciones) que buscan estandarización operativa, reducción de desperdicios y supervisión en tiempo real.
 
 **We’ll know we are successful when we see** los siguientes comportamientos medibles en nuestro público objetivo:
 1. Una reducción del 40% en los reportes semanales de discrepancias de inventario en todas las sucursales conectadas durante los primeros 60 días posteriores a la incorporación.
 2. Al menos el 75% de las órdenes de compra de suministros programadas están siendo generadas directamente a partir de las recomendaciones automatizadas de reposición mediante ML.
-3. Interacción semanal activa con los dashboards por parte de más del 85% de los CEOs/gerentes de operaciones de restaurantes inscritos.
+3. Interacción semanal activa con los dashboards por parte de más del 85% de los administradores de operaciones de restaurantes inscritos.
 
 #### 1.2.2.2. Lean UX Assumptions
 1. Creemos que existe una demanda creciente por parte de pequeñas y medianas cadenas de restaurantes que buscan transformar digitalmente sus operaciones para evitar mermas financieras causadas por el descontrol de inventario.
@@ -436,7 +532,7 @@ Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application
 
 **User outcomes:**
 
-1. Creemos que los CEOs lograrán visibilidad integral e inmediata del estado de inventario, consumo de ingredientes y actividad del personal en todas las sucursales sin depender de llamadas o reportes manuales en hojas de cálculo.
+1. Creemos que los dueños de restaurantes lograrán visibilidad integral e inmediata del estado de inventario, consumo de ingredientes y actividad del personal en todas las sucursales sin depender de llamadas o reportes manuales en hojas de cálculo.
 
 2. Creemos que los restaurantes reducirán el desperdicio de alimentos perecibles hasta en un **25%** al ajustar sus compras y producción a las proyecciones de demanda de comensales.
 
@@ -445,9 +541,9 @@ Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application
 4. Creemos que los líderes del negocio mitigarán pérdidas financieras no autorizadas mediante la restricción de privilegios por roles de trabajo.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
-1. Creemos que lograremos un aumento del **20%** en la retención semanal de la plataforma por parte de los ejecutivos de restaurantes **si** los CEOs y gerentes de operaciones de restaurantes **obtienen** visibilidad instantánea y consolidada de los niveles de inventario y el rendimiento de las ventas en todas las sucursales **con** un dashboard operativo interactivo para múltiples cadenas.
+1. Creemos que lograremos un aumento del **20%** en la retención semanal de la plataforma por parte de los ejecutivos de restaurantes **si** los administradores y dueños de restaurantes **obtienen** visibilidad instantánea y consolidada de los niveles de inventario y el rendimiento de las ventas en todas las sucursales **con** un dashboard operativo interactivo para múltiples cadenas.
 
-2. Creemos que lograremos una reducción del **30%** en los incidentes de seguridad y los reportes de pérdidas internas **si** los CEOs de restaurantes y gerentes de tienda **obtienen** delegación segura de tareas y control detallado sobre las operaciones críticas de inventario **con** un sistema de gestión de configuración de roles y permisos.
+2. Creemos que lograremos una reducción del **30%** en los incidentes de seguridad y los reportes de pérdidas internas **si** los dueños de restaurantes **obtienen** delegación segura de tareas y control detallado sobre las operaciones críticas de inventario **con** un sistema de gestión de configuración de roles y permisos.
 
 3. Creemos que lograremos una disminución del **35%** en las discrepancias de las auditorías manuales de inventario **si** los gerentes de tienda y operadores de inventario **obtienen** un seguimiento rápido y sin errores de las entradas, transferencias y modificaciones de materias primas **con** un módulo centralizado de gestión de inventario en tiempo real.
 
@@ -460,9 +556,9 @@ Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application
 Luego de aplicar el proceso de validación y empatizar con los dolores operativos del rubro gastronómico, StockIA ha delimitado su alcance para enfocarse en un único segmento objetivo. Hemos identificado que la verdadera transformación digital debe ocurrir en la "primera línea" operativa, es decir, en manos de quienes gestionan el negocio día a día. 
 
 
-**Segmento Único: Administradores de Restaurante y Jefes de Sucursal** 
+**Segmento Único: CEOs / Gerentes de restaurantes / administradores de restaurantes** 
 
-StockIA se enfoca exclusivamente en los administradores de restaurante y jefes de sucursal, profesionales dinámicos de 25 a 45 años que dependen de sus dispositivos para gestionar la operación diaria. Estos usuarios sufren un alto estrés operativo al invertir entre 8 y 10 horas semanales en conteos manuales de inventario y lidiar con un sector que desperdicia entre el 4% y el 10% de sus insumos (Lopez, 2025). Al no contar con una herramienta que deduzca automáticamente los ingredientes vendidos, se ven obligados a realizar compras basadas en la intuición (Lopez, 2025), lo que genera constantes quiebres de stock o mermas por excesos que impactan negativamente la rentabilidad financiera del negocio.  Para resolver estos dolores, estos administradores buscan en StockIA una plataforma que actúe como un asistente ágil y proactivo. Su expectativa principal es que el sistema reciba los datos de ventas y descuente automáticamente los insumos sin requerir intervención manual. Además, necesitan aprovechar la tecnología de Machine Learning para recibir alertas predictivas de reposición directamente en canales rápidos como WhatsApp, todo esto operando bajo un entorno digital seguro que les permita delegar responsabilidades en la cocina mediante una estricta configuración de roles y permisos.
+StockIA se enfoca exclusivamente en los administradores de restaurante o gerentes de sucursal, profesionales dinámicos de 25 a 45 años que dependen de sus dispositivos para gestionar la operación diaria. Estos usuarios sufren un alto estrés operativo al invertir entre 8 y 10 horas semanales en conteos manuales de inventario y lidiar con un sector que desperdicia entre el 4% y el 10% de sus insumos (Lopez, 2025). Al no contar con una herramienta que deduzca automáticamente los ingredientes vendidos, se ven obligados a realizar compras basadas en la intuición (Lopez, 2025), lo que genera constantes quiebres de stock o mermas por excesos que impactan negativamente la rentabilidad financiera del negocio.  Para resolver estos dolores, estos administradores buscan en StockIA una plataforma que actúe como un asistente ágil y proactivo. Su expectativa principal es que el sistema reciba los datos de ventas y descuente automáticamente los insumos sin requerir intervención manual. Además, necesitan aprovechar la tecnología de Machine Learning para recibir alertas predictivas de reposición directamente en canales rápidos como WhatsApp, todo esto operando bajo un entorno digital seguro que les permita delegar responsabilidades en la cocina mediante una estricta configuración de roles y permisos.
 
 | Característica | Descripción |
 |---|---|
@@ -528,14 +624,14 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Overview</b></td>
-      <td>Es una startup en etapa de desarrollo que ofrece una plataforma web de gestión inteligente de inventario para restaurantes, con predicción de demanda basada en Machine Learning, integración con clima, monitoreo IoT de equipos de cocina y ocupación, y alertas automáticas vía WhatsApp.</td>
+      <td>Es una startup en etapa de desarrollo que ofrece una plataforma web de gestión inteligente de inventario para restaurantes que conecta recetas, ventas e inventario para descontar insumos automáticamente, alertar sobre stock bajo y vencimientos y realizar predicción de demanda (Ej. "Preparar más lentejas el lunes" debido a que el lunes pasado recibió gran demanda de platos con lentejas) usando Machine Learning. Clima e IoT están en su roadmap.</td>
       <td>Software SaaS todo-en-uno para restaurantes, de origen chileno, con fuerte presencia en Chile, México y LATAM. Cubre POS, KDS, delivery, reservas, inventario y facturación electrónica.</td>
       <td>Software de gestión para restaurantes de origen peruano, enfocado en pedidos, cocina, inventario y facturación electrónica SUNAT, pensado específicamente para la realidad tributaria y operativa local.</td>
       <td>Plataforma de gestión de inventario y reducción de desperdicio de alimentos con IA, dirigida a restaurantes, hoteles, bares y cafés, con fuerte enfoque en predicción de demanda y automatización de compras.</td>
     </tr>
     <tr>
       <td><b>Ventaja Competitiva<br>¿Qué valor ofrece a los clientes?</b></td>
-      <td>Único que combina ML predictivo + variable climática + IoT físico (sensores de ocupación y de electrodomésticos) + notificaciones directas a WhatsApp del personal en una sola plataforma.</td>
+      <td>Descuento automático por receta, alertas por lote sin reemplazar el sistema de ventas integrado con Machine Learning para predicción de demanda. En un futuro se añadirá las funciones de Clima e IoT. En la revisión de sitios de Toteat, Panca y RestoIQ no encontramos esta combinación orientada a restaurantes de un solo local en Perú.</td>
       <td>Ecosistema todo-en-uno con alta adopción y reconocimiento de marca en LATAM.</td>
       <td>Adaptación total a la normativa peruana (SUNAT, IGV) y facilidad de implementación (5 minutos), con soporte 100% en español y precios muy accesibles.</td>
       <td>Pionero regional en IA aplicada específicamente a inventario y desperdicio, con modelo de forecasting propio (7-day forecast) y transparencia total de precios.</td>
@@ -562,7 +658,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Productos & Servicios</b></td>
-      <td>Dashboard, gestión de stock y recetas con descuento automático, predicción de demanda con ML, recomendaciones automáticas de compra, alertas por WhatsApp, integración con clima, sensores IoT de ocupación y de electrodomésticos, gestión de roles y planes de pago.</td>
+      <td>Dashboard, gestión de stock y recetas con descuento automático, predicción de demanda con ML, recomendaciones automáticas de compra, alertas por WhatsApp, gestión de roles y planes de pago. Las siguientes secciones forman parten del roadmap: integración con clima, sensores IoT de ocupación y de electrodomésticos.</td>
       <td>POS, KDS, Menú QR, gestión de mesas y reservas, integración con apps de delivery, control de inventario, facturación electrónica, reportes en tiempo real.</td>
       <td>POS/gestión de pedidos, carta digital, facturación electrónica SUNAT, control de inventario avanzado, food cost automático, reportes inteligentes.</td>
       <td>Predicción de demanda, automatización de órdenes de compra, registro de mermas, dashboards con 12+ gráficos, gestión multi-outlet para hoteles.</td>
@@ -586,7 +682,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Fortalezas</b></td>
-      <td>Único competidor que combina ML predictivo, variable climática (OpenWeather) e IoT físico en un solo producto.</td>
+      <td>Nos enfocamos en un problema concreto (receta → inventario → prediccion → alerta) y en el segmento de un solo local.</td>
       <td>Alta adopción y reconocimiento de marca en LATAM (+5,000 restaurantes).</td>
       <td>Fuerte adaptación a la normativa peruana (SUNAT, IGV), un factor crítico de decisión de compra en el mercado local.</td>
       <td>Uso real y ya validado de IA (modelo propio de forecast a 7 días) para predicción de demanda y reducción de desperdicio.</td>
@@ -600,7 +696,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Oportunidades</b></td>
-      <td>Ningún competidor identificado integra simultáneamente clima + IoT + ML + WhatsApp; existe un vacío claro de mercado.</td>
+      <td>Los competidores en los que se basó este análisis priorizan POS y facturación; Stockia abre paso a que los locales pequeños, que parece menos atendidos, puedan tener un control de sus insumos.</td>
       <td>Podría integrar módulos de IA en el futuro apalancándose en su gran volumen de datos históricos de +5,000 restaurantes.</td>
       <td>Podría expandir su módulo de inventario hacia analítica predictiva, dado que ya tiene base de datos de ventas e inventario de sus +150 clientes.</td>
       <td>Podría integrar IoT y clima en próximas versiones dado que ya cuenta con un modelo de ML funcionando en producción.</td>
@@ -614,6 +710,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
   </tbody>
 </table>
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
 ## Fortalezas
@@ -704,8 +801,7 @@ Datos del entrevistado:
 
 **Resumen descriptivo:**
 La entrevista con la señora Albertina, dueña del restaurante Misty Mercury, muestra que gestiona sus insumos de manera muy básica y manual: compra lo justo para cada día según los platos que decide preparar, evitando desperdicios pero sin llevar un registro formal ni contar con un sistema que le anticipe necesidades. Aunque rara vez enfrenta problemas de stock, depende de su memoria y observación de ventas pasadas para decidir qué ofrecer, lo que limita la eficiencia y la capacidad de respuesta ante cambios en la demanda. Reconoce que le sería útil contar con un sistema automático que le sugiera menús, alerte sobre insumos próximos a agotarse y le indique cuáles productos se consumen más, lo que evidencia que aún necesita apoyo adicional en la gestión de inventario y planificación.
- 
-<br>
+
 
 
 **Entrevista 2:**
@@ -754,7 +850,7 @@ Asimismo, Miguel señala que le gustaría contar con un sistema que integre el i
 <p align="center"><i>Evidencia de entrevista: David </i></p>
   
   **Resumen Descriptivo:** 
-David, de 35 años, es jefe de cocina de un restaurante de comida italiana ubicada en Surco, que lleva aproximadamente 5 años funcionando y cuenta con 3 cocineros y 5 mosos mas personal de cajas y otros. Nos comenta que actualmente controla el inventario de manera manual y utiliza Excel para gestionar las recetas, las ventas se registran en un sistema independiente y hacen uso de la gestion y experiencia del jefe de cocinar para la compra de insumos en alta demanda. Esta forma de trabajo le ha generado sobrecarga y fallos en el inventario por margenes de error al manejarlo, mermas y cambios inesperados en la demanda, ocasionando en algunas situaciones en las que se quede sin determinados platos.
+David, de 35 años, es jefe de cocina de un restaurante de comida italiana ubicada en Surco, que lleva aproximadamente 5 años funcionando y cuenta con 3 cocineros y 5 mozos mas personal de cajas y otros. Nos comenta que actualmente controla el inventario de manera manual y utiliza Excel para gestionar las recetas, las ventas se registran en un sistema independiente y hacen uso de la gestion y experiencia del jefe de cocinar para la compra de insumos en alta demanda. Esta forma de trabajo le ha generado sobrecarga y fallos en el inventario por margenes de error al manejarlo, mermas y cambios inesperados en la demanda, ocasionando en algunas situaciones en las que se quede sin determinados platos.
 
 Asimismo, David señala que le gustaría contar con un sistema que integre el inventario, genere reportes de oferta y demanda, poder visualizar el stock del producto en tiempo real y poder acceder a notificaciones que le indiquen de manera no intrusiva que mandar a comprar los fines de semana o los feriados por venir.
 </br>
@@ -763,15 +859,24 @@ Asimismo, David señala que le gustaría contar con un sistema que integre el in
 **Enlace del video:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQCgtdb_9fA9T7XB-BJNcAKNAd0Um3w55VhcCg1SePkzKFs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hZLVpm) 
 
 ### 2.2.3. Análisis de entrevistas
+**Entrevista 1:**
+La señora Albertina gestiona su restaurante de manera práctica y eficiente en lo básico, pero carece de herramientas que le permitan anticiparse y tomar decisiones basadas en datos. Aunque reconoce patrones de consumo y ajusta la oferta según preferencias de clientes y horarios, carece de un sistema que le permita proyectar tendencias o automatizar decisiones. Su negocio funciona de manera práctica, pero tiene vulnerabilidades: falta de datos estructurados, poca previsión y ausencia de alertas sobre insumos críticos.
 
-Entrevista 2:
+**Entrevista 2:**
+Basándonos en la  entrevista de Claudia , el usuario expresa su disconformidad ante su situación actual con respecto a la falta de stock en momentos clave .Ya ha usado software de gestión básicos antes pero su problema se mantiene. El usuario expresó interés en herramientas que permitan el monitoreo preciso del inventario y que le generen recomendaciones o alertas según sea necesario.
 
-Basándonos en la  entrevista de Claudia , el usuario expresa su disconformidad ante su situación actual con respecto a la falta de stock en momentos clave .Ya ha usado software de gestión básicos antes pero su problema se mantiene. El usuario expresó interés en herramientas que permitan el monitoreo preciso del inventario y que le generen recomendaciones o alertas según sea necesario .
+**Entrevista 3:**
+Miguel enfrenta una gestión fragmentada y manual de su restaurante que, aunque le permite cierto control básico, genera errores de inventario, mermas y dificultades para anticipar la demanda, lo que impacta directamente en la disponibilidad de platos y la eficiencia operativa. Su interés en un sistema integrado que unifique inventario, recetas, ventas y anulaciones refleja una necesidad clara de digitalización y automatización, especialmente para acceder rápidamente a información histórica sobre consumo y patrones de demanda. Esto evidencia que la principal oportunidad de mejora está en implementar una solución tecnológica que reduzca la dependencia de procesos manuales, optimice la toma de decisiones y le brinde mayor capacidad de respuesta frente a cambios inesperados en el negocio
+
+**Entrevista 4:**
+David enfrenta una sobrecarga operativa al depender de procesos manuales y de su propia experiencia para gestionar inventarios y compras, lo que ha derivado en errores, mermas y dificultades para responder a variaciones en la demanda. Su interés en un sistema que integre inventario con reportes de oferta y demanda, stock en tiempo real y notificaciones preventivas revela una necesidad clara de digitalización que reduzca la carga individual y mejore la eficiencia del restaurante. La oportunidad de mejora radica en implementar una solución tecnológica que automatice el control de insumos, anticipe necesidades en fechas críticas y ofrezca información confiable para optimizar la toma de decisiones.
+
+**Conclusión de los análisis:** Las necesidades con mayor frecuencia y severidad (como control de inventario manual, ventas registradas aparte del inventario, quiebres de stock o platos agotados, mermas o errores de inventario) de nuestros entrevistados definen el núcleo del producto: registro de inventario, descuento por receta y alertas. La demanda variable que existe en los restaurnates que manejan, justifica la predicción con Machine Learning como valor diferenciador en el mercado. 
 
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
-## Segmento: 
+## Segmento: S
 
 Administradores y dueños de restaurantes que sufren por las pérdidas financieras generadas por el descontrol de sus inventarios y el desperdicio de insumos perecibles.
 <p align="center"><img src="assets/img/chapter-02/user-persona.png" alt="STOCKIA user persona" width="500">
@@ -832,13 +937,13 @@ En esta sección se presenta el resultado del Big Picture Event Storming realiza
 
 A partir del análisis colaborativo se identificaron ocho Bounded Contexts principales. Cada contexto agrupa eventos relacionados con una responsabilidad específica del sistema, permitiendo separar el dominio siguiendo los principios de Domain-Driven Design.
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="assets/img/chapter-02/big-picture-event-storming.png" alt="STOCKIA big picture event storming" width="500">
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-2.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="assets/img/chapter-02/big-picture-event-storming-2.png" alt="STOCKIA big picture event storming" width="500">
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-3.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="assets/img/chapter-02/big-picture-event-storming-3.png" alt="STOCKIA big picture event storming" width="500">
 
-<p align="center"><img src="\assets\img\chapter-02\big-picture-event-storming-4.png" alt="STOCKIA big picture event sotorming" width="500">
+<p align="center"><img src="assets/img/chapter-02/big-picture-event-storming-4.png" alt="STOCKIA big picture event storming" width="500">
 
 ## 2.5. Ubiquitous Language
 
@@ -2184,37 +2289,84 @@ En esta sección se explican las acciones y técnicas que guían al usuario a tr
 ## 4.3. Landing Page UI Design
 
 ### 4.3.1. Landing Page Wireframe
+
+En esta sección se presentan los wireframes del Landing Page de StockIA, elaborados en Figma en baja fidelidad (escala de grises, bloques de texto simulados y contenedores vacíos para imágenes e íconos). Su propósito es validar la estructura, la jerarquía del contenido y la navegación entre las cuatro páginas del sitio (Inicio, Características, Precios y Nosotros) antes de aplicar el estilo visual definido en la sección 4.1.
+
+**Desktop Web Browser**
+
 <p align="center"><img src="assets/img/chapter-04/W-Inicio.png" width="500" alt="Inicio"/></p>
+
+**Inicio.** El wireframe muestra, de arriba hacia abajo: el navbar con el logotipo, los enlaces Inicio, Características, Precios y Nosotros, el selector de idioma ES | EN y el botón "Solicitar demo"; el hero con el titular "Predicción de demanda e inventario inteligente para tu restaurante", los botones "Optimiza tu inventario →" y "Ver cómo funciona", tres indicadores (−25%, +18%, <5s) y, a la derecha, un contenedor que representa el dashboard con un gráfico de barras y una franja de "alerta IoT + alerta IA". Le siguen una banda oscura con cuatro cifras (30%, 1 de 3, −20%, 24/7), el bloque "¿Para quién es StockIA?" con dos tarjetas (Dueños y CEOs de restaurante / Administradores y jefes de cocina), la sección "Todo lo que necesita tu restaurante" con seis tarjetas de funcionalidades y el botón "Ver todas las características →", la sección "Más que un inventario" con tres diferenciadores (Gamificación, Sostenibilidad, Aprende de tu restaurante) y la sección "Se conecta con el ecosistema que ya usas" con cuatro tarjetas de integraciones (Google Maps API, OpenWeather API, Stripe / PayPal, Twilio / SendGrid).
 
 <p align="center"><img src="assets/img/chapter-04/W-Inicio-Continuacion.png" width="500" alt="Inicio-Continuacion"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Inicio (continuación).** La parte inferior de la página presenta el portafolio "La plataforma en acción", con tres pestañas de filtro (Todas las vistas, Inventario, IA & IoT) y cuatro tarjetas con mini pantallas (Dashboard principal, Predicción de Demanda, Recetas y Descuento, Alertas IoT); la sección "Mira StockIA en acción", con un contenedor reservado para el video demostrativo; la banda de cierre "Empieza a optimizar tu inventario hoy" con el botón "Solicitar demo"; y el footer organizado en las columnas Producto, Empresa y Legal.
+
 <p align="center"><img src="assets/img/chapter-04/W-Caracteristicas.png" width="500" alt="Caracteristicas"/>
 <br/><i>Artefacto: Figma</i></p>
+
+**Características.** Se compone de un encabezado oscuro con el titular "Todo lo que necesitas, en un solo lugar", una grilla de seis tarjetas (Inventario Inteligente, Predicción de Demanda con IA, Recomendaciones Automáticas, Monitoreo IoT de Cocina, Roles y Permisos, Sostenibilidad y Gamificación), cada una con ícono, título, descripción y etiqueta, y la sección "Empieza en minutos", que ordena cuatro pasos numerados: Registra tu restaurante, Carga tu inventario y recetas, La IA empieza a aprender y Recibe alertas y decide. La página cierra con la misma banda de llamada a la acción y el mismo footer.
 
 <p align="center"><img src="assets/img/chapter-04/W-Precios.png" width="500" alt="Precios"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Precios.** Bajo el titular "Elige el plan que se adapta a tu restaurante" se ubica un interruptor Mensual / Anual con una etiqueta de descuento y tres tarjetas de plan: Esencial (S/ 0), Profesional (S/ 39), resaltado con un borde más grueso y la etiqueta "Más popular", e IoT Completo (S/ 79). Cada plan lista sus prestaciones con marcas de incluido (✓) y no incluido (✕). Debajo se indica "Sin tarjeta de crédito · Cancela cuando quieras" y se presenta la sección "Preguntas frecuentes" como un acordeón de tres preguntas, seguida de la banda de llamada a la acción y el footer.
+
 <p align="center"><img src="assets/img/chapter-04/W-Nosotros.png" width="500" alt="Nosotros"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Nosotros.** Inicia con el titular "Ayudamos a los restaurantes a no dejar nada al azar", dos tarjetas (Nuestra Misión y Nuestra Visión) y cinco etiquetas con los valores de marca (Innovación, Precisión, Sostenibilidad, Confiabilidad, Cercanía). Continúa con "El equipo detrás de StockIA", que reserva cinco tarjetas para los integrantes; "Conoce al equipo de DataBite Corp", con el contenedor del video del equipo; "Sobre DataBite Corp", con cuatro datos de la startup (2026, IA + IoT, 1 restaurante piloto, Perú) y un botón hacia Características; y la sección de contacto "Conversemos sobre tu restaurante", con los datos de correo y ubicación y el formulario "Solicita una demo" (Nombre, Restaurante, Correo, Mensaje y botón "Enviar solicitud").
+
+**Aplicación de principios y elementos de diseño**
+
+- **Principios de diseño:** la *jerarquía* se establece por tamaño y peso, de modo que el titular del hero y los titulares de sección dominan sobre los bloques de texto simulado. El *contraste* entre bandas claras y oscuras separa las secciones y destaca las cifras y las llamadas a la acción. La *repetición* del patrón etiqueta de sección + titular + línea descriptiva + grilla de tarjetas, así como del navbar, la banda de cierre y el footer en las cuatro páginas, da consistencia al sitio. La *alineación* a una grilla común (dos, tres, cuatro o cinco columnas según el contenido) y la *proximidad* entre ícono, título, descripción y etiqueta dentro de cada tarjeta permiten reconocer cada grupo de información como una unidad.
+- **Elementos de diseño:** se emplean formas rectangulares con esquinas redondeadas para tarjetas, botones y campos; líneas grises de distinto largo para representar texto; contenedores vacíos para íconos, imágenes y videos; y el valor (escala de grises) como único recurso para diferenciar el botón primario (relleno oscuro) del secundario (relleno claro) y el plan recomendado del resto. El espacio en blanco entre secciones marca el ritmo de lectura vertical.
+- **Diseño inclusivo:** el selector de idioma ES | EN está previsto en el navbar de todas las páginas. Las etiquetas de navegación y de los botones son textuales y describen la acción ("Solicitar demo", "Ver cómo funciona", "Enviar solicitud"). En la tabla de planes, lo incluido y lo no incluido se distingue mediante símbolos (✓ / ✕) y no por color, y el plan recomendado se identifica además con el texto "Más popular". El formulario de contacto presenta pocos campos y rotulados. El comportamiento en pantallas pequeñas se rige por los breakpoints definidos en la sección 4.1.2.
+- **Arquitectura de información:** los wireframes materializan lo definido en la sección 4.2. La organización secuencial se observa en los cuatro pasos de "Empieza en minutos"; la categorización por tópicos, en los seis módulos de Características; la categorización por audiencia, en el bloque "¿Para quién es StockIA?"; y la organización matricial, en las pestañas del portafolio. El sistema de navegación se compone del navbar como navegación global, el footer como navegación secundaria (Producto, Empresa, Legal) y la llamada a la acción "Solicitar demo", que se repite en el navbar y en la banda de cierre de cada página y conduce al formulario de contacto de Nosotros.
+
 ### 4.3.2. Landing Page Mock-up
+
+En esta sección se presentan los mock-ups del Landing Page de StockIA, elaborados en Figma en alta fidelidad a partir de los wireframes de la sección 4.3.1. Conservan la misma estructura y orden de secciones, e incorporan el contenido real, la paleta de colores, las tipografías y los componentes definidos en el Design System de la sección 4.1 (Style Guidelines).
+
+**Desktop Web Browser**
+
 <p align="center"><img src="assets/img/chapter-04/M-Inicio.png" width="500" alt="Inicio"/></p>
+
+**Inicio.** El navbar muestra el logotipo de StockIA, el enlace de la página activa resaltado, el selector ES / EN y el botón "Solicitar demo" en verde oscuro. En el hero, sobre un fondo verde muy claro, el titular destaca la palabra "restaurante" en color terracota y cursiva; el botón principal "Optimiza tu inventario →" usa el color de acento y "Ver cómo funciona" se presenta como botón de contorno. Debajo aparecen tres indicadores (−25% desperdicio de alimentos, +18% margen operativo estimado, <5s descuento de insumos por venta). A la derecha se ubica una vista del dashboard con cuatro métricas (Insumos 342, Stock Bajo 9, Por Vencer 4, Ahorro Sem. S/2.3k), el gráfico de demanda proyectada para los próximos siete días y dos alertas: una roja con la etiqueta "crítica" (refrigerador con la puerta abierta) y una amarilla con la etiqueta "IA" (preparar más masa de pizza). Siguen la banda verde oscuro con cuatro cifras y su nota aclaratoria de que son referenciales, las dos tarjetas de "¿Para quién es StockIA?" y la grilla "Todo lo que necesita tu restaurante", con seis tarjetas que incluyen ícono a color, descripción y etiqueta (Gestión de stock, Machine Learning, Compras inteligentes, Hardware conectado, Control de equipo, Impacto medible).
 
 <p align="center"><img src="assets/img/chapter-04/M-Inicio-Continuacion.png" width="500" alt="Inicio-Continuacion"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Inicio (continuación).** Tras el botón "Ver todas las características →" se observa la sección "Más que un inventario" sobre fondo verde oscuro, con tres tarjetas (Gamificación, Sostenibilidad, Aprende de tu restaurante); la sección "Se conecta con el ecosistema que ya usas", cuyas cuatro tarjetas de integraciones llevan borde punteado y la etiqueta "EN EVALUACIÓN"; y el portafolio "La plataforma en acción", con las pestañas Todas las vistas, Inventario e IA & IoT y cuatro mini pantallas (Dashboard principal, Predicción de Demanda, Recetas y Descuento Automático, Sistema de Alertas IoT).
+
 <p align="center"><img src="assets/img/chapter-04/M-Caracteristicas.png" width="500" alt="Caracteristicas"/>
 <br/><i>Artefacto: Figma</i></p>
+
+**Características.** El encabezado verde oscuro presenta el titular "Todo lo que necesitas, en un solo lugar". Las seis tarjetas de módulos se muestran en blanco sobre un fondo gris claro, cada una con un ícono sobre un recuadro de color distinto, su descripción y una etiqueta. La sección "Empieza en minutos" enumera los cuatro pasos en círculos verde oscuro con una breve explicación por paso, y la página cierra con la banda "Empieza a optimizar tu inventario hoy" y el botón "Solicitar demo".
 
 <p align="center"><img src="assets/img/chapter-04/M-Precios.png" width="500" alt="Precios"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Precios.** Bajo el titular "Elige el plan que se adapta a tu restaurante" se muestra el interruptor Mensual / Anual con la etiqueta verde "30% descuento" y los tres planes: Esencial (S/ 0), Profesional (S/ 39), resaltado con borde verde oscuro y la etiqueta "Más popular", e IoT Completo (S/ 79). Las prestaciones incluidas llevan un check verde y las no incluidas una equis gris con el texto atenuado. La sección "Preguntas frecuentes" presenta tres preguntas en formato acordeón, seguidas de la banda de llamada a la acción y el footer en verde oscuro.
+
 <p align="center"><img src="assets/img/chapter-04/M-Nosotros.png" width="500" alt="Nosotros"/>
 <br/><i>Artefacto: Figma</i></p>
 
+**Nosotros.** El encabezado verde oscuro contiene el titular "Ayudamos a los restaurantes a no dejar nada al azar", las tarjetas Nuestra Misión y Nuestra Visión con sus textos, y los cinco valores de marca en forma de etiquetas. Debajo se ubican "El equipo detrás de StockIA", con cinco fichas de integrantes de borde punteado; "Conoce al equipo de DataBite Corp", con el contenedor del video del equipo; y "Sobre DataBite Corp", con los datos de la startup (2026, IA + IoT, 1, Perú) en tarjetas.
+
 <p align="center"><img src="assets/img/chapter-04/M-Contacto.png" width="500" alt="Contacto"/>
 <br/><i>Artefacto: Figma</i></p>
+
+**Contacto.** Corresponde al tramo final de la página Nosotros. A la izquierda se presenta el titular "Conversemos sobre tu restaurante" con los datos de Correo y Ubicación (Lima, Perú); a la derecha, el formulario "Solicita una demo", con los campos rotulados Nombre, Restaurante, Correo y Mensaje, textos de ejemplo dentro de cada campo y el botón "Enviar solicitud" en color terracota. La página cierra con la banda de llamada a la acción y el footer, con las columnas Producto, Empresa y Legal.
+
+**Aplicación de principios, elementos de diseño y Design System**
+
+- **Principios de diseño:** la *jerarquía* se refuerza con el tamaño y el peso de los titulares y con el uso del color de acento únicamente en las acciones principales ("Optimiza tu inventario →", "Enviar solicitud"), de modo que cada vista tiene un único punto focal. El *contraste* entre las secciones verde oscuro y las secciones claras marca el cambio de tema, y el texto blanco sobre verde oscuro mantiene la legibilidad. La *repetición* de navbar, etiqueta de sección, titular, tarjetas, banda de cierre y footer da unidad a las cuatro páginas. La *alineación* a la grilla y el *espacio en blanco* entre secciones conservan la estructura validada en los wireframes.
+- **Elementos de diseño:** el color se usa con función y no solo con fin decorativo: verde oscuro para la identidad y la navegación, terracota para las llamadas a la acción y los colores semánticos (rojo, amarillo, verde) para los estados dentro de la vista del dashboard. La tipografía distingue el logotipo del resto del texto. Las formas son tarjetas y botones de esquinas redondeadas, con sombras sutiles que separan las tarjetas del fondo, y los íconos acompañan a cada título para facilitar el reconocimiento.
+- **Diseño inclusivo:** el contenido está disponible en español e inglés mediante el selector ES / EN. Los estados no dependen solo del color: las alertas combinan color, texto y etiqueta ("crítica", "IA"); las prestaciones de cada plan combinan símbolo (check / equis) y texto; y el plan recomendado lleva la etiqueta "Más popular". Los campos del formulario tienen rótulo visible además del texto de ejemplo. El texto oscuro sobre fondo blanco y el texto blanco sobre verde oscuro siguen el criterio de contraste alto señalado en la sección 4.1.2.
+- **Arquitectura de información:** se mantienen los sistemas definidos en la sección 4.2: navegación global en el navbar con indicación de la página activa, navegación secundaria en el footer, organización secuencial en "Empieza en minutos", categorización por tópicos en los seis módulos de Características, categorización por audiencia en "¿Para quién es StockIA?" y filtrado por pestañas en el portafolio. Las etiquetas empleadas (Inventario, Predicción de Demanda con IA, Recomendaciones Automáticas, Monitoreo IoT de Cocina, Roles y Permisos, Sostenibilidad y Gamificación) coinciden con el sistema de rotulado de la sección 4.2.2.
+- **Design System:** los mock-ups aplican las decisiones de la sección 4.1. En color, el primario verde bosque #16332B (navbar, bandas, footer, titulares), el acento terracota #E2673B (botones de acción principal y palabra destacada del hero), los neutros para fondos y bordes, y los semánticos de éxito, advertencia y peligro en métricas y alertas. En tipografía, Inter para titulares y cuerpo, y Orbitron para el logotipo. En componentes, los botones primario, de acento y de contorno, las tarjetas de funcionalidad, de precio y de segmento, las etiquetas de sección, los campos de formulario y el interruptor Mensual / Anual descritos en la sección 4.1.2. Esta misma paleta se reutiliza en la vista del dashboard incluida en el hero, lo que sustenta la consistencia visual entre el Landing Page y la Web Application.
 
 ## 4.4. Web Applications UX/UI Design
 
@@ -2222,7 +2374,13 @@ Esta sección incluye secciones internas donde se presenta y explica la propuest
 visual y de interacción para las aplicaciones que constituyen la experiencia de
 usuario con los productos digitales.
 
+La propuesta corresponde a la Web Application de StockIA, que se utiliza tanto desde Desktop Web Browser como desde Mobile Web Browser, y se documenta de menor a mayor fidelidad. Primero, los wireframes (4.4.1) definen la estructura de cada vista; luego, los wireflows (4.4.2) enlazan esos wireframes para mostrar cómo el usuario avanza hacia cada User goal; después, los mock-ups (4.4.3) aplican sobre esas mismas vistas el estilo visual de la sección 4.1; y, por último, los user flows (4.4.4) representan con los mock-ups el camino principal y los caminos alternativos de cada objetivo. Todas las vistas se organizan en función de las User Stories US21 a US37 de la sección 3.1 y toman como referencia a la User Persona del segmento objetivo (sección 2.3.1), el administrador de restaurante.
+
 ### 4.4.1. Web Applications Wireframes
+
+En esta sección se presentan los wireframes de la Web Application de StockIA, elaborados en Figma en baja fidelidad y en escala de grises. Cada wireframe se asocia a una User Story y se muestra en dos versiones: Mobile Web Browser (primera imagen) y Desktop Web Browser (segunda imagen). Cuando una vista cambia de estado, por ejemplo un formulario vacío y el mismo formulario con datos, cada estado se dibuja como una pantalla independiente.
+
+Todas las vistas autenticadas comparten una misma estructura. En desktop, un menú lateral oscuro contiene el logotipo, el nombre del restaurante, los módulos Dashboard, Inventario, Recetas, Predicción, Recomendaciones, Alertas (con un contador), IoT, Roles, Planes y Notificaciones, el selector de idioma ES / EN, el usuario en sesión con su rol y la opción "Cerrar sesión". En mobile, ese menú se sustituye por un encabezado con el logotipo, el ícono de notificaciones, el avatar y el selector de idioma, y por una barra de navegación inferior con cuatro accesos: Dashboard, Inventario, Alertas y Más.
 
 1) **Wireframe 1:** 
 **User Story relacionada:** US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
@@ -2230,6 +2388,8 @@ usuario con los productos digitales.
 ![wireframe 1](assets/img/chapter-04/wireframes/mobile/mobile-wireframe1.png)
 
 ![wireframe 1](assets/img/chapter-04/wireframes/web/web-wireframe1.png)
+
+El wireframe muestra cuatro pantallas: la lista de Inventario (20 productos) con el botón "+ Nuevo", el buscador "Buscar producto...", el ícono de filtro, las pestañas de orden Urgencia, Cantidad y Vencimiento, y una tarjeta por insumo con nombre, categoría y proveedor, etiqueta de estado (CRÍTICO, VENCIENDO), cantidad con barra de nivel, fecha de vencimiento y los botones "Editar" y "Eliminar"; el formulario "Nuevo producto" vacío, con los campos Nombre del producto, Categoría, Cantidad, Unidad, Stock mínimo, Almacenamiento, Fecha de ingreso, Fecha de vencimiento y Proveedor, y los botones "Cancelar" y "Guardar"; el mismo formulario con datos; y la lista de Inventario actualizada a 21 productos con el nuevo insumo incorporado.
 
 2) **Wireframe 2:** 
 **User Story relacionada:** US22 - Como administrador, quiero guardar recetas con ingredientes vinculados al inventario, para que al venderse un plato se descuenten automáticamente los insumos.
@@ -2240,17 +2400,23 @@ usuario con los productos digitales.
 ![wireframe 3](assets/img/chapter-04/wireframes/mobile/mobile-wireframe2.png)
 ![wireframe 3](assets/img/chapter-04/wireframes/web/web-wireframe2.png)
 
+La primera pantalla es el Panel de Administrador, con el saludo al usuario, cuatro tarjetas de métricas (Productos en inventario, Stock crítico, Alertas activas y Ahorro estimado), la lista "Alertas críticas" con el enlace "Ver todas" y la lista "Próximos a vencer" con el enlace "Ver inventario". La segunda pantalla es la vista Alertas (8 activas), en la que cada alerta presenta título, descripción, fecha y hora, y una etiqueta de severidad (CRÍTICA, ALTA, MEDIA).
+
 4) **Wireframe 4:** 
 **User Story relacionada:** US24 - Como administrador, quiero asignar roles a empleados, para que cada uno tenga recomendaciones personalizadas y permisos adecuados dentro del sistema.
 
 ![wireframe 4](assets/img/chapter-04/wireframes/mobile/mobile-wireframe3.png)
 ![wireframe 4](assets/img/chapter-04/wireframes/web/web-wireframe3.png)
 
+El wireframe presenta cinco pantallas de "Roles y Permisos": la tabla "Permisos por rol", que cruza cada módulo con los roles Admin y Empleado, y la lista "Usuarios del restaurante" con el botón "Cambiar a Empleado"; el cuadro de diálogo "Confirmar cambio de rol", con los botones "Cancelar" y "Confirmar" sobre el fondo oscurecido; la misma vista con el mensaje "Rol actualizado correctamente."; la vista con la etiqueta del usuario cambiada a EMPLEADO y el botón "Promover a Admin"; y el "Panel del Empleado", con menos métricas y un menú reducido.
+
 5) **Wireframe 5:** 
 **User Story relacionada:** US25 - Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima, para poder preparar insumos con anticipación.
 
 ![wireframe 5](assets/img/chapter-04/wireframes/mobile/mobile-wireframe4.png)
 ![wireframe 5](assets/img/chapter-04/wireframes/web/web-wireframe4.png)
+
+La vista "Predicción de Demanda" muestra tres indicadores en la parte superior (Precisión IA 94%, 4 productos, horizonte de 7 días) y una tarjeta por plato (Tacos de Camarón, Guacamole Fresco, Pollo en Mole) con el total de porciones estimadas para la semana, un gráfico de barras por día (L a D), la tendencia (Alza, Estable), el porcentaje de confianza y la cantidad sugerida a comprar.
 
 6) **Wireframe 6:** 
 **User Story relacionada:** US26 - Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad, para ajustar la oferta de mi restaurante.
@@ -2263,11 +2429,15 @@ usuario con los productos digitales.
 ![wireframe 7](assets/img/chapter-04/wireframes/mobile/mobile-wireframe5.png)
 ![wireframe 7](assets/img/chapter-04/wireframes/web/web-wireframe5.png)
 
+Se muestran dos pantallas: la lista de Inventario ordenada por Urgencia, donde los insumos con etiqueta CRÍTICO y VENCIENDO aparecen primero, y la vista Alertas (8 activas), ordenada de mayor a menor severidad (CRÍTICA, ALTA, MEDIA), con la descripción de cada caso, por ejemplo la cantidad disponible frente al mínimo requerido.
+
 8) **Wireframe 8:** 
 **User Story relacionada:** US28 - Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp, para poder actuar rápido sin necesidad de entrar al sistema.
 
 ![wireframe 8](assets/img/chapter-04/wireframes/mobile/mobile-wireframe6.png)
 ![wireframe 8](assets/img/chapter-04/wireframes/web/web-wireframe6.png)
+
+La vista "Historial de Notificaciones" presenta cuatro contadores por estado (Enviada, Leída, Pendiente, Fallida), las pestañas de filtro por canal (Todos, Email, WhatsApp, Push, En app) y la lista de notificaciones, cada una con título, mensaje, fecha, canal, destinatario y etiqueta de estado. La segunda pantalla muestra la misma vista con el filtro WhatsApp seleccionado, que reduce la lista a las notificaciones enviadas por ese canal.
 
 9) **Wireframe 9:** 
 **User Story relacionada:** US29 - Como nuevo usuario, quiero registrarme en StockIA con mis datos, para poder acceder al sistema y configurar mi restaurante.
@@ -2275,11 +2445,15 @@ usuario con los productos digitales.
 ![wireframe 9](assets/img/chapter-04/wireframes/mobile/mobile-wireframe7.png)
 ![wireframe 9](assets/img/chapter-04/wireframes/web/web-wireframe7.png)
 
+El wireframe muestra tres pantallas: el formulario "Iniciar sesión" vacío, con el selector ES / EN, los campos Correo electrónico y Contraseña (con ícono para mostrarla), la casilla "Recordarme", el enlace "¿Olvidaste tu contraseña?", el botón "Iniciar sesión", los accesos a cuentas de demostración (Admin, Employee) y el enlace "¿No tienes cuenta? Crear cuenta"; el mismo formulario con el correo ingresado; y el Panel de Administrador al que se accede. El punto de entrada al registro es el enlace "Crear cuenta".
+
 10) **Wireframe 10:** 
 **User Story relacionada:** US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, para poder acceder a mi dashboard personalizado.
 
 ![wireframe 10](assets/img/chapter-04/wireframes/mobile/US30%20mobile.png)
 ![wireframe 10](assets/img/chapter-04/wireframes/web/US30%20web.png)
+
+Se representan los estados del inicio de sesión: el formulario con credenciales ingresadas y el Dashboard completo al que conduce (métricas, alertas críticas, próximos a vencer, predicción de demanda, recomendaciones y acciones rápidas); el formulario con el mensaje "Credenciales incorrectas. Verifica tu email y contraseña."; la pantalla "¿Olvidaste tu contraseña?", con el campo de correo y el botón "Enviar instrucciones"; y la confirmación "¡Instrucciones enviadas!" con el botón "Volver al Login".
 
 11) **Wireframe 11:** 
 **User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
@@ -2287,11 +2461,15 @@ usuario con los productos digitales.
 ![wireframe 11](assets/img/chapter-04/wireframes/mobile/US31%20mobile.png)
 ![wireframe 11](assets/img/chapter-04/wireframes/web/US31%20web.png)
 
+El wireframe reúne cinco pantallas: "Planes de StockIA", con el interruptor Mensual / Anual y tres planes (Starter 49, Profesional 149 con la marca "Más popular" y fondo oscuro, Enterprise 399), cada uno con su lista de prestaciones y el botón "Seleccionar plan"; el "Checkout", con el resumen del pedido, los campos Nombre en la tarjeta, Número de tarjeta, Vencimiento y CVV, y el botón "Pagar $49/mes"; la confirmación "¡Suscripción activada!"; la confirmación "¡Suscripción renovada!"; y el Checkout con el mensaje "Pago rechazado. Intenta con otro método." y el botón "Reintentar".
+
 12) **Wireframe 12:** 
 **User Story relacionada:** US32 - Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de los eventos importantes.
 
 ![wireframe 12](assets/img/chapter-04/wireframes/mobile/US32%20mobile.png)
 ![wireframe 12](assets/img/chapter-04/wireframes/web/US32%20web.png)
+
+Se muestran tres pantallas: el detalle de una alerta de severidad CRÍTICA ("Cilantro agotándose"), con su descripción, producto, stock actual y mínimo, y los botones "Marcar como resuelta" y "Enviar por WhatsApp"; el detalle de una alerta de severidad BAJA ("Refrigerador principal OK"); y la lista de Alertas con el botón "Generar resumen" y el mensaje de confirmación "Resumen generado y enviado al correo electrónico".
 
 13) **Wireframe 13:** 
 **User Story relacionada:** US33 - Como administrador, quiero recibir SMS críticos vía Twilio, para poder reaccionar rápido ante emergencias en tiempo real.
@@ -2299,11 +2477,15 @@ usuario con los productos digitales.
 ![wireframe 13](assets/img/chapter-04/wireframes/mobile/US33%20mobile.png)
 ![wireframe 13](assets/img/chapter-04/wireframes/web/US33%20web.png)
 
+El wireframe presenta el detalle de dos alertas de severidad CRÍTICA: "Congelador — temperatura anormal", que indica la temperatura registrada, el rango requerido y el riesgo de descomposición, y "Aceite de oliva crítico", que indica la cantidad disponible y el mínimo requerido. Ambas ofrecen las acciones "Marcar como resuelta" y "Enviar por WhatsApp".
+
 14) **Wireframe 14:** 
 **User Story relacionada:** US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
 
 ![wireframe 14](assets/img/chapter-04/wireframes/mobile/US34%20mobile.png)
 ![wireframe 14](assets/img/chapter-04/wireframes/web/US34%20web.png)
+
+Se muestran dos estados del formulario "Nuevo producto". En el primero, bajo el campo Proveedor aparece el recuadro "Vida útil sugerida: 10 días" con la nota "Fecha de vencimiento calculada automáticamente". En el segundo, el recuadro indica "No se encontró información de vida útil." y ofrece la opción "Ingresar manualmente".
 
 15) **Wireframe 15:** 
 **User Story relacionada:** US35 - Como administrador, quiero poder modificar la vida útil sugerida por la API, para ajustarla a las condiciones reales de mi restaurante.
@@ -2311,11 +2493,15 @@ usuario con los productos digitales.
 ![wireframe 15](assets/img/chapter-04/wireframes/mobile/US35%20mobile.png)
 ![wireframe 15](assets/img/chapter-04/wireframes/web/US35%20web.png)
 
+El wireframe muestra dos estados del formulario "Editar producto" para el insumo Tomate cherry. En ambos, el recuadro de vida útil incluye el campo "Modificar vida útil". En el primero, con almacenamiento "ambient", la vida útil sugerida es de 10 días; en el segundo, con almacenamiento "frozen", la sugerencia cambia a 30 días y la fecha de vencimiento se actualiza.
+
 16) **Wireframe 16:** 
 **User Story relacionada:** US36 - Como administrador, quiero que el sistema calcule automáticamente la fecha límite de consumo según la vida útil registrada, para recibir alertas precisas de vencimiento.
 
 ![wireframe 16](assets/img/chapter-04/wireframes/mobile/US36%20mobile.png)
 ![wireframe 16](assets/img/chapter-04/wireframes/web/US36%20web.png)
+
+Se presenta el formulario de producto con las fechas de ingreso y de vencimiento completadas y el recuadro de vida útil sugerida con la nota "Fecha de vencimiento calculada automáticamente", que evidencia la relación entre la fecha de ingreso, la vida útil y la fecha límite de consumo.
 
 17) **Wireframe 17:** 
 **User Story relacionada:** US37 - Como administrador, quiero que el sistema recopile automáticamente los datos de ventas diarias, para que el modelo de Machine Learning pueda analizarlos y detectar patrones de consumo.
@@ -2323,7 +2509,20 @@ usuario con los productos digitales.
 ![wireframe 17](assets/img/chapter-04/wireframes/mobile/US37%20mobile.png)
 ![wireframe 17](assets/img/chapter-04/wireframes/web/US37%20web.png)
 
+La vista "Predicción de Demanda" muestra el resultado del análisis de las ventas: los indicadores de precisión, productos y horizonte, la demanda semanal estimada por plato con su tendencia y nivel de confianza, y el bloque "Demanda total por día", que suma todos los productos.
+
+**Aplicación de principios y elementos de diseño**
+
+- **Principios de diseño:** la *jerarquía* ubica primero lo urgente: las métricas y las alertas críticas encabezan el Dashboard, y el Inventario y las Alertas se ordenan por urgencia. La *consistencia* se logra al repetir la misma estructura (título de vista, acciones, lista de tarjetas) y la misma posición de los controles en todos los módulos. La *proximidad* agrupa en una misma tarjeta los datos y las acciones de cada insumo o alerta. La *retroalimentación* se prevé desde el wireframe con mensajes de confirmación y de error, y la *prevención de errores*, con el cuadro de diálogo que confirma el cambio de rol antes de aplicarlo.
+- **Elementos de diseño:** se usan tarjetas rectangulares de esquinas redondeadas, barras de nivel para la cantidad de stock, gráficos de barras para la demanda, etiquetas tipo píldora para estados y severidades, e íconos de línea junto a cada opción del menú. El valor (tonos de gris) distingue el módulo activo del menú, la acción principal de la secundaria ("Guardar" frente a "Cancelar", "Editar" frente a "Eliminar") y las alertas críticas del resto.
+- **Diseño inclusivo:** el selector ES / EN está presente en todas las vistas, incluida la de inicio de sesión. Los estados y severidades se expresan con texto (CRÍTICO, VENCIENDO, ALTA, MEDIA, ENVIADA, LEÍDA) y no solo con tono o color. Los campos de formulario llevan su rótulo encima, los menús combinan ícono y texto, y el campo de contraseña permite mostrar lo escrito. En mobile, los botones ocupan todo el ancho disponible y la navegación principal queda en la parte inferior de la pantalla, al alcance del pulgar.
+- **Arquitectura de información:** la navegación global agrupa el contenido por módulos, con las mismas etiquetas definidas en la sección 4.2.2 (Dashboard, Inventario, Recetas, Alertas, Roles y Permisos, Planes). La vista de Roles y Permisos aplica la categorización por audiencia y determina qué módulos ve cada rol, lo que se refleja en el menú reducido del Panel del Empleado. El módulo de Inventario aplica el sistema de búsqueda de la sección 4.2.4: buscador de texto, filtro y ordenamiento por Urgencia, Cantidad y Vencimiento. En mobile, los cuatro accesos de la barra inferior priorizan Dashboard, Inventario y Alertas, y el resto de módulos se agrupa en "Más".
+
 ### 4.4.2. Web Applications Wireflow Diagrams
+
+En esta sección se presentan los wireflows de la Web Application de StockIA, elaborados en Figma. Cada wireflow enlaza con flechas los wireframes de la sección 4.4.1 para mostrar la secuencia de pantallas que recorre el usuario hasta cumplir un User goal. Siguiendo la convención de este tipo de diagrama, cada cambio de estado de una pantalla (un formulario que pasa de vacío a completo, un cuadro de diálogo que se abre, un mensaje de confirmación que aparece) se representa como un paso adicional con el wireframe del nuevo estado.
+
+Los User goals se derivan de las User Stories de la sección 3.1 y se plantean desde la User Persona del segmento objetivo (sección 2.3.1): Carlos Gómez, administrador y jefe de operaciones de restaurante, cuyos objetivos son evitar quiebres de stock, reducir el desperdicio de insumos perecibles y tener visibilidad del stock en tiempo real. Las rutas se relacionan con las tareas de su User Task Matrix (sección 2.3.2): revisar inventario, registrar nuevos insumos, revisar productos por vencer y stock bajo, planificar compras y analizar la demanda. Los wireflows se presentan en su versión Mobile Web Browser.
 
 1) **Wireflow 1:** 
 
@@ -2334,6 +2533,15 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 - mobile:
 ![wireflow 1](assets/img/chapter-04/wireflow/mobile/wireflow-mobile1.png)
+
+**Flujo:**
+
+1. El administrador abre la vista Inventario, que lista 20 productos, y pulsa "+ Nuevo".
+2. El sistema muestra el formulario "Nuevo producto" vacío.
+3. El administrador completa los datos (Tomate cherry, Verduras, 3 kg, stock mínimo 6, almacenamiento "refrigerated", proveedor) y el formulario muestra el recuadro "Vida útil sugerida: 10 días".
+4. Pulsa "Guardar" y vuelve a Inventario, que ahora indica 21 productos e incluye el nuevo insumo con la etiqueta CRÍTICO.
+
+**Explicación:** el formulario vacío y el formulario con datos son dos estados de una misma pantalla, por lo que se dibujan como pasos separados. El insumo recién registrado aparece como CRÍTICO porque su cantidad (3 kg) es menor que su stock mínimo (6). El flujo corresponde a la tarea "Registrar nuevos insumos" de la User Task Matrix; desde la misma lista parten las acciones "Editar" y "Eliminar" de cada insumo.
 
 - web:
 
@@ -2352,6 +2560,13 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 - mobile: 
 ![wireflow 3](assets/img/chapter-04/wireflow/mobile/wireflow-mobile2.png)
 
+**Flujo:**
+
+1. El administrador ingresa al Panel de Administrador y revisa las cuatro métricas (productos en inventario, stock crítico, alertas activas, ahorro estimado), las alertas críticas y los insumos próximos a vencer.
+2. Pulsa "Ver todas" y pasa a la vista Alertas, que lista las 8 alertas activas ordenadas por severidad (CRÍTICA, ALTA, MEDIA).
+
+**Explicación:** el Dashboard resume el estado del restaurante y sirve de punto de partida hacia el detalle. El flujo corresponde a las tareas "Revisar inventario" y "Revisar productos por vencer y stock bajo", de frecuencia diaria e importancia alta en la User Task Matrix.
+
 4) **Wireflow 4:** 
 
 - User goal: Como administrador, quiero asignar roles a empleados.
@@ -2361,6 +2576,16 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 - mobile: 
 ![wireflow 4](assets/img/chapter-04/wireflow/mobile/wireflow-mobile3.png)
 
+**Flujo:**
+
+1. En "Roles y Permisos", el administrador revisa la tabla de permisos por rol y pulsa "Cambiar a Empleado" sobre la usuaria María López, que figura como ADMIN.
+2. El sistema abre el cuadro de diálogo "Confirmar cambio de rol" con la pregunta "¿Cambiar el rol de María López a Empleado?" y las opciones "Cancelar" y "Confirmar".
+3. El administrador confirma y la vista muestra el mensaje "Rol actualizado correctamente."
+4. La etiqueta de la usuaria pasa a EMPLEADO y el botón cambia a "Promover a Admin".
+5. La empleada ingresa con su cuenta y ve el "Panel del Empleado", con métricas y accesos limitados a lo que su rol permite.
+
+**Explicación:** el cuadro de diálogo, el mensaje de confirmación y el cambio de etiqueta son estados sucesivos de la misma pantalla y por ello ocupan pasos propios. El último paso evidencia el efecto del cambio de rol sobre lo que ve la persona afectada.
+
 5) **Wireflow 5:** 
 
 - User goal: Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima.
@@ -2369,6 +2594,13 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 - mobile: 
 ![wireflow 5](assets/img/chapter-04/wireflow/mobile/wireflow-mobile4.png)
+
+**Flujo:**
+
+1. El administrador parte del Panel de Administrador.
+2. Accede a "Predicción de Demanda" y consulta la precisión del modelo (94%), el horizonte de proyección (7 días) y, por cada plato, la demanda estimada por día, la tendencia, el nivel de confianza y la cantidad sugerida a comprar.
+
+**Explicación:** la vista de predicción reúne en una sola pantalla la información que el administrador necesita para preparar insumos con anticipación. El flujo corresponde a las tareas "Analizar demanda" y "Planificación de compras de suministros" de la User Task Matrix.
 
 6) **Wireflow 6:** 
 
@@ -2387,6 +2619,13 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 - mobile: 
 ![wireflow 7](assets/img/chapter-04/wireflow/mobile/wireflow-mobile5.png)
 
+**Flujo:**
+
+1. El administrador revisa el Inventario ordenado por Urgencia, donde los insumos con etiqueta CRÍTICO aparecen primero con su cantidad actual y su fecha de vencimiento.
+2. Desde la barra de navegación inferior pasa a Alertas, donde cada alerta indica el motivo (por ejemplo, "Quedan 0.5 kg de 1 kg requerido") y su severidad.
+
+**Explicación:** la combinación de ambas vistas permite al administrador identificar qué insumos están por agotarse y decidir qué comprar antes de que se produzca el quiebre de stock.
+
 8) **Wireflow 8:** 
 
 - User goal: Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp
@@ -2395,6 +2634,13 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 - mobile: 
 ![wireflow 8](assets/img/chapter-04/wireflow/mobile/wireflow-mobile6.png)
+
+**Flujo:**
+
+1. El usuario abre el "Historial de Notificaciones", que muestra los contadores por estado (Enviada, Leída, Pendiente, Fallida) y todas las notificaciones, con el filtro "Todos" activo.
+2. Selecciona el filtro "WhatsApp" y la lista se reduce a las notificaciones enviadas por ese canal, cada una con su fecha, destinatario y estado ENVIADA.
+
+**Explicación:** el cambio de filtro es un cambio de estado de la misma pantalla y se representa como un segundo paso. La vista permite verificar qué alertas y sugerencias se enviaron por WhatsApp.
 
 9) **Wireflow 9:**
 
@@ -2405,6 +2651,14 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 - mobile: 
 ![wireflow 9](assets/img/chapter-04/wireflow/mobile/wireflow-mobile7.png)
 
+**Flujo:**
+
+1. El usuario llega a la pantalla "Iniciar sesión", que incluye el enlace "¿No tienes cuenta? Crear cuenta".
+2. El formulario se muestra con el correo ingresado.
+3. Pulsa "Iniciar sesión" y accede al Panel de Administrador del restaurante.
+
+**Explicación:** el wireflow representa el acceso a la aplicación desde la pantalla de inicio de sesión, cuyo enlace "Crear cuenta" es el punto de entrada al registro.
+
 10) **Wireflow 10:**
 
 - User goal: Como usuario registrado, quiero iniciar sesión con mis datos.
@@ -2413,6 +2667,14 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 - mobile: 
 ![wireflow 10](assets/img/chapter-04/wireflow/mobile/US30%20-%20Wireflow%20diagram.png)
+
+**Flujo:**
+
+1. El usuario registrado abre la pantalla "Iniciar sesión" con los campos vacíos.
+2. Ingresa su correo y su contraseña.
+3. Pulsa "Iniciar sesión" y el sistema lo lleva al Panel de Administrador, con sus métricas, alertas críticas e insumos próximos a vencer.
+
+**Explicación:** el formulario completo se representa como un estado distinto del formulario vacío. El wireflow describe el camino principal; las rutas alternativas (credenciales incorrectas y recuperación de contraseña) se detallan en el user flow correspondiente de la sección 4.4.4.
 
 11) **Wireflow 11:**
 
@@ -2423,23 +2685,47 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 - mobile: 
 ![wireflow 11](assets/img/chapter-04/wireflow/mobile/US31%20-%20Wireflow%20diagram.png)
 
+**Flujo:**
+
+1. El administrador abre "Planes de StockIA", compara los planes con facturación mensual o anual y pulsa "Seleccionar plan" en el plan Starter.
+2. El sistema muestra el "Checkout" con el resumen del pedido (Starter, $49/mes, facturación mensual) y los campos de la tarjeta; el administrador pulsa "Pagar $49/mes".
+3. El sistema muestra la confirmación "¡Suscripción activada!", con el resumen del plan y el botón "Volver a Planes".
+
+**Explicación:** el flujo lleva de la comparación de planes al pago en tres pantallas, y el resumen del pedido se mantiene visible en el Checkout y en la confirmación. Los casos de renovación y de pago rechazado se detallan en el user flow correspondiente de la sección 4.4.4.
+
 12) **Wireflow 12:**
 
-- User goal: omo administrador, quiero recibir alertas críticas por correo.
+- User goal: Como administrador, quiero recibir alertas críticas por correo.
 
 **User Story relacionada:** US32 - Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de los eventos importantes.
 
 - mobile: 
 ![wireflow 12](assets/img/chapter-04/wireflow/mobile/US32%20-%20Wireflow%20diagram.png)
 
+**Flujo:**
+
+1. El administrador abre el detalle de una alerta CRÍTICA ("Cilantro agotándose"), con el producto, el stock actual y el mínimo, y las acciones "Marcar como resuelta" y "Enviar por WhatsApp".
+2. Revisa el detalle de otra alerta, de severidad BAJA ("Refrigerador principal OK").
+3. En la lista de Alertas pulsa "Generar resumen" y el sistema muestra el mensaje "Resumen generado y enviado al correo electrónico".
+
+**Explicación:** el diagrama resalta el botón "Generar resumen", que es la acción que cumple el objetivo: dejar el historial de eventos documentado en el correo del administrador.
+
 13) **Wireflow 13:**
 
-- User goal: omo administrador, quiero que el sistema consulte la vida útil de alimentos
+- User goal: Como administrador, quiero que el sistema consulte la vida útil de alimentos
 
 **User Story relacionada:** US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
 
 - mobile: 
 ![wireflow 13](assets/img/chapter-04/wireflow/mobile/US34%20-%20Wireflow%20diagram.png)
+
+**Flujo:**
+
+1. En Inventario, el administrador pulsa "+ Nuevo", acción rotulada sobre la flecha.
+2. El sistema muestra el formulario "Nuevo producto" vacío.
+3. El administrador completa los datos del insumo (Tomate, Frutas, 20 kg, almacenamiento "ambient") y el formulario muestra el recuadro "Vida útil sugerida: 10 días" con la nota "Fecha de vencimiento calculada automáticamente".
+
+**Explicación:** el recuadro de vida útil es el resultado de la consulta y aparece dentro del mismo formulario, sin pasos adicionales para el usuario. El caso en que no se encuentra información se detalla en el user flow correspondiente de la sección 4.4.4.
 
 14) **Wireflow 14:**
 
@@ -2450,13 +2736,27 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 - mobile: 
 ![wireflow 14](assets/img/chapter-04/wireflow/mobile/US35%20-%20Wireflow%20diagram.png)
 
+**Flujo:**
+
+1. En Inventario, el administrador pulsa "Editar" sobre un insumo.
+2. El sistema abre "Editar producto" para Tomate cherry, con almacenamiento "ambient", una vida útil sugerida de 10 días y el campo "Modificar vida útil".
+3. El administrador cambia el almacenamiento a "frozen"; la vida útil sugerida pasa a 30 días y la fecha de vencimiento se actualiza.
+
+**Explicación:** el diagrama resalta en los dos últimos pasos el campo Almacenamiento y el valor de vida útil para evidenciar el cambio de estado entre ambos.
+
 ### 4.4.3. Web Applications Mock-ups
+
+En esta sección se presentan los mock-ups de la Web Application de StockIA, elaborados en Figma en alta fidelidad a partir de los wireframes de la sección 4.4.1. Mantienen la misma estructura, contenido y estados, y aplican el Design System de la sección 4.1. Cada mock-up se asocia a una User Story y se muestra en sus versiones Mobile Web Browser y Desktop Web Browser; en las User Stories US30 a US37, las imágenes se organizan por escenario.
+
+En todas las vistas autenticadas, el menú lateral de desktop usa el verde oscuro de la marca como fondo y resalta el módulo activo con el color terracota; el logotipo distingue las letras "IA" con ese mismo color; el contador de alertas es rojo; y el contenido se presenta en tarjetas blancas sobre un fondo gris verdoso muy claro. En mobile, el encabezado y la barra de navegación inferior son blancos y el acceso activo de la barra se marca en terracota.
 
 1) **Mock-up 1:** 
 **User Story relacionada:** US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
 
 ![mockup 1](assets/img/chapter-04/mockups/mockups-mobile/mockup-mobile1.png)
 ![mockup 1](assets/img/chapter-04/mockups/mockups-web/mockup-web1.png)
+
+Se muestran la lista de Inventario, el formulario "Nuevo producto" vacío y con datos, y la lista actualizada. El botón "+ Nuevo" y el botón "Guardar" usan el color de acento. En cada tarjeta de insumo, el estado se indica con un punto de color y una etiqueta (roja para CRÍTICO, amarilla para VENCIENDO, verde para OK), y la barra de nivel cambia de rojo a amarillo y a verde según la cantidad disponible. La acción "Eliminar" se diferencia de "Editar" con texto rojo sobre fondo rosado, para advertir que es destructiva.
 
 2) **Mock-up 2:** 
 **User Story relacionada:** US22 - Como administrador, quiero guardar recetas con ingredientes vinculados al inventario, para que al venderse un plato se descuenten automáticamente los insumos.
@@ -2468,17 +2768,23 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 ![mockup 3](assets/img/chapter-04/mockups/mockups-mobile/mockup-mobile2.png)
 ![mockup 3](assets/img/chapter-04/mockups/mockups-web/mockup-web2.png)
 
+En el Panel de Administrador, cada métrica toma el color de su significado: el stock crítico en rojo, las alertas activas en terracota y el ahorro estimado en verde. Las alertas críticas se presentan en tarjetas de fondo rosado con el título en rojo, y los insumos próximos a vencer llevan la etiqueta amarilla VENCIENDO. Los enlaces "Ver todas" y "Ver inventario" usan el color de acento. En la vista Alertas, la severidad se codifica con color y texto a la vez: rojo para CRÍTICA, naranja para ALTA y amarillo para MEDIA.
+
 4) **Mock-up 4:** 
 **User Story relacionada:** US24 - Como administrador, quiero asignar roles a empleados, para que cada uno tenga recomendaciones personalizadas y permisos adecuados dentro del sistema.
 
 ![mockup 4](assets/img/chapter-04/mockups/mockups-mobile/mockup-mobile4.png)
 ![mockup 4](assets/img/chapter-04/mockups/mockups-web/mockup-web3.png)
 
+La tabla "Permisos por rol" marca con una casilla verde los módulos habilitados y con un guion los no habilitados. En "Usuarios del restaurante", la etiqueta ADMIN se muestra en terracota y EMPLEADO en gris. El cuadro de diálogo "Confirmar cambio de rol" aparece sobre el fondo oscurecido, con "Confirmar" como botón de acento y "Cancelar" como botón de texto, y el mensaje "Rol actualizado correctamente." se presenta en una notificación verde oscuro. La última pantalla es el Panel del Empleado, con sus tres métricas y sus alertas activas.
+
 5) **Mock-up 5:** 
 **User Story relacionada:** US25 - Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima, para poder preparar insumos con anticipación.
 
 ![mockup 5](assets/img/chapter-04/mockups/mockups-mobile/mockup-mobile3.png)
 ![mockup 3](assets/img/chapter-04/mockups/mockups-web/mockup-web4.png)
+
+En "Predicción de Demanda", la precisión del modelo se muestra en verde y el horizonte en terracota. Los gráficos de barras usan un degradado verde que se intensifica en los días de mayor demanda (sábado y domingo), el total de porciones y la cantidad a comprar se destacan en terracota, y la tendencia "Alza" se indica con una etiqueta verde acompañada de una flecha.
 
 6) **Mock-up 6:** 
 **User Story relacionada:** US26 - Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad, para ajustar la oferta de mi restaurante.
@@ -2490,16 +2796,23 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 ![mockup 7](assets/img/chapter-04/mockups/mockups-mobile/mockup-mobile6.png)
 ![mockup 7](assets/img/chapter-04/mockups/mockups-web/mockup-web5.png)
 
+Se presentan el Inventario ordenado por Urgencia y la vista Alertas. El color de las barras de nivel y de las etiquetas permite reconocer de inmediato qué insumos están en estado crítico, y la lista de alertas mantiene la codificación rojo, naranja y amarillo según la severidad, siempre junto a la etiqueta de texto correspondiente.
+
 8) **Mock-up 8:** 
 **User Story relacionada:** US28 - Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp, para poder actuar rápido sin necesidad de entrar al sistema.
 
 ![mockup 8](assets/img/chapter-04/mockups/mockups-mobile/mockup-mobile7.png)
 ![mockup 3](assets/img/chapter-04/mockups/mockups-web/mockup-web6.png)
+
+En el "Historial de Notificaciones", el filtro de canal activo (Todos o WhatsApp) se muestra con fondo verde oscuro y texto blanco. La etiqueta ENVIADA es verde y LEÍDA es gris, y las notificaciones ya leídas se atenúan para dar prioridad visual a las pendientes de atención. Cada canal se identifica con un ícono además de su nombre.
+
 9) **Mock-up 9:** 
 **User Story relacionada:** US29 - Como nuevo usuario, quiero registrarme en StockIA con mis datos, para poder acceder al sistema y configurar mi restaurante.
 
 ![mockup 5](assets/img/chapter-04/mockups/mockups-mobile/mockup-mobile8.png)
 ![mockup 3](assets/img/chapter-04/mockups/mockups-web/mockup-web7.png)
+
+La pantalla "Iniciar sesión" se presenta en una tarjeta blanca centrada, con el logotipo en la parte superior. El botón "Iniciar sesión" y los enlaces "¿Olvidaste tu contraseña?" y "Crear cuenta" usan el color de acento, y el selector ES / EN marca el idioma activo en verde oscuro. La tercera pantalla muestra el Panel de Administrador al que se accede.
 
 10) **Mock-up 10:** 
 **User Story relacionada:** US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, para poder acceder a mi dashboard personalizado.
@@ -2511,6 +2824,8 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 | ![mockup 10](assets/img/chapter-04/mockups/mockups-web/US30%20-%20Escenario%201%20Web-1.png) | ![mockup 10](assets/img/chapter-04/mockups/mockups-web/US30%20-%20Escenario%201%20Web.png) |
 |---------------------------------------------|---------------------------------------------|
 | ![mockup 10](assets/img/chapter-04/mockups/mockups-web/US30%20-%20Escenario%202%20Web.png) | ![mockup 10](assets/img/chapter-04/mockups/mockups-web/US30%20-%20Escenario%203%20Web.png) |
+
+Los mock-ups cubren los escenarios del inicio de sesión: el formulario con credenciales válidas y el Dashboard resultante; el formulario con el mensaje "Credenciales incorrectas. Verifica tu email y contraseña." en un recuadro rosado con texto rojo, ubicado justo encima del botón; y la recuperación de contraseña, que termina en la confirmación "¡Instrucciones enviadas!" con un ícono de correo en verde y el botón "Volver al Login".
 
 11) **Mock-up 11:** 
 **User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
@@ -2529,6 +2844,8 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 ![mockup 10](assets/img/chapter-04/mockups/mockups-web/US31%20-%20Escenario%203%20Web.png)
 
+En "Planes de StockIA", el plan Profesional se distingue de los demás con fondo verde oscuro, borde terracota y la marca "Más popular" con una estrella; los precios y los botones "Seleccionar plan" usan el color de acento. El "Checkout" muestra el resumen del pedido, los campos de la tarjeta con texto de ejemplo y la nota "Pago simulado · Datos de ejemplo · No se realizarán cargos reales". La confirmación "¡Suscripción activada!" presenta el resumen del plan en un recuadro verde claro, y el escenario de error muestra la notificación roja "Pago rechazado. Intenta con otro método." junto al botón "Reintentar".
+
 12) **Mock-up 12:** 
 **User Story relacionada:** US32 - Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de los eventos importantes.
 
@@ -2540,12 +2857,16 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 ![mockup 12](assets/img/chapter-04/mockups/mockups-web/US32%20-%20Escenario%203%20Web.png)
 
+El detalle de alerta muestra la etiqueta de severidad, la descripción sobre un fondo del color de esa severidad, y las acciones "Marcar como resuelta" (botón de acento) y "Enviar por WhatsApp" (botón blanco con ícono). En la lista de Alertas, el botón "Generar resumen" es verde oscuro y la confirmación "Resumen generado y enviado al correo electrónico" aparece en una notificación verde.
+
 13) **Mock-up 13:** 
 **User Story relacionada:** US33 - Como administrador, quiero recibir SMS críticos vía Twilio, para poder reaccionar rápido ante emergencias en tiempo real.
 
 | ![mockup 13](assets/img/chapter-04/mockups/mockups-mobile/US33%20-%20Escenario%201%20Mobile.png) | ![mockup 13](assets/img/chapter-04/mockups/mockups-mobile/US33%20-%20Escenario%202%20Mobile.png) | 
 |---------------------------------------------|---------------------------------------------|
 | ![mockup 13](assets/img/chapter-04/mockups/mockups-web/US33%20-%20Escenario%201%20Web.png) | ![mockup 13](assets/img/chapter-04/mockups/mockups-web/US33%20-%20Escenario%202%20Web.png) | 
+
+Los dos escenarios muestran el detalle de alertas de severidad CRÍTICA (temperatura anormal del congelador y aceite de oliva en nivel crítico), con la etiqueta roja, la descripción en un recuadro rosado y las mismas dos acciones del mock-up anterior.
 
 14) **Mock-up 14:** 
 **User Story relacionada:** US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
@@ -2554,6 +2875,8 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 |---------------------------------------------|---------------------------------------------|
 | ![mockup 14](assets/img/chapter-04/mockups/mockups-web/US34%20-%20Escenario%201%20Web.png) | ![mockup 14](assets/img/chapter-04/mockups/mockups-web/US34%20-%20Escenario%202%20Web.png) |
 
+En el primer escenario, el formulario "Nuevo producto" muestra el recuadro de vida útil sugerida en verde. En el segundo, el recuadro es neutro, indica "No se encontró información de vida útil." y ofrece el enlace "Ingresar manualmente" en color de acento. El contraste entre ambos recuadros comunica el resultado de la consulta sin impedir que el usuario guarde el producto.
+
 15) **Mock-up 15:** 
 **User Story relacionada:** US35 - Como administrador, quiero poder modificar la vida útil sugerida por la API, para ajustarla a las condiciones reales de mi restaurante.
 
@@ -2561,11 +2884,15 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 |---------------------------------------------|---------------------------------------------|
 | ![mockup 15](assets/img/chapter-04/mockups/mockups-web/US35%20-%20Escenario%201%20Web.png) | ![mockup 15](assets/img/chapter-04/mockups/mockups-web/US35%20-%20Escenario%202%20Web.png) | 
 
+El formulario "Editar producto" muestra, en un recuadro verde, la vida útil sugerida y el campo "Modificar vida útil". Entre un escenario y otro cambia el almacenamiento, y con él la vida útil sugerida y la fecha de vencimiento.
+
 16) **Mock-up 16:** 
 **User Story relacionada:** US36 - Como administrador, quiero que el sistema calcule automáticamente la fecha límite de consumo según la vida útil registrada, para recibir alertas precisas de vencimiento.
 
 ![mockup 16](assets/img/chapter-04/mockups/mockups-mobile/US36%20-%20Escenario%201%20Mobile.png)
 ![mockup 16](assets/img/chapter-04/mockups/mockups-web/US36%20-%20Escenario%201%20Web.png)
+
+El mock-up presenta el formulario de producto con las fechas de ingreso y de vencimiento completadas y el recuadro verde de vida útil sugerida con la nota "Fecha de vencimiento calculada automáticamente".
 
 17) **Mock-up 17:** 
 **User Story relacionada:** US37 - Como administrador, quiero que el sistema recopile automáticamente los datos de ventas diarias, para que el modelo de Machine Learning pueda analizarlos y detectar patrones de consumo
@@ -2573,7 +2900,19 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 ![mockup 17](assets/img/chapter-04/mockups/mockups-mobile/US37%20-%20Escenario%201%20y%202%20Mobileh.png)
 ![mockup 17](assets/img/chapter-04/mockups/mockups-web/US37%20-%20Escenario%201%20y%202%20Web.png)
 
+La vista "Predicción de Demanda" muestra la demanda semanal por plato con barras verdes y agrega el bloque "Demanda total por día", cuyas barras usan un degradado naranja para diferenciar el total agregado de los gráficos por plato.
+
+**Aplicación de principios, elementos de diseño y Design System**
+
+- **Principios de diseño:** la *jerarquía* se apoya en el color: solo la acción principal de cada vista usa el color de acento ("+ Nuevo", "Guardar", "Iniciar sesión", "Pagar"), mientras que las acciones secundarias son neutras. El *contraste* entre el menú verde oscuro y el área de contenido clara separa la navegación del trabajo. La *consistencia* se mantiene al usar los mismos componentes y la misma codificación de color en todos los módulos y en ambas versiones, web y mobile. La *retroalimentación* es inmediata y diferenciada: notificaciones verdes para confirmar, rojas para errores y recuadros en contexto para los mensajes de formulario.
+- **Elementos de diseño:** el color cumple una función semántica (rojo, naranja, amarillo y verde para niveles de stock y severidad de alertas). La tipografía establece niveles claros entre título de vista, título de tarjeta, texto y etiquetas en mayúsculas. Las formas son tarjetas, campos y botones de esquinas redondeadas; los íconos de línea acompañan cada opción del menú; y las barras de nivel y los gráficos de barras representan las cantidades de forma visual.
+- **Diseño inclusivo:** ningún estado se comunica solo con color: cada nivel lleva además su etiqueta de texto (CRÍTICO, VENCIENDO, OK, CRÍTICA, ALTA, MEDIA, ENVIADA, LEÍDA) y los permisos se indican con casilla o guion. La interfaz está disponible en español e inglés desde cualquier vista. Los campos tienen rótulo visible, los mensajes de error explican qué ocurrió y cómo continuar ("Verifica tu email y contraseña", "Intenta con otro método"), y la acción destructiva "Eliminar" se distingue visualmente de "Editar". En mobile, los botones ocupan el ancho de la pantalla y la navegación se ubica en la parte inferior.
+- **Arquitectura de información:** se conserva la organización validada en los wireframes: navegación global por módulos con las etiquetas de la sección 4.2.2, contenido filtrado según el rol (Panel de Administrador y Panel del Empleado), jerarquía visual que prioriza alertas críticas e insumos por vencer, y los sistemas de búsqueda, filtro y ordenamiento de la sección 4.2.4 en Inventario y en el Historial de Notificaciones.
+- **Design System:** los mock-ups aplican la paleta de la sección 4.1.1: el verde bosque primario en el menú lateral, los títulos y los filtros activos; el terracota de acento en las acciones principales, los enlaces y el módulo activo; los neutros en fondos y bordes; y los colores semánticos de éxito, advertencia y peligro, con sus variantes claras como fondo de etiquetas, alertas y recuadros. También emplean la tipografía Inter para el contenido y la tipografía de marca en el logotipo, y los componentes de la sección 4.1.2 (botones, tarjetas, etiquetas, campos de formulario e interruptores), con lo que la Web Application mantiene la consistencia visual con el Landing Page.
+
 ### 4.4.4. Web Applications User Flow Diagrams
+
+En esta sección se presentan los user flows de la Web Application de StockIA, elaborados en Figma. Cada diagrama se deriva del wireflow del mismo User goal (sección 4.4.2) y lo amplía en dos sentidos: reemplaza los wireframes por los mock-ups de la sección 4.4.3 e incorpora los puntos de decisión, representados con rombos, que separan el camino principal (happy path) de los caminos alternativos (unhappy paths). Los User goals corresponden a la User Persona Carlos Gómez, administrador de restaurante (sección 2.3.1), y los diagramas se presentan en su versión Mobile Web Browser. Para cada flujo se indica el User goal, se explica el diagrama y sus condiciones, y se detallan los pasos de cada camino.
 
 1) **User flow 1:** 
 
@@ -2583,6 +2922,8 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
 
 ![user flow 1](assets/img/chapter-04/user%20flow/mobile/userflow-mobile1.png)
+
+**Explicación del flujo y sus condiciones:** el diagrama parte del mock-up de Inventario (20 productos) y, al pulsar "+ Nuevo", pasa al formulario "Nuevo producto". Al guardar, un punto de decisión evalúa si la información del formulario está vacía. Si no lo está, el flujo continúa hacia el formulario completo (Tomate cherry, con el recuadro verde "Vida útil sugerida: 10 días") y termina en el Inventario actualizado a 21 productos, con el nuevo insumo en la lista. Si lo está, el flujo conduce al mismo formulario en estado de error: los campos Nombre del producto, Categoría y Cantidad aparecen con borde rojo y los mensajes "Campo requerido" y "Cantidad inválida" debajo de cada uno, de modo que el usuario sabe exactamente qué corregir antes de volver a guardar. El diagrama es consistente con el Wireflow 1 y le añade el estado de validación.
 
 - **Happy Path** — Registro Exitoso de Nuevo Producto
 
@@ -2635,6 +2976,8 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 ![user flow 2](assets/img/chapter-04/user%20flow/mobile/userflow-mobile2.png)
 ![user flow 2](assets/img/chapter-04/user%20flow/mobile/userflow-mobile3.png)
 
+**Explicación del flujo y sus condiciones:** las dos imágenes representan el acceso a la aplicación desde la pantalla "Iniciar sesión", que contiene el enlace "Crear cuenta". La primera plantea un punto de decisión sobre si la información ingresada es incorrecta: si lo es, el flujo lleva al formulario con el mensaje en rojo "Credenciales incorrectas. Verifica tu email y contraseña."; si no lo es, lleva al formulario con credenciales válidas y de allí al Panel de Administrador. La segunda plantea el punto de decisión "¿El usuario olvidó su contraseña?": si la respuesta es sí, el flujo pasa por la pantalla "¿Olvidaste tu contraseña?", donde se ingresa el correo y se pulsa "Enviar instrucciones", y termina en la confirmación "¡Instrucciones enviadas!" con el botón "Volver al Login"; si la respuesta es no, sigue el inicio de sesión normal hasta el Panel de Administrador.
+
 - **Happy Path** — Camino Feliz del Inicio de Sesión y Recuperación
 
 1) El usuario abre la pantalla de inicio de sesión de StockIA.
@@ -2675,6 +3018,8 @@ US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, par
 
 ![user flow 3](assets/img/chapter-04/user%20flow/mobile/US30%20-%20UserFlow%20diagram.png)
 
+**Explicación del flujo y sus condiciones:** el diagrama inicia con el formulario "Iniciar sesión" vacío y continúa con el formulario completo. A partir de allí se encadenan dos puntos de decisión. El primero, "¿Olvidó su contraseña?", deriva en caso afirmativo a la pantalla de recuperación y a la confirmación "¡Instrucciones enviadas!". En caso negativo se evalúa el segundo, "¿Datos correctos?": si la respuesta es sí, el usuario accede al Dashboard; si es no, se muestra el formulario con el mensaje "Credenciales incorrectas" y una flecha de retorno lo devuelve al formulario inicial para reintentar. El diagrama es consistente con el Wireflow 10, que describe el camino principal, y le agrega las dos rutas alternativas.
+
 #### Happy path
 1. El usuario llega a la pantalla de **Iniciar sesión**.
 2. Ingresa correo y contraseña (ej. `admin@cantinaverde.mx`).
@@ -2692,6 +3037,8 @@ US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, par
 US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
 
 ![user flow 4](assets/img/chapter-04/user%20flow/mobile/US31%20-%20UserFlow%20diagram.png)
+
+**Explicación del flujo y sus condiciones:** el diagrama parte de "Planes de StockIA" y, con la acción "Selección de plan", llega al "Checkout". Desde el Checkout se abren tres resultados rotulados sobre las flechas: "Activar suscripción", que termina en la confirmación "¡Suscripción activada!"; "Renovar suscripción", que termina en "¡Suscripción renovada!"; y "Pago rechazado", que muestra el Checkout con la notificación roja "Pago rechazado. Intenta con otro método." y el botón "Reintentar", desde el cual una flecha de retorno regresa al Checkout. El diagrama es consistente con el Wireflow 11, que cubre la activación, y le agrega la renovación y el rechazo del pago.
 
 #### Happy path
 1. El usuario visualiza los **Planes de StockIA** y selecciona uno (ej. Starter).
@@ -2711,6 +3058,8 @@ US32 - Como administrador, quiero recibir alertas críticas por correo vía Send
 
 ![user flow 5](assets/img/chapter-04/user%20flow/mobile/US32%20-%20UserFlow%20diagram.png)
 
+**Explicación del flujo y sus condiciones:** el diagrama parte del Panel de Administrador y pasa por la acción "Recibe alertas", que se bifurca según la alerta consultada: el detalle de una alerta CRÍTICA ("Cilantro agotándose", con fondo rosado y el stock actual en rojo) o el detalle de una alerta BAJA ("Refrigerador principal OK", con fondo verde claro). En ambos casos el usuario puede marcar la alerta como resuelta o enviarla por WhatsApp. Las dos ramas convergen en la acción "Consolidar historial y generar resumen", que lleva a la lista de Alertas, donde el botón "Generar resumen" aparece resaltado y la notificación verde confirma "Resumen generado y enviado al correo electrónico". El diagrama es consistente con el Wireflow 12 y no incluye un punto de decisión con camino de error.
+
 #### Happy path
 1. Desde el Dashboard, el usuario **recibe alertas** (críticas, altas, medias).
 2. Puede entrar al detalle de una alerta (ej. *"Cilantro agotándose"*) y **marcarla como resuelta** o **enviarla por WhatsApp**.
@@ -2725,6 +3074,8 @@ US32 - Como administrador, quiero recibir alertas críticas por correo vía Send
 US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
 
 ![user flow 6](assets/img/chapter-04/user%20flow/mobile/US34%20-%20UserFlow%20diagram.png)
+
+**Explicación del flujo y sus condiciones:** el diagrama parte del Inventario, pasa al formulario "Nuevo producto" y llega al punto de decisión "¿Producto encontrado en la API?". Si la respuesta es sí, el formulario (Tomate) muestra el recuadro verde "Vida útil sugerida: 10 días" con la fecha de vencimiento calculada automáticamente. Si la respuesta es no, el formulario (Chile jalapeño) muestra el recuadro "No se encontró información de vida útil." con el enlace "Ingresar manualmente". En ambos casos el botón "Guardar" permanece disponible, por lo que el camino alternativo no bloquea el registro del insumo. El diagrama es consistente con el Wireflow 13, que describe la rama afirmativa.
 
 #### Happy path
 1. El usuario pulsa **"+ Nuevo"** en Inventario.
@@ -2745,6 +3096,8 @@ US34 - Como administrador, quiero que el sistema consulte una API externa de vid
 US35 - Como administrador, quiero poder modificar la vida útil sugerida por la API, para ajustarla a las condiciones reales de mi restaurante.
 
 ![user flow 7](assets/img/chapter-04/user%20flow/mobile/US35%20-%20UserFlow%20diagram.png)
+
+**Explicación del flujo y sus condiciones:** el diagrama es lineal y consta de tres mock-ups unidos por dos acciones rotuladas. Desde el Inventario, la acción "Editar producto" abre el formulario de Tomate cherry, con almacenamiento "ambient", vida útil sugerida de 10 días y el campo "Modificar vida útil". La acción "Cambio de condiciones de almacenamiento" lleva al mismo formulario con almacenamiento "frozen", vida útil sugerida de 30 días y la fecha de vencimiento actualizada. El diagrama es consistente con el Wireflow 14 y no incluye un punto de decisión con camino de error.
 
 #### Happy path
 1. El usuario pulsa **"Editar"** sobre un producto existente (ej. Tomate cherry).
@@ -2795,33 +3148,64 @@ Para una mejor visualización, se adjunta aquí el [enlace a nuestro tablero de 
 
 
 ### 4.6.2. Software Architecture Context Diagram
-<img src="assets/img/chapter-04/SystemContext.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-SystemContext.png" alt="" alingn ="center"  ><br><br>
 ### 4.6.3. Software Architecture Container Diagrams
-<img src="assets/img/chapter-04/Containers.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-Containers.png" alt="" alingn ="center"  ><br><br>
 ### 4.6.4. Software Architecture Components Diagrams
 **Stock management**
-<img src="assets/img/chapter-04/StockComponents.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-StockComponents.png" alt="" alingn ="center"  ><br><br>
 **Recipes management**
-<img src="assets/img/chapter-04/RecipesComponents.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-RecipesComponents.png" alt="" alingn ="center"  ><br><br>
 **Restaurant Registration**
-<img src="assets/img/chapter-04/RegistrationComponents.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-RegistrationComponents.png" alt="" alingn ="center"  ><br><br>
 **Subscription and Payment Management**
-<img src="assets/img/chapter-04/SubscriptionComponents.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-SubscriptionComponents.png" alt="" alingn ="center"  ><br><br>
 **Notifications**
-<img src="assets/img/chapter-04/NotificationsComponents.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-NotificationsComponents.png" alt="" alingn ="center"  ><br><br>
 **ML and recomendations**
-<img src="assets/img/chapter-04/MLComponents.png" alt="" alingn ="center"  ><br><br>
+<img src="assets/img/chapter-04/C4-MLComponents.png" alt="" alingn ="center"  ><br><br>
 **Analitics - Dashboard**
-<img src="assets/img/chapter-04/AnalyticsComponents.png" alt="" alingn ="center"   ><br><br>
+<img src="assets/img/chapter-04/C4-AnalyticsComponents.png" alt="" alingn ="center"   ><br><br>
 **Identity and Access Management**
-<img src="assets/img/chapter-04/IAMComponents.png" alt="" alingn ="center"   ><br><br>
+<img src="assets/img/chapter-04/C4-IAMComponents.png" alt="" alingn ="center"   ><br><br>
 ## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
 
-Los diagramas de clases presentados a continuación detallan la estructura interna de los componentes del Front-End para contextos clave de StockIA. Se ilustra la separación de responsabilidades entre la capa de Presentación (UI Components), la lógica de Aplicación y Estado (Controllers y Stores), los Modelos de Vista (View Models) y la Infraestructura (API Clients).
+Los diagramas de clases presentados a continuación modelan el dominio de StockIA para cada uno de sus Bounded Contexts. En cada contexto se identifican los Aggregates y sus Aggregate Roots, las Entities, los Value Objects, los Domain Services, los Repositories y los Enums. Se incluyen también los Domain Events que provienen del Design-Level Event Storming y las invariantes que cada agregado debe garantizar.
 
-#### Notifications & Messaging (Front-End)
+#### Subscription and Payment Management
+Este diagrama detalla la arquitectura de los componentes encargados de la gestión de planes, estado de cuentas y pagos de los restaurantes en StockIA.
+<img src="assets/img/chapter-04/class-subscription.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+#### Notifications / Messaging
+Este diagrama modela la estructura de componentes para la gestión, registro y envío de notificaciones dentro de la plataforma StockIA
+<img src="assets/img/chapter-04/class-Notification.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+#### Analytics Dashboard
+Este diagrama modela la estructura de componentes encargados de la consolidación de métricas, alertas y reportes para StockIA.
+<img src="assets/img/chapter-04/class-analitic.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+#### ML & Recommendation
+Este diagrama modela la estructura de componentes encargados de las predicciones y recomendaciones inteligentes de StockIA. Incluye componentes en la capa de presentación y aplicación que interactúan con almacenes de predicción y servicios para generar sugerencias basadas en datos a través de la interfaz de usuario.
+<img src="assets/img/chapter-04/class-Ml-Recomendation.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+#### Recipes Management
+Este diagrama representa la estructura del dominio de Gestión de Recetas utilizando la arquitectura DDD (Domain-Driven Design) en StockIA. Incluye vistas de presentación como RecipeListView que interactúan con el servicio de aplicación RecipeStore, así como el Agregado Raíz Recipe y manejadores de eventos como DeductRecipeIngredientsHandler
+<img src="assets/img/chapter-04/class-RecipesManagement.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+#### Restaurant Registration
+Este diagrama modela la arquitectura de componentes para el registro y perfilamiento de nuevos restaurantes en la plataforma StockIA.
+<img src="assets/img/chapter-04/class-RestaurantResgistration.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+#### Stock Management
+Este diagrama detalla la estructura de componentes encargados del control y gestión de inventario de StockIA bajo un enfoque DDD. Emplea vistas de presentación como InventoryListView que se comunican con el InventoryStore en la capa de aplicación, operando centralmente sobre el Agregado Raíz
+<img src="assets/img/chapter-04/class-Stock_Management.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+### Diagramas de clases de la aplicación cliente (Front-End)
+De forma complementaria al modelo de dominio, los siguientes diagramas detallan la estructura interna de la aplicación Front-End para contextos clave de StockIA. Se ilustra la separación de responsabilidades entre la capa de Presentación (UI Components), la lógica de Aplicación y Estado (Controllers y Stores), los Modelos de Vista (View Models) y la Infraestructura (API Clients).
+
+#### Notifications & Messaging 
 Este diagrama modela la estructura de componentes encargados de mostrar y gestionar las notificaciones y alertas críticas para el usuario (como stock bajo o vencimientos). Incluye componentes como `NotificationCenterView` y `NotificationBadgeComponent`, los cuales interactúan con `NotificationController` y `NotificationStore`.
 
 **Consideraciones y restricciones de diseño:**
@@ -2830,7 +3214,7 @@ Este diagrama modela la estructura de componentes encargados de mostrar y gestio
 
 <img src="assets/img/chapter-04/class-notifications-messaging.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
 
-#### Subscriptions & Payments (Front-End)
+#### Subscriptions & Payments 
 Este diagrama describe la arquitectura de clases del lado del cliente para la gestión de planes y pagos. Se compone de vistas como `SubscriptionStatusView` y `AvailablePlansView`, respaldadas por `SubscriptionController`, `PaymentController` y `SubscriptionStore`.
 
 **Consideraciones y restricciones de diseño:**
@@ -2839,7 +3223,7 @@ Este diagrama describe la arquitectura de clases del lado del cliente para la ge
 
 <img src="assets/img/chapter-04/class-subscriptions-payments.png" alt="Class Diagram - Subscriptions and Payments" width="1000"/> <br>
 
-#### Identity & Access Management (Front-End)
+#### Identity & Access Management 
 
 Este diagrama modela la estructura de componentes encargados de la autenticación, gestión de sesión y administración de usuarios de StockIA, que ahora soporta dos roles por restaurante: Administrador (CEO/dueño) y Trabajador. Incluye componentes como `LoginFormComponent`, `AccountProfileView` y `UserManagementView`, los cuales interactúan con `AuthController` y `AuthStore`.
 
@@ -2850,7 +3234,7 @@ Este diagrama modela la estructura de componentes encargados de la autenticació
 
 <img src="assets/img/chapter-04/class-identity-management.png" alt="Class Diagram - Identity Management" width="1000"/> <br>
 
-#### Restaurant Registration (Front-End)
+#### Restaurant Registration 
 
 Este diagrama modela la estructura de componentes encargados del registro y la gestión del perfil del restaurante asociado al único administrador de StockIA. Incluye componentes como `RestaurantRegistrationFormComponent` y `RestaurantProfileView`, los cuales interactúan con `RestaurantController` y `RestaurantStore`.
 
@@ -2900,7 +3284,7 @@ Este diagrama estructura la información necesaria para los algoritmos de predic
 #### Notifications & Messaging
 Diseñado para almacenar el historial de notificaciones y alertas críticas (stock bajo, productos por vencer, alertas IoT). Maneja el estado de entrega y los canales por los que fueron enviados (WhatsApp, Email, SMS).
 
-<img src="../assets/img/chapter-04/bd-notifications-messaging.png" alt="Notifications Messaging DB Diagram" width="1000"/> <br>
+<img src="assets/img/chapter-04/bd-notifications-messaging.png" alt="Notifications Messaging DB Diagram" width="1000"/> <br>
 
 #### Analytics & Dashboard
 Este diagrama soporta las consultas y métricas agregadas que se visualizan en el Dashboard principal. Almacena resúmenes estadísticos, reportes de mermas y ahorro, optimizando las consultas de lectura para una carga rápida de los gráficos.
@@ -3079,8 +3463,9 @@ Se siguen el Google Java Style Guide y las convenciones descritas en Spring Boot
 * Uso de anotaciones de Spring Boot y Spring Data JPA (@RestController, @Service, @Repository, @Entity) para reducir código repetitivo y mantener una arquitectura RESTful clara.  
 * Manejo centralizado de excepciones mediante @ControllerAdvice y @ExceptionHandler.  
 * Documentación de endpoints con OpenAPI mediante Swagger (springdoc-openapi).
+
 **Gherkin (criterios de aceptación y pruebas de aceptación)**
- 
+
 Se siguen las Gherkin Conventions for Readable Specifications:
  
 * Estructura obligatoria Given – When – Then.  
@@ -3124,107 +3509,109 @@ El RESTful API requiere un entorno de ejecución de servidor compatible con apli
 ## 5.2. Landing Page, Services & Applications Implementation
 
 ### 5.2.1. Sprint 1
-Este primer ciclo de desarrollo se centró en establecer los pilares de la identidad digital de **StockIA**, integrando el esfuerzo colaborativo del equipo para entregar un sitio de marketing funcional inicial. Durante este Sprint, el equipo priorizó la captación de visitantes mediante una Landing Page de 4 páginas (`index.html`, `features.html`, `pricing.html`, `about.html`), completamente bilingüe (ES/EN) y responsiva, documentando cada fase desde la planificación hasta el despliegue final para validar la propuesta de valor frente al segmento elegido.
+El Sprint 1 se dedicó a la Landing Page de StockIA: cuatro páginas estáticas, bilingües y responsivas, publicadas en Vercel, con el formulario de solicitud de demo como punto de conversión. Los ítems seleccionados son los del Product Backlog que pertenecen a EP01, EP02, EP03 y los habilitadores TS01 a TS04 de EP12.
 
 #### 5.2.1.1. Sprint Planning 1
-El Sprint Planning Meeting marcó el inicio formal del desarrollo del código de StockIA. Durante esta sesión, el equipo de desarrollo junto al Product Owner seleccionaron las Historias de Usuario más prioritarias del Product Backlog (correspondientes a los Epics EP01–EP08) para definir el objetivo central de la iteración. A continuación, se presenta el cuadro resumen con los detalles y acuerdos de esta reunión:
-
 | **Sprint #** | Sprint 1 |
 | :--- | :--- |
 | **Sprint Planning Background** | |
 | **Date** | 09/09/2026 |
 | **Time** | 10:00 am |
-| **Location** | Lima/Lima/Santiago de Surco/UPC |
+| **Location** | Lima/Lima/Santiago de Surco/UPC (presencial) y Google Meet |
 | **Prepared By** | Huaman Oscco, Aldo Jesus (Jesusho22) |
-| **Attendees (to planning meeting)** | Gallardo Morales, Carla Alejandra/ Huaman Oscco, Aldo Jesus/ Miranda Cordova, Jesus Angel Yvan/ Ortiz Laura, Leyla Alisson/ Toro Turpo, Ronal |
-| **Sprint Review Summary** | Al ser el primer Sprint, la revisión anterior corresponde a la fase de ideación: segmentos objetivo y propuesta de valor. Resultados alcanzados: Arquitectura C4 finalizada, modelado de base de datos diseñada y repositorios GitHub configurados para el uso de gitflow. El Product Owner brindó el feedback necesario para iniciar la codificación orientada al dominio y siguiendo como base las User Storys. |
-| **Sprint Retrospective Summary** | Como retrospectiva inicial de la forma de trabajo, el equipo identificó como acierto el uso de programas de trabajo remoto, el uso de herramientas colaborativos como GitHub y Jira, pero reconoció como oportunidad de mejora establecer reglas más estrictas de GitFlow para evitar colisiones en los Pull Requests futuros. |
+| **Attendees (to planning meeting)** | Gallardo Morales, Carla Alejandra / Huaman Oscco, Aldo Jesus / Miranda Cordova, Jesus Angel Yvan / Ortiz Laura, Leyla Alisson / Toro Turpo, Ronal |
+| **Sprint Review Summary** | No aplica: es el primer Sprint. Antes de él, el equipo cerró la fase de ideación (segmento, propuesta de valor y entrevistas) y configuró la organización y los repositorios en GitHub. |
+| **Sprint Retrospective Summary** | No aplica al ser el primer Sprint. |
 | **Sprint Goal & User Stories** | |
-| **Sprint 1 Goal** | **Contexto:** El equipo prioriza establecer la identidad digital de StockIA y comunicar la propuesta de valor a el segmento objetivo, publicando un sitio de marketing de 4 páginas totalmente bilingüe (ES/EN), antes de invertir esfuerzo en la Web Application. <br><br> **Sprint Goal:**<br>*"Our focus is on building a trustworthy digital presence that clearly communicates StockIA's value proposition. We believe this will let visitors understand the product's benefits within seconds and request a demo with confidence. This will be confirmed when the four-page site is live, fully bilingual, responsive, and generating demo requests."* |
-| **Sprint 1 Velocity** | 40 Story Points |
-| **Sum of Story Points** | 88 Story Points |
+| **Sprint 1 Goal** | **Contexto:** El equipo prioriza comunicar la propuesta de valor al segmento objetivo y habilitar el primer canal de captación de restaurantes antes de construir la Web Application.<br><br>**Sprint Goal:**<br>*"Our focus is on publishing StockIA's bilingual four-page landing page. We believe it delivers a clear understanding of how StockIA connects sales, recipes and inventory to restaurant owners and managers. This will be confirmed when the site is live on Vercel, meets the responsive, accessibility, performance and SEO criteria of RNF01–RNF07, and a visitor can reach the demo request form in no more than two clicks from any page."* |
+| **Sprint 1 Velocity** | No aplica: es el primer Sprint y no existe una velocidad histórica. |
+| **Sum of Story Points** | 40 Story Points comprometidos en 19 ítems (8 US, 4 TS y 7 RNF) |
+ 
+El Sprint 1 compromete 19 ítems porque su granularidad es fina: se descomponen en 46 tareas de 1 a 5 horas, en su mayoría maquetación estática y redacción bilingüe sin dependencias de backend.
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
-* En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)**. Esta matriz detalla los líderes (L) y colaboradores (C) para cada aspecto clave del Sprint, asegurando una comunicación clara y una distribución de responsabilidades eficiente para el proyecto **StockIA**.
-
-La organización de líderes y colaboradores está directamente relacionada con la selección de tareas (tasks) que se desarrollarán durante el Sprint. Dado que este Sprint se concentra únicamente en la Landing Page, se proponen los siguientes aspectos:
-
-| Team Member | GitHub Username | Maquetación & UI/UX (L/C) | Contenido & Traducción (i18n) (L/C) | Responsive & Accesibilidad (L/C) | Despliegue & QA (L/C) |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| Gallardo Morales, Carla Alejandra | Carlsss28 | L | C | C | C |
-| Huaman Oscco, Aldo Jesus | Jesusho22 | C | C | C | L |
-| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | C | C | L | C |
-| Ortiz Laura, Leyla Alisson | Leylaa-O | L | C | C | C |
-| Toro Turpo, Ronal | Ronal345 | C | L | C | C |
----
-
-> **Leyenda:**  </br>
-> **L:** Líder (Líder del aspecto)  
-> **C:** Colaborador (Colaborador y desarrollo)
-
+En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** del Sprint 1. Cada aspecto agrupa las tareas del Sprint Backlog; el líder (L) responde por la integración y la revisión de ese aspecto, y los colaboradores (C) desarrollan o revisan sus tareas.
+ 
+| Team Member | GitHub Username | Estructura, estilos e interacciones (CSS/JS) (L/C) | Maquetación del Home y despliegue (L/C) | Páginas internas (features, pricing, about) (L/C) | Contenido y traducción (i18n) (L/C) | Responsive, SEO y QA (L/C) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | C | C | L | C | C |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | C | L | C | C | C |
+| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | C | C | C | C | L |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | L | C | C | C | C |
+| Toro Turpo, Ronal | Ronal345 | C | C | C | L | C |
+ 
+> **Leyenda:** **L:** Líder del aspecto · **C:** Colaborador
 
 #### 5.2.1.3. Sprint Backlog 1
-**Periodo:** Semana 1 – Semana 2  
-**Objetivo del Sprint:** Tener la Landing Page de StockIA (4 páginas) completamente maquetada, traducida ES/EN, responsiva y con el formulario de demo funcional, lista para publicarse.
-
----
-
+**Periodo:** 09/09/2026 – 22/09/2026 (2 semanas)  
+**Objetivo del Sprint:** Publicar en Vercel la Landing Page de StockIA (index, features, pricing y about), bilingüe ES/EN, responsiva y con el formulario de solicitud de demo operativo en modo simulado.
+ 
 | **User Story Id** | **Título de la Historia** | **Task Id** | **Título de la Tarea** | **Descripción de la Tarea** | **Est. (Hrs)** | **Asignado** | **Status** |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
-| **US01** | Conocer la propuesta de valor | T-01-1 | Maquetado del Hero | Construir el layout del hero con título, descripción y botones CTA. | 5 | Gallardo Morales, Carla Alejandra | Done |
-|  |  | T-01-2 | Redacción y traducción del mensaje principal | Escribir el copy de la propuesta de valor en español e inglés. | 3 | Huaman Oscco, Aldo Jesus | Done |
-| **US02** | Ver una vista previa del dashboard | T-02-1 | Mockup ilustrativo del dashboard | Maquetar las tarjetas y el gráfico ilustrativos con CSS. | 6 | Miranda Cordova, Jesus Angel Yvan | Done |
-|  |  | T-02-2 | Responsive del mockup | Ocultar el mockup en pantallas menores a 768px. | 2 | Ortiz Laura, Leyla Alisson | Done |
-| **US03** | Conocer estadísticas e indicadores | T-03-1 | Barra de estadísticas | Maquetar los cuatro indicadores de impacto del Home. | 4 | Toro Turpo, Ronal | Done |
-|  |  | T-03-2 | Nota de transparencia | Redactar y traducir la nota de cifras de ejemplo. | 2 | Gallardo Morales, Carla Alejandra | Done |
-| **US04** | Identificar si StockIA es para mi rol | T-04-1 | Sección "¿Para quién es StockIA?" | Maquetar las tarjetas por segmento (dueños/CEOs y administradores). | 4 | Huaman Oscco, Aldo Jesus | Done |
-|  |  | T-04-2 | Redacción por segmento | Escribir el contenido diferenciado para cada rol. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
-| **US05** | Conocer las funcionalidades principales | T-05-1 | Grid de seis funcionalidades | Maquetar las tarjetas de funcionalidades en el Home. | 5 | Ortiz Laura, Leyla Alisson | Done |
-|  |  | T-05-2 | Enlace a features.html | Implementar el botón "Ver todas las características". | 2 | Toro Turpo, Ronal | Done |
-| **US06** | Conocer los diferenciadores | T-06-1 | Sección "Más que un inventario" | Maquetar las tres tarjetas de diferenciadores. | 3 | Gallardo Morales, Carla Alejandra | Done |
-|  |  | T-06-2 | Redacción y traducción | Escribir el contenido de cada diferenciador. | 2 | Huaman Oscco, Aldo Jesus | Done |
-| **US07** | Conocer las integraciones externas | T-07-1 | Sección de integraciones | Maquetar las cuatro tarjetas con la etiqueta "En evaluación". | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
-|  |  | T-07-2 | Nota de transparencia | Redactar el texto que aclara que la decisión está pendiente. | 2 | Ortiz Laura, Leyla Alisson | Done |
-| **US08** | Explorar vistas ilustrativas | T-08-1 | Sección de portafolio | Maquetar las cuatro vistas ilustrativas. | 5 | Toro Turpo, Ronal | Done |
-|  |  | T-08-2 | Tabs de portafolio (JS) | Implementar el cambio de pestaña Inventario / IA & IoT. | 3 | Gallardo Morales, Carla Alejandra | Done |
-| **US09** | Ver el video de presentación | T-09-1 | Placeholder de video | Maquetar el bloque "Video demostrativo próximamente". | 2 | Huaman Oscco, Aldo Jesus | Done |
-|  |  | T-09-2 | Estructura para reemplazo futuro | Dejar preparado el iframe de YouTube comentado en el código. | 2 | Miranda Cordova, Jesus Angel Yvan | Done |
-| **US10** | Navegar entre las páginas del sitio | T-10-1 | Navbar compartido | Implementar el menú superior en las 4 páginas. | 4 | Ortiz Laura, Leyla Alisson | Done |
-|  |  | T-10-2 | Estado activo del enlace | Resaltar visualmente la página actual en el navbar. | 2 | Toro Turpo, Ronal | Done |
-| **US11** | Ver el detalle completo de funcionalidades | T-11-1 | Grid completo en features.html | Maquetar las seis funcionalidades con descripción extendida. | 5 | Gallardo Morales, Carla Alejandra | Done |
-| **US12** | Entender cómo empezar a usar StockIA | T-12-1 | Sección "Cómo funciona" | Maquetar los cuatro pasos numerados. | 4 | Huaman Oscco, Aldo Jesus | Done |
-| **US13** | Cambiar el idioma del sitio | T-13-1 | Selector de idioma (ES/EN) | Implementar los botones de idioma en el navbar. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
-|  |  | T-13-2 | Motor de traducción (i18n.js) | Programar el reemplazo de textos mediante data-i18n. | 6 | Ortiz Laura, Leyla Alisson | Done |
-| **US14** | Mantener mi idioma preferido | T-14-1 | Persistencia en localStorage | Guardar y leer el idioma seleccionado entre páginas. | 3 | Toro Turpo, Ronal | Done |
-| **US15** | Consultar los planes disponibles | T-15-1 | Maquetado de los 3 planes | Construir las tarjetas de Esencial, Profesional e IoT Completo. | 5 | Gallardo Morales, Carla Alejandra | Done |
-|  |  | T-15-2 | Nota de precios de ejemplo | Redactar la nota de transparencia sobre precios ilustrativos. | 2 | Huaman Oscco, Aldo Jesus | Done |
-| **US16** | Comparar precios mensuales y anuales | T-16-1 | Toggle mensual/anual (JS) | Implementar el interruptor y el recálculo de montos. | 4 | Miranda Cordova, Jesus Angel Yvan | Done |
-| **US17** | Resolver dudas frecuentes | T-17-1 | Acordeón de preguntas frecuentes | Implementar la apertura/cierre exclusivo de preguntas. | 4 | Ortiz Laura, Leyla Alisson | Done |
-|  |  | T-17-2 | Redacción de preguntas y respuestas | Escribir el contenido del FAQ en español e inglés. | 3 | Toro Turpo, Ronal | Done |
-| **US18** | Conocer misión, visión y valores | T-18-1 | Sección misión/visión/valores | Maquetar el bloque correspondiente en about.html. | 3 | Gallardo Morales, Carla Alejandra | Done |
-|  |  | T-18-2 | Redacción de contenido | Escribir la misión, visión y los cinco valores. | 2 | Huaman Oscco, Aldo Jesus | Done |
-| **US19** | Conocer al equipo detrás de StockIA | T-19-1 | Fichas de equipo | Maquetar las cuatro fichas placeholder con nombre, rol y código. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
-|  |  | T-19-2 | Nota de datos pendientes | Redactar la nota de "fichas de ejemplo". | 1 | Ortiz Laura, Leyla Alisson | Done |
-| **US20** | Solicitar una demo mediante formulario | T-20-1 | Formulario de contacto | Maquetar el formulario con validación nativa de campos obligatorios. | 4 | Toro Turpo, Ronal | Done |
-|  |  | T-20-2 | Confirmación visual de envío | Implementar el mensaje "✓ Enviado" y el reseteo del formulario. | 3 | Gallardo Morales, Carla Alejandra | Done |
-|  |  | T-20-3 | Accesos al formulario | Enlazar los botones "Solicitar demo" del navbar, banner y footer. | 2 | Huaman Oscco, Aldo Jesus | Done |
-| **RNF01** | Experiencia responsiva | T-R1-1 | Breakpoints de 1024px y 768px | Definir media queries para tablets y móviles. | 4 | Miranda Cordova, Jesus Angel Yvan | Done |
-|  |  | T-R1-2 | Ajuste de cuadrículas | Reorganizar columnas y ocultar elementos no esenciales en móvil. | 4 | Ortiz Laura, Leyla Alisson | Done |
-| **RNF02** | Contraste y legibilidad accesible | T-R2-1 | Paleta de contraste | Definir colores de texto con contraste adecuado sobre fondos claros y oscuros. | 3 | Toro Turpo, Ronal | Done |
-| **RNF03** | Navegación consistente | T-R3-1 | Navbar y footer compartidos | Reutilizar los mismos componentes en las 4 páginas. | 3 | Gallardo Morales, Carla Alejandra | Done |
-| **RNF04** | Carga rápida | T-R4-1 | Optimización de assets | Evitar frameworks y librerías pesadas innecesarias. | 3 | Huaman Oscco, Aldo Jesus | Done |
-| **RNF05** | Buen posicionamiento en buscadores | T-R5-1 | Metadatos por página | Agregar title y meta description a cada página. | 2 | Miranda Cordova, Jesus Angel Yvan | Done |
-|  |  | T-R5-2 | Metadatos adicionales del Home | Agregar meta keywords, author y copyright en index.html. | 2 | Ortiz Laura, Leyla Alisson | Done |
-| **RNF06** | Compatibilidad con navegadores | T-R6-1 | CSS estándar (Flexbox/Grid) | Verificar compatibilidad en navegadores modernos. | 3 | Toro Turpo, Ronal | Done |
-|  |  | T-R6-2 | Degradación de animaciones | Manejar el caso sin soporte de IntersectionObserver. | 2 | Gallardo Morales, Carla Alejandra | Done |
-| **RNF07** | Animaciones de entrada | T-R7-1 | Scroll reveal (JS) | Implementar la animación de aparición progresiva de tarjetas. | 4 | Huaman Oscco, Aldo Jesus | Done |
-| **RNF08** | Contenido pendiente señalizado | T-R8-1 | Notas visibles de contenido de ejemplo | Agregar notas junto a las secciones con datos ilustrativos. | 2 | Miranda Cordova, Jesus Angel Yvan | Done |
-|  |  | T-R8-2 | Comentarios en el código | Documentar en HTML qué elementos deben reemplazarse. | 1 | Ortiz Laura, Leyla Alisson | Done |
-| **RNF09** | Sistema de diseño centralizado | T-R9-1 | Variables CSS en :root | Centralizar colores, tipografías y espaciados. | 4 | Toro Turpo, Ronal | Done |
-| **RNF10** | Textos centralizados (i18n) | T-R10-1 | Diccionario único de traducciones | Concentrar todos los textos ES/EN en i18n.js. | 4 | Gallardo Morales, Carla Alejandra | Done |
-| **TOTAL** | | | | **Esfuerzo total estimado para el Sprint** | **162** | | |
-
----
+| **US01** | Comprender la propuesta de valor y el impacto de StockIA desde el Home | T-US01-1 | Maquetar el hero | Estructurar título, descripción y los dos CTA del hero en index.html. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US01-2 | Maquetar el mockup ilustrativo del dashboard | Construir con HTML/CSS las tarjetas y el gráfico del mockup del hero. | 4 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US01-3 | Redactar y traducir el copy del hero | Escribir la propuesta de valor e indicadores en ES/EN y registrar sus claves en i18n.js. | 2.5 | Toro Turpo, Ronal | Done |
+|  |  | T-US01-4 | Maquetar la barra de estadísticas | Construir la barra de cuatro indicadores y su versión responsive. | 2 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US01-5 | Redactar la nota de cifras referenciales | Escribir y traducir la nota que identifica las cifras como referenciales. | 1 | Toro Turpo, Ronal | Done |
+| **US02** | Identificar si StockIA es para mi rol y explorar sus funcionalidades | T-US02-1 | Maquetar el grid de funcionalidades del Home | Construir las seis tarjetas y el enlace a features.html. | 2.5 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US02-2 | Maquetar features.html | Construir el hero y el grid detallado de los seis módulos. | 4 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US02-3 | Maquetar la sección "Cómo funciona" | Construir los cuatro pasos numerados en features.html. | 2 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US02-4 | Traducir el contenido de features.html | Registrar en i18n.js las claves ES/EN de la página. | 2 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US02-5 | Maquetar la sección de segmentos | Construir las dos tarjetas de "¿Para quién es StockIA?" en index.html. | 2 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US02-6 | Redactar el contenido por segmento | Escribir y traducir el mensaje de cada tarjeta según el rol. | 1.5 | Toro Turpo, Ronal | Done |
+| **TS02** | Implementar el sistema de diseño centralizado en CSS | T-TS02-1 | Definir los tokens de diseño | Declarar colores, tipografías, espaciados y radios en :root. | 3 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-TS02-2 | Construir los componentes CSS | Crear botones, tarjetas, badges, formularios, toggle y grids responsive. | 5 | Ortiz Laura, Leyla Alisson | Done |
+| **US04** | Comparar planes y resolver dudas antes de contratar | T-US04-1 | Maquetar pricing.html | Construir el hero y las tres tarjetas de plan con la etiqueta de plan popular. | 4 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US04-2 | Programar el interruptor mensual/anual | Recalcular los precios en main.js al cambiar el interruptor. | 2 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US04-3 | Maquetar las preguntas frecuentes | Construir el bloque FAQ con sus tres preguntas. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US04-4 | Programar el acordeón del FAQ | Abrir una pregunta y cerrar la anterior en main.js. | 1 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US04-5 | Traducir el contenido de pricing.html | Registrar en i18n.js las claves ES/EN de planes y preguntas. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **US03** | Evaluar diferenciadores, integraciones y vistas del producto | T-US03-1 | Maquetar diferenciadores e integraciones | Construir las tres tarjetas de diferenciadores y las cuatro de integraciones con su etiqueta. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US03-2 | Maquetar portafolio y bloque de video | Construir las vistas ilustrativas con pestañas y el placeholder de video. | 2.5 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US03-3 | Programar el cambio de pestaña del portafolio | Resaltar la pestaña activa con JavaScript en main.js. | 1 | Ortiz Laura, Leyla Alisson | Done |
+| **US05** | Conocer a DataBite Corp y a su equipo | T-US05-1 | Maquetar el hero, misión y visión | Construir el encabezado de about.html y las tarjetas de misión y visión. | 2.5 | Toro Turpo, Ronal | Done |
+|  |  | T-US05-2 | Maquetar la sección "Sobre DataBite Corp" | Construir la descripción de la startup y sus valores. | 1.5 | Toro Turpo, Ronal | Done |
+|  |  | T-US05-3 | Maquetar las fichas del equipo y el bloque de video | Construir las fichas de los integrantes y el placeholder del video del equipo. | 2 | Toro Turpo, Ronal | Done |
+|  |  | T-US05-4 | Traducir el contenido de about.html | Registrar en i18n.js las claves ES/EN de la página. | 1.5 | Toro Turpo, Ronal | Done |
+| **TS03** | Implementar el motor de internacionalización de la Landing Page | T-TS03-1 | Implementar i18n.js | Programar el diccionario ES/EN, la función t() y la aplicación por data-i18n. | 4 | Ortiz Laura, Leyla Alisson | Done |
+| **US06** | Solicitar una demo desde el formulario de contacto | T-US06-1 | Maquetar la sección de contacto y el formulario | Construir datos de contacto y formulario con validación nativa (required y type=email). | 2.5 | Toro Turpo, Ronal | Done |
+|  |  | T-US06-2 | Programar la confirmación simulada del envío | Mostrar "✓ Enviado", deshabilitar el botón y limpiar el formulario en main.js. | 1.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US06-3 | Enlazar el banner CTA de las cuatro páginas | Apuntar el botón del banner final a about.html#contacto. | 1 | Gallardo Morales, Carla Alejandra | Done |
+| **RNF01** | Adaptabilidad de la Landing Page a móvil, tablet y escritorio | T-RNF01-1 | Definir media queries de 1024, 768 y 480 px | Reorganizar grids y ocultar elementos no esenciales por breakpoint. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-RNF01-2 | Probar la Landing Page por breakpoint | Verificar las cuatro páginas a 360, 768, 1024 y 1440 px y registrar capturas. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **US07** | Navegar entre las páginas del sitio | T-US07-1 | Maquetar la barra de navegación y el pie de página | Construir el navbar y el footer y replicarlos en las cuatro páginas. | 3 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US07-2 | Programar el resaltado del enlace activo | Marcar en main.js el enlace de la página actual. | 1 | Ortiz Laura, Leyla Alisson | Done |
+| **US08** | Leer el sitio en español o en inglés | T-US08-1 | Implementar el selector ES/EN con persistencia | Guardar y leer el idioma en localStorage y marcar el botón activo. | 1.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US08-2 | Revisar claves de traducción faltantes | Recorrer las cuatro páginas en EN y completar las claves sin traducir. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US08-3 | Revisión editorial ES/EN | Unificar terminología y corregir el estilo de los textos en ambos idiomas. | 2 | Toro Turpo, Ronal | Done |
+| **TS01** | Configurar el repositorio de la Landing Page con GitFlow | T-TS01-1 | Crear la estructura base del proyecto | Crear carpetas y archivos vacíos de las cuatro páginas, css, js y assets. | 1 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-TS01-2 | Configurar ramas y reglas de Pull Request | Crear develop y exigir revisión antes de integrar en develop y main. | 1 | Huaman Oscco, Aldo Jesus | Done |
+| **TS04** | Desplegar la Landing Page en Vercel con despliegue continuo | T-TS04-1 | Configurar el proyecto en Vercel | Vincular el repositorio y definir la rama de producción. | 1.5 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-TS04-2 | Verificar el sitio publicado | Probar las cuatro páginas, enlaces e idioma en el dominio público. | 1 | Gallardo Morales, Carla Alejandra | Done |
+| **RNF02** | Contraste legible según WCAG 2.1 AA | T-RNF02-1 | Validar y ajustar el contraste de la paleta | Medir cada par texto/fondo y ajustar los que no cumplen AA. | 1.5 | Gallardo Morales, Carla Alejandra | Done |
+| **RNF03** | Carga rápida de la Landing Page | T-RNF03-1 | Medir y optimizar el rendimiento | Ejecutar Lighthouse móvil y optimizar fuentes y recursos que bloquean la carga. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **RNF04** | Metadatos para posicionamiento en buscadores | T-RNF04-1 | Agregar metadatos por página | Definir title y description en las cuatro páginas, y keywords, author y copyright en index.html. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **RNF05** | Compatibilidad con navegadores modernos | T-RNF05-1 | Probar la matriz de navegadores | Verificar las interacciones del sitio en cada navegador y registrar resultados. | 1.5 | Gallardo Morales, Carla Alejandra | Done |
+| **RNF06** | Animaciones de aparición que no bloquean el contenido | T-RNF06-1 | Implementar el scroll reveal con respaldo | Animar tarjetas con IntersectionObserver y omitirlo cuando no hay soporte. | 1.5 | Ortiz Laura, Leyla Alisson | Done |
+| **RNF07** | Identificación del contenido ilustrativo | T-RNF07-1 | Agregar notas de contenido ilustrativo | Señalar cifras, precios y fichas de ejemplo en ES/EN. | 1 | Toro Turpo, Ronal | Done |
+| | **TOTAL** | | | **Esfuerzo total estimado para el Sprint** | **94** | | |
+ 
+**Capacidad del Sprint 1**
+ 
+| Integrante | Disponibilidad declarada (h) | Horas asignadas | N.° de tareas | Uso de la capacidad |
+| :--- | :---: | :---: | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | 28 | 16 | 8 | 57 % |
+| Huaman Oscco, Aldo Jesus | 28 | 21.5 | 9 | 77 % |
+| Miranda Cordova, Jesus Angel Yvan | 28 | 16 | 8 | 57 % |
+| Ortiz Laura, Leyla Alisson | 28 | 22.5 | 11 | 80 % |
+| Toro Turpo, Ronal | 28 | 18 | 10 | 64 % |
+| **Total** | **140** | **94** | **46** | **67 %** |
+ 
+##### Resumen Técnico
+- **Total de horas:** 94 horas en 46 tareas.
+- **Distribución:** dos semanas (09/09/2026 – 22/09/2026), con una disponibilidad declarada de 28 horas por integrante (14 h por semana); la capacidad libre cubre revisiones de Pull Request y ceremonias.
+- **Story Points:** 40 comprometidos; 40 completados al cierre registrado en este informe.
+- **Entregable principal:** Landing Page de StockIA (4 páginas) publicada en Vercel, bilingüe ES/EN, responsiva y con el formulario de solicitud de demo en modo simulado.
 
 <p align="center">
   <img src="assets/img/chapter-05/Sprint.png" width="800" alt="Product Backlog Sprint 1"/>
@@ -3239,233 +3626,610 @@ La organización de líderes y colaboradores está directamente relacionada con 
   <br/><i>Artefacto: Jira para demostrar el tablero Kanban - Finalizado —</i>
 </p>
 
-##### Resumen Técnico
-- **Total de Horas:** 162 horas.
-- **Distribución:** 2 semanas de desarrollo (considerando jornada laboral estándar).
-- **Entregable Principal:** Landing Page de StockIA (4 páginas), bilingüe ES/EN, responsiva, con formulario de solicitud de demo funcional.
-
----
-
 
 #### 5.2.1.4. Development Evidence for Sprint Review
-En esta sección se explica y presenta los avances en implementación con relación a los productos de la solución según el alcance del Sprint: Landing Page.
-
-Primero, se mostrarán los commits más importantes para el Reporte, los cuales muestran el ciclo de vida del proyecto, y toda la información que se usó, usa y usará para el desarrollo del proyecto:
-
+ 
+En esta sección se presentan los avances de implementación del Sprint 1 (Landing Page) mediante los commits que los respaldan. Cada commit se relaciona con el ítem del Sprint Backlog 1 que implementa, de modo que puede rastrearse el trabajo de cada integrante desde la historia hasta el código.
+ 
+**Repositorio del informe (`stockia-report`)**
+ 
+El informe se trabajó con GitFlow: una rama `feature/*` por sección y su integración en `develop` mediante Pull Request (PR #1 al #37 durante el Sprint 1). Se presentan los commits más representativos de cada integrante:
+ 
 | **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| stockia-report | develop | `ce02e2f` | Initial commit | Creación del repositorio del informe con el README inicial. | 01/09/2026 |
-| stockia-report | develop | `5023ace` | feat(cover): add initial cover | Actualiza la portada con los datos del curso (1ASI0729), el equipo (DataBit) y el proyecto (StockIA). | 09/09/2026 |
-| stockia-report | develop | `07dc284` | feat(index): add index. | Agrega la Tabla de Contenidos completa (Capítulos I al V) para estructurar la navegación del documento. | 09/09/2026 |
-| stockia-report | develop | `cce981e` | docs(chapter-3): add Non-Functional User Stories section | Incorpora los Requisitos No Funcionales (RNF01–RNF10) al capítulo de Requirements Specification. | 15/09/2026 |
-| stockia-report | develop | `b146464` | docs(chapter-4): add Landing Page Mock-up section | Añade los mock-ups (Figma) de la Landing Page en la sección 4.3.2 del capítulo de Product Design. | 16/09/2026 |
-
+| stockia-report | develop | `ce02e2f` | Initial commit | Creación del repositorio del informe en la organización (Aldo_Jesus). | 01/09/2026 |
+| stockia-report | develop | `07dc284` | feat(index): add index. | Tabla de contenidos de los capítulos I al V (Carlsss28). | 08/09/2026 |
+| stockia-report | develop | `435ff41` | feat(members-profile):Carla Gallardo Profile | Perfil de integrante en la sección de presentación del equipo (Carlsss28). | 09/09/2026 |
+| stockia-report | develop | `5106ee4` | docs(chapter-3): add Functional User Stories section | User Stories de la Landing Page y la Web Application (Jesus). | 15/09/2026 |
+| stockia-report | develop | `afa3775` | docs(chapter-3): add Product Backlog section | Product Backlog priorizado con Story Points (Jesus). | 15/09/2026 |
+| stockia-report | develop | `15307e7` | doc(chapter-3): add Impact Map | Impact Map del segmento objetivo (Leylaa-O). | 16/09/2026 |
+| stockia-report | develop | `14ca7d7` | doc(chapter-02)add :User persona | User Persona del segmento de restaurantes (Jesus-Miranda-678). | 16/09/2026 |
+| stockia-report | develop | `3f05246` | doc(chapter-02)add customer journey mapping | Customer Journey Map del segmento objetivo (Jesus-Miranda-678). | 16/09/2026 |
+| stockia-report | develop | `578a83d` | docs(chapter-5): add Sprint Planning 1 section | Sprint Planning 1 del capítulo V (Jesus). | 16/09/2026 |
+| stockia-report | develop | `96ed715` | doc(chapter-01): add startup description | Descripción de DataBite Corp en el capítulo I (ronaltt-345). | 17/09/2026 |
+| stockia-report | develop | `cdb072c` | feat(chapter-02): add big picture event storming part | Big Picture EventStorming del dominio (ronaltt-345). | 17/09/2026 |
+| stockia-report | develop | `c34c5d7` | feat(style-guidelines):all setion style guidelines | Guía de estilos de la Landing Page y la Web Application (Carlsss28). | 17/09/2026 |
+| stockia-report | develop | `48a3fa8` | feat(web mockups): add mockups's photos | Mock-ups de la Web Application en el capítulo IV (Leylaa-O). | 17/09/2026 |
+| stockia-report | develop | `e1245e8` | doc(chapter-2)add Components Diagrams | Diagramas de componentes C4 (Jesus-Miranda-678). | 17/09/2026 |
+| stockia-report | develop | `2667a63` | doc(chapter-5): add section 1 to chapter 5 | Software Configuration Management del capítulo V (Leylaa-O). | 17/09/2026 |
+| stockia-report | develop | `b3bb84b` | docs(chapter-5): add Sprint Backlog 1 evidences | Evidencia de Jira del Sprint Backlog 1 (Jesus). | 17/09/2026 |
+ 
 <br/>
-
-A continuación se presentan los commits más importantes para la Landing Page, los cuales muestran todo el contenido visual y las funcionalidades implementadas en el Sprint 1:
-
+**Repositorio de la Landing Page (`stockia-website`)**
+ 
+La Landing Page se integró en el repositorio de la organización siguiendo GitFlow: Leyla configuró la estructura, el sistema de diseño (TS02) y el motor de internacionalización (TS03), y cada integrante integró su página mediante una rama `feature/*` y su Pull Request.
+ 
 | **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| Stockia-landing | develop | `5128a01` | Version de prueba | Commit único que sube la estructura completa de la Landing Page: `index.html`, `features.html`, `pricing.html`, `about.html`, hojas de estilo (`css/styles.css`) y lógica de i18n/interacciones (`js/`). | 06/09/2026 |
-
+| stockia-website | main | `fd69fb8` | chore: set up project structure | TS01: estructura base con las cuatro páginas y las carpetas `css`, `js` y `assets` (Leylaa-O). | 17/09/2026 |
+| stockia-website | develop | `dd266c5` | feat: add styles.css | TS02: tokens de diseño en `:root` y componentes reutilizables; base de RNF01, RNF02 y RNF06 (Leylaa-O). | 17/09/2026 |
+| stockia-website | develop | `b5320f2` | feat(i18n): add i18n.js | TS03 y US08: diccionario ES/EN, aplicación por `data-i18n` y persistencia del idioma en `localStorage` (Leylaa-O). | 17/09/2026 |
+| stockia-website | develop | `b75dec0` | feat: add main.js | US03, US04, US06, US07 y RNF06: pestañas del portafolio, interruptor mensual/anual, acordeón del FAQ, envío simulado del formulario, enlace activo y scroll reveal (Leylaa-O). | 17/09/2026 |
+| stockia-website | feature/index | `ad06861` | feat(landing): agrega página principal (index.html) de StockIA | US01, US02 y US03: hero, mockup del dashboard, barra de estadísticas, segmentos, funcionalidades, diferenciadores, integraciones y portafolio (Jesus). | 17/09/2026 |
+| stockia-website | develop | `05676c1` | Merge pull request #1 from .../feature/index | Integración revisada de `index.html` en `develop` (Aldo_Jesus). | 17/09/2026 |
+| stockia-website | feature/features | `76d0470` | feat(features):add features section | US02: detalle de los seis módulos y la sección "Cómo funciona" en `features.html` (Carlsss28). | 18/09/2026 |
+| stockia-website | develop | `f669552` | Merge pull request #3 from .../feature/features | Integración revisada de `features.html` en `develop` (Carlsss28). | 18/09/2026 |
+| stockia-website | develop | `cd0dda4` | feat: add about.html | US05 y US06: misión, visión, valores, equipo y formulario de solicitud de demo en `about.html` (ronaltt-345). | 18/09/2026 |
+ 
 <br/>
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
-En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la Landing Page de StockIA. A continuación, se explorarán los avances a través de imágenes que muestren el resultado obtenido (capturas pendientes de reemplazo):
+En el Sprint 1 se implementaron las cuatro páginas de la Landing Page de StockIA. A continuación se presenta cada sección publicada junto con la User Story o el requisito que la respalda:
+ 
 <br/>
-
-1. **Sección header / navbar:** Barra de navegación compartida entre las 4 páginas del sitio, con selector de idioma (ES/EN).
-
-<br/>
+1. **Barra de navegación (US07, US08):** menú común a las cuatro páginas con los enlaces Inicio, Características, Precios y Nosotros, el selector de idioma ES/EN y el botón "Solicitar demo".
 <p align="center">
-  <img src="assets/img/chapter-05/01-header-navbar.png" width="800" alt="Sección header / navbar"/>
-  <br/><i>Sección header / navbar — StockIA</i>
+  <img src="assets/img/chapter-05/01-header-navbar.png" width="800" alt="Barra de navegación"/>
+  <br/><i>Barra de navegación — US07 y US08</i>
 </p>
 <br/>
-
-2. **Sección hero + mockup de dashboard:** Título con la propuesta de valor, descripción, botones CTA y un mockup ilustrativo del dashboard de StockIA.
-
-<br/>
+2. **Hero con mockup del dashboard (US01):** propuesta de valor, CTA principal y secundario, tres indicadores clave y la vista previa ilustrativa del dashboard.
 <p align="center">
-  <img src="assets/img/chapter-05/02-hero-mockup-dashboard.png" width="800" alt="Sección hero + mockup de dashboard"/>
-  <br/><i>Sección hero + mockup de dashboard — StockIA</i>
+  <img src="assets/img/chapter-05/02-hero-mockup-dashboard.png" width="800" alt="Hero con mockup del dashboard"/>
+  <br/><i>Hero con mockup del dashboard — US01</i>
 </p>
 <br/>
-
-3. **Barra de estadísticas:** Los cuatro indicadores de impacto mostrados en el Home, con nota de transparencia sobre cifras de ejemplo.
-
-<br/>
+3. **Barra de estadísticas (US01, RNF07):** los cuatro indicadores de impacto y la nota que identifica las cifras referenciales.
 <p align="center">
   <img src="assets/img/chapter-05/03-barra-estadisticas.png" width="800" alt="Barra de estadísticas"/>
-  <br/><i>Barra de estadísticas — StockIA</i>
+  <br/><i>Barra de estadísticas — US01 y RNF07</i>
 </p>
 <br/>
-
-4. **Sección "¿Para quién es StockIA?":** Tarjetas diferenciadas para los segmentos dueños/CEOs de restaurantes y administradores/jefes de cocina.
-
-<br/>
+4. **"¿Para quién es StockIA?" (US02):** una tarjeta para dueños y CEOs y otra para administradores y jefes de cocina.
 <p align="center">
   <img src="assets/img/chapter-05/04-para-quien-es-stockia.png" width="800" alt="Sección ¿Para quién es StockIA?"/>
-  <br/><i>Sección "¿Para quién es StockIA?" — StockIA</i>
+  <br/><i>Sección "¿Para quién es StockIA?" — US02</i>
 </p>
 <br/>
-
-5. **Grid de funcionalidades:** Seis tarjetas de funcionalidades principales en el Home, con enlace al detalle completo en features.html.
-
-<br/>
+5. **Funcionalidades del Home (US02):** seis tarjetas de funcionalidades y el botón "Ver todas las características →".
 <p align="center">
-  <img src="assets/img/chapter-05/05-grid-funcionalidades.png" width="800" alt="Grid de funcionalidades"/>
-  <br/><i>Grid de funcionalidades — StockIA</i>
+  <img src="assets/img/chapter-05/05-grid-funcionalidades.png" width="800" alt="Funcionalidades del Home"/>
+  <br/><i>Funcionalidades del Home — US02</i>
 </p>
 <br/>
-
-6. **Sección "Más que un inventario" (diferenciadores):** Las tres tarjetas de diferenciadores de StockIA frente a otras soluciones.
-
-<br/>
+6. **"Más que un inventario" (US03):** las tres tarjetas de diferenciadores de StockIA.
 <p align="center">
-  <img src="assets/img/chapter-05/06-mas-que-un-inventario.png" width="800" alt="Sección Más que un inventario (diferenciadores)"/>
-  <br/><i>Sección "Más que un inventario" (diferenciadores) — StockIA</i>
+  <img src="assets/img/chapter-05/06-mas-que-un-inventario.png" width="800" alt="Diferenciadores"/>
+  <br/><i>Diferenciadores — US03</i>
 </p>
 <br/>
-
-7. **Sección de integraciones externas:** Las cuatro tarjetas de integraciones en evaluación (Google Maps, OpenWeather, Stripe/PayPal, Twilio/SendGrid), con nota de decisión pendiente.
-
-<br/>
+7. **Integraciones en evaluación (US03, RNF07):** cuatro tarjetas con la etiqueta "En evaluación" y la nota de que la integración definitiva aún no se ha elegido.
 <p align="center">
-  <img src="assets/img/chapter-05/07-integraciones-externas.png" width="800" alt="Sección de integraciones externas"/>
-  <br/><i>Sección de integraciones externas — StockIA</i>
+  <img src="assets/img/chapter-05/07-integraciones-externas.png" width="800" alt="Integraciones en evaluación"/>
+  <br/><i>Integraciones en evaluación — US03 y RNF07</i>
 </p>
 <br/>
-
-8. **Sección de portafolio:** Vistas ilustrativas con tabs para alternar entre Inventario e IA & IoT.
-
-<br/>
+8. **Portafolio (US03):** vistas ilustrativas de la plataforma con pestañas que resaltan la categoría activa.
 <p align="center">
-  <img src="assets/img/chapter-05/08-seccion-portafolio.png" width="800" alt="Sección de portafolio"/>
-  <br/><i>Sección de portafolio — StockIA</i>
+  <img src="assets/img/chapter-05/08-seccion-portafolio.png" width="800" alt="Portafolio"/>
+  <br/><i>Portafolio — US03</i>
 </p>
 <br/>
-
-9. **Placeholder de video demostrativo:** Bloque "Video demostrativo próximamente", con el iframe de YouTube ya preparado en el código para su reemplazo futuro.
-
-<br/>
+9. **Video del producto (US03):** bloque "Video demostrativo próximamente" sin enlaces rotos.
 <p align="center">
-  <img src="assets/img/chapter-05/09-placeholder-video.png" width="800" alt="Placeholder de video demostrativo"/>
-  <br/><i>Placeholder de video demostrativo — StockIA</i>
+  <img src="assets/img/chapter-05/09-placeholder-video.png" width="800" alt="Bloque del video del producto"/>
+  <br/><i>Bloque del video del producto — US03</i>
 </p>
 <br/>
-
-10. **features.html — grid completo:** Detalle extendido de las seis funcionalidades y la sección "Cómo funciona" (4 pasos).
-
-<br/>
+10. **features.html (US02):** detalle de los seis módulos y la sección "Cómo funciona" con cuatro pasos.
 <p align="center">
-  <img src="assets/img/chapter-05/10-features-grid-completo.png" width="800" alt="features.html — grid completo"/>
-  <br/><i>features.html — grid completo — StockIA</i>
+  <img src="assets/img/chapter-05/10-features-grid-completo.png" width="800" alt="features.html"/>
+  <br/><i>features.html — US02</i>
 </p>
 <br/>
-
-11. **pricing.html — planes y FAQ:** Las tarjetas de los planes Esencial, Profesional e IoT Completo, el toggle mensual/anual y el acordeón de preguntas frecuentes.
-
-<br/>
+11. **pricing.html (US04, RNF07):** planes Esencial, Profesional e IoT Completo con el interruptor mensual/anual, la nota de precios de ejemplo y el acordeón de preguntas frecuentes.
 <p align="center">
-  <img src="assets/img/chapter-05/11-pricing-planes-y-faq.png" width="800" alt="pricing.html — planes y FAQ"/>
-  <br/><i>pricing.html — planes y FAQ — StockIA</i>
+  <img src="assets/img/chapter-05/11-pricing-planes-y-faq.png" width="800" alt="pricing.html"/>
+  <br/><i>pricing.html — US04 y RNF07</i>
 </p>
 <br/>
-
-12. **about.html — misión, visión, equipo y formulario:** Sección de misión/visión/valores, las fichas de equipo (placeholder) y el formulario de solicitud de demo.
-
-<br/>
+12. **about.html (US05, US06):** misión, visión, valores, fichas del equipo y formulario de solicitud de demo.
 <p align="center">
-  <img src="assets/img/chapter-05/12-about-mision-vision-equipo-formulario.png" width="800" alt="about.html — misión, visión, equipo y formulario"/>
-  <br/><i>about.html — misión, visión, equipo y formulario — StockIA</i>
+  <img src="assets/img/chapter-05/12-about-mision-vision-equipo-formulario.png" width="800" alt="about.html"/>
+  <br/><i>about.html — US05 y US06</i>
 </p>
 <br/>
-
-13. **Sección footer:** Parte final del sitio, compartida entre las 4 páginas.
-
-<br/>
+13. **Pie de página (US07):** columnas Producto, Empresa y Legal, comunes a las cuatro páginas.
 <p align="center">
-  <img src="assets/img/chapter-05/13-seccion-footer.png" width="800" alt="Sección footer"/>
-  <br/><i>Sección footer — StockIA</i>
+  <img src="assets/img/chapter-05/13-seccion-footer.png" width="800" alt="Pie de página"/>
+  <br/><i>Pie de página — US07</i>
 </p>
 <br/>
+**Verificación de los requisitos no funcionales**
+ 
+Los requisitos no funcionales del Sprint 1 se verificaron con el criterio medible definido en el capítulo III:
+ 
+| **RNF** | **Criterio medible** | **Herramienta de verificación** | **Evidencia** |
+| :--- | :--- | :--- | :--- |
+| RNF01 | Sin scroll horizontal a 360 px; breakpoints en 1024, 768 y 480 px | DevTools a 360, 768, 1024 y 1440 px | `rnf01-responsive.png` |
+| RNF02 | Contraste ≥ 4.5:1 en texto normal y ≥ 3:1 en texto grande | WebAIM Contrast Checker y Lighthouse Accessibility | `rnf02-lighthouse-accessibility.png` |
+| RNF03 | Lighthouse Performance móvil ≥ 90; LCP ≤ 2.5 s; CLS ≤ 0.1 | Lighthouse en modo móvil | `rnf03-lighthouse-performance.png` |
+| RNF04 | `title` ≤ 60 y `description` ≤ 160 caracteres, únicos por página; Lighthouse SEO ≥ 90 | Inspección del `<head>` y Lighthouse SEO | `rnf04-lighthouse-seo.png` |
+| RNF05 | Funcionamiento igual en Chrome, Edge, Firefox, Safari, Chrome Android y Safari iOS; 0 errores de consola | Matriz de pruebas manual | `rnf05-navegadores.png` |
+ 
+ <https://pagespeed.web.dev/analysis/https-stockia-landing-giag-vercel-app-about-html/va1ajk3prc?form_factor=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=agentic-browsing&hl=es&utm_source=lh-chrome-ext>
 
-
-Para finalizar, se mostrará una demostración del avance sobre la Landing Page dentro de GitHub, para la publicación de la página web:
 <p align="center">
-  <img src="assets/img/chapter-05/14-repositorio-github.png" width="800" alt="Repositorio de GitHub"/>
-  <br/><i>Repositorio de GitHub sobre la Landing Page de StockIA — _(completar)_</i>
+  <img src="assets/img/chapter-05/Lighthouse.png" width="500" alt="Reporte de Lighthouse"/>
+  <br/><i>Reporte de Lighthouse en modo móvil — RNF02, RNF03 y RNF04</i>
+</p>
+<br/>
+Para finalizar, se muestra el repositorio de la Landing Page en la organización de GitHub:
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/14-repositorio-github.png" width="800" alt="Repositorio de la Landing Page"/>
+  <br/><i>Repositorio <code>stockia-website</code> en la organización upc-pre-202602-1ASI0729-7747-databit</i>
 </p>
 
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
-Para este Sprint, se han implementado y documentado los puntos de interacción de la Landing Page. Aunque el almacenamiento persistente será parte de un Sprint posterior, se ha programado la lógica de captura, validación y respuesta visual en el frontend para el siguiente servicio simulado:
-
-| Endpoint / Interacción | Acción (HTTP) | Campos del formulario | Descripción del Response |
-| :--- | :---: | :--- | :--- |
-| `about.html#contactForm` | **POST (Mock)** | Nombre*, Restaurante, Correo*, Mensaje (`*` obligatorios vía `required`) | **202 Accepted (simulado)**: `preventDefault()` bloquea el envío real, el botón cambia a " Enviado" (fondo de éxito) y se deshabilita 3 segundos; luego el formulario se resetea (`form.reset()`) automáticamente. |
-
-* **URL del Repositorio de Landing Page:** https://github.com/Jesusho22/Stockia-landing
-* **URL de la Landing Page desplegada:** https://stockia-landing-giag.vercel.app/about.html#contacto
+La Landing Page es un sitio estático y en este Sprint no consume servicios de backend. Las interacciones que sí ejecutan lógica se resuelven en el navegador y se documentan a continuación, junto con la User Story que cubren. La recepción real de solicitudes de demo se implementará cuando exista el RESTful API (TS09).
+ 
+| **Endpoint / Interacción** | **Acción** | **Parámetros** | **Descripción del Response** | **User Story** |
+| :--- | :---: | :--- | :--- | :---: |
+| `about.html#contactForm` | **POST (simulado)** | `nombre`* , `restaurante`, `correo`* , `mensaje` (`*` obligatorios con `required` y `type="email"`) | El navegador bloquea el envío si falta un campo obligatorio o el correo no es válido. Con datos válidos, `preventDefault()` evita el envío real, el botón muestra "✓ Enviado" y se deshabilita durante 3 segundos; luego el formulario se limpia con `form.reset()`. No se transmiten datos a un servidor. | US06 |
+| Selector de idioma (`ES` / `EN`) | Lectura y escritura en `localStorage` | Clave `stockia-lang` con valor `es` o `en` | Aplica las traducciones a todos los elementos con `data-i18n` sin recargar la página y conserva el idioma al navegar entre páginas o volver al sitio. | US08 |
+| Interruptor mensual / anual (`pricing.html`) | Cálculo en el cliente | Estado del interruptor | Cambia los precios de S/ 0, 39 y 79 a S/ 0, 27 y 55 y viceversa, sin recargar la página. | US04 |
+| Preguntas frecuentes (`pricing.html`) | Interacción en el cliente | Pregunta seleccionada | Despliega la respuesta elegida y cierra la que estaba abierta. | US04 |
+ 
+* **Repositorio de la Landing Page/WebSite :** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-website
+* **Landing Page desplegada:** https://stockia-website.vercel.app
 
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
-El proceso de despliegue para el Sprint 1 priorizó una infraestructura de hosting estático en **Vercel**, aprovechando su infraestructura global (CDN) para garantizar tiempos de carga óptimos para la Landing Page. Se priorizó la automatización para permitir iteraciones rápidas sobre el diseño y el contenido informativo orientado a los segmentos objetivo.
-
-**Actividades de Despliegue Realizadas**
-* Configuración del proyecto en Vercel, vinculado al repositorio `Jesusho22/Stockia-landing` para despliegues automáticos.
-* Despliegue continuo activado en cada push a la rama `develop`, publicado en: **https://stockia-landing-giag.vercel.app**
-* Verificación de las 4 páginas del sitio (`index.html`, `features.html`, `pricing.html`, `about.html`) en el dominio de Vercel.
-
-**Evidencia Deploy: Landing Page - Responsive**
+La Landing Page se publicó en **Vercel** como sitio estático, servido desde su CDN global, con despliegue continuo desde el repositorio (TS04).
+ 
+**Actividades de despliegue realizadas**
+ 
+1. Se creó el proyecto en Vercel y se vinculó al repositorio de la Landing Page, con `develop` como rama de producción.
+2. Se activó el despliegue automático: cada cambio integrado en `develop` se publica sin pasos manuales, y cada Pull Request genera una URL de vista previa.
+3. Se verificaron las cuatro páginas (`index.html`, `features.html`, `pricing.html` y `about.html`) en el dominio público, incluidos los enlaces entre páginas y el cambio de idioma (T-TS04-2).
+4. Se verificó la visualización en escritorio y en móvil (RNF01).
+* **URL de la Landing Page desplegada:** stockia-website.vercel.app
+**Evidencia: proyecto y despliegues en Vercel**
+ 
 <p align="center">
-  <img src="assets/img/chapter-05/deploy-desktop-index.png" width="500" alt="Landing Page Desplegada"/>
-  <br/><i>Landing Page Desplegada — stockia-landing-giag.vercel.app</i>
+  <img src="assets/img/chapter-05/02-hero-mockup-dashboard.png" width="800" alt="Proyecto de la Landing Page en Vercel"/>
+  <br/><i>Proyecto de la Landing Page en Vercel con el historial de despliegues</i>
 </p>
-
-**Evidencia Deploy: Landing Page Mobile - Responsive**
+**Evidencia: Landing Page desplegada en escritorio**
+ 
 <p align="center">
-  <img src="assets/img//chapter-05/deploy-mobile-index.png" width="200" alt="Landing Page Desplegada - Mobile"/>
-  <br/><i>Landing Page Desplegada (vista móvil, 390px) — stockia-landing-giag.vercel.app</i>
+  <img src="assets/img/chapter-05/deploy-desktop-index.png" width="500" alt="Landing Page desplegada en escritorio"/>
+  <br/><i>Landing Page desplegada — stockia-landing-giag.vercel.app</i>
+</p>
+**Evidencia: Landing Page desplegada en móvil**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/deploy-mobile-index.png" width="200" alt="Landing Page desplegada en móvil"/>
+  <br/><i>Landing Page desplegada en móvil (390 px) — stockia-landing-giag.vercel.app</i>
 </p>
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
-**Dinámica de Implementación**
+**Dinámica de trabajo**
+ 
+Durante el Sprint 1 el equipo trabajó en dos frentes: la Landing Page y la documentación del informe. Las tareas se organizaron en Jira, en el proyecto STOCKIA-OS, con un responsable por tarea (ver 5.2.1.3). El código y el informe se versionaron en GitHub siguiendo GitFlow: `main` para versiones entregables, `develop` para integración y una rama `feature/*` por tarea o sección, integrada por Pull Request revisado por otro integrante.
+ 
+**Aporte por integrante**
+ 
+| **Integrante** | **GitHub** | **Aporte principal en el Sprint 1** | **Commits en `stockia-report` (develop, al 22/09/2026)** | **Commits en `stockia-website`** |
+| :--- | :--- | :--- | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | `features.html` (US02), navegación (US07), contraste y compatibilidad (RNF02, RNF05); índice, portada y guía de estilos del informe | 44 | 2 |
+| Huaman Oscco, Aldo Jesus | Jesusho22 (Jesus / Aldo_Jesus) | `index.html` (US01–US03), despliegue en Vercel (TS04), reglas de ramas (TS01); capítulos III y V del informe | 34 | 2 |
+| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | `pricing.html` (US04), responsive, rendimiento y SEO (RNF01, RNF03, RNF04); capítulo II y diagramas C4 del informe | 41 | 0 |
+| Ortiz Laura, Leyla Alisson | Leylaa-O (Leylaa-O / Leyla Ortiz) | Estructura del repositorio (TS01), sistema de diseño (TS02), i18n (TS03), interacciones en `main.js`; Impact Map, mock-ups y sección 5.1 del informe | 18 | 5 |
+| Toro Turpo, Ronal | Ronal345 (ronaltt-345) | `about.html` (US05, US06), contenido y traducción (US08, RNF07); capítulo I y EventStorming del informe | 8 | 1 |
+ 
+**Evidencia: contribuciones por integrante en `stockia-report`**
+ 
 <p align="center">
-Durante este ciclo, el equipo concentró sus esfuerzos en el desarrollo Frontend y la Documentación Técnica de la Landing Page. El equipo trabajó de forma remota, distribuyendo tareas mediante un tablero Kanban en Jira (ver evidencia en 5.2.1.3) y centralizando el control de versiones en GitHub. _(completar — nombra la herramienta real de comunicación diaria del equipo: Discord, WhatsApp, Slack, etc., y la frecuencia de las reuniones de sincronización)_.
+  <img src="assets/img/chapter-05/Contributors.png" width="700" alt="Contribuciones por integrante en stockia-report"/>
+  <br/><i>Contributors del repositorio stockia-report</i>
+</p>
+**Evidencia: contribuciones por integrante en `stockia-website`**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/Contributors-website.png" width="700" alt="Contribuciones por integrante en stockia-website"/>
+  <br/><i>Contributors del repositorio stockia-website</i>
+</p>
+**Evidencia: grafo de GitFlow**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/Network-Gitflow.png" width="700" alt="Grafo de ramas"/>
+  <br/><i>Network: ramas feature integradas en develop mediante Pull Request</i>
 </p>
 
-**Analíticos de Colaboración**
+### 5.2.2. Sprint 2
+ 
+El Sprint 2 se dedicó al frontend de la Web Application de StockIA en Angular 22, organizado por Bounded Context y conectado a una API REST simulada y desplegada. Cada integrante implementó su Bounded Context en el repositorio de la organización (`stockia-webapp`) con una rama `feature/*` y su Pull Request. El Sprint incluye además la corrección de los hallazgos de la revisión del AV1 en la Landing Page (TS08). El backend real (RESTful API) no forma parte de este Sprint y se mantiene en el Product Backlog (TS09 y TS10).
+
+#### 5.2.2.1. Sprint Planning 2
+ 
+| **Sprint #** | Sprint 2 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| **Date** | 23/09/2026 |
+| **Time** | 10:00 am |
+| **Location** | Lima/Lima/Santiago de Surco/UPC (presencial) y Google Meet |
+| **Prepared By** | Huaman Oscco, Aldo Jesus (Jesusho22) |
+| **Attendees (to planning meeting)** | Gallardo Morales, Carla Alejandra / Huaman Oscco, Aldo Jesus / Miranda Cordova, Jesus Angel Yvan / Ortiz Laura, Leyla Alisson / Toro Turpo, Ronal |
+| **Sprint 1 Review Summary** | Se presentó la Landing Page publicada en Vercel con las cuatro páginas bilingües, el formulario de demo simulado y los criterios de RNF01 a RNF07. Se identificaron como pendientes: el menú de navegación en móvil, el botón "Solicitar demo" del menú sin destino, las fichas de equipo de ejemplo, el enlace de términos sin página y la integración de pricing.html en el repositorio de la organización. Estos pendientes se planifican en TS08. |
+| **Sprint 1 Retrospective Summary** | Funcionó: la división de páginas por integrante y la integración por Pull Request en el repositorio de la organización. A mejorar: (1) una rama feature/ por tarea con su ID en el mensaje de commit, para que cada tarea tenga su evidencia; (2) integrar cada página en el repositorio de la organización antes del cierre del Sprint; (3) estimar las tareas por esfuerzo real y registrar la disponibilidad de cada integrante. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 2 Goal** | **Contexto:** Con la Landing Page publicada, el equipo construye el núcleo del producto: que cada venta descuente insumos por receta y que el administrador vea a tiempo lo que debe reponer.<br><br>**Sprint Goal:**<br>*"Our focus is on delivering the first working version of the StockIA web application, organised by bounded context and connected to a deployed mock REST API. We believe it delivers to restaurant administrators the ability to keep their inventory in sync with every sale, manage their team and act on stock alerts from a single dashboard. This will be confirmed when, in the deployed application, an administrator can register, load ingredients and recipes, record a sale that automatically deducts stock, and see the resulting critical items and alerts on the dashboard."* |
+| **Sprint 2 Velocity** | 40 Story Points (completados en el Sprint 1; es la única referencia histórica disponible). |
+| **Sum of Story Points** | 52 Story Points comprometidos en 17 ítems (11 US, 4 TS y 2 RNF) |
+ 
+El compromiso del Sprint 2 (52 SP) se calculó a partir de la velocidad del Sprint 1 ajustada a la nueva disponibilidad: en el Sprint 1 el equipo completó 40 SP con 28 horas por integrante; para el Sprint 2 cada integrante declaró 36 horas, por lo que la capacidad proyectada es 40 × 36 / 28 ≈ 51 SP. Las 137.5 horas planificadas equivalen al 76 % de la capacidad disponible (180 horas) y ningún integrante supera las 33 horas de sus 36 disponibles; el margen restante cubre revisiones de Pull Request y ceremonias. Al cierre del Sprint se completaron los 52 SP comprometidos.
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+ 
+En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** del Sprint 2. Los aspectos corresponden a los Bounded Contexts definidos en el capítulo IV, más la arquitectura transversal y la Landing Page; cada integrante lidera un Bounded Context y lo implementa en sus cuatro capas (domain, infrastructure, application y presentation). El líder (L) responde por la integración y la revisión de ese aspecto, y los colaboradores (C) desarrollan o revisan sus tareas.
+ 
+| Team Member | GitHub Username | Restaurant Registration (IAM y equipo) (L/C) | Stock Management & Recipes Management (L/C) | ML and Recommendations (L/C) | Subscription and Payment Management (L/C) | Analytics and Dashboard (alertas e historial de ventas) (L/C) | Arquitectura, API simulada y despliegue (L/C) | Landing Page (nueva versión y enlace con la Web App) (L/C) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | C | C | C | L | C | C | L |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | C | C | L | C | C | L | C |
+| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | C | L | C | C | C | C | C |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | C | C | C | C | L | C | C |
+| Toro Turpo, Ronal | Ronal345 | L | C | C | C | C | C | C |
+ 
+> **Leyenda:** **L:** Líder del aspecto · **C:** Colaborador
+
+#### 5.2.2.3. Sprint Backlog 2
+ 
+**Periodo:** 23/09/2026 – 06/10/2026 (2 semanas)  
+**Objetivo del Sprint:** Entregar el frontend de la Web Application con autenticación, equipo y roles, inventario, recetas, ventas con descuento automático, dashboard, alertas, proyección de demanda, recomendaciones y planes, conectado a la API simulada desplegada, y corregir los hallazgos del AV1 en la Landing Page.
+ 
+| **User Story Id** | **Título de la Historia** | **Task Id** | **Título de la Tarea** | **Descripción de la Tarea** | **Est. (Hrs)** | **Asignado** | **Status** |
+| :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
+| **US12** | Registrar y monitorear los insumos del inventario | T-US12-1 | Modelar InventoryItem y su servicio de API | Crear la entidad del dominio e InventoryApiService en infrastructure. | 2.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US12-2 | Construir la tabla de inventario | Listar insumos con estados de carga y de inventario vacío. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US12-3 | Construir el formulario de alta y edición | Validar campos y calcular la fecha de vencimiento a partir de la vida útil. | 4 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US12-4 | Implementar la eliminación con confirmación | Pedir confirmación antes de eliminar un insumo. | 1 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US12-5 | Implementar la regla de estado en el dominio | Calcular Vencido, Crítico, Stock bajo o Disponible en InventoryItem. | 2 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US12-6 | Mostrar el distintivo de estado | Pintar el badge de color correspondiente en la tabla de inventario. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **US10** | Iniciar sesión y mantener actualizada mi cuenta | T-US10-1 | Construir el formulario de inicio de sesión | Crear sign-in con validaciones y mensaje de error. | 3 | Toro Turpo, Ronal | Done |
+|  |  | T-US10-2 | Implementar sesión persistente y cierre de sesión | Guardar y restaurar la sesión en localStorage y limpiarla al salir. | 2 | Toro Turpo, Ronal | Done |
+|  |  | T-US10-3 | Implementar los guards de autenticación y rol | Proteger /app con authGuard y las rutas administrativas con adminGuard. | 2 | Toro Turpo, Ronal | Done |
+|  |  | T-US10-4 | Construir la pantalla de perfil | Crear el formulario precargado con validaciones por campo. | 3 | Toro Turpo, Ronal | Done |
+|  |  | T-US10-5 | Implementar la actualización del perfil | Guardar los cambios, actualizar la sesión y mostrar la confirmación o el error. | 2 | Toro Turpo, Ronal | Done |
+| **US17** | Gestionar y entregar las alertas operativas | T-US17-1 | Modelar Alert y su servicio de API | Crear la entidad con tipo, severidad y canal, y AlertsApiService. | 2 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US17-2 | Construir la lista de alertas con contador | Mostrar alertas, pendientes y estado vacío. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US17-3 | Construir el formulario de creación y edición | Validar tipo, severidad, canal y mensaje. | 3 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US17-4 | Implementar atender y eliminar | Marcar atendida con su regla y eliminar con confirmación. | 2 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US17-5 | Implementar la regla de canales requeridos | Calcular requiredChannels, pendingChannel y delivered en Alert. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US17-6 | Mostrar entrega y reintento por canal | Indicar el estado de entrega y permitir reintentar el canal pendiente. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
+| **US18** | Anticipar la demanda y aplicar recomendaciones | T-US18-1 | Modelar DemandForecast y su servicio | Crear la entidad con puntos por día y el servicio de carga y generación. | 2 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US18-2 | Implementar la generación de siete días | Generar la proyección simulada y manejar el estado de generación. | 2.5 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US18-3 | Construir la visualización por día | Mostrar barras por día, plato, confianza, clima y fecha. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US18-4 | Etiquetar la proyección como simulada | Agregar el aviso de valores simulados en la pantalla. | 0.5 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US18-5 | Modelar Recommendation y su lista | Crear la entidad y mostrar tipo, mensaje e impacto esperado. | 2 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US18-6 | Implementar "Aplicar" | Marcar la recomendación como aplicada y actualizar la lista. | 1.5 | Huaman Oscco, Aldo Jesus | Done |
+| **TS05** | Estructurar la Web Application en Angular por Bounded Context | T-TS05-1 | Crear el proyecto y la estructura por contexto | Inicializar Angular 18 standalone y crear las capas de cada contexto. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-TS05-2 | Implementar el shell y el enrutamiento | Crear el layout con menú por rol y las rutas diferidas con redirecciones. | 4 | Huaman Oscco, Aldo Jesus | Done |
+| **TS06** | Implementar y desplegar la API simulada de la Web Application | T-TS06-1 | Modelar db.json con las colecciones del dominio | Definir users, inventoryItems, recipes, sales, alerts, recommendations, demandForecasts, plans y subscriptions. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-TS06-2 | Configurar json-server y desplegarlo en Render | Servir bajo /api/v1 con CORS y health check y publicarlo en Render. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-TS06-3 | Implementar BaseApiService y environments | Centralizar la URL base, el modo useFakeApi y la API en memoria. | 2 | Huaman Oscco, Aldo Jesus | Done |
+| **US13** | Vincular recetas a los insumos del inventario | T-US13-1 | Modelar Recipe y sus operaciones | Crear la entidad con líneas de ingredientes y las operaciones CRUD del servicio. | 2.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US13-2 | Construir el formulario de receta | Seleccionar insumos, agregar y quitar líneas y validar la receta. | 4 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US13-3 | Construir la lista de recetas | Mostrar recetas con ingredientes y opciones de editar y eliminar. | 2.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **US14** | Registrar una venta con descuento automático de insumos | T-US14-1 | Modelar Sale y su servicio de API | Crear la entidad con líneas, canal, estado y total, y SalesApiService. | 2 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US14-2 | Validar stock antes de registrar la venta | Rechazar la venta y listar los insumos faltantes cuando no alcanzan. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US14-3 | Descontar insumos al confirmar la venta | Aplicar el descuento por receta después de persistir la venta. | 3 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-US14-4 | Agregar la acción "Simular venta" con confirmación visual | Disparar el registro desde Recetas y resaltar el plato vendido. | 1.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+| **US09** | Registrar mi restaurante y crear mi cuenta de administrador | T-US09-1 | Construir el formulario de registro | Crear sign-up con validaciones reactivas y mensajes por campo. | 3 | Toro Turpo, Ronal | Done |
+|  |  | T-US09-2 | Implementar el registro en AuthService | Crear el usuario con rol ADMIN, iniciar la sesión y redirigir al dashboard. | 2 | Toro Turpo, Ronal | Done |
+|  |  | T-US09-3 | Validar correo duplicado | Consultar el correo antes de crear la cuenta y mostrar el mensaje de duplicado. | 2 | Toro Turpo, Ronal | Done |
+| **US16** | Visualizar el resumen operativo en el dashboard | T-US16-1 | Calcular los indicadores del inventario | Exponer conteos y valor del inventario como computed signals. | 3 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US16-2 | Construir las tablas de críticos y alertas recientes | Mostrar insumos críticos y las cinco alertas más recientes con sus estados vacíos. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US16-3 | Agregar el resumen de la última proyección | Mostrar la proyección más reciente cuando exista. | 1.5 | Ortiz Laura, Leyla Alisson | Done |
+| **TS08** | Corregir los hallazgos de la revisión del AV1 en la Landing Page | T-TS08-1 | Enlazar "Solicitar demo" del menú | Apuntar el botón del navbar de las cuatro páginas a about.html#contacto. | 0.5 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-TS08-2 | Agregar el menú desplegable en móvil | Mostrar un botón de menú bajo 768 px que despliegue los enlaces. | 2.5 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-TS08-3 | Publicar las fichas reales del equipo | Reemplazar las fichas de ejemplo y retirar las notas internas de cifras y equipo. | 1.5 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-TS08-4 | Filtrar el portafolio por pestaña | Mostrar solo las vistas de la categoría elegida. | 1.5 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-TS08-5 | Crear la página de términos y enlazarla | Publicar términos y condiciones y enlazarlos desde el footer. | 2 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-TS08-6 | Subir pricing.html al repositorio de la organización | Integrar por Pull Request la página de precios que falta en develop. | 0.5 | Miranda Cordova, Jesus Angel Yvan | Done |
+|  |  | T-TS08-7 | Enlazar la Landing Page con la Web Application | Agregar en la Landing los accesos "Iniciar sesión" y "Crear cuenta" hacia la Web Application, y en la Web Application el enlace de regreso a la Landing. | 1.5 | Gallardo Morales, Carla Alejandra | Done |
+| **US11** | Gestionar el equipo y sus roles | T-US11-1 | Construir el formulario de invitación | Crear el formulario con nombre, correo y rol y registrar al integrante. | 3 | Toro Turpo, Ronal | Done |
+|  |  | T-US11-2 | Implementar la baja con reglas de negocio | Confirmar la baja e impedir eliminar la propia cuenta o al último administrador. | 2.5 | Toro Turpo, Ronal | Done |
+|  |  | T-US11-3 | Construir la lista del equipo con selector de rol | Mostrar integrantes, marcar la propia cuenta y guardar el cambio de rol con la regla del último administrador. | 3 | Toro Turpo, Ronal | Done |
+|  |  | T-US11-4 | Restringir menú y ruta por rol | Ocultar "Roles y permisos" al Empleado y aplicar adminGuard a /app/roles. | 1.5 | Toro Turpo, Ronal | Done |
+| **US19** | Elegir o cambiar el plan de suscripción | T-US19-1 | Modelar Plan y Subscription y su servicio | Crear las entidades y cargar planes y suscripción actual. | 2 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US19-2 | Construir las tarjetas de planes | Mostrar precio, características, plan popular y plan activo. | 2.5 | Gallardo Morales, Carla Alejandra | Done |
+|  |  | T-US19-3 | Implementar el checkout simulado | Activar o cambiar la suscripción con Stripe o PayPal simulados. | 2.5 | Gallardo Morales, Carla Alejandra | Done |
+| **US15** | Consultar el historial de ventas y anular ventas erróneas | T-US15-1 | Construir el historial de ventas | Listar ventas con totales en S/, estado y resumen de ingresos confirmados. | 3 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US15-2 | Implementar la anulación de ventas | Confirmar y cambiar el estado de la venta a Anulada. | 2 | Ortiz Laura, Leyla Alisson | Done |
+| **RNF08** | Control de acceso por sesión y por rol en la Web Application | T-RNF08-1 | Probar el acceso a todas las rutas | Recorrer cada ruta sin sesión, como Empleado y como Administrador. | 1.5 | Toro Turpo, Ronal | Done |
+| **TS07** | Desplegar la Web Application en Vercel | T-TS07-1 | Configurar Vercel para la Web Application | Definir build, carpeta de salida y reescritura SPA en vercel.json. | 1.5 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-TS07-2 | Probar rutas protegidas en producción | Verificar inicio de sesión, recarga de rutas internas y redirecciones. | 1 | Gallardo Morales, Carla Alejandra | Done |
+| **RNF09** | Retroalimentación de estado y confirmaciones en la Web Application | T-RNF09-1 | Revisar estados y confirmaciones por pantalla | Verificar estados de carga, vacío, éxito, error y confirmación en cada vista. | 2 | Gallardo Morales, Carla Alejandra | Done |
+| | **TOTAL** | | | **Esfuerzo total estimado para el Sprint** | **137.5** | | |
+ 
+**Capacidad del Sprint 2**
+ 
+| Integrante | Disponibilidad declarada (h) | Horas asignadas | N.° de tareas | Uso de la capacidad |
+| :--- | :---: | :---: | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | 36 | 19.5 | 11 | 54 % |
+| Huaman Oscco, Aldo Jesus | 36 | 28 | 12 | 78 % |
+| Miranda Cordova, Jesus Angel Yvan | 36 | 33 | 14 | 92 % |
+| Ortiz Laura, Leyla Alisson | 36 | 26.5 | 11 | 74 % |
+| Toro Turpo, Ronal | 36 | 30.5 | 13 | 85 % |
+| **Total** | **180** | **137.5** | **61** | **76 %** |
+ 
+##### Resumen Técnico
+- **Total de horas:** 137.5 horas en 61 tareas.
+- **Distribución:** dos semanas (23/09/2026 – 06/10/2026), con una disponibilidad declarada de 36 horas por integrante (18 h por semana); la capacidad libre cubre revisiones de Pull Request y ceremonias.
+- **Story Points:** 52 comprometidos; 52 completados al cierre registrado en este informe.
+- **Entregable principal:** Web Application de StockIA en Angular conectada a la API simulada desplegada en Render, y Landing Page sin los hallazgos de la revisión del AV1.
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+ 
+En esta sección se presentan los avances de implementación del Sprint 2 (Web Application y correcciones de la Landing Page) mediante los commits que los respaldan, relacionados con el ítem del Sprint Backlog 2 que implementan.
+ 
+**Distribución del código por Bounded Context**
+ 
+Cada integrante implementa y sube al repositorio de la organización un Bounded Context completo, en sus cuatro capas, mediante su rama `feature/*` y su Pull Request:
+ 
+| **Bounded Context (cap. IV)** | **Responsable** | **Carpetas en la Web Application** | **Ítems del Sprint Backlog 2** |
+| :--- | :--- | :--- | :--- |
+| Restaurant Registration (IAM y equipo) | Toro Turpo, Ronal | `iam` | US09, US10, US11, RNF08 |
+| Stock Management & Recipes Management | Miranda Cordova, Jesus Angel Yvan | `product-inventory`, `sales-order` (registro de venta) | US12, US13, US14 |
+| ML and Recommendations | Huaman Oscco, Aldo Jesus | `demand-forecasting` | US18 |
+| Subscription and Payment Management | Gallardo Morales, Carla Alejandra | `subscription` | US19 |
+| Analytics and Dashboard | Ortiz Laura, Leyla Alisson | `dashboard`, `alerts`, `sales-order` (historial de ventas) | US15, US16, US17 |
+| Arquitectura transversal | Huaman Oscco, Aldo Jesus | `shared`, `app.routes.ts`, `environments`, `mock-api` | TS05, TS06, TS07 |
+| Landing Page | Gallardo Morales, Carla Alejandra | repositorio `stockia-website` | TS08 |
+ 
+**Repositorio de la Web Application (`stockia-webapp`)**
+ 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| stockia-webapp | main | `21f1446` | Initial commit | Creación del repositorio de la Web Application en la organización (Aldo_Jesus). | 04/10/2026 |
+| stockia-webapp | feature/project-setup | `c0700b6` | Merge pull request #1 from upc-pre-202602-1ASI0729-7747-databit/feature/project-setup | TS05: proyecto Angular 22 con Angular Material, configuración de TypeScript, Prettier y Vitest, y componente raíz con su prueba. 24 commits de Carlsss28 (`b9958d0`…`70f05a9`). | 05/10/2026 |
+| stockia-webapp | feature/shared-base | `c5a3abd` | Merge pull request #2 from upc-pre-202602-1ASI0729-7747-databit/feature/shared-base | TS05: clases base `BaseEntity`, `BaseResource`, `BaseResponse`, `BaseAssembler`, `BaseApi` y `BaseApiEndpoint`; environments; layout con menú lateral y vistas Inicio y Página no encontrada. 26 commits de Carlsss28 (`6c71a58`…`6ee339b`). | 05/10/2026 |
+| stockia-webapp | feature/subscription-domain-model | `a71d272` | Merge pull request #3 from upc-pre-202602-1ASI0729-7747-databit/feature/subscription-domain-model | US19: tipos `SubscriptionStatus` y `PaymentMethod`, entidades `Plan` y `Subscription` y comando `SubscribeToPlanCommand`. 5 commits de Carlsss28 (`32a4234`…`d9acc59`). | 05/10/2026 |
+| stockia-webapp | feature/subscription-infrastructure | `52c493b` | Merge pull request #4 from upc-pre-202602-1ASI0729-7747-databit/feature/subscription-infrastructure | US19: rutas de endpoints en los environments, resources y responses, assemblers, endpoints de planes y suscripciones y fachada `SubscriptionService`. 9 commits de Carlsss28 (`37bbe46`…`4ed59e2`). | 05/10/2026 |
+| stockia-webapp | feature/payment-checkout | `91fc40b` | Merge pull request #8 from upc-pre-202602-1ASI0729-7747-databit/feature/payment-checkout | US19: vista de pago simulado con Stripe o PayPal y enlace desde `PlanCard`, con pruebas. 10 commits de Carlsss28 (`4e690ca`…`1cc35e4`). | 05/10/2026 |
+| stockia-webapp | feature/forecasting-domain-model | `222f9fe` | Merge pull request #10 from upc-pre-202602-1ASI0729-7747-databit/feature/forecasting-domain-model | US18: tipo `RecommendationType`, value object `ForecastDataPoint` y entidades `DemandForecast` y `Recommendation`. 4 commits de Jesus (`688ab0b`…`ca6691f`). | 05/10/2026 |
+| stockia-webapp | feature/forecasting-infrastructure | `ae35a92` | Merge pull request #11 from upc-pre-202602-1ASI0729-7747-databit/feature/forecasting-infrastructure | US18: rutas de endpoints en los environments, resources y responses, assemblers, endpoints de proyecciones y recomendaciones y fachada `DemandForecastingService`. 9 commits de Jesus (`6d80a32`…`a05c860`). | 05/10/2026 |
+| stockia-webapp | feature/forecasting-application-store | `d9dbd86` | Merge pull request #12 from upc-pre-202602-1ASI0729-7747-databit/feature/forecasting-application-store | US18: `DemandForecastingStore` (cargar, generar la proyección de 7 días y aplicar recomendaciones) con su prueba. 2 commits de Jesus (`40c547c`…`f5ecc11`). | 05/10/2026 |
+| stockia-webapp | feature/forecasting-routing | `788be60` | Merge pull request #15 from upc-pre-202602-1ASI0729-7747-databit/feature/forecasting-routing | US18: rutas del contexto (`demand-forecasting.routes.ts`). 1 commit de Jesus (`6501e44`). | 05/10/2026 |
+| stockia-webapp | feature/stok-management-recipes | `ca08144` | Merge pull request #16 from upc-pre-202602-1ASI0729-7747-databit/feature/stok-management-recipes | US12, US13, US14 y US15: entidades `InventoryItem`, `Recipe` y `Sale`; servicios de API y de aplicación; vistas de inventario, recetas e historial de ventas; rutas y opciones del menú. 21 commits de Jesus-Miranda-678 (`e8c8a41`…`2d21012`). | 05/10/2026 |
+| stockia-webapp | feature/alerts | `1c429f4` | Merge pull request #18 from upc-pre-202602-1ASI0729-7747-databit/feature/alerts | US17: entidad `Alert`, servicio de API y vista de alertas con entrega por canal y reintento. 1 commit de Leylaa-O (`0ede3ad`). | 05/10/2026 |
+| stockia-webapp | feature/fake-api | `1fb0064` | Merge pull request #19 from upc-pre-202602-1ASI0729-7747-databit/feature/fake-api | TS06: datos de la API en memoria (`in-memory-data.service.ts`) para trabajar sin conexión. 2 commits de Leylaa-O (`5fca0ab`…`f00edd8`). | 06/10/2026 |
+| stockia-webapp | develop | `51d6a1d` | feat(iam): add base api url | US09: URL base de la API para el contexto IAM (Ronal345). | 06/10/2026 |
+| stockia-webapp | feature/dashboard | `88fa97f` | Merge pull request #20 from upc-pre-202602-1ASI0729-7747-databit/feature/dashboard | US16: el dashboard consume `DemandForecastingStore` para mostrar la última proyección. 1 commit de Leylaa-O (`9db8404`). | 06/10/2026 |
+ 
+**Repositorio de la Landing Page (`stockia-website`) — TS08**
+ 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| stockia-website | develop | `f4b0754` | feat : add pricing.html | T-TS08-6: integración de la página de precios en el repositorio de la organización (Jesus-Miranda-678). | 04/10/2026 |
+| stockia-website | main | `d15606e` | Merge pull request #4 from upc-pre-202602-1ASI0729-7747-databit/develop | Publicación de `develop` en `main` con las cuatro páginas de la Landing Page (Aldo_Jesus). | 04/10/2026 |
+ 
+**Repositorio del informe (`stockia-report`)**
+ 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| stockia-report | develop | `6e426b8` | Update README.md | Actualización del capítulo III (Ronal345). | 27/09/2026 |
+| stockia-report | feature/chapter-03 | `8b09138` | docs(chapter-03): user story validation and metric correction. | User Stories con el «para» alineado a métricas y escenarios Gherkin (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-03 | `e81f46e` | docs(chapter-03): correction of non-functional requirements | RNF con atributo de calidad, actor afectado y criterio medible (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-03 | `ae9d32c` | docs(chapter-03): updated backlog evidence | Evidencia del Product Backlog en Jira (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `13515bc` | docs(chapter-05): added sprint 2 backlog with task breakdown and capacity | Sprint Backlog 2 con tareas, responsables, horas y capacidad (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `6c9fa0f` | docs(chapter-05): updated sprint 1 execution evidence | Evidencia de ejecución del Sprint 1 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `6b4acac` | docs(chapter-05): updated sprint 1 services documentation evidence | Documentación de servicios del Sprint 1 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `783248a` | docs(chapter-05): updated sprint 1 deployment evidence | Evidencia de despliegue del Sprint 1 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `8d90971` | docs(chapter-05): updated sprint 1 team collaboration insights | Colaboración del equipo en el Sprint 1 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `f9c8055` | docs(chapter-05): added sprint 2 introduction and scope | Introducción y alcance del Sprint 2 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `d78e67c` | docs(chapter-05): added sprint 2 planning with sprint review, retrospective and sprint goal | Sprint Planning 2 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `3364c76` | docs(chapter-05): added sprint 2 aspect leaders and collaborators matrix | LACX del Sprint 2 (Jesus). | 04/10/2026 |
+| stockia-report | feature/R-05 | `d209edc` | Update Análisis competitivo.md | Actualización del análisis competitivo (Jesus-Miranda-678). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `e28b3af` | docs(chapter-05): added sprint 2 team collaboration insights | Colaboración del equipo en el Sprint 2 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-05 | `be87bc9` | docs(chapter-05): updated sprint 2 | Ajustes del Sprint 2 (Jesus). | 04/10/2026 |
+| stockia-report | feature/chapter-2 | `28c62e2` | doc(chapter-2): update competitive analysis | Análisis competitivo del capítulo II (Leylaa-O). | 05/10/2026 |
+| stockia-report | feature/chapter-2 | `12dbac7` | doc(chapter-2): update interviews analysis | Actualización del análisis de entrevistas (Leylaa-O). | 05/10/2026 |
+| stockia-report | feature/report-communication-quality | `454f094` | doc: update team member profiles | Perfiles de los integrantes (Leylaa-O). | 05/10/2026 |
+| stockia-report | feature/report-communication-quality | `d3f2836` | doc: update bibliography | Bibliografía (Leylaa-O). | 05/10/2026 |
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+ 
+En el Sprint 2 se implementó la primera versión de la Web Application de StockIA. Las capturas corresponden a la versión desplegada en [stockia-webapp.vercel.app](https://stockia-webapp.vercel.app) (TS07), que consume la API simulada en Render (TS06). A continuación se presenta cada pantalla junto con la User Story o el requisito que la respalda:
+ 
+<br/>
+1. **Registro de restaurante (US09):** formulario de creación de cuenta con validaciones por campo; la cuenta se crea con el rol Administrador.
 <p align="center">
-La carga de trabajo se distribuyó para asegurar que todos los integrantes participaran en la construcción de los artefactos visuales y técnicos:
+  <img src="assets/img/chapter-05/s2-01-sign-up.png" width="800" alt="Registro de restaurante"/>
+  <br/><i>Registro de restaurante — US09</i>
+</p>
+<br/>
+2. **Inicio de sesión y perfil (US10, RNF08):** inicio de sesión con mensaje de credenciales incorrectas, sesión conservada al recargar y edición del perfil.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-02-sign-in-profile.png" width="800" alt="Inicio de sesión y perfil"/>
+  <br/><i>Inicio de sesión y perfil — US10 y RNF08</i>
+</p>
+<br/>
+3. **Dashboard operativo (US16):** indicadores del inventario, insumos críticos, alertas recientes y resumen de la última proyección.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-03-dashboard.png" width="800" alt="Dashboard operativo"/>
+  <br/><i>Dashboard operativo — US16</i>
+</p>
+<br/>
+4. **Inventario de insumos (US12):** tabla con los estados Vencido, Crítico, Stock bajo y Disponible, y formulario de alta y edición.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-04-inventory.png" width="800" alt="Inventario de insumos"/>
+  <br/><i>Inventario de insumos — US12</i>
+</p>
+<br/>
+5. **Recetas y venta con descuento automático (US13, US14):** recetas vinculadas a los insumos y acción "Simular venta" que valida y descuenta el stock.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-05-recipes-sale.png" width="800" alt="Recetas y venta"/>
+  <br/><i>Recetas y venta con descuento automático — US13 y US14</i>
+</p>
+<br/>
+6. **Historial de ventas (US15):** ventas con total en S/, estado e ingresos del período, con anulación confirmada.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-06-sales-history.png" width="800" alt="Historial de ventas"/>
+  <br/><i>Historial de ventas — US15</i>
+</p>
+<br/>
+7. **Alertas operativas (US17):** registro, atención y eliminación de alertas, con el estado de entrega por canal y el reintento del canal pendiente.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-07-alerts.png" width="800" alt="Alertas operativas"/>
+  <br/><i>Alertas operativas — US17</i>
+</p>
+<br/>
+8. **Proyección de demanda y recomendaciones (US18):** proyección de siete días identificada como simulada y recomendaciones con la acción "Aplicar".
+<p align="center">
+  <img src="assets/img/chapter-05/s2-08-forecast-recommendations.png" width="800" alt="Proyección y recomendaciones"/>
+  <br/><i>Proyección de demanda y recomendaciones — US18</i>
+</p>
+<br/>
+9. **Equipo y roles (US11, RNF08):** invitación de integrantes, cambio de rol y baja, con la regla del último administrador.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-09-team-roles.png" width="800" alt="Equipo y roles"/>
+  <br/><i>Equipo y roles — US11 y RNF08</i>
+</p>
+<br/>
+10. **Planes de suscripción (US19):** planes con su precio y el pago simulado con Stripe o PayPal.
+<p align="center">
+  <img src="assets/img/chapter-05/s2-10-plans.png" width="800" alt="Planes de suscripción"/>
+  <br/><i>Planes de suscripción — US19</i>
+</p>
+<br/>
+**Verificación de los requisitos no funcionales**
+ 
+| **RNF** | **Criterio medible** | **Verificación** | **Resultado** |
+| :--- | :--- | :--- | :--- |
+| RNF08 | 100 % de las rutas bajo `/app` protegidas por `authGuard`; 100 % de las rutas administrativas protegidas por `adminGuard`; 0 accesos sin sesión | Revisión de las rutas y prueba de cada ruta sin sesión, con rol Empleado y con rol Administrador | En la versión desplegada se cumple: las 10 pantallas bajo `/app` usan `authGuard`, `/app/roles` usa `adminGuard`, sin sesión se redirige a `/auth/sign-in` y el Empleado es redirigido a `/app/dashboard`. En `stockia-webapp` los guards ya están en `develop`, pero aún no se aplican porque las rutas de IAM no están registradas (T-US10-3 y T-RNF08-1, In Progress). |
+| RNF09 | 100 % de las listas con estado vacío; 100 % de las eliminaciones y anulaciones con confirmación; mensaje de éxito o error en cada formulario | Lista de verificación por pantalla | Cumple parcialmente. Confirmaciones: 5 de 5 (insumos, recetas, alertas, integrantes y anulación de ventas). Estados vacíos: 9 de 10 listas (falta la de planes). Mensajes de resultado: inicio de sesión, registro, perfil y planes muestran el resultado de la acción; los formularios de inventario y de alertas validan sus campos, pero no confirman el guardado. Los ajustes pendientes quedan en T-RNF09-1. |
 
-* Desarrollo Frontend: Implementación de componentes responsivos de la Landing Page, secciones de propuesta de valor, internacionalización (i18n) y formulario de captura de datos.
-
-* Documentación y Calidad: Redacción de Historias de Usuario, diseño de artefactos de planificación y elaboración del informe de Sprint Review conforme a la rúbrica.
-
-* Control de Versiones: El equipo aplica **GitFlow** en el repositorio `stockia-report`, con `main` y `develop` como ramas estables y una rama `feature/chapter-0X` por cada capítulo (`feature/chapter-01` a `feature/chapter-05`), integradas mediante Pull Requests revisados antes de cada merge (a la fecha, PR #1 al #29). Se aplicará la misma convención (`main` / `develop` / `feature/*`) en `stockia-website` en cuanto se suba el código de la Landing Page.
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+ 
+En el Sprint 2 la Web Application consume una API REST simulada con **json-server**, desplegada en Render. Cada colección del dominio expone las operaciones REST estándar (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`), y el frontend accede a ellas desde la capa `infrastructure` de cada Bounded Context. El servidor atiende cada recurso con el prefijo `/api/v1` (por ejemplo, `/api/v1/plans`) y también sin él (`/plans`), porque reescribe `/api/v1/*` hacia el recurso; los contextos de `stockia-webapp` usan cualquiera de las dos formas desde sus environments. Al reemplazar la URL base por la del RESTful API real (TS10), ningún componente de presentación cambia.
+ 
+| **Endpoint** | **Acción (HTTP)** | **Parámetros** | **Descripción del Response** | **User Story** |
+| :--- | :---: | :--- | :--- | :---: |
+| `/api/v1/health` | GET | — | `200 OK` con `{ "status": "ok", "time": ... }`; permite verificar que el servicio está activo. | TS06 |
+| `/api/v1/users` | POST | `fullName`, `restaurantName`, `email`, `password`, `role` | `201 Created` con el usuario creado; se usa al registrar el restaurante y al invitar integrantes. | US09, US11 |
+| `/api/v1/users?email={email}&password={password}` | GET | `email`, `password` | `200 OK` con la lista de usuarios que coinciden; una lista vacía equivale a credenciales incorrectas. | US10 |
+| `/api/v1/users/{id}` | PUT / DELETE | `id` y datos del usuario | `200 OK` con el usuario actualizado (perfil o rol) o eliminado (baja del equipo). | US10, US11 |
+| `/api/v1/inventoryItems` | GET / POST | Datos del insumo: nombre, unidad, cantidad, stock mínimo, costo y vida útil | `200 OK` con la lista de insumos o `201 Created` con el insumo registrado. | US12 |
+| `/api/v1/inventoryItems/{id}` | PUT / DELETE | `id` y datos del insumo | `200 OK` con el insumo actualizado (edición o descuento por venta) o eliminado. | US12, US14 |
+| `/api/v1/recipes` y `/api/v1/recipes/{id}` | GET / POST / PUT / DELETE | Nombre del plato y líneas de ingrediente (`inventoryItemId`, cantidad) | `200 OK` o `201 Created` con la receta y sus ingredientes. | US13 |
+| `/api/v1/sales` | GET / POST | Fecha, canal, líneas de venta y total | `201 Created` con la venta confirmada; el frontend descuenta los insumos solo después de esta respuesta. | US14, US15 |
+| `/api/v1/sales/{id}` | PUT | `status: VOIDED` | `200 OK` con la venta anulada. | US15 |
+| `/api/v1/alerts` y `/api/v1/alerts/{id}` | GET / POST / PUT / DELETE | Tipo, severidad, canal, mensaje, `acknowledged`, `deliveredChannels` | `200 OK` o `201 Created` con la alerta registrada, atendida o con su entrega actualizada. | US17 |
+| `/api/v1/demandForecasts` | GET / POST | Fecha de generación y puntos por día (plato, unidades, confianza, clima) | `201 Created` con la proyección simulada de siete días. | US18 |
+| `/api/v1/recommendations/{id}` | GET / PUT | `applied: true` | `200 OK` con la recomendación aplicada. | US18 |
+| `/api/v1/plans` | GET | — | `200 OK` con los planes, su precio y sus características. | US19 |
+| `/api/v1/subscriptions` y `/api/v1/subscriptions/{id}` | GET / POST / PUT | `planId`, método de pago, estado | `201 Created` o `200 OK` con la suscripción activada o cambiada. | US19 |
+ 
+* **Repositorio de la API simulada:** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-mock-api.git
+* **URL de la API simulada desplegada:** https://stockia-mock-api.onrender.com/api/v1
+<p align="center">
+  <img src="assets/img/chapter-05/fake-api.png" width="700" alt="API simulada en Render"/>
+  <br/><i>API simulada desplegada en Render — TS06</i>
 </p>
 
-**Evidencia GitFlow: Graph**
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+ 
+En el Sprint 2 se desplegaron dos componentes: la API simulada en **Render** (TS06) y la Web Application en **Vercel** (TS07).
+ 
+**Actividades de despliegue realizadas**
+ 
+1. Se publicó la API simulada en Render como servicio Node.js (`server.js` con json-server), con CORS habilitado, el prefijo `/api/v1` y el endpoint de salud `/api/v1/health`.
+2. Se configuraron los entornos de Angular (`environment.ts` y `environment.prod.ts`) para que la URL base apunte a la API desplegada.
+3. Se configuró en Vercel el proyecto `stockia-platform`, conectado a la rama `main` de `Jesusho22/stockia-platform`, con el framework Angular, Node.js 24.x y `vercel.json`: `npm run build` como comando de build, `dist/stockia-webapp/browser` como carpeta de salida y una regla de reescritura a `index.html` para que las rutas internas de Angular no respondan con error 404.
+4. Se actualizó la versión desplegada a Angular 22 para alinearla con `stockia-webapp` y se verificaron en producción el inicio de sesión, la recarga de rutas internas y las redirecciones de los guards (T-TS07-2).
+| **Fecha** | **Commit desplegado** | **Cambio** | **Entorno** | **Estado** |
+| :---: | :---: | :--- | :---: | :---: |
+| 01/10/2026 | `084801e` | Conexión a la API simulada en Render | Production | Ready |
+| 05/10/2026 | `4cb283d` | Actualización a Angular 22 | Production | Ready |
+ 
+* **URL de la API simulada:** https://stockia-mock-api.onrender.com/api/v1
+* **URL de la Web Application desplegada:** https://stockia-webapp.vercel.app
+ 
+**Evidencia: API simulada en Render**
+ 
 <p align="center">
-  <img src="assets/img/chapter-05/Network-Gitflow.png" width="200" alt="Graph"/>
-  <br/><i>Grafo de versiones para el gitflow</i>
+  <img src="assets/img/chapter-05/s2-deploy-render.png" width="800" alt="API simulada en Render"/>
+  <br/><i>Servicio stockia-mock-api desplegado en Render</i>
+</p>
+**Evidencia: Web Application en Vercel**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/s2-deploy-vercel.png" width="800" alt="Web Application en Vercel"/>
+  <br/><i>Proyecto stockia-platform en Vercel con el historial de despliegues</i>
+</p>
+<p align="center">
+  <img src="assets/img/chapter-05/s2-deploy-webapp.png" width="800" alt="Web Application desplegada"/>
+  <br/><i>Web Application desplegada en stockia-platform.vercel.app</i>
 </p>
 
-**Evidencia GitFlow: Commits**
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+ 
+**Dinámica de trabajo**
+ 
+En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante implementó un contexto del capítulo IV en sus capas y lo integró en `stockia-webapp` (ver 5.2.2.2 y la distribución de 5.2.2.4). Carla creó primero la base del proyecto (PR #1 y #2) con las clases base compartidas y el patrón de trabajo: una rama `feature/*` por capa, un commit por archivo y un Pull Request hacia `develop`. En total se integraron 20 Pull Requests en `develop` entre el 05/10 y el 06/10/2026. Aplicando la mejora de la retrospectiva del Sprint 1, cada rama corresponde a una capa o tarea y cada commit indica el contexto en su mensaje (`feat(subscription)`, `feat(forecasting)`, `feat(inventory)`, `feat(iam)`). Las tareas se gestionaron en Jira, en el proyecto STOCKIA-OS, con un responsable por subtarea.
+ 
+**Aporte por integrante**
+ 
+| **Integrante** | **GitHub** | **Aporte principal en el Sprint 2** | **Horas asignadas** | **Commits (webapp / website / report)** | **Pull Requests integrados (webapp / website / report)** |
+| :--- | :--- | :--- | :---: | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | Base del proyecto y clases compartidas (TS05); Subscription and Payment Management (US19) con 15 pruebas unitarias | 26.5 | 94 / 0 / 0 | 9 / 0 / 0 |
+| Huaman Oscco, Aldo Jesus | Jesusho22 (en Git: Jesus / Aldo_Jesus) | ML and Recommendations (US18) con 13 pruebas unitarias; API simulada en Render (TS06); despliegue en Vercel (TS07); capítulos III y V del informe | 21 | 32 / 0 / 24 | 6 / 1 / 3 |
+| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | Stock Management & Recipes Management: inventario, recetas, registro e historial de ventas (US12, US13, US14, US15); `pricing.html` (TS08) | 38 | 21 / 1 / 1 | 1 / 0 / 1 |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | Analytics and Dashboard: dashboard (US16) y alertas (US17); API en memoria (TS06); capítulo II, índice y bibliografía del informe | 21.5 | 5 / 0 / 8 | 4 / 0 / 2 |
+| Toro Turpo, Ronal | Ronal345 | Restaurant Registration: registro, inicio de sesión, perfil, equipo y roles (US09, US10, US11) y guards (RNF08) | 30.5 | 10 / 0 / 1 | 0 / 0 / 0 |
+ 
+**Lecciones para el Sprint 3**
+ 
+1. **Revisión cruzada:** cada Pull Request lo aprobará un integrante distinto de su autor antes del merge; en el Sprint 2 cada autor integró sus propios PR.
+2. **Nada directo en `develop`:** todo cambio entrará por Pull Request, incluidos los de IAM, que en este Sprint se subieron directamente.
+3. **Compilar antes de integrar:** cada PR debe pasar `npm run build` y `ng test`; se agregará una verificación automática con GitHub Actions para que un error como el del dashboard no llegue a `develop`.
+4. **Integración en el mismo Sprint:** registrar las rutas y la opción del menú en el PR de routing de cada contexto, para que toda pantalla integrada sea accesible.
+5. **Despliegue desde la organización:** publicar en Vercel la rama `main` de `stockia-webapp` y migrar la API simulada al repositorio `stockia-mock-api` de la organización.
+**Evidencia: contribuciones por integrante en `stockia-webapp`**
+ 
 <p align="center">
-  <img src="assets/img/chapter-05/Contributors.png" width="500" alt="Commits"/>
-  <br/><i>Gráfico estadístico de commits por usuario — stockia-website (Insights → Contributors)</i>
+  <img src="assets/img/chapter-05/s2-contributors-webapp.png" width="700" alt="Contribuciones por integrante en stockia-webapp"/>
+  <br/><i>Insights → Contributors del repositorio stockia-webapp</i>
 </p>
-
-**Evidencia GitFlow: Network**
+**Evidencia: Pull Requests integrados en `stockia-webapp`**
+ 
 <p align="center">
-  <img src="assets/img/chapter-05//Network.png" width="500" alt="Network"/>
-  <br/><i>Grafo de trabajo</i>
+  <img src="assets/img/chapter-05/s2-pull-requests-webapp.png" width="700" alt="Pull Requests de stockia-webapp"/>
+  <br/><i>Pull Requests #1 a #20 integrados en develop</i>
 </p>
-
-
+**Evidencia: grafo de GitFlow**
+ 
+<p align="center">
+  <img src="assets/img/chapter-05/s2-network-webapp.png" width="700" alt="Grafo de ramas de stockia-webapp"/>
+  <br/><i>Insights → Network: ramas feature integradas en develop mediante Pull Request</i>
+</p>
+ 
+ 
 ## 5.3. Validation Interviews
 
 ### 5.3.1. Diseño de Entrevistas
@@ -3477,41 +4241,62 @@ La carga de trabajo se distribuyó para asegurar que todos los integrantes parti
 ## 5.4. Video About-the-Product
 
 
-# Conclusiones
-
 # Conclusiones y recomendaciones
-**Conclusiones** </br>
-* El equipo logró mantener un liderazgo compartido, distribuyendo responsabilidades técnicas, de diseño y de documentación sin depender de una sola persona.
+**Conclusiones**
 
-* Se evidenció una comunicación efectiva tanto oral como escrita: las presentaciones se adaptaron a audiencias técnicas y no técnicas, y la documentación siguió estándares claros y accesibles.
+* **Problem Statement:** el problema central se mantiene validado por las 4 entrevistas (2.2): el inventario se controla a mano y está desconectado de las ventas. En el TB1, la Web Application implementa el núcleo que lo ataca: recetas vinculadas al inventario con descuento automático por venta (US13, US14), alertas (US17) y dashboard (US16), sobre una API simulada.
+* **Assumptions e hipótesis:** las hipótesis de 1.2.2.3 siguen siendo hipótesis. Su baseline y su medición dependen del piloto con restaurantes, que se ejecutará cuando el RESTful API (TS09) esté desplegado. En el TB1 se validó la factibilidad técnica del flujo, no todavía el impacto en mermas.
+* **Proceso:** el equipo corrigió las observaciones del AV1 (segmento único, User Stories alineadas a objetivos estratégicos, RNF medibles, modelo de dominio por Bounded Context) y trabajó la Web Application con ramas feature y Pull Requests en `stockia-webapp` (ver 5.2.2.4 y 5.2.2.8).
+* **Limitaciones reconocidas:** la Web Application usa una API simulada (json-server) y todavía no tiene internacionalización. Las integraciones externas (Stripe, SendGrid) quedan en el roadmap.
 
-* La integración de herramientas (EventStorming, C4 diagrams, UML, Lean UX, prototipos, entrevistas) permitió construir un modelo de dominio coherente y una aplicación con trazabilidad entre diseño, desarrollo y despliegue.
+**Recomendaciones**
 
-* La práctica de registrar evidencias (actas, reportes, videos, diagramas) fortaleció la transparencia y la coordinación del equipo, asegurando continuidad en cada sprint.
+* AV2: implementar el RESTful API en Spring Boot (TS09) y conectar la Web Application (TS10), documentando los endpoints con OpenAPI.
+* AV2: internacionalización en/es con inglés por defecto en la Web Application y en la Landing Page.
+* AV2: entrevistas de validación (5.3) con al menos 3 restaurantes, usando el formato de evaluación heurística, para medir el baseline de las hipótesis.
+* TB2: integración de pago (US22) y correo (US21); predicción con datos reales del piloto.
 
-* El proyecto consolidó una dinámica de trabajo colaborativo e inclusivo, donde cada integrante aportó desde su especialidad y se validaron constantemente los entregables con retroalimentación grupal.
-
-
-**Recomendaciones** </br>
-* Fortalecer la planificación inicial: definir desde el comienzo criterios claros de calidad para cada artefacto (diagramas, prototipos, reportes) y asegurar que todos los integrantes los conozcan.
-
-* Optimizar la documentación audiovisual: mantener un repositorio organizado de videos y prototipos, con guías de revisión que faciliten la comprensión de audiencias externas.
-
-* Profundizar en validación con usuarios reales: ampliar el número y diversidad de entrevistas para fortalecer la base de las hipótesis y asegurar que las mejoras de UX/UI respondan a necesidades verificadas.
-
-* Escalar la práctica de liderazgo compartido: replicar la dinámica de distribución de responsabilidades en futuros proyectos, pero complementarla con roles rotativos de coordinación para balancear cargas de trabajo.
 
 # Video About-the-Team
 
 # Bibliografía
-United Nations Environment Programme. (2024). Food Waste Index Report 2024: Think Eat Save – Tracking progress to halve global food waste. https://wedocs.unep.org/bitstream/handle/20.500.11822/45230/food_waste_index_report_2024.pdf
+Cullen, J. (2021). Administración de inventarios: análisis y modelos. Editorial académica.
+
+Gunders, D., et al. (2017). *Wasted: How America is losing up to 40 percent of its food from farm to fork and landfill*. Natural Resources Defense Council 2017. https://www.nrdc.org/sites/default/files/wasted-2017-report.pdf
 
 López, J., & Martínez, A. (2025). Diseño de un sistema de control de inventarios para reducir el desperdicio de alimentos en restaurantes [Tesis de pregrado, Universidad Laica Eloy Alfaro de Manabí]. Repositorio ULEAM. https://repositorio.uleam.edu.ec/handle/123456789/8924
 
+Panca. (s.f.). El software para restaurantes más completo de Perú. Recuperado el 14 de septiembre de 2026, de https://www.panca.pe/
+
+RestoIQ. (s.f.). Tu restaurante merece
+tecnología propia. Recuperado el 14 de septiembre de 2026, de https://restoiq.cl/
+
+Toteat. (s.f.) El software todo en uno para los restaurantes del Perú. Recuperado el 14 de septiembre de 2026, de https://toteat.com/es-pe/home
+
+United Nations Environment Programme. (2024). Food Waste Index Report 2024: Think Eat Save – Tracking progress to halve global food waste. https://wedocs.unep.org/bitstream/handle/20.500.11822/45230/food_waste_index_report_2024.pdf
+
+
 # Anexos
-URL del repositorio (stockia-report): https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-report.git|
-URL del repositorio (stockia-website) https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-website
+**URL del repositorio (stockia-report):** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-report.git|
 
-URL de landing page (vercel): https://stockia-landing-giag.vercel.app/
+**URL del repositorio (stockia-website)** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-website
 
-Exposicion : https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQDEOleKp0hNTLzONouiVj-wARDzRNQtkhIAFRriY9p5BvY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XhsNyB
+**URL de landing page (vercel):** https://stockia-website.vercel.app/index.html
+
+**URL de webapp:** https://stockia-webapp.vercel.app/
+
+**AV1 Expo:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQDEOleKp0hNTLzONouiVj-wARDzRNQtkhIAFRriY9p5BvY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XhsNyB
+
+**Link del EventStorming (Miro):** https://miro.com/app/board/uXjVHpm-h94=/?inviteKey=SG5SWGdzTFJPRXlnUXVrWGVEcnhkK01yVlErUVVta1JYbUlYb0JNbFQwOGtKQWdpdDNXNkJobVVyRUdmSDNFbmVyanlCcmQ1Q05paks4U3UwdXVoc3ExSlpnNFR4aHA4bGE2WHBxNDB1T2ZmdlpIUnM2M0QyZ2RjR2JpMllvQWhBd044SHFHaVlWYWk0d3NxeHNmeG9BPT0hdjE%3D
+
+**Repositorio de la API simulada:** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-mock-api.git
+
+**Repositorio de la webApp en Github:** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-webapp.git
+
+**TB1 Expo:**  https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQA-C8piH8qDQKzZq-JA_7PYAaJsZ0mESYc_tdA62twaH7Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=8g49nb
+
+**URL de la API simulada desplegada:** https://stockia-mock-api.onrender.com/api/v1
+
+
+
+
