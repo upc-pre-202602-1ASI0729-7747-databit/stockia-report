@@ -189,7 +189,7 @@ del ABET – EAC - Student Outcome 3.
             Expuse las Lean UX Hypothesis y las User Stories empleando un lenguaje accesible que permitió a audiencias generales comprender los criterios de aceptación. Al presentar el Product Backlog y el diseño de la landing page, orientó la comunicación hacia la priorización de funcionalidades y la coherencia visual del sistema, utilizando diagramas y prototipos como apoyo audiovisual.
             <br>           
             <u>TB1</u><br>
-            ...
+            Expuse a mis equipo el metodo de trabajo a emplear para el entregable siguiendo la metodologia Scrum para un trabajo colaborativo eficaz, empleando un lenguaje claro y accesible que permitió a audiencias técnicas y no técnicas comprender el funcionamiento de las vistas implementadas. Comunique eficazmente los puntos a corregir del informe anterior para seguir un trabajo escalable.
             <br><br> 
             <b>Miranda Cordova, Jesus Angel Yvan</b><br>
             <u>AV1</u><br>
@@ -217,7 +217,7 @@ del ABET – EAC - Student Outcome 3.
             <u>AV1</u><br>Durante el AV1, el equipo demostró capacidad para adaptar su discurso a diferentes audiencias, combinando explicaciones técnicas con lenguaje accesible. El uso de diagramas, prototipos y tableros visuales permitió que tanto evaluadores con perfil de ingeniería como audiencias generales comprendieran los artefactos expuestos. La coordinación en las presentaciones evidenció escucha activa y claridad en la transmisión de ideas
             <br>           
             <u>TB1</u><br>
-            ...
+            Durante el TB1, el equipo demostró capacidad para adaptar y mejorar su discurso a diferentes audiencias, explicando y usando lenguaje tecnico hacia un lenguaje accesible. El uso de diagramas, prototipos y tableros visuales permitió que tanto evaluadores con perfil de ingeniería como audiencias generales comprendieran los artefactos expuestos. La coordinación en las presentaciones evidenció escucha activa y claridad en la transmision de ideas de negocio como core y la capacidad de convencer audiencias eficazmente.
             <br><br>
         </td>
     </tr>
@@ -236,7 +236,7 @@ del ABET – EAC - Student Outcome 3.
             Redacté las Lean UX Hypothesis y las User Stories siguiendo el formato estándar del informe, utilizando un lenguaje orientado al usuario que permitió a lectores no técnicos comprender las hipótesis y criterios de aceptación. Documentó el Product Backlog y el diseño de la landing page con descripciones escritas estructuradas, asegurando que los objetivos técnicos fueran comprensibles para diferentes rangos de audiencia. Su redacción integró coherencia entre la planificación del sprint y la implementación de la aplicación y servicios.
             <br>           
             <u>TB1</u><br>
-            ...
+            Redacté las correcciones del AV1 en el informe, me enfoque en desarrollar y corregir lo relacionado a la parte documentaria de la metodologia agil scrum, desde las user storys hasta los sprint, dividiendo el trabajo de manera eficaz con la metodologia aplicada. Documenté mediante commits el desarrollo del scrum para el trabajo colaborativo eficaz.
             <br><br>
             <b>Miranda Cordova, Jesus Angel Yvan</b><br>
             <u>AV1</u><br>
@@ -264,7 +264,7 @@ del ABET – EAC - Student Outcome 3.
             <u>AV1</u><br>En la documentación del AV1, el equipo mostró consistencia en el uso de formatos estandarizados y lenguaje claro, asegurando que los entregables fueran comprensibles para distintos rangos de audiencia. La redacción de hipótesis, diagramas y artefactos técnicos se complementó con descripciones accesibles, lo que garantizó trazabilidad y coherencia en el informe. La escritura colectiva reflejó organización y capacidad de síntesis en la comunicación escrita.
             <br>           
             <u>TB1</u><br>
-            ...
+            En la documentación del TB1, el equipo corrigió el informe a partir del feedback del AV1: unificó el segmento objetivo, alineó los "para" de las User Stories con los objetivos estratégicos de StockIA, expresó los requisitos no funcionales con criterios medibles y eliminó notas internas y contradicciones. La sección del Sprint 2 se redactó con evidencias que el lector puede comprobar en GitHub (commits, ramas y Pull Requests de la Web Application) y se distinguió con claridad lo implementado de lo que queda en el roadmap. Así, la comunicación escrita pasó de ser declarativa a ser verificable, comprensible tanto para evaluadores técnicos como para lectores no técnicos.
             <br><br>
         </td>
     </tr>
@@ -3793,7 +3793,7 @@ La Landing Page es un sitio estático y en este Sprint no consume servicios de b
 | Preguntas frecuentes (`pricing.html`) | Interacción en el cliente | Pregunta seleccionada | Despliega la respuesta elegida y cierra la que estaba abierta. | US04 |
  
 * **Repositorio de la Landing Page/WebSite :** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-website
-* **Landing Page desplegada:** https://stockia-landing-giag.vercel.app/index.html
+* **Landing Page desplegada:** https://stockia-website.vercel.app
 
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
@@ -3805,7 +3805,7 @@ La Landing Page se publicó en **Vercel** como sitio estático, servido desde su
 2. Se activó el despliegue automático: cada cambio integrado en `develop` se publica sin pasos manuales, y cada Pull Request genera una URL de vista previa.
 3. Se verificaron las cuatro páginas (`index.html`, `features.html`, `pricing.html` y `about.html`) en el dominio público, incluidos los enlaces entre páginas y el cambio de idioma (T-TS04-2).
 4. Se verificó la visualización en escritorio y en móvil (RNF01).
-* **URL de la Landing Page desplegada:** https://stockia-landing-giag.vercel.app
+* **URL de la Landing Page desplegada:** stockia-website.vercel.app
 **Evidencia: proyecto y despliegues en Vercel**
  
 <p align="center">
@@ -4054,7 +4054,7 @@ Cada integrante implementa y sube al repositorio de la organización un Bounded 
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
  
-En el Sprint 2 se implementó la primera versión de la Web Application de StockIA. Las capturas corresponden a la versión desplegada en [stockia-appweb.vercel.app](https://stockia-appweb.vercel.app) (TS07), que consume la API simulada en Render (TS06). A continuación se presenta cada pantalla junto con la User Story o el requisito que la respalda:
+En el Sprint 2 se implementó la primera versión de la Web Application de StockIA. Las capturas corresponden a la versión desplegada en [stockia-webapp.vercel.app](https://stockia-webapp.vercel.app) (TS07), que consume la API simulada en Render (TS06). A continuación se presenta cada pantalla junto con la User Story o el requisito que la respalda:
  
 <br/>
 1. **Registro de restaurante (US09):** formulario de creación de cuenta con validaciones por campo; la cuenta se crea con el rol Administrador.
