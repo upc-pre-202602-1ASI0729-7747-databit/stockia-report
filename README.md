@@ -182,7 +182,7 @@ del ABET – EAC - Student Outcome 3.
             Sustenté el Ubiquitous Language y las Style Guidelines empleando un lenguaje centrado en la experiencia del usuario, comprensible tanto para audiencias técnicas como para evaluadores sin perfil de diseño. Al exponer la Information Architecture y los prototipos navegables, orientó su comunicación hacia la validación de la interfaz, utilizando wireframes y mockups como medios audiovisuales que facilitaron la comprensión de la propuesta de diseño.
             <br>           
             <u>TB1</u><br>
-            ...
+            Expuse el frontend de la aplicación web desarrollado para esta entrega, empleando un lenguaje claro y accesible que permitió a audiencias técnicas y no técnicas comprender el funcionamiento de las vistas implementadas. Al presentar las correcciones del AV1, en especial las de los diseños UX/UI, orienté la comunicación hacia la justificación de los cambios realizados, utilizando la aplicación en ejecución y los mockups actualizados como apoyo audiovisual para validar la coherencia entre el diseño y la implementación.
             <br><br>            
             <b>Huaman Oscco, Aldo Jesus</b><br>
             <u>AV1</u><br>
@@ -229,7 +229,7 @@ del ABET – EAC - Student Outcome 3.
             Redacté el Ubiquitous Language y las Style Guidelines con un lenguaje claro y centrado en la experiencia del usuario, verificando que la redacción fuera coherente con el público objetivo del informe. Documentó la Information Architecture y los prototipos con descripciones escritas que complementaban los diagramas visuales, permitiendo que lectores con diferentes perfiles comprendieran la lógica de navegación y diseño de la aplicación.
             <br>           
             <u>TB1</u><br>
-            ...
+            Redacté las correcciones del AV1 en el informe, principalmente las referidas a los diseños UX/UI, con un lenguaje claro y estructurado, asegurando que los ajustes fueran comprensibles para lectores con distintos perfiles. Documenté mediante commits el desarrollo del frontend de la aplicación web con descripciones precisas, garantizando trazabilidad entre los diseños corregidos y las vistas implementadas. Mi redacción permitió mantener coherencia entre la documentación del informe y el estado funcional del producto.
             <br><br>
             <b>Huaman Oscco, Aldo Jesus</b><br>
             <u>AV1</u><br>
