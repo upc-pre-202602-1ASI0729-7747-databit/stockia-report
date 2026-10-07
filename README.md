@@ -4241,29 +4241,21 @@ En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante implement
 ## 5.4. Video About-the-Product
 
 
-# Conclusiones
-
 # Conclusiones y recomendaciones
-**Conclusiones** </br>
-* El equipo logró mantener un liderazgo compartido, distribuyendo responsabilidades técnicas, de diseño y de documentación sin depender de una sola persona.
+**Conclusiones**
 
-* Se evidenció una comunicación efectiva tanto oral como escrita: las presentaciones se adaptaron a audiencias técnicas y no técnicas, y la documentación siguió estándares claros y accesibles.
+* **Problem Statement:** el problema central se mantiene validado por las 4 entrevistas (2.2): el inventario se controla a mano y está desconectado de las ventas. En el TB1, la Web Application implementa el núcleo que lo ataca: recetas vinculadas al inventario con descuento automático por venta (US13, US14), alertas (US17) y dashboard (US16), sobre una API simulada.
+* **Assumptions e hipótesis:** las hipótesis de 1.2.2.3 siguen siendo hipótesis. Su baseline y su medición dependen del piloto con restaurantes, que se ejecutará cuando el RESTful API (TS09) esté desplegado. En el TB1 se validó la factibilidad técnica del flujo, no todavía el impacto en mermas.
+* **Proceso:** el equipo corrigió las observaciones del AV1 (segmento único, User Stories alineadas a objetivos estratégicos, RNF medibles, modelo de dominio por Bounded Context) y trabajó la Web Application con ramas feature y Pull Requests en `stockia-webapp` (ver 5.2.2.4 y 5.2.2.8).
+* **Limitaciones reconocidas:** la Web Application usa una API simulada (json-server) y todavía no tiene internacionalización. Las integraciones externas (Stripe, SendGrid) quedan en el roadmap.
 
-* La integración de herramientas (EventStorming, C4 diagrams, UML, Lean UX, prototipos, entrevistas) permitió construir un modelo de dominio coherente y una aplicación con trazabilidad entre diseño, desarrollo y despliegue.
+**Recomendaciones**
 
-* La práctica de registrar evidencias (actas, reportes, videos, diagramas) fortaleció la transparencia y la coordinación del equipo, asegurando continuidad en cada sprint.
+* AV2: implementar el RESTful API en Spring Boot (TS09) y conectar la Web Application (TS10), documentando los endpoints con OpenAPI.
+* AV2: internacionalización en/es con inglés por defecto en la Web Application y en la Landing Page.
+* AV2: entrevistas de validación (5.3) con al menos 3 restaurantes, usando el formato de evaluación heurística, para medir el baseline de las hipótesis.
+* TB2: integración de pago (US22) y correo (US21); predicción con datos reales del piloto.
 
-* El proyecto consolidó una dinámica de trabajo colaborativo e inclusivo, donde cada integrante aportó desde su especialidad y se validaron constantemente los entregables con retroalimentación grupal.
-
-
-**Recomendaciones** </br>
-* Fortalecer la planificación inicial: definir desde el comienzo criterios claros de calidad para cada artefacto (diagramas, prototipos, reportes) y asegurar que todos los integrantes los conozcan.
-
-* Optimizar la documentación audiovisual: mantener un repositorio organizado de videos y prototipos, con guías de revisión que faciliten la comprensión de audiencias externas.
-
-* Profundizar en validación con usuarios reales: ampliar el número y diversidad de entrevistas para fortalecer la base de las hipótesis y asegurar que las mejoras de UX/UI respondan a necesidades verificadas.
-
-* Escalar la práctica de liderazgo compartido: replicar la dinámica de distribución de responsabilidades en futuros proyectos, pero complementarla con roles rotativos de coordinación para balancear cargas de trabajo.
 
 # Video About-the-Team
 
@@ -4293,4 +4285,6 @@ URL de landing page (vercel): https://stockia-website.vercel.app/index.html
 
 URL de webapp: https://stockia-webapp.vercel.app/
 
-Exposicion : https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQDEOleKp0hNTLzONouiVj-wARDzRNQtkhIAFRriY9p5BvY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XhsNyB
+Exposicion : 
+**AV1:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQDEOleKp0hNTLzONouiVj-wARDzRNQtkhIAFRriY9p5BvY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XhsNyB
+**TB1:**  https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQA-C8piH8qDQKzZq-JA_7PYAaJsZ0mESYc_tdA62twaH7Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=8g49nb
