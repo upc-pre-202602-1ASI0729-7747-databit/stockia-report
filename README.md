@@ -3134,9 +3134,40 @@ Para una mejor visualización, se adjunta aquí el [enlace a nuestro tablero de 
 
 ### 4.7.1. Class Diagrams
 
-Los diagramas de clases presentados a continuación detallan la estructura interna de los componentes del Front-End para contextos clave de StockIA. Se ilustra la separación de responsabilidades entre la capa de Presentación (UI Components), la lógica de Aplicación y Estado (Controllers y Stores), los Modelos de Vista (View Models) y la Infraestructura (API Clients).
+Los diagramas de clases presentados a continuación modelan el dominio de StockIA para cada uno de sus Bounded Contexts. En cada contexto se identifican los Aggregates y sus Aggregate Roots, las Entities, los Value Objects, los Domain Services, los Repositories y los Enums. Se incluyen también los Domain Events que provienen del Design-Level Event Storming y las invariantes que cada agregado debe garantizar.
 
-#### Notifications & Messaging (Front-End)
+#### Subscription and Payment Management
+Este diagrama detalla la arquitectura de los componentes encargados de la gestión de planes, estado de cuentas y pagos de los restaurantes en StockIA.
+<img src="assets/img/chapter-04/class-subscription.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+#### Notifications / Messaging
+Este diagrama modela la estructura de componentes para la gestión, registro y envío de notificaciones dentro de la plataforma StockIA
+<img src="assets/img/chapter-04/class-Notification.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+#### Analytics Dashboard
+Este diagrama modela la estructura de componentes encargados de la consolidación de métricas, alertas y reportes para StockIA.
+<img src="assets/img/chapter-04/class-analitic.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+#### ML & Recommendation
+Este diagrama modela la estructura de componentes encargados de las predicciones y recomendaciones inteligentes de StockIA. Incluye componentes en la capa de presentación y aplicación que interactúan con almacenes de predicción y servicios para generar sugerencias basadas en datos a través de la interfaz de usuario.
+<img src="assets/img/chapter-04/class-Ml-Recomendation.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+#### Recipes Management
+Este diagrama representa la estructura del dominio de Gestión de Recetas utilizando la arquitectura DDD (Domain-Driven Design) en StockIA. Incluye vistas de presentación como RecipeListView que interactúan con el servicio de aplicación RecipeStore, así como el Agregado Raíz Recipe y manejadores de eventos como DeductRecipeIngredientsHandler
+<img src="assets/img/chapter-04/class-RecipesManagement.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+#### Restaurant Registration
+Este diagrama modela la arquitectura de componentes para el registro y perfilamiento de nuevos restaurantes en la plataforma StockIA.
+<img src="assets/img/chapter-04/class-RestaurantResgistration.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+#### Stock Management
+Este diagrama detalla la estructura de componentes encargados del control y gestión de inventario de StockIA bajo un enfoque DDD. Emplea vistas de presentación como InventoryListView que se comunican con el InventoryStore en la capa de aplicación, operando centralmente sobre el Agregado Raíz
+<img src="assets/img/chapter-04/class-Stock_Management.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+### Diagramas de clases de la aplicación cliente (Front-End)
+De forma complementaria al modelo de dominio, los siguientes diagramas detallan la estructura interna de la aplicación Front-End para contextos clave de StockIA. Se ilustra la separación de responsabilidades entre la capa de Presentación (UI Components), la lógica de Aplicación y Estado (Controllers y Stores), los Modelos de Vista (View Models) y la Infraestructura (API Clients).
+
+#### Notifications & Messaging 
 Este diagrama modela la estructura de componentes encargados de mostrar y gestionar las notificaciones y alertas críticas para el usuario (como stock bajo o vencimientos). Incluye componentes como `NotificationCenterView` y `NotificationBadgeComponent`, los cuales interactúan con `NotificationController` y `NotificationStore`.
 
 **Consideraciones y restricciones de diseño:**
@@ -3145,7 +3176,7 @@ Este diagrama modela la estructura de componentes encargados de mostrar y gestio
 
 <img src="assets/img/chapter-04/class-notifications-messaging.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
 
-#### Subscriptions & Payments (Front-End)
+#### Subscriptions & Payments 
 Este diagrama describe la arquitectura de clases del lado del cliente para la gestión de planes y pagos. Se compone de vistas como `SubscriptionStatusView` y `AvailablePlansView`, respaldadas por `SubscriptionController`, `PaymentController` y `SubscriptionStore`.
 
 **Consideraciones y restricciones de diseño:**
@@ -3154,7 +3185,7 @@ Este diagrama describe la arquitectura de clases del lado del cliente para la ge
 
 <img src="assets/img/chapter-04/class-subscriptions-payments.png" alt="Class Diagram - Subscriptions and Payments" width="1000"/> <br>
 
-#### Identity & Access Management (Front-End)
+#### Identity & Access Management 
 
 Este diagrama modela la estructura de componentes encargados de la autenticación, gestión de sesión y administración de usuarios de StockIA, que ahora soporta dos roles por restaurante: Administrador (CEO/dueño) y Trabajador. Incluye componentes como `LoginFormComponent`, `AccountProfileView` y `UserManagementView`, los cuales interactúan con `AuthController` y `AuthStore`.
 
@@ -3165,7 +3196,7 @@ Este diagrama modela la estructura de componentes encargados de la autenticació
 
 <img src="assets/img/chapter-04/class-identity-management.png" alt="Class Diagram - Identity Management" width="1000"/> <br>
 
-#### Restaurant Registration (Front-End)
+#### Restaurant Registration 
 
 Este diagrama modela la estructura de componentes encargados del registro y la gestión del perfil del restaurante asociado al único administrador de StockIA. Incluye componentes como `RestaurantRegistrationFormComponent` y `RestaurantProfileView`, los cuales interactúan con `RestaurantController` y `RestaurantStore`.
 
@@ -3215,7 +3246,7 @@ Este diagrama estructura la información necesaria para los algoritmos de predic
 #### Notifications & Messaging
 Diseñado para almacenar el historial de notificaciones y alertas críticas (stock bajo, productos por vencer, alertas IoT). Maneja el estado de entrega y los canales por los que fueron enviados (WhatsApp, Email, SMS).
 
-<img src="../assets/img/chapter-04/class-notifications-messaging.png" alt="Notifications Messaging DB Diagram" width="1000"/> <br>
+<img src="../assets/img/chapter-04/bd-notifications-messaging.png" alt="Notifications Messaging DB Diagram" width="1000"/> <br>
 
 #### Analytics & Dashboard
 Este diagrama soporta las consultas y métricas agregadas que se visualizan en el Dashboard principal. Almacena resúmenes estadísticos, reportes de mermas y ahorro, optimizando las consultas de lectura para una carga rápida de los gráficos.
