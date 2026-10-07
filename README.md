@@ -196,7 +196,7 @@ del ABET – EAC - Student Outcome 3.
             Expuse el análisis de competidores y el Needfinding con un lenguaje claro y centrado en el usuario, diferenciando hallazgos de hipótesis. Durante la presentación del EventStorming y los diagramas C4 y UML, orientó la comunicación hacia la delimitación de bounded contexts, empleando tableros y diagramas como medios visuales que facilitaron la comprensión de la estructura técnica del sistema.
             <br>           
             <u>TB1</u><br>
-            ...
+             Expuse las correcciones realizadas al AV1 en los diagramas de clases y en el análisis competitivo, empleando un lenguaje claro que permitió a audiencias técnicas y no técnicas comprender los cambios y su justificación. Al presentar el modelo de dominio, expliqué que los diagramas de clases pasaron de describir solo la estructura del Front-End a representar el dominio de cada Bounded Context, con sus Aggregate Roots, Entities, Value Objects, Domain Services, Domain Events, Repositories, invariantes y Enums, y que el material de Front-End se conservó como complemento
             <br><br> 
             <b>Ortiz Laura, Leyla Alisson</b><br>
             <u>AV1</u><br>
@@ -243,7 +243,7 @@ del ABET – EAC - Student Outcome 3.
             Redacté el análisis de competidores y el Needfinding con un lenguaje centrado en el usuario, permitiendo que lectores sin perfil técnico comprendieran las hipótesis planteadas. Documentó el EventStorming y los diagramas C4 y UML con descripciones escritas que acompañaban cada vista del sistema, utilizando un lenguaje técnico preciso para evaluadores de ingeniería, pero comprensible para audiencias generales. Su redacción aseguró trazabilidad y coherencia entre bounded contexts y artefactos técnicos.
             <br>           
             <u>TB1</u><br>
-            ...
+             Redacté las correcciones del AV1 correspondientes a los diagramas de clases y al análisis competitivo.En el modelo de dominio, documenté para cada Bounded Context sus agregados, entidades, objetos de valor, servicios de dominio, eventos, repositorios, enumeraciones e invariantes, separando de forma explícita el modelo de dominio de los diagramas del Front-End y manteniendo la correspondencia con el Event Storming, el C4 y la base de datos. En el análisis competitivo, reescribí el enfoque y reemplacé la afirmación de ser el "único que combina" estas capacidades por una formulación sustentada en las fuentes del análisis. Esta redacción permitió mantener la trazabilidad y la coherencia entre los artefactos técnicos y la propuesta de valor del informe.
             <br><br>
             <b>Ortiz Laura, Leyla Alisson</b><br>
             <u>AV1</u><br>
