@@ -210,7 +210,7 @@ del ABET – EAC - Student Outcome 3.
             Presenté la descripción de la startup, los antecedentes y segmentos empleando un lenguaje accesible para audiencias no técnicas. Al exponer el EventStorming y los diagramas C4 y UML, adaptó el nivel técnico del discurso a la audiencia evaluadora, utilizando diagramas como apoyo audiovisual para validar la comprensión de la arquitectura. También explicó el diseño de base de datos enfocando cada explicación hacia el objetivo específico del artefacto expuesto.
             <br>           
             <u>TB1</u><br>
-            ...
+            Realize las correcciones realizadas en el proceso de lean ux, segmentos objetivos y arquitectura, segun a las observaciones. Esto ayuda a que el lector tenga una mejor idea de los usuarios ademas el lean ux canvas ayuda a validar el dominio del negocio.
             <br><br>
         </td>
         <td>
@@ -257,7 +257,7 @@ del ABET – EAC - Student Outcome 3.
             Redacté la descripción de la startup y el análisis de antecedentes y problemática siguiendo los estándares del informe técnico, sintetizando la propuesta de valor y el contexto del sistema en un lenguaje claro y accesible. Documentó los segmentos objetivo y el EventStorming con descripciones escritas estructuradas, y elaboró los diagramas C4, UML y de base de datos con notaciones estandarizadas, garantizando que fueran comprensibles tanto para perfiles técnicos como para revisores del proyecto.
             <br>           
             <u>TB1</u><br>
-            ...
+            Redacte las correcciones del Lean ux canvas de manera que los segmentos objetivos y los bussines outcomes tengan mas formas y evidenica de medición y no solo estadísticas, ademas que en la parte de arquitectura se realizaron las correciones con respecto a inconsistencias y mejoras en el modelo de clases y bases de datos.
             <br><br>
         </td>
         <td>
