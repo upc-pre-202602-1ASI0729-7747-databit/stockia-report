@@ -183,6 +183,9 @@ del ABET – EAC - Student Outcome 3.
             <br>           
             <u>TB1</u><br>
             Expuse el frontend de la aplicación web desarrollado para esta entrega, empleando un lenguaje claro y accesible que permitió a audiencias técnicas y no técnicas comprender el funcionamiento de las vistas implementadas. Al presentar las correcciones del AV1, en especial las de los diseños UX/UI, orienté la comunicación hacia la justificación de los cambios realizados, utilizando la aplicación en ejecución y los mockups actualizados como apoyo audiovisual para validar la coherencia entre el diseño y la implementación.
+            <br>
+            <u>AV2</u><br>
+            ...
             <br><br>            
             <b>Huaman Oscco, Aldo Jesus</b><br>
             <u>AV1</u><br>
@@ -190,6 +193,9 @@ del ABET – EAC - Student Outcome 3.
             <br>           
             <u>TB1</u><br>
             Expuse a mis equipo el metodo de trabajo a emplear para el entregable siguiendo la metodologia Scrum para un trabajo colaborativo eficaz, empleando un lenguaje claro y accesible que permitió a audiencias técnicas y no técnicas comprender el funcionamiento de las vistas implementadas. Comunique eficazmente los puntos a corregir del informe anterior para seguir un trabajo escalable.
+            <br>
+            <u>AV2</u><br>
+            ...
             <br><br> 
             <b>Miranda Cordova, Jesus Angel Yvan</b><br>
             <u>AV1</u><br>
@@ -197,6 +203,9 @@ del ABET – EAC - Student Outcome 3.
             <br>           
             <u>TB1</u><br>
              Expuse las correcciones realizadas al AV1 en los diagramas de clases y en el análisis competitivo, empleando un lenguaje claro que permitió a audiencias técnicas y no técnicas comprender los cambios y su justificación. Al presentar el modelo de dominio, expliqué que los diagramas de clases pasaron de describir solo la estructura del Front-End a representar el dominio de cada Bounded Context, con sus Aggregate Roots, Entities, Value Objects, Domain Services, Domain Events, Repositories, invariantes y Enums, y que el material de Front-End se conservó como complemento
+            <br>
+            <u>AV2</u><br>
+            ...
             <br><br> 
             <b>Ortiz Laura, Leyla Alisson</b><br>
             <u>AV1</u><br>
@@ -204,6 +213,9 @@ del ABET – EAC - Student Outcome 3.
             <br>           
             <u>TB1</u><br>
             Expuse las correcciones realizadas en Interviews & Needfinding, la propuesta de valor y en todo el reporte en general para mejorar la comunicación y su calidad, empleando un lenguaje claro y accesible que permitió a audiencias técnicas y no técnicas comprender los ajustes realizados. Al presentar la parte del dashboard y los alerts en el repositorio de la web app, orienté la comunicación hacia la validación del funcionamiento real de los componentes.
+            <br>
+            <u>AV2</u><br>
+            Durante esta entrega presenté los avances relacionados con los bounded contexts de Notifications & Messaging, Analytics y Dashboard, explicando su funcionamiento e integración dentro de la arquitectura del sistema de manera comprensible para audiencias técnicas y no técnicas. Asimismo, expuse las mejoras realizadas en la nueva versión de la Web Application Frontend y compartí los resultados obtenidos en las entrevistas de validación, adaptando el nivel de detalle de la comunicación según la audiencia para facilitar la comprensión de los hallazgos y decisiones tomadas.
             <br><br> 
             <b>Toro Turpo, Ronal</b><br>
             <u>AV1</u><br>
@@ -211,6 +223,9 @@ del ABET – EAC - Student Outcome 3.
             <br>           
             <u>TB1</u><br>
             Realize las correcciones realizadas en el proceso de lean ux, segmentos objetivos y arquitectura, segun a las observaciones. Esto ayuda a que el lector tenga una mejor idea de los usuarios ademas el lean ux canvas ayuda a validar el dominio del negocio.
+            <br>
+            <u>AV2</u><br>
+            ...
             <br><br>
         </td>
         <td>
@@ -218,6 +233,9 @@ del ABET – EAC - Student Outcome 3.
             <br>           
             <u>TB1</u><br>
             Durante el TB1, el equipo demostró capacidad para adaptar y mejorar su discurso a diferentes audiencias, explicando y usando lenguaje tecnico hacia un lenguaje accesible. El uso de diagramas, prototipos y tableros visuales permitió que tanto evaluadores con perfil de ingeniería como audiencias generales comprendieran los artefactos expuestos. La coordinación en las presentaciones evidenció escucha activa y claridad en la transmision de ideas de negocio como core y la capacidad de convencer audiencias eficazmente.
+            <br>
+            <u>AV2</u><br>
+            ...
             <br><br>
         </td>
     </tr>
@@ -230,6 +248,9 @@ del ABET – EAC - Student Outcome 3.
             <br>           
             <u>TB1</u><br>
             Redacté las correcciones del AV1 en el informe, principalmente las referidas a los diseños UX/UI, con un lenguaje claro y estructurado, asegurando que los ajustes fueran comprensibles para lectores con distintos perfiles. Documenté mediante commits el desarrollo del frontend de la aplicación web con descripciones precisas, garantizando trazabilidad entre los diseños corregidos y las vistas implementadas. Mi redacción permitió mantener coherencia entre la documentación del informe y el estado funcional del producto.
+            <br>
+            <u>AV2</u><br>
+            ...
             <br><br>
             <b>Huaman Oscco, Aldo Jesus</b><br>
             <u>AV1</u><br>
@@ -237,6 +258,9 @@ del ABET – EAC - Student Outcome 3.
             <br>           
             <u>TB1</u><br>
             Redacté las correcciones del AV1 en el informe, me enfoque en desarrollar y corregir lo relacionado a la parte documentaria de la metodologia agil scrum, desde las user storys hasta los sprint, dividiendo el trabajo de manera eficaz con la metodologia aplicada. Documenté mediante commits el desarrollo del scrum para el trabajo colaborativo eficaz.
+            <br>
+            <u>AV2</u><br>
+            ...
             <br><br>
             <b>Miranda Cordova, Jesus Angel Yvan</b><br>
             <u>AV1</u><br>
@@ -244,6 +268,9 @@ del ABET – EAC - Student Outcome 3.
             <br>           
             <u>TB1</u><br>
              Redacté las correcciones del AV1 correspondientes a los diagramas de clases y al análisis competitivo.En el modelo de dominio, documenté para cada Bounded Context sus agregados, entidades, objetos de valor, servicios de dominio, eventos, repositorios, enumeraciones e invariantes, separando de forma explícita el modelo de dominio de los diagramas del Front-End y manteniendo la correspondencia con el Event Storming, el C4 y la base de datos. En el análisis competitivo, reescribí el enfoque y reemplacé la afirmación de ser el "único que combina" estas capacidades por una formulación sustentada en las fuentes del análisis. Esta redacción permitió mantener la trazabilidad y la coherencia entre los artefactos técnicos y la propuesta de valor del informe.
+            <br>
+            <u>AV2</u><br>
+            ...
             <br><br>
             <b>Ortiz Laura, Leyla Alisson</b><br>
             <u>AV1</u><br>
@@ -251,6 +278,9 @@ del ABET – EAC - Student Outcome 3.
             <br>           
             <u>TB1</u><br>
             Redacté las correcciones de Interviews & Needfinding, la propuesta de valor siguiendo un formato técnico estructurado, asegurando que los cambios fueran comprensibles para distintos rangos de audiencia. Documenté mediante commits la implementación del dashboard y los alerts en la web app con descripciones claras garantizando trazabilidad con los objetivos del sprint. Mi escritura permitió mantener coherencia entre la documentación técnica y el estado funcional del sistema.
+            <br>
+            <u>AV2</u><br>
+            Durante esta entrega documenté las entrevistas de validación realizadas, redacté el Sprint 3 y participé en la actualización y corrección de distintas secciones del informe para mejorar su claridad y consistencia. Además, registré los avances relacionados con los bounded contexts de Notifications & Messaging, Analytics, Dashboard y la nueva versión de la Web Application Frontend, utilizando un lenguaje claro y estructurado que permitió comunicar adecuadamente los aspectos técnicos y funcionales del proyecto a distintos tipos de lectores.
             <br><br>
             <b>Toro Turpo, Ronal</b><br>
             <u>AV1</u><br>
@@ -258,6 +288,9 @@ del ABET – EAC - Student Outcome 3.
             <br>           
             <u>TB1</u><br>
             Redacte las correcciones del Lean ux canvas de manera que los segmentos objetivos y los bussines outcomes tengan mas formas y evidenica de medición y no solo estadísticas, ademas que en la parte de arquitectura se realizaron las correciones con respecto a inconsistencias y mejoras en el modelo de clases y bases de datos.
+            <br>
+            <u>AV2</u><br>
+            ...
             <br><br>
         </td>
         <td>
@@ -265,6 +298,9 @@ del ABET – EAC - Student Outcome 3.
             <br>           
             <u>TB1</u><br>
             En la documentación del TB1, el equipo corrigió el informe a partir del feedback del AV1: unificó el segmento objetivo, alineó los "para" de las User Stories con los objetivos estratégicos de StockIA, expresó los requisitos no funcionales con criterios medibles y eliminó notas internas y contradicciones. La sección del Sprint 2 se redactó con evidencias que el lector puede comprobar en GitHub (commits, ramas y Pull Requests de la Web Application) y se distinguió con claridad lo implementado de lo que queda en el roadmap. Así, la comunicación escrita pasó de ser declarativa a ser verificable, comprensible tanto para evaluadores técnicos como para lectores no técnicos.
+            <br>
+            <u>AV2</u><br>
+            ...
             <br><br>
         </td>
     </tr>
