@@ -215,7 +215,7 @@ del ABET – EAC - Student Outcome 3.
             Expuse las correcciones realizadas en Interviews & Needfinding, la propuesta de valor y en todo el reporte en general para mejorar la comunicación y su calidad, empleando un lenguaje claro y accesible que permitió a audiencias técnicas y no técnicas comprender los ajustes realizados. Al presentar la parte del dashboard y los alerts en el repositorio de la web app, orienté la comunicación hacia la validación del funcionamiento real de los componentes.
             <br>
             <u>AV2</u><br>
-            ...
+            Durante esta entrega presenté los avances relacionados con los bounded contexts de Notifications & Messaging, Analytics y Dashboard, explicando su funcionamiento e integración dentro de la arquitectura del sistema de manera comprensible para audiencias técnicas y no técnicas. Asimismo, expuse las mejoras realizadas en la nueva versión de la Web Application Frontend y compartí los resultados obtenidos en las entrevistas de validación, adaptando el nivel de detalle de la comunicación según la audiencia para facilitar la comprensión de los hallazgos y decisiones tomadas.
             <br><br> 
             <b>Toro Turpo, Ronal</b><br>
             <u>AV1</u><br>
@@ -280,7 +280,7 @@ del ABET – EAC - Student Outcome 3.
             Redacté las correcciones de Interviews & Needfinding, la propuesta de valor siguiendo un formato técnico estructurado, asegurando que los cambios fueran comprensibles para distintos rangos de audiencia. Documenté mediante commits la implementación del dashboard y los alerts en la web app con descripciones claras garantizando trazabilidad con los objetivos del sprint. Mi escritura permitió mantener coherencia entre la documentación técnica y el estado funcional del sistema.
             <br>
             <u>AV2</u><br>
-            ...
+            Durante esta entrega documenté las entrevistas de validación realizadas, redacté el Sprint 3 y participé en la actualización y corrección de distintas secciones del informe para mejorar su claridad y consistencia. Además, registré los avances relacionados con los bounded contexts de Notifications & Messaging, Analytics, Dashboard y la nueva versión de la Web Application Frontend, utilizando un lenguaje claro y estructurado que permitió comunicar adecuadamente los aspectos técnicos y funcionales del proyecto a distintos tipos de lectores.
             <br><br>
             <b>Toro Turpo, Ronal</b><br>
             <u>AV1</u><br>
