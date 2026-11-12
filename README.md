@@ -126,7 +126,40 @@ Proyecto:
     <br>
     </td>
   </tr>
-
+<tr>
+    <td><b>Tercera Entrega (AV2)</b></td>
+    <td>12/11/2026</td>
+    <td>
+      Gallardo Morales,Carla Alejandra
+      <br>
+      <p></p>
+      Huaman Oscco, Aldo Jesus
+      <br>
+      <p></p>
+      Miranda Cordova, Jesus Angel Yvan
+      <br>
+      <p></p>
+      Ortiz Laura, Leyla Alisson
+      <br>
+      <p></p>
+      Toro Turpo, Ronal
+    </td>
+    <td>
+      Corrección del reporte TB1
+    <br>
+      Nueva versión desplegada de Landing Page
+    <br> 
+      Nueva versión desplegada de Frontend Web Applications
+    <br>
+      Primera versión desplegada del Web Services
+    <br>
+      Capítulo V:
+      Product Implementation, Validation & Deployment (sprint 3)
+    <br>
+      Validation Interviews
+    <br>
+    </td>
+  </tr>
   </table>
 
  ---
