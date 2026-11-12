@@ -13,7 +13,7 @@ NRC
 
 **7747**
 
-**Informe del TB1**
+**Informe del AV2**
 
 Docente:
 **Robles Fernández, Ivan**
@@ -44,7 +44,7 @@ Proyecto:
 
 **Periodo 202620**
 
-**Septiembre, 2026**
+**Noviembre, 2026**
 
 </div>
 
@@ -126,6 +126,7 @@ Proyecto:
     <br>
     </td>
   </tr>
+
   </table>
 
  ---
