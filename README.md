@@ -4355,22 +4355,41 @@ El diseño de las sesiones de validación tiene como objetivo evaluar la interac
 
 **Entrevista 1:**
 <br>
-**Entrevistador(a):** >Miranda Cordova, Jesus Angel Yvan
+**Entrevistador(a):** Miranda Cordova, Jesus Angel Yvan
 
-Datos del entrevistada:
+Datos del entrevistado:
 
 * Nombre: Nelson
 * Apellido: Miranda
 * Edad: 48 años
 * Distrito: Trujillo
 * Timing: 0:05
-
+* Link: <a href="">Entrevista</a>
 
 <p align="center"><img alt="Entrevista-Jesus Miranda" src="assets/img/evidencia-entrevista-1-0.png" /></p>
   <p align="center"><img alt="Entrevista-Jesus Miranda" src="assets/img/evidencia-entrevista-1-1.png" /></p>
 <p align="center"><i>Evidencia de entrevista: Nelson </i></p>
 
 **Resumen descriptivo:**En la entrevista, Nelson comento que la plataforma contaba con un diseño profesional y amigable,y afirmo que sus apartados son fáciles de comprender.Ademas valoro positivamente el apartado de alertas.Por otro lado comento que el dashboar inicial si bien tiene informacion relevante, deberia estar un poco mas organizada.
+
+**Entrevista 2:**
+<br>
+**Entrevistador(a):** Leyla Alisson Ortiz Laura
+
+Datos de la entrevistada:
+
+* Nombre: Albertina
+* Apellido: Apumayta
+* Edad: 45 años
+* Distrito: Ate
+* Timing: 0:03
+* Link: <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202415088_upc_edu_pe/IQBwgvp6WqTTSZNB4LZtdwO0AZG8f-7IQzZS0RVptYe3ch0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=YhceNd">Entrevista</a>
+
+
+<p align="center"><img alt="Entrevista-LeylaOrtiz" src="assets/img/evidencia-entrevista-2.png" /></p>
+<p align="center"><i>Evidencia de entrevista: Albertina </i></p>
+
+**Resumen descriptivo:**La entrevistada evidenció una percepción positiva de la propuesta de Stockia. La participante comprendió rápidamente el propósito de la aplicación, identificando que está orientada al control de inventario y al apoyo mediante funciones inteligentes. Asimismo, consideró atractivo el diseño inicial y señaló que la navegación le resultó sencilla, especialmente desde una computadora. Albertina destacó que los textos e imágenes facilitaron la comprensión de la propuesta de valor y que el lenguaje utilizado era claro y fácil de entender. También manifestó que la aplicación podría ayudarla a organizar mejor la información de su negocio y agilizar procesos relacionados con el control de inventario. Como aspectos de mejora, mencionó la necesidad de brindar mayor claridad en la presentación de la información de inventario y mejorar la visibilidad o diferenciación de algunos botones para evitar confusiones. En términos generales, la usuaria se mostró satisfecha con la interacción ofrecida por la aplicación y expresó que recomendaría la aplicación a otros usuarios debido a su utilidad para mantener el orden y facilitar la gestión diaria de un negocio gastronómico, lo que constituye una validación favorable de la propuesta de solución.
 
 ### 5.3.3. Evaluaciones según heurísticas
 
