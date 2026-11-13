@@ -4302,7 +4302,53 @@ En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante implement
  
 ## 5.3. Validation Interviews
 
+---
+##### Guía de Preguntas de la Entrevista de Validación
 ### 5.3.1. Diseño de Entrevistas
+
+El diseño de las sesiones de validación tiene como objetivo evaluar la interacción natural de los usuarios. Para garantizar la objetividad de los hallazgos y cumplir con las buenas prácticas de evaluación de experiencia de usuario, cada sesión sigue un protocolo estricto:
+
+##### Protocolo de Ejecución de la Sesión
+1. **Introducción y Propósito:** Al inicio de la grabación, el moderador explica brevemente el objetivo de la sesión (evaluar la plataforma, no al usuario) y solicita el consentimiento para el registro audiovisual.
+2. **Enfoque en *User Goals* (Sin sesgos de interfaz):** Se asignan escenarios y tareas basadas directamente en los *User Goals* de los *User Personas* creados. **No se indican pasos específicos, rutas de menú ni nombres de botones**, permitiendo que el usuario explore libremente las interfaces bajo la técnica *Thinking Aloud* (pensar en voz alta).
+3. **Exploración del Landing Page y Aplicaciones:** Se evalúa primero el primer contacto con el *Landing Page* y posteriormente la ejecución de los *User Flows* principales dentro de la aplicación.
+4. **Cierre y Cuestionario de Validación:** Al finalizar las tareas, se aplica una entrevista semiestructurada con preguntas abiertas y directas para recoger percepciones sobre usabilidad, contenido y consistencia visual.
+---
+#### 1. Datos Demográficos Básicos (Para Arquetipos)
+* ¿Cuál es tu edad y en qué distrito está ubicado tu restaurante?
+
+#### 2. Preguntas sobre la Primera Impresión (Landing Page)
+* ¿Qué es lo primero que notas al entrar al landing page de StockIA?
+* ¿Qué tan claro te resulta el propósito de la aplicación (control de inventario y predicción de demanda)?
+* ¿Te parece atractivo y confiable el diseño inicial para gestionar la operación de tu restaurante?
+
+
+
+#### 3. Preguntas sobre Navegación y Usabilidad (Aplicación Web / Móvil)
+* ¿Encontraste fácilmente la información o el módulo que buscabas (como el inventario, recetas, alertas o predicción de demanda)?
+* ¿Hubo algún momento en que te confundiste sobre qué hacer a continuación?
+* ¿Qué tan intuitivo te resultó completar la tarea asignada (por ejemplo, registrar un insumo, simular una venta o revisar alertas críticas)?
+
+
+
+#### 4. Preguntas sobre Contenido y Comunicación
+* ¿Los textos, indicadores y gráficos te ayudaron a entender cómo funciona la plataforma?
+* ¿Hay algo que consideres innecesario o que sientas que falta en la página o en los módulos del sistema?
+* ¿El lenguaje usado (etiquetas, estados de stock y recomendaciones) es claro y fácil de comprender en tu día a día?
+
+
+
+#### 5. Preguntas sobre Experiencia General
+* ¿Qué tan satisfecho estás con la interacción en general?
+* ¿Qué mejorarías en el flujo de la aplicación para agilizar tu trabajo diario?
+* ¿Recomendarías esta aplicación a otro dueño o administrador de restaurante? ¿Por qué?
+
+
+
+#### 6. Preguntas Específicas de Validación Heurística
+* ¿Tuviste problemas para reconocer los botones, filtros o enlaces de navegación?
+* ¿La retroalimentación del sistema (mensajes de confirmación, alertas de stock bajo/vencimiento o avisos de error) fue suficiente y clara?
+* ¿Sentiste que el diseño es consistente entre el landing page y todas las secciones de la aplicación?
 
 ### 5.3.2. Registro de Entrevistas
 
