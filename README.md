@@ -4366,8 +4366,8 @@ Datos del entrevistado:
 * Timing: 0:05
 * Link: <a href="">Entrevista</a>
 
-<p align="center"><img alt="Entrevista-Jesus Miranda" src="assets/img/evidencia-entrevista-1-0.png" /></p>
-  <p align="center"><img alt="Entrevista-Jesus Miranda" src="assets/img/evidencia-entrevista-1-1.png" /></p>
+<p align="center"><img alt="Entrevista-Jesus Miranda" src="assets/img/chapter-05//evidencia-entrevista-1-0.png" /></p>
+  <p align="center"><img alt="Entrevista-Jesus Miranda" src="assets/img/chapter-05/evidencia-entrevista-1-1.png" /></p>
 <p align="center"><i>Evidencia de entrevista: Nelson </i></p>
 
 **Resumen descriptivo:**En la entrevista, Nelson comento que la plataforma contaba con un diseño profesional y amigable,y afirmo que sus apartados son fáciles de comprender.Ademas valoro positivamente el apartado de alertas.Por otro lado comento que el dashboar inicial si bien tiene informacion relevante, deberia estar un poco mas organizada.
