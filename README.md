@@ -4352,6 +4352,26 @@ El diseño de las sesiones de validación tiene como objetivo evaluar la interac
 
 ### 5.3.2. Registro de Entrevistas
 
+
+**Entrevista 1:**
+<br>
+**Entrevistador(a):** >Miranda Cordova, Jesus Angel Yvan
+
+Datos del entrevistada:
+
+* Nombre: Nelson
+* Apellido: Miranda
+* Edad: 48 años
+* Distrito: Trujillo
+* Timing: 0:05
+
+
+<p align="center"><img alt="Entrevista-Jesus Miranda" src="assets/img/evidencia-entrevista-1-0.png" /></p>
+  <p align="center"><img alt="Entrevista-Jesus Miranda" src="assets/img/evidencia-entrevista-1-1.png" /></p>
+<p align="center"><i>Evidencia de entrevista: Nelson </i></p>
+
+**Resumen descriptivo:**En la entrevista, Nelson comento que la plataforma contaba con un diseño profesional y amigable,y afirmo que sus apartados son fáciles de comprender.Ademas valoro positivamente el apartado de alertas.Por otro lado comento que el dashboar inicial si bien tiene informacion relevante, deberia estar un poco mas organizada.
+
 ### 5.3.3. Evaluaciones según heurísticas
 
 ## 5.4. Video About-the-Product
