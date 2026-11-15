@@ -4325,6 +4325,19 @@ El Sprint 3 se dedicó a construir el RESTful API de StockIA (Web Services) con 
 
 El compromiso del Sprint 3 (86 SP) se calculó a partir de la velocidad del Sprint 2: el equipo completó 83 SP y se mantiene la disponibilidad de 45 horas por integrante, por lo que la capacidad proyectada es 83 × 45 / 45 = 83 SP; se comprometieron 3 SP adicionales porque parte del trabajo (dominio, repositorios y controladores) sigue un patrón repetible entre contextos. Las 153.5 horas planificadas equivalen al 68 % de la capacidad disponible (225 horas); el margen restante cubre revisiones de Pull Request, ceremonias, pruebas de integración y la documentación del informe.
 
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** del Sprint 3. Los aspectos corresponden a los Bounded Contexts del Capítulo IV, más la arquitectura transversal (estructura del proyecto, persistencia y despliegue) y la documentación OpenAPI. Cada líder implementa su Bounded Context en las cuatro capas del RESTful API; el líder (L) responde por la integración y la revisión de ese aspecto, y los colaboradores (C) desarrollan o revisan sus tareas.
+
+| Team Member | GitHub Username | IAM | Restaurant Registration | Subscription & Payments | Stock Management | Recipes Management | ML & Recommendations | Notifications & Messaging | Analytics & Dashboard | Arquitectura, persistencia y despliegue | OpenAPI |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | C | C | C | C | C | C | L | L | C | C |
+| Toro Turpo, Ronal | Ronal345 | L | L | C | C | C | C | C | C | C | C |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | C | C | C | C | C | L | C | C | L | C |
+| Miranda Cordova, Jesus Angel Yvan | Jesus-Miranda-678 | C | C | C | L | L | C | C | C | C | C |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | C | C | L | C | C | C | C | C | C | L |
+
+> **Leyenda:** **L:** Líder del aspecto · **C:** Colaborador
 
 
 ## 5.3. Validation Interviews
