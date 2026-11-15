@@ -5247,7 +5247,38 @@ En el Sprint 3 se desplegaron el RESTful API (TS08) y su base de datos MySQL con
 * **URL de la Web Application desplegada:** https://stockia-webapp.vercel.app/
 * **URL de la Landing Page desplegada:** https://stockia-website.vercel.app/
 
-laaaa
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+**Dinámica de trabajo**
+
+En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implementó sus contextos en las cuatro capas del RESTful API y los integró mediante su rama `feature/*` y su Pull Request hacia `develop`, siguiendo GitFlow (ver 5.2.3.2 y la tabla de distribución de 5.2.3.4). Aldo preparó la estructura del proyecto y los perfiles de persistencia, y Leyla el shared kernel y el sembrador de datos, para que los demás contextos se construyeran sobre esa base. Los contextos se comunicaron solo mediante fachadas ACL y eventos de dominio. Siguiendo la retrospectiva del Sprint 2, los commits y los Pull Requests se registraron de forma diaria y las horas se repartieron según la disponibilidad (uso de capacidad entre 46 % y 88 %). Las tareas se gestionaron en Jira (proyecto SCRUM); la comunicación diaria se mantuvo por WhatsApp y las reuniones de sincronización por Google Meet. Se registraron 15 Pull Requests en el repositorio del API (#1 al #15) y 18 en `stockia-webapp` (#24 al #41); las ramas `feature/iam` y `feature/restaurantregistration` del API se integraron en `develop` sin Pull Request.
+
+**Aporte por integrante**
+
+| **Integrante** | **GitHub** | **Aporte principal en el Sprint 3** | **Horas asignadas** | **Commits en `stockia-platform-api`** |
+| :--- | :--- | :--- | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | Subscription & Payments: planes, suscripción y checkout simulado (US31, RNF11) | 20.5 | 20 |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | ML & Recommendations: modelo ONNX, pronóstico, clima con Open-Meteo y recomendaciones (US25, US26); estructura del proyecto (TS05) y perfiles de persistencia (TS07); pruebas de `Quantity` y de asignación de lotes (US21); integración continua, despliegue y conexión de la Web Application (TS08) | 39.5 | 91 |
+| Miranda Córdova, Jesus Angel Yvan | Jesus-Miranda-678 | Stock Management y Recipes Management: lotes, fecha límite, recetas, motor de descuento e historial de ventas (US21, US36, US22, US39) | 31.5 | 91 |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | Notifications & Messaging y Analytics & Dashboard: alertas, entrega por canal, dashboard y ahorro semanal (US27, US41, US23); shared kernel (TS05), configuración de OpenAPI (TS06) y datos de demostración (TS07) | 28.5 | 84 |
+| Toro Turpo, Ronal | Ronal345 | IAM y Restaurant Registration: registro del restaurante, JWT con bloqueo de cuenta y recuperación de contraseña, equipo y roles, perfil del restaurante y protección de credenciales (US29, US30, US24, US40, RNF11) | 33.5 | 25 |
+
+**Evidencia: tablero del Sprint 3 en Jira**
+
+<!-- IMAGEN PENDIENTE: mismo tablero finalizado de 5.2.3.3 -->
+<p align="center"><img alt="Tablero finalizado" src="assets/img/chapter-05/s3-jira-sprint3-done.png" width="800" /><br/><i>Artefacto: tablero del Sprint 3 finalizado</i></p>
+
+**Evidencia: contribuciones por integrante en `stockia-platform`**
+
+<p align="center"><img alt="Contributors backend" src="assets/img/chapter-05/s3-contributors-backend.png" width="800" /><br/><i>Artefacto: contribuciones por integrante en stockia-platform</i></p>
+
+**Evidencia: grafo de GitFlow**
+
+<p align="center"><img alt="Network backend" src="assets/img/chapter-05/s3-network-backend.png" width="800" /><br/><i>Artefacto: ramas feature/* integradas mediante Pull Request</i></p>
+
+**Evidencia: contribuciones en `stockia-webapp`**
+
+<p align="center"><img alt="Contributors webapp" src="assets/img/chapter-05/s3-contributors-webapp.png" width="800" /><br/><i>Artefacto: contribuciones en stockia-webapp</i></p>
 
 ## 5.3. Validation Interviews
 
