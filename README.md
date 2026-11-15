@@ -2051,7 +2051,7 @@ Las Technical Stories describen el trabajo técnico que habilita las User Storie
 <strong>When</strong> se consulta GET /api/v1/health y se abre Swagger UI en la URL pública<br>
 <strong>Then</strong> el API responde 200 y la documentación se muestra<br><br>
 <strong>Scenario 3: Web Application conectada</strong><br>
-<strong>Given</strong> que la Web Application en Vercel apunta al API mediante VITE_STOCKIA_API_URL<br>
+<strong>Given</strong> que la Web Application en Vercel apunta al API mediante platformProviderApiBaseUrl<br>
 <strong>When</strong> el usuario navega por las vistas de inventario, recetas y alertas<br>
 <strong>Then</strong> los datos provienen del API real y no se registran errores de CORS
 </td>
@@ -4408,7 +4408,6 @@ El Sprint 3 se dedicó a construir el RESTful API de StockIA (Web Services) con 
 
 El compromiso del Sprint 3 (50 SP) es la suma de los Story Points que el Product Backlog (sección 3.3) asigna a los 16 ítems del Sprint; se mantiene la disponibilidad de 45 horas por integrante. Las 153.5 horas planificadas equivalen al 68 % de la capacidad disponible (225 horas); el margen restante cubre revisiones de Pull Request, ceremonias, pruebas de integración y la documentación del informe.
 
-
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
 En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** del Sprint 3. Los aspectos corresponden a los Bounded Contexts del Capítulo IV, más la arquitectura transversal (estructura del proyecto, persistencia y despliegue) y la documentación OpenAPI. Cada líder implementa su Bounded Context en las cuatro capas del RESTful API; el líder (L) responde por la integración y la revisión de ese aspecto, y los colaboradores (C) desarrollan o revisan sus tareas.
@@ -4439,7 +4438,7 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** d
 |  |  | T-TS13-2 | Implementar el sembrador de datos de demostración | Cargar en el primer arranque un restaurante demo con 10 lotes, 4 recetas, 120 días de ventas, alertas automáticas, un primer pronóstico y las cuentas de Administrador y Empleado. | 2 | Leyla | Done |
 | **TS14** | Desplegar el RESTful API con integración continua y Docker | T-TS14-1 | Configurar el pipeline de integración continua | Crear el flujo de GitHub Actions que ejecuta `mvn verify` y la prueba de humo `tests/smoke/smoke_test.py` contra MySQL. | 2 | Aldo | Done |
 |  |  | T-TS14-2 | Contenerizar y publicar el API | Crear el Dockerfile y `docker compose` (MySQL y API), y publicar el API y la base de datos con el perfil `prod`, verificando el Swagger público y `/api/v1/health`. | 3 | Aldo | Done |
-|  |  | T-TS14-3 | Conectar la Web Application con el API | Cambiar `VITE_STOCKIA_API_URL` y las rutas `VITE_*_ENDPOINT_PATH` en Vercel y ajustar `STOCKIA_CORS_ALLOWED_ORIGINS` para el dominio de la Web Application. | 1.5 | Aldo | Done |
+|  |  | T-TS14-3 | Conectar la Web Application con el API | Cambiar `platformProviderApiBaseUrl` y las rutas `platformProvider*EndpointPath` en Vercel y ajustar `STOCKIA_CORS_ALLOWED_ORIGINS` para el dominio de la Web Application. | 1.5 | Aldo | Done |
 | **US09** | Registrar mi restaurante y crear mi cuenta de administrador | T-US09-1 | Modelar el registro del restaurante | Crear el aggregate `RestaurantRegistration` con el restaurante y su propietario Administrador, y su puerto de repositorio. | 3 | Ronal | Done |
 |  |  | T-US09-2 | Implementar el comando de registro | Validar el correo duplicado, crear el restaurante y la cuenta Administrador mediante la fachada ACL de IAM y cifrar la contraseña con BCrypt. | 3 | Ronal | Done |
 |  |  | T-US09-3 | Exponer el endpoint de registro | Crear `POST /api/v1/restaurant-registrations` con su resource y su transformador. | 2 | Ronal | Done |
@@ -4517,7 +4516,7 @@ En esta sección se presentan los avances de implementación del Sprint 3 median
 **Resumen de avances por producto**
 
 - **Web Services (`stockia-platform`):** se implementó el RESTful API en Java 21 y Spring Boot 3.5 con los ocho Bounded Contexts en sus cuatro capas y un shared kernel (`Quantity`, `Result`, problem details RFC 9457, i18n inglés/español, contexto de seguridad, nombres snake_case y sembrador de datos de demostración), persistencia con Spring Data JPA y MySQL 8 (H2 para pruebas y el perfil `local`), autenticación JWT con BCrypt, modelo de demanda en ONNX, documentación OpenAPI con springdoc, pruebas unitarias, de integración (`StockiaPlatformIntegrationTest`) y de humo, e integración continua con GitHub Actions. La versión actual es 1.0.0.
-- **Web Application (`stockia-webapp`):** se reemplazó la API simulada por el RESTful API cambiando `VITE_STOCKIA_API_URL` y las rutas `VITE_*_ENDPOINT_PATH` (T-TS14-3); la capa `infrastructure` de cada contexto absorbió el cambio sin modificar la capa de presentación.
+- **Web Application (`stockia-webapp`):** se reemplazó la API simulada por el RESTful API cambiando `platformProviderApiBaseUrl` y las rutas `platformProvider*EndpointPath` (T-TS14-3); la capa `infrastructure` de cada contexto absorbió el cambio sin modificar la capa de presentación.
 - **Landing Page (`stockia-website`):** sin cambios de funcionalidad en este Sprint.
 
 **Distribución del código por Bounded Context**
@@ -5073,10 +5072,20 @@ En esta sección se presentan los avances de implementación del Sprint 3 median
 
 **Repositorio del informe (`stockia-report`)**
 
-| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| **Repository** | **Branch** | **Commit Id(s)** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| stockia-report | feature/chapter-3 | `[ID]` | docs(chapter-3): add sprint 3 technical stories TS11 to TS14 | Technical Stories y Product Backlog del Sprint 3 ([COMPLETAR autor]). | [dd/mm/2026] |
-| stockia-report | feature/chapter-5 | `[ID]` | docs(chapter-5): add sprint 3 | Sprint Planning, Sprint Backlog, evidencias y Team Collaboration del Sprint 3 ([COMPLETAR autor]). | [dd/mm/2026] |
+| stockia-report | feature/student-outcome-leyla | `53e0ce0`, `3b57779` | docs(student-outcome) | Estructuración y elaboración del Student Outcome AV2 de Leyla. (Autor: Leylaa-O). | 12/11/2026 |
+| stockia-report | feature/cover | `ac2339a`, `28dcecb` | docs(cover), docs(logs) | Actualización de portada del informe y registro de versiones AV2. (Autor: Leylaa-O). | 12/11/2026 |
+| stockia-report | feature/interviews | `14380f5`, `c39cc98`, `82d3d9d`, `bdf7e75`, `449d9b7`, `4b254ac`, `5864e8a` | feat: add design interview, fead: add interview | Diseño, documentación y evidencias de entrevistas realizadas para la validación del proyecto. (Autor: Jesus-Miranda-678). | 12/11/2026 |
+| stockia-report | feature/validation-interview-leyla | `fe53c14`, `d19b6aa`, `cd98861` | docs(validation-interview), docs(assets) | Registro de la entrevista de validación #2, reorganización de evidencias y capturas asociadas. (Autor: Leylaa-O). | 12/11/2026 |
+| stockia-report | feature/sprint-3 | `c5d19e1`, `a4feebf`, `7379965`, `279600b`, `d5ea289`, `36eade8`, `248d651`, `301d91b`, `ddbe99e`, `9e9805a`, `71ffc0c`, `85af033` | docs(sprint-3) | Documentación integral del Sprint 3: alcance, Sprint Planning, Sprint Backlog, evidencias de desarrollo y ejecución, documentación de servicios, despliegue y colaboración del equipo. (Autor: Leylaa-O). | 14/11/2026 - 15/11/2026 |
+| stockia-report | feature/student-outcome-jesus-Miranda | `1e80e44` | feat: add student outcome jesus av2 | Elaboración del Student Outcome AV2 correspondiente a Jesús Miranda. (Autor: Jesus-Miranda-678). | 14/11/2026 |
+| stockia-report | feature/evaluations-heuristics | `bba3507`, `1ef7b1e`, `3f08152`, `afa55f1`, `a97afb5`, `7f2e1fb`, `c486b2f` | docs(evaluations-heuristics), docs(assets) | Incorporación de evidencias gráficas y desarrollo de la sección de evaluación heurística, incluyendo correcciones posteriores. (Autor: Leylaa-O). | 14/11/2026 - 15/11/2026 |
+| stockia-report | feature/videos-about-link | `3364f1a`, `483535e` | docs(about the product), docs(about the team) | Inclusión de videos y documentación complementaria sobre el producto y el equipo del proyecto. (Autor: Carlsss28). | 15/11/2026 |
+| stockia-report | feature/user-stories | `ac8340b` | docs(user-stories): update User Stories | Actualización y refinamiento de las User Stories del producto. (Autor: Leylaa-O). | 15/11/2026 |
+| stockia-report | fix/validation-interview-aldo | `629dc2a`, `c519b24` | docs(validation-interview), docs(assets) | Registro y evidencias de la entrevista de validación #5. (Autor: Jesus). | 15/11/2026 |
+| stockia-report | feature/outcome-Ronal | `01e2e03` | feat: add student outcome and fix profile image | Incorporación del Student Outcome correspondiente a Ronal y corrección de imagen de perfil. (Autor: Ronal345). | 15/11/2026 |
+| stockia-report | develop | `35aa261`, `9ed765b`, `20f500d`, `c275826`, `c0decce`, `de9728f`, `6a6bc71`, `9ed53c0`, `3f79074` | Merge Pull Requests #68 - #79 | Integración de las contribuciones desarrolladas en las diferentes ramas funcionales al repositorio principal mediante Pull Requests. | 12/11/2026 - 15/11/2026 |
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
@@ -5315,15 +5324,19 @@ Inicio de sesión con contraseña incorrecta (US10):
 En el Sprint 3 se desplegaron el RESTful API (TS14) y su base de datos MySQL con Docker, y se reconfiguró la Web Application ya publicada en Vercel para consumirlos.
 
 **Evidencia del despliegue de la platform api**
-<p align="center"><img alt="Inicio de sesión" src="assets/img/chapter-05/s3-deploy-platform-api.jpeg" width="800" /><br/><i>Figura: Despliegue en render de la platform api</i></p>
+<p align="center"><img alt="Despliegue de API en Render" src="assets/img/chapter-05/s3-deploy-platform-api.jpeg" width="800" /><br/><i>Figura: Despliegue en Render de la platform api</i></p>
+
+<p align="center"><img alt="Despliegue en Render de la Web App" src="assets/img/chapter-05/s3-deploy-webapp.jpeg" width="800" /><br/><i>Figura: Despliegue en Render de la Web Application</i></p>
+
+<p align="center"><img alt="Despliegue de la Base de Datos en AWS" src="assets/img/chapter-05/s3-deploy-database.jpeg" width="800" /><br/><i>Figura: Despliegue en AWS de la base de datos</i></p>
 
 **Actividades de despliegue realizadas** 
 
 1. Se creó el flujo de integración continua en GitHub Actions: `mvn verify` y la prueba de humo `tests/smoke/smoke_test.py` contra MySQL.
 2. Se empaquetó el API en una imagen Docker y se probó localmente con `docker compose up --build` (MySQL y API en el puerto 8181).
-3. Se creó la base de datos MySQL y el servicio del API en Amazon Web Services con el perfil `prod`.
+3. Se creó la base de datos MySQL, desplegada en Amazon Web Services, y el servicio del API en Render con el perfil `prod`.
 4. Se cargaron las variables de entorno `DATABASE_URL`, `DATABASE_USER`, `DATABASE_PASSWORD`, `STOCKIA_JWT_SECRET`, `STOCKIA_CORS_ALLOWED_ORIGINS`, `STOCKIA_WEB_APP_URL`, `STOCKIA_SEED_DEMO_DATA`, `STOCKIA_WEATHER_ENABLED` y `PORT`, sin incluirlas en el repositorio.
-5. Se verificaron `/api/v1/health` y el Swagger público, y se actualizaron en Vercel `VITE_STOCKIA_API_URL` y las rutas `VITE_*_ENDPOINT_PATH` para volver a desplegar la Web Application.
+5. Se verificaron `/api/v1/health` y el Swagger público, y se actualizaron en Vercel `platformProviderApiBaseUrl` y las rutas `platformProvider*EndpointPath` para volver a desplegar la Web Application.
 
 * **URL del RESTful API desplegado:** https://stockia-platform-api-ycil.onrender.com/api/v1
 * **URL de Swagger UI:** https://stockia-platform-api-ycil.onrender.com/swagger-ui.html 
