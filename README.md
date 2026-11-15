@@ -185,8 +185,18 @@ En paralelo, se desplegó una nueva versión de la Landing Page, incorporando me
 El progreso quedó documentado en el Capítulo V: Product Implementation, Validation & Deployment (sprint 2), donde se detallan las pruebas realizadas, la validación de funcionalidades y el proceso de despliegue técnico. Dicho capítulo evidencia la integración entre la propuesta de valor y su materialización en artefactos funcionales.
 
 Para la gestión colaborativa se continuó utilizando GitHub, que permitió coordinar commits, organizar tareas y mantener un historial cronológico del avance. Las métricas de colaboración y el registro de versiones respaldan la participación activa de cada integrante, asegurando transparencia y trazabilidad en el desarrollo del proyecto
-![insight-av1](assets/img/chapter-01/insight-tb1.png)
+![insight-tb1](assets/img/chapter-01/insight-tb1.png)
 
+**Tercera Entrega (AV2)**
+
+Durante esta etapa, el equipo realizó la corrección integral del reporte correspondiente al TB1, fortaleciendo la calidad de la documentación mediante ajustes de redacción, formato y consistencia entre los distintos apartados. Estas mejoras permitieron consolidar una versión más robusta del entregable y garantizar una adecuada alineación con los objetivos y estándares establecidos para el proyecto.
+
+Paralelamente, se desplegó una nueva versión de la Landing Page y del Frontend Web Applications, incorporando mejoras funcionales y de experiencia de usuario derivadas del proceso iterativo de desarrollo. Asimismo, se logró el despliegue de la primera versión del Web Services, estableciendo la base para la integración de los componentes de software y permitiendo una arquitectura más completa y alineada con los requerimientos de la solución propuesta.
+
+Los avances técnicos fueron documentados en el Capítulo V: Product Implementation, Validation & Deployment (Sprint 3), donde se detallan las funcionalidades implementadas, las pruebas realizadas, los procesos de validación y las actividades de despliegue ejecutadas durante esta iteración. Este capítulo evidencia la evolución del producto desde una perspectiva tanto funcional como técnica.
+
+Finalmente, se llevaron a cabo las Validation Interviews, permitiendo recopilar retroalimentación de usuarios potenciales respecto a la propuesta de valor y a los artefactos desarrollados. Los resultados obtenidos proporcionaron información relevante para identificar oportunidades de mejora, validar decisiones de diseño y orientar las siguientes iteraciones del proyecto. La gestión colaborativa continuó realizándose mediante GitHub, asegurando la trazabilidad de cambios, la coordinación del equipo y el registro cronológico de las contribuciones realizadas por cada integrante.
+![insight-av2](assets/img/chapter-01/insight-av2.png)
 
 ---
 # Student Outcome
@@ -5326,7 +5336,7 @@ En el Sprint 3 se desplegaron el RESTful API (TS14) y su base de datos MySQL con
 **Evidencia del despliegue de la platform api**
 <p align="center"><img alt="Despliegue de API en Render" src="assets/img/chapter-05/s3-deploy-platform-api.jpeg" width="800" /><br/><i>Figura: Despliegue en Render de la platform api</i></p>
 
-<p align="center"><img alt="Despliegue en Render de la Web App" src="assets/img/chapter-05/s3-deploy-webapp.jpeg" width="800" /><br/><i>Figura: Despliegue en Render de la Web Application</i></p>
+<p align="center"><img alt="Despliegue en Render de la Web App" src="assets/img/chapter-05/s3-deploy-webapp.jpeg" width="800" /><br/><i>Figura: Despliegue en Vercel de la Web Application</i></p>
 
 <p align="center"><img alt="Despliegue de la Base de Datos en AWS" src="assets/img/chapter-05/s3-deploy-database.jpeg" width="800" /><br/><i>Figura: Despliegue en AWS de la base de datos</i></p>
 
@@ -5491,7 +5501,7 @@ Datos de la entrevistada:
 **CARRERA		: Ingeniería de Software**  
 **CURSO		: Desarrollo de Aplicaciones Open Source**  
 **PROFESORES	: Todos**  
-**AUDITOR		:**   
+<!----**AUDITOR		:**-->   
 **CLIENTE		:** Databit 
 
 ___
@@ -5704,7 +5714,6 @@ El video publicado en YouTube está incrustado en la sección *About* del Landin
 | 1:15 – 1:34 | Testimonio de validación |
 | 1:34 – 1:46 | Beneficios y cierre |
 
-# Conclusiones y recomendaciones
 # Conclusiones y recomendaciones
 
 **Conclusiones**
