@@ -5518,6 +5518,88 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 ## 5.4. Video About-the-Product
 
+**5.4.1. Introducción y descripción del contenido**
+
+El video *About-the-Product* presenta **StockIA**, la plataforma web de DataBit que convierte el inventario de un restaurante en información útil para decidir qué comprar, qué preparar y cuándo actuar. En menos de dos minutos explica el problema que resolvemos, cómo funciona la solución y qué gana el restaurante al usarla.
+
+**Modelo de negocio.** StockIA se ofrece como un servicio por suscripción (SaaS) para restaurantes y cadenas de restaurantes. El administrador registra su restaurante, elige un plan y luego invita a su equipo. Desde *Settings* puede comparar planes y cambiar su suscripción en cualquier momento.
+
+**Estructura del video:**
+
+| Bloque | Contenido |
+|---|---|
+| Gancho| Los restaurantes pierden dinero sin darse cuenta: entre el 4 % y el 10 % de los insumos que compran termina en la basura. |
+| Problema | El inventario se lleva en cuadernos y hojas de Excel, desconectado de las ventas del punto de venta. |
+| Solución | Presentación de StockIA como el inventario inteligente para el restaurante. |
+| Paso 1 · Dashboard | Resumen operativo: insumos registrados, stock bajo, productos por vencer, ahorro semanal y alertas recientes. |
+| Paso 2 · Recetas e inventario | Cada plato se vincula con sus insumos. Al registrar una venta, el stock se descuenta automáticamente; si falta un insumo, la venta se rechaza. |
+| Paso 3 · Pronóstico con IA | Un modelo de *machine learning* aprende del historial de ventas, los feriados, los días de pago y el clima, y proyecta la demanda por plato de los próximos 7 días. |
+| Paso 4 · Alertas y roles | Avisos por WhatsApp y correo ante insumos por vencer, sin stock o fallas de equipos (IoT). Gestión de equipo con roles de Administrador y Empleado. |
+| Testimonio | Opinión de una usuaria entrevistada durante la validación. |
+| Cierre | Beneficios principales y llamado a la acción: *"StockIA. Vende más, desperdicia menos."* |
+
+**Características y beneficios destacados:**
+
+- **Menos desperdicio:** alertas antes de que un insumo se venza o se agote, y uso prioritario del stock próximo a vencer.
+- **Horas de conteo ahorradas:** el inventario se actualiza solo con cada venta, sin conteos manuales.
+- **Márgenes protegidos:** el pronóstico de demanda ayuda a comprar lo justo y a destacar en el menú los platos adecuados.
+- **Control del equipo:** cada miembro accede solo a lo que necesita según su rol.
+
+**Público objetivo y tono.** El video está dirigido a dos audiencias:
+
+1. **Visitantes del Landing Page**, principalmente dueños y administradores de restaurantes que quieren entender rápidamente qué es StockIA, qué problema resuelve y cómo funciona su modelo de negocio.
+2. **Usuarios de la aplicación web**, que quieren conocer cómo realizar las tareas principales: registrar insumos y recetas, revisar el pronóstico, atender alertas y gestionar su equipo.
+
+El tono es cercano, directo y optimista, consistente con la identidad de StockIA. Habla de "tú" al administrador del restaurante, usa frases cortas y ejemplos de cocina (tomates, lomo saltado, refrigeradores) y evita tecnicismos innecesarios. La parte visual sigue un estilo 3D de bloques: un chef animado guía al espectador a través de las pantallas reales de la aplicación, con subtítulos grandes que resaltan las palabras clave. Así el video es fácil de seguir incluso sin sonido.
+
+**Testimonios de validación.** El proyecto atiende un único segmento objetivo: **dueños y administradores de restaurantes**. Para este segmento, el video incluye el siguiente testimonio, recogido en las entrevistas de validación (con su voz original y un recuadro con la grabación de la entrevista):
+
+| Segmento objetivo | Entrevistada | Testimonio |
+|---|---|---|
+| Dueños y administradores de restaurantes | Isabel Cubillas (entrevista de validación) | *"Sí, sí, sí lo recomendaría. Es más, ya lo hablé, incluso lo comenté con una persona que tiene farmacia. Incluso le enseñé la demo y también le encantó la idea, y me dijo que si se lograra, que le pasara el dato."* |
+
+**5.4.2. Evidencias visuales y enlaces de publicación**
+
+**Captura de pantalla del video:**
+
+<div align=center>
+
+![Video About-the-Product de StockIA](assets/img/videos%20about/about-the-product.png)
+
+*Figura: video about the product*
+</div>
+
+**Enlaces de publicación:**
+
+| Plataforma | Enlace |
+|---|---|
+| Microsoft Stream | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQDSEMFTQYGjRL6XsRuLJAd-AeGzXAeqdpfJiZ_EuoKH3Dc?e=WHKXov&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| YouTube | [Ver en YouTube](https://youtu.be/8tClYqynW58) |
+
+El video publicado en YouTube está incrustado en la sección *About* del Landing Page de StockIA, para que los visitantes lo vean sin salir del sitio.
+
+**5.4.3. Ficha técnica y timing**
+
+| Dato | Valor |
+|---|---|
+| Título | upc-pre-202620-1asi0730-16127-databit-about-the-product |
+| Duración total | **1 min 46 s**, dentro del rango de 1 a 3 minutos |
+| Idioma | Español, con subtítulos integrados |
+| Audio | Voz en off, testimonio con voz original y música de fondo |
+
+**Timing por bloque:**
+
+| Minuto | Bloque |
+|---|---|
+| 0:00 – 0:10 | Gancho: el desperdicio en los restaurantes |
+| 0:10 – 0:17 | Problema: inventario manual y desconectado |
+| 0:17 – 0:26 | Solución: presentación de StockIA |
+| 0:26 – 0:35 | Paso 1 · Dashboard |
+| 0:35 – 0:46 | Paso 2 · Recetas e inventario |
+| 0:46 – 1:00 | Paso 3 · Pronóstico de demanda con IA |
+| 1:00 – 1:15 | Paso 4 · Alertas y roles |
+| 1:15 – 1:34 | Testimonio de validación |
+| 1:34 – 1:46 | Beneficios y cierre |
 
 # Conclusiones y recomendaciones
 **Conclusiones**
@@ -5536,6 +5618,49 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 
 # Video About-the-Team
+
+El video *About-the-Team* muestra cómo trabajó el equipo **DataBit** durante el desarrollo de **StockIA**. Primero recorre el proceso: identificar el problema del desperdicio de insumos en restaurantes, validar necesidades mediante entrevistas y la construcción del user persona, y diseñar la solución web. Luego explica la organización del equipo: trabajo con **Scrum**, historias de usuario en **Jira**, reuniones de seguimiento por **Google Meet** y control de versiones en **GitHub**, donde el proyecto ya va en su segunda versión, con alrededor de 300 commits de los cinco integrantes y más de 15 pull requests integrados.
+
+También presenta la retrospectiva: las mejoras a partir del feedback recibido (segmento objetivo unificado, user stories alineadas al negocio, requisitos no funcionales medibles y modelo de dominio por bounded context) y el siguiente reto del equipo, administrar mejor los tiempos antes de cada entrega. Al final, cada integrante cuenta en su testimonio sus aportes, logros y competencias desarrolladas.
+
+#### Pauta de secuencias de contenido (timing)
+
+| Inicio | Contenido |
+|---|---|
+| 00:00:00 | Portada: presentación del equipo DataBit |
+| 00:00:11 | El problema: pérdida de insumos en restaurantes |
+| 00:00:26 | Needfinding: entrevistas y user persona |
+| 00:00:47 | La solución: landing page y web app de StockIA |
+| 00:01:05 | Cómo trabajamos: Scrum, Jira, Google Meet y GitHub (versión 2) |
+| 00:01:28 | Retrospectiva: feedback recibido, mejoras y próximo reto |
+| 00:01:55 | Introducción a los testimonios individuales |
+| 00:02:00 | Testimonio de Aldo Jesús Huamán Oscco |
+| 00:02:59 | Testimonio de Jesús Miranda Córdova |
+| 00:04:21 | Testimonio de Leyla Ortiz Laura |
+| 00:05:40 | Testimonio de Carla Gallardo Morales |
+| 00:06:54 | Testimonio de Ronal Toro Turpo |
+| 00:07:57 | Cierre y agradecimiento |
+
+**Duración total:** 00:08:03
+
+**Evidencia visual**
+
+<div align=center>
+
+![Video About-the-Team de DataBit](assets/img/videos%20about/about_the_team.png)
+
+*video about the team*
+
+</div>
+
+#### Enlaces de publicación
+
+| Plataforma | Enlace |
+|---|---|
+| Microsoft Stream | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQAlKhmdPnxRQ591WwCPgqhaAWJBSwzufNG6Aiu86CqJhM8?e=0GKJYf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| YouTube | [Ver en YouTube](https://youtu.be/RSSeDlps6t4) |
+
+El video publicado en YouTube está incrustado en la sección *About* del Landing Page de StockIA.
 
 # Bibliografía
 Cullen, J. (2021). Administración de inventarios: análisis y modelos. Editorial académica.
