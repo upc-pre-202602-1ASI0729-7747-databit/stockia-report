@@ -5438,7 +5438,7 @@ El diseño de las sesiones de validación tiene como objetivo evaluar la interac
 
 **Entrevista 1:**
 <br>
-**Entrevistador(a):** Miranda Cordova, Jesus Angel Yvan
+**Entrevistador(a):** Jesus Angel Yvan Miranda Cordova
 
 Datos del entrevistado:
 
@@ -5474,8 +5474,7 @@ Datos de la entrevistada:
 
 **Resumen descriptivo:** La entrevistada evidenció una percepción positiva de la propuesta de Stockia. La participante comprendió rápidamente el propósito de la aplicación, identificando que está orientada al control de inventario y al apoyo mediante funciones inteligentes. Asimismo, consideró atractivo el diseño inicial y señaló que la navegación le resultó sencilla, especialmente desde una computadora. Albertina destacó que los textos e imágenes facilitaron la comprensión de la propuesta de valor y que el lenguaje utilizado era claro y fácil de entender. También manifestó que la aplicación podría ayudarla a organizar mejor la información de su negocio y agilizar procesos relacionados con el control de inventario. Como aspectos de mejora, mencionó la necesidad de brindar mayor claridad en la presentación de la información de inventario y mejorar la visibilidad o diferenciación de algunos botones para evitar confusiones. En términos generales, la usuaria se mostró satisfecha con la interacción ofrecida por la aplicación y expresó que recomendaría la aplicación a otros usuarios debido a su utilidad para mantener el orden y facilitar la gestión diaria de un negocio gastronómico, lo que constituye una validación favorable de la propuesta de solución.
 
-
-**Entrevista 5:**
+**Entrevista 3:**
 <br>
 **Entrevistador(a):** Aldo Jesus Huaman Oscco
 
@@ -5665,11 +5664,11 @@ El video *About-the-Product* presenta **StockIA**, la plataforma web de DataBit 
 
 El tono es cercano, directo y optimista, consistente con la identidad de StockIA. Habla de "tú" al administrador del restaurante, usa frases cortas y ejemplos de cocina (tomates, lomo saltado, refrigeradores) y evita tecnicismos innecesarios. La parte visual sigue un estilo 3D de bloques: un chef animado guía al espectador a través de las pantallas reales de la aplicación, con subtítulos grandes que resaltan las palabras clave. Así el video es fácil de seguir incluso sin sonido.
 
-**Testimonios de validación.** El proyecto atiende un único segmento objetivo: **dueños y administradores de restaurantes**. Para este segmento, el video incluye el siguiente testimonio, recogido en las entrevistas de validación (con su voz original y un recuadro con la grabación de la entrevista):
+**Testimonios de validación.** El proyecto atiende un único segmento objetivo: **dueños y administradores de restaurantes**. Para este segmento, el video incluye el siguiente testimonio (con su voz original y un recuadro con la grabación de la entrevista):
 
 | Segmento objetivo | Entrevistada | Testimonio |
 |---|---|---|
-| Dueños y administradores de restaurantes | Isabel Cubillas (entrevista de validación) | *"Sí, sí, sí lo recomendaría. Es más, ya lo hablé, incluso lo comenté con una persona que tiene farmacia. Incluso le enseñé la demo y también le encantó la idea, y me dijo que si se lograra, que le pasara el dato."* |
+| Dueños y administradores de restaurantes | Isabel Cubillas | *"Sí, sí, sí lo recomendaría. Es más, ya lo hablé, incluso lo comenté con una persona que tiene farmacia. Incluso le enseñé la demo y también le encantó la idea, y me dijo que si se lograra, que le pasara el dato."* |
 
 **5.4.2. Evidencias visuales y enlaces de publicación**
 
@@ -5695,7 +5694,7 @@ El video publicado en YouTube está incrustado en la sección *About* del Landin
 
 | Dato | Valor |
 |---|---|
-| Título | upc-pre-202620-1asi0730-16127-databit-about-the-product |
+| Título | upc-pre-202620-1asi0729-7747-databit-about-the-product |
 | Duración total | **1 min 46 s**, dentro del rango de 1 a 3 minutos |
 | Idioma | Español, con subtítulos integrados |
 | Audio | Voz en off, testimonio con voz original y música de fondo |
