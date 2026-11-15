@@ -4302,8 +4302,6 @@ En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante implement
  
 ## 5.3. Validation Interviews
 
----
-##### Guía de Preguntas de la Entrevista de Validación
 ### 5.3.1. Diseño de Entrevistas
 
 El diseño de las sesiones de validación tiene como objetivo evaluar la interacción natural de los usuarios. Para garantizar la objetividad de los hallazgos y cumplir con las buenas prácticas de evaluación de experiencia de usuario, cada sesión sigue un protocolo estricto:
@@ -4370,7 +4368,7 @@ Datos del entrevistado:
   <p align="center"><img alt="Entrevista-Jesus Miranda" src="assets/img/chapter-05/evidencia-entrevista-1-1.png" /></p>
 <p align="center"><i>Evidencia de entrevista: Nelson </i></p>
 
-**Resumen descriptivo:**En la entrevista, Nelson comento que la plataforma contaba con un diseño profesional y amigable,y afirmo que sus apartados son fáciles de comprender.Ademas valoro positivamente el apartado de alertas.Por otro lado comento que el dashboar inicial si bien tiene informacion relevante, deberia estar un poco mas organizada.
+**Resumen descriptivo:** En la entrevista, Nelson comento que la plataforma contaba con un diseño profesional y amigable,y afirmo que sus apartados son fáciles de comprender.Ademas valoro positivamente el apartado de alertas.Por otro lado comento que el dashboar inicial si bien tiene informacion relevante, deberia estar un poco mas organizada.
 
 **Entrevista 2:**
 <br>
@@ -4389,7 +4387,7 @@ Datos de la entrevistada:
 <p align="center"><img alt="Entrevista-LeylaOrtiz" src="assets/img/chapter-05/evidencia-entrevista-2.jpg" /></p>
 <p align="center"><i>Evidencia de entrevista: Albertina </i></p>
 
-**Resumen descriptivo:**La entrevistada evidenció una percepción positiva de la propuesta de Stockia. La participante comprendió rápidamente el propósito de la aplicación, identificando que está orientada al control de inventario y al apoyo mediante funciones inteligentes. Asimismo, consideró atractivo el diseño inicial y señaló que la navegación le resultó sencilla, especialmente desde una computadora. Albertina destacó que los textos e imágenes facilitaron la comprensión de la propuesta de valor y que el lenguaje utilizado era claro y fácil de entender. También manifestó que la aplicación podría ayudarla a organizar mejor la información de su negocio y agilizar procesos relacionados con el control de inventario. Como aspectos de mejora, mencionó la necesidad de brindar mayor claridad en la presentación de la información de inventario y mejorar la visibilidad o diferenciación de algunos botones para evitar confusiones. En términos generales, la usuaria se mostró satisfecha con la interacción ofrecida por la aplicación y expresó que recomendaría la aplicación a otros usuarios debido a su utilidad para mantener el orden y facilitar la gestión diaria de un negocio gastronómico, lo que constituye una validación favorable de la propuesta de solución.
+**Resumen descriptivo:** La entrevistada evidenció una percepción positiva de la propuesta de Stockia. La participante comprendió rápidamente el propósito de la aplicación, identificando que está orientada al control de inventario y al apoyo mediante funciones inteligentes. Asimismo, consideró atractivo el diseño inicial y señaló que la navegación le resultó sencilla, especialmente desde una computadora. Albertina destacó que los textos e imágenes facilitaron la comprensión de la propuesta de valor y que el lenguaje utilizado era claro y fácil de entender. También manifestó que la aplicación podría ayudarla a organizar mejor la información de su negocio y agilizar procesos relacionados con el control de inventario. Como aspectos de mejora, mencionó la necesidad de brindar mayor claridad en la presentación de la información de inventario y mejorar la visibilidad o diferenciación de algunos botones para evitar confusiones. En términos generales, la usuaria se mostró satisfecha con la interacción ofrecida por la aplicación y expresó que recomendaría la aplicación a otros usuarios debido a su utilidad para mantener el orden y facilitar la gestión diaria de un negocio gastronómico, lo que constituye una validación favorable de la propuesta de solución.
 
 ### 5.3.3. Evaluaciones según heurísticas
 
