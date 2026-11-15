@@ -4387,7 +4387,7 @@ En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante implement
 
 El Sprint 3 se dedicó a construir el RESTful API de StockIA (Web Services) con **Java 21 y Spring Boot 3.5**, organizado por Bounded Context con arquitectura hexagonal (`domain`, `application`, `infrastructure` e `interfaces`), persistencia con Spring Data JPA y MySQL 8, autenticación con tokens JWT y contraseñas con BCrypt, documentación OpenAPI con springdoc y despliegue con Docker, para reemplazar la API simulada (json-server) que consumía la Web Application desde el Sprint 2. Cada integrante implementó sus Bounded Contexts en el repositorio `stockia-platform-api` con una rama `feature/<nombre>` y su Pull Request hacia `develop` (GitFlow). La Landing Page se mantiene sin cambios de funcionalidad y la Web Application solo ajusta su configuración (URL base y rutas de los endpoints) para consumir el nuevo API.
 
-**Alcance y exclusiones.** Quedan para los Sprints siguientes las integraciones reales que en este Sprint se resuelven con adaptadores simulados: entrega real de alertas por WhatsApp, correo (SendGrid) y SMS (Twilio) (US28, US32, US33 y RNF12), cobro real con Stripe y PayPal (el *checkout* es simulado), consulta de vida útil mediante API externa (US34 y US35) y la recopilación programada y el reentrenamiento periódico del modelo (US37 y US38; en este Sprint el modelo se entrena fuera de línea con scikit-learn y se exporta a ONNX). La consulta de clima sí usa un servicio real de terceros (Open-Meteo).
+**Alcance y exclusiones.** Quedan para los Sprints siguientes las integraciones reales que en este Sprint se resuelven con adaptadores simulados: entrega real de alertas por WhatsApp, correo (SendGrid) y SMS (Twilio) (el correo con SendGrid corresponde a US21; WhatsApp y SMS aún no tienen historia en el Product Backlog), cobro real con Stripe (US22) y PayPal (en este Sprint el *checkout* es simulado, US19), consulta de vida útil mediante API externa y la recopilación programada y el reentrenamiento periódico del modelo (en este Sprint el modelo se entrena fuera de línea con scikit-learn y se exporta a ONNX). La consulta de clima sí usa un servicio real de terceros (Open-Meteo).
 
 #### 5.2.3.1. Sprint Planning 3
 
@@ -4399,14 +4399,15 @@ El Sprint 3 se dedicó a construir el RESTful API de StockIA (Web Services) con 
 | **Location** | Lima/Lima/Santiago de Surco/UPC (presencial) |
 | **Prepared By** | Huaman Oscco, Aldo Jesus (Jesusho22) |
 | **Attendees (to planning meeting)** | Gallardo Morales, Carla Alejandra / Huaman Oscco, Aldo Jesus / Miranda Cordova, Jesus Angel Yvan / Ortiz Laura, Leyla Alisson / Toro Turpo, Ronal |
-| **Sprint 2 Review Summary** | Se presentó la primera versión de la Web Application de StockIA en Angular CLI version 22.1.7, desplegada en Vercel y conectada a una API simulada en Render; se completaron 83 de los 90 Story Points comprometidos. Quedaron en curso TS03 (prueba en producción), TS04 (enlaces de los call-to-action e inglés por defecto en la Landing Page), RNF15 (verificación de confirmaciones por vista) y RNF16 (medición con Lighthouse), que suman 7 SP y continúan como tareas de cierre en el tablero, fuera del compromiso del Sprint 3. Se identificó además que la recuperación de contraseña, el pago de la suscripción, el cálculo real de la proyección de demanda y la entrega de alertas dependen del RESTful API. |
+| **Sprint 2 Review Summary** | Se presentó la primera versión de la Web Application de StockIA en Angular CLI version 22.1.7, desplegada en Vercel y conectada a una API simulada en Render; se completaron 83 de los 90 Story Points comprometidos. Quedaron en curso TS03 (prueba en producción), TS04 (enlaces de los call-to-action e inglés por defecto en la Landing Page), RNF09 (verificación de confirmaciones por vista) y RNF03 (medición con Lighthouse), que suman 7 SP y continúan como tareas de cierre en el tablero, fuera del compromiso del Sprint 3. Se identificó además que la recuperación de contraseña, el pago de la suscripción, el cálculo real de la proyección de demanda y la entrega de alertas dependen del RESTful API. |
 | **Sprint 2 Retrospective Summary** | Funcionó: la organización por Bounded Context con rama `feature/*` y Pull Request por contexto (10 Pull Requests en `stockia-webapp`) y el despliegue encadenado de la API simulada y la Web Application. A mejorar: (1) casi todos los commits de los contextos se registraron el último día del Sprint (08/10/2026), por lo que se acordó hacer commits y Pull Requests diarios; (2) la carga quedó desbalanceada (uso de capacidad entre 37 % y 91 %), por lo que en este Sprint se reparten las tareas según la disponibilidad declarada; y (3) las tareas de verificación quedaron pendientes al cierre, por lo que se programan antes de la revisión. |
 | **Sprint Goal & User Stories** | |
 | **Sprint 3 Goal** | **Contexto:** Con la Web Application publicada sobre una API simulada, el equipo construye el backend real: que los datos del restaurante se guarden de forma persistente y segura, que cada venta descuente los insumos por receta en el servidor y que las alertas, la proyección de demanda y el dashboard se calculen a partir de esos datos.<br><br>**Sprint Goal:**<br>*"Our focus is on delivering the first working version of the StockIA RESTful API, organised by bounded context, secured with JWT and deployed with Docker and OpenAPI documentation. We believe it delivers to restaurant administrators reliable, persistent inventory, recipes, sales, alerts and demand forecasts that replace the mock API used so far. This will be confirmed when, in the deployed Swagger UI, an administrator can register a restaurant, sign in, create supply lots and recipes, register a sale that automatically deducts stock from the freshest usable lot, and consult the resulting alerts, the 7-day demand forecast, the dashboard and the subscription plans, with all data stored in the database."* |
-| **Sprint 3 Velocity** | 83 Story Points (completados en el Sprint 2, el más reciente). |
-| **Sum of Story Points** | 86 Story Points comprometidos en 19 ítems (14 US, 1 RNF y 4 TS) |
+| **Sprint 3 Velocity** | 83 Story Points (completados en el Sprint 2). |
+| **Sum of Story Points** | 50 Story Points comprometidos en 16 ítems (11 US, 1 RNF y 4 TS) |
 
-El compromiso del Sprint 3 (86 SP) se calculó a partir de la velocidad del Sprint 2: el equipo completó 83 SP y se mantiene la disponibilidad de 45 horas por integrante, por lo que la capacidad proyectada es 83 × 45 / 45 = 83 SP; se comprometieron 3 SP adicionales porque parte del trabajo (dominio, repositorios y controladores) sigue un patrón repetible entre contextos. Las 153.5 horas planificadas equivalen al 68 % de la capacidad disponible (225 horas); el margen restante cubre revisiones de Pull Request, ceremonias, pruebas de integración y la documentación del informe.
+El compromiso del Sprint 3 (50 SP) es la suma de los Story Points que el Product Backlog (sección 3.3) asigna a los 16 ítems del Sprint; se mantiene la disponibilidad de 45 horas por integrante. Las 153.5 horas planificadas equivalen al 68 % de la capacidad disponible (225 horas); el margen restante cubre revisiones de Pull Request, ceremonias, pruebas de integración y la documentación del informe.
+
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
@@ -4430,65 +4431,65 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** d
 
 | **User Story Id** | **Título de la Historia** | **Task Id** | **Título de la Tarea** | **Descripción de la Tarea** | **Est. (Hrs)** | **Asignado** | **Status** |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
-| **TS05** | Estructurar el RESTful API en Spring Boot por Bounded Context | T-TS05-1 | Crear el proyecto y los paquetes por contexto | Crear el proyecto Maven con Java 21 y Spring Boot 3.5 y un paquete por Bounded Context (`iam`, `restaurantregistration`, `subscriptionpayments`, `stockmanagement`, `recipesmanagement`, `notificationsmessaging`, `mlrecommendations`, `analyticsdashboard`) con las capas `domain`, `application`, `infrastructure` e `interfaces`. | 3 | Aldo | Done |
-|  |  | T-TS05-2 | Implementar el shared kernel | Crear `Quantity`, `Result`, los errores RFC 9457, los mensajes en inglés y español (`Accept-Language`), el contexto de seguridad, la convención snake_case y `GET /api/v1/health`. | 4 | Leyla | Done |
-| **TS06** | Documentar el RESTful API con OpenAPI | T-TS06-1 | Configurar springdoc-openapi y el esquema Bearer | Configurar la información del API, Swagger UI en `/swagger-ui.html`, el documento en `/v3/api-docs`, el esquema JWT y la agrupación de endpoints por Bounded Context. | 1.5 | Leyla | Done |
-|  |  | T-TS06-2 | Documentar controladores y resources | Anotar controladores y resources con resúmenes, códigos de respuesta y ejemplos de request y response. | 2 | Carla | In Progress |
-| **TS07** | Implementar la persistencia y los datos de demostración | T-TS07-1 | Configurar JPA, MySQL y los perfiles | Configurar Spring Data JPA con los perfiles `dev` (MySQL local con creación automática de `stockia_os`), `prod` (todo por variables de entorno) y `local` (H2 en memoria). | 2 | Aldo | Done |
-|  |  | T-TS07-2 | Implementar el sembrador de datos de demostración | Cargar en el primer arranque un restaurante demo con 10 lotes, 4 recetas, 120 días de ventas, alertas automáticas, un primer pronóstico y las cuentas de Administrador y Empleado. | 2 | Leyla | Done |
-| **TS08** | Desplegar el RESTful API | T-TS08-1 | Configurar el pipeline de integración continua | Crear el flujo de GitHub Actions que ejecuta `mvn verify` y la prueba de humo `tests/smoke/smoke_test.py` contra MySQL. | 2 | Aldo | Done |
-|  |  | T-TS08-2 | Contenerizar y publicar el API | Crear el Dockerfile y `docker compose` (MySQL y API), y publicar el API y la base de datos con el perfil `prod`, verificando el Swagger público y `/api/v1/health`. | 3 | Aldo | Done |
-|  |  | T-TS08-3 | Conectar la Web Application con el API | Cambiar `VITE_STOCKIA_API_URL` y las rutas `VITE_*_ENDPOINT_PATH` en Vercel y ajustar `STOCKIA_CORS_ALLOWED_ORIGINS` para el dominio de la Web Application. | 1.5 | Aldo | Done |
-| **US29** | Registrarme como nuevo usuario en StockIA | T-US29-1 | Modelar el registro del restaurante | Crear el aggregate `RestaurantRegistration` con el restaurante y su propietario Administrador, y su puerto de repositorio. | 3 | Ronal | Done |
-|  |  | T-US29-2 | Implementar el comando de registro | Validar el correo duplicado, crear el restaurante y la cuenta Administrador mediante la fachada ACL de IAM y cifrar la contraseña con BCrypt. | 3 | Ronal | Done |
-|  |  | T-US29-3 | Exponer el endpoint de registro | Crear `POST /api/v1/restaurant-registrations` con su resource y su transformador. | 2 | Ronal | Done |
-| **US30** | Iniciar sesión con mis credenciales | T-US30-1 | Implementar JWT y Spring Security | Generar y validar tokens HS256 con jjwt, configurar el filtro Bearer, las rutas públicas y el contexto de seguridad. | 3 | Ronal | Done |
-|  |  | T-US30-2 | Implementar el inicio de sesión y el bloqueo de cuenta | Responder `InvalidCredentials` con los intentos restantes y bloquear la cuenta 15 minutos tras 5 contraseñas incorrectas (`AccountLocked`). | 3 | Ronal | Done |
-|  |  | T-US30-3 | Implementar la recuperación de contraseña | Generar el token de restablecimiento, armar el enlace con `STOCKIA_WEB_APP_URL` y exponer los endpoints de `/api/v1/authentication`. | 3 | Ronal | Done |
-| **US24** | Configurar roles y permisos de los empleados | T-US24-1 | Implementar la gestión del equipo | Crear los comandos para invitar integrantes, cambiar su rol y darlos de baja. | 3 | Ronal | Done |
-|  |  | T-US24-2 | Aplicar las reglas de roles | Impedir la baja de la propia cuenta, mantener al menos un Administrador y restringir los endpoints administrativos al rol Administrador. | 2.5 | Ronal | Done |
-|  |  | T-US24-3 | Exponer los endpoints del equipo | Crear los endpoints de `/api/v1/users` para listar, invitar, cambiar rol y dar de baja. | 2 | Ronal | Done |
-| **RNF11** | Protección de credenciales y datos de pago | T-RNF11-1 | Proteger las credenciales | Cifrar las contraseñas con BCrypt, exigir un secreto JWT de al menos 32 caracteres desde `STOCKIA_JWT_SECRET` y restringir el CORS por variable de entorno. | 2 | Carla | Done |
-|  |  | T-RNF11-2 | Proteger los datos de pago | No almacenar números de tarjeta ni cuentas de PayPal; guardar solo la referencia del pago y los últimos 4 dígitos. | 2 | Ronal | In Progress |
-| **US40** | Actualizar mi perfil, los datos de mi restaurante y mi contraseña | T-US40-1 | Modelar el perfil del restaurante | Crear el aggregate del perfil del restaurante y su repositorio en Restaurant Registration. | 2 | Ronal | Done |
-|  |  | T-US40-2 | Implementar las actualizaciones | Crear los comandos para actualizar el perfil, el restaurante y la contraseña (verificando la contraseña actual). | 3 | Ronal | Done |
-|  |  | T-US40-3 | Exponer los endpoints de la cuenta | Crear `GET` y `PUT /api/v1/restaurants/current` y los endpoints de perfil y contraseña de `/api/v1/users`. | 2 | Ronal | Done |
-| **US21** | Gestionar el inventario de insumos (alta, baja y modificación) | T-US21-1 | Modelar el lote de insumo | Crear el aggregate `InventoryItem` como lote con fecha de vencimiento y cantidades exactas con `Quantity` (hasta 32 decimales). | 2.5 | Jesus | Done |
-|  |  | T-US21-2 | Implementar la persistencia del lote | Crear las entidades JPA, los mappers, el repositorio Spring Data y su adaptador. | 2 | Jesus | Done |
-|  |  | T-US21-3 | Implementar los servicios de comando y consulta | Crear el alta, la modificación, la baja y la consulta de lotes, y publicar `StockLevelChangedEvent` cuando cambia el stock. | 3 | Jesus | Done |
-|  |  | T-US21-4 | Exponer los endpoints de inventario | Crear el CRUD en `/api/v1/inventory-items` con sus resources y transformadores. | 3 | Jesus | Done |
-|  |  | T-US21-5 | Probar la cantidad y la asignación de lotes | Escribir pruebas unitarias de `Quantity` y de la asignación del lote más fresco utilizable, sin usar nunca uno vencido. | 2 | Aldo | Done |
-| **US36** | Calcular automáticamente la fecha límite de consumo de un insumo | T-US36-1 | Calcular la fecha límite al guardar | Calcular la fecha límite desde la vida útil registrada y marcar los lotes que vencen en 3 días o menos. | 2.5 | Jesus | Done |
-|  |  | T-US36-2 | Consultar los lotes por vencer | Crear la consulta de lotes próximos a vencer en `/api/v1/inventory-items`. | 2.5 | Jesus | Done |
-| **US22** | Vincular recetas al inventario con descuento automático de insumos | T-US22-1 | Modelar la receta y sus ingredientes | Crear `Recipe` con su precio y sus ingredientes vinculados al stock mediante la fachada ACL de Stock Management. | 2.5 | Jesus | Done |
-|  |  | T-US22-2 | Implementar el CRUD de recetas | Crear los servicios y los endpoints de `/api/v1/recipes`. | 3.5 | Jesus | Done |
-|  |  | T-US22-3 | Implementar el motor de descuento de insumos | Registrar la venta y descontar los insumos del lote más fresco utilizable en una sola transacción; responder `CannotSell` con los insumos que bloquean la venta. | 4 | Jesus | Done |
-| **US39** | Consultar el historial de ventas y anular ventas registradas por error | T-US39-1 | Modelar la venta y su repositorio | Crear el aggregate `Sale` con sus líneas, el estado Confirmada o Anulada y su repositorio. | 2 | Jesus | Done |
-|  |  | T-US39-2 | Consultar el historial e ingresos | Crear la consulta en `/api/v1/sales` con filtros por fecha y estado, el total por venta y los ingresos confirmados. | 2 | Jesus | Done |
-|  |  | T-US39-3 | Implementar la anulación de ventas | Cambiar la venta a Anulada sin eliminarla del historial. | 2 | Jesus | Done |
-| **US23** | Visualizar un dashboard operativo con alertas y métricas clave | T-US23-1 | Implementar la consulta de indicadores | Calcular insumos registrados, en estado bajo o crítico, por vencer y valor del inventario, consultando Stock Management mediante su fachada ACL. | 3 | Leyla | Done |
-|  |  | T-US23-2 | Implementar la calculadora de ahorro semanal | Calcular el ahorro semanal (Weekly Savings Calculator) a partir de las ventas y las pérdidas evitadas. | 3 | Leyla | Done |
-|  |  | T-US23-3 | Exponer los endpoints del dashboard | Crear `GET /api/v1/dashboard/summary` y `GET /api/v1/dashboard/weekly-savings`. | 2 | Leyla | Done |
-| **US27** | Recibir alertas de insumos por stock bajo o vencimiento próximo | T-US27-1 | Modelar la alerta | Crear el aggregate `Alert` con tipo, severidad, canal y canales entregados. | 2 | Leyla | Done |
-|  |  | T-US27-2 | Generar alertas desde los eventos de stock | Crear el manejador de `StockLevelChangedEvent` y la política de alertas automáticas. | 3 | Leyla | Done |
-|  |  | T-US27-3 | Exponer los endpoints de alertas | Crear los endpoints de `/api/v1/alerts` para alertas automáticas y manuales, con filtro por pendientes. | 3 | Leyla | Done |
-| **US41** | Atender las alertas operativas y asegurar su entrega por canal | T-US41-1 | Implementar la regla de canales requeridos | Exigir WhatsApp y correo en alertas críticas y el canal principal en las demás, mediante adaptadores de canal simulados. | 2 | Leyla | Done |
-|  |  | T-US41-2 | Implementar la atención y el reintento | Permitir atender una alerta solo si todos sus canales fueron entregados y reintentar el canal que falló. | 3 | Leyla | Done |
-| **US25** | Recibir predicción de demanda según históricos y clima | T-US25-1 | Modelar el pronóstico de demanda | Crear el aggregate `DemandForecast` con unidades proyectadas por plato y día, nivel de confianza y condición climática. | 2 | Aldo | Done |
-|  |  | T-US25-2 | Entrenar el modelo y exportarlo a ONNX | Entrenar el modelo con scikit-learn sobre el histórico de ventas y exportarlo a ONNX. | 4 | Aldo | Done |
-|  |  | T-US25-3 | Integrar ONNX Runtime y el calendario peruano | Calcular las características (día, feriados del calendario peruano) y la predicción a 7 días con ONNX Runtime for Java. | 4 | Aldo | Done |
-|  |  | T-US25-4 | Exponer los endpoints de pronóstico | Crear los endpoints de `/api/v1/demand-forecasts` y publicar `DemandForecastGeneratedEvent`. | 3 | Aldo | Done |
-|  |  | T-US25-5 | Probar la paridad del modelo | Escribir la prueba que verifica que las características y las predicciones del modelo en Java son iguales a las del pipeline de Python. | 2 | Aldo | Done |
-|  |  | T-US25-6 | Integrar el clima con Open-Meteo | Consultar el pronóstico del clima y usar la climatología de Lima cuando `STOCKIA_WEATHER_ENABLED` está apagado o el servicio no responde. | 3 | Aldo | Done |
-| **US26** | Recibir recomendaciones automáticas de ajuste de menú | T-US26-1 | Modelar la recomendación | Crear el aggregate `Recommendation` con tipo, mensaje, impacto esperado y estado aplicado. | 1.5 | Aldo | Done |
-|  |  | T-US26-2 | Generar recomendaciones de compra y de menú | Aplicar la política de recomendaciones sobre el pronóstico, el stock y la popularidad de los platos. | 4 | Aldo | Done |
-|  |  | T-US26-3 | Exponer los endpoints de recomendaciones | Crear los endpoints de `/api/v1/recommendations` para listar y aplicar recomendaciones. | 2.5 | Aldo | Done |
-| **US31** | Pagar o renovar mi suscripción con Stripe o PayPal | T-US31-1 | Modelar el plan y la suscripción | Crear los aggregates `Plan` y `Subscription` y el catálogo de planes con sus características traducibles. | 3 | Carla | Done |
-|  |  | T-US31-2 | Consultar los planes y la suscripción actual | Crear los endpoints de consulta en `/api/v1/plans` y `/api/v1/subscriptions`. | 2.5 | Carla | Done |
-|  |  | T-US31-3 | Implementar la elección y el cambio de plan | Crear los comandos y endpoints para elegir y cambiar el plan en `/api/v1/subscriptions`. | 3 | Carla | Done |
-|  |  | T-US31-4 | Implementar el checkout simulado de Stripe | Crear el adaptador de pago de Stripe simulado con su resultado exitoso y de error. | 3 | Carla | Done |
-|  |  | T-US31-5 | Implementar el checkout simulado de PayPal | Crear el adaptador de pago de PayPal simulado con su resultado exitoso y de error. | 2.5 | Carla | Done |
-|  |  | T-US31-6 | Registrar el pago, la renovación y los errores | Registrar el resultado del pago, actualizar la fecha de renovación y responder con el estado de la transacción, incluidos los errores del pago. | 2.5 | Carla | Done |
+| **TS11** | Estructurar el RESTful API en Spring Boot por Bounded Context | T-TS11-1 | Crear el proyecto y los paquetes por contexto | Crear el proyecto Maven con Java 21 y Spring Boot 3.5 y un paquete por Bounded Context (`iam`, `restaurantregistration`, `subscriptionpayments`, `stockmanagement`, `recipesmanagement`, `notificationsmessaging`, `mlrecommendations`, `analyticsdashboard`) con las capas `domain`, `application`, `infrastructure` e `interfaces`. | 3 | Aldo | Done |
+|  |  | T-TS11-2 | Implementar el shared kernel | Crear `Quantity`, `Result`, los errores RFC 9457, los mensajes en inglés y español (`Accept-Language`), el contexto de seguridad, la convención snake_case y `GET /api/v1/health`. | 4 | Leyla | Done |
+| **TS12** | Documentar el RESTful API con OpenAPI y Swagger UI | T-TS12-1 | Configurar springdoc-openapi y el esquema Bearer | Configurar la información del API, Swagger UI en `/swagger-ui.html`, el documento en `/v3/api-docs`, el esquema JWT y la agrupación de endpoints por Bounded Context. | 1.5 | Leyla | Done |
+|  |  | T-TS12-2 | Documentar controladores y resources | Anotar controladores y resources con resúmenes, códigos de respuesta y ejemplos de request y response. | 2 | Carla | In Progress |
+| **TS13** | Implementar la persistencia con Spring Data JPA y MySQL | T-TS13-1 | Configurar JPA, MySQL y los perfiles | Configurar Spring Data JPA con los perfiles `dev` (MySQL local con creación automática de `stockia_os`), `prod` (todo por variables de entorno) y `local` (H2 en memoria). | 2 | Aldo | Done |
+|  |  | T-TS13-2 | Implementar el sembrador de datos de demostración | Cargar en el primer arranque un restaurante demo con 10 lotes, 4 recetas, 120 días de ventas, alertas automáticas, un primer pronóstico y las cuentas de Administrador y Empleado. | 2 | Leyla | Done |
+| **TS14** | Desplegar el RESTful API con integración continua y Docker | T-TS14-1 | Configurar el pipeline de integración continua | Crear el flujo de GitHub Actions que ejecuta `mvn verify` y la prueba de humo `tests/smoke/smoke_test.py` contra MySQL. | 2 | Aldo | Done |
+|  |  | T-TS14-2 | Contenerizar y publicar el API | Crear el Dockerfile y `docker compose` (MySQL y API), y publicar el API y la base de datos con el perfil `prod`, verificando el Swagger público y `/api/v1/health`. | 3 | Aldo | Done |
+|  |  | T-TS14-3 | Conectar la Web Application con el API | Cambiar `VITE_STOCKIA_API_URL` y las rutas `VITE_*_ENDPOINT_PATH` en Vercel y ajustar `STOCKIA_CORS_ALLOWED_ORIGINS` para el dominio de la Web Application. | 1.5 | Aldo | Done |
+| **US09** | Registrar mi restaurante y crear mi cuenta de administrador | T-US09-1 | Modelar el registro del restaurante | Crear el aggregate `RestaurantRegistration` con el restaurante y su propietario Administrador, y su puerto de repositorio. | 3 | Ronal | Done |
+|  |  | T-US09-2 | Implementar el comando de registro | Validar el correo duplicado, crear el restaurante y la cuenta Administrador mediante la fachada ACL de IAM y cifrar la contraseña con BCrypt. | 3 | Ronal | Done |
+|  |  | T-US09-3 | Exponer el endpoint de registro | Crear `POST /api/v1/restaurant-registrations` con su resource y su transformador. | 2 | Ronal | Done |
+| **US10** | Iniciar sesión y mantener actualizada mi cuenta | T-US10-1 | Implementar JWT y Spring Security | Generar y validar tokens HS256 con jjwt, configurar el filtro Bearer, las rutas públicas y el contexto de seguridad. | 3 | Ronal | Done |
+|  |  | T-US10-2 | Implementar el inicio de sesión y el bloqueo de cuenta | Responder `InvalidCredentials` con los intentos restantes y bloquear la cuenta 15 minutos tras 5 contraseñas incorrectas (`AccountLocked`). | 3 | Ronal | Done |
+|  |  | T-US10-3 | Implementar la recuperación de contraseña | Generar el token de restablecimiento, armar el enlace con `STOCKIA_WEB_APP_URL` y exponer los endpoints de `/api/v1/authentication`. | 3 | Ronal | Done |
+|  |  | T-US10-4 | Modelar el perfil del restaurante | Crear el aggregate del perfil del restaurante y su repositorio en Restaurant Registration. | 2 | Ronal | Done |
+|  |  | T-US10-5 | Implementar las actualizaciones | Crear los comandos para actualizar el perfil, el restaurante y la contraseña (verificando la contraseña actual). | 3 | Ronal | Done |
+|  |  | T-US10-6 | Exponer los endpoints de la cuenta | Crear `GET` y `PUT /api/v1/restaurants/current` y los endpoints de perfil y contraseña de `/api/v1/users`. | 2 | Ronal | Done |
+| **US11** | Gestionar el equipo y sus roles | T-US11-1 | Implementar la gestión del equipo | Crear los comandos para invitar integrantes, cambiar su rol y darlos de baja. | 3 | Ronal | Done |
+|  |  | T-US11-2 | Aplicar las reglas de roles | Impedir la baja de la propia cuenta, mantener al menos un Administrador y restringir los endpoints administrativos al rol Administrador. | 2.5 | Ronal | Done |
+|  |  | T-US11-3 | Exponer los endpoints del equipo | Crear los endpoints de `/api/v1/users` para listar, invitar, cambiar rol y dar de baja. | 2 | Ronal | Done |
+| **RNF08** | Control de acceso por sesión y por rol en la Web Application | T-RNF08-1 | Proteger las credenciales | Cifrar las contraseñas con BCrypt, exigir un secreto JWT de al menos 32 caracteres desde `STOCKIA_JWT_SECRET` y restringir el CORS por variable de entorno. | 2 | Carla | Done |
+| **US12** | Registrar y monitorear los insumos del inventario | T-US12-1 | Modelar el lote de insumo | Crear el aggregate `InventoryItem` como lote con fecha de vencimiento y cantidades exactas con `Quantity` (hasta 32 decimales). | 2.5 | Jesus | Done |
+|  |  | T-US12-2 | Implementar la persistencia del lote | Crear las entidades JPA, los mappers, el repositorio Spring Data y su adaptador. | 2 | Jesus | Done |
+|  |  | T-US12-3 | Implementar los servicios de comando y consulta | Crear el alta, la modificación, la baja y la consulta de lotes, y publicar `StockLevelChangedEvent` cuando cambia el stock. | 3 | Jesus | Done |
+|  |  | T-US12-4 | Exponer los endpoints de inventario | Crear el CRUD en `/api/v1/inventory-items` con sus resources y transformadores. | 3 | Jesus | Done |
+|  |  | T-US12-5 | Probar la cantidad y la asignación de lotes | Escribir pruebas unitarias de `Quantity` y de la asignación del lote más fresco utilizable, sin usar nunca uno vencido. | 2 | Aldo | Done |
+|  |  | T-US12-6 | Calcular la fecha límite al guardar | Calcular la fecha límite desde la vida útil registrada y marcar los lotes que vencen en 3 días o menos. | 2.5 | Jesus | Done |
+|  |  | T-US12-7 | Consultar los lotes por vencer | Crear la consulta de lotes próximos a vencer en `/api/v1/inventory-items`. | 2.5 | Jesus | Done |
+| **US13** | Vincular recetas a los insumos del inventario | T-US13-1 | Modelar la receta y sus ingredientes | Crear `Recipe` con su precio y sus ingredientes vinculados al stock mediante la fachada ACL de Stock Management. | 2.5 | Jesus | Done |
+|  |  | T-US13-2 | Implementar el CRUD de recetas | Crear los servicios y los endpoints de `/api/v1/recipes`. | 3.5 | Jesus | Done |
+| **US14** | Registrar una venta con descuento automático de insumos | T-US14-1 | Implementar el motor de descuento de insumos | Registrar la venta y descontar los insumos del lote más fresco utilizable en una sola transacción; responder `CannotSell` con los insumos que bloquean la venta. | 4 | Jesus | Done |
+| **US15** | Consultar el historial de ventas y anular ventas erróneas | T-US15-1 | Modelar la venta y su repositorio | Crear el aggregate `Sale` con sus líneas, el estado Confirmada o Anulada y su repositorio. | 2 | Jesus | Done |
+|  |  | T-US15-2 | Consultar el historial e ingresos | Crear la consulta en `/api/v1/sales` con filtros por fecha y estado, el total por venta y los ingresos confirmados. | 2 | Jesus | Done |
+|  |  | T-US15-3 | Implementar la anulación de ventas | Cambiar la venta a Anulada sin eliminarla del historial. | 2 | Jesus | Done |
+| **US16** | Visualizar el resumen operativo en el dashboard | T-US16-1 | Implementar la consulta de indicadores | Calcular insumos registrados, en estado bajo o crítico, por vencer y valor del inventario, consultando Stock Management mediante su fachada ACL. | 3 | Leyla | Done |
+|  |  | T-US16-2 | Implementar la calculadora de ahorro semanal | Calcular el ahorro semanal (Weekly Savings Calculator) a partir de las ventas y las pérdidas evitadas. | 3 | Leyla | Done |
+|  |  | T-US16-3 | Exponer los endpoints del dashboard | Crear `GET /api/v1/dashboard/summary` y `GET /api/v1/dashboard/weekly-savings`. | 2 | Leyla | Done |
+| **US17** | Gestionar y entregar las alertas operativas | T-US17-1 | Modelar la alerta | Crear el aggregate `Alert` con tipo, severidad, canal y canales entregados. | 2 | Leyla | Done |
+|  |  | T-US17-2 | Generar alertas desde los eventos de stock | Crear el manejador de `StockLevelChangedEvent` y la política de alertas automáticas. | 3 | Leyla | Done |
+|  |  | T-US17-3 | Exponer los endpoints de alertas | Crear los endpoints de `/api/v1/alerts` para alertas automáticas y manuales, con filtro por pendientes. | 3 | Leyla | Done |
+|  |  | T-US17-4 | Implementar la regla de canales requeridos | Exigir WhatsApp y correo en alertas críticas y el canal principal en las demás, mediante adaptadores de canal simulados. | 2 | Leyla | Done |
+|  |  | T-US17-5 | Implementar la atención y el reintento | Permitir atender una alerta solo si todos sus canales fueron entregados y reintentar el canal que falló. | 3 | Leyla | Done |
+| **US18** | Anticipar la demanda y aplicar recomendaciones | T-US18-1 | Modelar el pronóstico de demanda | Crear el aggregate `DemandForecast` con unidades proyectadas por plato y día, nivel de confianza y condición climática. | 2 | Aldo | Done |
+|  |  | T-US18-2 | Entrenar el modelo y exportarlo a ONNX | Entrenar el modelo con scikit-learn sobre el histórico de ventas y exportarlo a ONNX. | 4 | Aldo | Done |
+|  |  | T-US18-3 | Integrar ONNX Runtime y el calendario peruano | Calcular las características (día, feriados del calendario peruano) y la predicción a 7 días con ONNX Runtime for Java. | 4 | Aldo | Done |
+|  |  | T-US18-4 | Exponer los endpoints de pronóstico | Crear los endpoints de `/api/v1/demand-forecasts` y publicar `DemandForecastGeneratedEvent`. | 3 | Aldo | Done |
+|  |  | T-US18-5 | Probar la paridad del modelo | Escribir la prueba que verifica que las características y las predicciones del modelo en Java son iguales a las del pipeline de Python. | 2 | Aldo | Done |
+|  |  | T-US18-6 | Integrar el clima con Open-Meteo | Consultar el pronóstico del clima y usar la climatología de Lima cuando `STOCKIA_WEATHER_ENABLED` está apagado o el servicio no responde. | 3 | Aldo | Done |
+|  |  | T-US18-7 | Modelar la recomendación | Crear el aggregate `Recommendation` con tipo, mensaje, impacto esperado y estado aplicado. | 1.5 | Aldo | Done |
+|  |  | T-US18-8 | Generar recomendaciones de compra y de menú | Aplicar la política de recomendaciones sobre el pronóstico, el stock y la popularidad de los platos. | 4 | Aldo | Done |
+|  |  | T-US18-9 | Exponer los endpoints de recomendaciones | Crear los endpoints de `/api/v1/recommendations` para listar y aplicar recomendaciones. | 2.5 | Aldo | Done |
+| **US19** | Elegir o cambiar el plan de suscripción | T-US19-1 | Proteger los datos de pago | No almacenar números de tarjeta ni cuentas de PayPal; guardar solo la referencia del pago y los últimos 4 dígitos. | 2 | Ronal | In Progress |
+|  |  | T-US19-2 | Modelar el plan y la suscripción | Crear los aggregates `Plan` y `Subscription` y el catálogo de planes con sus características traducibles. | 3 | Carla | Done |
+|  |  | T-US19-3 | Consultar los planes y la suscripción actual | Crear los endpoints de consulta en `/api/v1/plans` y `/api/v1/subscriptions`. | 2.5 | Carla | Done |
+|  |  | T-US19-4 | Implementar la elección y el cambio de plan | Crear los comandos y endpoints para elegir y cambiar el plan en `/api/v1/subscriptions`. | 3 | Carla | Done |
+|  |  | T-US19-5 | Implementar el checkout simulado de Stripe | Crear el adaptador de pago de Stripe simulado con su resultado exitoso y de error. | 3 | Carla | Done |
+|  |  | T-US19-6 | Implementar el checkout simulado de PayPal | Crear el adaptador de pago de PayPal simulado con su resultado exitoso y de error. | 2.5 | Carla | Done |
+|  |  | T-US19-7 | Registrar el pago, la renovación y los errores | Registrar el resultado del pago, actualizar la fecha de renovación y responder con el estado de la transacción, incluidos los errores del pago. | 2.5 | Carla | Done |
 | **TOTAL** | | | | **Esfuerzo total estimado para el Sprint** | **153.5** | | |
 
 **Capacidad del Sprint 3**
@@ -4506,7 +4507,7 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** d
 
 - **Total de horas:** 153.5 horas en 59 tareas.
 - **Distribución:** dos semanas, con una disponibilidad declarada de 45 horas por integrante; la capacidad libre cubre revisiones de Pull Request, ceremonias, pruebas de integración y la documentación del informe.
-- **Story Points:** 86 comprometidos; 82 completados al 12/11/2026. T-TS06-2 (anotar controladores con OpenAPI) y T-RNF11-2 (datos de pago) quedaron en proceso.
+- **Story Points:** 50 comprometidos; 46 Story Points completados al 12/11/2026. T-TS12-2 (anotar controladores con OpenAPI) y T-US19-1 (datos de pago) quedaron en proceso.
 - **Entregable principal:** RESTful API de StockIA en Spring Boot con persistencia en MySQL, autenticación JWT y documentación OpenAPI, desplegado con Docker y consumido por la Web Application.
 
 #### 5.2.3.4. Development Evidence for Sprint Review
@@ -4516,25 +4517,25 @@ En esta sección se presentan los avances de implementación del Sprint 3 median
 **Resumen de avances por producto**
 
 - **Web Services (`stockia-platform`):** se implementó el RESTful API en Java 21 y Spring Boot 3.5 con los ocho Bounded Contexts en sus cuatro capas y un shared kernel (`Quantity`, `Result`, problem details RFC 9457, i18n inglés/español, contexto de seguridad, nombres snake_case y sembrador de datos de demostración), persistencia con Spring Data JPA y MySQL 8 (H2 para pruebas y el perfil `local`), autenticación JWT con BCrypt, modelo de demanda en ONNX, documentación OpenAPI con springdoc, pruebas unitarias, de integración (`StockiaPlatformIntegrationTest`) y de humo, e integración continua con GitHub Actions. La versión actual es 1.0.0.
-- **Web Application (`stockia-webapp`):** se reemplazó la API simulada por el RESTful API cambiando `VITE_STOCKIA_API_URL` y las rutas `VITE_*_ENDPOINT_PATH` (T-TS08-3); la capa `infrastructure` de cada contexto absorbió el cambio sin modificar la capa de presentación.
+- **Web Application (`stockia-webapp`):** se reemplazó la API simulada por el RESTful API cambiando `VITE_STOCKIA_API_URL` y las rutas `VITE_*_ENDPOINT_PATH` (T-TS14-3); la capa `infrastructure` de cada contexto absorbió el cambio sin modificar la capa de presentación.
 - **Landing Page (`stockia-website`):** sin cambios de funcionalidad en este Sprint.
 
 **Distribución del código por Bounded Context**
 
 | **Bounded Context (Cap. IV)** | **Responsable** | **Paquete en el RESTful API** | **Rama y Pull Request** | **Ítems del Sprint Backlog 3** |
 | :--- | :--- | :--- | :--- | :--- |
-| IAM | Ronal | `iam` | `feature/iam` (integrada en `develop` sin PR) | US30, US24, RNF11 |
-| Restaurant Registration | Ronal | `restaurantregistration` | `feature/restaurantregistration` (integrada en `develop` sin PR) | US29, US40 |
-| Subscription & Payments | Carla | `subscriptionpayments` | `feature/subscription-payments-domain` (PR #8), `-persistence` (PR #9), `-application` (PR #10), `-rest-api` (PR #11) y `-acl` (PR #12) | US31, RNF11 |
-| Stock Management | Jesus | `stockmanagement` | `feature/Stockmanagement` (PR #6) | US21, US36 |
-| Recipes Management | Jesus | `recipesmanagement` | `feature/recipes-management` (PR #7) | US22, US39 |
-| ML & Recommendations | Aldo | `mlrecommendations` | `feature/ml-recommendations` (PR #2) | US25, US26 |
-| Notifications & Messaging | Leyla | `notificationsmessaging` | `feature/notifications-messaging` (PR #4) | US27, US41 |
-| Analytics & Dashboard | Leyla | `analyticsdashboard` | `feature/analytics-dashboard` (PR #5) | US23 |
-| Shared kernel | Leyla (mensajes i18n: Aldo) | `shared` | `feature/shared` (PR #3); mensajes en `feature/project-setup` (PR #1) | TS05 |
-| Persistencia y datos demo | Aldo (perfiles) y Leyla (sembrador) | `application.yml`, `shared` (seeder) | `feature/project-setup` (PR #1) y `feature/shared` (PR #3) | TS07 |
-| OpenAPI | Leyla | configuración de springdoc (`shared`) | `feature/shared` (PR #3) | TS06 |
-| Despliegue y pruebas | Aldo | `Dockerfile`, `docker-compose.yml`, `.github/workflows`, `tests` | `feature/project-setup` (PR #1), `feature/integration-tests` (PR #13) y `release/v1.0.0` (PR #14 y #15) | TS08 |
+| IAM | Ronal | `iam` | `feature/iam` (integrada en `develop` sin PR) | US10, US11, RNF08 |
+| Restaurant Registration | Ronal | `restaurantregistration` | `feature/restaurantregistration` (integrada en `develop` sin PR) | US09, US10 |
+| Subscription & Payments | Carla | `subscriptionpayments` | `feature/subscription-payments-domain` (PR #8), `-persistence` (PR #9), `-application` (PR #10), `-rest-api` (PR #11) y `-acl` (PR #12) | US19 |
+| Stock Management | Jesus | `stockmanagement` | `feature/Stockmanagement` (PR #6) | US12 |
+| Recipes Management | Jesus | `recipesmanagement` | `feature/recipes-management` (PR #7) | US13, US14, US15 |
+| ML & Recommendations | Aldo | `mlrecommendations` | `feature/ml-recommendations` (PR #2) | US18 |
+| Notifications & Messaging | Leyla | `notificationsmessaging` | `feature/notifications-messaging` (PR #4) | US17 |
+| Analytics & Dashboard | Leyla | `analyticsdashboard` | `feature/analytics-dashboard` (PR #5) | US16 |
+| Shared kernel | Leyla (mensajes i18n: Aldo) | `shared` | `feature/shared` (PR #3); mensajes en `feature/project-setup` (PR #1) | TS11 |
+| Persistencia y datos demo | Aldo (perfiles) y Leyla (sembrador) | `application.yml`, `shared` (seeder) | `feature/project-setup` (PR #1) y `feature/shared` (PR #3) | TS13 |
+| OpenAPI | Leyla | configuración de springdoc (`shared`) | `feature/shared` (PR #3) | TS12 |
+| Despliegue y pruebas | Aldo | `Dockerfile`, `docker-compose.yml`, `.github/workflows`, `tests` | `feature/project-setup` (PR #1), `feature/integration-tests` (PR #13) y `release/v1.0.0` (PR #14 y #15) | TS14 |
 
 **Repositorio del RESTful API (`stockia-platform-api`)**
 
@@ -4542,332 +4543,332 @@ En esta sección se presentan los avances de implementación del Sprint 3 median
 
 | **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| stockia-platform | feature/project-setup | `9aca647` | docs: add the project README | TS05 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/project-setup | `be6cfbe` | build: add the Maven project with Spring Boot 3.5.7 and Java 21 | TS05 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/project-setup | `049f271` | build: add the multi-stage Dockerfile | TS08 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/project-setup | `76f8f44` | build: add docker-compose with the API and MySQL | TS08 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/project-setup | `6a229ef` | docs: add the README with setup, endpoints and GitFlow | TS05 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/project-setup | `6f34f07` | chore: add the gitignore for Maven, IDEs and OS files | TS05 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/project-setup | `9141f5d` | feat: add the Spring Boot application entry point | TS05 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/project-setup | `819cd99` | chore(config): add the common application properties | TS07 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/project-setup | `e3339d5` | chore(config): add the dev profile with local MySQL | TS07 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/project-setup | `5e34f8c` | chore(config): add the local profile with in-memory H2 | TS07 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/project-setup | `ca69355` | chore(config): add the prod profile with environment variables | TS07 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/project-setup | `bcd940b` | feat(i18n): add the English messages | TS05 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/project-setup | `7ce041c` | feat(i18n): add the Latin American Spanish messages | TS05 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/project-setup | `7f5403d` | test: add the test profile with in-memory H2 | TS07 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/project-setup | `9aca647` | docs: add the project README | TS11 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/project-setup | `be6cfbe` | build: add the Maven project with Spring Boot 3.5.7 and Java 21 | TS11 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/project-setup | `049f271` | build: add the multi-stage Dockerfile | TS14 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/project-setup | `76f8f44` | build: add docker-compose with the API and MySQL | TS14 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/project-setup | `6a229ef` | docs: add the README with setup, endpoints and GitFlow | TS11 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/project-setup | `6f34f07` | chore: add the gitignore for Maven, IDEs and OS files | TS11 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/project-setup | `9141f5d` | feat: add the Spring Boot application entry point | TS11 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/project-setup | `819cd99` | chore(config): add the common application properties | TS13 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/project-setup | `e3339d5` | chore(config): add the dev profile with local MySQL | TS13 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/project-setup | `5e34f8c` | chore(config): add the local profile with in-memory H2 | TS13 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/project-setup | `ca69355` | chore(config): add the prod profile with environment variables | TS13 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/project-setup | `bcd940b` | feat(i18n): add the English messages | TS11 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/project-setup | `7ce041c` | feat(i18n): add the Latin American Spanish messages | TS11 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/project-setup | `7f5403d` | test: add the test profile with in-memory H2 | TS13 (Aldo) | 07/11/2026 |
 | stockia-platform | develop | `8aa005f` | Merge pull request #1 from upc-pre-202602-1ASI0729-7747-databit/feature/project-setup | Integración revisada de `feature/project-setup` en `develop` (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `d5155d4` | feat(ml-recommendations): add the DailyWeather value object | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `2fc9ed9` | feat(ml-recommendations): add the DishPlan value object | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `70f08e9` | feat(ml-recommendations): add the ForecastMethod value object | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `fcf1a79` | feat(ml-recommendations): add the IngredientNeed value object | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `de3398f` | feat(ml-recommendations): add the LocalizedMessage value object | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `a91c1dc` | feat(ml-recommendations): add the ProductStock value object | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `e43a4a8` | feat(ml-recommendations): add the RecommendationProposal value object | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `36846c3` | feat(ml-recommendations): add the RecommendationType value object | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `19f03be` | feat(ml-recommendations): add the ForecastDataPoint entity | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `1cc4771` | feat(ml-recommendations): add the DemandForecastGeneratedEvent domain event | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `f3e4fd0` | feat(ml-recommendations): add the DemandForecast aggregate | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `561f0c6` | feat(ml-recommendations): add the Recommendation aggregate | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `efdc71b` | feat(ml-recommendations): add the DemandForecastRepository port | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `5140ce9` | feat(ml-recommendations): add the RecommendationRepository port | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `4a7b8ab` | feat(ml-recommendations): add the DemandFeatureBuilder domain service | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `848a989` | feat(ml-recommendations): add the PeruCalendar domain service | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `2b10929` | feat(ml-recommendations): add the RecommendationPolicy domain service | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `9975bb3` | feat(ml-recommendations): add the WeatherConditionClassifier domain service | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `bdde86d` | feat(ml-recommendations): add the ApplyRecommendationCommand | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `013ee5c` | feat(ml-recommendations): add the GenerateDemandForecastCommand | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `753e90a` | feat(ml-recommendations): add the GenerateRecommendationsCommand | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `ba935df` | feat(ml-recommendations): add the GetDemandForecastsByRestaurantIdQuery | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `f6bdc0c` | feat(ml-recommendations): add the GetLatestDemandForecastQuery | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `ccdd547` | feat(ml-recommendations): add the GetRecommendationsByRestaurantIdQuery | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `7b74593` | feat(ml-recommendations): add the DemandForecastCommandService contract | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `c2f646e` | feat(ml-recommendations): add the MlRecommendationsError failure types | US25, US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `5175829` | feat(ml-recommendations): add the RecommendationCommandService contract | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `870c7e8` | feat(ml-recommendations): add the DemandForecastQueryService contract | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `b13ec74` | feat(ml-recommendations): add the RecommendationQueryService contract | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `8690a2e` | feat(ml-recommendations): add the DemandModel outbound port | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `2ea0b42` | feat(ml-recommendations): add the DemandModelInfo | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `fc02f4d` | feat(ml-recommendations): add the WeatherForecastService outbound port | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `b4ee4d4` | feat(ml-recommendations): add the ExternalOperationsService anti-corruption layer | US25, US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `bd6f755` | feat(ml-recommendations): implement DemandForecastCommandService | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `574b64f` | feat(ml-recommendations): implement RecommendationCommandService | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `b5c2305` | feat(ml-recommendations): implement DemandForecastQueryService | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `a7c07e7` | feat(ml-recommendations): implement RecommendationQueryService | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `e9558c5` | feat(ml-recommendations): add the DemandForecastGeneratedEventHandler | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `6934314` | feat(ml-recommendations): implement the MlRecommendationsContextFacade | US25, US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `8109f32` | feat(ml-recommendations): add the OnnxDemandModel adapter | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `bde4a0c` | feat(ml-recommendations): add the DemandForecastRepository Spring Data repository | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `e641fb5` | feat(ml-recommendations): add the RecommendationRepository Spring Data repository | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `ab3ec7c` | feat(ml-recommendations): add the DemandForecastRepositoryAdapter | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `e3a0877` | feat(ml-recommendations): add the RecommendationRepositoryAdapter | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `86851b2` | feat(ml-recommendations): add the DemandForecastJpaEntity JPA entity | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `2776b54` | feat(ml-recommendations): add the ForecastDataPointEmbeddable | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `5d7ebec` | feat(ml-recommendations): add the RecommendationJpaEntity JPA entity | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `5a14eb8` | feat(ml-recommendations): add the MlPersistenceMapper | US25, US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `0506fbe` | feat(ml-recommendations): add the LimaClimatology | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `1b4bb1d` | feat(ml-recommendations): add the OpenMeteoWeatherService | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `07b71b0` | feat(ml-recommendations): add the MlRecommendationsContextFacade contract | US25, US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `06edc08` | feat(ml-recommendations): add the DemandForecastResource | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `b7cabe4` | feat(ml-recommendations): add the DemandModelResource | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `b934994` | feat(ml-recommendations): add the DishUnitsResource | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `b6ddc42` | feat(ml-recommendations): add the ForecastDayResource | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `a2577a9` | feat(ml-recommendations): add the GenerateDemandForecastResource | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `50d5f65` | feat(ml-recommendations): add the RecommendationResource | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `0f3197f` | feat(ml-recommendations): add the DemandForecastResourceMapper | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `5d28928` | feat(ml-recommendations): add the MlRecommendationsHttpResponseMapper | US25, US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `c4dc0e9` | feat(ml-recommendations): add the DemandForecastsController | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `8fdb28d` | feat(ml-recommendations): add the RecommendationsController | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `6f1547e` | feat(ml-recommendations): add the demand model metadata | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `d5bd450` | feat(ml-recommendations): add the ONNX demand forecasting model | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `30e16d9` | test(ml-recommendations): add the model parity fixture | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `ef1688e` | test(ml-recommendations): add the PeruCalendarTest | US25 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `11d3c54` | test(ml-recommendations): add the RecommendationPolicyTest | US26 (Aldo) | 07/11/2026 |
-| stockia-platform | feature/ml-recommendations | `d9ea344` | test(ml-recommendations): add the DemandModelParityTest | US25 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `d5155d4` | feat(ml-recommendations): add the DailyWeather value object | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `2fc9ed9` | feat(ml-recommendations): add the DishPlan value object | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `70f08e9` | feat(ml-recommendations): add the ForecastMethod value object | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `fcf1a79` | feat(ml-recommendations): add the IngredientNeed value object | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `de3398f` | feat(ml-recommendations): add the LocalizedMessage value object | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `a91c1dc` | feat(ml-recommendations): add the ProductStock value object | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `e43a4a8` | feat(ml-recommendations): add the RecommendationProposal value object | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `36846c3` | feat(ml-recommendations): add the RecommendationType value object | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `19f03be` | feat(ml-recommendations): add the ForecastDataPoint entity | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `1cc4771` | feat(ml-recommendations): add the DemandForecastGeneratedEvent domain event | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `f3e4fd0` | feat(ml-recommendations): add the DemandForecast aggregate | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `561f0c6` | feat(ml-recommendations): add the Recommendation aggregate | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `efdc71b` | feat(ml-recommendations): add the DemandForecastRepository port | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `5140ce9` | feat(ml-recommendations): add the RecommendationRepository port | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `4a7b8ab` | feat(ml-recommendations): add the DemandFeatureBuilder domain service | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `848a989` | feat(ml-recommendations): add the PeruCalendar domain service | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `2b10929` | feat(ml-recommendations): add the RecommendationPolicy domain service | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `9975bb3` | feat(ml-recommendations): add the WeatherConditionClassifier domain service | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `bdde86d` | feat(ml-recommendations): add the ApplyRecommendationCommand | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `013ee5c` | feat(ml-recommendations): add the GenerateDemandForecastCommand | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `753e90a` | feat(ml-recommendations): add the GenerateRecommendationsCommand | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `ba935df` | feat(ml-recommendations): add the GetDemandForecastsByRestaurantIdQuery | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `f6bdc0c` | feat(ml-recommendations): add the GetLatestDemandForecastQuery | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `ccdd547` | feat(ml-recommendations): add the GetRecommendationsByRestaurantIdQuery | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `7b74593` | feat(ml-recommendations): add the DemandForecastCommandService contract | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `c2f646e` | feat(ml-recommendations): add the MlRecommendationsError failure types | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `5175829` | feat(ml-recommendations): add the RecommendationCommandService contract | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `870c7e8` | feat(ml-recommendations): add the DemandForecastQueryService contract | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `b13ec74` | feat(ml-recommendations): add the RecommendationQueryService contract | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `8690a2e` | feat(ml-recommendations): add the DemandModel outbound port | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `2ea0b42` | feat(ml-recommendations): add the DemandModelInfo | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `fc02f4d` | feat(ml-recommendations): add the WeatherForecastService outbound port | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `b4ee4d4` | feat(ml-recommendations): add the ExternalOperationsService anti-corruption layer | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `bd6f755` | feat(ml-recommendations): implement DemandForecastCommandService | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `574b64f` | feat(ml-recommendations): implement RecommendationCommandService | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `b5c2305` | feat(ml-recommendations): implement DemandForecastQueryService | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `a7c07e7` | feat(ml-recommendations): implement RecommendationQueryService | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `e9558c5` | feat(ml-recommendations): add the DemandForecastGeneratedEventHandler | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `6934314` | feat(ml-recommendations): implement the MlRecommendationsContextFacade | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `8109f32` | feat(ml-recommendations): add the OnnxDemandModel adapter | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `bde4a0c` | feat(ml-recommendations): add the DemandForecastRepository Spring Data repository | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `e641fb5` | feat(ml-recommendations): add the RecommendationRepository Spring Data repository | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `ab3ec7c` | feat(ml-recommendations): add the DemandForecastRepositoryAdapter | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `e3a0877` | feat(ml-recommendations): add the RecommendationRepositoryAdapter | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `86851b2` | feat(ml-recommendations): add the DemandForecastJpaEntity JPA entity | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `2776b54` | feat(ml-recommendations): add the ForecastDataPointEmbeddable | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `5d7ebec` | feat(ml-recommendations): add the RecommendationJpaEntity JPA entity | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `5a14eb8` | feat(ml-recommendations): add the MlPersistenceMapper | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `0506fbe` | feat(ml-recommendations): add the LimaClimatology | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `1b4bb1d` | feat(ml-recommendations): add the OpenMeteoWeatherService | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `07b71b0` | feat(ml-recommendations): add the MlRecommendationsContextFacade contract | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `06edc08` | feat(ml-recommendations): add the DemandForecastResource | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `b7cabe4` | feat(ml-recommendations): add the DemandModelResource | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `b934994` | feat(ml-recommendations): add the DishUnitsResource | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `b6ddc42` | feat(ml-recommendations): add the ForecastDayResource | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `a2577a9` | feat(ml-recommendations): add the GenerateDemandForecastResource | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `50d5f65` | feat(ml-recommendations): add the RecommendationResource | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `0f3197f` | feat(ml-recommendations): add the DemandForecastResourceMapper | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `5d28928` | feat(ml-recommendations): add the MlRecommendationsHttpResponseMapper | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `c4dc0e9` | feat(ml-recommendations): add the DemandForecastsController | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `8fdb28d` | feat(ml-recommendations): add the RecommendationsController | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `6f1547e` | feat(ml-recommendations): add the demand model metadata | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `d5bd450` | feat(ml-recommendations): add the ONNX demand forecasting model | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `30e16d9` | test(ml-recommendations): add the model parity fixture | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `ef1688e` | test(ml-recommendations): add the PeruCalendarTest | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `11d3c54` | test(ml-recommendations): add the RecommendationPolicyTest | US18 (Aldo) | 07/11/2026 |
+| stockia-platform | feature/ml-recommendations | `d9ea344` | test(ml-recommendations): add the DemandModelParityTest | US18 (Aldo) | 07/11/2026 |
 | stockia-platform | develop | `41595f5` | Merge pull request #2 from upc-pre-202602-1ASI0729-7747-databit/feature/ml-recommendations | Integración revisada de `feature/ml-recommendations` en `develop` (Aldo) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `716fb6a` | feat(notifications-messaging): add value object AlertChannel | US41 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `7db90bf` | feat(notifications-messaging): add value object AlertType | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `b44f40d` | feat(notifications-messaging): add value object AlertSeverity | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `5a9ae12` | feat(notifications-messaging): add value object AlertProposal | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `a30dd27` | feat(shared): add value object EnumCodes | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `d0522f0` | feat(shared): add value object Quantity | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `410caf8` | feat(shared): add value object Money | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `f9a2346` | feat(shared): add event DomainEvent | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `fe005d2` | feat(shared): add aggregate AbstractDomainAggregateRoot | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `8b2edaa` | feat(shared): add OpenApi Configuration | TS06 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `c0a7b33` | feat(shared): add Web Configuration | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `67bb413` | feat(shared): add AuditableJpaEntity | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `bfb3de7` | feat(shared): add SnakeCasePhysicalNamingStrategy | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `4f81ce0` | feat(shared): add QuantityAttributeConverter | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `dec5224` | feat(shared): add StringListAttributeConverter | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `137a802` | feat(shared): add QuantityJacksonModule | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `19673a8` | feat(shared): add TimeConfiguration | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `7b36c46` | feat(shared): add ZonedRestaurantClock | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `476546d` | feat(shared): add HealthResource | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `e6ed113` | feat(shared): add ProblemDetails | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `e86001c` | feat(shared): add ApplicationError | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `e11d0b0` | feat(shared): add CommandFailure | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `a872b40` | feat(shared): add LocalizedText | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `f406868` | feat(shared): add Result | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `439aa16` | feat(shared): add AuthenticatedUser | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `2bd0adf` | feat(shared): add CurrentUserProvider | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `4c69b32` | feat(shared): add ApplicationReadiness | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `d98b84c` | feat(shared): add RestaurantClock | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `e5f969c` | feat(shared): add TransactionRollback | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `50c3809` | feat(shared): add SecurityContextCurrentUserProvider | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `fa5af2e` | feat(shared): add CommandResultHttpResponseMapper | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `dcfd2e3` | feat(shared): add GlobalExceptionHandler | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `684f718` | feat(shared): add HealthController | TS05 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/shared | `e988cd3` | feat(shared): add DemoDataSeeder | TS07 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `8238f57` | feat(notifications-messaging): add StockSnapshot value object | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `0648f13` | feat(notifications-messaging): add Alert aggregate | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `de356d0` | feat(notifications-messaging): add AlertRepository | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `6bbc0c1` | feat(notifications-messaging): add InventoryAlertPolicy | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `6dad0d0` | feat(notifications-messaging): add NotificationsMessagingContextFacade | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `3cecedf` | feat(notifications-messaging): add AlertResource | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `2a93f68` | feat(notifications-messaging): add SaveAlertResource | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `95da84b` | feat(notifications-messaging): add AcknowledgeAlertCommand | US41 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `a64e95a` | feat(notifications-messaging): add CreateAlertCommand | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `16ae640` | feat(notifications-messaging): add DeleteAlertCommand | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `0549d9b` | feat(notifications-messaging): add EvaluateInventoryAlertsCommand | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `44a18b1` | feat(notifications-messaging): add RetryAlertDeliveryCommand | US41 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `ebb50c3` | feat(notifications-messaging): add UpdateAlertCommand | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `52955f4` | feat(notifications-messaging): add AlertCommandService | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `ce28013` | feat(notifications-messaging): add NotificationsMessagingError | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `9b5f86f` | feat(notifications-messaging): add GetAlertsByRestaurantIdQuery | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `f03bf9f` | feat(notifications-messaging): add AlertQueryService | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `13d8579` | feat(notifications-messaging): add AlertMessageResolver | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `83174ab` | feat(notifications-messaging): add NotificationSender | US41 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `ca8d3ac` | feat(notifications-messaging): add AlertCommandServiceImpl | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `c1ed777` | feat(notifications-messaging): add AlertQueryServiceImpl | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `395e612` | feat(notifications-messaging): add StockLevelChangedEventHandler | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `8c92d7e` | feat(notifications-messaging): add NotificationsMessagingContextFacadeImpl | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `05d1ec0` | feat(notifications-messaging): add NotificationsMessagingHttpResponseMapper | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `e59ea52` | feat(notifications-messaging): add AlertResourceMapper | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `41b1bd0` | feat(notifications-messaging): add AlertsController | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `eb59a44` | feat(notifications-messaging): add SimulatedNotificationSender | US41 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `39394d7` | feat(notifications-messaging): add InventoryAlertSweepJob | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `3fc23f4` | feat(notifications-messaging): add AlertJpaEntity | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `0265a68` | feat(notifications-messaging): add AlertPersistenceMapper | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `72532d2` | feat(notifications-messaging): add AlertRepository | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `0d105f7` | feat(notifications-messaging): add AlertRepositoryAdapter | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/notifications-messaging | `5737d82` | feat(notifications-messaging): update AlertRepository | US27 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `77d592e` | feat(recipesmanagement): add Recipe | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `04f3e25` | feat(recipesmanagement): add Sale | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `136453e` | feat(recipesmanagement): add SaleLineItem | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `bf90d0f` | feat(recipesmanagement): add RecipeIngredient | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `016a197` | feat(recipesmanagement): add SaleChannel | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `00a01a1` | feat(recipesmanagement): add SaleStatus | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `9a8f4f3` | feat(recipesmanagement): add SaleRepository | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `4a09fef` | feat(recipesmanagement): add RecipeRepository | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `b5b8797` | feat(recipesmanagement): add RecipesManagementContextFacadeImpl | US22, US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `4c1b9de` | feat(recipesmanagement): add CreateRecipeCommand | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `e38d8c0` | feat(recipesmanagement): add DeleteRecipeCommand | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `d0ac583` | feat(recipesmanagement): add ExternalStockService | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `77f453c` | feat(recipesmanagement): add GetRecipeByIdQuery | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `04c00fc` | feat(recipesmanagement): add GetRecipesByRestaurantIdQuery | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `c41bc2d` | feat(recipesmanagement): add GetSaleByIdQuery | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `ab87870` | feat(recipesmanagement): add GetSalesByRestaurantIdQuery | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `6ddf263` | feat(recipesmanagement): add RecipeCommandMapper | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `f79f734` | feat(recipesmanagement): add RecipeCommandService | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `61e332a` | feat(recipesmanagement): add RecipeCommandServiceImpl | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `40d1546` | feat(recipesmanagement): add RecipeIngredientData | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `6cc80f6` | feat(recipesmanagement): add RecipeIngredientEmbeddable | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `4916309` | feat(recipesmanagement): add RecipeIngredientResource | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `df50b66` | feat(recipesmanagement): add RecipeJpaEntity | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `e805caa` | feat(recipesmanagement): add RecipePersistenceMapper | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `363ceaf` | feat(recipesmanagement): add RecipeQueryService | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `8ee1489` | feat(recipesmanagement): add RecipeQueryServicelmpl | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `f8e1491` | feat(recipesmanagement): add RecipesManagementError | US22, US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `23fb82a` | feat(recipesmanagement): add RegisterSaleCommand | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `d1c96b8` | feat(recipesmanagement): add SaleCommandService | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `9f3b295` | feat(recipesmanagement): add SaleCommandServiceImpl | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `746b3b5` | feat(recipesmanagement): add SaleQueryServiceImpl | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `d5ee271` | feat(recipesmanagement): add UpdateRecipeCommand | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `6966ee9` | feat(recipesmanagement): add VoidSaleCommand | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `b4a36e8` | feat(recipesmanagement): add RecipeRepository | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `cdfb54c` | feat(recipesmanagement): add RecipeRepositoryAdapter | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `13a72b9` | feat(recipesmanagement): add RecipeResource | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `b16743c` | feat(recipesmanagement): add RecipeResourceMapper | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `e170d4b` | feat(recipesmanagement): add RecipesController | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `44d64f8` | feat(recipesmanagement): add RecipesManagementContextFacade | US22, US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `75b9429` | feat(recipesmanagement): add RecipesManagementHttpResponseMapper | US22, US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `10ca979` | feat(recipesmanagement): add RegisterSaleResource | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `94c676a` | feat(recipesmanagement): add SaleJpaEntity | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `f4943d2` | feat(recipesmanagement): add SaleLineItemEmbeddable | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `6a5d25d` | feat(recipesmanagement): add SaleLineItemResource | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `64ef599` | feat(recipesmanagement): add SalePersistenceMapper | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `32f7be4` | feat(recipesmanagement): add SaleQueryService | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `370b10b` | feat(recipesmanagement): add SaleRepository | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `ade58df` | feat(recipesmanagement): add SaleRepositoryAdapter | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `875b548` | feat(recipesmanagement): add SaleResource | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `f488c65` | feat(recipesmanagement): add SaleResourceMapper | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `fd19276` | feat(recipesmanagement): add SalesController | US39 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `d22e08f` | feat(recipesmanagement): add SaveRecipeIngredientResource | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/recipes-management | `269d2aa` | feat(recipesmanagement): add SaveRecipeRecipeResource | US22 (Jesus) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `4e3ff18` | feat(analytics-dashboard): add value object ConsumptionEntry | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `9187c41` | feat(analytics-dashboard): add value object DashboardSummary | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `60a47e8` | feat(analytics-dashboard): add value object LotSnapshot | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `da12765` | feat(analytics-dashboard): add value object SalesTotals | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `5f9b0a1` | feat(analytics-dashboard): add value object SavingsLine | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `ada7846` | feat(analytics-dashboard): add value object WeeklySavings | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `ef15c85` | feat(analytics-dashboard): add value object WeeklySavingsCalculator | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `22a9c2f` | feat(analytics-dashboard): update WeeklySavingsCalculator | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `85ea4f2` | feat(analytics-dashboard): update GetDashboardSummaryQuery | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `db2cbc0` | feat(analytics-dashboard): add GetWeeklySavingsQuery | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `c789c34` | feat(analytics-dashboard): add DashboardQueryService | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `9e8a546` | feat(analytics-dashboard): add DashboardQueryServiceImpl | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `a360f25` | feat(analytics-dashboard): add DashboardSummaryResource | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `bb3e4be` | feat(analytics-dashboard): add SavingsLineResource | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `b1450d3` | feat(analytics-dashboard): add WeeklySavingsResource | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `0f089f4` | feat(analytics-dashboard): add DashboardResourceMapper | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/analytics-dashboard | `00acaf3` | feat(analytics-dashboard): add DashboardController | US23 (Leyla) | 07/11/2026 |
-| stockia-platform | feature/iam | `cbc1207` | feat(iam): add the user value objects in  domain model | US30, US24 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/iam | `11224fe` | feat(iam): add the user aggregate domain model | US30, US24 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/iam | `12605c6` | feat(iam): add the user repository port and domain services | US30, US24 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/notifications-messaging | `716fb6a` | feat(notifications-messaging): add value object AlertChannel | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `7db90bf` | feat(notifications-messaging): add value object AlertType | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `b44f40d` | feat(notifications-messaging): add value object AlertSeverity | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `5a9ae12` | feat(notifications-messaging): add value object AlertProposal | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `a30dd27` | feat(shared): add value object EnumCodes | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `d0522f0` | feat(shared): add value object Quantity | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `410caf8` | feat(shared): add value object Money | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `f9a2346` | feat(shared): add event DomainEvent | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `fe005d2` | feat(shared): add aggregate AbstractDomainAggregateRoot | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `8b2edaa` | feat(shared): add OpenApi Configuration | TS12 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `c0a7b33` | feat(shared): add Web Configuration | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `67bb413` | feat(shared): add AuditableJpaEntity | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `bfb3de7` | feat(shared): add SnakeCasePhysicalNamingStrategy | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `4f81ce0` | feat(shared): add QuantityAttributeConverter | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `dec5224` | feat(shared): add StringListAttributeConverter | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `137a802` | feat(shared): add QuantityJacksonModule | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `19673a8` | feat(shared): add TimeConfiguration | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `7b36c46` | feat(shared): add ZonedRestaurantClock | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `476546d` | feat(shared): add HealthResource | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `e6ed113` | feat(shared): add ProblemDetails | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `e86001c` | feat(shared): add ApplicationError | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `e11d0b0` | feat(shared): add CommandFailure | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `a872b40` | feat(shared): add LocalizedText | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `f406868` | feat(shared): add Result | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `439aa16` | feat(shared): add AuthenticatedUser | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `2bd0adf` | feat(shared): add CurrentUserProvider | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `4c69b32` | feat(shared): add ApplicationReadiness | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `d98b84c` | feat(shared): add RestaurantClock | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `e5f969c` | feat(shared): add TransactionRollback | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `50c3809` | feat(shared): add SecurityContextCurrentUserProvider | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `fa5af2e` | feat(shared): add CommandResultHttpResponseMapper | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `dcfd2e3` | feat(shared): add GlobalExceptionHandler | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `684f718` | feat(shared): add HealthController | TS11 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/shared | `e988cd3` | feat(shared): add DemoDataSeeder | TS13 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `8238f57` | feat(notifications-messaging): add StockSnapshot value object | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `0648f13` | feat(notifications-messaging): add Alert aggregate | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `de356d0` | feat(notifications-messaging): add AlertRepository | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `6bbc0c1` | feat(notifications-messaging): add InventoryAlertPolicy | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `6dad0d0` | feat(notifications-messaging): add NotificationsMessagingContextFacade | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `3cecedf` | feat(notifications-messaging): add AlertResource | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `2a93f68` | feat(notifications-messaging): add SaveAlertResource | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `95da84b` | feat(notifications-messaging): add AcknowledgeAlertCommand | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `a64e95a` | feat(notifications-messaging): add CreateAlertCommand | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `16ae640` | feat(notifications-messaging): add DeleteAlertCommand | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `0549d9b` | feat(notifications-messaging): add EvaluateInventoryAlertsCommand | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `44a18b1` | feat(notifications-messaging): add RetryAlertDeliveryCommand | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `ebb50c3` | feat(notifications-messaging): add UpdateAlertCommand | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `52955f4` | feat(notifications-messaging): add AlertCommandService | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `ce28013` | feat(notifications-messaging): add NotificationsMessagingError | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `9b5f86f` | feat(notifications-messaging): add GetAlertsByRestaurantIdQuery | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `f03bf9f` | feat(notifications-messaging): add AlertQueryService | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `13d8579` | feat(notifications-messaging): add AlertMessageResolver | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `83174ab` | feat(notifications-messaging): add NotificationSender | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `ca8d3ac` | feat(notifications-messaging): add AlertCommandServiceImpl | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `c1ed777` | feat(notifications-messaging): add AlertQueryServiceImpl | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `395e612` | feat(notifications-messaging): add StockLevelChangedEventHandler | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `8c92d7e` | feat(notifications-messaging): add NotificationsMessagingContextFacadeImpl | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `05d1ec0` | feat(notifications-messaging): add NotificationsMessagingHttpResponseMapper | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `e59ea52` | feat(notifications-messaging): add AlertResourceMapper | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `41b1bd0` | feat(notifications-messaging): add AlertsController | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `eb59a44` | feat(notifications-messaging): add SimulatedNotificationSender | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `39394d7` | feat(notifications-messaging): add InventoryAlertSweepJob | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `3fc23f4` | feat(notifications-messaging): add AlertJpaEntity | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `0265a68` | feat(notifications-messaging): add AlertPersistenceMapper | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `72532d2` | feat(notifications-messaging): add AlertRepository | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `0d105f7` | feat(notifications-messaging): add AlertRepositoryAdapter | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/notifications-messaging | `5737d82` | feat(notifications-messaging): update AlertRepository | US17 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `77d592e` | feat(recipesmanagement): add Recipe | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `04f3e25` | feat(recipesmanagement): add Sale | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `136453e` | feat(recipesmanagement): add SaleLineItem | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `bf90d0f` | feat(recipesmanagement): add RecipeIngredient | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `016a197` | feat(recipesmanagement): add SaleChannel | US14 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `00a01a1` | feat(recipesmanagement): add SaleStatus | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `9a8f4f3` | feat(recipesmanagement): add SaleRepository | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `4a09fef` | feat(recipesmanagement): add RecipeRepository | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `b5b8797` | feat(recipesmanagement): add RecipesManagementContextFacadeImpl | US13, US14, US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `4c1b9de` | feat(recipesmanagement): add CreateRecipeCommand | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `e38d8c0` | feat(recipesmanagement): add DeleteRecipeCommand | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `d0ac583` | feat(recipesmanagement): add ExternalStockService | US13, US14 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `77f453c` | feat(recipesmanagement): add GetRecipeByIdQuery | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `04c00fc` | feat(recipesmanagement): add GetRecipesByRestaurantIdQuery | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `c41bc2d` | feat(recipesmanagement): add GetSaleByIdQuery | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `ab87870` | feat(recipesmanagement): add GetSalesByRestaurantIdQuery | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `6ddf263` | feat(recipesmanagement): add RecipeCommandMapper | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `f79f734` | feat(recipesmanagement): add RecipeCommandService | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `61e332a` | feat(recipesmanagement): add RecipeCommandServiceImpl | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `40d1546` | feat(recipesmanagement): add RecipeIngredientData | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `6cc80f6` | feat(recipesmanagement): add RecipeIngredientEmbeddable | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `4916309` | feat(recipesmanagement): add RecipeIngredientResource | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `df50b66` | feat(recipesmanagement): add RecipeJpaEntity | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `e805caa` | feat(recipesmanagement): add RecipePersistenceMapper | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `363ceaf` | feat(recipesmanagement): add RecipeQueryService | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `8ee1489` | feat(recipesmanagement): add RecipeQueryServicelmpl | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `f8e1491` | feat(recipesmanagement): add RecipesManagementError | US13, US14, US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `23fb82a` | feat(recipesmanagement): add RegisterSaleCommand | US14 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `d1c96b8` | feat(recipesmanagement): add SaleCommandService | US14 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `9f3b295` | feat(recipesmanagement): add SaleCommandServiceImpl | US14 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `746b3b5` | feat(recipesmanagement): add SaleQueryServiceImpl | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `d5ee271` | feat(recipesmanagement): add UpdateRecipeCommand | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `6966ee9` | feat(recipesmanagement): add VoidSaleCommand | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `b4a36e8` | feat(recipesmanagement): add RecipeRepository | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `cdfb54c` | feat(recipesmanagement): add RecipeRepositoryAdapter | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `13a72b9` | feat(recipesmanagement): add RecipeResource | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `b16743c` | feat(recipesmanagement): add RecipeResourceMapper | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `e170d4b` | feat(recipesmanagement): add RecipesController | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `44d64f8` | feat(recipesmanagement): add RecipesManagementContextFacade | US13, US14, US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `75b9429` | feat(recipesmanagement): add RecipesManagementHttpResponseMapper | US13, US14, US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `10ca979` | feat(recipesmanagement): add RegisterSaleResource | US14 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `94c676a` | feat(recipesmanagement): add SaleJpaEntity | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `f4943d2` | feat(recipesmanagement): add SaleLineItemEmbeddable | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `6a5d25d` | feat(recipesmanagement): add SaleLineItemResource | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `64ef599` | feat(recipesmanagement): add SalePersistenceMapper | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `32f7be4` | feat(recipesmanagement): add SaleQueryService | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `370b10b` | feat(recipesmanagement): add SaleRepository | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `ade58df` | feat(recipesmanagement): add SaleRepositoryAdapter | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `875b548` | feat(recipesmanagement): add SaleResource | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `f488c65` | feat(recipesmanagement): add SaleResourceMapper | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `fd19276` | feat(recipesmanagement): add SalesController | US15 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `d22e08f` | feat(recipesmanagement): add SaveRecipeIngredientResource | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/recipes-management | `269d2aa` | feat(recipesmanagement): add SaveRecipeRecipeResource | US13 (Jesus) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `4e3ff18` | feat(analytics-dashboard): add value object ConsumptionEntry | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `9187c41` | feat(analytics-dashboard): add value object DashboardSummary | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `60a47e8` | feat(analytics-dashboard): add value object LotSnapshot | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `da12765` | feat(analytics-dashboard): add value object SalesTotals | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `5f9b0a1` | feat(analytics-dashboard): add value object SavingsLine | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `ada7846` | feat(analytics-dashboard): add value object WeeklySavings | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `ef15c85` | feat(analytics-dashboard): add value object WeeklySavingsCalculator | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `22a9c2f` | feat(analytics-dashboard): update WeeklySavingsCalculator | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `85ea4f2` | feat(analytics-dashboard): update GetDashboardSummaryQuery | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `db2cbc0` | feat(analytics-dashboard): add GetWeeklySavingsQuery | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `c789c34` | feat(analytics-dashboard): add DashboardQueryService | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `9e8a546` | feat(analytics-dashboard): add DashboardQueryServiceImpl | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `a360f25` | feat(analytics-dashboard): add DashboardSummaryResource | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `bb3e4be` | feat(analytics-dashboard): add SavingsLineResource | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `b1450d3` | feat(analytics-dashboard): add WeeklySavingsResource | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `0f089f4` | feat(analytics-dashboard): add DashboardResourceMapper | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/analytics-dashboard | `00acaf3` | feat(analytics-dashboard): add DashboardController | US16 (Leyla) | 07/11/2026 |
+| stockia-platform | feature/iam | `cbc1207` | feat(iam): add the user value objects in  domain model | US10, US11 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/iam | `11224fe` | feat(iam): add the user aggregate domain model | US10, US11 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/iam | `12605c6` | feat(iam): add the user repository port and domain services | US10, US11 (Ronal) | 08/11/2026 |
 | stockia-platform | develop | `b96611a` | Merge pull request #3 from upc-pre-202602-1ASI0729-7747-databit/feature/shared | Integración revisada de `feature/shared` en `develop` (Leyla) | 08/11/2026 |
-| stockia-platform | feature/iam | `68ff69b` | feat(iam): add user commands and application service contracts | US30, US24 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/iam | `86e630d` | feat(iam): add the hashing and token outbound ports | US30, RNF11 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/iam | `f4db43c` | feat(iam): add ACL services to restaurant registration and notifications | US30, US24 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/iam | `6412ec7` | feat(iam): implement the user command and query services | US30, US24 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/iam | `8875830` | feat(iam): implement the IAM context facade | US30, US24 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/iam | `42b0883` | feat(iam): add JPA persistence for users | US30, US24 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/iam | `57018f4` | feat(iam): add BCrypt hashing and JWT token infrastructure | US30, RNF11 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/iam | `248a769` | feat(iam): configure stateless JWT security | US30, RNF11 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/iam | `12fdc3f` | feat(iam): add the REST resources and mappers | US30, US24 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/iam | `43136f8` | feat(iam): expose the authentication and users endpoints | US30, US24 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/iam | `0306c78` | feat(iam): expose the IAM context facade contract | US30, US24 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/restaurantregistration | `18fd4d7` | feat(restaurantregistration): add the restaurant value objects in domain model | US29, US40 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/restaurantregistration | `bd06d0d` | feat(restaurantregistration): add the restaurant aggregate in domain model | US29, US40 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/restaurantregistration | `b7c4489` | feat(restaurantregistration): add the restaurant repository port | US29, US40 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/restaurantregistration | `c38ab12` | feat(restaurantregistration): expose the restaurant registration facade contract | US29, US40 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/restaurantregistration | `44ef447` | feat(restaurantregistration): add commands and application service contracts | US29, US40 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/restaurantregistration | `379e65f` | feat(restaurantregistration): add ACL services to IAM and subscription payments | US29, US40 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/restaurantregistration | `dc4293b` | feat(restaurantregistration): implement the restaurant command and query services | US29, US40 (Ronal) | 08/11/2026 |
-| stockia-platform | feature/restaurantregistration | `5607630` | feat(restaurantregistration): implement the restaurant registration context facade | US29, US40 (Ronal) | 09/11/2026 |
-| stockia-platform | feature/restaurantregistration | `d7df93b` | feat(restaurantregistration): add JPA persistence for restaurants | US29, US40 (Ronal) | 09/11/2026 |
-| stockia-platform | feature/restaurantregistration | `cec93df` | feat(restaurantregistration): add the REST resources and mappers | US29, US40 (Ronal) | 09/11/2026 |
-| stockia-platform | feature/restaurantregistration | `806619e` | feat(restaurantregistration): expose the registration and restaurant endpoints | US29, US40 (Ronal) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `dd794fe` | feat(Stockmanagement): add StockRequirement | US21, US22 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `91b438c` | feat(Stockmanagement): add StockStatus | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `da1969d` | feat(Stockmanagement): add StorageType | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `fef44a5` | feat(Stockmanagement): add StockLevelChangedEvent | US21 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `cae6688` | feat(Stockmanagement): add StockConsumptionRepository | US21, US22 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `2f3b665` | feat(Stockmanagement): add Shortage | US21, US22 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `885cb22` | feat(Stockmanagement): add ShortageReason | US21, US22 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `a83720f` | feat(Stockmanagement): add InventoryItem | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `b597ba9` | feat(Stockmanagement): add InventoryItemRepository | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `953e787` | feat(Stockmanagement): add StockAllocationService | US21, US22 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `42b5fca` | feat(Stockmanagement): add StockConsumption | US21, US22 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `c3c711f` | feat(Stockmanagement): add CreateInventoryItemCommand | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `c709743` | feat(Stockmanagement): add DeductStockCommand | US21, US22 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `f2adbfe` | feat(Stockmanagement): add DeleteInventoryItemCommand | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `749df78` | feat(Stockmanagement): add GetInventoryItemByIdQuery | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `9716b72` | feat(Stockmanagement): add GetInventoryItemsByRestaurantIdQuery | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `7fb3ec7` | feat(Stockmanagement): add InventoryItemCommandService | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `0f6aa27` | feat(Stockmanagement): add InventoryItemQueryService | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `29bee2b` | feat(Stockmanagement): add UpdateInventoryItemCommand | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `bd5587e` | feat(Stockmanagement): add StockManagementError | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `6aafbfb` | feat(Stockmanagement): add InventoryItemCommandServiceImpl | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `6fca29c` | feat(Stockmanagement): add InventoryItemCommandMapper | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `514ff24` | feat(Stockmanagement): add InventoryItemJpaEntity | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `cbb1c53` | feat(Stockmanagement): add InventoryItemPersistenceMapper | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `bc1cc5e` | feat(Stockmanagement): add InventoryItemQueryServiceImpl | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `46fe170` | feat(Stockmanagement): add InventoryItemRepository | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `59fab5e` | feat(Stockmanagement): add InventoryItemRepositoryAdapter | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `de7147b` | feat(Stockmanagement): add InventoryItemResource | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `061280c` | feat(Stockmanagement): add InventoryItemResourceMapper | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `5293f7a` | feat(Stockmanagement): add InventoryItemsController | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `b6825c0` | feat(Stockmanagement): add SaveInventoryItemResource | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `eafde87` | feat(Stockmanagement): add StockConsumptionJpaEntity | US21, US22 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `96ffaf3` | feat(Stockmanagement): add StockConsumptionPersistenceMapper | US21, US22 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `558b3e5` | feat(Stockmanagement): add StockConsumptionRepository | US21, US22 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `28bc5a4` | feat(Stockmanagement): add stockConsumptionRepositoryAdapter | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `836836a` | feat(Stockmanagement): add StockManagementContextFacade | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `d8f2ad3` | feat(Stockmanagement): add StockMangamentContexFacadelmpl | US21, US36 (Jesus) | 09/11/2026 |
-| stockia-platform | feature/Stockmanagement | `32310eb` | feat(Stockmanagement): add StockManagementHttpResponseMapper | US21, US36 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/iam | `68ff69b` | feat(iam): add user commands and application service contracts | US10, US11 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/iam | `86e630d` | feat(iam): add the hashing and token outbound ports | US10, RNF08 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/iam | `f4db43c` | feat(iam): add ACL services to restaurant registration and notifications | US10, US11 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/iam | `6412ec7` | feat(iam): implement the user command and query services | US10, US11 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/iam | `8875830` | feat(iam): implement the IAM context facade | US10, US11 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/iam | `42b0883` | feat(iam): add JPA persistence for users | US10, US11 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/iam | `57018f4` | feat(iam): add BCrypt hashing and JWT token infrastructure | US10, RNF08 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/iam | `248a769` | feat(iam): configure stateless JWT security | US10, RNF08 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/iam | `12fdc3f` | feat(iam): add the REST resources and mappers | US10, US11 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/iam | `43136f8` | feat(iam): expose the authentication and users endpoints | US10, US11 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/iam | `0306c78` | feat(iam): expose the IAM context facade contract | US10, US11 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/restaurantregistration | `18fd4d7` | feat(restaurantregistration): add the restaurant value objects in domain model | US09, US10 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/restaurantregistration | `bd06d0d` | feat(restaurantregistration): add the restaurant aggregate in domain model | US09, US10 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/restaurantregistration | `b7c4489` | feat(restaurantregistration): add the restaurant repository port | US09, US10 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/restaurantregistration | `c38ab12` | feat(restaurantregistration): expose the restaurant registration facade contract | US09, US10 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/restaurantregistration | `44ef447` | feat(restaurantregistration): add commands and application service contracts | US09, US10 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/restaurantregistration | `379e65f` | feat(restaurantregistration): add ACL services to IAM and subscription payments | US09, US10 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/restaurantregistration | `dc4293b` | feat(restaurantregistration): implement the restaurant command and query services | US09, US10 (Ronal) | 08/11/2026 |
+| stockia-platform | feature/restaurantregistration | `5607630` | feat(restaurantregistration): implement the restaurant registration context facade | US09, US10 (Ronal) | 09/11/2026 |
+| stockia-platform | feature/restaurantregistration | `d7df93b` | feat(restaurantregistration): add JPA persistence for restaurants | US09, US10 (Ronal) | 09/11/2026 |
+| stockia-platform | feature/restaurantregistration | `cec93df` | feat(restaurantregistration): add the REST resources and mappers | US09, US10 (Ronal) | 09/11/2026 |
+| stockia-platform | feature/restaurantregistration | `806619e` | feat(restaurantregistration): expose the registration and restaurant endpoints | US09, US10 (Ronal) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `dd794fe` | feat(Stockmanagement): add StockRequirement | US12, US14 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `91b438c` | feat(Stockmanagement): add StockStatus | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `da1969d` | feat(Stockmanagement): add StorageType | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `fef44a5` | feat(Stockmanagement): add StockLevelChangedEvent | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `cae6688` | feat(Stockmanagement): add StockConsumptionRepository | US12, US14 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `2f3b665` | feat(Stockmanagement): add Shortage | US12, US14 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `885cb22` | feat(Stockmanagement): add ShortageReason | US12, US14 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `a83720f` | feat(Stockmanagement): add InventoryItem | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `b597ba9` | feat(Stockmanagement): add InventoryItemRepository | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `953e787` | feat(Stockmanagement): add StockAllocationService | US12, US14 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `42b5fca` | feat(Stockmanagement): add StockConsumption | US12, US14 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `c3c711f` | feat(Stockmanagement): add CreateInventoryItemCommand | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `c709743` | feat(Stockmanagement): add DeductStockCommand | US12, US14 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `f2adbfe` | feat(Stockmanagement): add DeleteInventoryItemCommand | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `749df78` | feat(Stockmanagement): add GetInventoryItemByIdQuery | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `9716b72` | feat(Stockmanagement): add GetInventoryItemsByRestaurantIdQuery | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `7fb3ec7` | feat(Stockmanagement): add InventoryItemCommandService | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `0f6aa27` | feat(Stockmanagement): add InventoryItemQueryService | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `29bee2b` | feat(Stockmanagement): add UpdateInventoryItemCommand | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `bd5587e` | feat(Stockmanagement): add StockManagementError | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `6aafbfb` | feat(Stockmanagement): add InventoryItemCommandServiceImpl | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `6fca29c` | feat(Stockmanagement): add InventoryItemCommandMapper | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `514ff24` | feat(Stockmanagement): add InventoryItemJpaEntity | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `cbb1c53` | feat(Stockmanagement): add InventoryItemPersistenceMapper | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `bc1cc5e` | feat(Stockmanagement): add InventoryItemQueryServiceImpl | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `46fe170` | feat(Stockmanagement): add InventoryItemRepository | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `59fab5e` | feat(Stockmanagement): add InventoryItemRepositoryAdapter | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `de7147b` | feat(Stockmanagement): add InventoryItemResource | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `061280c` | feat(Stockmanagement): add InventoryItemResourceMapper | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `5293f7a` | feat(Stockmanagement): add InventoryItemsController | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `b6825c0` | feat(Stockmanagement): add SaveInventoryItemResource | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `eafde87` | feat(Stockmanagement): add StockConsumptionJpaEntity | US12, US14 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `96ffaf3` | feat(Stockmanagement): add StockConsumptionPersistenceMapper | US12, US14 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `558b3e5` | feat(Stockmanagement): add StockConsumptionRepository | US12, US14 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `28bc5a4` | feat(Stockmanagement): add stockConsumptionRepositoryAdapter | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `836836a` | feat(Stockmanagement): add StockManagementContextFacade | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `d8f2ad3` | feat(Stockmanagement): add StockMangamentContexFacadelmpl | US12 (Jesus) | 09/11/2026 |
+| stockia-platform | feature/Stockmanagement | `32310eb` | feat(Stockmanagement): add StockManagementHttpResponseMapper | US12 (Jesus) | 09/11/2026 |
 | stockia-platform | develop | `707a3a9` | Merge pull request #4 from upc-pre-202602-1ASI0729-7747-databit/feature/notifications-messaging | Integración revisada de `feature/notifications-messaging` en `develop` (Leyla) | 10/11/2026 |
 | stockia-platform | develop | `ffa1a53` | Merge pull request #5 from upc-pre-202602-1ASI0729-7747-databit/feature/analytics-dashboard | Integración revisada de `feature/analytics-dashboard` en `develop` (Leyla) | 10/11/2026 |
 | stockia-platform | develop | `76e53fd` | Merge pull request #6 from upc-pre-202602-1ASI0729-7747-databit/feature/Stockmanagement | Integración revisada de `feature/Stockmanagement` en `develop` (Jesus) | 10/11/2026 |
 | stockia-platform | develop | `17a5751` | Merge pull request #7 from upc-pre-202602-1ASI0729-7747-databit/feature/recipes-management | Integración revisada de `feature/recipes-management` en `develop` (Jesus) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-domain | `70dbc5a` | feat(subscription-payments): add subscription status and payment method value objects | US31, RNF11 (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-domain | `25399da` | feat(subscription-payments): add plan aggregate | US31 (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-domain | `f7fe421` | feat(subscription-payments): add restaurant subscription aggregate | US31 (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-domain | `029a36b` | feat(subscription-payments): add plan and subscription domain repositories | US31 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-domain | `70dbc5a` | feat(subscription-payments): add subscription status and payment method value objects | US19 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-domain | `25399da` | feat(subscription-payments): add plan aggregate | US19 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-domain | `f7fe421` | feat(subscription-payments): add restaurant subscription aggregate | US19 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-domain | `029a36b` | feat(subscription-payments): add plan and subscription domain repositories | US19 (Carla) | 10/11/2026 |
 | stockia-platform | develop | `7daa009` | Merge pull request #8 from upc-pre-202602-1ASI0729-7747-databit/feature/subscription-payments-domain | Integración revisada de `feature/subscription-payments-domain` en `develop` (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-persistence | `5bbcc6f` | feat(subscription-payments): add plan and subscription jpa entities | US31 (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-persistence | `59eb048` | feat(subscription-payments): add spring data jpa repositories | US31 (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-persistence | `9e17759` | feat(subscription-payments): add subscription persistence mapper | US31 (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-persistence | `8485138` | feat(subscription-payments): add repository adapters | US31 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-persistence | `5bbcc6f` | feat(subscription-payments): add plan and subscription jpa entities | US19 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-persistence | `59eb048` | feat(subscription-payments): add spring data jpa repositories | US19 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-persistence | `9e17759` | feat(subscription-payments): add subscription persistence mapper | US19 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-persistence | `8485138` | feat(subscription-payments): add repository adapters | US19 (Carla) | 10/11/2026 |
 | stockia-platform | develop | `f4d4756` | Merge pull request #9 from upc-pre-202602-1ASI0729-7747-databit/feature/subscription-payments-persistence | Integración revisada de `feature/subscription-payments-persistence` en `develop` (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-application | `30c25bd` | feat(subscription-payments): add subscription commands and queries | US31 (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-application | `32335c8` | feat(subscription-payments): add subscription payments error codes | US31 (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-application | `994fa07` | feat(subscription-payments): add payment gateway port and simulated gateway | US31, RNF11 (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-application | `40f8a5c` | feat(subscription-payments): add plan command service | US31 (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-application | `9c5d191` | feat(subscription-payments): add subscription command service | US31 (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-application | `2c670d4` | feat(subscription-payments): add subscription query service | US31 (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-application | `8a982f7` | feat(subscription-payments): seed default plans on application ready | US31 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-application | `30c25bd` | feat(subscription-payments): add subscription commands and queries | US19 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-application | `32335c8` | feat(subscription-payments): add subscription payments error codes | US19 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-application | `994fa07` | feat(subscription-payments): add payment gateway port and simulated gateway | US19 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-application | `40f8a5c` | feat(subscription-payments): add plan command service | US19 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-application | `9c5d191` | feat(subscription-payments): add subscription command service | US19 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-application | `2c670d4` | feat(subscription-payments): add subscription query service | US19 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-application | `8a982f7` | feat(subscription-payments): seed default plans on application ready | US19 (Carla) | 10/11/2026 |
 | stockia-platform | develop | `45eeb3f` | Merge pull request #10 from upc-pre-202602-1ASI0729-7747-databit/feature/subscription-payments-application | Integración revisada de `feature/subscription-payments-application` en `develop` (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-rest-api | `5951114` | feat(subscription-payments): add plan, subscription and change plan resources | US31 (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-rest-api | `d9e6e2d` | feat(subscription-payments): add subscription resource and http response mappers | US31 (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-rest-api | `f6f4ceb` | feat(subscription-payments): add plans controller | US31 (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-rest-api | `fd66a71` | feat(subscription-payments): add subscriptions controller | US31 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-rest-api | `5951114` | feat(subscription-payments): add plan, subscription and change plan resources | US19 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-rest-api | `d9e6e2d` | feat(subscription-payments): add subscription resource and http response mappers | US19 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-rest-api | `f6f4ceb` | feat(subscription-payments): add plans controller | US19 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-rest-api | `fd66a71` | feat(subscription-payments): add subscriptions controller | US19 (Carla) | 10/11/2026 |
 | stockia-platform | develop | `dea1fe5` | Merge pull request #11 from upc-pre-202602-1ASI0729-7747-databit/feature/subscription-payments-rest-api | Integración revisada de `feature/subscription-payments-rest-api` en `develop` (Carla) | 10/11/2026 |
-| stockia-platform | feature/subscription-payments-acl | `6cc5299` | feat(subscription-payments): add subscription context facade | US31 (Carla) | 10/11/2026 |
+| stockia-platform | feature/subscription-payments-acl | `6cc5299` | feat(subscription-payments): add subscription context facade | US19 (Carla) | 10/11/2026 |
 | stockia-platform | develop | `aff6dc2` | Merge pull request #12 from upc-pre-202602-1ASI0729-7747-databit/feature/subscription-payments-acl | Integración revisada de `feature/subscription-payments-acl` en `develop` (Carla) | 10/11/2026 |
 | stockia-platform | develop | `3ea726a` | Merge branch 'feature/iam' into develop | Integración revisada de `feature/iam` en `develop` (Ronal) | 11/11/2026 |
 | stockia-platform | develop | `bcda98c` | Merge branch 'feature/restaurantregistration' into develop | Integración revisada de `feature/restaurantregistration` en `develop` (Ronal) | 11/11/2026 |
-| stockia-platform | feature/integration-tests | `deadeab` | test(shared): add the Quantity value object unit tests | US21 (Aldo) | 11/11/2026 |
-| stockia-platform | feature/integration-tests | `176bb48` | test(iam): add the account lock and password reset unit tests | US30 (Aldo) | 11/11/2026 |
-| stockia-platform | feature/integration-tests | `0ea38e2` | test(stock-management): add the stock allocation unit tests | US21 (Aldo) | 11/11/2026 |
-| stockia-platform | feature/integration-tests | `af20876` | test(notifications-messaging): add the inventory alert policy unit tests | US27 (Aldo) | 11/11/2026 |
-| stockia-platform | feature/integration-tests | `0dcb9ea` | test(analytics-dashboard): add the weekly savings calculator unit tests | US23 (Aldo) | 11/11/2026 |
-| stockia-platform | feature/integration-tests | `549e338` | test: add the API integration test | TS08 (Aldo) | 11/11/2026 |
-| stockia-platform | feature/integration-tests | `1f9fe70` | test: add the smoke test against MySQL | TS08 (Aldo) | 11/11/2026 |
-| stockia-platform | feature/integration-tests | `b49ce56` | ci: add the GitHub Actions workflow with build, tests and smoke test | TS08 (Aldo) | 11/11/2026 |
+| stockia-platform | feature/integration-tests | `deadeab` | test(shared): add the Quantity value object unit tests | US12 (Aldo) | 11/11/2026 |
+| stockia-platform | feature/integration-tests | `176bb48` | test(iam): add the account lock and password reset unit tests | US10 (Aldo) | 11/11/2026 |
+| stockia-platform | feature/integration-tests | `0ea38e2` | test(stock-management): add the stock allocation unit tests | US12 (Aldo) | 11/11/2026 |
+| stockia-platform | feature/integration-tests | `af20876` | test(notifications-messaging): add the inventory alert policy unit tests | US17 (Aldo) | 11/11/2026 |
+| stockia-platform | feature/integration-tests | `0dcb9ea` | test(analytics-dashboard): add the weekly savings calculator unit tests | US16 (Aldo) | 11/11/2026 |
+| stockia-platform | feature/integration-tests | `549e338` | test: add the API integration test | TS14 (Aldo) | 11/11/2026 |
+| stockia-platform | feature/integration-tests | `1f9fe70` | test: add the smoke test against MySQL | TS14 (Aldo) | 11/11/2026 |
+| stockia-platform | feature/integration-tests | `b49ce56` | ci: add the GitHub Actions workflow with build, tests and smoke test | TS14 (Aldo) | 11/11/2026 |
 | stockia-platform | develop | `fbc37db` | Merge pull request #13 from upc-pre-202602-1ASI0729-7747-databit/feature/integration-tests | Integración revisada de `feature/integration-tests` en `develop` (Aldo) | 12/11/2026 |
-| stockia-platform | release/v1.0.0 | `d979e72` | fix(shared): point the OpenAPI contact to the team repository | TS06 (Aldo) | 12/11/2026 |
-| stockia-platform | release/v1.0.0 | `d89c015` | docs: add the changelog for version 1.0.0 | TS08 (Aldo) | 12/11/2026 |
+| stockia-platform | release/v1.0.0 | `d979e72` | fix(shared): point the OpenAPI contact to the team repository | TS12 (Aldo) | 12/11/2026 |
+| stockia-platform | release/v1.0.0 | `d89c015` | docs: add the changelog for version 1.0.0 | TS14 (Aldo) | 12/11/2026 |
 | stockia-platform | main | `de15b98` | Merge pull request #14 from upc-pre-202602-1ASI0729-7747-databit/release/v1.0.0 | Integración revisada de `release/v1.0.0` en `main` (Aldo) | 12/11/2026 |
 | stockia-platform | develop | `ec2e8d8` | Merge pull request #15 from upc-pre-202602-1ASI0729-7747-databit/release/v1.0.0 | Integración revisada de `release/v1.0.0` en `develop` (Aldo) | 12/11/2026 |
 
@@ -4899,13 +4900,13 @@ En esta sección se presentan los avances de implementación del Sprint 3 median
 | stockia-webapp | feature/bounded-context-structure | `8b28aa2` | build: update the application TypeScript configuration | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | feature/bounded-context-structure | `547815d` | build: update the test TypeScript configuration | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | feature/bounded-context-structure | `33a122c` | build: add the ESLint configuration (Angular style guide) | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/bounded-context-structure | `4d2b826` | build: add the Vercel configuration | TS08 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/bounded-context-structure | `4d2b826` | build: add the Vercel configuration | TS14 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | feature/bounded-context-structure | `7365ba0` | feat: update the index page with fonts and language | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | feature/bounded-context-structure | `03a22e5` | feat: update the application bootstrap | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | feature/bounded-context-structure | `7779114` | style: update the global styles | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | feature/bounded-context-structure | `d7fee9e` | style: update the Angular Material theme | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/bounded-context-structure | `6cd3300` | chore(config): point the development environment to the local API | TS08 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/bounded-context-structure | `349e3ed` | chore(config): point the production environment to the deployed API | TS08 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/bounded-context-structure | `6cd3300` | chore(config): point the development environment to the local API | TS14 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/bounded-context-structure | `349e3ed` | chore(config): point the production environment to the deployed API | TS14 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | feature/bounded-context-structure | `61d317d` | style: add the StockIA favicon | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | feature/bounded-context-structure | `58e5908` | feat(i18n): add the English translations | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | feature/bounded-context-structure | `68d63e1` | feat(i18n): add the Latin American Spanish translations | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
@@ -4913,40 +4914,40 @@ En esta sección se presentan los avances de implementación del Sprint 3 median
 | stockia-webapp | feature/bounded-context-structure | `1fedc0b` | feat: add the providers (router, HTTP, interceptors, ngx-translate) | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | feature/bounded-context-structure | `fb9ab32` | feat: add the routes of the bounded contexts | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | feature/bounded-context-structure | `fdb0540` | docs: update the README with the bounded context structure | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/bounded-context-structure | `ffb26e3` | docs: add the Vercel deployment guide | TS08 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/bounded-context-structure | `ffb26e3` | docs: add the Vercel deployment guide | TS14 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | feature/bounded-context-structure | `6b1e887` | build: set rootDir in the application TypeScript configuration | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | feature/bounded-context-structure | `4ef43b7` | build: set rootDir in the test TypeScript configuration | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | feature/bounded-context-structure | `6a46a08` | build: sync the lock file with the installed dependencies | Sin ítem en el Backlog 3 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | develop | `95504af` | Merge pull request #25 from upc-pre-202602-1ASI0729-7747-databit/feature/bounded-context-structure | Integración revisada de `feature/bounded-context-structure` en `develop` (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/ml-recommendations | `ce1991b` | feat(ml-recommendations): add the demand forecast entity | US26 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/ml-recommendations | `57a2237` | feat(ml-recommendations): add the recommendation entity | US26 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/ml-recommendations | `6f8a614` | feat(ml-recommendations): add the ml recommendations store | US25, US26 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/ml-recommendations | `743998e` | feat(ml-recommendations): add the demand forecast assembler | US26 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/ml-recommendations | `fab93ab` | feat(ml-recommendations): add the demand forecasts API endpoint | US26 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/ml-recommendations | `a751544` | feat(ml-recommendations): add the demand forecasts resource and response | US26 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/ml-recommendations | `a54a499` | feat(ml-recommendations): add the ml recommendations API | US25, US26 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/ml-recommendations | `815d9d6` | feat(ml-recommendations): add the recommendation assembler | US26 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/ml-recommendations | `dd929c3` | feat(ml-recommendations): add the recommendations API endpoint | US26 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/ml-recommendations | `2f66ea2` | feat(ml-recommendations): add the forecast chart component | US26 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/ml-recommendations | `5022824` | feat(ml-recommendations): add the forecast dashboard view | US26 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/ml-recommendations | `5ecb28d` | feat(ml-recommendations): add the forecast dashboard view template | US26 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/ml-recommendations | `70d6179` | feat(ml-recommendations): add the recommendations list view | US26 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/ml-recommendations | `bc02a71` | feat(ml-recommendations): add the recommendations list view template | US26 · Web Application (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/ml-recommendations | `34c2b50` | feat(ml-recommendations): add the routes | US25, US26 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/ml-recommendations | `ce1991b` | feat(ml-recommendations): add the demand forecast entity | US18 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/ml-recommendations | `57a2237` | feat(ml-recommendations): add the recommendation entity | US18 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/ml-recommendations | `6f8a614` | feat(ml-recommendations): add the ml recommendations store | US18 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/ml-recommendations | `743998e` | feat(ml-recommendations): add the demand forecast assembler | US18 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/ml-recommendations | `fab93ab` | feat(ml-recommendations): add the demand forecasts API endpoint | US18 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/ml-recommendations | `a751544` | feat(ml-recommendations): add the demand forecasts resource and response | US18 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/ml-recommendations | `a54a499` | feat(ml-recommendations): add the ml recommendations API | US18 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/ml-recommendations | `815d9d6` | feat(ml-recommendations): add the recommendation assembler | US18 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/ml-recommendations | `dd929c3` | feat(ml-recommendations): add the recommendations API endpoint | US18 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/ml-recommendations | `2f66ea2` | feat(ml-recommendations): add the forecast chart component | US18 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/ml-recommendations | `5022824` | feat(ml-recommendations): add the forecast dashboard view | US18 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/ml-recommendations | `5ecb28d` | feat(ml-recommendations): add the forecast dashboard view template | US18 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/ml-recommendations | `70d6179` | feat(ml-recommendations): add the recommendations list view | US18 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/ml-recommendations | `bc02a71` | feat(ml-recommendations): add the recommendations list view template | US18 · Web Application (Aldo) | 07/11/2026 |
+| stockia-webapp | feature/ml-recommendations | `34c2b50` | feat(ml-recommendations): add the routes | US18 · Web Application (Aldo) | 07/11/2026 |
 | stockia-webapp | develop | `52262f8` | Merge pull request #26 from upc-pre-202602-1ASI0729-7747-databit/feature/ml-recommendations | Integración revisada de `feature/ml-recommendations` en `develop` (Aldo) | 07/11/2026 |
-| stockia-webapp | feature/notifications-messaging | `cef24dd` | feat(notifications-messaging): rename bounded context alerts to notifications-messaging | US27, US41 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/notifications-messaging | `ae59b6c` | feat(notification-messaging): update alert entity | US27, US41 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/notifications-messaging | `da8cf50` | feat(notification-messaging): add alerts response & update alert entity | US27, US41 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/notifications-messaging | `76ddeb5` | feat(notification-messaging): add alert assembler | US27, US41 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/notifications-messaging | `a86f9de` | feat(notification-messaging): add alerts api endpoint | US27, US41 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/notifications-messaging | `a87d6dc` | feat(notification-messaging): add notifications messaging api | US27, US41 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/notifications-messaging | `07100e5` | feat(notification-messaging): add notifications messaging store | US27, US41 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/notifications-messaging | `11037c2` | feat(notification-messaging): add rename infrastructure folder | US27, US41 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/notifications-messaging | `798cc1e` | feat(notification-messaging): add alert form | US27, US41 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/notifications-messaging | `26b6a89` | feat(notification-messaging): add alert severity tag | US27, US41 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/notifications-messaging | `c4ec508` | feat(notification-messaging): add alerts-list.ts | US27, US41 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/notifications-messaging | `9b9370d` | feat(notification-messaging): add alerts-list.html | US27, US41 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/notifications-messaging | `accb9ea` | feat(notification-messaging): add notifications-messaging routes | US27, US41 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/notifications-messaging | `cef24dd` | feat(notifications-messaging): rename bounded context alerts to notifications-messaging | US17 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/notifications-messaging | `ae59b6c` | feat(notification-messaging): update alert entity | US17 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/notifications-messaging | `da8cf50` | feat(notification-messaging): add alerts response & update alert entity | US17 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/notifications-messaging | `76ddeb5` | feat(notification-messaging): add alert assembler | US17 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/notifications-messaging | `a86f9de` | feat(notification-messaging): add alerts api endpoint | US17 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/notifications-messaging | `a87d6dc` | feat(notification-messaging): add notifications messaging api | US17 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/notifications-messaging | `07100e5` | feat(notification-messaging): add notifications messaging store | US17 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/notifications-messaging | `11037c2` | feat(notification-messaging): add rename infrastructure folder | US17 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/notifications-messaging | `798cc1e` | feat(notification-messaging): add alert form | US17 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/notifications-messaging | `26b6a89` | feat(notification-messaging): add alert severity tag | US17 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/notifications-messaging | `c4ec508` | feat(notification-messaging): add alerts-list.ts | US17 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/notifications-messaging | `9b9370d` | feat(notification-messaging): add alerts-list.html | US17 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/notifications-messaging | `accb9ea` | feat(notification-messaging): add notifications-messaging routes | US17 · Web Application (Leyla) | 08/11/2026 |
 | stockia-webapp | feature/shared | `ecdcc3c` | feat(shared): migrate shared module from feature/shared-base | Sin ítem en el Backlog 3 · Web Application (Leyla) | 08/11/2026 |
 | stockia-webapp | feature/shared | `bd83b0a` | feat(shared): add decimal quantity | Sin ítem en el Backlog 3 · Web Application (Leyla) | 08/11/2026 |
 | stockia-webapp | feature/shared | `c359fc1` | feat(shared): add api error infrastructure | Sin ítem en el Backlog 3 · Web Application (Leyla) | 08/11/2026 |
@@ -4973,100 +4974,100 @@ En esta sección se presentan los avances de implementación del Sprint 3 median
 | stockia-webapp | feature/shared | `4fd270e` | feat(shared): add shared routes | Sin ítem en el Backlog 3 · Web Application (Leyla) | 08/11/2026 |
 | stockia-webapp | develop | `87bf881` | Merge pull request #27 from upc-pre-202602-1ASI0729-7747-databit/feature/shared | Integración revisada de `feature/shared` en `develop` (Leyla) | 08/11/2026 |
 | stockia-webapp | develop | `47eb0a9` | Merge pull request #28 from upc-pre-202602-1ASI0729-7747-databit/feature/notifications-messaging | Integración revisada de `feature/notifications-messaging` en `develop` (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/analytics-dashboard | `fa85377` | feat(analytics-dashboard): add dashboard summary | US23 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/analytics-dashboard | `8beaee4` | feat(analytics-dashboard): add weekly savings entity | US23 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/analytics-dashboard | `7a7ddff` | feat(analytics-dashboard): rename dashboard summary entity | US23 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/analytics-dashboard | `f4d0bfa` | feat(analytics-dashboard): add dashboard response | US23 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/analytics-dashboard | `4f1c62d` | feat(analytics-dashboard): add weekly savings assembler | US23 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/analytics-dashboard | `09611a2` | feat(analytics-dashboard): update dashboard summary entity | US23 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/analytics-dashboard | `5080ab0` | feat(analytics-dashboard): update analytics dashboard api | US23 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/analytics-dashboard | `6485987` | feat(analytics-dashboard): add analytics dashboard store | US23 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/analytics-dashboard | `5c815bb` | feat(analytics-dashboard): add weekly savings card component | US23 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/analytics-dashboard | `74ec9e1` | feat(analytics-dashboard): rename folder weekly savings card component | US23 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/analytics-dashboard | `3b28ebd` | feat(analytics-dashboard): add business dashboard view | US23 · Web Application (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/analytics-dashboard | `577d993` | feat(analytics-dashboard): add analytics dashboard routes | US23 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/analytics-dashboard | `fa85377` | feat(analytics-dashboard): add dashboard summary | US16 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/analytics-dashboard | `8beaee4` | feat(analytics-dashboard): add weekly savings entity | US16 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/analytics-dashboard | `7a7ddff` | feat(analytics-dashboard): rename dashboard summary entity | US16 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/analytics-dashboard | `f4d0bfa` | feat(analytics-dashboard): add dashboard response | US16 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/analytics-dashboard | `4f1c62d` | feat(analytics-dashboard): add weekly savings assembler | US16 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/analytics-dashboard | `09611a2` | feat(analytics-dashboard): update dashboard summary entity | US16 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/analytics-dashboard | `5080ab0` | feat(analytics-dashboard): update analytics dashboard api | US16 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/analytics-dashboard | `6485987` | feat(analytics-dashboard): add analytics dashboard store | US16 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/analytics-dashboard | `5c815bb` | feat(analytics-dashboard): add weekly savings card component | US16 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/analytics-dashboard | `74ec9e1` | feat(analytics-dashboard): rename folder weekly savings card component | US16 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/analytics-dashboard | `3b28ebd` | feat(analytics-dashboard): add business dashboard view | US16 · Web Application (Leyla) | 08/11/2026 |
+| stockia-webapp | feature/analytics-dashboard | `577d993` | feat(analytics-dashboard): add analytics dashboard routes | US16 · Web Application (Leyla) | 08/11/2026 |
 | stockia-webapp | develop | `69ed3c4` | Merge pull request #29 from upc-pre-202602-1ASI0729-7747-databit/feature/analytics-dashboard | Integración revisada de `feature/analytics-dashboard` en `develop` (Leyla) | 08/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `527dbe8` | feat(recipes-management): add the recipe entity | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `494b53a` | feat(recipes-management): add the sale blocked model | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `800bdd5` | feat(recipes-management): add the sale entity | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `9a27389` | feat(recipes-management): add the recipes management store | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `f48314e` | feat(recipes-management): add the recipe assembler | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `74afacd` | feat(recipes-management): add the recipes API endpoint | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `ee608d9` | feat(recipes-management): add the recipes management API | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `aae88d8` | feat(recipes-management): add the recipes resource and response | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `2606a73` | feat(recipes-management): add the sale assembler | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `ae0d51a` | feat(recipes-management): add the sales API endpoint | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `2e1d204` | feat(recipes-management): add the sales resource and response | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `de93da8` | feat(recipes-management): add the recipe form component | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `b8bc4fa` | feat(recipes-management): add the recipe form component template | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `abd0ea7` | feat(recipes-management): add the sale blocked dialog component | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `e1bcc93` | feat(recipes-management): add the recipe list view | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `8e029a6` | feat(recipes-management): add the recipe list view template | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `87a673e` | feat(recipes-management): add the sales history view | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `0eccf9e` | feat(recipes-management): add the sales history view template | US22, US39 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/Recipesmanagemet | `5217fb6` | feat(recipes-management): add the routes | US22, US39 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `527dbe8` | feat(recipes-management): add the recipe entity | US13 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `494b53a` | feat(recipes-management): add the sale blocked model | US14 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `800bdd5` | feat(recipes-management): add the sale entity | US14, US15 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `9a27389` | feat(recipes-management): add the recipes management store | US13, US14, US15 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `f48314e` | feat(recipes-management): add the recipe assembler | US13 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `74afacd` | feat(recipes-management): add the recipes API endpoint | US13 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `ee608d9` | feat(recipes-management): add the recipes management API | US13, US14, US15 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `aae88d8` | feat(recipes-management): add the recipes resource and response | US13 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `2606a73` | feat(recipes-management): add the sale assembler | US14, US15 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `ae0d51a` | feat(recipes-management): add the sales API endpoint | US14, US15 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `2e1d204` | feat(recipes-management): add the sales resource and response | US14, US15 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `de93da8` | feat(recipes-management): add the recipe form component | US13 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `b8bc4fa` | feat(recipes-management): add the recipe form component template | US13 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `abd0ea7` | feat(recipes-management): add the sale blocked dialog component | US14 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `e1bcc93` | feat(recipes-management): add the recipe list view | US13 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `8e029a6` | feat(recipes-management): add the recipe list view template | US13 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `87a673e` | feat(recipes-management): add the sales history view | US14, US15 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `0eccf9e` | feat(recipes-management): add the sales history view template | US14, US15 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/Recipesmanagemet | `5217fb6` | feat(recipes-management): add the routes | US13, US14, US15 · Web Application (Jesus) | 09/11/2026 |
 | stockia-webapp | develop | `691d2ad` | Merge pull request #30 from upc-pre-202602-1ASI0729-7747-databit/feature/Recipesmanagemet | Integración revisada de `feature/Recipesmanagemet` en `develop` (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/stock-management | `b628420` | feat(stock-management): add the inventory item entity | US21, US36 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/stock-management | `e9725d2` | feat(stock-management): add the stock allocation domain service | US21, US36 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/stock-management | `db533c4` | feat(stock-management): add the stock management store | US21, US36 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/stock-management | `be354ec` | feat(stock-management): add the inventory item assembler | US21, US36 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/stock-management | `347fdd4` | feat(stock-management): add the inventory items API endpoint | US21, US36 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/stock-management | `b1d0ab1` | feat(stock-management): add the inventory items resource and response | US21, US36 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/stock-management | `8770d5b` | feat(stock-management): add the stock management API | US21, US36 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/stock-management | `9bbfe73` | feat(stock-management): add the inventory item form component | US21, US36 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/stock-management | `e19b4be` | feat(stock-management): add the inventory item form component template | US21, US36 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/stock-management | `ecf600f` | feat(stock-management): add the stock status tag component | US21, US36 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/stock-management | `4fc5e20` | feat(stock-management): add the inventory list view | US21, US36 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/stock-management | `abe00ca` | feat(stock-management): add the inventory list view template | US21, US36 · Web Application (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/stock-management | `6caa759` | feat(stock-management): add the routes | US21, US36 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/stock-management | `b628420` | feat(stock-management): add the inventory item entity | US12 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/stock-management | `e9725d2` | feat(stock-management): add the stock allocation domain service | US12 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/stock-management | `db533c4` | feat(stock-management): add the stock management store | US12 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/stock-management | `be354ec` | feat(stock-management): add the inventory item assembler | US12 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/stock-management | `347fdd4` | feat(stock-management): add the inventory items API endpoint | US12 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/stock-management | `b1d0ab1` | feat(stock-management): add the inventory items resource and response | US12 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/stock-management | `8770d5b` | feat(stock-management): add the stock management API | US12 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/stock-management | `9bbfe73` | feat(stock-management): add the inventory item form component | US12 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/stock-management | `e19b4be` | feat(stock-management): add the inventory item form component template | US12 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/stock-management | `ecf600f` | feat(stock-management): add the stock status tag component | US12 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/stock-management | `4fc5e20` | feat(stock-management): add the inventory list view | US12 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/stock-management | `abe00ca` | feat(stock-management): add the inventory list view template | US12 · Web Application (Jesus) | 09/11/2026 |
+| stockia-webapp | feature/stock-management | `6caa759` | feat(stock-management): add the routes | US12 · Web Application (Jesus) | 09/11/2026 |
 | stockia-webapp | develop | `14b592e` | Merge pull request #31 from upc-pre-202602-1ASI0729-7747-databit/feature/stock-management | Integración revisada de `feature/stock-management` en `develop` (Jesus) | 09/11/2026 |
-| stockia-webapp | feature/subscription-payments-domain | `59745fd` | feat(subscription-payments-domain): add plan entity | US31 · Web Application (Carla) | 11/11/2026 |
-| stockia-webapp | feature/subscription-payments-domain | `610d325` | feat(subscription-payments-domain): add subscription entity | US31 · Web Application (Carla) | 11/11/2026 |
+| stockia-webapp | feature/subscription-payments-domain | `59745fd` | feat(subscription-payments-domain): add plan entity | US19 · Web Application (Carla) | 11/11/2026 |
+| stockia-webapp | feature/subscription-payments-domain | `610d325` | feat(subscription-payments-domain): add subscription entity | US19 · Web Application (Carla) | 11/11/2026 |
 | stockia-webapp | develop | `a761f20` | Merge pull request #32 from upc-pre-202602-1ASI0729-7747-databit/feature/subscription-payments-domain | Integración revisada de `feature/subscription-payments-domain` en `develop` (Carla) | 11/11/2026 |
-| stockia-webapp | feature/subscription-payments-infrastructure | `f0ddd29` | feat(subscription-payments-infrastructure): add response types | US31 · Web Application (Carla) | 11/11/2026 |
-| stockia-webapp | feature/subscription-payments-infrastructure | `5426127` | feat(subscription-payments-infrastructure): add plan assembler | US31 · Web Application (Carla) | 11/11/2026 |
-| stockia-webapp | feature/subscription-payments-infrastructure | `591a1bd` | feat(subscription-payments-infrastructure): add plans api endpoint | US31 · Web Application (Carla) | 11/11/2026 |
-| stockia-webapp | feature/subscription-payments-infrastructure | `87f1880` | feat(subscription-payments-infrastructure): add subscription payments api | US31 · Web Application (Carla) | 11/11/2026 |
+| stockia-webapp | feature/subscription-payments-infrastructure | `f0ddd29` | feat(subscription-payments-infrastructure): add response types | US19 · Web Application (Carla) | 11/11/2026 |
+| stockia-webapp | feature/subscription-payments-infrastructure | `5426127` | feat(subscription-payments-infrastructure): add plan assembler | US19 · Web Application (Carla) | 11/11/2026 |
+| stockia-webapp | feature/subscription-payments-infrastructure | `591a1bd` | feat(subscription-payments-infrastructure): add plans api endpoint | US19 · Web Application (Carla) | 11/11/2026 |
+| stockia-webapp | feature/subscription-payments-infrastructure | `87f1880` | feat(subscription-payments-infrastructure): add subscription payments api | US19 · Web Application (Carla) | 11/11/2026 |
 | stockia-webapp | develop | `c5712ba` | Merge pull request #33 from upc-pre-202602-1ASI0729-7747-databit/feature/subscription-payments-infrastructure | Integración revisada de `feature/subscription-payments-infrastructure` en `develop` (Carla) | 11/11/2026 |
-| stockia-webapp | feature/subscription-payments-store | `8da0afb` | feat(subscription-payments-store): add subscription payments store | US31 · Web Application (Carla) | 11/11/2026 |
+| stockia-webapp | feature/subscription-payments-store | `8da0afb` | feat(subscription-payments-store): add subscription payments store | US19 · Web Application (Carla) | 11/11/2026 |
 | stockia-webapp | develop | `d7c4f0c` | Merge pull request #34 from upc-pre-202602-1ASI0729-7747-databit/feature/subscription-payments-store | Integración revisada de `feature/subscription-payments-store` en `develop` (Carla) | 11/11/2026 |
-| stockia-webapp | feature/subscription-payments-presentation | `71877e3` | feat(subscription-payments-presentation): add plans page view | US31 · Web Application (Carla) | 11/11/2026 |
-| stockia-webapp | feature/subscription-payments-presentation | `c7f70ea` | feat(subscription-payments-presentation): add subscription summary component | US31 · Web Application (Carla) | 11/11/2026 |
-| stockia-webapp | feature/subscription-payments-presentation | `e373e0b` | feat(subscription-payments-presentation): add routes | US31 · Web Application (Carla) | 11/11/2026 |
+| stockia-webapp | feature/subscription-payments-presentation | `71877e3` | feat(subscription-payments-presentation): add plans page view | US19 · Web Application (Carla) | 11/11/2026 |
+| stockia-webapp | feature/subscription-payments-presentation | `c7f70ea` | feat(subscription-payments-presentation): add subscription summary component | US19 · Web Application (Carla) | 11/11/2026 |
+| stockia-webapp | feature/subscription-payments-presentation | `e373e0b` | feat(subscription-payments-presentation): add routes | US19 · Web Application (Carla) | 11/11/2026 |
 | stockia-webapp | develop | `ad8861b` | Merge pull request #35 from upc-pre-202602-1ASI0729-7747-databit/feature/subscription-payments-presentation | Integración revisada de `feature/subscription-payments-presentation` en `develop` (Carla) | 11/11/2026 |
-| stockia-webapp | feature/iam | `4de3dd3` | feat(iam): add the IAM domain model | US30, US24 · Web Application (Ronal) | 11/11/2026 |
-| stockia-webapp | feature/iam | `a0d1a93` | feat(iam): add the IAM API resources and assemblers | US30, US24 · Web Application (Ronal) | 11/11/2026 |
-| stockia-webapp | feature/iam | `0881c5f` | feat(iam): add the authentication and users API endpoints | US30, US24 · Web Application (Ronal) | 11/11/2026 |
-| stockia-webapp | feature/iam | `76539a7` | feat(iam): add the IAM application store | US30, US24 · Web Application (Ronal) | 11/11/2026 |
-| stockia-webapp | feature/iam | `7af88f8` | feat(iam): add the authentication guard and bearer interceptor | US30, US24 · Web Application (Ronal) | 11/11/2026 |
-| stockia-webapp | feature/iam | `a2180bb` | feat(iam): add the presentation layer views | US30, US24 · Web Application (Ronal) | 11/11/2026 |
-| stockia-webapp | feature/iam | `93d5433` | feat(iam): add the IAM routes | US30, US24 · Web Application (Ronal) | 11/11/2026 |
-| stockia-webapp | feature/restaurant-registration | `e4a6d68` | feat(restaurant-registration): add the restaurant domain model | US29, US40 · Web Application (Ronal) | 11/11/2026 |
-| stockia-webapp | feature/restaurant-registration | `27f69b9` | feat(restaurant-registration): add the restaurant API resource and assembler | US29, US40 · Web Application (Ronal) | 11/11/2026 |
-| stockia-webapp | feature/restaurant-registration | `2da7846` | feat(restaurant-registration): add the restaurant registration API | US29, US40 · Web Application (Ronal) | 11/11/2026 |
-| stockia-webapp | feature/restaurant-registration | `bbaa0f1` | feat(restaurant-registration): add the restaurant registration store | US29, US40 · Web Application (Ronal) | 11/11/2026 |
-| stockia-webapp | feature/restaurant-registration | `264e082` | feat(restaurant-registration): add the presentation layer | US29, US40 · Web Application (Ronal) | 11/11/2026 |
-| stockia-webapp | feature/restaurant-registration | `48c14e0` | feat(restaurant-regitration):add the resturant-registration routes | US29, US40 · Web Application (Ronal) | 11/11/2026 |
+| stockia-webapp | feature/iam | `4de3dd3` | feat(iam): add the IAM domain model | US10, US11 · Web Application (Ronal) | 11/11/2026 |
+| stockia-webapp | feature/iam | `a0d1a93` | feat(iam): add the IAM API resources and assemblers | US10, US11 · Web Application (Ronal) | 11/11/2026 |
+| stockia-webapp | feature/iam | `0881c5f` | feat(iam): add the authentication and users API endpoints | US10, US11 · Web Application (Ronal) | 11/11/2026 |
+| stockia-webapp | feature/iam | `76539a7` | feat(iam): add the IAM application store | US10, US11 · Web Application (Ronal) | 11/11/2026 |
+| stockia-webapp | feature/iam | `7af88f8` | feat(iam): add the authentication guard and bearer interceptor | US10, US11 · Web Application (Ronal) | 11/11/2026 |
+| stockia-webapp | feature/iam | `a2180bb` | feat(iam): add the presentation layer views | US10, US11 · Web Application (Ronal) | 11/11/2026 |
+| stockia-webapp | feature/iam | `93d5433` | feat(iam): add the IAM routes | US10, US11 · Web Application (Ronal) | 11/11/2026 |
+| stockia-webapp | feature/restaurant-registration | `e4a6d68` | feat(restaurant-registration): add the restaurant domain model | US09, US10 · Web Application (Ronal) | 11/11/2026 |
+| stockia-webapp | feature/restaurant-registration | `27f69b9` | feat(restaurant-registration): add the restaurant API resource and assembler | US09, US10 · Web Application (Ronal) | 11/11/2026 |
+| stockia-webapp | feature/restaurant-registration | `2da7846` | feat(restaurant-registration): add the restaurant registration API | US09, US10 · Web Application (Ronal) | 11/11/2026 |
+| stockia-webapp | feature/restaurant-registration | `bbaa0f1` | feat(restaurant-registration): add the restaurant registration store | US09, US10 · Web Application (Ronal) | 11/11/2026 |
+| stockia-webapp | feature/restaurant-registration | `264e082` | feat(restaurant-registration): add the presentation layer | US09, US10 · Web Application (Ronal) | 11/11/2026 |
+| stockia-webapp | feature/restaurant-registration | `48c14e0` | feat(restaurant-regitration):add the resturant-registration routes | US09, US10 · Web Application (Ronal) | 11/11/2026 |
 | stockia-webapp | develop | `1519717` | Merge branch 'feature/restaurant-registration' into develop | Integración revisada de `feature/restaurant-registration` en `develop` (Ronal) | 11/11/2026 |
 | stockia-webapp | feature/shared-fixes | `cb5ea6e` | fix(shared): rename validator.ts to validators.ts | Sin ítem en el Backlog 3 · Web Application (Aldo) | 11/11/2026 |
 | stockia-webapp | feature/shared-fixes | `c8b62b0` | fix(shared): restore the error message pipe | Sin ítem en el Backlog 3 · Web Application (Aldo) | 11/11/2026 |
 | stockia-webapp | feature/shared-fixes | `69ce64a` | refactor(shared): remove the legacy home view | Sin ítem en el Backlog 3 · Web Application (Aldo) | 11/11/2026 |
 | stockia-webapp | feature/shared-fixes | `d7fc4d6` | refactor(shared): remove the legacy page-not-found template and styles | Sin ítem en el Backlog 3 · Web Application (Aldo) | 11/11/2026 |
 | stockia-webapp | develop | `5b496fc` | Merge pull request #36 from upc-pre-202602-1ASI0729-7747-databit/feature/shared-fixes | Integración revisada de `feature/shared-fixes` en `develop` (Aldo) | 11/11/2026 |
-| stockia-webapp | feature/render-deployment | `efc908c` | chore: remove the Vercel deployment files (the app is deployed on Render) | TS08 · Web Application (Aldo) | 11/11/2026 |
-| stockia-webapp | feature/render-deployment | `e3f4253` | chore: ignore local environment files, logs and e2e screenshots | TS08 · Web Application (Aldo) | 11/11/2026 |
+| stockia-webapp | feature/render-deployment | `efc908c` | chore: remove the Vercel deployment files (the app is deployed on Render) | TS14 · Web Application (Aldo) | 11/11/2026 |
+| stockia-webapp | feature/render-deployment | `e3f4253` | chore: ignore local environment files, logs and e2e screenshots | TS14 · Web Application (Aldo) | 11/11/2026 |
 | stockia-webapp | develop | `b113c93` | Merge pull request #37 from upc-pre-202602-1ASI0729-7747-databit/feature/render-deployment | Integración revisada de `feature/render-deployment` en `develop` (Aldo) | 11/11/2026 |
-| stockia-webapp | feature/integration-tests | `e90a9bb` | test: add the static server for the end-to-end test | TS08 · Web Application (Aldo) | 11/11/2026 |
-| stockia-webapp | feature/integration-tests | `d592312` | test: add the end-to-end test against the StockIA Platform API | TS08 · Web Application (Aldo) | 11/11/2026 |
-| stockia-webapp | feature/integration-tests | `9734e04` | ci: add the GitHub Actions workflow with build, lint and end-to-end test | TS08 · Web Application (Aldo) | 11/11/2026 |
+| stockia-webapp | feature/integration-tests | `e90a9bb` | test: add the static server for the end-to-end test | TS14 · Web Application (Aldo) | 11/11/2026 |
+| stockia-webapp | feature/integration-tests | `d592312` | test: add the end-to-end test against the StockIA Platform API | TS14 · Web Application (Aldo) | 11/11/2026 |
+| stockia-webapp | feature/integration-tests | `9734e04` | ci: add the GitHub Actions workflow with build, lint and end-to-end test | TS14 · Web Application (Aldo) | 11/11/2026 |
 | stockia-webapp | develop | `296fd92` | Merge pull request #38 from upc-pre-202602-1ASI0729-7747-databit/feature/integration-tests | Integración revisada de `feature/integration-tests` en `develop` (Aldo) | 12/11/2026 |
-| stockia-webapp | feature/vercel-deployment | `c6c75c2` | chore(config): point the production environment to the deployed StockIA Platform API | TS08 · Web Application (Aldo) | 12/11/2026 |
-| stockia-webapp | feature/vercel-deployment | `c2c0312` | docs: link the README to the team API repository and describe the Vercel deployment | TS08 · Web Application (Aldo) | 12/11/2026 |
-| stockia-webapp | feature/vercel-deployment | `bed2a63` | build: add the Vercel configuration with the SPA fallback to index.html | TS08 · Web Application (Aldo) | 12/11/2026 |
+| stockia-webapp | feature/vercel-deployment | `c6c75c2` | chore(config): point the production environment to the deployed StockIA Platform API | TS14 · Web Application (Aldo) | 12/11/2026 |
+| stockia-webapp | feature/vercel-deployment | `c2c0312` | docs: link the README to the team API repository and describe the Vercel deployment | TS14 · Web Application (Aldo) | 12/11/2026 |
+| stockia-webapp | feature/vercel-deployment | `bed2a63` | build: add the Vercel configuration with the SPA fallback to index.html | TS14 · Web Application (Aldo) | 12/11/2026 |
 | stockia-webapp | develop | `2d94629` | Merge pull request #39 from upc-pre-202602-1ASI0729-7747-databit/feature/vercel-deployment | Integración revisada de `feature/vercel-deployment` en `develop` (Aldo) | 12/11/2026 |
 | stockia-webapp | main | `a15390b` | Merge pull request #24 from upc-pre-202602-1ASI0729-7747-databit/develop | Integración de `develop` en `main` (Aldo) | 12/11/2026 |
-| stockia-webapp | feature/fix-api-url | `eb63b32` | fix(config): use the deployed StockIA Platform API URL | TS08 · Web Application (Aldo) | 12/11/2026 |
-| stockia-webapp | feature/fix-api-url | `e1d0c74` | fix(config): restore the users endpoint path | TS08 · Web Application (Aldo) | 12/11/2026 |
+| stockia-webapp | feature/fix-api-url | `eb63b32` | fix(config): use the deployed StockIA Platform API URL | TS14 · Web Application (Aldo) | 12/11/2026 |
+| stockia-webapp | feature/fix-api-url | `e1d0c74` | fix(config): restore the users endpoint path | TS14 · Web Application (Aldo) | 12/11/2026 |
 | stockia-webapp | develop | `9faca53` | Merge pull request #40 from upc-pre-202602-1ASI0729-7747-databit/feature/fix-api-url | Integración revisada de `feature/fix-api-url` en `develop` (Aldo) | 12/11/2026 |
 | stockia-webapp | main | `81c13bd` | Merge pull request #41 from upc-pre-202602-1ASI0729-7747-databit/develop | Integración de `develop` en `main` (Aldo) | 12/11/2026 |
 
@@ -5074,77 +5075,76 @@ En esta sección se presentan los avances de implementación del Sprint 3 median
 
 | **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| stockia-report | feature/chapter-3 | `[ID]` | docs(chapter-3): add sprint 3 technical stories TS05 to TS08 | Technical Stories y Product Backlog del Sprint 3 ([COMPLETAR autor]). | [dd/mm/2026] |
+| stockia-report | feature/chapter-3 | `[ID]` | docs(chapter-3): add sprint 3 technical stories TS11 to TS14 | Technical Stories y Product Backlog del Sprint 3 ([COMPLETAR autor]). | [dd/mm/2026] |
 | stockia-report | feature/chapter-5 | `[ID]` | docs(chapter-5): add sprint 3 | Sprint Planning, Sprint Backlog, evidencias y Team Collaboration del Sprint 3 ([COMPLETAR autor]). | [dd/mm/2026] |
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
 En el Sprint 3 se implementó la primera versión del RESTful API de StockIA. Las capturas corresponden al API en ejecución (https://stockia-platform-api-ycil.onrender.com/swagger-ui.html)  y muestran cada Bounded Context con la User Story que lo respalda. Cada captura debe mostrar la petición, el código de respuesta y el cuerpo devuelto (Swagger → *Try it out* o Postman).
 
-**1. IAM (US30, US24, RNF11):** inicio de sesión con token JWT, respuesta `InvalidCredentials` con los intentos restantes, bloqueo de la cuenta tras 5 intentos (`AccountLocked`), recuperación de contraseña y gestión del equipo con la regla del último Administrador.
+**1. IAM (US10, US11, RNF08):** inicio de sesión con token JWT, respuesta `InvalidCredentials` con los intentos restantes, bloqueo de la cuenta tras 5 intentos (`AccountLocked`), recuperación de contraseña y gestión del equipo con la regla del último Administrador.
 
-<p align="center"><img alt="Inicio de sesión" src="assets/img/chapter-05/s3-exec-01-iam-sign-in.png" width="800" /><br/><i>Figura: inicio de sesión (US30)</i></p>
+<p align="center"><img alt="Inicio de sesión" src="assets/img/chapter-05/s3-exec-01-iam-sign-in.png" width="800" /><br/><i>Figura: inicio de sesión (US10)</i></p>
 
 <p align="center"><img alt="Bloqueo de cuenta" src="assets/img/chapter-05/s3-exec-02-iam-lock.png" width="800" /><br/><i></i></p>
 
-<p align="center"><img alt="Bloqueo de cuenta" src="assets/img/chapter-05/s3-exec-02-iam-lock2.png" width="800" /><br/><i>Figura: intentos restantes y bloqueo de cuenta (US30)</i></p>
+<p align="center"><img alt="Bloqueo de cuenta" src="assets/img/chapter-05/s3-exec-02-iam-lock2.png" width="800" /><br/><i>Figura: intentos restantes y bloqueo de cuenta (US10)</i></p>
 
-<p align="center"><img alt="Recuperación de contraseña" src="assets/img/chapter-05/s3-exec-03-iam-recovery.png" width="800" /><br/><i>Figura: recuperación de contraseña (US30)</i></p>
+<p align="center"><img alt="Recuperación de contraseña" src="assets/img/chapter-05/s3-exec-03-iam-recovery.png" width="800" /><br/><i>Figura: recuperación de contraseña (US10)</i></p>
 
-<p align="center"><img alt="Equipo y roles" src="assets/img/chapter-05/s3-exec-04-iam-team.png" width="800" /><br/><i>Figura: gestión del equipo y roles (US24)</i></p>
+<p align="center"><img alt="Equipo y roles" src="assets/img/chapter-05/s3-exec-04-iam-team.png" width="800" /><br/><i>Figura: gestión del equipo y roles (US11)</i></p>
 
-**2. Restaurant Registration (US29, US40):** registro del restaurante con su propietario Administrador, rechazo de correo duplicado y actualización del perfil y del restaurante.
+**2. Restaurant Registration (US09, US10):** registro del restaurante con su propietario Administrador, rechazo de correo duplicado y actualización del perfil y del restaurante.
 
-<p align="center"><img alt="Registro de restaurante" src="assets/img/chapter-05/s3-exec-05-registration.png" width="800" /><br/><i>Figura: registro de un restaurante (US29)</i></p>
+<p align="center"><img alt="Registro de restaurante" src="assets/img/chapter-05/s3-exec-05-registration.png" width="800" /><br/><i>Figura: registro de un restaurante (US09)</i></p>
 
-<p align="center"><img alt="Perfil del restaurante" src="assets/img/chapter-05/s3-exec-06-restaurant-profile.png" width="800" /><br/><i>Figura: actualización del restaurante (US40)</i></p>
+<p align="center"><img alt="Perfil del restaurante" src="assets/img/chapter-05/s3-exec-06-restaurant-profile.png" width="800" /><br/><i>Figura: actualización del restaurante (US10)</i></p>
 
-<p align="center"><img alt="Perfil del restaurante" src="assets/img/chapter-05/s3-exec-06-restaurant-profile2.png" width="800" /><br/><i>Figura: actualización del restaurante (US40)</i></p>
+<p align="center"><img alt="Perfil del restaurante" src="assets/img/chapter-05/s3-exec-06-restaurant-profile2.png" width="800" /><br/><i>Figura: actualización del restaurante (US10)</i></p>
 
-**3. Stock Management (US21, US36):** alta de lotes con fecha límite calculada, edición, baja y consulta de lotes por vencer.
+**3. Stock Management (US12):** alta de lotes con fecha límite calculada, edición, baja y consulta de lotes por vencer.
 
-<p align="center"><img alt="Alta de lote" src="assets/img/chapter-05/s3-exec-07-stock-create.png" width="800" /><br/><i>Figura: alta de un lote con fecha límite de consumo (US21, US36)</i></p>
+<p align="center"><img alt="Alta de lote" src="assets/img/chapter-05/s3-exec-07-stock-create.png" width="800" /><br/><i>Figura: alta de un lote con fecha límite de consumo (US12)</i></p>
 
-**4. Recipes Management (US22, US39):** receta con ingredientes, venta con descuento del lote más fresco utilizable, `CannotSell` con los insumos que bloquean la venta, historial y anulación.
+**4. Recipes Management (US13, US14, US15):** receta con ingredientes, venta con descuento del lote más fresco utilizable, `CannotSell` con los insumos que bloquean la venta, historial y anulación.
 
 <p align="center"><img alt="Venta con descuento" src="assets/img/chapter-05/s3-exec-09-recipes-sale.png" width="800" /><br/></p>
 
-<p align="center"><img alt="Venta con descuento" src="assets/img/chapter-05/s3-exec-09-recipes-sale2.png" width="800" /><br/><i>Figura: venta con descuento automático de insumos (US22)</i></p>
+<p align="center"><img alt="Venta con descuento" src="assets/img/chapter-05/s3-exec-09-recipes-sale2.png" width="800" /><br/><i>Figura: venta con descuento automático de insumos (US14)</i></p>
 
-<p align="center"><img alt="CannotSell" src="assets/img/chapter-05/s3-exec-10-recipes-cannot-sell.png" width="800" /><br/><i>Figura: venta rechazada por insumos agotados o vencidos (US22)</i></p>
+<p align="center"><img alt="CannotSell" src="assets/img/chapter-05/s3-exec-10-recipes-cannot-sell.png" width="800" /><br/><i>Figura: venta rechazada por insumos agotados o vencidos (US14)</i></p>
 
-**5. ML & Recommendations (US25, US26):** pronóstico de 7 días por plato con confianza, calendario peruano y clima, y recomendaciones de compra y de menú.
+**5. ML & Recommendations (US18):** pronóstico de 7 días por plato con confianza, calendario peruano y clima, y recomendaciones de compra y de menú.
 
-<p align="center"><img alt="Pronóstico de demanda" src="assets/img/chapter-05/s3-exec-12-ml-forecast.png" width="800" /><br/><i>Figura: pronóstico de demanda a 7 días (US25)</i></p>
+<p align="center"><img alt="Pronóstico de demanda" src="assets/img/chapter-05/s3-exec-12-ml-forecast.png" width="800" /><br/><i>Figura: pronóstico de demanda a 7 días (US18)</i></p>
 
-<p align="center"><img alt="Recomendaciones" src="assets/img/chapter-05/s3-exec-13-ml-recommendations.png" width="800" /><br/><i>Figura: recomendaciones de compra y de menú (US26)</i></p>
+<p align="center"><img alt="Recomendaciones" src="assets/img/chapter-05/s3-exec-13-ml-recommendations.png" width="800" /><br/><i>Figura: recomendaciones de compra y de menú (US18)</i></p>
 
-**6. Notifications & Messaging (US27, US41):** alertas automáticas por eventos de stock, alertas manuales, entrega por canal, reintento y atención.
+**6. Notifications & Messaging (US17):** alertas automáticas por eventos de stock, alertas manuales, entrega por canal, reintento y atención.
 
-<p align="center"><img alt="Alertas" src="assets/img/chapter-05/s3-exec-14-alerts-list.png" width="800" /><br/><i>Figura: alertas generadas automáticamente (US27)</i></p>
+<p align="center"><img alt="Alertas" src="assets/img/chapter-05/s3-exec-14-alerts-list.png" width="800" /><br/><i>Figura: alertas generadas automáticamente (US17)</i></p>
 
-<p align="center"><img alt="Reintento y atención" src="assets/img/chapter-05/s3-exec-15-alerts-retry.png" width="800" /><br/><i>Figura: Atención de alertas (US41)</i></p>
+<p align="center"><img alt="Reintento y atención" src="assets/img/chapter-05/s3-exec-15-alerts-retry.png" width="800" /><br/><i>Figura: Atención de alertas (US17)</i></p>
 
-**7. Analytics & Dashboard (US23):** indicadores del dashboard y calculadora de ahorro semanal.
+**7. Analytics & Dashboard (US16):** indicadores del dashboard y calculadora de ahorro semanal.
 
-<p align="center"><img alt="Dashboard" src="assets/img/chapter-05/s3-exec-16-dashboard.png" width="800" /><br/><i>Figura: resumen del dashboard y ahorro semanal (US23)</i></p>
+<p align="center"><img alt="Dashboard" src="assets/img/chapter-05/s3-exec-16-dashboard.png" width="800" /><br/><i>Figura: resumen del dashboard y ahorro semanal (US16)</i></p>
 
-**8. Subscription & Payments (US31, RNF11):** catálogo de planes, elección del plan y checkout simulado de Stripe y PayPal, incluido un error de pago.
+**8. Subscription & Payments (US19):** catálogo de planes, elección del plan y checkout simulado de Stripe y PayPal, incluido un error de pago.
 
-<p align="center"><img alt="Planes" src="assets/img/chapter-05/s3-exec-17-subscription-plans.png" width="800" /><br/><i>Figura: planes y elección de suscripción (US31)</i></p>
+<p align="center"><img alt="Planes" src="assets/img/chapter-05/s3-exec-17-subscription-plans.png" width="800" /><br/><i>Figura: planes y elección de suscripción (US19)</i></p>
 
-<p align="center"><img alt="Pago" src="assets/img/chapter-05/s3-exec-18-subscription-payment.png" width="800" /><br/><i>Figura: checkout simulado de Stripe y PayPal (US31)</i></p>
+<p align="center"><img alt="Pago" src="assets/img/chapter-05/s3-exec-18-subscription-payment.png" width="800" /><br/><i>Figura: checkout simulado de Stripe y PayPal (US19)</i></p>
 
 **Alcance implementado por escenario**
 
 | **Ítem** | **Escenarios implementados en el Sprint 3** | **Escenarios que quedan para Sprints siguientes** |
 | :--- | :--- | :--- |
-| US25 | Pronóstico de 7 días con modelo ONNX, calendario peruano y clima de Open-Meteo, con confianza | Recopilación programada y reentrenamiento periódico (US37 y US38) |
-| US26 | Generación y aplicación de recomendaciones de compra y de menú | Logro de gamificación |
-| US30 | Inicio de sesión exitoso y con error, bloqueo de cuenta y recuperación de contraseña | Envío real del correo de recuperación |
-| US31 | Elección del plan, checkout simulado de Stripe y PayPal y error de pago | Cobro real y renovación automática programada |
-| US41 | Regla de canales, atención y reintento con canales simulados | Entrega real por WhatsApp, SendGrid y Twilio (US28, US32, US33, RNF12) |
-| US36 | Cálculo de la fecha límite desde la vida útil registrada | Vida útil sugerida por API externa (US34 y US35) |
+| US10 | Inicio de sesión exitoso y con error, bloqueo de cuenta y recuperación de contraseña | Envío real del correo de recuperación |
+| US12 | Cálculo de la fecha límite desde la vida útil registrada | Vida útil sugerida por API externa |
+| US17 | Regla de canales, atención y reintento con canales simulados | Entrega real por WhatsApp, correo con SendGrid (US21) y SMS con Twilio |
+| US18 | Pronóstico de 7 días con modelo ONNX, calendario peruano y clima de Open-Meteo, con confianza; generación y aplicación de recomendaciones de compra y de menú | Recopilación programada y reentrenamiento periódico del modelo; logro de gamificación |
+| US19 | Elección del plan, checkout simulado de Stripe y PayPal y error de pago | Cobro real con Stripe (US22) y renovación automática programada |
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
@@ -5156,105 +5156,105 @@ En el Sprint 3 el RESTful API de StockIA se documentó con **OpenAPI** mediante 
 * **Documento OpenAPI:** https://stockia-platform-api-ycil.onrender.com/v3/api-docs
 
 
-**IAM (Ronal) — US30, US24, RNF11**
+**IAM (Ronal) — US10, US11, RNF08**
 
 | **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
 | :--- | :---: | :--- | :--- | :---: | :---: |
-| `/api/v1/authentication/sign-in` | POST | Body: `email`, `password` | `200 OK` con los datos del usuario y el `token`; `401 Unauthorized` con `InvalidCredentials` y los intentos restantes; `423 Locked` con `AccountLocked` tras 5 intentos. | `43136f8` | US30 |
-| `/api/v1/authentication/password-reset-request` | POST | Body: `email` | `202 Accepted`; el enlace de recuperación usa `STOCKIA_WEB_APP_URL`. | `43136f8` | US30 |
-| `/api/v1/authentication/password-resets` | POST | Body: `code`, `new_password` | `204 No Content`; `400 Bad Request` si el códgio ingresado no es válido. | `43136f8` | US30 |
-| `/api/v1/users` | GET | — | `200 OK` con los integrantes del restaurante. | `43136f8` | US24 |
-| `/api/v1/users` | POST | Body: `full_name`, `email`, `role`, `temporaryPassword` | `201 Created` con el integrante invitado. | `43136f8` | US24 |
-| `/api/v1/users/{id}` | DELETE | Path: `id` | `204 No Content`; `409 Conflict` si es la propia cuenta o el último Administrador. | `43136f8` | US24 |
+| `/api/v1/authentication/sign-in` | POST | Body: `email`, `password` | `200 OK` con los datos del usuario y el `token`; `401 Unauthorized` con `InvalidCredentials` y los intentos restantes; `423 Locked` con `AccountLocked` tras 5 intentos. | `43136f8` | US10 |
+| `/api/v1/authentication/password-reset-request` | POST | Body: `email` | `202 Accepted`; el enlace de recuperación usa `STOCKIA_WEB_APP_URL`. | `43136f8` | US10 |
+| `/api/v1/authentication/password-resets` | POST | Body: `code`, `new_password` | `204 No Content`; `400 Bad Request` si el códgio ingresado no es válido. | `43136f8` | US10 |
+| `/api/v1/users` | GET | — | `200 OK` con los integrantes del restaurante. | `43136f8` | US11 |
+| `/api/v1/users` | POST | Body: `full_name`, `email`, `role`, `temporaryPassword` | `201 Created` con el integrante invitado. | `43136f8` | US11 |
+| `/api/v1/users/{id}` | DELETE | Path: `id` | `204 No Content`; `409 Conflict` si es la propia cuenta o el último Administrador. | `43136f8` | US11 |
 
 <p align="center"><img alt="Swagger IAM" src="assets/img/chapter-05/s3-swagger-01-iam.png" width="800" /><br/><i>Figura: OpenAPI de IAM</i></p>
 
-**Restaurant Registration (Ronal) — US29, US40**
+**Restaurant Registration (Ronal) — US09, US10**
 
 | **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
 | :--- | :---: | :--- | :--- | :---: | :---: |
-| `/api/v1/restaurant-registrations` | POST | Body: `full_name`, `email`, `password`, `restaurant_name` | `201 Created` con el restaurante y su propietario Administrador; `409 Conflict` si el correo ya existe. | `806619e` | US29 |
-| `/api/v1/restaurants/current` | GET | — | `200 OK` con los datos del restaurante del usuario. | `806619e` | US40 |
-| `/api/v1/restaurants/current` | PUT | Body: `name`, `address`, `phone` | `200 OK` con el restaurante actualizado. | `806619e` | US40 |
-| `/api/v1/users/{user_id}/password` | POST | Path: `user_id`. Body: `current_password`, `new_password` | `204 No Content`; `400 Bad Request` si la contraseña actual no coincide. | `43136f8` | US40, RNF11 |
+| `/api/v1/restaurant-registrations` | POST | Body: `full_name`, `email`, `password`, `restaurant_name` | `201 Created` con el restaurante y su propietario Administrador; `409 Conflict` si el correo ya existe. | `806619e` | US09 |
+| `/api/v1/restaurants/current` | GET | — | `200 OK` con los datos del restaurante del usuario. | `806619e` | US10 |
+| `/api/v1/restaurants/current` | PUT | Body: `name`, `address`, `phone` | `200 OK` con el restaurante actualizado. | `806619e` | US10 |
+| `/api/v1/users/{user_id}/password` | POST | Path: `user_id`. Body: `current_password`, `new_password` | `204 No Content`; `400 Bad Request` si la contraseña actual no coincide. | `43136f8` | US10, RNF08 |
 
 <p align="center"><img alt="Swagger Restaurant Registration" src="assets/img/chapter-05/s3-swagger-02-registration.png" width="800" /><br/><i>Figura: OpenAPI de Restaurant Registration</i></p>
 
-**Stock Management (Jesus) — US21, US36**
+**Stock Management (Jesus) — US12**
 
 | **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
 | :--- | :---: | :--- | :--- | :---: | :---: |
-| `/api/v1/inventory-items` | GET | Query opcional: `status` | `200 OK` con los lotes, sus cantidades y su estado. | `5293f7a` | US21 |
-| `/api/v1/inventory-items` | POST | Body: `name`, `unit`, `quantity`, `min_threshold`, `shelf_life_days`, `unit_cost` ✱ | `201 Created` con el lote y su fecha límite de consumo calculada. | `5293f7a` | US21, US36 |
-| `/api/v1/inventory-items/{id}` | GET | Path: `item_id` | `200 OK` con el lote; `404 Not Found` si no existe. | `5293f7a` | US21 |
-| `/api/v1/inventory-items/{id}` | PUT | Path: `item_id`. Body: mismos campos del alta | `200 OK` con el lote actualizado. | `5293f7a` | US21, US36 |
-| `/api/v1/inventory-items/{id}` | DELETE | Path: `item_id` | `204 No Content`. | `5293f7a` | US21 |
+| `/api/v1/inventory-items` | GET | Query opcional: `status` | `200 OK` con los lotes, sus cantidades y su estado. | `5293f7a` | US12 |
+| `/api/v1/inventory-items` | POST | Body: `name`, `unit`, `quantity`, `min_threshold`, `shelf_life_days`, `unit_cost` ✱ | `201 Created` con el lote y su fecha límite de consumo calculada. | `5293f7a` | US12 |
+| `/api/v1/inventory-items/{id}` | GET | Path: `item_id` | `200 OK` con el lote; `404 Not Found` si no existe. | `5293f7a` | US12 |
+| `/api/v1/inventory-items/{id}` | PUT | Path: `item_id`. Body: mismos campos del alta | `200 OK` con el lote actualizado. | `5293f7a` | US12 |
+| `/api/v1/inventory-items/{id}` | DELETE | Path: `item_id` | `204 No Content`. | `5293f7a` | US12 |
 
 <p align="center"><img alt="Swagger Stock Management" src="assets/img/chapter-05/s3-swagger-03-stock.png" width="800" /><br/><i>Figura: OpenAPI de Stock Management</i></p>
 
-**Recipes Management (Jesus) — US22, US39**
+**Recipes Management (Jesus) — US13, US14, US15**
 
 | **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
 | :--- | :---: | :--- | :--- | :---: | :---: |
-| `/api/v1/recipes` | GET | — | `200 OK` con las recetas, su precio y sus ingredientes. | `e170d4b` | US22 |
-| `/api/v1/recipes` | POST | Body: `dish_name`, `price`, `ingredients` (`inventory_item_id`, `quantity_required`, `unit`) | `201 Created` con la receta. | `e170d4b` | US22 |
-| `/api/v1/recipes/{id}` | GET / PUT / DELETE | Path: `recipe_id`. Body en PUT: igual que el alta | `200 OK` con la receta, `200 OK` con la receta actualizada o `204 No Content`. | `e170d4b` | US22 |
-| `/api/v1/sales` | POST | Body: `channel`, `recipe_id`, `quantity` | `201 Created` con la venta Confirmada y el stock descontado; error `CannotSell` con los insumos que bloquean la venta. | `fd19276` | US22 |
-| `/api/v1/sales` | GET | Query opcional: `from`, `to`, `status` | `200 OK` con las ventas, el total por venta y los ingresos confirmados. | `fd19276` | US39 |
-| `/api/v1/sales/id}/void` | PUT | Path: `sale_id` | `200 OK` con la venta en estado Anulada. | `fd19276` | US39 |
+| `/api/v1/recipes` | GET | — | `200 OK` con las recetas, su precio y sus ingredientes. | `e170d4b` | US13 |
+| `/api/v1/recipes` | POST | Body: `dish_name`, `price`, `ingredients` (`inventory_item_id`, `quantity_required`, `unit`) | `201 Created` con la receta. | `e170d4b` | US13 |
+| `/api/v1/recipes/{id}` | GET / PUT / DELETE | Path: `recipe_id`. Body en PUT: igual que el alta | `200 OK` con la receta, `200 OK` con la receta actualizada o `204 No Content`. | `e170d4b` | US13 |
+| `/api/v1/sales` | POST | Body: `channel`, `recipe_id`, `quantity` | `201 Created` con la venta Confirmada y el stock descontado; error `CannotSell` con los insumos que bloquean la venta. | `fd19276` | US14 |
+| `/api/v1/sales` | GET | Query opcional: `from`, `to`, `status` | `200 OK` con las ventas, el total por venta y los ingresos confirmados. | `fd19276` | US15 |
+| `/api/v1/sales/id}/void` | PUT | Path: `sale_id` | `200 OK` con la venta en estado Anulada. | `fd19276` | US15 |
 
 <p align="center"><img alt="Swagger Recipes Management" src="assets/img/chapter-05/s3-swagger-04-recipes-sales.png" width="800" /><br/><i>Figura: OpenAPI de Recipes Management & Sales</i></p>
 
-**ML & Recommendations (Aldo) — US25, US26**
+**ML & Recommendations (Aldo) — US18**
 
 | **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
 | :--- | :---: | :--- | :--- | :---: | :---: |
-| `/api/v1/demand-forecasts` | POST | — | `201 Created` con el pronóstico de 7 días (`generated_at`, `confidence`, `weather_condition`, unidades por plato y día). | `c4dc0e9` | US25 |
-| `/api/v1/demand-forecasts/latest` | GET | — | `200 OK` con el último pronóstico; `404 Not Found` si aún no hay. | `c4dc0e9` | US25 |
-| `/api/v1/recommendations` | GET | Query opcional: `applied` | `200 OK` con las recomendaciones, su tipo, mensaje e impacto esperado. | `8fdb28d` | US26 |
-| `/api/v1/recommendations/{id}/apply` | PUT | Path: `recommendation_id` | `200 OK` con la recomendación en estado aplicado. | `8fdb28d` | US26 |
+| `/api/v1/demand-forecasts` | POST | — | `201 Created` con el pronóstico de 7 días (`generated_at`, `confidence`, `weather_condition`, unidades por plato y día). | `c4dc0e9` | US18 |
+| `/api/v1/demand-forecasts/latest` | GET | — | `200 OK` con el último pronóstico; `404 Not Found` si aún no hay. | `c4dc0e9` | US18 |
+| `/api/v1/recommendations` | GET | Query opcional: `applied` | `200 OK` con las recomendaciones, su tipo, mensaje e impacto esperado. | `8fdb28d` | US18 |
+| `/api/v1/recommendations/{id}/apply` | PUT | Path: `recommendation_id` | `200 OK` con la recomendación en estado aplicado. | `8fdb28d` | US18 |
 
 <p align="center"><img alt="Swagger ML" src="assets/img/chapter-05/s3-swagger-05-ml.png" width="800" /><br/><i>Figura: OpenAPI de ML & Recommendations</i></p>
 
-**Notifications & Messaging (Leyla) — US27, US41**
+**Notifications & Messaging (Leyla) — US17**
 
 | **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
 | :--- | :---: | :--- | :--- | :---: | :---: |
-| `/api/v1/alerts` | GET | Query opcional: `acknowledged` | `200 OK` con las alertas, su severidad, los canales entregados y el contador de pendientes. | `41b1bd0` | US27 |
-| `/api/v1/alerts` | POST | Body: `type`, `severity`, `message`, `channel` | `201 Created` con la alerta manual registrada. | `41b1bd0` | US27 |
-| `/api/v1/alerts/{id}` | GET / DELETE | Path: `alert_id` | `200 OK` con la alerta o `204 No Content`. | `41b1bd0` | US27, US41 |
-| `/api/v1/alerts/{id}/acknowledge` | PUT | Path: `alert_id` | `200 OK` con la alerta atendida; error si falta entregar algún canal requerido. | `41b1bd0` | US41 |
+| `/api/v1/alerts` | GET | Query opcional: `acknowledged` | `200 OK` con las alertas, su severidad, los canales entregados y el contador de pendientes. | `41b1bd0` | US17 |
+| `/api/v1/alerts` | POST | Body: `type`, `severity`, `message`, `channel` | `201 Created` con la alerta manual registrada. | `41b1bd0` | US17 |
+| `/api/v1/alerts/{id}` | GET / DELETE | Path: `alert_id` | `200 OK` con la alerta o `204 No Content`. | `41b1bd0` | US17 |
+| `/api/v1/alerts/{id}/acknowledge` | PUT | Path: `alert_id` | `200 OK` con la alerta atendida; error si falta entregar algún canal requerido. | `41b1bd0` | US17 |
 
 <p align="center"><img alt="Swagger Notifications" src="assets/img/chapter-05/s3-swagger-06-notifications.png" width="800" /><br/><i>Figura: OpenAPI de Notifications & Messaging</i></p>
 
-**Analytics & Dashboard (Leyla) — US23**
+**Analytics & Dashboard (Leyla) — US16**
 
 | **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
 | :--- | :---: | :--- | :--- | :---: | :---: |
-| `/api/v1/dashboard/summary` | GET | — | `200 OK` con los indicadores de stock, los insumos críticos, las alertas recientes y la última proyección. | `00acaf3` | US23 |
-| `/api/v1/dashboard/weekly-savings` | GET | — | `200 OK` con el ahorro semanal calculado. | `00acaf3` | US23 |
+| `/api/v1/dashboard/summary` | GET | — | `200 OK` con los indicadores de stock, los insumos críticos, las alertas recientes y la última proyección. | `00acaf3` | US16 |
+| `/api/v1/dashboard/weekly-savings` | GET | — | `200 OK` con el ahorro semanal calculado. | `00acaf3` | US16 |
 
 <p align="center"><img alt="Swagger Analytics" src="assets/img/chapter-05/s3-swagger-07-analytics.png" width="800" /><br/><i>Figura: OpenAPI de Analytics & Dashboard</i></p>
 
-**Subscription & Payments (Carla) — US31, RNF11**
+**Subscription & Payments (Carla) — US19**
 
 | **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
 | :--- | :---: | :--- | :--- | :---: | :---: |
-| `/api/v1/plans` | GET | — | `200 OK` con los planes, su precio y sus características en el idioma solicitado. | `f6f4ceb` | US31 |
-| `/api/v1/subscriptions/current` | GET | — | `200 OK` con la suscripción actual; `404 Not Found` si no tiene. | `fd66a71` | US31 |
-| `/api/v1/subscriptions` | POST | Body: `plan_id`, `payment_method` | `201 Created` con la suscripción pendiente de pago. | `fd66a71` | US31 |
+| `/api/v1/plans` | GET | — | `200 OK` con los planes, su precio y sus características en el idioma solicitado. | `f6f4ceb` | US19 |
+| `/api/v1/subscriptions/current` | GET | — | `200 OK` con la suscripción actual; `404 Not Found` si no tiene. | `fd66a71` | US19 |
+| `/api/v1/subscriptions` | POST | Body: `plan_id`, `payment_method` | `201 Created` con la suscripción pendiente de pago. | `fd66a71` | US19 |
 
 <p align="center"><img alt="Swagger Subscription" src="assets/img/chapter-05/s3-swagger-08-subscription.png" width="800" /><br/><i>Figura: OpenAPI de Subscription & Payments</i></p>
 
-**Shared kernel (Leyla) — TS05**
+**Shared kernel (Leyla) — TS11**
 
 | **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
 | :--- | :---: | :--- | :--- | :---: | :---: |
-| `/api/v1/health` | GET | — | `200 OK` con el estado del API. | `684f718` | TS05 |
+| `/api/v1/health` | GET | — | `200 OK` con el estado del API. | `684f718` | TS11 |
 
 **Ejemplos de interacción** *(ilustrativos; reemplazar con la respuesta real capturada de Swagger)*
 
-Venta rechazada por insumos agotados o vencidos (US22), con mensaje en español:
+Venta rechazada por insumos agotados o vencidos (US14), con mensaje en español:
 
 ```http
 POST https://[host]/api/v1/sales
@@ -5294,7 +5294,7 @@ Response (problem details, RFC 9457):
 }
 ```
 
-Inicio de sesión con contraseña incorrecta (US30):
+Inicio de sesión con contraseña incorrecta (US10):
 
 ```json
 {
@@ -5312,7 +5312,7 @@ Inicio de sesión con contraseña incorrecta (US30):
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-En el Sprint 3 se desplegaron el RESTful API (TS08) y su base de datos MySQL con Docker, y se reconfiguró la Web Application ya publicada en Vercel para consumirlos.
+En el Sprint 3 se desplegaron el RESTful API (TS14) y su base de datos MySQL con Docker, y se reconfiguró la Web Application ya publicada en Vercel para consumirlos.
 
 **Evidencia del despliegue de la platform api**
 <p align="center"><img alt="Inicio de sesión" src="assets/img/chapter-05/s3-deploy-platform-api.jpeg" width="800" /><br/><i>Figura: Despliegue en render de la platform api</i></p>
@@ -5340,11 +5340,11 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
 
 | **Integrante** | **GitHub** | **Aporte principal en el Sprint 3** | **Horas asignadas** | **Commits en `stockia-platform-api`** |
 | :--- | :--- | :--- | :---: | :---: |
-| Gallardo Morales, Carla Alejandra | Carlsss28 | Subscription & Payments: planes, suscripción y checkout simulado (US31, RNF11) | 20.5 | 20 |
-| Huaman Oscco, Aldo Jesus | Jesusho22 | ML & Recommendations: modelo ONNX, pronóstico, clima con Open-Meteo y recomendaciones (US25, US26); estructura del proyecto (TS05) y perfiles de persistencia (TS07); pruebas de `Quantity` y de asignación de lotes (US21); integración continua, despliegue y conexión de la Web Application (TS08) | 39.5 | 91 |
-| Miranda Córdova, Jesus Angel Yvan | Jesus-Miranda-678 | Stock Management y Recipes Management: lotes, fecha límite, recetas, motor de descuento e historial de ventas (US21, US36, US22, US39) | 31.5 | 91 |
-| Ortiz Laura, Leyla Alisson | Leylaa-O | Notifications & Messaging y Analytics & Dashboard: alertas, entrega por canal, dashboard y ahorro semanal (US27, US41, US23); shared kernel (TS05), configuración de OpenAPI (TS06) y datos de demostración (TS07) | 28.5 | 84 |
-| Toro Turpo, Ronal | Ronal345 | IAM y Restaurant Registration: registro del restaurante, JWT con bloqueo de cuenta y recuperación de contraseña, equipo y roles, perfil del restaurante y protección de credenciales (US29, US30, US24, US40, RNF11) | 33.5 | 25 |
+| Gallardo Morales, Carla Alejandra | Carlsss28 | Subscription & Payments: planes, suscripción y checkout simulado (US19) | 20.5 | 20 |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | ML & Recommendations: modelo ONNX, pronóstico, clima con Open-Meteo y recomendaciones (US18); estructura del proyecto (TS11) y perfiles de persistencia (TS13); pruebas de `Quantity` y de asignación de lotes (US12); integración continua, despliegue y conexión de la Web Application (TS14) | 39.5 | 91 |
+| Miranda Córdova, Jesus Angel Yvan | Jesus-Miranda-678 | Stock Management y Recipes Management: lotes, fecha límite, recetas, motor de descuento e historial de ventas (US12, US13, US14, US15) | 31.5 | 91 |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | Notifications & Messaging y Analytics & Dashboard: alertas, entrega por canal, dashboard y ahorro semanal (US17, US16); shared kernel (TS11), configuración de OpenAPI (TS12) y datos de demostración (TS13) | 28.5 | 84 |
+| Toro Turpo, Ronal | Ronal345 | IAM y Restaurant Registration: registro del restaurante, JWT con bloqueo de cuenta y recuperación de contraseña, equipo y roles, perfil del restaurante y protección de credenciales (US09, US10, US11, RNF08) | 33.5 | 25 |
 
 **Evidencia: tablero del Sprint 3 en Jira**
 
