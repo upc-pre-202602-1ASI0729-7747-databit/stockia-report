@@ -5361,7 +5361,6 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
 
 **Evidencia: tablero del Sprint 3 en Jira**
 
-<!-- IMAGEN PENDIENTE: mismo tablero finalizado de 5.2.3.3 -->
 <p align="center"><img alt="Tablero finalizado" src="assets/img/chapter-05/s3-jira-sprint3-done.png" width="800" /><br/><i>Artefacto: tablero del Sprint 3 finalizado</i></p>
 
 **Evidencia: contribuciones por integrante en `stockia-platform`**
