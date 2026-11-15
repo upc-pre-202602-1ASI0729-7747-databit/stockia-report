@@ -5379,9 +5379,9 @@ Datos de la entrevistada:
 **AUDITOR		:**   
 **CLIENTE		:** Databit 
 
-## 
+___
 
-**SITE o APP A EVALUAR:** StockIA<br><br>
+**SITE o APP A EVALUAR:** StockIA Web app<br><br>
 **TAREAS A EVALUAR:**<br>
  El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas de usuario, identificadas en los artefactos proporcionados (mockups de aplicación móvil y web):
 
@@ -5394,8 +5394,7 @@ Apartado de “Demand forecast”.
 **T3: Revisar el apartado de recomendaciones automáticas**<br>
 *Uno de los diferenciales de nuestra propuesta las recomendaciones automáticas.*
 
-
-## **ESCALA DE SEVERIDAD:**
+**ESCALA DE SEVERIDAD:**
 
 Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
@@ -5406,7 +5405,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 | 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
 | 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
 
-## **TABLA RESUMEN:**
+**TABLA RESUMEN:**
 
 | \# | Problema | Escala de severidad | Heurística/Principio violada(o) |
 | :---- | :---- | :---- | :---- |
@@ -5419,11 +5418,9 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 | 7 | Mensaje “Invalid PrimeUI License” visible en todas las pantallas | 2 | H8-Diseño minimalista; H2-Sistema y mundo real |
 | 8 | Botón “Apply” en recomendaciones sin confirmación ni detalle del efecto | 3 | H5-Prevención de errores; H3-Control y libertad |
 
-## 
+**DESCRIPCIÓN DE PROBLEMAS:**
 
-## **DESCRIPCIÓN DE PROBLEMAS:**
-
-### **Problema 1: Mucho texto en el dashboard**
+**Problema 1: Mucho texto en el dashboard**
 
 * **Severidad:** 3
 * **Descripción del problema:**
@@ -5434,9 +5431,9 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
   * **Problema en Principio de jerarquía visual:** el dashboard no marca qué información es la principal; los bloques compiten entre sí y el ojo no tiene un punto de entrada claro.
   * **Problema en Heurística 8 (Diseño estético y minimalista):** se muestra más información de la necesaria para una primera lectura, con datos duplicados que no aportan valor adicional.
 
-<img src="assets/img/chapter-05/heuristica-dashboard.png" width="800" />
+<img src="assets/img/chapter-05/heuristica-dashboard.png" width="800" /><br>
 
-### **Problema 2: No hay ningún botón en el dashboard**
+**Problema 2: No hay ningún botón en el dashboard**
 
 * **Severidad:** 1
 * **Descripción del problema:**
@@ -5449,11 +5446,9 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
   * **Problema en Heurística 7 (Flexibilidad y eficiencia de uso):** las tareas más comunes del dashboard (retirar o reponer un insumo) no tienen un atajo y obligan a navegar por otros módulos.
   * **Problema en Heurística 9 (Ayudar a reconocer, diagnosticar y recuperarse de errores):** la alerta describe el problema, pero no propone ni permite una solución directa desde el mismo lugar.
 
-<img src="assets/img/chapter-05/heuristica-dashboard.png" width="800" />
+<img src="assets/img/chapter-05/heuristica-dashboard.png" width="800" /><br>
 
-### 
-
-### **Problema 3: Falta de contenido de valor en “Demand Forecast”**
+**Problema 3: Falta de contenido de valor en “Demand Forecast”**
 
 * **Severidad:** 2
 * **Descripción del problema:**
@@ -5466,9 +5461,9 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
   * **Problema en Heurística 1 (Visibilidad del estado del sistema):** el sistema muestra resultados del modelo sin indicar qué significan ni qué tan confiable es el dato, por lo que el usuario no sabe cómo interpretar el estado del pronóstico.
   * **Problema en Heurística 2 (Concordancia entre el sistema y el mundo real):** se usan términos técnicos como “Model confidence” o “ML model v1.0.0” y una descripción que promete datos por plato que la pantalla no entrega, lo que no coincide con lo que espera un administrador de restaurante.
 
-<img src="assets/img/chapter-05/heuristica-demand-forecast.png" width="800" />
+<img src="assets/img/chapter-05/heuristica-demand-forecast.png" width="800" /><br>
 
-### **Problema 4: Un solo color en las barras del “Demand Forecast”**
+**Problema 4: Un solo color en las barras del “Demand Forecast”**
 
 * **Severidad:** 2
 * **Descripción del problema:**
@@ -5481,11 +5476,9 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
   * **Problema en Heurística 1 (Visibilidad del estado del sistema):** el gráfico no comunica de un vistazo qué días requieren atención, por lo que el usuario debe comparar las alturas una por una.
   * **Problema en Principio de jerarquía visual:** todas las barras tienen el mismo énfasis, de modo que no hay jerarquía entre los datos más importantes y los secundarios.
 
-<img src="assets/img/chapter-05/heuristica-demand-forecast.png" width="800" />
+<img src="assets/img/chapter-05/heuristica-demand-forecast.png" width="800" /><br>
 
-### 
-
-### **Problema 5: Mucho texto distrae y genera mucho ruido visual**
+**Problema 5: Mucho texto distrae y genera mucho ruido visual**
 
 * **Severidad:**  2
 * **Descripción del problema:**
@@ -5498,11 +5491,9 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
   * **Problema en Heurística 8 (Diseño estético y minimalista):** la pantalla de recomendaciones presenta filas con oraciones completas y repetidas, con mucha información en un mismo bloque, lo que distrae del objetivo principal.
   * **Problema en Heurística 6 (Reconocimiento antes que recuerdo):** el usuario debe leer cada oración para encontrar el insumo, la cantidad y la fecha límite en lugar de reconocerlos de inmediato en columnas separadas.
 
-<img src="assets/img/chapter-05/heuristica-recommendations.png" width="800" />
+<img src="assets/img/chapter-05/heuristica-recommendations.png" width="800" /><br>
 
-### 
-
-### **Problema 6: Mezcla de inglés y español en la interfaz**
+**Problema 6: Mezcla de inglés y español en la interfaz**
 
 * **Severidad:** 2
 * **Descripción del problema:**
@@ -5513,8 +5504,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
   * **Problema en Heurística 4 (Consistencia y estándares):** el idioma no se mantiene de forma coherente dentro de la misma pantalla ni respeta la opción elegida en el selector.
   * **Problema en Heurística 2 (Concordancia entre el sistema y el mundo real):** los usuarios del restaurante hablan español, y las etiquetas en inglés no se ajustan al lenguaje que ellos usan en su trabajo.
 
-<img src="assets/img/chapter-05/heuristica-dashboard2.png" width="800" />
-
+<img src="assets/img/chapter-05/heuristica-dashboard2.png" width="800" /><br>
 
 ## 5.4. Video About-the-Product
 
