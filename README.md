@@ -5619,6 +5619,49 @@ El video publicado en YouTube está incrustado en la sección *About* del Landin
 
 # Video About-the-Team
 
+El video *About-the-Team* muestra cómo trabajó el equipo **DataBit** durante el desarrollo de **StockIA**. Primero recorre el proceso: identificar el problema del desperdicio de insumos en restaurantes, validar necesidades mediante entrevistas y la construcción del user persona, y diseñar la solución web. Luego explica la organización del equipo: trabajo con **Scrum**, historias de usuario en **Jira**, reuniones de seguimiento por **Google Meet** y control de versiones en **GitHub**, donde el proyecto ya va en su segunda versión, con alrededor de 300 commits de los cinco integrantes y más de 15 pull requests integrados.
+
+También presenta la retrospectiva: las mejoras a partir del feedback recibido (segmento objetivo unificado, user stories alineadas al negocio, requisitos no funcionales medibles y modelo de dominio por bounded context) y el siguiente reto del equipo, administrar mejor los tiempos antes de cada entrega. Al final, cada integrante cuenta en su testimonio sus aportes, logros y competencias desarrolladas.
+
+#### Pauta de secuencias de contenido (timing)
+
+| Inicio | Contenido |
+|---|---|
+| 00:00:00 | Portada: presentación del equipo DataBit |
+| 00:00:11 | El problema: pérdida de insumos en restaurantes |
+| 00:00:26 | Needfinding: entrevistas y user persona |
+| 00:00:47 | La solución: landing page y web app de StockIA |
+| 00:01:05 | Cómo trabajamos: Scrum, Jira, Google Meet y GitHub (versión 2) |
+| 00:01:28 | Retrospectiva: feedback recibido, mejoras y próximo reto |
+| 00:01:55 | Introducción a los testimonios individuales |
+| 00:02:00 | Testimonio de Aldo Jesús Huamán Oscco |
+| 00:02:59 | Testimonio de Jesús Miranda Córdova |
+| 00:04:21 | Testimonio de Leyla Ortiz Laura |
+| 00:05:40 | Testimonio de Carla Gallardo Morales |
+| 00:06:54 | Testimonio de Ronal Toro Turpo |
+| 00:07:57 | Cierre y agradecimiento |
+
+**Duración total:** 00:08:03
+
+**Evidencia visual**
+
+<div align=center>
+
+![Video About-the-Team de DataBit](assets/img/videos%20about/about_the_team.png)
+
+*video about the team*
+
+</div>
+
+#### Enlaces de publicación
+
+| Plataforma | Enlace |
+|---|---|
+| Microsoft Stream | [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQAlKhmdPnxRQ591WwCPgqhaAWJBSwzufNG6Aiu86CqJhM8?e=0GKJYf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| YouTube | [Ver en YouTube](https://youtu.be/RSSeDlps6t4) |
+
+El video publicado en YouTube está incrustado en la sección *About* del Landing Page de StockIA.
+
 # Bibliografía
 Cullen, J. (2021). Administración de inventarios: análisis y modelos. Editorial académica.
 
