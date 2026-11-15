@@ -229,7 +229,7 @@ del ABET – EAC - Student Outcome 3.
             Expuse a mis equipo el metodo de trabajo a emplear para el entregable siguiendo la metodologia Scrum para un trabajo colaborativo eficaz, empleando un lenguaje claro y accesible que permitió a audiencias técnicas y no técnicas comprender el funcionamiento de las vistas implementadas. Comunique eficazmente los puntos a corregir del informe anterior para seguir un trabajo escalable.
             <br>
             <u>AV2</u><br>
-            ...
+            Durante esta entrega expuse el bounded context de ML & Recommendations y el despliegue de la solución, explicando el pronóstico de demanda y las recomendaciones de compra en términos de beneficios para el restaurante ante audiencias no técnicas, y detallando la arquitectura por capas, la integración con el servicio de clima Open-Meteo y el despliegue en Render, Vercel y AWS ante audiencias técnicas. Asimismo, realicé y presenté una entrevista de validación, comunicando de forma clara a la entrevistada el objetivo de la sesión y las tareas a realizar sin inducir sus respuestas.
             <br><br> 
             <b>Miranda Cordova, Jesus Angel Yvan</b><br>
             <u>AV1</u><br>
@@ -269,7 +269,7 @@ del ABET – EAC - Student Outcome 3.
             Durante el TB1, el equipo demostró capacidad para adaptar y mejorar su discurso a diferentes audiencias, explicando y usando lenguaje tecnico hacia un lenguaje accesible. El uso de diagramas, prototipos y tableros visuales permitió que tanto evaluadores con perfil de ingeniería como audiencias generales comprendieran los artefactos expuestos. La coordinación en las presentaciones evidenció escucha activa y claridad en la transmision de ideas de negocio como core y la capacidad de convencer audiencias eficazmente.
             <br>
             <u>AV2</u><br>
-            ...
+            Durante el AV2, el equipo adaptó su comunicación a dos audiencias distintas: con los usuarios del segmento objetivo, en las entrevistas de validación, utilizó un lenguaje cotidiano y tareas basadas en sus objetivos, sin términos técnicos; con los evaluadores, explicó la arquitectura del RESTful API, sus bounded contexts y el despliegue de la solución con el nivel técnico adecuado. Además, los videos About-the-Product y About-the-Team permitieron comunicar la propuesta de valor y el proceso de trabajo a visitantes del Landing Page sin perfil técnico.
             <br><br>
         </td>
     </tr>
@@ -294,7 +294,7 @@ del ABET – EAC - Student Outcome 3.
             Redacté las correcciones del AV1 en el informe, me enfoque en desarrollar y corregir lo relacionado a la parte documentaria de la metodologia agil scrum, desde las user storys hasta los sprint, dividiendo el trabajo de manera eficaz con la metodologia aplicada. Documenté mediante commits el desarrollo del scrum para el trabajo colaborativo eficaz.
             <br>
             <u>AV2</u><br>
-            ...
+            En esta entrega documenté la implementación del bounded context de ML & Recommendations (US18), la estructura base del proyecto (TS11) y los perfiles de persistencia (TS13), y registré la entrevista de validación que realicé con su resumen descriptivo. Además, redacté guías de despliegue y de flujo de trabajo con GitFlow y Conventional Commits, con rutas y comandos paso a paso, para que los integrantes del equipo pudieran integrar sus ramas y desplegar la solución de forma autónoma.
             <br><br>
             <b>Miranda Cordova, Jesus Angel Yvan</b><br>
             <u>AV1</u><br>
@@ -334,7 +334,7 @@ del ABET – EAC - Student Outcome 3.
             En la documentación del TB1, el equipo corrigió el informe a partir del feedback del AV1: unificó el segmento objetivo, alineó los "para" de las User Stories con los objetivos estratégicos de StockIA, expresó los requisitos no funcionales con criterios medibles y eliminó notas internas y contradicciones. La sección del Sprint 2 se redactó con evidencias que el lector puede comprobar en GitHub (commits, ramas y Pull Requests de la Web Application) y se distinguió con claridad lo implementado de lo que queda en el roadmap. Así, la comunicación escrita pasó de ser declarativa a ser verificable, comprensible tanto para evaluadores técnicos como para lectores no técnicos.
             <br>
             <u>AV2</u><br>
-            ...
+            En la documentación del AV2, el equipo registró el Sprint 3 con evidencias verificables (commits, Pull Requests, capturas de Swagger y del despliegue), documentó el RESTful API con OpenAPI para que otros desarrolladores puedan consumirlo, y redactó las entrevistas de validación y la evaluación heurística con un lenguaje descriptivo y orientado a la mejora del producto. Las conclusiones y recomendaciones se actualizaron contrastando los supuestos del Lean UX con los resultados obtenidos de los usuarios.
             <br><br>
         </td>
     </tr>
@@ -5452,6 +5452,26 @@ Datos de la entrevistada:
 
 **Resumen descriptivo:** La entrevistada evidenció una percepción positiva de la propuesta de Stockia. La participante comprendió rápidamente el propósito de la aplicación, identificando que está orientada al control de inventario y al apoyo mediante funciones inteligentes. Asimismo, consideró atractivo el diseño inicial y señaló que la navegación le resultó sencilla, especialmente desde una computadora. Albertina destacó que los textos e imágenes facilitaron la comprensión de la propuesta de valor y que el lenguaje utilizado era claro y fácil de entender. También manifestó que la aplicación podría ayudarla a organizar mejor la información de su negocio y agilizar procesos relacionados con el control de inventario. Como aspectos de mejora, mencionó la necesidad de brindar mayor claridad en la presentación de la información de inventario y mejorar la visibilidad o diferenciación de algunos botones para evitar confusiones. En términos generales, la usuaria se mostró satisfecha con la interacción ofrecida por la aplicación y expresó que recomendaría la aplicación a otros usuarios debido a su utilidad para mantener el orden y facilitar la gestión diaria de un negocio gastronómico, lo que constituye una validación favorable de la propuesta de solución.
 
+
+**Entrevista 5:**
+<br>
+**Entrevistador(a):** Aldo Jesus Huaman Oscco
+
+Datos de la entrevistada:
+
+* Nombre: David
+* Apellido: Ayllon
+* Edad: 28 años
+* Distrito: Surco
+* Timing: 0:10
+* Link: <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQCNxJQiBa3CQKVGuDmza6buAd2JuIt7gJj8MT6CdQc6tAA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BM22Z9">Entrevista</a>
+
+
+<p align="center"><img alt="Entrevista-AldoHuaman" src="assets/img/chapter-05/screenshot-interview-5.png" /></p>
+<p align="center"><i>Evidencia de entrevista: David </i></p>
+
+**Resumen descriptivo:** El entrevistado mostró una buena recepción hacia StockIA, resaltando principalmente lo práctico y ordenado que resulta el entorno desde el primer contacto. Señaló que la página inicial comunica de forma directa para qué sirve el sistema, permitiendo ubicar sus funciones principales sin confusiones. Además, valoró que el recorrido entre secciones sea fluido, con controles bien diferenciados y notificaciones claras que guían cada acción sin interrupciones ni demoras al operar. Como observaciones puntuales, menciono que los aspectos funcionales bastan para el uso que se le dara a la aplicacion pero que no tiene inconvenientes ni solicitudes de mejora. No obstante, aclaró que estos detalles aplicado mejoran el uso diario, pues la herramienta usa elementos visuales que facilitan y mantiene una estructura coherente. En síntesis, el usuario prioriza una experiencia ágil y fácil de entender, confirmando que conservar un flujo limpio y directo es clave para que la plataforma sea adoptada sin resistencia.
+
 ### 5.3.3. Evaluaciones según heurísticas
 **UX Heuristics & Principles Evaluation**  
 **Usability – Inclusive Design – Information Architecture**
@@ -5675,19 +5695,34 @@ El video publicado en YouTube está incrustado en la sección *About* del Landin
 | 1:34 – 1:46 | Beneficios y cierre |
 
 # Conclusiones y recomendaciones
+# Conclusiones y recomendaciones
+
 **Conclusiones**
+
+**AV2**
+
+* **Problem Statement:** las entrevistas de validación (5.3.2) confirman el problema planteado en 1.2.2.1. Los participantes reconocieron de inmediato el propósito de StockIA (control de inventario con apoyo de funciones inteligentes) y lo relacionaron con su operación diaria. En el AV2, el problema se aborda con la solución completa en la nube: el RESTful API en Spring Boot desplegado en Render, la base de datos MySQL en AWS RDS y la Web Application en Angular desplegada en Vercel. Con ello, el descuento automático de insumos por venta, las alertas y el dashboard funcionan sobre datos reales y ya no sobre una API simulada.
+* **Assumptions frente al comportamiento real del segmento:** se confirma que los administradores y dueños de restaurantes valoran centralizar el inventario y recibir alertas (assumptions 1 y 4, user outcomes 1 y 3): los entrevistados destacaron el apartado de alertas y la utilidad de la aplicación para organizar su negocio. También se observó que el interés no se limita al rango de 25 a 45 años definido en 1.3, ya que participaron administradores de 45 y 48 años con una comprensión adecuada de la plataforma. La viabilidad del modelo por suscripción (assumption 2) y la reducción de desperdicio del 25 % (user outcome 2) todavía no se pueden confirmar, porque requieren uso continuo con datos reales.
+* **Hypothesis Statements y criterios de éxito:** las hipótesis de 1.2.2.3 y los criterios de éxito de 1.2.2.1 (reducción del 40 % en discrepancias, 75 % de órdenes de compra desde recomendaciones de ML y 85 % de uso semanal del dashboard) se mantienen como hipótesis: las sesiones de validación midieron la comprensión y la usabilidad, no el impacto en la operación. Como evidencia cualitativa favorable, los entrevistados completaron las tareas asignadas y expresaron que recomendarían StockIA a otros dueños de negocio.
+* **Resultados de la evaluación heurística (5.3.3):** los problemas de mayor severidad (nivel 3) son el exceso de información en el dashboard y la falta de confirmación al aplicar una recomendación. Les siguen la mezcla de inglés y español en contenidos generados por el sistema, la falta de contexto en el pronóstico de demanda y la baja diferenciación visual de algunos componentes. Estos hallazgos coinciden con los comentarios de los entrevistados sobre organizar mejor la información del dashboard y hacer más visibles algunos botones.
+* **Proceso:** el equipo trabajó por Bounded Context, con ramas `feature/*`, Pull Requests hacia `develop`, Conventional Commits y versiones semánticas en los repositorios `stockia-platform-api` y `stockia-webapp`. Se incorporaron pruebas unitarias, de integración y de extremo a extremo, ejecutadas automáticamente con GitHub Actions, y el API quedó documentado con OpenAPI y Swagger UI.
+* **Limitaciones reconocidas:** las notificaciones por WhatsApp, correo y SMS, y el cobro de suscripciones con Stripe y PayPal, funcionan de forma simulada. El modelo de pronóstico se entrenó con datos sintéticos, por lo que su precisión con restaurantes reales todavía debe comprobarse.
+
+**TB1**
 
 * **Problem Statement:** el problema central se mantiene validado por las 4 entrevistas (2.2): el inventario se controla a mano y está desconectado de las ventas. En el TB1, la Web Application implementa el núcleo que lo ataca: recetas vinculadas al inventario con descuento automático por venta (US13, US14), alertas (US17) y dashboard (US16), sobre una API simulada.
 * **Assumptions e hipótesis:** las hipótesis de 1.2.2.3 siguen siendo hipótesis. Su baseline y su medición dependen del piloto con restaurantes, que se ejecutará cuando el RESTful API (TS09) esté desplegado. En el TB1 se validó la factibilidad técnica del flujo, no todavía el impacto en mermas.
 * **Proceso:** el equipo corrigió las observaciones del AV1 (segmento único, User Stories alineadas a objetivos estratégicos, RNF medibles, modelo de dominio por Bounded Context) y trabajó la Web Application con ramas feature y Pull Requests en `stockia-webapp` (ver 5.2.2.4 y 5.2.2.8).
 * **Limitaciones reconocidas:** la Web Application usa una API simulada (json-server) y todavía no tiene internacionalización. Las integraciones externas (Stripe, SendGrid) quedan en el roadmap.
 
-**Recomendaciones**
+**Recomendaciones (roadmap hacia el TB2)**
 
-* AV2: implementar el RESTful API en Spring Boot (TS09) y conectar la Web Application (TS10), documentando los endpoints con OpenAPI.
-* AV2: internacionalización en/es con inglés por defecto en la Web Application y en la Landing Page.
-* AV2: entrevistas de validación (5.3) con al menos 3 restaurantes, usando el formato de evaluación heurística, para medir el baseline de las hipótesis.
-* TB2: integración de pago (US22) y correo (US21); predicción con datos reales del piloto.
+1. **Corregir los hallazgos de severidad 3 de la evaluación heurística:** reorganizar el dashboard priorizando los insumos vencidos o por vencer y agregar una confirmación con el detalle del efecto antes de aplicar una recomendación.
+2. **Completar la internacionalización:** traducir también los contenidos generados por el API (alertas, recomendaciones e impactos) según el idioma elegido por el usuario.
+3. **Hacer comprensible el pronóstico de demanda:** explicar en lenguaje del restaurante qué significa la confianza del modelo, diferenciar visualmente lo real de lo proyectado y mostrar el detalle por plato.
+4. **Reemplazar las integraciones simuladas por las reales:** correo con SendGrid (US21), cobro con Stripe (US22) y alertas por WhatsApp.
+5. **Ejecutar un piloto con restaurantes reales** durante al menos 4 semanas para medir el baseline y el avance de las hipótesis de 1.2.2.3 y de los criterios de éxito de 1.2.2.1, y reentrenar el modelo de pronóstico con sus ventas reales.
+6. **Revisar el segmento objetivo** con los resultados de la validación, ampliando el rango de edad de los administradores, y alinear el Lean UX Problem Statement con el alcance de un restaurante individual.
 
 
 # Video About-the-Team
