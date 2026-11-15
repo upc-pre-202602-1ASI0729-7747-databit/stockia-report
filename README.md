@@ -185,8 +185,18 @@ En paralelo, se desplegó una nueva versión de la Landing Page, incorporando me
 El progreso quedó documentado en el Capítulo V: Product Implementation, Validation & Deployment (sprint 2), donde se detallan las pruebas realizadas, la validación de funcionalidades y el proceso de despliegue técnico. Dicho capítulo evidencia la integración entre la propuesta de valor y su materialización en artefactos funcionales.
 
 Para la gestión colaborativa se continuó utilizando GitHub, que permitió coordinar commits, organizar tareas y mantener un historial cronológico del avance. Las métricas de colaboración y el registro de versiones respaldan la participación activa de cada integrante, asegurando transparencia y trazabilidad en el desarrollo del proyecto
-![insight-av1](assets/img/chapter-01/insight-tb1.png)
+![insight-tb1](assets/img/chapter-01/insight-tb1.png)
 
+**Tercera Entrega (AV2)**
+
+Durante esta etapa, el equipo realizó la corrección integral del reporte correspondiente al TB1, fortaleciendo la calidad de la documentación mediante ajustes de redacción, formato y consistencia entre los distintos apartados. Estas mejoras permitieron consolidar una versión más robusta del entregable y garantizar una adecuada alineación con los objetivos y estándares establecidos para el proyecto.
+
+Paralelamente, se desplegó una nueva versión de la Landing Page y del Frontend Web Applications, incorporando mejoras funcionales y de experiencia de usuario derivadas del proceso iterativo de desarrollo. Asimismo, se logró el despliegue de la primera versión del Web Services, estableciendo la base para la integración de los componentes de software y permitiendo una arquitectura más completa y alineada con los requerimientos de la solución propuesta.
+
+Los avances técnicos fueron documentados en el Capítulo V: Product Implementation, Validation & Deployment (Sprint 3), donde se detallan las funcionalidades implementadas, las pruebas realizadas, los procesos de validación y las actividades de despliegue ejecutadas durante esta iteración. Este capítulo evidencia la evolución del producto desde una perspectiva tanto funcional como técnica.
+
+Finalmente, se llevaron a cabo las Validation Interviews, permitiendo recopilar retroalimentación de usuarios potenciales respecto a la propuesta de valor y a los artefactos desarrollados. Los resultados obtenidos proporcionaron información relevante para identificar oportunidades de mejora, validar decisiones de diseño y orientar las siguientes iteraciones del proyecto. La gestión colaborativa continuó realizándose mediante GitHub, asegurando la trazabilidad de cambios, la coordinación del equipo y el registro cronológico de las contribuciones realizadas por cada integrante.
+![insight-av2](assets/img/chapter-01/insight-av2.png)
 
 ---
 # Student Outcome
@@ -434,6 +444,15 @@ del ABET – EAC - Student Outcome 3.
       - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
       - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
       - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
+    - [5.2.3. Sprint 3](#523-sprint-3)
+      - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+      - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+      - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+      - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+      - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+      - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+      - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+      - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
   - [5.3. Validation Interviews](#53-validation-interviews)
     - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
     - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
@@ -5326,7 +5345,7 @@ En el Sprint 3 se desplegaron el RESTful API (TS14) y su base de datos MySQL con
 **Evidencia del despliegue de la platform api**
 <p align="center"><img alt="Despliegue de API en Render" src="assets/img/chapter-05/s3-deploy-platform-api.jpeg" width="800" /><br/><i>Figura: Despliegue en Render de la platform api</i></p>
 
-<p align="center"><img alt="Despliegue en Render de la Web App" src="assets/img/chapter-05/s3-deploy-webapp.jpeg" width="800" /><br/><i>Figura: Despliegue en Render de la Web Application</i></p>
+<p align="center"><img alt="Despliegue en Render de la Web App" src="assets/img/chapter-05/s3-deploy-webapp.jpeg" width="800" /><br/><i>Figura: Despliegue en Vercel de la Web Application</i></p>
 
 <p align="center"><img alt="Despliegue de la Base de Datos en AWS" src="assets/img/chapter-05/s3-deploy-database.jpeg" width="800" /><br/><i>Figura: Despliegue en AWS de la base de datos</i></p>
 
@@ -5428,7 +5447,7 @@ El diseño de las sesiones de validación tiene como objetivo evaluar la interac
 
 **Entrevista 1:**
 <br>
-**Entrevistador(a):** Miranda Cordova, Jesus Angel Yvan
+**Entrevistador(a):** Jesus Angel Yvan Miranda Cordova
 
 Datos del entrevistado:
 
@@ -5464,8 +5483,7 @@ Datos de la entrevistada:
 
 **Resumen descriptivo:** La entrevistada evidenció una percepción positiva de la propuesta de Stockia. La participante comprendió rápidamente el propósito de la aplicación, identificando que está orientada al control de inventario y al apoyo mediante funciones inteligentes. Asimismo, consideró atractivo el diseño inicial y señaló que la navegación le resultó sencilla, especialmente desde una computadora. Albertina destacó que los textos e imágenes facilitaron la comprensión de la propuesta de valor y que el lenguaje utilizado era claro y fácil de entender. También manifestó que la aplicación podría ayudarla a organizar mejor la información de su negocio y agilizar procesos relacionados con el control de inventario. Como aspectos de mejora, mencionó la necesidad de brindar mayor claridad en la presentación de la información de inventario y mejorar la visibilidad o diferenciación de algunos botones para evitar confusiones. En términos generales, la usuaria se mostró satisfecha con la interacción ofrecida por la aplicación y expresó que recomendaría la aplicación a otros usuarios debido a su utilidad para mantener el orden y facilitar la gestión diaria de un negocio gastronómico, lo que constituye una validación favorable de la propuesta de solución.
 
-
-**Entrevista 5:**
+**Entrevista 3:**
 <br>
 **Entrevistador(a):** Aldo Jesus Huaman Oscco
 
@@ -5491,7 +5509,7 @@ Datos de la entrevistada:
 **CARRERA		: Ingeniería de Software**  
 **CURSO		: Desarrollo de Aplicaciones Open Source**  
 **PROFESORES	: Todos**  
-**AUDITOR		:**   
+<!----**AUDITOR		:**-->   
 **CLIENTE		:** Databit 
 
 ___
@@ -5655,11 +5673,11 @@ El video *About-the-Product* presenta **StockIA**, la plataforma web de DataBit 
 
 El tono es cercano, directo y optimista, consistente con la identidad de StockIA. Habla de "tú" al administrador del restaurante, usa frases cortas y ejemplos de cocina (tomates, lomo saltado, refrigeradores) y evita tecnicismos innecesarios. La parte visual sigue un estilo 3D de bloques: un chef animado guía al espectador a través de las pantallas reales de la aplicación, con subtítulos grandes que resaltan las palabras clave. Así el video es fácil de seguir incluso sin sonido.
 
-**Testimonios de validación.** El proyecto atiende un único segmento objetivo: **dueños y administradores de restaurantes**. Para este segmento, el video incluye el siguiente testimonio, recogido en las entrevistas de validación (con su voz original y un recuadro con la grabación de la entrevista):
+**Testimonios de validación.** El proyecto atiende un único segmento objetivo: **dueños y administradores de restaurantes**. Para este segmento, el video incluye el siguiente testimonio (con su voz original y un recuadro con la grabación de la entrevista):
 
 | Segmento objetivo | Entrevistada | Testimonio |
 |---|---|---|
-| Dueños y administradores de restaurantes | Isabel Cubillas (entrevista de validación) | *"Sí, sí, sí lo recomendaría. Es más, ya lo hablé, incluso lo comenté con una persona que tiene farmacia. Incluso le enseñé la demo y también le encantó la idea, y me dijo que si se lograra, que le pasara el dato."* |
+| Dueños y administradores de restaurantes | Isabel Cubillas | *"Sí, sí, sí lo recomendaría. Es más, ya lo hablé, incluso lo comenté con una persona que tiene farmacia. Incluso le enseñé la demo y también le encantó la idea, y me dijo que si se lograra, que le pasara el dato."* |
 
 **5.4.2. Evidencias visuales y enlaces de publicación**
 
@@ -5685,7 +5703,7 @@ El video publicado en YouTube está incrustado en la sección *About* del Landin
 
 | Dato | Valor |
 |---|---|
-| Título | upc-pre-202620-1asi0730-16127-databit-about-the-product |
+| Título | upc-pre-202620-1asi0729-7747-databit-about-the-product |
 | Duración total | **1 min 46 s**, dentro del rango de 1 a 3 minutos |
 | Idioma | Español, con subtítulos integrados |
 | Audio | Voz en off, testimonio con voz original y música de fondo |
@@ -5704,7 +5722,6 @@ El video publicado en YouTube está incrustado en la sección *About* del Landin
 | 1:15 – 1:34 | Testimonio de validación |
 | 1:34 – 1:46 | Beneficios y cierre |
 
-# Conclusiones y recomendaciones
 # Conclusiones y recomendaciones
 
 **Conclusiones**
