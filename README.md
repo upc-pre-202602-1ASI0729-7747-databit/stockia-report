@@ -4299,7 +4299,13 @@ En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante implement
   <br/><i>Insights → Network: ramas feature integradas en develop mediante Pull Request</i>
 </p>
  
- 
+
+### 5.2.3. Sprint 3
+
+El Sprint 3 se dedicó a construir el RESTful API de StockIA (Web Services) con **Java 21 y Spring Boot 3.5**, organizado por Bounded Context con arquitectura hexagonal (`domain`, `application`, `infrastructure` e `interfaces`), persistencia con Spring Data JPA y MySQL 8, autenticación con tokens JWT y contraseñas con BCrypt, documentación OpenAPI con springdoc y despliegue con Docker, para reemplazar la API simulada (json-server) que consumía la Web Application desde el Sprint 2. Cada integrante implementó sus Bounded Contexts en el repositorio `stockia-platform-api` con una rama `feature/<nombre>` y su Pull Request hacia `develop` (GitFlow). La Landing Page se mantiene sin cambios de funcionalidad y la Web Application solo ajusta su configuración (URL base y rutas de los endpoints) para consumir el nuevo API.
+
+**Alcance y exclusiones.** Quedan para los Sprints siguientes las integraciones reales que en este Sprint se resuelven con adaptadores simulados: entrega real de alertas por WhatsApp, correo (SendGrid) y SMS (Twilio) (US28, US32, US33 y RNF12), cobro real con Stripe y PayPal (el *checkout* es simulado), consulta de vida útil mediante API externa (US34 y US35) y la recopilación programada y el reentrenamiento periódico del modelo (US37 y US38; en este Sprint el modelo se entrena fuera de línea con scikit-learn y se exporta a ONNX). La consulta de clima sí usa un servicio real de terceros (Open-Meteo).
+
 ## 5.3. Validation Interviews
 
 ### 5.3.1. Diseño de Entrevistas
