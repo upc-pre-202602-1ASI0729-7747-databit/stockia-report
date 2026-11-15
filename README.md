@@ -5072,10 +5072,20 @@ En esta sección se presentan los avances de implementación del Sprint 3 median
 
 **Repositorio del informe (`stockia-report`)**
 
-| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| **Repository** | **Branch** | **Commit Id(s)** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| stockia-report | feature/chapter-3 | `[ID]` | docs(chapter-3): add sprint 3 technical stories TS11 to TS14 | Technical Stories y Product Backlog del Sprint 3 ([COMPLETAR autor]). | [dd/mm/2026] |
-| stockia-report | feature/chapter-5 | `[ID]` | docs(chapter-5): add sprint 3 | Sprint Planning, Sprint Backlog, evidencias y Team Collaboration del Sprint 3 ([COMPLETAR autor]). | [dd/mm/2026] |
+| stockia-report | feature/student-outcome-leyla | `53e0ce0`, `3b57779` | docs(student-outcome) | Estructuración y elaboración del Student Outcome AV2 de Leyla. (Autor: Leylaa-O). | 12/11/2026 |
+| stockia-report | feature/cover | `ac2339a`, `28dcecb` | docs(cover), docs(logs) | Actualización de portada del informe y registro de versiones AV2. (Autor: Leylaa-O). | 12/11/2026 |
+| stockia-report | feature/interviews | `14380f5`, `c39cc98`, `82d3d9d`, `bdf7e75`, `449d9b7`, `4b254ac`, `5864e8a` | feat: add design interview, fead: add interview | Diseño, documentación y evidencias de entrevistas realizadas para la validación del proyecto. (Autor: Jesus-Miranda-678). | 12/11/2026 |
+| stockia-report | feature/validation-interview-leyla | `fe53c14`, `d19b6aa`, `cd98861` | docs(validation-interview), docs(assets) | Registro de la entrevista de validación #2, reorganización de evidencias y capturas asociadas. (Autor: Leylaa-O). | 12/11/2026 |
+| stockia-report | feature/sprint-3 | `c5d19e1`, `a4feebf`, `7379965`, `279600b`, `d5ea289`, `36eade8`, `248d651`, `301d91b`, `ddbe99e`, `9e9805a`, `71ffc0c`, `85af033` | docs(sprint-3) | Documentación integral del Sprint 3: alcance, Sprint Planning, Sprint Backlog, evidencias de desarrollo y ejecución, documentación de servicios, despliegue y colaboración del equipo. (Autor: Leylaa-O). | 14/11/2026 - 15/11/2026 |
+| stockia-report | feature/student-outcome-jesus-Miranda | `1e80e44` | feat: add student outcome jesus av2 | Elaboración del Student Outcome AV2 correspondiente a Jesús Miranda. (Autor: Jesus-Miranda-678). | 14/11/2026 |
+| stockia-report | feature/evaluations-heuristics | `bba3507`, `1ef7b1e`, `3f08152`, `afa55f1`, `a97afb5`, `7f2e1fb`, `c486b2f` | docs(evaluations-heuristics), docs(assets) | Incorporación de evidencias gráficas y desarrollo de la sección de evaluación heurística, incluyendo correcciones posteriores. (Autor: Leylaa-O). | 14/11/2026 - 15/11/2026 |
+| stockia-report | feature/videos-about-link | `3364f1a`, `483535e` | docs(about the product), docs(about the team) | Inclusión de videos y documentación complementaria sobre el producto y el equipo del proyecto. (Autor: Carlsss28). | 15/11/2026 |
+| stockia-report | feature/user-stories | `ac8340b` | docs(user-stories): update User Stories | Actualización y refinamiento de las User Stories del producto. (Autor: Leylaa-O). | 15/11/2026 |
+| stockia-report | fix/validation-interview-aldo | `629dc2a`, `c519b24` | docs(validation-interview), docs(assets) | Registro y evidencias de la entrevista de validación #5. (Autor: Jesus). | 15/11/2026 |
+| stockia-report | feature/outcome-Ronal | `01e2e03` | feat: add student outcome and fix profile image | Incorporación del Student Outcome correspondiente a Ronal y corrección de imagen de perfil. (Autor: Ronal345). | 15/11/2026 |
+| stockia-report | develop | `35aa261`, `9ed765b`, `20f500d`, `c275826`, `c0decce`, `de9728f`, `6a6bc71`, `9ed53c0`, `3f79074` | Merge Pull Requests #68 - #79 | Integración de las contribuciones desarrolladas en las diferentes ramas funcionales al repositorio principal mediante Pull Requests. | 12/11/2026 - 15/11/2026 |
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
