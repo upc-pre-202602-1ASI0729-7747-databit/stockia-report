@@ -1097,7 +1097,7 @@ Este lenguaje debe mantenerse consistente a lo largo de todo el proyecto, incluy
 | **EP09** | Alertas y notificaciones | Como administrador, quiero recibir y atender alertas de stock bajo, vencimiento y fallas por los canales que uso, para actuar antes de un quiebre o una merma. | OE2, OE1 | % de alertas críticas entregadas por todos sus canales requeridos; tiempo entre alerta y atención | US22, US23, US28 |
 | **EP10** | Predicción de demanda y recomendaciones | Como administrador, quiero anticipar la demanda de los próximos días y aplicar recomendaciones de compra y de menú, para comprar lo necesario antes de los días de mayor venta. | OE2, OE1 | % de recomendaciones aplicadas; quiebres de stock en días pico | US24, US25 |
 | **EP11** | Suscripción y planes | Como administrador, quiero elegir, cambiar y pagar mi plan, para mantener el servicio activo según el tamaño de mi restaurante. | OE6 | % de restaurantes con plan activo; % de renovaciones exitosas | US26, US29 |
-| **EP12** | Base técnica y despliegue continuo | Como equipo de desarrollo, queremos una base de código organizada, versionada y desplegada automáticamente, para entregar cada incremento verificable en una URL pública. | Habilitador de OE4 a OE7 | % de despliegues exitosos desde la rama de producción; tiempo desde el merge hasta la publicación | TS01, TS02, TS03, TS04, TS05, TS06, TS07, TS08, RNF09, TS09, TS10 |
+| **EP12** | Base técnica y despliegue continuo | Como equipo de desarrollo, queremos una base de código organizada, versionada y desplegada automáticamente, para entregar cada incremento verificable en una URL pública. | Habilitador de OE4 a OE7 | % de despliegues exitosos desde la rama de producción; tiempo desde el merge hasta la publicación | TS01, TS02, TS03, TS04, TS05, TS06, TS07, TS08, RNF09, TS09, TS10, TS11, TS12, TS13, TS14 |
 
 ### User Stories
  
@@ -1977,6 +1977,86 @@ Las Technical Stories describen el trabajo técnico que habilita las User Storie
 </td>
 <td>EP12 — Base técnica y despliegue continuo</td>
 </tr>
+<tr>
+<td><strong>TS11</strong></td>
+<td>Estructurar el RESTful API en Spring Boot por Bounded Context</td>
+<td>Como equipo de desarrollo, queremos organizar el RESTful API en Spring Boot (Java 21) con un paquete por Bounded Context, las capas domain, application, infrastructure e interfaces y un shared kernel, para que cada integrante trabaje su contexto en su propia rama sin conflictos y los contextos se comuniquen solo mediante fachadas ACL y eventos de dominio.</td>
+<td>
+<strong>Scenario 1: Capas por contexto</strong><br>
+<strong>Given</strong> que se revisa el código fuente del repositorio del RESTful API<br>
+<strong>When</strong> se abre cualquiera de los 8 Bounded Contexts (iam, restaurantregistration, subscriptionpayments, stockmanagement, recipesmanagement, mlrecommendations, notificationsmessaging, analyticsdashboard)<br>
+<strong>Then</strong> el 100 % de los contextos contiene los paquetes domain, application, infrastructure e interfaces<br><br>
+<strong>Scenario 2: Comunicación entre contextos</strong><br>
+<strong>Given</strong> que un contexto necesita datos de otro<br>
+<strong>When</strong> los solicita<br>
+<strong>Then</strong> lo hace mediante la fachada ACL del contexto dueño o un evento de dominio, sin usar el repositorio ni las tablas del otro contexto<br><br>
+<strong>Scenario 3: Errores y mensajes homogéneos</strong><br>
+<strong>Given</strong> que ocurre un error de negocio o de validación<br>
+<strong>When</strong> el API responde<br>
+<strong>Then</strong> devuelve application/problem+json con un código estable en title y un mensaje en inglés o en español según el encabezado Accept-Language
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS12</strong></td>
+<td>Documentar el RESTful API con OpenAPI y Swagger UI</td>
+<td>Como equipo de desarrollo, queremos documentar el RESTful API con OpenAPI mediante springdoc y publicar Swagger UI, para que el equipo y el docente prueben cada endpoint sin leer el código.</td>
+<td>
+<strong>Scenario 1: Swagger UI disponible</strong><br>
+<strong>Given</strong> que el API está en ejecución<br>
+<strong>When</strong> se abre /swagger-ui.html<br>
+<strong>Then</strong> se muestran los endpoints de los 8 Bounded Contexts agrupados por contexto, con sus parámetros y respuestas de ejemplo<br><br>
+<strong>Scenario 2: Prueba con autenticación</strong><br>
+<strong>Given</strong> que se obtuvo un token con el inicio de sesión<br>
+<strong>When</strong> se configura el esquema Bearer en Swagger UI y se ejecuta un endpoint protegido<br>
+<strong>Then</strong> el API responde con el código y el cuerpo documentados<br><br>
+<strong>Scenario 3: Documento OpenAPI</strong><br>
+<strong>Given</strong> que se consulta /v3/api-docs<br>
+<strong>When</strong> el API responde<br>
+<strong>Then</strong> devuelve el documento OpenAPI vigente de todos los endpoints
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS13</strong></td>
+<td>Implementar la persistencia con Spring Data JPA y MySQL</td>
+<td>Como equipo de desarrollo, queremos persistir los datos en MySQL con Spring Data JPA, separar la configuración por perfiles y cargar un restaurante demo, para desarrollar, probar y demostrar el producto con datos reales sin configuración manual.</td>
+<td>
+<strong>Scenario 1: Esquema en snake_case</strong><br>
+<strong>Given</strong> que se arranca el API con el perfil dev y una base de datos MySQL vacía<br>
+<strong>When</strong> el API inicia<br>
+<strong>Then</strong> crea la base de datos stockia_os y todas sus tablas con nombres en snake_case<br><br>
+<strong>Scenario 2: Datos demo</strong><br>
+<strong>Given</strong> que STOCKIA_SEED_DEMO_DATA está activo<br>
+<strong>When</strong> el API inicia por primera vez<br>
+<strong>Then</strong> carga un restaurante demo con 10 lotes de insumos, 4 recetas, 120 días de ventas, alertas automáticas, un primer pronóstico y las cuentas de Administrador y Empleado<br><br>
+<strong>Scenario 3: Perfiles de ejecución</strong><br>
+<strong>Given</strong> que se arranca el API con el perfil local o con el perfil prod<br>
+<strong>When</strong> el API inicia<br>
+<strong>Then</strong> el perfil local usa H2 en memoria sin instalar MySQL y el perfil prod toma toda su configuración de variables de entorno
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS14</strong></td>
+<td>Desplegar el RESTful API con integración continua y Docker</td>
+<td>Como equipo de desarrollo, queremos verificar cada cambio con GitHub Actions y publicar el RESTful API empaquetado con Docker, para que la Web Application y el docente usen la versión vigente desde una URL pública.</td>
+<td>
+<strong>Scenario 1: Pipeline de integración</strong><br>
+<strong>Given</strong> que se hace push o Pull Request en el repositorio<br>
+<strong>When</strong> se ejecuta el flujo de GitHub Actions<br>
+<strong>Then</strong> compila, corre las pruebas con mvn verify, ejecuta la prueba de humo contra MySQL y termina en verde<br><br>
+<strong>Scenario 2: API publicado</strong><br>
+<strong>Given</strong> que el API está desplegado con el perfil prod<br>
+<strong>When</strong> se consulta GET /api/v1/health y se abre Swagger UI en la URL pública<br>
+<strong>Then</strong> el API responde 200 y la documentación se muestra<br><br>
+<strong>Scenario 3: Web Application conectada</strong><br>
+<strong>Given</strong> que la Web Application en Vercel apunta al API mediante VITE_STOCKIA_API_URL<br>
+<strong>When</strong> el usuario navega por las vistas de inventario, recetas y alertas<br>
+<strong>Then</strong> los datos provienen del API real y no se registran errores de CORS
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
 </table>
 
 ### RNF
@@ -2156,23 +2236,27 @@ En la siguiente sección se presenta el Impact Mapping elaborado a partir del us
 | 22 | **TS10** | Conectar la Web Application al RESTful API real | Como equipo de desarrollo, queremos apuntar la Web Application al RESTful API real y enviar el token en cada solicitud, para pasar del entorno simulado a datos persistentes sin modificar la capa de presentación. | 3 |
 | 23 | **US03** | Evaluar diferenciadores, integraciones y vistas del producto | Como dueño o administrador que compara alternativas, quiero ver qué diferencia a StockIA, con qué servicios se integrará y cómo lucen sus pantallas, para justificar el cambio desde mi cuaderno o Excel sin reunirme todavía con el equipo. | 3 |
 | 24 | **US05** | Conocer a DataBite Corp y a su equipo | Como dueño o administrador, quiero conocer la misión, la visión, los valores y las personas detrás de StockIA, para confiar en el producto antes de compartir los datos de mi restaurante. | 3 |
-| 25 | **TS03** | Implementar el motor de internacionalización de la Landing Page | Como equipo de desarrollo, queremos que todos los textos traducibles vivan en un único diccionario aplicado mediante atributos data-i18n, para traducir el 100 % del contenido visible sin editar cada página. | 2 |
-| 26 | **US06** | Solicitar una demo desde el formulario de contacto | Como dueño o administrador interesado, quiero dejar mis datos y los de mi restaurante en un formulario, para que DataBite Corp me contacte y coordinar una demo en una sola interacción. | 2 |
-| 27 | **US15** | Consultar el historial de ventas y anular ventas erróneas | Como administrador, quiero consultar las ventas registradas con su total y anular las ventas registradas por error, para que el historial que alimenta la proyección de demanda refleje solo ventas reales. | 2 |
-| 28 | **RNF01** | Adaptabilidad de la Landing Page a móvil, tablet y escritorio | Atributo de calidad: Adaptabilidad. Requisito: La Landing Page se adapta a pantallas de teléfono, tablet y escritorio. Actor afectado: Visitante que navega desde un teléfono o tablet. Criterio medible: Breakpoints en 1024, 768 y 480 px; sin scroll horizontal a 360 px; grids de una columna en móvil. | 2 |
-| 29 | **US07** | Navegar entre las páginas del sitio | Como visitante, quiero un menú y un pie de página consistentes en las cuatro páginas, para llegar a precios o al formulario de demo en máximo dos clics desde cualquier página. | 2 |
-| 30 | **US08** | Leer el sitio en español o en inglés | Como visitante que prefiere el inglés, quiero cambiar el idioma del sitio y que mi elección se mantenga entre páginas, para evaluar StockIA sin barreras de idioma y sin repetir la selección en cada página. | 2 |
-| 31 | **RNF08** | Control de acceso por sesión y por rol en la Web Application | Atributo de calidad: Seguridad. Requisito: Ninguna pantalla interna se muestra sin sesión y las pantallas administrativas solo se muestran al rol Administrador. Actor afectado: Administrador y empleado. Criterio medible: 100 % de las rutas bajo /app protegidas por authGuard; 100 % de las rutas administrativas protegidas por adminGuard; 0 accesos sin sesión en las pruebas. | 1 |
-| 32 | **TS07** | Desplegar la Web Application en Vercel | Como equipo de desarrollo, queremos publicar la Web Application en Vercel conectada a la API simulada, para que el docente y los restaurantes del piloto accedan a la versión vigente desde una URL pública. | 1 |
-| 33 | **RNF09** | Retroalimentación de estado y confirmaciones en la Web Application | Atributo de calidad: Usabilidad. Requisito: Cada pantalla informa cuándo está cargando, cuándo no hay datos y el resultado de cada acción; las acciones destructivas piden confirmación. Actor afectado: Administrador y empleado. Criterio medible: 100 % de las listas con estado vacío; 100 % de las eliminaciones y anulaciones con confirmación; mensaje de éxito o error en cada formulario. | 1 |
-| 34 | **TS01** | Configurar el repositorio de la Landing Page con GitFlow | Como equipo de desarrollo, queremos un repositorio con estructura base y ramas main y develop protegidas por Pull Request, para que el 100 % de los cambios de la Landing Page se integre con revisión y con autor identificable. | 1 |
-| 35 | **TS04** | Desplegar la Landing Page en Vercel con despliegue continuo | Como equipo de desarrollo, queremos publicar la Landing Page en Vercel conectada al repositorio, para que cada cambio aprobado esté en línea en menos de 5 minutos sin pasos manuales. | 1 |
-| 36 | **RNF02** | Contraste legible según WCAG 2.1 AA | Atributo de calidad: Accesibilidad. Requisito: Los textos tienen contraste suficiente con su fondo. Actor afectado: Visitante con baja visión. Criterio medible: Contraste ≥ 4.5:1 en texto normal y ≥ 3:1 en texto grande; 0 errores de contraste. | 1 |
-| 37 | **RNF03** | Carga rápida de la Landing Page | Atributo de calidad: Rendimiento. Requisito: El sitio carga rápido sin frameworks ni librerías externas. Actor afectado: Visitante con datos móviles. Criterio medible: LCP ≤ 2.5 s y CLS ≤ 0.1; Lighthouse Performance móvil ≥ 90. | 1 |
-| 38 | **RNF04** | Metadatos para posicionamiento en buscadores | Atributo de calidad: Encontrabilidad. Requisito: Cada página tiene metadatos descriptivos propios. Actor afectado: DataBite Corp (captación de leads). Criterio medible: title ≤ 60 y description ≤ 160 caracteres, únicos por página; Lighthouse SEO ≥ 90. | 1 |
-| 39 | **RNF05** | Compatibilidad con navegadores modernos | Atributo de calidad: Compatibilidad. Requisito: El sitio se ve y funciona igual en los navegadores más usados. Actor afectado: Visitante con cualquier navegador actual. Criterio medible: Últimas dos versiones de Chrome, Edge, Firefox y Safari, más Chrome Android y Safari iOS; 0 errores de consola. | 1 |
-| 40 | **RNF06** | Animaciones de aparición que no bloquean el contenido | Atributo de calidad: Usabilidad. Requisito: Las animaciones de entrada son breves y no ocultan contenido. Actor afectado: Visitante. Criterio medible: Duración ≤ 500 ms; solo transform y opacity; contenido visible si el navegador no soporta IntersectionObserver. | 1 |
-| 41 | **RNF07** | Identificación del contenido ilustrativo | Atributo de calidad: Transparencia. Requisito: Todo dato de ejemplo se identifica como tal en el sitio. Actor afectado: Visitante. Criterio medible: 100 % de cifras, precios y fichas de ejemplo con nota visible en ES/EN. | 1 |
+| 25 | **TS11** | Estructurar el RESTful API en Spring Boot por Bounded Context | Como equipo de desarrollo, queremos organizar el RESTful API en Spring Boot (Java 21) con un paquete por Bounded Context, las capas domain, application, infrastructure e interfaces y un shared kernel, para que cada integrante trabaje su contexto en su propia rama sin conflictos y los contextos se comuniquen solo mediante fachadas ACL y eventos de dominio. | 3 |
+| 26 | **TS03** | Implementar el motor de internacionalización de la Landing Page | Como equipo de desarrollo, queremos que todos los textos traducibles vivan en un único diccionario aplicado mediante atributos data-i18n, para traducir el 100 % del contenido visible sin editar cada página. | 2 |
+| 27 | **US06** | Solicitar una demo desde el formulario de contacto | Como dueño o administrador interesado, quiero dejar mis datos y los de mi restaurante en un formulario, para que DataBite Corp me contacte y coordinar una demo en una sola interacción. | 2 |
+| 28 | **US15** | Consultar el historial de ventas y anular ventas erróneas | Como administrador, quiero consultar las ventas registradas con su total y anular las ventas registradas por error, para que el historial que alimenta la proyección de demanda refleje solo ventas reales. | 2 |
+| 29 | **RNF01** | Adaptabilidad de la Landing Page a móvil, tablet y escritorio | Atributo de calidad: Adaptabilidad. Requisito: La Landing Page se adapta a pantallas de teléfono, tablet y escritorio. Actor afectado: Visitante que navega desde un teléfono o tablet. Criterio medible: Breakpoints en 1024, 768 y 480 px; sin scroll horizontal a 360 px; grids de una columna en móvil. | 2 |
+| 30 | **US07** | Navegar entre las páginas del sitio | Como visitante, quiero un menú y un pie de página consistentes en las cuatro páginas, para llegar a precios o al formulario de demo en máximo dos clics desde cualquier página. | 2 |
+| 31 | **US08** | Leer el sitio en español o en inglés | Como visitante que prefiere el inglés, quiero cambiar el idioma del sitio y que mi elección se mantenga entre páginas, para evaluar StockIA sin barreras de idioma y sin repetir la selección en cada página. | 2 |
+| 32 | **TS12** | Documentar el RESTful API con OpenAPI y Swagger UI | Como equipo de desarrollo, queremos documentar el RESTful API con OpenAPI mediante springdoc y publicar Swagger UI, para que el equipo y el docente prueben cada endpoint sin leer el código. | 2 |
+| 33 | **TS13** | Implementar la persistencia con Spring Data JPA y MySQL | Como equipo de desarrollo, queremos persistir los datos en MySQL con Spring Data JPA, separar la configuración por perfiles y cargar un restaurante demo, para desarrollar, probar y demostrar el producto con datos reales sin configuración manual. | 2 |
+| 34 | **TS14** | Desplegar el RESTful API con integración continua y Docker | Como equipo de desarrollo, queremos verificar cada cambio con GitHub Actions y publicar el RESTful API empaquetado con Docker, para que la Web Application y el docente usen la versión vigente desde una URL pública. | 2 |
+| 35 | **RNF08** | Control de acceso por sesión y por rol en la Web Application | Atributo de calidad: Seguridad. Requisito: Ninguna pantalla interna se muestra sin sesión y las pantallas administrativas solo se muestran al rol Administrador. Actor afectado: Administrador y empleado. Criterio medible: 100 % de las rutas bajo /app protegidas por authGuard; 100 % de las rutas administrativas protegidas por adminGuard; 0 accesos sin sesión en las pruebas. | 1 |
+| 36 | **TS07** | Desplegar la Web Application en Vercel | Como equipo de desarrollo, queremos publicar la Web Application en Vercel conectada a la API simulada, para que el docente y los restaurantes del piloto accedan a la versión vigente desde una URL pública. | 1 |
+| 37 | **RNF09** | Retroalimentación de estado y confirmaciones en la Web Application | Atributo de calidad: Usabilidad. Requisito: Cada pantalla informa cuándo está cargando, cuándo no hay datos y el resultado de cada acción; las acciones destructivas piden confirmación. Actor afectado: Administrador y empleado. Criterio medible: 100 % de las listas con estado vacío; 100 % de las eliminaciones y anulaciones con confirmación; mensaje de éxito o error en cada formulario. | 1 |
+| 38 | **TS01** | Configurar el repositorio de la Landing Page con GitFlow | Como equipo de desarrollo, queremos un repositorio con estructura base y ramas main y develop protegidas por Pull Request, para que el 100 % de los cambios de la Landing Page se integre con revisión y con autor identificable. | 1 |
+| 39 | **TS04** | Desplegar la Landing Page en Vercel con despliegue continuo | Como equipo de desarrollo, queremos publicar la Landing Page en Vercel conectada al repositorio, para que cada cambio aprobado esté en línea en menos de 5 minutos sin pasos manuales. | 1 |
+| 40 | **RNF02** | Contraste legible según WCAG 2.1 AA | Atributo de calidad: Accesibilidad. Requisito: Los textos tienen contraste suficiente con su fondo. Actor afectado: Visitante con baja visión. Criterio medible: Contraste ≥ 4.5:1 en texto normal y ≥ 3:1 en texto grande; 0 errores de contraste. | 1 |
+| 41 | **RNF03** | Carga rápida de la Landing Page | Atributo de calidad: Rendimiento. Requisito: El sitio carga rápido sin frameworks ni librerías externas. Actor afectado: Visitante con datos móviles. Criterio medible: LCP ≤ 2.5 s y CLS ≤ 0.1; Lighthouse Performance móvil ≥ 90. | 1 |
+| 42 | **RNF04** | Metadatos para posicionamiento en buscadores | Atributo de calidad: Encontrabilidad. Requisito: Cada página tiene metadatos descriptivos propios. Actor afectado: DataBite Corp (captación de leads). Criterio medible: title ≤ 60 y description ≤ 160 caracteres, únicos por página; Lighthouse SEO ≥ 90. | 1 |
+| 43 | **RNF05** | Compatibilidad con navegadores modernos | Atributo de calidad: Compatibilidad. Requisito: El sitio se ve y funciona igual en los navegadores más usados. Actor afectado: Visitante con cualquier navegador actual. Criterio medible: Últimas dos versiones de Chrome, Edge, Firefox y Safari, más Chrome Android y Safari iOS; 0 errores de consola. | 1 |
+| 44 | **RNF06** | Animaciones de aparición que no bloquean el contenido | Atributo de calidad: Usabilidad. Requisito: Las animaciones de entrada son breves y no ocultan contenido. Actor afectado: Visitante. Criterio medible: Duración ≤ 500 ms; solo transform y opacity; contenido visible si el navegador no soporta IntersectionObserver. | 1 |
+| 45 | **RNF07** | Identificación del contenido ilustrativo | Atributo de calidad: Transparencia. Requisito: Todo dato de ejemplo se identifica como tal en el sitio. Actor afectado: Visitante. Criterio medible: 100 % de cifras, precios y fichas de ejemplo con nota visible en ES/EN. | 1 |
 
 </br>
 <p align="center">
@@ -2192,7 +2276,6 @@ En la siguiente sección se presenta el Impact Mapping elaborado a partir del us
 
 >Acceso a artefacto Jira para el desarrollo de Backlog
 <https://laplaceho-22.atlassian.net/jira/software/projects/SO/list?jql=project+%3D+SO+AND+type+%3D+Story+ORDER+BY+cf%5B10019%5D+ASC&atlOrigin=eyJpIjoiZTg4MDU2YjQwYjZlNDJlMjg3NTU1MDk1Y2Q5MjYzNGEiLCJwIjoiaiJ9>
-
 
 # Capítulo IV: Product Design
 
