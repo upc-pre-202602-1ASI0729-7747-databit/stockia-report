@@ -259,7 +259,7 @@ del ABET – EAC - Student Outcome 3.
             Realize las correcciones realizadas en el proceso de lean ux, segmentos objetivos y arquitectura, segun a las observaciones. Esto ayuda a que el lector tenga una mejor idea de los usuarios ademas el lean ux canvas ayuda a validar el dominio del negocio.
             <br>
             <u>AV2</u><br>
-            ...
+            En esta entrega expuse los avances de los módulos de registro de restaurante y de autenticación y equipo, explicando cómo el usuario crea su cuenta, inicia sesión, recupera su contraseña y administra los roles de su equipo, adaptando el nivel de detalle para audiencias técnicas y no técnicas y apoyándome en la aplicación en ejecución.
             <br><br>
         </td>
         <td>
@@ -324,7 +324,7 @@ del ABET – EAC - Student Outcome 3.
             Redacte las correcciones del Lean ux canvas de manera que los segmentos objetivos y los bussines outcomes tengan mas formas y evidenica de medición y no solo estadísticas, ademas que en la parte de arquitectura se realizaron las correciones con respecto a inconsistencias y mejoras en el modelo de clases y bases de datos.
             <br>
             <u>AV2</u><br>
-            ...
+            En esta entrega documenté los módulos de registro de restaurante y de autenticación y equipo, describiendo sus funcionalidades principales y sus reglas de negocio, y registré los avances mediante commits descriptivos, asegurando que la documentación fuera comprensible para distintos perfiles de lector.
             <br><br>
         </td>
         <td>
@@ -532,7 +532,7 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
 
   <tr>
     <td rowspan="3" align="center">
-      <img src="/assets/img/members-profile/ronal-toro.png" alt="Foto de Ronal Toro" width="500"/>
+      <img src="assets/img/members-profile/ronal-toro.png" alt="Foto de Ronal Toro" width="500"/>
     </td>
     <td><b>Nombre:</b> Toro Turpo, Ronal</td>
   </tr>
