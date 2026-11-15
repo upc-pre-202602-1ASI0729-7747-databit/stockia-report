@@ -239,7 +239,7 @@ del ABET – EAC - Student Outcome 3.
              Expuse las correcciones realizadas al AV1 en los diagramas de clases y en el análisis competitivo, empleando un lenguaje claro que permitió a audiencias técnicas y no técnicas comprender los cambios y su justificación. Al presentar el modelo de dominio, expliqué que los diagramas de clases pasaron de describir solo la estructura del Front-End a representar el dominio de cada Bounded Context, con sus Aggregate Roots, Entities, Value Objects, Domain Services, Domain Events, Repositories, invariantes y Enums, y que el material de Front-End se conservó como complemento
             <br>
             <u>AV2</u><br>
-            ...
+            Durante esta entrega expuse el diseño y la ejecución de la entrevista de validación junto con su respectivo análisis, adaptando la comunicación para que los hallazgos fueran comprensibles tanto para perfiles técnicos como comerciales. Asimismo, presenté las mejoras y el desarrollo técnico implementado en los módulos del backend y frontend (Stock Management y Recipes Management), explicando la integración funcional de los componentes y respaldando la exposición con evidencias de ejecución y código para validar el cumplimiento de los objetivos del sprint.
             <br><br> 
             <b>Ortiz Laura, Leyla Alisson</b><br>
             <u>AV1</u><br>
@@ -304,7 +304,7 @@ del ABET – EAC - Student Outcome 3.
              Redacté las correcciones del AV1 correspondientes a los diagramas de clases y al análisis competitivo.En el modelo de dominio, documenté para cada Bounded Context sus agregados, entidades, objetos de valor, servicios de dominio, eventos, repositorios, enumeraciones e invariantes, separando de forma explícita el modelo de dominio de los diagramas del Front-End y manteniendo la correspondencia con el Event Storming, el C4 y la base de datos. En el análisis competitivo, reescribí el enfoque y reemplacé la afirmación de ser el "único que combina" estas capacidades por una formulación sustentada en las fuentes del análisis. Esta redacción permitió mantener la trazabilidad y la coherencia entre los artefactos técnicos y la propuesta de valor del informe.
             <br>
             <u>AV2</u><br>
-            ...
+            En esta entrega documenté la realización y el análisis de la entrevista de validación, elaboré el apartado de diseño de entrevistas y participé en la actualización y corrección integral del informe para asegurar su consistencia narrativa. Además, registré formalmente los avances técnicos y la lógica desarrollada en el backend y el frontend para los módulos de Stock Management y Recipes Management, empleando una redacción clara y estructurada que garantizó la trazabilidad entre la documentación escrita y la implementación funcional del sistema.
             <br><br>
             <b>Ortiz Laura, Leyla Alisson</b><br>
             <u>AV1</u><br>
