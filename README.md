@@ -4339,6 +4339,94 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** d
 
 > **Leyenda:** **L:** Líder del aspecto · **C:** Colaborador
 
+#### 5.2.3.3. Sprint Backlog 3
+
+**Periodo:** 28/10/2026 – 12/11/2026 (2 semanas)
+
+**Objetivo del Sprint:** Entregar el RESTful API de StockIA en Spring Boot con registro de restaurante, autenticación JWT con bloqueo de cuenta y recuperación de contraseña, equipo y roles, inventario por lotes con fecha límite de consumo, recetas con venta y descuento automático, historial de ventas, alertas con entrega por canal, proyección de demanda con modelo ONNX, recomendaciones, dashboard con ahorro semanal y suscripción con checkout simulado de Stripe y PayPal, persistido en MySQL, documentado con OpenAPI y desplegado con Docker.
+
+| **User Story Id** | **Título de la Historia** | **Task Id** | **Título de la Tarea** | **Descripción de la Tarea** | **Est. (Hrs)** | **Asignado** | **Status** |
+| :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
+| **TS05** | Estructurar el RESTful API en Spring Boot por Bounded Context | T-TS05-1 | Crear el proyecto y los paquetes por contexto | Crear el proyecto Maven con Java 21 y Spring Boot 3.5 y un paquete por Bounded Context (`iam`, `restaurantregistration`, `subscriptionpayments`, `stockmanagement`, `recipesmanagement`, `notificationsmessaging`, `mlrecommendations`, `analyticsdashboard`) con las capas `domain`, `application`, `infrastructure` e `interfaces`. | 3 | Aldo | Done |
+|  |  | T-TS05-2 | Implementar el shared kernel | Crear `Quantity`, `Result`, los errores RFC 9457, los mensajes en inglés y español (`Accept-Language`), el contexto de seguridad, la convención snake_case y `GET /api/v1/health`. | 4 | Leyla | Done |
+| **TS06** | Documentar el RESTful API con OpenAPI | T-TS06-1 | Configurar springdoc-openapi y el esquema Bearer | Configurar la información del API, Swagger UI en `/swagger-ui.html`, el documento en `/v3/api-docs`, el esquema JWT y la agrupación de endpoints por Bounded Context. | 1.5 | Leyla | Done |
+|  |  | T-TS06-2 | Documentar controladores y resources | Anotar controladores y resources con resúmenes, códigos de respuesta y ejemplos de request y response. | 2 | Carla | In Progress |
+| **TS07** | Implementar la persistencia y los datos de demostración | T-TS07-1 | Configurar JPA, MySQL y los perfiles | Configurar Spring Data JPA con los perfiles `dev` (MySQL local con creación automática de `stockia_os`), `prod` (todo por variables de entorno) y `local` (H2 en memoria). | 2 | Aldo | Done |
+|  |  | T-TS07-2 | Implementar el sembrador de datos de demostración | Cargar en el primer arranque un restaurante demo con 10 lotes, 4 recetas, 120 días de ventas, alertas automáticas, un primer pronóstico y las cuentas de Administrador y Empleado. | 2 | Leyla | Done |
+| **TS08** | Desplegar el RESTful API | T-TS08-1 | Configurar el pipeline de integración continua | Crear el flujo de GitHub Actions que ejecuta `mvn verify` y la prueba de humo `tests/smoke/smoke_test.py` contra MySQL. | 2 | Aldo | Done |
+|  |  | T-TS08-2 | Contenerizar y publicar el API | Crear el Dockerfile y `docker compose` (MySQL y API), y publicar el API y la base de datos con el perfil `prod`, verificando el Swagger público y `/api/v1/health`. | 3 | Aldo | Done |
+|  |  | T-TS08-3 | Conectar la Web Application con el API | Cambiar `VITE_STOCKIA_API_URL` y las rutas `VITE_*_ENDPOINT_PATH` en Vercel y ajustar `STOCKIA_CORS_ALLOWED_ORIGINS` para el dominio de la Web Application. | 1.5 | Aldo | Done |
+| **US29** | Registrarme como nuevo usuario en StockIA | T-US29-1 | Modelar el registro del restaurante | Crear el aggregate `RestaurantRegistration` con el restaurante y su propietario Administrador, y su puerto de repositorio. | 3 | Ronal | Done |
+|  |  | T-US29-2 | Implementar el comando de registro | Validar el correo duplicado, crear el restaurante y la cuenta Administrador mediante la fachada ACL de IAM y cifrar la contraseña con BCrypt. | 3 | Ronal | Done |
+|  |  | T-US29-3 | Exponer el endpoint de registro | Crear `POST /api/v1/restaurant-registrations` con su resource y su transformador. | 2 | Ronal | Done |
+| **US30** | Iniciar sesión con mis credenciales | T-US30-1 | Implementar JWT y Spring Security | Generar y validar tokens HS256 con jjwt, configurar el filtro Bearer, las rutas públicas y el contexto de seguridad. | 3 | Ronal | Done |
+|  |  | T-US30-2 | Implementar el inicio de sesión y el bloqueo de cuenta | Responder `InvalidCredentials` con los intentos restantes y bloquear la cuenta 15 minutos tras 5 contraseñas incorrectas (`AccountLocked`). | 3 | Ronal | Done |
+|  |  | T-US30-3 | Implementar la recuperación de contraseña | Generar el token de restablecimiento, armar el enlace con `STOCKIA_WEB_APP_URL` y exponer los endpoints de `/api/v1/authentication`. | 3 | Ronal | Done |
+| **US24** | Configurar roles y permisos de los empleados | T-US24-1 | Implementar la gestión del equipo | Crear los comandos para invitar integrantes, cambiar su rol y darlos de baja. | 3 | Ronal | Done |
+|  |  | T-US24-2 | Aplicar las reglas de roles | Impedir la baja de la propia cuenta, mantener al menos un Administrador y restringir los endpoints administrativos al rol Administrador. | 2.5 | Ronal | Done |
+|  |  | T-US24-3 | Exponer los endpoints del equipo | Crear los endpoints de `/api/v1/users` para listar, invitar, cambiar rol y dar de baja. | 2 | Ronal | Done |
+| **RNF11** | Protección de credenciales y datos de pago | T-RNF11-1 | Proteger las credenciales | Cifrar las contraseñas con BCrypt, exigir un secreto JWT de al menos 32 caracteres desde `STOCKIA_JWT_SECRET` y restringir el CORS por variable de entorno. | 2 | Carla | Done |
+|  |  | T-RNF11-2 | Proteger los datos de pago | No almacenar números de tarjeta ni cuentas de PayPal; guardar solo la referencia del pago y los últimos 4 dígitos. | 2 | Ronal | In Progress |
+| **US40** | Actualizar mi perfil, los datos de mi restaurante y mi contraseña | T-US40-1 | Modelar el perfil del restaurante | Crear el aggregate del perfil del restaurante y su repositorio en Restaurant Registration. | 2 | Ronal | Done |
+|  |  | T-US40-2 | Implementar las actualizaciones | Crear los comandos para actualizar el perfil, el restaurante y la contraseña (verificando la contraseña actual). | 3 | Ronal | Done |
+|  |  | T-US40-3 | Exponer los endpoints de la cuenta | Crear `GET` y `PUT /api/v1/restaurants/current` y los endpoints de perfil y contraseña de `/api/v1/users`. | 2 | Ronal | Done |
+| **US21** | Gestionar el inventario de insumos (alta, baja y modificación) | T-US21-1 | Modelar el lote de insumo | Crear el aggregate `InventoryItem` como lote con fecha de vencimiento y cantidades exactas con `Quantity` (hasta 32 decimales). | 2.5 | Jesus | Done |
+|  |  | T-US21-2 | Implementar la persistencia del lote | Crear las entidades JPA, los mappers, el repositorio Spring Data y su adaptador. | 2 | Jesus | Done |
+|  |  | T-US21-3 | Implementar los servicios de comando y consulta | Crear el alta, la modificación, la baja y la consulta de lotes, y publicar `StockLevelChangedEvent` cuando cambia el stock. | 3 | Jesus | Done |
+|  |  | T-US21-4 | Exponer los endpoints de inventario | Crear el CRUD en `/api/v1/inventory-items` con sus resources y transformadores. | 3 | Jesus | Done |
+|  |  | T-US21-5 | Probar la cantidad y la asignación de lotes | Escribir pruebas unitarias de `Quantity` y de la asignación del lote más fresco utilizable, sin usar nunca uno vencido. | 2 | Aldo | Done |
+| **US36** | Calcular automáticamente la fecha límite de consumo de un insumo | T-US36-1 | Calcular la fecha límite al guardar | Calcular la fecha límite desde la vida útil registrada y marcar los lotes que vencen en 3 días o menos. | 2.5 | Jesus | Done |
+|  |  | T-US36-2 | Consultar los lotes por vencer | Crear la consulta de lotes próximos a vencer en `/api/v1/inventory-items`. | 2.5 | Jesus | Done |
+| **US22** | Vincular recetas al inventario con descuento automático de insumos | T-US22-1 | Modelar la receta y sus ingredientes | Crear `Recipe` con su precio y sus ingredientes vinculados al stock mediante la fachada ACL de Stock Management. | 2.5 | Jesus | Done |
+|  |  | T-US22-2 | Implementar el CRUD de recetas | Crear los servicios y los endpoints de `/api/v1/recipes`. | 3.5 | Jesus | Done |
+|  |  | T-US22-3 | Implementar el motor de descuento de insumos | Registrar la venta y descontar los insumos del lote más fresco utilizable en una sola transacción; responder `CannotSell` con los insumos que bloquean la venta. | 4 | Jesus | Done |
+| **US39** | Consultar el historial de ventas y anular ventas registradas por error | T-US39-1 | Modelar la venta y su repositorio | Crear el aggregate `Sale` con sus líneas, el estado Confirmada o Anulada y su repositorio. | 2 | Jesus | Done |
+|  |  | T-US39-2 | Consultar el historial e ingresos | Crear la consulta en `/api/v1/sales` con filtros por fecha y estado, el total por venta y los ingresos confirmados. | 2 | Jesus | Done |
+|  |  | T-US39-3 | Implementar la anulación de ventas | Cambiar la venta a Anulada sin eliminarla del historial. | 2 | Jesus | Done |
+| **US23** | Visualizar un dashboard operativo con alertas y métricas clave | T-US23-1 | Implementar la consulta de indicadores | Calcular insumos registrados, en estado bajo o crítico, por vencer y valor del inventario, consultando Stock Management mediante su fachada ACL. | 3 | Leyla | Done |
+|  |  | T-US23-2 | Implementar la calculadora de ahorro semanal | Calcular el ahorro semanal (Weekly Savings Calculator) a partir de las ventas y las pérdidas evitadas. | 3 | Leyla | Done |
+|  |  | T-US23-3 | Exponer los endpoints del dashboard | Crear `GET /api/v1/dashboard/summary` y `GET /api/v1/dashboard/weekly-savings`. | 2 | Leyla | Done |
+| **US27** | Recibir alertas de insumos por stock bajo o vencimiento próximo | T-US27-1 | Modelar la alerta | Crear el aggregate `Alert` con tipo, severidad, canal y canales entregados. | 2 | Leyla | Done |
+|  |  | T-US27-2 | Generar alertas desde los eventos de stock | Crear el manejador de `StockLevelChangedEvent` y la política de alertas automáticas. | 3 | Leyla | Done |
+|  |  | T-US27-3 | Exponer los endpoints de alertas | Crear los endpoints de `/api/v1/alerts` para alertas automáticas y manuales, con filtro por pendientes. | 3 | Leyla | Done |
+| **US41** | Atender las alertas operativas y asegurar su entrega por canal | T-US41-1 | Implementar la regla de canales requeridos | Exigir WhatsApp y correo en alertas críticas y el canal principal en las demás, mediante adaptadores de canal simulados. | 2 | Leyla | Done |
+|  |  | T-US41-2 | Implementar la atención y el reintento | Permitir atender una alerta solo si todos sus canales fueron entregados y reintentar el canal que falló. | 3 | Leyla | Done |
+| **US25** | Recibir predicción de demanda según históricos y clima | T-US25-1 | Modelar el pronóstico de demanda | Crear el aggregate `DemandForecast` con unidades proyectadas por plato y día, nivel de confianza y condición climática. | 2 | Aldo | Done |
+|  |  | T-US25-2 | Entrenar el modelo y exportarlo a ONNX | Entrenar el modelo con scikit-learn sobre el histórico de ventas y exportarlo a ONNX. | 4 | Aldo | Done |
+|  |  | T-US25-3 | Integrar ONNX Runtime y el calendario peruano | Calcular las características (día, feriados del calendario peruano) y la predicción a 7 días con ONNX Runtime for Java. | 4 | Aldo | Done |
+|  |  | T-US25-4 | Exponer los endpoints de pronóstico | Crear los endpoints de `/api/v1/demand-forecasts` y publicar `DemandForecastGeneratedEvent`. | 3 | Aldo | Done |
+|  |  | T-US25-5 | Probar la paridad del modelo | Escribir la prueba que verifica que las características y las predicciones del modelo en Java son iguales a las del pipeline de Python. | 2 | Aldo | Done |
+|  |  | T-US25-6 | Integrar el clima con Open-Meteo | Consultar el pronóstico del clima y usar la climatología de Lima cuando `STOCKIA_WEATHER_ENABLED` está apagado o el servicio no responde. | 3 | Aldo | Done |
+| **US26** | Recibir recomendaciones automáticas de ajuste de menú | T-US26-1 | Modelar la recomendación | Crear el aggregate `Recommendation` con tipo, mensaje, impacto esperado y estado aplicado. | 1.5 | Aldo | Done |
+|  |  | T-US26-2 | Generar recomendaciones de compra y de menú | Aplicar la política de recomendaciones sobre el pronóstico, el stock y la popularidad de los platos. | 4 | Aldo | Done |
+|  |  | T-US26-3 | Exponer los endpoints de recomendaciones | Crear los endpoints de `/api/v1/recommendations` para listar y aplicar recomendaciones. | 2.5 | Aldo | Done |
+| **US31** | Pagar o renovar mi suscripción con Stripe o PayPal | T-US31-1 | Modelar el plan y la suscripción | Crear los aggregates `Plan` y `Subscription` y el catálogo de planes con sus características traducibles. | 3 | Carla | Done |
+|  |  | T-US31-2 | Consultar los planes y la suscripción actual | Crear los endpoints de consulta en `/api/v1/plans` y `/api/v1/subscriptions`. | 2.5 | Carla | Done |
+|  |  | T-US31-3 | Implementar la elección y el cambio de plan | Crear los comandos y endpoints para elegir y cambiar el plan en `/api/v1/subscriptions`. | 3 | Carla | Done |
+|  |  | T-US31-4 | Implementar el checkout simulado de Stripe | Crear el adaptador de pago de Stripe simulado con su resultado exitoso y de error. | 3 | Carla | Done |
+|  |  | T-US31-5 | Implementar el checkout simulado de PayPal | Crear el adaptador de pago de PayPal simulado con su resultado exitoso y de error. | 2.5 | Carla | Done |
+|  |  | T-US31-6 | Registrar el pago, la renovación y los errores | Registrar el resultado del pago, actualizar la fecha de renovación y responder con el estado de la transacción, incluidos los errores del pago. | 2.5 | Carla | Done |
+| **TOTAL** | | | | **Esfuerzo total estimado para el Sprint** | **153.5** | | |
+
+**Capacidad del Sprint 3**
+
+| Integrante | Disponibilidad declarada (h) | Horas asignadas | N.° de tareas | Uso de la capacidad |
+| :--- | :---: | :---: | :---: | :---: |
+| Gallardo Morales, Carla Alejandra | 45 | 20.5 | 8 | 46 % |
+| Huaman Oscco, Aldo Jesus | 45 | 39.5 | 15 | 88 % |
+| Miranda Cordova, Jesus Angel Yvan | 45 | 31.5 | 12 | 70 % |
+| Ortiz Laura, Leyla Alisson | 45 | 28.5 | 11 | 63 % |
+| Toro Turpo, Ronal | 45 | 33.5 | 13 | 74 % |
+| **Total** | **225** | **153.5** | **59** | **68 %** |
+
+##### **Resumen Técnico**
+
+- **Total de horas:** 153.5 horas en 59 tareas.
+- **Distribución:** dos semanas, con una disponibilidad declarada de 45 horas por integrante; la capacidad libre cubre revisiones de Pull Request, ceremonias, pruebas de integración y la documentación del informe.
+- **Story Points:** 86 comprometidos; 82 completados al 12/11/2026. T-TS06-2 (anotar controladores con OpenAPI) y T-RNF11-2 (datos de pago) quedaron en proceso.
+- **Entregable principal:** RESTful API de StockIA en Spring Boot con persistencia en MySQL, autenticación JWT y documentación OpenAPI, desplegado con Docker y consumido por la Web Application.
+
+
 
 ## 5.3. Validation Interviews
 
