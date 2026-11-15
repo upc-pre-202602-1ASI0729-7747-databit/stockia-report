@@ -4998,9 +4998,6 @@ En esta sección se presentan los avances de implementación del Sprint 3 median
 
 En el Sprint 3 se implementó la primera versión del RESTful API de StockIA. Las capturas corresponden al API en ejecución (https://stockia-platform-api-ycil.onrender.com/swagger-ui.html)  y muestran cada Bounded Context con la User Story que lo respalda. Cada captura debe mostrar la petición, el código de respuesta y el cuerpo devuelto (Swagger → *Try it out* o Postman).
 
-**Evidencia del despliegue de la platform api**
-<p align="center"><img alt="Inicio de sesión" src="assets/img/chapter-05/s3-deploy-platform-api.jpeg" width="800" /><br/><i>Figura: Despliegue en render de la platform api</i></p>
-
 **1. IAM (US30, US24, RNF11):** inicio de sesión con token JWT, respuesta `InvalidCredentials` con los intentos restantes, bloqueo de la cuenta tras 5 intentos (`AccountLocked`), recuperación de contraseña y gestión del equipo con la regla del último Administrador.
 
 <p align="center"><img alt="Inicio de sesión" src="assets/img/chapter-05/s3-exec-01-iam-sign-in.png" width="800" /><br/><i>Figura: inicio de sesión (US30)</i></p>
@@ -5230,6 +5227,27 @@ Inicio de sesión con contraseña incorrecta (US30):
 }
 ```
 
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+En el Sprint 3 se desplegaron el RESTful API (TS08) y su base de datos MySQL con Docker, y se reconfiguró la Web Application ya publicada en Vercel para consumirlos.
+
+**Evidencia del despliegue de la platform api**
+<p align="center"><img alt="Inicio de sesión" src="assets/img/chapter-05/s3-deploy-platform-api.jpeg" width="800" /><br/><i>Figura: Despliegue en render de la platform api</i></p>
+
+**Actividades de despliegue realizadas** 
+
+1. Se creó el flujo de integración continua en GitHub Actions: `mvn verify` y la prueba de humo `tests/smoke/smoke_test.py` contra MySQL.
+2. Se empaquetó el API en una imagen Docker y se probó localmente con `docker compose up --build` (MySQL y API en el puerto 8181).
+3. Se creó la base de datos MySQL y el servicio del API en Amazon Web Services con el perfil `prod`.
+4. Se cargaron las variables de entorno `DATABASE_URL`, `DATABASE_USER`, `DATABASE_PASSWORD`, `STOCKIA_JWT_SECRET`, `STOCKIA_CORS_ALLOWED_ORIGINS`, `STOCKIA_WEB_APP_URL`, `STOCKIA_SEED_DEMO_DATA`, `STOCKIA_WEATHER_ENABLED` y `PORT`, sin incluirlas en el repositorio.
+5. Se verificaron `/api/v1/health` y el Swagger público, y se actualizaron en Vercel `VITE_STOCKIA_API_URL` y las rutas `VITE_*_ENDPOINT_PATH` para volver a desplegar la Web Application.
+
+* **URL del RESTful API desplegado:** https://stockia-platform-api-ycil.onrender.com/api/v1
+* **URL de Swagger UI:** https://stockia-platform-api-ycil.onrender.com/swagger-ui.html 
+* **URL de la Web Application desplegada:** https://stockia-webapp.vercel.app/
+* **URL de la Landing Page desplegada:** https://stockia-website.vercel.app/
+
+laaaa
 
 ## 5.3. Validation Interviews
 
