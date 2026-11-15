@@ -5066,7 +5066,170 @@ En el Sprint 3 se implementó la primera versión del RESTful API de StockIA. La
 | US41 | Regla de canales, atención y reintento con canales simulados | Entrega real por WhatsApp, SendGrid y Twilio (US28, US32, US33, RNF12) |
 | US36 | Cálculo de la fecha límite desde la vida útil registrada | Vida útil sugerida por API externa (US34 y US35) |
 
-llll
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+En el Sprint 3 el RESTful API de StockIA se documentó con **OpenAPI** mediante springdoc-openapi y se agrupó por Bounded Context. Todos los recursos cuelgan del prefijo `/api/v1`, los campos JSON usan snake_case y, salvo el registro de restaurante, el inicio de sesión, la recuperación de contraseña y `/health`, exigen el encabezado `Authorization: Bearer {token}`. Los errores siguen RFC 9457 (problem details): `title` es un código estable (por ejemplo `InvalidCredentials`, `CannotSell` o `AccountLocked`), `detail` es el mensaje en inglés o en español según `Accept-Language`, y `details` agrega datos adicionales cuando la Web Application los necesita (intentos restantes, insumos que bloquean una venta). La Web Application accede a estos endpoints desde la capa `infrastructure` de cada contexto, por lo que reemplazar la API simulada no cambió ningún componente de presentación.
+
+* **Repositorio del RESTful API:** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-platform-api
+* **URL del API desplegado:** https://stockia-platform-api-ycil.onrender.com/api/v1
+* **URL de Swagger UI:** https://stockia-platform-api-ycil.onrender.com/swagger-ui/index.html
+* **Documento OpenAPI:** https://stockia-platform-api-ycil.onrender.com/v3/api-docs
+
+
+**IAM (Ronal) — US30, US24, RNF11**
+
+| **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
+| :--- | :---: | :--- | :--- | :---: | :---: |
+| `/api/v1/authentication/sign-in` | POST | Body: `email`, `password` | `200 OK` con los datos del usuario y el `token`; `401 Unauthorized` con `InvalidCredentials` y los intentos restantes; `423 Locked` con `AccountLocked` tras 5 intentos. | `43136f8` | US30 |
+| `/api/v1/authentication/password-reset-request` | POST | Body: `email` | `202 Accepted`; el enlace de recuperación usa `STOCKIA_WEB_APP_URL`. | `43136f8` | US30 |
+| `/api/v1/authentication/password-resets` | POST | Body: `code`, `new_password` | `204 No Content`; `400 Bad Request` si el códgio ingresado no es válido. | `43136f8` | US30 |
+| `/api/v1/users` | GET | — | `200 OK` con los integrantes del restaurante. | `43136f8` | US24 |
+| `/api/v1/users` | POST | Body: `full_name`, `email`, `role`, `temporaryPassword` | `201 Created` con el integrante invitado. | `43136f8` | US24 |
+| `/api/v1/users/{id}` | DELETE | Path: `id` | `204 No Content`; `409 Conflict` si es la propia cuenta o el último Administrador. | `43136f8` | US24 |
+
+<p align="center"><img alt="Swagger IAM" src="assets/img/chapter-05/s3-swagger-01-iam.png" width="800" /><br/><i>Figura: OpenAPI de IAM</i></p>
+
+**Restaurant Registration (Ronal) — US29, US40**
+
+| **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
+| :--- | :---: | :--- | :--- | :---: | :---: |
+| `/api/v1/restaurant-registrations` | POST | Body: `full_name`, `email`, `password`, `restaurant_name` | `201 Created` con el restaurante y su propietario Administrador; `409 Conflict` si el correo ya existe. | `806619e` | US29 |
+| `/api/v1/restaurants/current` | GET | — | `200 OK` con los datos del restaurante del usuario. | `806619e` | US40 |
+| `/api/v1/restaurants/current` | PUT | Body: `name`, `address`, `phone` | `200 OK` con el restaurante actualizado. | `806619e` | US40 |
+| `/api/v1/users/{user_id}/password` | POST | Path: `user_id`. Body: `current_password`, `new_password` | `204 No Content`; `400 Bad Request` si la contraseña actual no coincide. | `43136f8` | US40, RNF11 |
+
+<p align="center"><img alt="Swagger Restaurant Registration" src="assets/img/chapter-05/s3-swagger-02-registration.png" width="800" /><br/><i>Figura: OpenAPI de Restaurant Registration</i></p>
+
+**Stock Management (Jesus) — US21, US36**
+
+| **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
+| :--- | :---: | :--- | :--- | :---: | :---: |
+| `/api/v1/inventory-items` | GET | Query opcional: `status` | `200 OK` con los lotes, sus cantidades y su estado. | `5293f7a` | US21 |
+| `/api/v1/inventory-items` | POST | Body: `name`, `unit`, `quantity`, `min_threshold`, `shelf_life_days`, `unit_cost` ✱ | `201 Created` con el lote y su fecha límite de consumo calculada. | `5293f7a` | US21, US36 |
+| `/api/v1/inventory-items/{id}` | GET | Path: `item_id` | `200 OK` con el lote; `404 Not Found` si no existe. | `5293f7a` | US21 |
+| `/api/v1/inventory-items/{id}` | PUT | Path: `item_id`. Body: mismos campos del alta | `200 OK` con el lote actualizado. | `5293f7a` | US21, US36 |
+| `/api/v1/inventory-items/{id}` | DELETE | Path: `item_id` | `204 No Content`. | `5293f7a` | US21 |
+
+<p align="center"><img alt="Swagger Stock Management" src="assets/img/chapter-05/s3-swagger-03-stock.png" width="800" /><br/><i>Figura: OpenAPI de Stock Management</i></p>
+
+**Recipes Management (Jesus) — US22, US39**
+
+| **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
+| :--- | :---: | :--- | :--- | :---: | :---: |
+| `/api/v1/recipes` | GET | — | `200 OK` con las recetas, su precio y sus ingredientes. | `e170d4b` | US22 |
+| `/api/v1/recipes` | POST | Body: `dish_name`, `price`, `ingredients` (`inventory_item_id`, `quantity_required`, `unit`) | `201 Created` con la receta. | `e170d4b` | US22 |
+| `/api/v1/recipes/{id}` | GET / PUT / DELETE | Path: `recipe_id`. Body en PUT: igual que el alta | `200 OK` con la receta, `200 OK` con la receta actualizada o `204 No Content`. | `e170d4b` | US22 |
+| `/api/v1/sales` | POST | Body: `channel`, `recipe_id`, `quantity` | `201 Created` con la venta Confirmada y el stock descontado; error `CannotSell` con los insumos que bloquean la venta. | `fd19276` | US22 |
+| `/api/v1/sales` | GET | Query opcional: `from`, `to`, `status` | `200 OK` con las ventas, el total por venta y los ingresos confirmados. | `fd19276` | US39 |
+| `/api/v1/sales/id}/void` | PUT | Path: `sale_id` | `200 OK` con la venta en estado Anulada. | `fd19276` | US39 |
+
+<p align="center"><img alt="Swagger Recipes Management" src="assets/img/chapter-05/s3-swagger-04-recipes-sales.png" width="800" /><br/><i>Figura: OpenAPI de Recipes Management & Sales</i></p>
+
+**ML & Recommendations (Aldo) — US25, US26**
+
+| **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
+| :--- | :---: | :--- | :--- | :---: | :---: |
+| `/api/v1/demand-forecasts` | POST | — | `201 Created` con el pronóstico de 7 días (`generated_at`, `confidence`, `weather_condition`, unidades por plato y día). | `c4dc0e9` | US25 |
+| `/api/v1/demand-forecasts/latest` | GET | — | `200 OK` con el último pronóstico; `404 Not Found` si aún no hay. | `c4dc0e9` | US25 |
+| `/api/v1/recommendations` | GET | Query opcional: `applied` | `200 OK` con las recomendaciones, su tipo, mensaje e impacto esperado. | `8fdb28d` | US26 |
+| `/api/v1/recommendations/{id}/apply` | PUT | Path: `recommendation_id` | `200 OK` con la recomendación en estado aplicado. | `8fdb28d` | US26 |
+
+<p align="center"><img alt="Swagger ML" src="assets/img/chapter-05/s3-swagger-05-ml.png" width="800" /><br/><i>Figura: OpenAPI de ML & Recommendations</i></p>
+
+**Notifications & Messaging (Leyla) — US27, US41**
+
+| **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
+| :--- | :---: | :--- | :--- | :---: | :---: |
+| `/api/v1/alerts` | GET | Query opcional: `acknowledged` | `200 OK` con las alertas, su severidad, los canales entregados y el contador de pendientes. | `41b1bd0` | US27 |
+| `/api/v1/alerts` | POST | Body: `type`, `severity`, `message`, `channel` | `201 Created` con la alerta manual registrada. | `41b1bd0` | US27 |
+| `/api/v1/alerts/{id}` | GET / DELETE | Path: `alert_id` | `200 OK` con la alerta o `204 No Content`. | `41b1bd0` | US27, US41 |
+| `/api/v1/alerts/{id}/acknowledge` | PUT | Path: `alert_id` | `200 OK` con la alerta atendida; error si falta entregar algún canal requerido. | `41b1bd0` | US41 |
+
+<p align="center"><img alt="Swagger Notifications" src="assets/img/chapter-05/s3-swagger-06-notifications.png" width="800" /><br/><i>Figura: OpenAPI de Notifications & Messaging</i></p>
+
+**Analytics & Dashboard (Leyla) — US23**
+
+| **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
+| :--- | :---: | :--- | :--- | :---: | :---: |
+| `/api/v1/dashboard/summary` | GET | — | `200 OK` con los indicadores de stock, los insumos críticos, las alertas recientes y la última proyección. | `00acaf3` | US23 |
+| `/api/v1/dashboard/weekly-savings` | GET | — | `200 OK` con el ahorro semanal calculado. | `00acaf3` | US23 |
+
+<p align="center"><img alt="Swagger Analytics" src="assets/img/chapter-05/s3-swagger-07-analytics.png" width="800" /><br/><i>Figura: OpenAPI de Analytics & Dashboard</i></p>
+
+**Subscription & Payments (Carla) — US31, RNF11**
+
+| **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
+| :--- | :---: | :--- | :--- | :---: | :---: |
+| `/api/v1/plans` | GET | — | `200 OK` con los planes, su precio y sus características en el idioma solicitado. | `f6f4ceb` | US31 |
+| `/api/v1/subscriptions/current` | GET | — | `200 OK` con la suscripción actual; `404 Not Found` si no tiene. | `fd66a71` | US31 |
+| `/api/v1/subscriptions` | POST | Body: `plan_id`, `payment_method` | `201 Created` con la suscripción pendiente de pago. | `fd66a71` | US31 |
+
+<p align="center"><img alt="Swagger Subscription" src="assets/img/chapter-05/s3-swagger-08-subscription.png" width="800" /><br/><i>Figura: OpenAPI de Subscription & Payments</i></p>
+
+**Shared kernel (Leyla) — TS05**
+
+| **Endpoint** | **Verbo** | **Parámetros** | **Response de muestra** | **Commit** | **US** |
+| :--- | :---: | :--- | :--- | :---: | :---: |
+| `/api/v1/health` | GET | — | `200 OK` con el estado del API. | `684f718` | TS05 |
+
+**Ejemplos de interacción** *(ilustrativos; reemplazar con la respuesta real capturada de Swagger)*
+
+Venta rechazada por insumos agotados o vencidos (US22), con mensaje en español:
+
+```http
+POST https://[host]/api/v1/sales
+Authorization: Bearer {token}
+Accept-Language: es
+Content-Type: application/json
+
+{
+  "recipeId": 4,
+  "quantity": 1,
+  "channel": "MANUAL"
+}
+```
+
+Response (problem details, RFC 9457):
+
+```json
+{
+    "type": "https://httpstatuses.com/422",
+    "title": "CannotSell",
+    "status": 422,
+    "detail": "\"Fettuccine Alfredo\" no se puede vender: falta un insumo, no alcanza o está vencido. No se registró la venta.",
+    "instance": "/api/v1/sales",
+    "details": {
+        "shortages": [
+            {
+                "itemName": "Heavy cream",
+                "unit": "L",
+                "reason": "EXPIRED",
+                "required": "0.1",
+                "available": "0",
+                "expired": "3"
+            }
+        ],
+        "dish": "Fettuccine Alfredo"
+    }
+}
+```
+
+Inicio de sesión con contraseña incorrecta (US30):
+
+```json
+{
+    "type": "https://httpstatuses.com/401",
+    "title": "InvalidCredentials",
+    "status": 401,
+    "detail": "Correo o contraseña incorrectos.",
+    "instance": "/api/v1/authentication/sign-in",
+    "details": {
+        "maxAttempts": 5,
+        "remainingAttempts": 4
+    }
+}
+```
+
 
 ## 5.3. Validation Interviews
 
