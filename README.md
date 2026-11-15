@@ -5486,7 +5486,7 @@ ___
 
 **SITE o APP A EVALUAR:** StockIA Web app<br><br>
 **TAREAS A EVALUAR:**<br>
- El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas de usuario, identificadas en los artefactos proporcionados (mockups de aplicación móvil y web):
+ El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas de usuario, identificadas en los artefactos proporcionados (web app):
 
 **T1: Consultar el dashboard**<br>
 Pantalla de dashboard: Se muestra información importante que se le muestra ni bien ingresa el usuario.
@@ -5518,8 +5518,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 | 4 | Un solo color en las barras del “Demand Forecast” | 2 | H1-Visibilidad del estado; Jerarquía visual |
 | 5 | Mucho texto distrae y genera mucho ruido visual | 2 | H8-Diseño minimalista; H6-Reconocimiento antes que recuerdo |
 | 6 | Mezcla de inglés y español en la interfaz | 2 | H4-Consistencia y estándares; H2-Sistema y mundo real |
-| 7 | Mensaje “Invalid PrimeUI License” visible en todas las pantallas | 2 | H8-Diseño minimalista; H2-Sistema y mundo real |
-| 8 | Botón “Apply” en recomendaciones sin confirmación ni detalle del efecto | 3 | H5-Prevención de errores; H3-Control y libertad |
 
 **DESCRIPCIÓN DE PROBLEMAS:**
 
