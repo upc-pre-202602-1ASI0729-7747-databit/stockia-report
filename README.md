@@ -4994,8 +4994,79 @@ En esta sección se presentan los avances de implementación del Sprint 3 median
 | stockia-report | feature/chapter-3 | `[ID]` | docs(chapter-3): add sprint 3 technical stories TS05 to TS08 | Technical Stories y Product Backlog del Sprint 3 ([COMPLETAR autor]). | [dd/mm/2026] |
 | stockia-report | feature/chapter-5 | `[ID]` | docs(chapter-5): add sprint 3 | Sprint Planning, Sprint Backlog, evidencias y Team Collaboration del Sprint 3 ([COMPLETAR autor]). | [dd/mm/2026] |
 
-sss
+#### 5.2.3.5. Execution Evidence for Sprint Review
 
+En el Sprint 3 se implementó la primera versión del RESTful API de StockIA. Las capturas corresponden al API en ejecución (https://stockia-platform-api-ycil.onrender.com/swagger-ui.html)  y muestran cada Bounded Context con la User Story que lo respalda. Cada captura debe mostrar la petición, el código de respuesta y el cuerpo devuelto (Swagger → *Try it out* o Postman).
+
+**Evidencia del despliegue de la platform api**
+<p align="center"><img alt="Inicio de sesión" src="assets/img/chapter-05/s3-deploy-platform-api.jpeg" width="800" /><br/><i>Figura: Despliegue en render de la platform api</i></p>
+
+**1. IAM (US30, US24, RNF11):** inicio de sesión con token JWT, respuesta `InvalidCredentials` con los intentos restantes, bloqueo de la cuenta tras 5 intentos (`AccountLocked`), recuperación de contraseña y gestión del equipo con la regla del último Administrador.
+
+<p align="center"><img alt="Inicio de sesión" src="assets/img/chapter-05/s3-exec-01-iam-sign-in.png" width="800" /><br/><i>Figura: inicio de sesión (US30)</i></p>
+
+<p align="center"><img alt="Bloqueo de cuenta" src="assets/img/chapter-05/s3-exec-02-iam-lock.png" width="800" /><br/><i></i></p>
+
+<p align="center"><img alt="Bloqueo de cuenta" src="assets/img/chapter-05/s3-exec-02-iam-lock2.png" width="800" /><br/><i>Figura: intentos restantes y bloqueo de cuenta (US30)</i></p>
+
+<p align="center"><img alt="Recuperación de contraseña" src="assets/img/chapter-05/s3-exec-03-iam-recovery.png" width="800" /><br/><i>Figura: recuperación de contraseña (US30)</i></p>
+
+<p align="center"><img alt="Equipo y roles" src="assets/img/chapter-05/s3-exec-04-iam-team.png" width="800" /><br/><i>Figura: gestión del equipo y roles (US24)</i></p>
+
+**2. Restaurant Registration (US29, US40):** registro del restaurante con su propietario Administrador, rechazo de correo duplicado y actualización del perfil y del restaurante.
+
+<p align="center"><img alt="Registro de restaurante" src="assets/img/chapter-05/s3-exec-05-registration.png" width="800" /><br/><i>Figura: registro de un restaurante (US29)</i></p>
+
+<p align="center"><img alt="Perfil del restaurante" src="assets/img/chapter-05/s3-exec-06-restaurant-profile.png" width="800" /><br/><i>Figura: actualización del restaurante (US40)</i></p>
+
+<p align="center"><img alt="Perfil del restaurante" src="assets/img/chapter-05/s3-exec-06-restaurant-profile2.png" width="800" /><br/><i>Figura: actualización del restaurante (US40)</i></p>
+
+**3. Stock Management (US21, US36):** alta de lotes con fecha límite calculada, edición, baja y consulta de lotes por vencer.
+
+<p align="center"><img alt="Alta de lote" src="assets/img/chapter-05/s3-exec-07-stock-create.png" width="800" /><br/><i>Figura: alta de un lote con fecha límite de consumo (US21, US36)</i></p>
+
+**4. Recipes Management (US22, US39):** receta con ingredientes, venta con descuento del lote más fresco utilizable, `CannotSell` con los insumos que bloquean la venta, historial y anulación.
+
+<p align="center"><img alt="Venta con descuento" src="assets/img/chapter-05/s3-exec-09-recipes-sale.png" width="800" /><br/></p>
+
+<p align="center"><img alt="Venta con descuento" src="assets/img/chapter-05/s3-exec-09-recipes-sale2.png" width="800" /><br/><i>Figura: venta con descuento automático de insumos (US22)</i></p>
+
+<p align="center"><img alt="CannotSell" src="assets/img/chapter-05/s3-exec-10-recipes-cannot-sell.png" width="800" /><br/><i>Figura: venta rechazada por insumos agotados o vencidos (US22)</i></p>
+
+**5. ML & Recommendations (US25, US26):** pronóstico de 7 días por plato con confianza, calendario peruano y clima, y recomendaciones de compra y de menú.
+
+<p align="center"><img alt="Pronóstico de demanda" src="assets/img/chapter-05/s3-exec-12-ml-forecast.png" width="800" /><br/><i>Figura: pronóstico de demanda a 7 días (US25)</i></p>
+
+<p align="center"><img alt="Recomendaciones" src="assets/img/chapter-05/s3-exec-13-ml-recommendations.png" width="800" /><br/><i>Figura: recomendaciones de compra y de menú (US26)</i></p>
+
+**6. Notifications & Messaging (US27, US41):** alertas automáticas por eventos de stock, alertas manuales, entrega por canal, reintento y atención.
+
+<p align="center"><img alt="Alertas" src="assets/img/chapter-05/s3-exec-14-alerts-list.png" width="800" /><br/><i>Figura: alertas generadas automáticamente (US27)</i></p>
+
+<p align="center"><img alt="Reintento y atención" src="assets/img/chapter-05/s3-exec-15-alerts-retry.png" width="800" /><br/><i>Figura: Atención de alertas (US41)</i></p>
+
+**7. Analytics & Dashboard (US23):** indicadores del dashboard y calculadora de ahorro semanal.
+
+<p align="center"><img alt="Dashboard" src="assets/img/chapter-05/s3-exec-16-dashboard.png" width="800" /><br/><i>Figura: resumen del dashboard y ahorro semanal (US23)</i></p>
+
+**8. Subscription & Payments (US31, RNF11):** catálogo de planes, elección del plan y checkout simulado de Stripe y PayPal, incluido un error de pago.
+
+<p align="center"><img alt="Planes" src="assets/img/chapter-05/s3-exec-17-subscription-plans.png" width="800" /><br/><i>Figura: planes y elección de suscripción (US31)</i></p>
+
+<p align="center"><img alt="Pago" src="assets/img/chapter-05/s3-exec-18-subscription-payment.png" width="800" /><br/><i>Figura: checkout simulado de Stripe y PayPal (US31)</i></p>
+
+**Alcance implementado por escenario**
+
+| **Ítem** | **Escenarios implementados en el Sprint 3** | **Escenarios que quedan para Sprints siguientes** |
+| :--- | :--- | :--- |
+| US25 | Pronóstico de 7 días con modelo ONNX, calendario peruano y clima de Open-Meteo, con confianza | Recopilación programada y reentrenamiento periódico (US37 y US38) |
+| US26 | Generación y aplicación de recomendaciones de compra y de menú | Logro de gamificación |
+| US30 | Inicio de sesión exitoso y con error, bloqueo de cuenta y recuperación de contraseña | Envío real del correo de recuperación |
+| US31 | Elección del plan, checkout simulado de Stripe y PayPal y error de pago | Cobro real y renovación automática programada |
+| US41 | Regla de canales, atención y reintento con canales simulados | Entrega real por WhatsApp, SendGrid y Twilio (US28, US32, US33, RNF12) |
+| US36 | Cálculo de la fecha límite desde la vida útil registrada | Vida útil sugerida por API externa (US34 y US35) |
+
+llll
 
 ## 5.3. Validation Interviews
 
