@@ -4306,6 +4306,27 @@ El Sprint 3 se dedicó a construir el RESTful API de StockIA (Web Services) con 
 
 **Alcance y exclusiones.** Quedan para los Sprints siguientes las integraciones reales que en este Sprint se resuelven con adaptadores simulados: entrega real de alertas por WhatsApp, correo (SendGrid) y SMS (Twilio) (US28, US32, US33 y RNF12), cobro real con Stripe y PayPal (el *checkout* es simulado), consulta de vida útil mediante API externa (US34 y US35) y la recopilación programada y el reentrenamiento periódico del modelo (US37 y US38; en este Sprint el modelo se entrena fuera de línea con scikit-learn y se exporta a ONNX). La consulta de clima sí usa un servicio real de terceros (Open-Meteo).
 
+#### 5.2.3.1. Sprint Planning 3
+
+| **Sprint #** | Sprint 3 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| **Date** | 28/10/2026 |
+| **Time** | 11:00 am |
+| **Location** | Lima/Lima/Santiago de Surco/UPC (presencial) |
+| **Prepared By** | Huaman Oscco, Aldo Jesus (Jesusho22) |
+| **Attendees (to planning meeting)** | Gallardo Morales, Carla Alejandra / Huaman Oscco, Aldo Jesus / Miranda Cordova, Jesus Angel Yvan / Ortiz Laura, Leyla Alisson / Toro Turpo, Ronal |
+| **Sprint 2 Review Summary** | Se presentó la primera versión de la Web Application de StockIA en Angular CLI version 22.1.7, desplegada en Vercel y conectada a una API simulada en Render; se completaron 83 de los 90 Story Points comprometidos. Quedaron en curso TS03 (prueba en producción), TS04 (enlaces de los call-to-action e inglés por defecto en la Landing Page), RNF15 (verificación de confirmaciones por vista) y RNF16 (medición con Lighthouse), que suman 7 SP y continúan como tareas de cierre en el tablero, fuera del compromiso del Sprint 3. Se identificó además que la recuperación de contraseña, el pago de la suscripción, el cálculo real de la proyección de demanda y la entrega de alertas dependen del RESTful API. |
+| **Sprint 2 Retrospective Summary** | Funcionó: la organización por Bounded Context con rama `feature/*` y Pull Request por contexto (10 Pull Requests en `stockia-webapp`) y el despliegue encadenado de la API simulada y la Web Application. A mejorar: (1) casi todos los commits de los contextos se registraron el último día del Sprint (08/10/2026), por lo que se acordó hacer commits y Pull Requests diarios; (2) la carga quedó desbalanceada (uso de capacidad entre 37 % y 91 %), por lo que en este Sprint se reparten las tareas según la disponibilidad declarada; y (3) las tareas de verificación quedaron pendientes al cierre, por lo que se programan antes de la revisión. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 3 Goal** | **Contexto:** Con la Web Application publicada sobre una API simulada, el equipo construye el backend real: que los datos del restaurante se guarden de forma persistente y segura, que cada venta descuente los insumos por receta en el servidor y que las alertas, la proyección de demanda y el dashboard se calculen a partir de esos datos.<br><br>**Sprint Goal:**<br>*"Our focus is on delivering the first working version of the StockIA RESTful API, organised by bounded context, secured with JWT and deployed with Docker and OpenAPI documentation. We believe it delivers to restaurant administrators reliable, persistent inventory, recipes, sales, alerts and demand forecasts that replace the mock API used so far. This will be confirmed when, in the deployed Swagger UI, an administrator can register a restaurant, sign in, create supply lots and recipes, register a sale that automatically deducts stock from the freshest usable lot, and consult the resulting alerts, the 7-day demand forecast, the dashboard and the subscription plans, with all data stored in the database."* |
+| **Sprint 3 Velocity** | 83 Story Points (completados en el Sprint 2, el más reciente). |
+| **Sum of Story Points** | 86 Story Points comprometidos en 19 ítems (14 US, 1 RNF y 4 TS) |
+
+El compromiso del Sprint 3 (86 SP) se calculó a partir de la velocidad del Sprint 2: el equipo completó 83 SP y se mantiene la disponibilidad de 45 horas por integrante, por lo que la capacidad proyectada es 83 × 45 / 45 = 83 SP; se comprometieron 3 SP adicionales porque parte del trabajo (dominio, repositorios y controladores) sigue un patrón repetible entre contextos. Las 153.5 horas planificadas equivalen al 68 % de la capacidad disponible (225 horas); el margen restante cubre revisiones de Pull Request, ceremonias, pruebas de integración y la documentación del informe.
+
+
+
 ## 5.3. Validation Interviews
 
 ### 5.3.1. Diseño de Entrevistas
