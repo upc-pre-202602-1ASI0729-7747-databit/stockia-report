@@ -4280,20 +4280,20 @@ En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante implement
 3. **Compilar antes de integrar:** cada PR debe pasar `npm run build` y `ng test`; se agregará una verificación automática con GitHub Actions para que un error como el del dashboard no llegue a `develop`.
 4. **Integración en el mismo Sprint:** registrar las rutas y la opción del menú en el PR de routing de cada contexto, para que toda pantalla integrada sea accesible.
 5. **Despliegue desde la organización:** publicar en Vercel la rama `main` de `stockia-webapp` y migrar la API simulada al repositorio `stockia-mock-api` de la organización.
-**Evidencia: contribuciones por integrante en `stockia-webapp`**
- 
+
+**Evidencia: contribuciones por integrante en `stockia-webapp`** 
 <p align="center">
   <img src="assets/img/chapter-05/s2-contributors-webapp.png" width="700" alt="Contribuciones por integrante en stockia-webapp"/>
   <br/><i>Insights → Contributors del repositorio stockia-webapp</i>
 </p>
+
 **Evidencia: Pull Requests integrados en `stockia-webapp`**
- 
 <p align="center">
   <img src="assets/img/chapter-05/s2-pull-requests-webapp.png" width="700" alt="Pull Requests de stockia-webapp"/>
   <br/><i>Pull Requests #1 a #20 integrados en develop</i>
 </p>
-**Evidencia: grafo de GitFlow**
- 
+
+**Evidencia: grafo de GitFlow** 
 <p align="center">
   <img src="assets/img/chapter-05/s2-network-webapp.png" width="700" alt="Grafo de ramas de stockia-webapp"/>
   <br/><i>Insights → Network: ramas feature integradas en develop mediante Pull Request</i>
