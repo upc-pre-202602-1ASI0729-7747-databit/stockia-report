@@ -236,7 +236,7 @@ del ABET – EAC - Student Outcome 3.
             Expuse las Lean UX Hypothesis y las User Stories empleando un lenguaje accesible que permitió a audiencias generales comprender los criterios de aceptación. Al presentar el Product Backlog y el diseño de la landing page, orientó la comunicación hacia la priorización de funcionalidades y la coherencia visual del sistema, utilizando diagramas y prototipos como apoyo audiovisual.
             <br>           
             <u>TB1</u><br>
-            Expuse a mis equipo el metodo de trabajo a emplear para el entregable siguiendo la metodologia Scrum para un trabajo colaborativo eficaz, empleando un lenguaje claro y accesible que permitió a audiencias técnicas y no técnicas comprender el funcionamiento de las vistas implementadas. Comunique eficazmente los puntos a corregir del informe anterior para seguir un trabajo escalable.
+            Expuse a mi equipo el método de trabajo a emplear para el entregable siguiendo la metodología Scrum para un trabajo colaborativo eficaz, empleando un lenguaje claro y accesible que permitió a audiencias técnicas y no técnicas comprender el funcionamiento de las vistas implementadas. Comuniqué eficazmente los puntos a corregir del informe anterior para seguir un trabajo escalable.
             <br>
             <u>AV2</u><br>
             Durante esta entrega expuse el bounded context de ML & Recommendations y el despliegue de la solución, explicando el pronóstico de demanda y las recomendaciones de compra en términos de beneficios para el restaurante ante audiencias no técnicas, y detallando la arquitectura por capas, la integración con el servicio de clima Open-Meteo y el despliegue en Render, Vercel y AWS ante audiencias técnicas. Asimismo, realicé y presenté una entrevista de validación, comunicando de forma clara a la entrevistada el objetivo de la sesión y las tareas a realizar sin inducir sus respuestas.
@@ -266,7 +266,7 @@ del ABET – EAC - Student Outcome 3.
             Presenté la descripción de la startup, los antecedentes y segmentos empleando un lenguaje accesible para audiencias no técnicas. Al exponer el EventStorming y los diagramas C4 y UML, adaptó el nivel técnico del discurso a la audiencia evaluadora, utilizando diagramas como apoyo audiovisual para validar la comprensión de la arquitectura. También explicó el diseño de base de datos enfocando cada explicación hacia el objetivo específico del artefacto expuesto.
             <br>           
             <u>TB1</u><br>
-            Realize las correcciones realizadas en el proceso de lean ux, segmentos objetivos y arquitectura, segun a las observaciones. Esto ayuda a que el lector tenga una mejor idea de los usuarios ademas el lean ux canvas ayuda a validar el dominio del negocio.
+            Realicé las correcciones realizadas en el proceso de Lean UX, segmentos objetivos y arquitectura, según las observaciones. Esto ayuda a que el lector tenga una mejor idea de los usuarios; además, el Lean UX Canvas ayuda a validar el dominio del negocio.
             <br>
             <u>AV2</u><br>
             En esta entrega expuse los avances de los módulos de registro de restaurante y de autenticación y equipo, explicando cómo el usuario crea su cuenta, inicia sesión, recupera su contraseña y administra los roles de su equipo, adaptando el nivel de detalle para audiencias técnicas y no técnicas y apoyándome en la aplicación en ejecución.
@@ -276,7 +276,7 @@ del ABET – EAC - Student Outcome 3.
             <u>AV1</u><br>Durante el AV1, el equipo demostró capacidad para adaptar su discurso a diferentes audiencias, combinando explicaciones técnicas con lenguaje accesible. El uso de diagramas, prototipos y tableros visuales permitió que tanto evaluadores con perfil de ingeniería como audiencias generales comprendieran los artefactos expuestos. La coordinación en las presentaciones evidenció escucha activa y claridad en la transmisión de ideas
             <br>           
             <u>TB1</u><br>
-            Durante el TB1, el equipo demostró capacidad para adaptar y mejorar su discurso a diferentes audiencias, explicando y usando lenguaje tecnico hacia un lenguaje accesible. El uso de diagramas, prototipos y tableros visuales permitió que tanto evaluadores con perfil de ingeniería como audiencias generales comprendieran los artefactos expuestos. La coordinación en las presentaciones evidenció escucha activa y claridad en la transmision de ideas de negocio como core y la capacidad de convencer audiencias eficazmente.
+            Durante el TB1, el equipo demostró capacidad para adaptar y mejorar su discurso a diferentes audiencias, explicando y usando lenguaje técnico hacia un lenguaje accesible. El uso de diagramas, prototipos y tableros visuales permitió que tanto evaluadores con perfil de ingeniería como audiencias generales comprendieran los artefactos expuestos. La coordinación en las presentaciones evidenció escucha activa, claridad en la transmisión de ideas de negocio como core, y la capacidad de convencer audiencias eficazmente.
             <br>
             <u>AV2</u><br>
             Durante el AV2, el equipo adaptó su comunicación a dos audiencias distintas: con los usuarios del segmento objetivo, en las entrevistas de validación, utilizó un lenguaje cotidiano y tareas basadas en sus objetivos, sin términos técnicos; con los evaluadores, explicó la arquitectura del RESTful API, sus bounded contexts y el despliegue de la solución con el nivel técnico adecuado. Además, los videos About-the-Product y About-the-Team permitieron comunicar la propuesta de valor y el proceso de trabajo a visitantes del Landing Page sin perfil técnico.
@@ -301,7 +301,7 @@ del ABET – EAC - Student Outcome 3.
             Redacté las Lean UX Hypothesis y las User Stories siguiendo el formato estándar del informe, utilizando un lenguaje orientado al usuario que permitió a lectores no técnicos comprender las hipótesis y criterios de aceptación. Documentó el Product Backlog y el diseño de la landing page con descripciones escritas estructuradas, asegurando que los objetivos técnicos fueran comprensibles para diferentes rangos de audiencia. Su redacción integró coherencia entre la planificación del sprint y la implementación de la aplicación y servicios.
             <br>           
             <u>TB1</u><br>
-            Redacté las correcciones del AV1 en el informe, me enfoque en desarrollar y corregir lo relacionado a la parte documentaria de la metodologia agil scrum, desde las user storys hasta los sprint, dividiendo el trabajo de manera eficaz con la metodologia aplicada. Documenté mediante commits el desarrollo del scrum para el trabajo colaborativo eficaz.
+            Redacté las correcciones del AV1 en el informe; me enfoqué en desarrollar y corregir lo relacionado a la parte documentaria de la metodología ágil Scrum, desde las user stories hasta los sprint, dividiendo el trabajo de manera eficaz con la metodología aplicada. Documenté mediante commits el desarrollo del Scrum para el trabajo colaborativo eficaz.
             <br>
             <u>AV2</u><br>
             En esta entrega documenté la implementación del bounded context de ML & Recommendations (US18), la estructura base del proyecto (TS11) y los perfiles de persistencia (TS13), y registré la entrevista de validación que realicé con su resumen descriptivo. Además, redacté guías de despliegue y de flujo de trabajo con GitFlow y Conventional Commits, con rutas y comandos paso a paso, para que los integrantes del equipo pudieran integrar sus ramas y desplegar la solución de forma autónoma.
@@ -331,7 +331,7 @@ del ABET – EAC - Student Outcome 3.
             Redacté la descripción de la startup y el análisis de antecedentes y problemática siguiendo los estándares del informe técnico, sintetizando la propuesta de valor y el contexto del sistema en un lenguaje claro y accesible. Documentó los segmentos objetivo y el EventStorming con descripciones escritas estructuradas, y elaboró los diagramas C4, UML y de base de datos con notaciones estandarizadas, garantizando que fueran comprensibles tanto para perfiles técnicos como para revisores del proyecto.
             <br>           
             <u>TB1</u><br>
-            Redacte las correcciones del Lean ux canvas de manera que los segmentos objetivos y los bussines outcomes tengan mas formas y evidenica de medición y no solo estadísticas, ademas que en la parte de arquitectura se realizaron las correciones con respecto a inconsistencias y mejoras en el modelo de clases y bases de datos.
+            Redacté las correcciones del Lean UX Canvas de manera que los segmentos objetivos y los business outcomes tengan más formas y evidencia de medición, y no solo estadísticas, además que en la parte de arquitectura se realizaron las correcciones con respecto a inconsistencias y mejoras en el modelo de clases y bases de datos.
             <br>
             <u>AV2</u><br>
             En esta entrega documenté los módulos de registro de restaurante y de autenticación y equipo, describiendo sus funcionalidades principales y sus reglas de negocio, y registré los avances mediante commits descriptivos, asegurando que la documentación fuera comprensible para distintos perfiles de lector.
@@ -508,9 +508,9 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy <b>Aldo Jesus Huaman Oscco</b>, tengo 20 años. Actualmente estoy cursando el sexto ciclo de la carrera de Ing. de Software, he adquirido y desarrollado diversas habilidades como conocimientos sobre distintos paradigmas de la programacion en diversos lenguajes. Me apasiona el analisis de informacion, la arquitectura y el desarrollo de sistemas para la aplicacion en trabajos de equipo con insercion de metodologias agiles.
+      Soy <b>Aldo Jesus Huaman Oscco</b>, tengo 20 años. Actualmente estoy cursando el sexto ciclo de la carrera de Ing. de Software; he adquirido y desarrollado diversas habilidades, como conocimientos sobre distintos paradigmas de la programación en diversos lenguajes. Me apasiona el análisis de información, la arquitectura y el desarrollo de sistemas para la aplicación en trabajos de equipo con inserción de metodologías ágiles.
       <br/><br/>
-      Dentro del equipo, mi contribucion sera en la organizacion de actividades asi como el desarrollo de funcionalidades para el entregable, ademas de supervisar la aplicacion correcta de metodologias agiles.
+      Dentro del equipo, mi contribución será en la organización de actividades, así como el desarrollo de funcionalidades para el entregable, además de supervisar la aplicación correcta de metodologías ágiles.
       <br/>
     </td>
   </tr>
@@ -561,7 +561,7 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy Ronal Toro Turpo, tengo 20 años estudio la carrera de ingenieria de software, desde el comienzo de mi vida universitaria e ido adquiriendo y desarrollando diversas habilidades como el desarrollo en lenguajes de programacion como C++, java script, y en la parte web lenguajes como HTML y CSS si bien el trabajo en equipo no es uno de mis fuertes trato de hacer lo mejor que puedo, espero aprender muchas cosas a lo largo del semestre para este curso ya que lo considero muy interesante e importante para el desarrollo de mi carrera.<b></b>
+      Soy Ronal Toro Turpo, tengo 20 años; estudio la carrera de ingeniería de software; desde el comienzo de mi vida universitaria he ido adquiriendo y desarrollando diversas habilidades, como el desarrollo en lenguajes de programación como C++, JavaScript, y en la parte web, lenguajes como HTML y CSS; si bien el trabajo en equipo no es uno de mis fuertes, trato de hacer lo mejor que puedo; espero aprender muchas cosas a lo largo del semestre para este curso ya que lo considero muy interesante e importante para el desarrollo de mi carrera.<b></b>
       <br/>
     </td>
   </tr>
@@ -691,19 +691,19 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
       <th align="left"></th>
       <th align="center">
         STOCKIA<br>
-        <img src="/assets/img/chapter-04/style-guidelines/logo.png" alt="STOCKIA logo" width="80">
+        <img src="assets/img/chapter-04/style-guidelines/logo.png" alt="STOCKIA logo" width="80">
       </th>
       <th align="center">
         Toteat<br>
-        <img src="/assets/img/chapter-02/toteat-logo.png" alt="Toteat logo" width="80">
+        <img src="assets/img/chapter-02/toteat-logo.png" alt="Toteat logo" width="80">
       </th>
       <th align="center">
         Panca Software<br>
-        <img src="/assets/img/chapter-02/panca-software-logo.jfif" alt="Panca Software logo" width="80">
+        <img src="assets/img/chapter-02/panca-software-logo.jfif" alt="Panca Software logo" width="80">
       </th>
       <th align="center">
         RestoIQ<br>
-        <img src="/assets/img/chapter-02/restoIQ-logo.png" alt="RestoIQ logo" width="80">
+        <img src="assets/img/chapter-02/restoIQ-logo.png" alt="RestoIQ logo" width="80">
       </th>
     </tr>
   </thead>
@@ -771,7 +771,7 @@ Este cuadro nos va a servir para identificar cómo se posicionan actualmente los
     </tr>
     <tr>
       <td><b>Fortalezas</b></td>
-      <td>Nos enfocamos en un problema concreto (receta → inventario → prediccion → alerta) y en el segmento de un solo local.</td>
+      <td>Nos enfocamos en un problema concreto (receta → inventario → predicción → alerta) y en el segmento de un solo local.</td>
       <td>Alta adopción y reconocimiento de marca en LATAM (+5,000 restaurantes).</td>
       <td>Fuerte adaptación a la normativa peruana (SUNAT, IGV), un factor crítico de decisión de compra en el mercado local.</td>
       <td>Uso real y ya validado de IA (modelo propio de forecast a 7 días) para predicción de demanda y reducción de desperdicio.</td>
@@ -939,7 +939,7 @@ Asimismo, Miguel señala que le gustaría contar con un sistema que integre el i
 <p align="center"><i>Evidencia de entrevista: David </i></p>
   
   **Resumen Descriptivo:** 
-David, de 35 años, es jefe de cocina de un restaurante de comida italiana ubicada en Surco, que lleva aproximadamente 5 años funcionando y cuenta con 3 cocineros y 5 mozos mas personal de cajas y otros. Nos comenta que actualmente controla el inventario de manera manual y utiliza Excel para gestionar las recetas, las ventas se registran en un sistema independiente y hacen uso de la gestion y experiencia del jefe de cocinar para la compra de insumos en alta demanda. Esta forma de trabajo le ha generado sobrecarga y fallos en el inventario por margenes de error al manejarlo, mermas y cambios inesperados en la demanda, ocasionando en algunas situaciones en las que se quede sin determinados platos.
+David, de 35 años, es jefe de cocina de un restaurante de comida italiana ubicada en Surco, que lleva aproximadamente 5 años funcionando y cuenta con 3 cocineros, 5 mozos, más personal de cajas y otros. Nos comenta que actualmente controla el inventario de manera manual y utiliza Excel para gestionar las recetas; las ventas se registran en un sistema independiente, y hacen uso de la gestión y experiencia del jefe de cocina para la compra de insumos en alta demanda. Esta forma de trabajo le ha generado sobrecarga y fallos en el inventario por márgenes de error al manejarlo, mermas y cambios inesperados en la demanda, ocasionando en algunas situaciones en las que se quede sin determinados platos.
 
 Asimismo, David señala que le gustaría contar con un sistema que integre el inventario, genere reportes de oferta y demanda, poder visualizar el stock del producto en tiempo real y poder acceder a notificaciones que le indiquen de manera no intrusiva que mandar a comprar los fines de semana o los feriados por venir.
 </br>
@@ -2285,11 +2285,11 @@ En la siguiente sección se presenta el Impact Mapping elaborado a partir del us
 
 <p align="center">
   <img src="assets/img/chapter-03/Jira-HU.png" width="500" alt="Historias de Usuario"/>
-  <br/><i>Artefacto: Jira para User Storys</i>
+  <br/><i>Artefacto: Jira para User Stories</i>
 </p>
 
 <p align="center">
-  <img src="assets/img/chapter-03//Jira-Backlog.png" width="500" alt="Product Backlog"/>
+  <img src="assets/img/chapter-03/Jira-Backlog.png" width="500" alt="Product Backlog"/>
   <br/><i>Artefacto: Jira para Backlog Priorizado</i>
 </p>
 
@@ -5190,7 +5190,7 @@ En el Sprint 3 el RESTful API de StockIA se documentó con **OpenAPI** mediante 
 | :--- | :---: | :--- | :--- | :---: | :---: |
 | `/api/v1/authentication/sign-in` | POST | Body: `email`, `password` | `200 OK` con los datos del usuario y el `token`; `401 Unauthorized` con `InvalidCredentials` y los intentos restantes; `423 Locked` con `AccountLocked` tras 5 intentos. | `43136f8` | US10 |
 | `/api/v1/authentication/password-reset-request` | POST | Body: `email` | `202 Accepted`; el enlace de recuperación usa `STOCKIA_WEB_APP_URL`. | `43136f8` | US10 |
-| `/api/v1/authentication/password-resets` | POST | Body: `code`, `new_password` | `204 No Content`; `400 Bad Request` si el códgio ingresado no es válido. | `43136f8` | US10 |
+| `/api/v1/authentication/password-resets` | POST | Body: `code`, `new_password` | `204 No Content`; `400 Bad Request` si el código ingresado no es válido. | `43136f8` | US10 |
 | `/api/v1/users` | GET | — | `200 OK` con los integrantes del restaurante. | `43136f8` | US11 |
 | `/api/v1/users` | POST | Body: `full_name`, `email`, `role`, `temporaryPassword` | `201 Created` con el integrante invitado. | `43136f8` | US11 |
 | `/api/v1/users/{id}` | DELETE | Path: `id` | `204 No Content`; `409 Conflict` si es la propia cuenta o el último Administrador. | `43136f8` | US11 |
@@ -5458,11 +5458,11 @@ Datos del entrevistado:
 * Timing: 0:05
 * Link: <a href="">Entrevista</a>
 
-<p align="center"><img alt="Entrevista-Jesus Miranda" src="assets/img/chapter-05//evidencia-entrevista-1-0.png" /></p>
+<p align="center"><img alt="Entrevista-Jesus Miranda" src="assets/img/chapter-05/evidencia-entrevista-1-0.png" /></p>
   <p align="center"><img alt="Entrevista-Jesus Miranda" src="assets/img/chapter-05/evidencia-entrevista-1-1.png" /></p>
 <p align="center"><i>Evidencia de entrevista: Nelson </i></p>
 
-**Resumen descriptivo:** En la entrevista, Nelson comento que la plataforma contaba con un diseño profesional y amigable,y afirmo que sus apartados son fáciles de comprender.Ademas valoro positivamente el apartado de alertas.Por otro lado comento que el dashboar inicial si bien tiene informacion relevante, deberia estar un poco mas organizada.
+**Resumen descriptivo:** En la entrevista, Nelson comentó que la plataforma contaba con un diseño profesional y amigable, y afirmó que sus apartados son fáciles de comprender. Además, valoró positivamente el apartado de alertas. Por otro lado, comentó que el dashboard inicial, si bien tiene información relevante, debería estar un poco más organizada.
 
 **Entrevista 2:**
 <br>
@@ -5500,7 +5500,7 @@ Datos de la entrevistada:
 <p align="center"><img alt="Entrevista-AldoHuaman" src="assets/img/chapter-05/screenshot-interview-5.png" /></p>
 <p align="center"><i>Evidencia de entrevista: David </i></p>
 
-**Resumen descriptivo:** El entrevistado mostró una buena recepción hacia StockIA, resaltando principalmente lo práctico y ordenado que resulta el entorno desde el primer contacto. Señaló que la página inicial comunica de forma directa para qué sirve el sistema, permitiendo ubicar sus funciones principales sin confusiones. Además, valoró que el recorrido entre secciones sea fluido, con controles bien diferenciados y notificaciones claras que guían cada acción sin interrupciones ni demoras al operar. Como observaciones puntuales, menciono que los aspectos funcionales bastan para el uso que se le dara a la aplicacion pero que no tiene inconvenientes ni solicitudes de mejora. No obstante, aclaró que estos detalles aplicado mejoran el uso diario, pues la herramienta usa elementos visuales que facilitan y mantiene una estructura coherente. En síntesis, el usuario prioriza una experiencia ágil y fácil de entender, confirmando que conservar un flujo limpio y directo es clave para que la plataforma sea adoptada sin resistencia.
+**Resumen descriptivo:** El entrevistado mostró una buena recepción hacia StockIA, resaltando principalmente lo práctico y ordenado que resulta el entorno desde el primer contacto. Señaló que la página inicial comunica de forma directa para qué sirve el sistema, permitiendo ubicar sus funciones principales sin confusiones. Además, valoró que el recorrido entre secciones sea fluido, con controles bien diferenciados y notificaciones claras que guían cada acción sin interrupciones ni demoras al operar. Como observaciones puntuales, mencionó que los aspectos funcionales bastan para el uso que se le dará a la aplicación, pero que no tiene inconvenientes ni solicitudes de mejora. No obstante, aclaró que estos detalles aplicado mejoran el uso diario, pues la herramienta usa elementos visuales que facilitan y mantiene una estructura coherente. En síntesis, el usuario prioriza una experiencia ágil y fácil de entender, confirmando que conservar un flujo limpio y directo es clave para que la plataforma sea adoptada sin resistencia.
 
 ### 5.3.3. Evaluaciones según heurísticas
 **UX Heuristics & Principles Evaluation**  
