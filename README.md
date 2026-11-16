@@ -165,7 +165,7 @@ Proyecto:
  ---
  # Project Report Collaboration Insights
 
-URL del repositorio (report): https://github.com/upc-pre-202602-1ASI0729-7747-databit<br>
+URL del repositorio (report): https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-report<br>
 
 **Primera Entrega (AV1)**
 
@@ -474,7 +474,7 @@ del ABET – EAC - Student Outcome 3.
 ### 1.1.1. Descripción de la Startup
 DataBite Corp es una startup tecnológica innovadora que aunque su creacion es reciente su enfoque está en liderar la transformación digital del sector gastronómico en el país y Latinoamérica. Nuestro enfoque principal radica en el desarrollo de soluciones de software as a Service (SaaS) que integran analítica predictiva asistida por Machine Learning (ML) y, en un futuro, tecnologías de Internet de las Cosas (IoT).
 
-Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas avanzadas para pequeñas y medianas cadenas de restaurantes, permitiendo optimizar sus operaciones y tomar decisiones basadas en datos en tiempo real. A través de nuestro producto estrella, "StockIA", buscamos resolver problemas críticos de la industria como el descontrol de inventarios, los quiebres de stock y las mermas financieras. Nos motiva generar un impacto directo tanto económico como ambiental, ayudando a las empresas a reducir el desperdicio de alimentos y a maximizar sus márgenes de rentabilidad, todo centralizado en un ecosistema web unificado, accesible y altamente escalable.
+Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas avanzadas para los restaurantes, permitiendo que cada administrador optimice la operación de su local y tome decisiones basadas en datos en tiempo real. A través de nuestro producto estrella, "StockIA", buscamos resolver problemas críticos de la industria como el descontrol de inventarios, los quiebres de stock y las mermas financieras. Nos motiva generar un impacto directo tanto económico como ambiental, ayudando a los restaurantes a reducir el desperdicio de alimentos y a maximizar sus márgenes de rentabilidad, todo centralizado en un ecosistema web unificado, accesible y altamente escalable.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 <table>
@@ -571,7 +571,7 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
-En el día a día, la gestión de restaurantes especialmente cuando el negocio crece y suma nuevas sucursales se ha convertido en un verdadero dolor de cabeza logístico. Hoy en día, la mayoría de los locales intentan resolver su operatividad usando sistemas de punto de venta que, si bien cumplen su función transaccional al momento de cobrar, operan de forma aislada y no se comunican con la gestión real del almacén. Es crucial destacar que la solución a este problema no pasa por reemplazar el POS actual ni crear un nuevo sistema de ventas, sino por aprovechar la información que estos ya generan.  
+En el día a día, la gestión de un restaurante, especialmente cuando el negocio crece y aumentan sus platos, proveedores y personal, se ha convertido en un verdadero dolor de cabeza logístico. Hoy en día, la mayoría de los locales intentan resolver su operatividad usando sistemas de punto de venta que, si bien cumplen su función transaccional al momento de cobrar, operan de forma aislada y no se comunican con la gestión real del almacén. Es crucial destacar que la solución a este problema no pasa por reemplazar el POS actual ni crear un nuevo sistema de ventas, sino por aprovechar la información que estos ya generan.
 
 El desperdicio alimentario y la ineficiencia detrás de esta desconexión son problemas estadísticamente comprobados. Según el Programa de las Naciones Unidas para el Medio Ambiente (PNUMA, 2024), en América Latina se desperdician millones de toneladas de alimentos al año. En la industria restaurantera, diversos estudios revelan que los locales tiran a la basura entre el 4% y el 10% de todos los alimentos que compran (Gunders et al., 2017). A pesar de estas enormes pérdidas, los restaurantes se ven obligados a llevar el control en cuadernos o excels aislados porque no existe una "capa de inteligencia" accesible que reciba los datos de ventas de sus sistemas actuales, los procese mediante Machine Learning y les diga exactamente qué y cuándo comprar para evitar que falten ingredientes o se echen a perder.
 
@@ -579,9 +579,9 @@ El desperdicio alimentario y la ineficiencia detrás de esta desconexión son pr
 
 | Elemento | Preguntas | Definición |
 |---|---|---|
-| **(“Who?”) ¿Quién?** | ¿Quién sufre este problema? | Los administradores de los restaurantes y sucursales, quienes están en la "primera línea" administrando y lidiando con las compras, el inventario y el personal. |
+| **(“Who?”) ¿Quién?** | ¿Quién sufre este problema? | Los administradores y dueños de restaurantes, quienes están en la "primera línea" administrando y lidiando con las compras, el inventario y el personal. |
 | **(“What?”) ¿Qué?** | ¿Cuál es el problema exacto? | Sufren de pérdidas económicas porque las herramientas de ventas actuales no les dan una visión operativa real. Al depender de un control de stock manual, se enfrentan a mermas invisibles ya que no existe un ecosistema que reciba el dato de la venta y descuente automáticamente los ingredientes usados. |
-| **(“Where?”) ¿Dónde?** | ¿Dónde ocurre el problema? | Nace en los almacenes y en el ajetreo de las cocinas de las sucursales, pero termina impactando directamente en la caja registradora y en la oficina de administración. |
+| **(“Where?”) ¿Dónde?** | ¿Dónde ocurre el problema? | Nace en el almacén y en el ajetreo de la cocina del restaurante, pero termina impactando directamente en la caja registradora y en la oficina de administración. |
 | **(“When?”) ¿Cuándo?** | ¿Cuándo sucede el problema? | Ocurre todos los días cada vez que el sistema de ventas emite un ticket sin que el inventario se entere, y explota en los momentos de crisis cuando descubren que falta un insumo clave y tienen que salir a comprarlo de urgencia. |
 | **(“Why?”) ¿Por qué?** | ¿Por qué ocurre este problema? | Porque las soluciones actuales se quedan solo en la transacción de la venta y mantienen el resto de los procesos logísticos desconectados. Los administradores no cuentan con una herramienta predictiva que se alimente de ese historial de ventas para recomendarles automáticamente su próxima compra. |
 | **(“How?”) ¿Cómo?** | ¿Cómo se evidencia el problema? | Se nota rápidamente en el descontrol de los almacenes, en los errores humanos al llenar los reportes semanales y en la frustración del administrador al detectar pérdidas de insumos por la falta de roles y permisos digitales en la cocina. |
@@ -595,33 +595,31 @@ Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-**The current state of**  la gestión de restaurantes y la administración de servicios de alimentación multiunidad has focused mainly on los gerentes generales de restaurantes, supervisores de sucursales y personal administrativo, abordando puntos problemáticos como los registros manuales de inventario, las operaciones de punto de venta no integradas y la comunicación fragmentada entre sucursales mediante software de escritorio aislado o registros de cocina basados en papel.
+**The current state of**  la gestión de restaurantes has focused mainly on los administradores, dueños y personal de cocina de cada restaurante, abordando puntos problemáticos como los registros manuales de inventario, las operaciones de punto de venta no integradas con el almacén y la comunicación fragmentada entre la cocina y la administración mediante hojas de cálculo o registros en papel.
 
+**What existing products/services fail to address is** un mecanismo integrado y en tiempo real que conecte las ventas con el inventario del restaurante, con trazabilidad del stock por lote, deducción automatizada de ingredientes de recetas por cada venta e inteligencia predictiva basada en la demanda histórica para prevenir quiebres de stock y desperdicio de alimentos.
 
-
-**What existing products/services fail to address is** un mecanismo integrado y en tiempo real para regular la automatización de múltiples cadenas con trazabilidad centralizada del inventario, deducción automatizada de ingredientes de recetas por cada venta e inteligencia predictiva basada en la demanda histórica para prevenir quiebres de stock y desperdicio de alimentos entre distintas ubicaciones.
-
-**Our product/service will address this gap by** ofreciendo un ecosistema web unificado de gestión multi-cadena que vincula el inventario de las sucursales con las recetas de los platos (deduciendo automáticamente los ingredientes al momento de crear una orden), aplica seguridad basada en roles de acceso, proporciona dashboards de monitoreo operativo y utiliza modelos de Machine Learning para pronosticar la demanda de los clientes y generar recomendaciones automatizadas de reposición de inventario.
+**Our product/service will address this gap by** ofreciendo un ecosistema web unificado de gestión de inventario que vincula el stock del restaurante con las recetas de los platos (deduciendo automáticamente los ingredientes al registrar una venta), aplica seguridad basada en roles de acceso, proporciona dashboards de monitoreo operativo y utiliza modelos de Machine Learning para pronosticar la demanda de los clientes y generar recomendaciones automatizadas de reposición de inventario.
 
 **Our initial focus will be** los administradores y dueños de restaurantes de servicios de alimentación en crecimiento (2 o más ubicaciones) que buscan estandarización operativa, reducción de desperdicios y supervisión en tiempo real.
 
 **We’ll know we are successful when we see** los siguientes comportamientos medibles en nuestro público objetivo:
-1. Una reducción del 40% en los reportes semanales de discrepancias de inventario en todas las sucursales conectadas durante los primeros 60 días posteriores a la incorporación.
+1. Una reducción del 40% en los reportes semanales de discrepancias de inventario del restaurante durante los primeros 60 días posteriores a la incorporación.
 2. Al menos el 75% de las órdenes de compra de suministros programadas están siendo generadas directamente a partir de las recomendaciones automatizadas de reposición mediante ML.
 3. Interacción semanal activa con los dashboards por parte de más del 85% de los administradores de operaciones de restaurantes inscritos.
 
 #### 1.2.2.2. Lean UX Assumptions
-1. Creemos que existe una demanda creciente por parte de pequeñas y medianas cadenas de restaurantes que buscan transformar digitalmente sus operaciones para evitar mermas financieras causadas por el descontrol de inventario.
+1. Creemos que existe una demanda creciente por parte de los administradores y dueños de restaurantes que buscan transformar digitalmente sus operaciones para evitar mermas financieras causadas por el descontrol de inventario.
 
-2. Creemos que nuestro modelo de negocio basado en suscripción mensual (**SaaS B2B por sucursal conectada**) es económicamente viable y atractivo para los directores y dueños de cadenas de comida.
+2. Creemos que nuestro modelo de negocio basado en suscripción mensual (**SaaS B2B por restaurante**) es económicamente viable y atractivo para los dueños y administradores de restaurantes.
 
 3. Creemos que la ventaja competitiva clave frente a soluciones tradicionales radica en la incorporación de analítica predictiva asistida por Machine Learning sin requerir configuraciones complejas de software empresarial costoso.
 
-4. Creemos que las cadenas de restaurantes están dispuestas a migrar sus recetas e inventarios a un entorno web seguro en la nube para obtener visibilidad centralizada.
+4. Creemos que los restaurantes están dispuestos a migrar sus recetas e inventarios a un entorno web seguro en la nube para obtener visibilidad centralizada de su operación.
 
 **User outcomes:**
 
-1. Creemos que los dueños de restaurantes lograrán visibilidad integral e inmediata del estado de inventario, consumo de ingredientes y actividad del personal en todas las sucursales sin depender de llamadas o reportes manuales en hojas de cálculo.
+1. Creemos que los dueños de restaurantes lograrán visibilidad integral e inmediata del estado de inventario, consumo de ingredientes y actividad del personal de su restaurante sin depender de llamadas o reportes manuales en hojas de cálculo.
 
 2. Creemos que los restaurantes reducirán el desperdicio de alimentos perecibles hasta en un **25%** al ajustar sus compras y producción a las proyecciones de demanda de comensales.
 
@@ -630,11 +628,11 @@ Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application
 4. Creemos que los líderes del negocio mitigarán pérdidas financieras no autorizadas mediante la restricción de privilegios por roles de trabajo.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
-1. Creemos que lograremos un aumento del **20%** en la retención semanal de la plataforma por parte de los ejecutivos de restaurantes **si** los administradores y dueños de restaurantes **obtienen** visibilidad instantánea y consolidada de los niveles de inventario y el rendimiento de las ventas en todas las sucursales **con** un dashboard operativo interactivo para múltiples cadenas.
+1. Creemos que lograremos un aumento del **20%** en la retención semanal de la plataforma por parte de los administradores de restaurantes **si** los administradores y dueños de restaurantes **obtienen** visibilidad instantánea y consolidada de los niveles de inventario y el rendimiento de las ventas de su restaurante **con** un dashboard operativo interactivo.
 
 2. Creemos que lograremos una reducción del **30%** en los incidentes de seguridad y los reportes de pérdidas internas **si** los dueños de restaurantes **obtienen** delegación segura de tareas y control detallado sobre las operaciones críticas de inventario **con** un sistema de gestión de configuración de roles y permisos.
 
-3. Creemos que lograremos una disminución del **35%** en las discrepancias de las auditorías manuales de inventario **si** los gerentes de tienda y operadores de inventario **obtienen** un seguimiento rápido y sin errores de las entradas, transferencias y modificaciones de materias primas **con** un módulo centralizado de gestión de inventario en tiempo real.
+3. Creemos que lograremos una disminución del **35%** en las discrepancias de las auditorías manuales de inventario **si** los administradores y operadores de inventario **obtienen** un seguimiento rápido y sin errores de las entradas, salidas y modificaciones de materias primas **con** un módulo centralizado de gestión de inventario en tiempo real.
 
 #### 1.2.2.4. Lean UX Canvas
 <td rowspan="3" align="center">
@@ -5662,7 +5660,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 El video *About-the-Product* presenta **StockIA**, la plataforma web de DataBit que convierte el inventario de un restaurante en información útil para decidir qué comprar, qué preparar y cuándo actuar. En menos de dos minutos explica el problema que resolvemos, cómo funciona la solución y qué gana el restaurante al usarla.
 
-**Modelo de negocio.** StockIA se ofrece como un servicio por suscripción (SaaS) para restaurantes y cadenas de restaurantes. El administrador registra su restaurante, elige un plan y luego invita a su equipo. Desde *Settings* puede comparar planes y cambiar su suscripción en cualquier momento.
+**Modelo de negocio.** StockIA se ofrece como un servicio por suscripción (SaaS) para restaurantes. El administrador registra su restaurante, elige un plan y luego invita a su equipo. Desde *Settings* puede comparar planes y cambiar su suscripción en cualquier momento.
 
 **Estructura del video:**
 
