@@ -165,7 +165,7 @@ Proyecto:
  ---
  # Project Report Collaboration Insights
 
-URL del repositorio (report): https://github.com/upc-pre-202602-1ASI0729-7747-databit<br>
+URL del repositorio (report): https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-report<br>
 
 **Primera Entrega (AV1)**
 
@@ -474,7 +474,7 @@ del ABET – EAC - Student Outcome 3.
 ### 1.1.1. Descripción de la Startup
 DataBite Corp es una startup tecnológica innovadora que aunque su creacion es reciente su enfoque está en liderar la transformación digital del sector gastronómico en el país y Latinoamérica. Nuestro enfoque principal radica en el desarrollo de soluciones de software as a Service (SaaS) que integran analítica predictiva asistida por Machine Learning (ML) y, en un futuro, tecnologías de Internet de las Cosas (IoT).
 
-Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas avanzadas para pequeñas y medianas cadenas de restaurantes, permitiendo optimizar sus operaciones y tomar decisiones basadas en datos en tiempo real. A través de nuestro producto estrella, "StockIA", buscamos resolver problemas críticos de la industria como el descontrol de inventarios, los quiebres de stock y las mermas financieras. Nos motiva generar un impacto directo tanto económico como ambiental, ayudando a las empresas a reducir el desperdicio de alimentos y a maximizar sus márgenes de rentabilidad, todo centralizado en un ecosistema web unificado, accesible y altamente escalable.
+Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas avanzadas para los restaurantes, permitiendo que cada administrador optimice la operación de su local y tome decisiones basadas en datos en tiempo real. A través de nuestro producto estrella, "StockIA", buscamos resolver problemas críticos de la industria como el descontrol de inventarios, los quiebres de stock y las mermas financieras. Nos motiva generar un impacto directo tanto económico como ambiental, ayudando a los restaurantes a reducir el desperdicio de alimentos y a maximizar sus márgenes de rentabilidad, todo centralizado en un ecosistema web unificado, accesible y altamente escalable.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 <table>
