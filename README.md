@@ -5660,7 +5660,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 El video *About-the-Product* presenta **StockIA**, la plataforma web de DataBit que convierte el inventario de un restaurante en información útil para decidir qué comprar, qué preparar y cuándo actuar. En menos de dos minutos explica el problema que resolvemos, cómo funciona la solución y qué gana el restaurante al usarla.
 
-**Modelo de negocio.** StockIA se ofrece como un servicio por suscripción (SaaS) para restaurantes y cadenas de restaurantes. El administrador registra su restaurante, elige un plan y luego invita a su equipo. Desde *Settings* puede comparar planes y cambiar su suscripción en cualquier momento.
+**Modelo de negocio.** StockIA se ofrece como un servicio por suscripción (SaaS) para restaurantes. El administrador registra su restaurante, elige un plan y luego invita a su equipo. Desde *Settings* puede comparar planes y cambiar su suscripción en cualquier momento.
 
 **Estructura del video:**
 
