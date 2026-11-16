@@ -2,7 +2,7 @@
 <img width="80" height="80" alt="logo" src="https://github.com/user-attachments/assets/246a4dfb-6dd5-4909-a472-6cdce8319986"/>
 
 Universidad Peruana de Ciencias Aplicadas
-
+Facultad de Ingeniería
 Carrera de Ingeniería de Software
 
 **1ASI0729** 
@@ -128,7 +128,7 @@ Proyecto:
   </tr>
 <tr>
     <td><b>Tercera Entrega (AV2)</b></td>
-    <td>12/11/2026</td>
+    <td>16/11/2026</td>
     <td>
       Gallardo Morales,Carla Alejandra
       <br>
@@ -165,7 +165,7 @@ Proyecto:
  ---
  # Project Report Collaboration Insights
 
-URL del repositorio (report): https://github.com/upc-pre-202602-1ASI0729-7747-databit<br>
+URL de la organización: https://github.com/upc-pre-202602-1ASI0729-7747-databit<br>
 
 **Primera Entrega (AV1)**
 
@@ -229,7 +229,7 @@ del ABET – EAC - Student Outcome 3.
             Expuse el frontend de la aplicación web desarrollado para esta entrega, empleando un lenguaje claro y accesible que permitió a audiencias técnicas y no técnicas comprender el funcionamiento de las vistas implementadas. Al presentar las correcciones del AV1, en especial las de los diseños UX/UI, orienté la comunicación hacia la justificación de los cambios realizados, utilizando la aplicación en ejecución y los mockups actualizados como apoyo audiovisual para validar la coherencia entre el diseño y la implementación.
             <br>
             <u>AV2</u><br>
-            Durante la entrega del AV2 realice la elaboracion del backend de mi bounded context Suscription, ademas que se realiza la mejora continua del TB1, desarrollando mejoras en nuestra webapp y website. Me comunique de manera efectiva con la ayuda de la eleboracion de los videos y entrebistas de validacion y apartir de ellas realizar la mejora continua de la webapp.
+            Durante la entrega del AV2 realicé la elaboracioón del backend de mi bounded context Suscription, además que se realiza la mejora continua del TB1, desarrollando mejoras en nuestra webapp y website. Me comuniqué de manera efectiva con la ayuda de la eleboración de los videos y entrevistas de validación y apartir de ellas realizar la mejora continua de la webapp.
             <br><br>            
             <b>Huaman Oscco, Aldo Jesus</b><br>
             <u>AV1</u><br>
@@ -294,7 +294,7 @@ del ABET – EAC - Student Outcome 3.
             Redacté las correcciones del AV1 en el informe, principalmente las referidas a los diseños UX/UI, con un lenguaje claro y estructurado, asegurando que los ajustes fueran comprensibles para lectores con distintos perfiles. Documenté mediante commits el desarrollo del frontend de la aplicación web con descripciones precisas, garantizando trazabilidad entre los diseños corregidos y las vistas implementadas. Mi redacción permitió mantener coherencia entre la documentación del informe y el estado funcional del producto.
             <br>
             <u>AV2</u><br>
-            Para el desarrollo de esta competencia lo aplique mediante la redaccion del informe, asimismo de las entrevistas de validacion hice un resumen apropiado y que valide las necesidades del usuario. Tambien produci el video about the team y about the product con las caracteristicas principales de nuestro proyecto. Finalmente documente la informacion necesario para cada video.
+            Para el desarrollo de esta competencia lo apliqué mediante la redacción del informe, asimismo de las entrevistas de validación hice un resumen apropiado y que validé las necesidades del usuario. También producí el video about the team y about the product con las características principales de nuestro proyecto. Finalmente documenté la información necesario para cada video.
             <br><br>
             <b>Huaman Oscco, Aldo Jesus</b><br>
             <u>AV1</u><br>
@@ -472,7 +472,7 @@ del ABET – EAC - Student Outcome 3.
 ## 1.1. Startup Profile
 
 ### 1.1.1. Descripción de la Startup
-DataBite Corp es una startup tecnológica innovadora que aunque su creacion es reciente su enfoque está en liderar la transformación digital del sector gastronómico en el país y Latinoamérica. Nuestro enfoque principal radica en el desarrollo de soluciones de software as a Service (SaaS) que integran analítica predictiva asistida por Machine Learning (ML) y, en un futuro, tecnologías de Internet de las Cosas (IoT).
+DataBites una startup tecnológica innovadora que aunque su creacion es reciente su enfoque está en liderar la transformación digital del sector gastronómico en el país y Latinoamérica. Nuestro enfoque principal radica en el desarrollo de soluciones de software as a Service (SaaS) que integran analítica predictiva asistida por Machine Learning (ML) y, en un futuro, tecnologías de Internet de las Cosas (IoT).
 
 Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas avanzadas para pequeñas y medianas cadenas de restaurantes, permitiendo optimizar sus operaciones y tomar decisiones basadas en datos en tiempo real. A través de nuestro producto estrella, "StockIA", buscamos resolver problemas críticos de la industria como el descontrol de inventarios, los quiebres de stock y las mermas financieras. Nos motiva generar un impacto directo tanto económico como ambiental, ayudando a las empresas a reducir el desperdicio de alimentos y a maximizar sus márgenes de rentabilidad, todo centralizado en un ecosistema web unificado, accesible y altamente escalable.
 
@@ -5840,7 +5840,7 @@ United Nations Environment Programme. (2024). Food Waste Index Report 2024: Thin
 
 **URL del repositorio (stockia-website)** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-website
 
-**URL del Repositorio de la API simulada:** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-mock-api.git
+**URL del Repositorio de la plataforma:** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-platform-api
 
 **URL del Repositorio de la webApp en Github:** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-webapp.git
 
@@ -5856,16 +5856,16 @@ United Nations Environment Programme. (2024). Food Waste Index Report 2024: Thin
 
 **Videos de Expo:**
 
-**AV1 Expo:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQDEOleKp0hNTLzONouiVj-wARDzRNQtkhIAFRriY9p5BvY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XhsNyB
+**AV1 Expo:**[Ver Exposición](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQDEOleKp0hNTLzONouiVj-wARDzRNQtkhIAFRriY9p5BvY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XhsNyB)
 
-**TB1 Expo:**  https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQA-C8piH8qDQKzZq-JA_7PYAaJsZ0mESYc_tdA62twaH7Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=8g49nb
+**TB1 Expo:** [Ver Exposición](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQA-C8piH8qDQKzZq-JA_7PYAaJsZ0mESYc_tdA62twaH7Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=8g49nb)
 
-**AV2 Expo:**  https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQCdYQaKauWZQq-iXDc1dYH8AZ0Gbb8MX2TOkDxz59JIa4k?e=mJt4BAnav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+**AV2 Expo:** [Ver Exposición](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQCdYQaKauWZQq-iXDc1dYH8AZ0Gbb8MX2TOkDxz59JIa4k?e=mJt4BAnav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 **Videos About:**
 
-**Video About the team:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQAlKhmdPnxRQ591WwCPgqhaAWJBSwzufNG6Aiu86CqJhM8?e=expibMnav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
-**Video About the product:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQDSEMFTQYGjRL6XsRuLJAd-AU_3hBanEPV7wpN_Rrp6SD4?e=SeoAWFnav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+**Video About the team:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQAlKhmdPnxRQ591WwCPgqhaAWJBSwzufNG6Aiu86CqJhM8?e=expibMnav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+**Video About the product:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQDSEMFTQYGjRL6XsRuLJAd-AU_3hBanEPV7wpN_Rrp6SD4?e=SeoAWFnav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 
 
