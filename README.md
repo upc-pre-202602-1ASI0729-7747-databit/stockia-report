@@ -229,7 +229,7 @@ del ABET – EAC - Student Outcome 3.
             Expuse el frontend de la aplicación web desarrollado para esta entrega, empleando un lenguaje claro y accesible que permitió a audiencias técnicas y no técnicas comprender el funcionamiento de las vistas implementadas. Al presentar las correcciones del AV1, en especial las de los diseños UX/UI, orienté la comunicación hacia la justificación de los cambios realizados, utilizando la aplicación en ejecución y los mockups actualizados como apoyo audiovisual para validar la coherencia entre el diseño y la implementación.
             <br>
             <u>AV2</u><br>
-            ...
+            Durante la entrega del AV2 realice la elaboracion del backend de mi bounded context Suscription, ademas que se realiza la mejora continua del TB1, desarrollando mejoras en nuestra webapp y website. Me comunique de manera efectiva con la ayuda de la eleboracion de los videos y entrebistas de validacion y apartir de ellas realizar la mejora continua de la webapp.
             <br><br>            
             <b>Huaman Oscco, Aldo Jesus</b><br>
             <u>AV1</u><br>
@@ -294,7 +294,7 @@ del ABET – EAC - Student Outcome 3.
             Redacté las correcciones del AV1 en el informe, principalmente las referidas a los diseños UX/UI, con un lenguaje claro y estructurado, asegurando que los ajustes fueran comprensibles para lectores con distintos perfiles. Documenté mediante commits el desarrollo del frontend de la aplicación web con descripciones precisas, garantizando trazabilidad entre los diseños corregidos y las vistas implementadas. Mi redacción permitió mantener coherencia entre la documentación del informe y el estado funcional del producto.
             <br>
             <u>AV2</u><br>
-            ...
+            Para el desarrollo de esta competencia lo aplique mediante la redaccion del informe, asimismo de las entrevistas de validacion hice un resumen apropiado y que valide las necesidades del usuario. Tambien produci el video about the team y about the product con las caracteristicas principales de nuestro proyecto. Finalmente documente la informacion necesario para cada video.
             <br><br>
             <b>Huaman Oscco, Aldo Jesus</b><br>
             <u>AV1</u><br>
@@ -5502,6 +5502,25 @@ Datos de la entrevistada:
 
 **Resumen descriptivo:** El entrevistado mostró una buena recepción hacia StockIA, resaltando principalmente lo práctico y ordenado que resulta el entorno desde el primer contacto. Señaló que la página inicial comunica de forma directa para qué sirve el sistema, permitiendo ubicar sus funciones principales sin confusiones. Además, valoró que el recorrido entre secciones sea fluido, con controles bien diferenciados y notificaciones claras que guían cada acción sin interrupciones ni demoras al operar. Como observaciones puntuales, mencionó que los aspectos funcionales bastan para el uso que se le dará a la aplicación, pero que no tiene inconvenientes ni solicitudes de mejora. No obstante, aclaró que estos detalles aplicado mejoran el uso diario, pues la herramienta usa elementos visuales que facilitan y mantiene una estructura coherente. En síntesis, el usuario prioriza una experiencia ágil y fácil de entender, confirmando que conservar un flujo limpio y directo es clave para que la plataforma sea adoptada sin resistencia.
 
+**Entrevista 4:**
+<br>
+**Entrevistador(a):** Carla Alejandra Gallardo Morales
+
+Datos de la entrevistada:
+
+* Nombre: Isabel
+* Apellido: Cubillas
+* Edad: 30 años
+* Distrito: Villa Maria
+* Timing: 9:48
+* Link: <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQA_JWHsovG3RJPyAje32fCSAdlZYmIET31GOKsnm3MD6AA?e=bZyR6jnav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">Entrevista</a>
+
+
+<p align="center"><img alt="Entrevista-AldoHuaman" src="assets/img/chapter-05/entrevista-isa.png" /></p>
+<p align="center"><i>Evidencia de entrevista: Isabel </i></p>
+
+**Resumen descriptivo:** En la entrevista de validación, Carla Gallardo, del equipo DataBit, le presentó StockIA a Isabel, administradora de un restaurante. Primero le mostró el landing page, con la propuesta de valor, las características, el funcionamiento y los planes (prueba gratuita y planes pagados profesional o con IoT, mensuales o anuales). Luego recorrieron la web app: el dashboard, el registro de insumos en el inventario, las recetas con descuento automático por venta, el pronóstico de demanda, las alertas por WhatsApp, las recomendaciones de compra de la IA y la gestión de roles. Isabel consideró que el landing page se entiende muy bien y destacó la sección de planes porque le permite comparar el plan gratuito con los demás; mostró interés en adquirir el plan con IoT. La funcionalidad que le pareció más importante fue el control de inventario con alertas de productos por vencer o con stock bajo enviadas a WhatsApp, porque la libera de preocupaciones en su gestión como administradora. Como mejora, sugirió explicar con más claridad cómo se relacionan el clima y el modelo de machine learning en el pronóstico de demanda. En general, la entrevista validó que la propuesta es clara, útil y de interés para su segmento objetivo.
+
 ### 5.3.3. Evaluaciones según heurísticas
 **UX Heuristics & Principles Evaluation**  
 **Usability – Inclusive Design – Information Architecture**
@@ -5815,25 +5834,38 @@ United Nations Environment Programme. (2024). Food Waste Index Report 2024: Thin
 
 
 # Anexos
-**URL del repositorio (stockia-report):** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-report.git|
+**Repositorios del equipo:**
+
+**URL del repositorio (stockia-report):** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-report.git
 
 **URL del repositorio (stockia-website)** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-website
+
+**URL del Repositorio de la API simulada:** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-mock-api.git
+
+**URL del Repositorio de la webApp en Github:** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-webapp.git
+
+**Productos de Software:**
+
+**URL del EventStorming (Miro):** https://miro.com/app/board/uXjVHpm-h94=/?inviteKey=SG5SWGdzTFJPRXlnUXVrWGVEcnhkK01yVlErUVVta1JYbUlYb0JNbFQwOGtKQWdpdDNXNkJobVVyRUdmSDNFbmVyanlCcmQ1Q05paks4U3UwdXVoc3ExSlpnNFR4aHA4bGE2WHBxNDB1T2ZmdlpIUnM2M0QyZ2RjR2JpMllvQWhBd044SHFHaVlWYWk0d3NxeHNmeG9BPT0hdjE%3D
 
 **URL de landing page (vercel):** https://stockia-website.vercel.app/index.html
 
 **URL de webapp:** https://stockia-webapp.vercel.app/
 
+**URL de la API simulada desplegada:** https://stockia-mock-api.onrender.com/api/v1
+
+**Videos de Expo:**
+
 **AV1 Expo:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQDEOleKp0hNTLzONouiVj-wARDzRNQtkhIAFRriY9p5BvY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XhsNyB
-
-**Link del EventStorming (Miro):** https://miro.com/app/board/uXjVHpm-h94=/?inviteKey=SG5SWGdzTFJPRXlnUXVrWGVEcnhkK01yVlErUVVta1JYbUlYb0JNbFQwOGtKQWdpdDNXNkJobVVyRUdmSDNFbmVyanlCcmQ1Q05paks4U3UwdXVoc3ExSlpnNFR4aHA4bGE2WHBxNDB1T2ZmdlpIUnM2M0QyZ2RjR2JpMllvQWhBd044SHFHaVlWYWk0d3NxeHNmeG9BPT0hdjE%3D
-
-**Repositorio de la API simulada:** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-mock-api.git
-
-**Repositorio de la webApp en Github:** https://github.com/upc-pre-202602-1ASI0729-7747-databit/stockia-webapp.git
 
 **TB1 Expo:**  https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQA-C8piH8qDQKzZq-JA_7PYAaJsZ0mESYc_tdA62twaH7Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=8g49nb
 
-**URL de la API simulada desplegada:** https://stockia-mock-api.onrender.com/api/v1
+**AV2 Expo:**  https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQCdYQaKauWZQq-iXDc1dYH8AZ0Gbb8MX2TOkDxz59JIa4k?e=mJt4BAnav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+**Videos About:**
+
+**Video About the team:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQAlKhmdPnxRQ591WwCPgqhaAWJBSwzufNG6Aiu86CqJhM8?e=expibMnav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+**Video About the product:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQDSEMFTQYGjRL6XsRuLJAd-AU_3hBanEPV7wpN_Rrp6SD4?e=SeoAWFnav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 
 
